@@ -8,7 +8,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ## Specialized Nutrition Files
 
-### 🏃‍♂️ **[Performance Nutrition for Training & Competition](07a_performance_nutrition.md)**
+### 🏃‍♂️ **[Performance Nutrition for Training & Competition](./performance-nutrition)**
 
 - **Pre-training & competition nutrition** with timing strategies and meal examples
 - **During-training nutrition** for sessions >90 minutes with hydration protocols
@@ -17,7 +17,7 @@ _This content has been reorganized into specialized files for improved navigatio
 - **Individual optimization strategies** for tolerance testing and performance monitoring
 - **Caffeine strategy** for evidence-based performance enhancement
 
-### 🍽️ **[Daily Nutrition Guidelines & Body Composition](07b_daily_nutrition.md)**
+### 🍽️ **[Daily Nutrition Guidelines & Body Composition](./daily-nutrition)**
 
 - **Daily macronutrient framework** with protein, carbohydrate, and fat requirements
 - **Daily meal structure & timing** with sample meal plans for training and rest days
@@ -32,7 +32,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For Training & Competition Nutrition:**
 
-➡️ Start with **[07a_performance_nutrition.md](07a_performance_nutrition.md)**
+➡️ Start with **[Performance Nutrition](./performance-nutrition)**
 
 - Essential pre/during/post training nutrition protocols
 - Competition day strategy and tournament planning
@@ -41,7 +41,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For Daily Nutrition & Body Composition:**
 
-➡️ Start with **[07b_daily_nutrition.md](07b_daily_nutrition.md)**
+➡️ Start with **[Daily Nutrition](./daily-nutrition)**
 
 - Complete daily nutrition framework with macronutrient targets
 - Sample meal plans and timing strategies
@@ -54,15 +54,15 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **Nutrition-Training Integration:**
 
-- **Performance**: Support **[06_power_development.md](06_power_development.md)** with strategic nutrition timing
-- **Recovery**: Coordinate with **[05_recovery_protocols.md](05_recovery_protocols.md)** for optimal adaptation
-- **Programming**: Align with **[03_training_programming.md](03_training_programming.md)** periodization demands
+- **Performance**: Support **[Power Development](../specialized/power-development)** with strategic nutrition timing
+- **Recovery**: Coordinate with **[Recovery Protocols](../recovery/recovery-protocols)** for optimal adaptation
+- **Programming**: Align with **[Training Programming](../programming/training-programming)** periodization demands
 
 ### **Health & Assessment Integration:**
 
-- **Assessment**: Monitor with **[08_assessment_monitoring.md](08_assessment_monitoring.md)** body composition tracking
-- **Tendon Health**: Support **[04_tendon_health_science.md](04_tendon_health_science.md)** with anti-inflammatory nutrition
-- **Philosophy**: Apply **[01_elite_training_philosophy.md](01_elite_training_philosophy.md)** consistency principles
+- **Assessment**: Monitor with **[Assessment & Monitoring](../assessment/assessment-monitoring)** body composition tracking
+- **Tendon Health**: Support **[Tendon Health Science](../specialized/tendon-health-science)** with anti-inflammatory nutrition
+- **Philosophy**: Apply **[Elite Training Philosophy](../training-philosophy/overview)** consistency principles
 
 ---
 

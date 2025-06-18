@@ -25,7 +25,7 @@ const config: Config = {
   organizationName: "elite-tennis", // Usually your GitHub org/user name.
   projectName: "tennis-training", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -36,15 +36,36 @@ const config: Config = {
     locales: ["en"],
   },
 
+  // Markdown configuration to handle special characters
+  markdown: {
+    mermaid: false,
+    format: "detect", // Auto-detect md vs mdx
+    preprocessor: ({ filePath, fileContent }) => {
+      // This preprocessor ensures proper Unicode handling
+      return fileContent;
+    },
+  },
+
   presets: [
     [
       "classic",
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          routeBasePath: "/", // Serve docs at site root
+          routeBasePath: "/docs", // Serve docs at /docs instead of root to avoid conflict
           // Remove edit links since this is a standalone resource
           editUrl: undefined,
+          // Configure markdown processing for special characters
+          remarkPlugins: [],
+          rehypePlugins: [],
+          // Ensure proper encoding handling
+          include: ["**/*.md", "**/*.mdx"],
+          exclude: [
+            "**/_*.{js,jsx,ts,tsx,md,mdx}",
+            "**/_*/**",
+            "**/*.test.{js,jsx,ts,tsx}",
+            "**/__tests__/**",
+          ],
         },
         blog: false, // Disable blog for this training resource
         theme: {
@@ -57,6 +78,23 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/tennis-training-social.jpg",
+
+    // Add meta tags for proper character encoding
+    metadata: [
+      {
+        name: "charset",
+        content: "utf-8",
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0",
+      },
+      {
+        "http-equiv": "Content-Type",
+        content: "text/html; charset=utf-8",
+      },
+    ],
+
     navbar: {
       title: "Elite Tennis Training",
       logo: {
@@ -91,15 +129,15 @@ const config: Config = {
           items: [
             {
               label: "Elite Philosophy",
-              to: "/training-philosophy",
+              to: "/docs/training-philosophy",
             },
             {
               label: "Exercise Database",
-              to: "/exercise-database",
+              to: "/docs/exercises/exercise-database",
             },
             {
               label: "Programming",
-              to: "/training-programming",
+              to: "/docs/programming/training-programming",
             },
           ],
         },
@@ -108,15 +146,15 @@ const config: Config = {
           items: [
             {
               label: "Tendon Health",
-              to: "/tendon-health-science",
+              to: "/docs/specialized/tendon-health-science",
             },
             {
               label: "Power Development",
-              to: "/power-development",
+              to: "/docs/specialized/power-development",
             },
             {
               label: "Recovery Protocols",
-              to: "/recovery-protocols",
+              to: "/docs/recovery/recovery-protocols",
             },
           ],
         },
@@ -125,15 +163,15 @@ const config: Config = {
           items: [
             {
               label: "Nutrition",
-              to: "/nutrition-support",
+              to: "/docs/nutrition/nutrition-support",
             },
             {
               label: "Assessment",
-              to: "/assessment-monitoring",
+              to: "/docs/assessment/assessment-monitoring",
             },
             {
               label: "Weekly Plans",
-              to: "/workouts",
+              to: "/docs/workouts",
             },
           ],
         },

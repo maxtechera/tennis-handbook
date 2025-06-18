@@ -14,28 +14,28 @@ This comprehensive training programming system is organized into specialized mod
 
 ### Core Programming Components
 
-**[03a_periodization_models.md](03a_periodization_models.md)**
+**[Periodization Models](./periodization-models)**
 
 - Concurrent training management and interference mitigation
 - Linear, block, and undulating periodization models
 - Seasonal programming frameworks
 - Advanced periodization concepts for tennis
 
-**[03b_training_templates.md](03b_training_templates.md)**
+**[Training Templates](./training-templates)**
 
 - 3-day, 4-day, and 5-day training templates
 - Beginner, intermediate, and advanced workout structures
 - Exercise selection and volume distribution guidelines
 - Progressive overload methods and deload strategies
 
-**[03c_auto_regulation.md](03c_auto_regulation.md)**
+**[Auto-Regulation](./auto-regulation)**
 
 - RPE-based training adjustments
 - Performance-based modifications
 - Fatigue indicators and management protocols
 - Program modification guidelines
 
-**[03d_competition_preparation.md](03d_competition_preparation.md)**
+**[Competition Preparation](./competition-preparation)**
 
 - Tapering protocols for peak performance
 - Competition week management

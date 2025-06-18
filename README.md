@@ -1,145 +1,115 @@
 # Elite Tennis Training Research Collection
 
-_A comprehensive, research-backed resource for tennis-specific training program development_
+**Professional tennis training website built with Docusaurus**
 
-## 📚 **Collection Overview**
+🌐 **[View the Live Training Website →](http://localhost:3000)**
 
-This research collection has been organized into specialized modules for easy navigation, updating, and implementation. Each file focuses on specific aspects of tennis training while maintaining integration with the overall system.
+## 🎾 About This Project
 
-## 🗂️ **File Structure & Navigation**
+This repository contains a comprehensive, research-backed tennis training resource featuring elite methodologies from world-class coaches and evidence-based sports science. The content has been organized into a professional documentation website for optimal navigation and implementation.
 
-### **Core Training Philosophy**
+## 📁 Project Structure
 
-- **[01_elite_training_philosophy.md](01_elite_training_philosophy.md)** - Training philosophies and methods from world-class coaches and athletes
-  - Carlos Alcaraz & Juan Carlos Ferrero development approach
-  - Marco Panichi's (Sinner's coach) advanced methodologies
-  - Marco Luparo's tennis-specific conditioning principles
-  - Dr. Mike Israetel's evidence-based programming
-  - Jeff Nippard's powerbuilding philosophy
+```
+tennis-workout/
+├── website/                 # 🌐 MAIN CONTENT (Docusaurus site)
+│   ├── docs/               # All training content lives here
+│   │   ├── training-philosophy/
+│   │   ├── exercises/
+│   │   ├── programming/
+│   │   ├── specialized/
+│   │   ├── recovery/
+│   │   ├── nutrition/
+│   │   ├── assessment/
+│   │   └── workouts/       # 12-week training program
+│   ├── src/                # Website components
+│   ├── static/             # Assets
+│   └── README.md           # Website setup instructions
+└── source-archive/         # Original markdown files (backup)
+```
 
-### **Exercise Systems**
+## 🚀 Quick Start
 
-- **[02_exercise_database.md](02_exercise_database.md)** - Comprehensive exercise library organized by training goals
-  - Lower body power & strength exercises
-  - Upper body power & strength movements
-  - Core & rotational power development
-  - Plyometric & speed training
-  - Mobility & movement preparation protocols
+### Running the Website Locally
 
-### **Program Design**
+```bash
+cd website
+nvm use 20
+pnpm install
+pnpm start
+```
 
-- **[03_training_programming.md](03_training_programming.md)** - Complete programming frameworks and templates
-  - Periodization models and training blocks
-  - 3-day, 4-day, and 5-day training templates
-  - Beginner to advanced progressions
-  - Competition preparation strategies
+The website will be available at `http://localhost:3000`
 
-### **Specialized Training Methods**
+### Content Editing
 
-- **[04_tendon_health_science.md](04_tendon_health_science.md)** - Advanced tendon adaptation and injury prevention
+**All content editing should now be done in the `website/docs/` directory.**
 
-  - Research-based loading protocols
-  - Heavy Slow Resistance (HSR) methods
-  - Progressive tendon strengthening
-  - Tennis-specific injury prevention
+- **Training Philosophy**: `website/docs/training-philosophy/`
+- **Exercise Database**: `website/docs/exercises/`
+- **12-Week Program**: `website/docs/workouts/`
+- **Specialized Methods**: `website/docs/specialized/`
+- **Recovery & Nutrition**: `website/docs/recovery/` and `website/docs/nutrition/`
 
-- **[05_recovery_protocols.md](05_recovery_protocols.md)** - Recovery optimization and fatigue management
+## 🎯 What's Included
 
-  - Daily and weekly recovery protocols
-  - Auto-regulation and monitoring systems
-  - Fatigue assessment and intervention
-  - Sleep and stress management
+### **Elite Training Methodologies**
 
-- **[06_power_development.md](06_power_development.md)** - Advanced power training methodologies
+- Carlos Alcaraz & Juan Carlos Ferrero methods
+- Jannik Sinner & Marco Panichi approaches
+- Evidence-based programming principles
 
-  - Post-Activation Potentiation (PAP) protocols
-  - Contrast training methods
-  - Speed-strength continuum applications
-  - Tennis-specific power development
+### **Comprehensive Training System**
 
-- **[07_concurrent_training.md](07_concurrent_training.md)** - Integration of tennis and strength training
-  - Interference effect mitigation
-  - Training sequencing strategies
-  - Energy system management
-  - Competition phase training
+- Complete exercise database with tennis-specific applications
+- 12-week progressive training program
+- Advanced recovery and nutrition protocols
+- Performance assessment and monitoring tools
 
-### **Support Systems**
+### **Specialized Training Areas**
 
-- **[08_nutrition_support.md](08_nutrition_support.md)** - Nutritional guidelines for optimal training adaptation
+- Tendon health science and protocols
+- Power development and PAP methods
+- Speed-strength continuum applications
+- Neural adaptations for tennis performance
 
-  - Pre, during, and post-training nutrition
-  - Daily nutritional requirements
-  - Competition nutrition strategies
-  - Hydration protocols
+## 🌐 Deployment
 
-- **[09_assessment_monitoring.md](09_assessment_monitoring.md)** - Testing, tracking, and evaluation methods
-  - Performance testing batteries
-  - Subjective and objective monitoring
-  - Tennis-specific assessments
-  - Long-term tracking strategies
+The website can be deployed to:
 
-## 🎯 **Quick Start Guide**
+- **GitHub Pages** (recommended)
+- **Netlify**
+- **Vercel**
+- Any static hosting service
 
-### **For Beginners:**
+See `website/README.md` for detailed deployment instructions.
 
-1. Start with **[01_elite_training_philosophy.md](01_elite_training_philosophy.md)** to understand core principles
-2. Review **[02_exercise_database.md](02_exercise_database.md)** for exercise selection
-3. Use **[03_training_programming.md](03_training_programming.md)** 3-day template
-4. Implement **[05_recovery_protocols.md](05_recovery_protocols.md)** basic recovery methods
+## 📚 Content Philosophy
 
-### **For Intermediate Athletes:**
+This collection maintains **maximum flexibility** for program design while providing comprehensive guidance based on:
 
-1. Review **[04_tendon_health_science.md](04_tendon_health_science.md)** for injury prevention
-2. Implement **[06_power_development.md](06_power_development.md)** basic PAP protocols
-3. Use **[03_training_programming.md](03_training_programming.md)** 4-day template
-4. Apply **[07_concurrent_training.md](07_concurrent_training.md)** integration strategies
+- **Tennis Specificity**: All methods prioritize court performance transfer
+- **Progressive Development**: Systematic advancement respecting adaptation timelines
+- **Individual Adaptation**: Flexible programming based on athlete response
+- **Recovery Integration**: Recovery protocols as important as training stress
+- **Evidence-Based Methods**: Scientific backing combined with elite practical experience
 
-### **For Advanced Athletes:**
+## 🔄 Making Changes
 
-1. Study **[06_power_development.md](06_power_development.md)** advanced methods
-2. Implement **[05_recovery_protocols.md](05_recovery_protocols.md)** auto-regulation systems
-3. Use **[03_training_programming.md](03_training_programming.md)** 5-day template
-4. Apply **[09_assessment_monitoring.md](09_assessment_monitoring.md)** comprehensive tracking
+1. **Edit content** in `website/docs/` directories
+2. **Test locally** with `pnpm start`
+3. **Build for production** with `pnpm build`
+4. **Deploy** using your preferred method
 
-## 🔬 **Research Foundation**
+## 🏆 Target Audience
 
-This collection integrates:
-
-- **Elite athlete insights** from world-class tennis professionals
-- **Evidence-based methods** from sports science research
-- **Practical applications** tested in real-world training environments
-- **Progressive development** suitable for all training levels
-
-## 🏆 **Key Training Principles**
-
-1. **Tennis Specificity** - All exercises and methods prioritize tennis performance transfer
-2. **Progressive Loading** - Systematic advancement from foundation to peak performance
-3. **Recovery Integration** - Recovery planned as carefully as training stress
-4. **Individual Adaptation** - Programs adjusted based on athlete response and monitoring
-5. **Injury Prevention** - Proactive approach to address common tennis injury patterns
-6. **Concurrent Training** - Optimal management of tennis and strength training integration
-
-## 📈 **Implementation Philosophy**
-
-This collection maintains **maximum flexibility** for program design while providing comprehensive guidance on:
-
-- Exercise selection and progression
-- Training methods and applications
-- Recovery protocols and monitoring
-- Assessment and evaluation strategies
-
-Programs can be customized based on individual needs, training experience, available time, and specific goals while maintaining adherence to proven principles used by the world's best tennis athletes and coaches.
-
-## 🔄 **Updates & Maintenance**
-
-Each file is designed for independent updating while maintaining integration with the overall system. This modular approach allows for:
-
-- Easy addition of new research and methods
-- Focused updates to specific training areas
-- Simplified navigation and reference
-- Enhanced usability for coaches and athletes
+- **Tennis players** seeking elite-level training methods
+- **Coaches** implementing comprehensive training programs
+- **Sports scientists** interested in tennis-specific applications
+- **Fitness professionals** working with racquet sport athletes
 
 ---
 
-_Last Updated: [Current Date]_
-_Total Research Base: 1000+ lines of comprehensive tennis training methodology_
+_This research collection represents 1000+ lines of comprehensive tennis training methodology, continuously updated with the latest insights from elite tennis performance._
+
+**🎾 Start exploring: [Launch the Training Website →](http://localhost:3000)**

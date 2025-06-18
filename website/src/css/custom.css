@@ -18,7 +18,7 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -27,4 +27,47 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure proper Unicode character rendering */
+* {
+  -webkit-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  text-rendering: optimizeLegibility;
+}
+
+/* Support for special characters in tables and content */
+table,
+th,
+td,
+p,
+span {
+  font-variant-numeric: normal;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+/* Ensure special characters (×, –, —) render correctly */
+.markdown > *,
+.theme-doc-markdown > * {
+  unicode-bidi: normal;
+  direction: ltr;
+}
+
+/* Fix any potential character encoding issues in tables */
+table {
+  font-variant-numeric: tabular-nums;
+  border-collapse: collapse;
+}
+
+/* Ensure proper spacing around special characters */
+td {
+  white-space: nowrap;
+}
+
+/* Special handling for time ranges and sets×reps notation */
+td:contains("×"),
+td:contains("–"),
+td:contains("—") {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }

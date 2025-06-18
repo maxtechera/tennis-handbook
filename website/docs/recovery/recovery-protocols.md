@@ -8,7 +8,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ## Specialized Recovery Files
 
-### 🌅 **[Daily Recovery Protocols & Routines](05a_daily_recovery.md)**
+### 🌅 **[Daily Recovery Protocols & Routines](./daily-recovery)**
 
 - **The Alcaraz Method** with non-negotiable morning and evening routines
 - **Sleep optimization protocols** with strategic napping guidelines
@@ -17,7 +17,7 @@ _This content has been reorganized into specialized files for improved navigatio
 - **Technology & monitoring tools** for daily assessment and enhancement
 - **Implementation guidelines** for building sustainable recovery habits
 
-### 📊 **[Advanced Recovery Methods & Fatigue Monitoring](05b_advanced_recovery.md)**
+### 📊 **[Advanced Recovery Methods & Fatigue Monitoring](./advanced-recovery)**
 
 - **Fatigue monitoring frameworks** with subjective and objective assessment protocols
 - **Advanced recovery methods** including heat/cold therapy and manual therapy
@@ -32,7 +32,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For Daily Recovery Implementation:**
 
-➡️ Start with **[05a_daily_recovery.md](05a_daily_recovery.md)**
+➡️ Start with **[Daily Recovery](./daily-recovery)**
 
 - Essential daily routines and non-negotiable habits
 - Sleep optimization and strategic napping protocols
@@ -41,7 +41,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For Advanced Recovery & Monitoring:**
 
-➡️ Start with **[05b_advanced_recovery.md](05b_advanced_recovery.md)**
+➡️ Start with **[Advanced Recovery](./advanced-recovery)**
 
 - Sophisticated fatigue monitoring and assessment
 - Advanced recovery modalities and technologies
@@ -54,15 +54,15 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **Recovery-Training Integration:**
 
-- **Programming**: Coordinate with **[03_training_programming.md](03_training_programming.md)** for periodization alignment
-- **Philosophy**: Apply **[01_elite_training_philosophy.md](01_elite_training_philosophy.md)** principles in recovery protocols
-- **Assessment**: Monitor with **[08_assessment_monitoring.md](08_assessment_monitoring.md)** frameworks
+- **Programming**: Coordinate with **[Training Programming](../programming/training-programming)** for periodization alignment
+- **Philosophy**: Apply **[Elite Training Philosophy](../training-philosophy/overview)** principles in recovery protocols
+- **Assessment**: Monitor with **[Assessment & Monitoring](../assessment/assessment-monitoring)** frameworks
 
 ### **Performance Support:**
 
-- **Nutrition**: Support with **[07_nutrition_support.md](07_nutrition_support.md)** protocols
-- **Tendon Health**: Align with **[04_tendon_health_science.md](04_tendon_health_science.md)** loading protocols
-- **Power Development**: Balance with **[06_power_development.md](06_power_development.md)** training demands
+- **Nutrition**: Support with **[Nutrition Support](../nutrition/nutrition-support)** protocols
+- **Tendon Health**: Align with **[Tendon Health Science](../specialized/tendon-health-science)** loading protocols
+- **Power Development**: Balance with **[Power Development](../specialized/power-development)** training demands
 
 ---
 

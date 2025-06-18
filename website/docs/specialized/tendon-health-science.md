@@ -14,14 +14,14 @@ This comprehensive tendon health system is organized into specialized modules fo
 
 ### Core Tendon Health Components
 
-**[04a_tendon_science_foundations.md](04a_tendon_science_foundations.md)**
+**[Tendon Science Foundations](./tendon-science-foundations)**
 
 - Scientific foundation of tendon adaptation
 - Heavy Slow Resistance (HSR) protocols
 - Progressive loading frameworks
 - Collagen synthesis and remodeling science
 
-**[04b_tennis_specific_tendon_protocols.md](04b_tennis_specific_tendon_protocols.md)**
+**[Tennis-Specific Tendon Protocols](./tennis-specific-tendon-protocols)**
 
 - Tennis-specific tendon applications
 - Court surface adaptations

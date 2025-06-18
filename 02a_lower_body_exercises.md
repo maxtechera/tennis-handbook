@@ -1,1 +1,0 @@
-# Lower Body Exercise Database

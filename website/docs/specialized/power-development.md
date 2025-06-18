@@ -8,7 +8,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ## Specialized Power Development Files
 
-### 🚀 **[Post-Activation Potentiation (PAP) & Contrast Training](06a_post_activation_potentiation.md)**
+### 🚀 **[Post-Activation Potentiation (PAP) & Contrast Training](./post-activation-potentiation)**
 
 - **Scientific foundation** and physiological mechanisms of PAP
 - **Contrast training applications** for upper and lower body
@@ -18,7 +18,7 @@ _This content has been reorganized into specialized files for improved navigatio
 - **Programming integration** with tennis training
 - **Monitoring and assessment** of PAP effectiveness
 
-### ⚡ **[Speed-Strength Continuum & Load Management](06b_speed_strength_continuum.md)**
+### ⚡ **[Speed-Strength Continuum & Load Management](./speed-strength-continuum)**
 
 - **Speed-strength continuum theory** and force-velocity relationships
 - **Load ranges and adaptations** across the strength-speed spectrum
@@ -28,7 +28,7 @@ _This content has been reorganized into specialized files for improved navigatio
 - **Advanced training methods** including cluster and velocity-based training
 - **Assessment and monitoring** across all load ranges
 
-### 🧠 **[Neural Adaptations & Powerbuilding Integration](06c_neural_adaptations.md)**
+### 🧠 **[Neural Adaptations & Powerbuilding Integration](./neural-adaptations)**
 
 - **Neural adaptation principles** including RFD and motor unit recruitment
 - **Powerbuilding integration** for strength-physique balance
@@ -44,7 +44,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For PAP Training Focus:**
 
-➡️ Start with **[06a_post_activation_potentiation.md](06a_post_activation_potentiation.md)**
+➡️ Start with **[Post-Activation Potentiation](./post-activation-potentiation)**
 
 - Essential for explosive power development
 - Contrast training methods for tennis athletes
@@ -52,7 +52,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For Load Management & Programming:**
 
-➡️ Start with **[06b_speed_strength_continuum.md](06b_speed_strength_continuum.md)**
+➡️ Start with **[Speed-Strength Continuum](./speed-strength-continuum)**
 
 - Understanding optimal load ranges for different adaptations
 - Tennis-specific power development progressions
@@ -60,7 +60,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For Neural Development & Physique Balance:**
 
-➡️ Start with **[06c_neural_adaptations.md](06c_neural_adaptations.md)**
+➡️ Start with **[Neural Adaptations](./neural-adaptations)**
 
 - Advanced neural training concepts
 - Balancing performance and physique development
@@ -72,18 +72,18 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **Combine with Training Programming:**
 
-- Reference **[03_training_programming.md](03_training_programming.md)** for periodization integration
-- Use **[05a_daily_recovery.md](05a_daily_recovery.md)** for recovery between power sessions
+- Reference **[Training Programming](../programming/training-programming)** for periodization integration
+- Use **[Daily Recovery](../recovery/daily-recovery)** for recovery between power sessions
 
 ### **Support with Exercise Database:**
 
-- Reference **[02a_lower_body_exercises.md](02a_lower_body_exercises.md)** for lower body power exercises
-- Use **[02b_upper_body_exercises.md](02b_upper_body_exercises.md)** for upper body power movements
+- Reference **[Lower Body Exercises](../exercises/lower-body-exercises)** for lower body power exercises
+- Use **[Upper Body Exercises](../exercises/upper-body-exercises)** for upper body power movements
 
 ### **Monitor with Assessment Protocols:**
 
-- Apply **[08a_performance_testing.md](08a_performance_testing.md)** for power assessment
-- Use **[08b_injury_prevention.md](08b_injury_prevention.md)** for safe power development
+- Apply **[Performance Testing](../assessment/performance-testing)** for power assessment
+- Use **[Assessment & Monitoring](../assessment/assessment-monitoring)** for safe power development
 
 ---
 

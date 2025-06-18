@@ -8,7 +8,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ## Specialized Assessment Files
 
-### 📊 **[Performance Testing & Assessment Framework](08a_performance_testing.md)**
+### 📊 **[Performance Testing & Assessment Framework](./performance-testing)**
 
 - **Performance testing battery** with monthly and quarterly protocols
 - **Subjective monitoring** including daily wellness questionnaires
@@ -19,15 +19,14 @@ _This content has been reorganized into specialized files for improved navigatio
 - **Data interpretation** and statistical analysis methods
 - **Program adjustments** based on performance data
 
-### 🛡️ **[Injury Prevention & Prehabilitation](08b_injury_prevention.md)**
+### 🛡️ **Injury Prevention & Prehabilitation**
 
-- **Injury prevention strategies** for common tennis injuries
-- **Prehabilitation protocols** and corrective exercise programs
-- **Movement screening** and assessment frameworks
-- **Risk factor identification** and mitigation strategies
-- **Equipment considerations** for injury prevention
-- **Return-to-play protocols** following injury
-- **Long-term injury prevention** planning and implementation
+_These topics are integrated throughout the training components:_
+
+- **Tendon health strategies** → See [Tendon Health Science](../specialized/tendon-health-science)
+- **Movement quality** → See [Neural Adaptations](../specialized/neural-adaptations)
+- **Recovery protocols** → See [Recovery Systems](../recovery/recovery-protocols)
+- **Exercise selection** → See [Exercise Database](../exercises/exercise-database)
 
 ---
 
@@ -35,7 +34,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For Performance Monitoring:**
 
-➡️ Start with **[08a_performance_testing.md](08a_performance_testing.md)**
+➡️ Start with **[Performance Testing](./performance-testing)**
 
 - Comprehensive testing protocols for power, strength, and speed
 - Daily and weekly monitoring strategies
@@ -44,12 +43,12 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **For Injury Prevention:**
 
-➡️ Start with **[08b_injury_prevention.md](08b_injury_prevention.md)**
+➡️ Explore integrated approaches:
 
-- Tennis-specific injury prevention strategies
-- Prehabilitation exercise protocols
-- Movement screening and corrective approaches
-- Equipment and training modifications for injury risk reduction
+- **Tendon health** → [Tendon Health Science](../specialized/tendon-health-science)
+- **Movement quality** → [Neural Adaptations](../specialized/neural-adaptations)
+- **Recovery strategies** → [Recovery Protocols](../recovery/recovery-protocols)
+- **Exercise selection** → [Exercise Database](../exercises/exercise-database)
 
 ---
 
@@ -57,21 +56,21 @@ _This content has been reorganized into specialized files for improved navigatio
 
 ### **Performance Testing Integration:**
 
-- **Power Assessment**: Coordinate with **[06a_post_activation_potentiation.md](06a_post_activation_potentiation.md)** for PAP monitoring
-- **Strength Testing**: Align with **[03_training_programming.md](03_training_programming.md)** for periodization assessment
-- **Recovery Monitoring**: Integrate with **[05a_daily_recovery.md](05a_daily_recovery.md)** protocols
+- **Power Assessment**: Coordinate with **[Post-Activation Potentiation](../specialized/post-activation-potentiation)** for PAP monitoring
+- **Strength Testing**: Align with **[Training Programming](../programming/training-programming)** for periodization assessment
+- **Recovery Monitoring**: Integrate with **[Daily Recovery](../recovery/daily-recovery)** protocols
 
 ### **Injury Prevention Integration:**
 
-- **Exercise Selection**: Reference **[02_exercise_database.md](02_exercise_database.md)** for corrective exercises
-- **Tendon Health**: Coordinate with **[04_tendon_health_science.md](04_tendon_health_science.md)** protocols
-- **Movement Quality**: Apply with **[06b_speed_strength_continuum.md](06b_speed_strength_continuum.md)** training
+- **Exercise Selection**: Reference **[Exercise Database](../exercises/exercise-database)** for corrective exercises
+- **Tendon Health**: Coordinate with **[Tendon Health Science](../specialized/tendon-health-science)** protocols
+- **Movement Quality**: Apply with **[Speed-Strength Continuum](../specialized/speed-strength-continuum)** training
 
 ### **Recovery Assessment Integration:**
 
-- **Daily Monitoring**: Connect with **[05a_daily_recovery.md](05a_daily_recovery.md)** protocols
-- **Fatigue Management**: Align with **[05b_advanced_recovery.md](05b_advanced_recovery.md)** strategies
-- **Training Load**: Coordinate with **[03_training_programming.md](03_training_programming.md)** planning
+- **Daily Monitoring**: Connect with **[Daily Recovery](../recovery/daily-recovery)** protocols
+- **Fatigue Management**: Align with **[Advanced Recovery](../recovery/advanced-recovery)** strategies
+- **Training Load**: Coordinate with **[Training Programming](../programming/training-programming)** planning
 
 ---
 

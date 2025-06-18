@@ -1,0 +1,87 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+This is a Docusaurus-powered website for Elite Tennis Training Research - a comprehensive collection of research-backed tennis-specific training programs and methodologies. The project focuses on elite coaching methods from world-class coaches like Juan Carlos Ferrero (Alcaraz's coach) and Marco Panichi (Sinner's coach).
+
+## Development Commands
+
+### Setup
+```bash
+cd website
+nvm use 20
+pnpm install
+```
+
+### Development
+```bash
+pnpm start          # Start development server at http://localhost:3000
+pnpm build          # Build for production
+pnpm serve          # Serve built site locally
+pnpm clear          # Clear Docusaurus cache
+pnpm typecheck      # Run TypeScript type checking
+```
+
+### Deployment
+```bash
+pnpm deploy         # Deploy to GitHub Pages
+```
+
+## Architecture Overview
+
+### Project Structure
+- **Root**: Contains README.md and project-level documentation
+- **website/**: Main Docusaurus application containing all website code and content
+- **source-archive/**: Backup of original markdown files (not actively used)
+
+### Website Architecture
+- **Docusaurus v3.8.1** with TypeScript support
+- **Two main sidebar configurations**: Training Guide and Weekly Workouts
+- **Custom React components** for enhanced homepage experience
+- **Static site generation** optimized for documentation
+
+### Key Configuration Files
+- `website/docusaurus.config.ts`: Main site configuration, navigation, metadata
+- `website/sidebars.ts`: Defines navigation structure for both main sidebars
+- `website/package.json`: Dependencies and scripts
+- `website/tsconfig.json`: TypeScript configuration extending Docusaurus defaults
+
+### Content Organization
+All content lives in `website/docs/` with the following structure:
+- `training-philosophy/`: Elite coaching methods and philosophies
+- `exercises/`: Comprehensive exercise database
+- `programming/`: Training program design and templates
+- `specialized/`: Advanced methods (tendon health, power development, etc.)
+- `recovery/`: Recovery protocols and methods
+- `nutrition/`: Performance and daily nutrition guidance
+- `assessment/`: Performance testing and monitoring
+- `workouts/`: 12-week progressive training program
+
+### Component Structure
+- **Homepage**: Custom React components with tennis-specific content paths
+- **Layout**: Standard Docusaurus theming with custom CSS overrides
+- **Navigation**: Two-sidebar system separating training theory from workout plans
+
+## Development Notes
+
+### Content Management
+- All content editing should be done in `website/docs/` directories
+- Markdown files use frontmatter with `sidebar_position` for ordering
+- Links use Docusaurus markdown linking syntax: `[text](/path/to/doc)`
+
+### Styling
+- Custom CSS in `website/src/css/custom.css`
+- Uses Docusaurus CSS variables and theming system
+- Responsive design with mobile-first approach
+
+### Node.js Requirements
+- Node.js 18+ required (project uses Node.js 20 via nvm)
+- Uses pnpm as package manager
+- TypeScript configured for React and Docusaurus types
+
+### Deployment Configuration
+- Configured for GitHub Pages deployment
+- Production URL: https://tennis-training.dev
+- Organization: elite-tennis, Project: tennis-training
