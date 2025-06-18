@@ -6,6 +6,10 @@ sidebar_position: 1
 
 _Comprehensive exercise library organized by training goals and movement patterns_
 
+:::info **Connected to Your Training**
+Every exercise in this database is used strategically throughout the [**12-Week Elite Program**](/workouts/overview). See specific applications by browsing the weekly plans, where exercises are combined into complete training sessions.
+:::
+
 ## Table of Contents
 
 - [Lower Body Power & Strength](#lower-body-power--strength)

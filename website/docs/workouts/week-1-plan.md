@@ -75,13 +75,13 @@ sidebar_position: 2
 | ---------------------------- | ------------ | ----- | ---------------------------------------------------- | -------------------------------------------- |
 | **Barbell Back Squat (HSR)** | 4×8          | 3 min | 4-sec eccentric, 1-sec pause at bottom, explosive up | "Sink down slow, pause, drive through heels" |
 |                              |              |       | 70-75% estimated 1RM                                 | "Chest up, knees track over toes"            |
-|                              |              |       | Focus on tendon loading                              | "Feel quads working during pause"            |
+|                              |              |       | Focus on tendon loading ([HSR Science](/specialized/tendon-health-science)) | "Feel quads working during pause"            |
 | **Bulgarian Split Squat**    | 3×10 per leg | 90s   | Address imbalances from assessment                   | "Back leg for balance only"                  |
 |                              |              |       | Controlled 2-sec down, 1-sec up                      | "Front leg does all the work"                |
 |                              |              |       | Note weaker side for extra attention                 | "Drive through front heel"                   |
 | **Romanian Deadlift**        | 3×10         | 2 min | Emphasize perfect hip hinge pattern                  | "Push hips back first"                       |
 |                              |              |       | 3-sec eccentric, feel hamstring stretch              | "Chest up, shoulders back"                   |
-|                              |              |       | Bar stays close to legs                              | "Feel stretch in hamstrings"                 |
+|                              |              |       | Bar stays close to legs ([Form Guide](/exercises/exercise-database#romanian-deadlifts)) | "Feel stretch in hamstrings"                 |
 
 #### **Tendon Conditioning Block**
 

@@ -6,6 +6,14 @@ sidebar_position: 1
 
 Welcome to the comprehensive 12-week tennis training program designed using elite-level methodologies and evidence-based principles.
 
+:::info **Built on Elite Foundations**
+This program integrates concepts from every section of the handbook:
+- **Elite methods** from [Ferrero-Alcaraz](/training-philosophy/ferrero-alcaraz-methods) and [Panichi-Sinner](/training-philosophy/sinner-panichi-methods)
+- **Exercise selection** from the complete [Exercise Database](/exercises/exercise-database)
+- **Advanced methods** including [Tendon Health Science](/specialized/tendon-health-science) and [Power Development](/specialized/power-development)
+- **Recovery protocols** detailed in [Recovery & Regeneration](/recovery/recovery-protocols)
+:::
+
 ## 🎯 Program Overview
 
 This progressive 12-week program integrates:

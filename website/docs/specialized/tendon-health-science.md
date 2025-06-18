@@ -6,6 +6,10 @@ sidebar_position: 5
 
 _Comprehensive tendon health framework for tennis athletes_
 
+:::note **Applied Throughout Your Training**
+The HSR (Heavy Slow Resistance) protocols detailed here are systematically implemented starting in [Week 1](/workouts/week-1-plan) and progress through all phases of the [12-Week Program](/workouts/overview). See specific tendon conditioning exercises in the [Exercise Database](/exercises/exercise-database).
+:::
+
 ---
 
 ## Navigation Index

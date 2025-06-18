@@ -5,8 +5,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Elite Tennis Training Research",
-  tagline: "Comprehensive, research-backed tennis-specific training programs",
+  title: "Complete Tennis Training Handbook",
+  tagline: "Elite methodologies, comprehensive science, practical application",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -96,7 +96,7 @@ const config: Config = {
     ],
 
     navbar: {
-      title: "Elite Tennis Training",
+      title: "Tennis Training Handbook",
       logo: {
         alt: "Tennis Training Logo",
         src: "img/logo.svg",
@@ -106,13 +106,13 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "trainingSidebar",
           position: "left",
-          label: "Training Guide",
+          label: "Complete Handbook",
         },
         {
           type: "docSidebar",
           sidebarId: "workoutsSidebar",
           position: "left",
-          label: "Weekly Workouts",
+          label: "12-Week Program",
         },
         {
           href: "https://github.com/elite-tennis/tennis-training",

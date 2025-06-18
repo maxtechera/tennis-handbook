@@ -6,6 +6,10 @@ sidebar_position: 2
 
 _Elite training methodology from one of tennis's most successful player-coach partnerships_
 
+:::tip **See It In Action**
+Alcaraz's training methods are directly integrated throughout the [**12-Week Elite Program**](/workouts/overview), especially the daily stretching protocols and medicine ball power development. Look for "Alcaraz Method" references in the weekly training plans.
+:::
+
 ## Development Philosophy
 
 ### Core Principles
