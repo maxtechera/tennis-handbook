@@ -686,6 +686,134 @@ All exercises in this database are:
 
 ---
 
+## Additional Professional Player Training Programs (2024 Research)
+
+### Rafael Nadal's Training System
+
+**Daily Training Schedule:**⁴⁰
+- **Morning**: Wake at 8:30 AM, tennis training 9:30 AM - 1:30 PM (4 hours court time)
+- **Afternoon**: Gym training 4:30 PM - 7:00 PM (2.5 hours strength/conditioning)
+- **Total**: 6.5 hours daily training combining court work and physical preparation
+
+**Strength Training Components:**⁴¹
+
+**Power Plate Training (Whole-Body Vibration):**
+- **Platform Work**: Standing flat-footed, then on toes for calf development
+- **Single-Leg Stability**: Hold platform with hands, stand on one leg
+- **Seated Vibration**: Feet on platform, arms extended for core activation
+- **Frequency**: 30-50 muscle contractions per second vs. 1-2 without vibration
+
+**Resistance Band Circuit:**
+- **Standing Wall Anchors**: Knee bands for front bends (standing sit-ups)
+- **Applications**: Sporadic burst training for tennis-specific movement patterns
+- **Benefits**: Strength and mobility development for gameplay demands
+
+**Bodyweight Training Protocol:**
+- **Pull-ups**: Slight body raises, repeated for 60-second intervals
+- **Push-up Variations**: Elevated stands to maximize dip range
+- **Core Work**: Standing sit-ups anchored with resistance bands
+- **Integration**: Medicine ball and resistance band intensity modifications
+
+**Seasonal Periodization:**⁴²
+- **Off-Season**: 1-2 hours daily weight training (bench press, trap pull-downs, leg extensions, bicep curls)
+- **In-Season**: Tennis-specific exercises with reduced gym volume
+- **Tournament Prep**: Light resistance work focused on movement preparation
+
+### Novak Djokovic's Comprehensive Program
+
+**Daily Training Structure:**⁴³
+- **6:00 AM**: 20-minute yoga session (daily consistency)
+- **9:00 AM**: Court training with partner (1.5-2 hours variable intensity)
+- **12:00 PM**: Lunch break and recovery
+- **2:00 PM**: Weight/resistance training (1 hour structured session)
+- **3:00 PM**: Protein drink for immediate recovery
+- **4:30 PM**: Second court session (90 minutes skill development)
+- **6:00 PM**: Cool-down stretching and recovery protocols
+
+**Specific Programming Details:**⁴⁴
+
+**Warm-up Protocol (15 minutes):**
+- **Cardiovascular**: 5-minute jog or stationary bike
+- **Dynamic Sequence**: 10-15 reps each exercise, no rest between:
+  - Jumping jacks, walking high knees, walking high kicks
+  - Squat thrusts, lunge with side bend, reverse lunge with backward reach
+  - Low side-to-side lunge, inverted hamstring, inchworm
+
+**Calisthenics Structure:**⁴⁵
+- **Frequency**: 3 times per week
+- **Format**: 3-4 sets of 10-12 repetitions per exercise
+- **Exercises**: Push-ups, pull-ups, squats, lunges, box jumps, burpees
+- **Flexibility Integration**: 30-second holds progressing to 1-minute positions
+
+**Strength Training Exercises:**
+- **Upper Body**: Push-ups, pull-ups, tricep pull-downs, bench presses
+- **Lower Body**: Squats, lunges with plyometric integration
+- **Core**: Incorporated throughout all movements for tennis-specific stability
+
+### Andy Murray's Precision Program
+
+**Strength Training Protocol (Jez Green System):**⁴⁶
+
+**Core Workout Structure:**
+- **Format**: 6 sets of 5 reps for all primary exercises
+- **Method**: Strength exercise (A) immediately followed by plyometric (B)
+- **Goal**: Power development without excessive muscle bulk
+
+**Specific Exercise Programming:**
+- **Weighted Pull-ups**: 6 sets x 5 reps with 20kg weight belt
+- **Weighted Dips**: 6 sets x 5 reps with same 20kg loading
+- **Olympic Lifting**: 5 sets x 5 reps power cleans for session finisher
+
+**Daily Training Schedule (2024):**⁴⁷
+- **9:00 AM**: Physiotherapy session (injury prevention/recovery)
+- **9:30 AM**: 30-minute warm-up with strength coach
+- **10:00 AM - 12:00 PM**: Court training with coaching team
+- **2:00 PM**: Gym session (strength or mobility focus)
+- **4:00 PM**: Second physiotherapy session
+- **6:00 PM**: Training completion
+
+**Cardio Evolution:**⁴⁸
+- **Previous**: 400m track intervals (4 laps total volume)
+- **Current**: VersaClimber (zero-impact, high-intensity vertical cardio)
+- **Additional**: Resistance bungees and beach volleyball court sprint drills
+- **Recovery**: Ice baths immediately post-match, especially with next-day competition
+
+### Professional Programming Standards
+
+**Periodized Set/Rep Schemes:**⁴⁹
+
+**Phase 1 (Foundation - 6-8 weeks):**
+- **Frequency**: 2-3 sessions per week, minimum 1 day rest between
+- **Volume**: 8-10 reps, 2-4 sets
+- **Rest**: 1-2 minutes between sets
+- **Focus**: Movement quality and base strength development
+
+**Phase 2 (Maximum Strength):**
+- **Frequency**: 2-3 sessions per week
+- **Volume**: 6-8 exercises, 3-4 sets per exercise
+- **Load**: 85-95% 1RM for neural adaptations
+- **Focus**: Peak strength development
+
+**Phase 3 (Power/In-Season):**
+- **Frequency**: 2 sessions per week (maintenance)
+- **Volume**: 8-10 reps, 2-4 sets
+- **Rest**: 10-15 seconds between reps, 1+ minute between sets
+- **Focus**: Power transfer and injury prevention
+
+**Circuit Training Integration:**⁵⁰
+- **Frequency**: 2 times per week for strength endurance
+- **Format**: 1-minute exercise periods, 30-second rest intervals
+- **Circuits**: 2-3 complete rounds with 2-minute rest between circuits
+- **Duration**: Approximately 60 minutes per session
+
+**Professional Standards Integration:**⁵¹
+- **Traditional Approach**: "3 sets of 8" for general strength development
+- **Advanced Method**: "8 sets of 3" for superior strength adaptations
+- **Optimal Programming**: 3+ sets of 3-6 reps for maximum strength and power
+- **Tennis-Specific**: Loads close to maximum for strength, lighter loads for power transfer
+
+---
+
 ## Research References
 
 18. **Alcaraz Training Schedule**: Carlos Alcaraz's daily training includes 5-6 hours at Juan Carlos Ferrero's academy with specific timing for dynamic warm-ups and court practice ([ATP Tour: Alcaraz Preseason Training 2024](https://www.atptour.com/en/news/alcaraz-preseason-practice-december-2024))
@@ -727,6 +855,20 @@ All exercises in this database are:
 38. **Professional Aerobic Integration**: Elite tennis training incorporates structured daily aerobic components with morning base building, dynamic warm-ups, court-specific intervals, and active recovery protocols ([Applied Physiology of Tennis Performance, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC2653871/))
 
 39. **Training Intensity Zones**: Heart rate zone training for tennis players ranges from 50-60% for recovery to 90-100% for neuromuscular power, with specific applications for different training adaptations ([The Effect of Training Intensity on VO2max, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC4836566/))
+
+40. **Nadal Daily Training Schedule**: Rafael Nadal follows structured daily routine with 4 hours court training (9:30 AM-1:30 PM) and 2.5 hours gym work (4:30-7:00 PM), totaling 6.5 hours daily training ([Day in the Life: Rafael Nadal, Owaves](https://owaves.com/day-plan/day-life-rafael-nadal/))
+
+41-42. **Nadal Strength Components**: Training includes Power Plate vibration training (30-50 contractions/second), resistance band circuits, bodyweight protocols, and seasonal periodization with off-season weight training ([Man of Many: Rafael Nadal Workout Plan](https://manofmany.com/culture/fitness/rafael-nadal-tennis-diet-workout-plan))
+
+43. **Djokovic Daily Structure**: Novak Djokovic's comprehensive daily routine includes 20-minute morning yoga, dual court sessions (1.5-2 hours each), structured gym work, and recovery protocols ([Champ Workouts: Djokovic Training Routine](https://champworkouts.com/novak-djokovics-training-routine/))
+
+44-45. **Djokovic Programming Details**: Specific protocols include 15-minute warm-up with 10-15 reps dynamic exercises, calisthenics 3x/week with 3-4 sets of 10-12 reps, and flexibility integration ([Fitness and Power: Djokovic Training Secrets](https://www.fitnessandpower.com/training/workout-routines/training-secrets-and-regimen-of-novak-djokovic))
+
+46. **Murray Strength Protocol**: Andy Murray's strength system uses 6 sets of 5 reps for primary exercises, combining strength with immediate plyometric work for power without bulk ([Men's Health UK: Andy Murray's Strength Workout](https://www.menshealth.com/uk/building-muscle/g751634/andy-murrays-strength-session/))
+
+47-48. **Murray 2024 Training Schedule**: Current training includes structured daily routine from 9 AM physiotherapy through 6 PM completion, with evolution from track running to VersaClimber cardio ([Hello Magazine: Murray Fitness Regime](https://www.hellomagazine.com/healthandbeauty/health-and-fitness/693196/inside-andy-murray-gruelling-fitness-regime-diet/))
+
+49-51. **Professional Programming Standards**: Industry standards include periodized phases (foundation 8-10 reps/2-4 sets, maximum strength 3-4 sets, power maintenance), with advanced "8 sets of 3" methodology superior to traditional "3 sets of 8" ([VeryWell Fit: Tennis Strength Training](https://www.verywellfit.com/weight-training-for-tennis-3498718))
 
 ---
 
