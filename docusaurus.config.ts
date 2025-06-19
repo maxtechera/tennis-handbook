@@ -33,7 +33,23 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "es"],
+    localeConfigs: {
+      en: {
+        label: "English",
+        direction: "ltr",
+        htmlLang: "en",
+        calendar: "gregory",
+        path: "en",
+      },
+      es: {
+        label: "Español",
+        direction: "ltr",
+        htmlLang: "es",
+        calendar: "gregory",
+        path: "es",
+      },
+    },
   },
 
   // Markdown configuration to handle special characters

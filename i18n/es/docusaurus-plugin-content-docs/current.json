@@ -1,0 +1,58 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.trainingSidebar.category.🏆 Elite Training Philosophy": {
+    "message": "🏆 Elite Training Philosophy",
+    "description": "The label for category 🏆 Elite Training Philosophy in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.💪 Exercise Systems & Techniques": {
+    "message": "💪 Exercise Systems & Techniques",
+    "description": "The label for category 💪 Exercise Systems & Techniques in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.📋 Training Program Design": {
+    "message": "📋 Training Program Design",
+    "description": "The label for category 📋 Training Program Design in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.🔬 Advanced Training Methods": {
+    "message": "🔬 Advanced Training Methods",
+    "description": "The label for category 🔬 Advanced Training Methods in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.🔄 Recovery & Regeneration": {
+    "message": "🔄 Recovery & Regeneration",
+    "description": "The label for category 🔄 Recovery & Regeneration in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.🥗 Nutrition Support": {
+    "message": "🥗 Nutrition Support",
+    "description": "The label for category 🥗 Nutrition Support in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.📊 Assessment & Monitoring": {
+    "message": "📊 Assessment & Monitoring",
+    "description": "The label for category 📊 Assessment & Monitoring in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.📅 12-Week Elite Program": {
+    "message": "📅 12-Week Elite Program",
+    "description": "The label for category 📅 12-Week Elite Program in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.Foundation Phase (Weeks 1-3)": {
+    "message": "Foundation Phase (Weeks 1-3)",
+    "description": "The label for category Foundation Phase (Weeks 1-3) in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.Development Phase (Weeks 4-6)": {
+    "message": "Development Phase (Weeks 4-6)",
+    "description": "The label for category Development Phase (Weeks 4-6) in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.Intensification Phase (Weeks 7-9)": {
+    "message": "Intensification Phase (Weeks 7-9)",
+    "description": "The label for category Intensification Phase (Weeks 7-9) in sidebar trainingSidebar"
+  },
+  "sidebar.trainingSidebar.category.Peaking Phase (Weeks 10-12)": {
+    "message": "Peaking Phase (Weeks 10-12)",
+    "description": "The label for category Peaking Phase (Weeks 10-12) in sidebar trainingSidebar"
+  },
+  "sidebar.workoutsSidebar.category.📅 Complete 12-Week Program": {
+    "message": "📅 Complete 12-Week Program",
+    "description": "The label for category 📅 Complete 12-Week Program in sidebar workoutsSidebar"
+  }
+}

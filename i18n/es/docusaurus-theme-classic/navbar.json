@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Tennis Training Handbook",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Tennis Training Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Complete Handbook": {
+    "message": "Complete Handbook",
+    "description": "Navbar item with label Complete Handbook"
+  },
+  "item.label.12-Week Program": {
+    "message": "12-Week Program",
+    "description": "Navbar item with label 12-Week Program"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

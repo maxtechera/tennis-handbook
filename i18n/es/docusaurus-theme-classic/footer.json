@@ -1,0 +1,54 @@
+{
+  "link.title.Training Components": {
+    "message": "Training Components",
+    "description": "The title of the footer links column with title=Training Components in the footer"
+  },
+  "link.title.Specialized Methods": {
+    "message": "Specialized Methods",
+    "description": "The title of the footer links column with title=Specialized Methods in the footer"
+  },
+  "link.title.Support Systems": {
+    "message": "Support Systems",
+    "description": "The title of the footer links column with title=Support Systems in the footer"
+  },
+  "link.item.label.Elite Philosophy": {
+    "message": "Elite Philosophy",
+    "description": "The label of footer link with label=Elite Philosophy linking to /docs/training-philosophy"
+  },
+  "link.item.label.Exercise Database": {
+    "message": "Exercise Database",
+    "description": "The label of footer link with label=Exercise Database linking to /docs/exercises/exercise-database"
+  },
+  "link.item.label.Programming": {
+    "message": "Programming",
+    "description": "The label of footer link with label=Programming linking to /docs/programming/training-programming"
+  },
+  "link.item.label.Tendon Health": {
+    "message": "Tendon Health",
+    "description": "The label of footer link with label=Tendon Health linking to /docs/specialized/tendon-health-science"
+  },
+  "link.item.label.Power Development": {
+    "message": "Power Development",
+    "description": "The label of footer link with label=Power Development linking to /docs/specialized/power-development"
+  },
+  "link.item.label.Recovery Protocols": {
+    "message": "Recovery Protocols",
+    "description": "The label of footer link with label=Recovery Protocols linking to /docs/recovery/recovery-protocols"
+  },
+  "link.item.label.Nutrition": {
+    "message": "Nutrition",
+    "description": "The label of footer link with label=Nutrition linking to /docs/nutrition/nutrition-support"
+  },
+  "link.item.label.Assessment": {
+    "message": "Assessment",
+    "description": "The label of footer link with label=Assessment linking to /docs/assessment/assessment-monitoring"
+  },
+  "link.item.label.Weekly Plans": {
+    "message": "Weekly Plans",
+    "description": "The label of footer link with label=Weekly Plans linking to /docs/workouts"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Elite Tennis Training Research. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
