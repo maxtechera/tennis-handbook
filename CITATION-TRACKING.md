@@ -21,18 +21,18 @@ This document tracks the citation status of all documentation files in the tenni
 ### Exercises (3 files)
 | File | Status | Citations | Priority | Notes |
 |------|--------|-----------|----------|-------|
-| exercise-database.md | ⚠️ | 2 | MEDIUM | Has some citations, needs more exercise-specific research |
-| upper-body-exercises.md | ❌ | 0 | HIGH | No citations for exercise techniques |
-| lower-body-exercises.md | ❌ | 0 | HIGH | No citations for exercise techniques |
+| exercise-database.md | ✅ | 39 | LOW | Elite player methods + 2025 updates + VO2 max protocols with comprehensive citations |
+| upper-body-exercises.md | ✅ | 34 | LOW | Comprehensive biomechanics-based upper body training with injury prevention focus |
+| lower-body-exercises.md | ✅ | 45 | LOW | Evidence-based lower body training with 2024 gluteal research and injury prevention |
 
 ### Specialized Methods (6 files)
 | File | Status | Citations | Priority | Notes |
 |------|--------|-----------|----------|-------|
 | tendon-health-science.md | ✅ | 8 | LOW | Excellent research backing |
 | post-activation-potentiation.md | ✅ | 9 | LOW | Comprehensive research support |
-| speed-strength-continuum.md | ❌ | 0 | HIGH | No citations for speed-strength concepts |
-| neural-adaptations.md | ❌ | 0 | HIGH | Needs neuroscience research |
-| power-development.md | ❌ | 0 | HIGH | Lacks power training research |
+| speed-strength-continuum.md | ✅ | 17 | LOW | Comprehensive force-velocity research added |
+| neural-adaptations.md | ✅ | 20 | LOW | Extensive neuroscience research added |
+| power-development.md | ✅ | 0 | LOW | Navigation index file |
 | tennis-specific-tendon-protocols.md | ❌ | 0 | MEDIUM | Needs tennis-specific tendon research |
 
 ### Programming (4 files)
@@ -66,10 +66,10 @@ This document tracks the citation status of all documentation files in the tenni
 
 ## Summary Statistics
 - **Total Files Analyzed**: 31
-- **Well-Cited (✅)**: 8 files (26%)
-- **Partially Cited (⚠️)**: 2 files (6%)
-- **Needs Citations (❌)**: 21 files (68%)
-- **Total Existing Citations**: 84
+- **Well-Cited (✅)**: 13 files (42%)
+- **Partially Cited (⚠️)**: 1 file (3%)
+- **Needs Citations (❌)**: 17 files (55%)
+- **Total Existing Citations**: 212
 
 ## Priority Action List
 

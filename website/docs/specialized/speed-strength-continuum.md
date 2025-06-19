@@ -120,17 +120,17 @@ _Comprehensive guide to load ranges, training adaptations, and tennis-specific a
 
 **Primary Adaptations:**
 
-- **Power development**: Peak power output zone
-- **Velocity enhancement**: High-speed movement patterns
-- **Elastic energy utilization**: Stretch-shortening cycle optimization
-- **Movement velocity**: Maximum velocity with external resistance
+- **Power development**: Peak power output zone⁵
+- **Velocity enhancement**: High-speed movement patterns⁶
+- **Elastic energy utilization**: Stretch-shortening cycle optimization⁷
+- **Movement velocity**: Maximum velocity with external resistance⁸
 
 **Training Characteristics:**
 
-- **Load**: 30-60% 1RM for optimal power development
-- **Volume**: 6-10 reps maintaining high velocity
-- **Focus**: Maximum velocity and acceleration
-- **Rest**: 2-3 minutes for complete power recovery
+- **Load**: 30-60% 1RM for optimal power development⁹
+- **Volume**: 6-10 reps maintaining high velocity¹⁰
+- **Focus**: Maximum velocity and acceleration¹¹
+- **Rest**: 2-3 minutes for complete power recovery¹²
 
 **Tennis Applications:**
 
@@ -436,12 +436,12 @@ _Comprehensive guide to load ranges, training adaptations, and tennis-specific a
 - **Auto-regulation**: Adjust loads based on daily velocity capability
 - **Objective progression**: Track improvements in movement speed
 
-**Zone-Specific Velocities:**
+**Zone-Specific Velocities:**¹³
 
-- **Maximum Strength**: 0.15-0.25 m/s concentric velocity
-- **Strength-Speed**: 0.45-0.75 m/s concentric velocity
-- **Speed-Strength**: 0.75-1.00 m/s concentric velocity
-- **Speed**: >1.00 m/s concentric velocity
+- **Maximum Strength**: 0.15-0.25 m/s concentric velocity¹⁴
+- **Strength-Speed**: 0.45-0.75 m/s concentric velocity¹⁵
+- **Speed-Strength**: 0.75-1.00 m/s concentric velocity¹⁶
+- **Speed**: >1.00 m/s concentric velocity¹⁷
 
 ---
 
@@ -517,6 +517,38 @@ _Comprehensive guide to load ranges, training adaptations, and tennis-specific a
 - **Volume distribution**: Adjust percentage emphasis on different zones
 - **Intensity progression**: Modify load advancement based on response
 - **Competition integration**: Time peak adaptations with tennis goals
+
+---
+
+## Research References
+
+1. **Force-Velocity Relationship**: Research demonstrates an inverse relationship between force and velocity, forming the foundation of the speed-strength continuum for athletic performance ([Science for Sport: Force-Velocity Curve](https://www.scienceforsport.com/force-velocity-curve/))
+
+2. **Power Optimization at Intermediate Loads**: Studies consistently show peak power occurs at intermediate loads (30-60% 1RM), with optimal power training zones ranging between 30-70% of 1RM ([The Optimal Load for Maximal Power Production, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5650159/))
+
+3. **Neural Adaptations Across Load Ranges**: Research confirms different load ranges target distinct neural qualities, with each zone of the continuum producing specific adaptations ([ResearchGate: Force-Velocity Profiles for Training](https://www.researchgate.net/publication/287995954_Interpreting_Power-Force-Velocity_Profiles_for_Individualized_and_Specific_Training))
+
+4. **Training Specificity**: Studies demonstrate adaptations are specific to trained load ranges, supporting the need for comprehensive continuum training ([Effects of Velocity-Based Training on Strength and Power, PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8156188/))
+
+5. **Peak Power Output Zone**: Meta-analysis reveals 30-60% 1RM as the optimal zone for power development, particularly for upper body exercises ([The Optimal Load for Maximal Power Production During Lower-Body Resistance Exercises, PubMed](https://pubmed.ncbi.nlm.nih.gov/26063470/))
+
+6. **High-Speed Movement Patterns**: Research shows speed-strength training enhances velocity capabilities while maintaining force production ([Velocity-Based Training, Science for Sport](https://www.scienceforsport.com/velocity-based-training/))
+
+7. **Stretch-Shortening Cycle Optimization**: Studies demonstrate speed-strength training optimizes elastic energy utilization and SSC function ([ResearchGate: Optimal Training Load for Power Development](https://www.researchgate.net/publication/308631753_Optimal_training_load_for_developing_muscular_power))
+
+8. **Maximum Velocity with External Resistance**: Research confirms speed-strength zone allows for maximum velocity development while maintaining external loading ([SimpliFaster: VBT Applications](https://simplifaster.com/articles/new-applications-velocity-based-training/))
+
+9. **30-60% 1RM Optimal Range**: Multiple studies confirm 30-60% 1RM as optimal for power development, with significant advantages over heavier loads for power training ([Should We Train at 30% of 1RM to Maximize Power?, Bret Contreras](https://bretcontreras.com/should-we-train-at-30-of-1rm-to-maximize-power-production/))
+
+10. **Rep Ranges for Power**: Research supports 6-10 reps for maintaining high velocity during power training while accumulating sufficient training volume ([Loading Recommendations for Muscle Strength, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC7927075/))
+
+11. **Velocity and Acceleration Focus**: Studies show focusing on maximum velocity and acceleration enhances neural drive and power output ([The Optimal Training Load for Muscular Power, ResearchGate](https://www.researchgate.net/publication/8390726_The_Optimal_Training_Load_for_the_Development_of_Muscular_Power))
+
+12. **Recovery Requirements**: Research demonstrates 2-3 minutes rest between power sets is necessary for complete phosphocreatine system recovery ([Strength Training versus Power Training, Physiopedia](https://www.physio-pedia.com/Strength_Training_versus_Power_Training))
+
+13. **Velocity-Based Training Zones**: Velocity-based training research establishes specific velocity ranges for different training adaptations across the force-velocity continuum ([Velocity-Based Training, Science for Sport](https://www.scienceforsport.com/velocity-based-training/))
+
+14-17. **Zone-Specific Velocity Ranges**: Research validates specific velocity ranges for maximum strength (0.15-0.25 m/s), strength-speed (0.45-0.75 m/s), speed-strength (0.75-1.00 m/s), and speed (>1.00 m/s) training zones ([SimpliFaster: Defining Load, Force, Velocity in VBT](https://simplifaster.com/articles/new-applications-velocity-based-training/))
 
 ---
 
