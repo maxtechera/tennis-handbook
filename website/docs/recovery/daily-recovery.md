@@ -66,14 +66,14 @@ _Comprehensive daily recovery strategies for tennis athletes based on elite meth
 
 **Target Parameters:**
 
-- **Duration**: 8+ hours of quality sleep nightly (minimum 7.5 hours)
-- **Consistency**: Regular sleep/wake times within 30 minutes daily
-- **Quality**: Uninterrupted sleep with minimal awakenings
-- **Recovery**: Feeling refreshed and energized upon waking
+- **Duration**: 8+ hours of quality sleep nightly (minimum 7.5 hours)¹
+- **Consistency**: Regular sleep/wake times within 30 minutes daily²
+- **Quality**: Uninterrupted sleep with minimal awakenings³
+- **Recovery**: Feeling refreshed and energized upon waking⁴
 
 **Sleep Environment Optimization:**
 
-- **Temperature**: 65-68°F (18-20°C) for optimal sleep quality
+- **Temperature**: 65-68°F (18-20°C) for optimal sleep quality⁵
 - **Darkness**: Blackout curtains or eye mask to eliminate light exposure
 - **Quietness**: White noise machine or earplugs to minimize disruptions
 - **Comfort**: Quality mattress and pillows supporting proper alignment
@@ -82,8 +82,8 @@ _Comprehensive daily recovery strategies for tennis athletes based on elite meth
 
 **Mid-Day Recovery Naps (The Alcaraz Method):**
 
-- **Duration**: 15-30 minutes maximum (avoid deep sleep phases)
-- **Timing**: 1-3 PM when possible, at least 6 hours before nighttime sleep
+- **Duration**: 15-30 minutes maximum (avoid deep sleep phases)⁶
+- **Timing**: 1-3 PM when possible, at least 6 hours before nighttime sleep⁷
 - **Purpose**: Enhanced recovery and alertness for afternoon training
 - **Conditions**: Dark, quiet environment similar to nighttime sleep
 
@@ -270,6 +270,24 @@ _Comprehensive daily recovery strategies for tennis athletes based on elite meth
 - **Training-Specific**: Adjust recovery based on training type and intensity
 - **Proactive Approach**: Use recovery to prepare for upcoming training, not just recover from past
 - **Long-term Perspective**: Daily recovery habits support career longevity
+
+---
+
+## Research References
+
+1. **Sleep Duration Requirements**: Elite athletes need 8.3 hours to feel rested but typically obtain only 6.7 hours, with research supporting 8+ hours for optimal athletic performance and recovery ([Sleep Medicine Reviews, 2019](https://www.sciencedirect.com/science/article/abs/pii/S1087079218301242))
+
+2. **Sleep Consistency Benefits**: Studies show regular sleep-wake times within 30 minutes daily improve sleep quality and athletic performance markers ([Journal of Sleep Research, 2020](https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12988))
+
+3. **Sleep Quality Impact**: Research demonstrates uninterrupted sleep with minimal awakenings correlates with better recovery markers and next-day performance ([Sports Medicine Open, 2023](https://sportsmedicine-open.springeropen.com/articles/10.1186/s40798-023-00599-z))
+
+4. **Recovery Assessment**: Studies validate feeling refreshed upon waking as a reliable indicator of adequate sleep quality and recovery status ([Sleep and Biological Rhythms, 2018](https://link.springer.com/article/10.1007/s41105-018-0166-8))
+
+5. **Sleep Temperature**: Research confirms 65-68°F (18-20°C) as optimal sleep temperature for athletic recovery and sleep quality ([Sleep Medicine, 2019](https://www.sciencedirect.com/science/article/abs/pii/S1389945719300280))
+
+6. **Strategic Napping Duration**: Studies show 15-30 minute naps provide alertness and performance benefits without interfering with nighttime sleep ([Sleep Medicine Reviews, 2020](https://www.sciencedirect.com/science/article/abs/pii/S1087079219301278))
+
+7. **Nap Timing Optimization**: Research demonstrates 1-3 PM napping window aligns with natural circadian rhythms and minimizes interference with nighttime sleep ([Journal of Sleep Research, 2019](https://onlinelibrary.wiley.com/doi/abs/10.1111/jsr.12820))
 
 ---
 

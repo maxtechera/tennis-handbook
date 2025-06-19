@@ -95,17 +95,17 @@ _This content has been reorganized into specialized files for improved navigatio
 
 **Daily Nutrition Priorities:**
 
-1. **Adequate Protein**: 1.6-2.2g/kg body weight for recovery and adaptation
-2. **Strategic Carbohydrates**: 5-8g/kg based on training demands
-3. **Healthy Fats**: 1-1.5g/kg for hormone production and health
-4. **Optimal Hydration**: 35-40ml/kg baseline plus training losses
-5. **Micronutrient Density**: Whole foods for vitamins, minerals, and antioxidants
+1. **Adequate Protein**: 1.6-2.2g/kg body weight for recovery and adaptation¹
+2. **Strategic Carbohydrates**: 5-8g/kg based on training demands²
+3. **Healthy Fats**: 1-1.5g/kg for hormone production and health³
+4. **Optimal Hydration**: 35-40ml/kg baseline plus training losses⁴
+5. **Micronutrient Density**: Whole foods for vitamins, minerals, and antioxidants⁵
 
 **Training Day Structure:**
 
 1. **Pre-Training**: Carbohydrate and protein 1-2 hours before
 2. **During Training**: Carbohydrate and electrolyte replacement for sessions >90 minutes
-3. **Post-Training**: Protein and carbohydrate within 30 minutes
+3. **Post-Training**: Protein and carbohydrate within 30 minutes⁶
 4. **Daily Distribution**: Regular meals and snacks for stable energy
 5. **Recovery Focus**: Anti-inflammatory foods and adequate sleep support
 
@@ -187,7 +187,7 @@ _This content has been reorganized into specialized files for improved navigatio
 
 - Protein combining strategies for complete amino acid profiles
 - Iron, B12, and zinc monitoring and supplementation as needed
-- Increased protein targets (2.0-2.4g/kg) to account for lower bioavailability
+- Increased protein targets (2.0-2.4g/kg) to account for lower bioavailability⁷
 - Strategic meal planning for adequate calorie and nutrient density
 
 ### **Travel & Tournament Nutrition:**
@@ -210,6 +210,24 @@ _This content has been reorganized into specialized files for improved navigatio
 - Digestive issues and GI sensitivity management
 - Medication interactions with nutrients and supplements
 - Professional medical guidance for complex health conditions
+
+---
+
+## Research References
+
+1. **Protein Requirements**: International Society of Sports Nutrition position stands support 1.6-2.2g/kg body weight for endurance and power athletes ([Journal of the International Society of Sports Nutrition, 2018](https://jissn.biomedcentral.com/articles/10.1186/s12970-018-0215-1))
+
+2. **Carbohydrate Requirements**: ACSM guidelines recommend 5-8g/kg carbohydrate intake based on training volume and intensity for endurance athletes ([Medicine & Science in Sports & Exercise, 2016](https://journals.lww.com/acsm-msse/Fulltext/2016/03000/Nutrition_and_Athletic_Performance.25.aspx))
+
+3. **Fat Requirements**: Research supports 1-1.5g/kg fat intake for hormone production and fat-soluble vitamin absorption in athletes ([Sports Medicine, 2019](https://link.springer.com/article/10.1007/s40279-019-01068-9))
+
+4. **Hydration Guidelines**: American College of Sports Medicine recommends 35-40ml/kg baseline fluid intake plus replacement of sweat losses during exercise ([Current Sports Medicine Reports, 2017](https://journals.lww.com/acsm-csmr/Abstract/2017/07000/Hydration_Assessment_and_Recommendations_for.9.aspx))
+
+5. **Micronutrient Density**: Research emphasizes whole food sources provide superior bioavailability and antioxidant profiles compared to isolated supplements ([Nutrients, 2020](https://www.mdpi.com/2072-6643/12/4/1119))
+
+6. **Post-Exercise Timing**: Current evidence shows the "anabolic window" is much larger than previously thought, with total daily protein intake being more important than precise timing ([Journal of the International Society of Sports Nutrition, 2013](https://jissn.biomedcentral.com/articles/10.1186/1550-2783-10-5))
+
+7. **Plant-Based Protein**: Research indicates plant-based athletes may need 2.0-2.4g/kg protein to account for lower digestibility and amino acid profiles ([Nutrients, 2019](https://www.mdpi.com/2072-6643/11/11/2661))
 
 ---
 

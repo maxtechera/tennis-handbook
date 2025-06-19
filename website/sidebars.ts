@@ -17,6 +17,7 @@ const sidebars: SidebarsConfig = {
   trainingSidebar: [
     "intro",
     "equipment-guide",
+    "professional-standards",
     {
       type: "category",
       label: "🏆 Elite Training Philosophy",

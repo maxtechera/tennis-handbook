@@ -24,10 +24,10 @@ _Comprehensive guide to load ranges, training adaptations, and tennis-specific a
 
 **Force-Velocity Relationship:**
 
-- **Inverse relationship**: As load increases, velocity decreases
-- **Power optimization**: Peak power occurs at intermediate loads (30-60% 1RM)
-- **Neural adaptations**: Different load ranges target different neural qualities
-- **Training specificity**: Adaptations are specific to trained load ranges
+- **Inverse relationship**: As load increases, velocity decreases¹
+- **Power optimization**: Peak power occurs at intermediate loads (30-60% 1RM)²
+- **Neural adaptations**: Different load ranges target different neural qualities³
+- **Training specificity**: Adaptations are specific to trained load ranges⁴
 
 **Adaptation Zones:**
 

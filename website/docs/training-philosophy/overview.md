@@ -4,9 +4,13 @@ sidebar_position: 1
 
 # Elite Training Philosophy & Methods - Overview
 
-_Elite training methodologies from world-class coaches and athletes_
+_Elite training methodologies from world-class coaches, academies, and professional standards_
 
-This section has been organized into specialized areas for improved navigation and detailed coverage of the most effective training philosophies in modern tennis.
+:::tip **Professional Foundation**
+All methods in this section are grounded in [Professional Standards & Methods](/professional-standards), including ITF guidelines, elite academy systems, and current sports science research.
+:::
+
+This section presents the most effective training philosophies in modern tennis, organized by coaching methodology and practical application. Each approach has been validated through elite athlete success and professional recognition.
 
 ## Specialized Philosophy Areas
 

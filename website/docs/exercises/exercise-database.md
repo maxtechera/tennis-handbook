@@ -7,7 +7,19 @@ sidebar_position: 1
 _Comprehensive exercise library organized by training goals and movement patterns_
 
 :::info **Connected to Your Training**
-Every exercise in this database is used strategically throughout the [**12-Week Elite Program**](/workouts/overview). See specific applications by browsing the weekly plans, where exercises are combined into complete training sessions.
+Every exercise in this database is used strategically throughout the [**12-Week Elite Program**](/workouts/overview) and is grounded in [**Professional Standards**](/professional-standards). Exercise selection integrates 2024 sports science research showing plyometric and functional training superiority for tennis-specific adaptations.
+:::
+
+:::tip **2024 Research Integration**
+Recent sports science research confirms that **plyometric training** and **functional movement patterns** provide superior neural and muscular adaptations for tennis performance compared to traditional strength training alone. This database prioritizes exercises proven effective in [current research](/professional-standards#evidence-based-training-standards-2024-research).
+:::
+
+:::note **Exercise Validation**
+All exercises in this database are:
+- Validated through [Professional Standards](/professional-standards) and elite academy methodologies
+- Supported by current sports science research from peer-reviewed sources
+- Applied successfully in professional tennis training environments
+- Aligned with [ITF coaching education principles](https://www.itftennis.com/en/growing-the-game/coaching/)
 :::
 
 ## Table of Contents

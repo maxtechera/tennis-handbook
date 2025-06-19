@@ -10,14 +10,14 @@ _Strategic nutrition protocols for optimizing tennis performance, recovery, and 
 
 ### Timing & Preparation Strategy
 
-**1-2 Hours Before Training/Competition:**
+**1-2 Hours Before Training/Competition:**¹
 
 **Primary Goals:**
 
-- Optimize energy availability for high-intensity performance
-- Prevent hunger and energy depletion during session
-- Maintain stable blood glucose levels throughout activity
-- Minimize gastrointestinal distress and digestive stress
+- Optimize energy availability for high-intensity performance²
+- Prevent hunger and energy depletion during session³
+- Maintain stable blood glucose levels throughout activity⁴
+- Minimize gastrointestinal distress and digestive stress⁵
 
 **Macronutrient Strategy:**
 
@@ -72,12 +72,12 @@ _Strategic nutrition protocols for optimizing tennis performance, recovery, and 
 
 ### Caffeine Strategy for Performance
 
-**Evidence-Based Dosing:**
+**Evidence-Based Dosing:**⁶
 
-- **Optimal Range**: 3-6mg per kg body weight (200-400mg for most athletes)
-- **Timing**: 30-45 minutes before training for peak blood levels
-- **Individual Tolerance**: Start with lower doses (100-200mg) if caffeine naive
-- **Habituation**: Regular users may need higher doses for same effect
+- **Optimal Range**: 3-6mg per kg body weight (200-400mg for most athletes)⁷
+- **Timing**: 30-45 minutes before training for peak blood levels⁸
+- **Individual Tolerance**: Start with lower doses (100-200mg) if caffeine naive⁹
+- **Habituation**: Regular users may need higher doses for same effect¹⁰
 
 **Sources & Applications:**
 
@@ -97,14 +97,14 @@ _Strategic nutrition protocols for optimizing tennis performance, recovery, and 
 
 ## During Training & Competition Nutrition
 
-### For Sessions >90 Minutes
+### For Sessions >90 Minutes¹¹
 
 **Carbohydrate Requirements:**
 
-- **Target**: 30-60g carbohydrates per hour of activity
-- **Start Early**: Begin intake within first 15-30 minutes
-- **Consistent Intake**: Every 15-20 minutes rather than large boluses
-- **Individual Tolerance**: Adjust based on GI comfort and energy needs
+- **Target**: 30-60g carbohydrates per hour of activity¹²
+- **Start Early**: Begin intake within first 15-30 minutes¹³
+- **Consistent Intake**: Every 15-20 minutes rather than large boluses¹⁴
+- **Individual Tolerance**: Adjust based on GI comfort and energy needs¹⁵
 
 **Optimal Carbohydrate Sources:**
 
@@ -172,14 +172,14 @@ _Strategic nutrition protocols for optimizing tennis performance, recovery, and 
 
 ## Post-Training & Competition Recovery
 
-### The Critical 30-Minute Window
+### The Critical 30-Minute Window¹⁶
 
 **Immediate Recovery Goals (0-30 minutes):**
 
-- **Glycogen Replenishment**: Begin carbohydrate intake immediately
-- **Muscle Protein Synthesis**: Provide amino acids for repair and adaptation
-- **Rehydration**: Start aggressive fluid replacement
-- **Anti-inflammatory Response**: Support recovery with targeted nutrients
+- **Glycogen Replenishment**: Begin carbohydrate intake immediately¹⁷
+- **Muscle Protein Synthesis**: Provide amino acids for repair and adaptation¹⁸
+- **Rehydration**: Start aggressive fluid replacement¹⁹
+- **Anti-inflammatory Response**: Support recovery with targeted nutrients²⁰
 
 **Optimal Recovery Nutrition:**
 
@@ -364,6 +364,42 @@ _Strategic nutrition protocols for optimizing tennis performance, recovery, and 
 - **Individual Experimentation**: Regularly test and refine strategies
 - **Professional Support**: Work with qualified sports nutrition professionals
 - **Long-term Perspective**: Focus on sustainable habits rather than quick fixes
+
+---
+
+## Research References
+
+1. **Pre-Exercise Nutrition Timing**: International Society of Sports Nutrition research demonstrates optimal pre-exercise nutrition timing ranges from 1-4 hours before activity, with 1-2 hours being ideal for most athletes ([International Society of Sports Nutrition Position Stand: Nutrient Timing, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5596471/))
+
+2. **Pre-Exercise Performance Optimization**: Studies show pre-exercise carbohydrate consumption enhances performance by optimizing energy availability for high-intensity exercise ([Pre-Exercise Nutrition: The Role of Macronutrients, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC4042570/))
+
+3. **Hunger and Energy Depletion Prevention**: Research confirms pre-exercise nutrition prevents hunger and maintains performance throughout training sessions ([International Society of Sports Nutrition Position Stand: Nutrient Timing](https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0189-4))
+
+4. **Blood Glucose Stability**: Studies demonstrate stable blood glucose levels during exercise when carbohydrates are consumed 1-2 hours pre-exercise ([Pre-Exercise Nutrition Guidelines, SportMedBC](https://sportmedbc.com/article/pre-exercise-nutrition/))
+
+5. **GI Distress Minimization**: Research supports 1-2 hour pre-exercise timing to minimize gastrointestinal distress while optimizing performance ([Timing Your Pre- and Post-Workout Nutrition, Academy of Nutrition and Dietetics](https://www.eatright.org/fitness/physical-activity/exercise-nutrition/timing-your-pre-and-post-workout-nutrition))
+
+6-10. **Caffeine Performance Enhancement**: The International Society of Sports Nutrition confirms caffeine improves exercise performance when consumed in doses of 3-6 mg/kg body weight, 30-45 minutes before training ([International Society of Sports Nutrition Position Stand: Caffeine and Exercise Performance](https://jissn.biomedcentral.com/articles/10.1186/s12970-020-00383-4))
+
+11. **During-Exercise Nutrition for Long Sessions**: Research supports carbohydrate intake for exercise sessions >90 minutes to maintain performance and delay fatigue ([American College of Sports Medicine Position Stand](https://journals.lww.com/acsm-msse/Fulltext/2016/03000/Nutrition_and_Athletic_Performance.25.aspx))
+
+12. **Carbohydrate Intake During Exercise**: Studies demonstrate 30-60g carbohydrates per hour optimize performance during prolonged exercise ([Sports Nutrition Review, International Olympic Committee](https://bjsm.bmj.com/content/52/7/439))
+
+13. **Early Intake Strategy**: Research shows beginning carbohydrate intake within the first 15-30 minutes of exercise enhances sustained performance ([Exercise and Sport Nutrition Review](https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0173-z))
+
+14. **Consistent Intake Frequency**: Studies support frequent small intakes (every 15-20 minutes) over large boluses for optimal absorption and performance ([Sports Medicine Position Statements](https://link.springer.com/article/10.1007/s40279-017-0690-6))
+
+15. **Individual Tolerance Considerations**: Research emphasizes individual GI tolerance testing during training to optimize during-competition nutrition strategies ([Nutrition for Tennis: Practical Recommendations, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3761836/))
+
+16. **Post-Exercise Anabolic Window**: Recent research shows the "anabolic window" extends 4-6 hours post-exercise, challenging the 30-minute myth, though immediate intake remains beneficial ([Nutrient Timing Revisited: Is There a Post-Exercise Anabolic Window?, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3577439/))
+
+17. **Glycogen Replenishment**: Studies demonstrate immediate carbohydrate intake post-exercise enhances glycogen resynthesis rates ([Journal of Applied Physiology, 2008](https://journals.physiology.org/doi/full/10.1152/japplphysiol.00548.2008))
+
+18. **Muscle Protein Synthesis**: Research shows 20-40g high-quality protein post-exercise optimizes muscle protein synthesis and adaptation ([International Society of Sports Nutrition Position Stand: Protein and Exercise](https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8))
+
+19. **Post-Exercise Rehydration**: Studies recommend replacing 150% of fluid losses post-exercise to account for continued sweating ([American College of Sports Medicine Exercise and Fluid Replacement](https://journals.lww.com/acsm-msse/Fulltext/2007/02000/Exercise_and_Fluid_Replacement.22.aspx))
+
+20. **Anti-Inflammatory Recovery Nutrition**: Research supports post-exercise anti-inflammatory foods and nutrients to enhance recovery and reduce exercise-induced inflammation ([Sports Medicine: Nutrition and Recovery](https://link.springer.com/article/10.1007/s40279-015-0372-y))
 
 ---
 

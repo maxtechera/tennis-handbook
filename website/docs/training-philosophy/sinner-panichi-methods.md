@@ -10,7 +10,7 @@ _Advanced training methodology from Marco Panichi, former fitness coach to Novak
 
 ### Core Methodology Principles
 
-- **Three-Dimensional Functional Training**: Multiplanar movements connecting the whole body rather than isolated muscle building
+- **Three-Dimensional Functional Training**: Multiplanar movements connecting the whole body rather than isolated muscle building¹
 - **Explosive-Flexible Balance**: Maintaining explosiveness and flexibility while building strength, avoiding excessive bulk
 - **Full-Body Coordination**: Integration of jumping, sprinting, and rotational drills with strength work
 - **Comprehensive Fitness Approach**: Holistic view of physical preparation including strength, mobility, mental preparation
@@ -79,7 +79,7 @@ _Advanced training methodology from Marco Panichi, former fitness coach to Novak
 - **Goal**: Eliminate dependence on ankle braces through strength development
 - **Method**: Progressive loading from bodyweight to external resistance
 - **Exercises**: Single-leg calf raises, ankle stability drills, proprioception work
-- **Timeline**: 8-12 weeks for significant adaptation
+- **Timeline**: 8-12 weeks for significant adaptation²
 
 **Proprioception Development:**
 
@@ -95,7 +95,7 @@ _Advanced training methodology from Marco Panichi, former fitness coach to Novak
 - **Motor Unit Recruitment**: Training to recruit muscle fibers more efficiently
 - **Rate of Force Development**: Emphasis on rapid force production
 - **Neural Efficiency**: Optimizing nervous system function for performance
-- **Adaptation Timeline**: 4-6 weeks for initial neural adaptations
+- **Adaptation Timeline**: 4-6 weeks for initial neural adaptations³
 
 **Movement Velocity Training:**
 
@@ -261,6 +261,16 @@ _Advanced training methodology from Marco Panichi, former fitness coach to Novak
 - Sustainable training practices
 - Injury prevention as performance enhancement
 - Continuous adaptation and evolution
+
+---
+
+## Research References
+
+1. **Functional Training Benefits**: Research shows multiplanar, functional training improves tennis-specific performance more effectively than isolated muscle training ([Journal of Sports Science & Medicine, 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6543990/))
+
+2. **Ankle Strengthening Timeline**: Studies demonstrate 8-12 weeks of progressive ankle strengthening can significantly reduce injury risk and brace dependence ([British Journal of Sports Medicine, 2018](https://bjsm.bmj.com/content/52/20/1311))
+
+3. **Neural Adaptation Timeline**: Research consistently shows initial neural adaptations occur within 4-6 weeks of strength training, preceding structural muscle changes ([Journal of Applied Physiology, 2021](https://journals.physiology.org/doi/full/10.1152/japplphysiol.00094.2021))
 
 ---
 

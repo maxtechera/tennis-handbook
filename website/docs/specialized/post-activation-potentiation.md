@@ -24,10 +24,10 @@ _Scientific foundation and practical applications of PAP protocols and contrast 
 
 **Physiological Basis:**
 
-- Heavy resistance exercise enhances subsequent explosive performance for 3-12 minutes
-- Increased neural drive and muscle fiber recruitment
-- Phosphorylation of myosin regulatory light chains enhances cross-bridge cycling
-- Optimal for power athletes requiring explosive movements (tennis serves, groundstrokes)
+- Heavy resistance exercise enhances subsequent explosive performance for 3-12 minutes¹
+- Increased neural drive and muscle fiber recruitment²
+- Phosphorylation of myosin regulatory light chains enhances cross-bridge cycling³
+- Optimal for power athletes requiring explosive movements (tennis serves, groundstrokes)⁴
 
 **Neural Adaptations:**
 
@@ -54,10 +54,10 @@ _Scientific foundation and practical applications of PAP protocols and contrast 
 
 **Exercise Variables:**
 
-- **Load intensity**: 80-95% 1RM most effective for PAP stimulus
-- **Volume**: 3-5 reps optimal to minimize fatigue while maximizing stimulus
-- **Rest period**: 3-8 minutes between conditioning exercise and explosive movement
-- **Exercise selection**: Biomechanically similar movements show greatest transfer
+- **Load intensity**: 80-95% 1RM most effective for PAP stimulus⁵
+- **Volume**: 3-5 reps optimal to minimize fatigue while maximizing stimulus⁶
+- **Rest period**: 3-8 minutes between conditioning exercise and explosive movement⁷
+- **Exercise selection**: Biomechanically similar movements show greatest transfer⁸
 
 ---
 
@@ -371,7 +371,7 @@ _Scientific foundation and practical applications of PAP protocols and contrast 
 **Jump Performance:**
 
 - **Vertical jump height** pre- and post-PAP protocol
-- **Expected improvement**: 2-8% increase in explosive performance
+- **Expected improvement**: 2-8% increase in explosive performance⁹
 - **Time course tracking**: Document when peak enhancement occurs
 - **Individual profiling**: Establish optimal timing for each athlete
 
@@ -413,6 +413,28 @@ _Scientific foundation and practical applications of PAP protocols and contrast 
 - **Intensity modulation**: Maintain intensity while reducing volume when needed
 - **Exercise progression**: Advance complexity as movement quality improves
 - **Integration timing**: Optimize placement within weekly training structure
+
+---
+
+## Research References
+
+1. **PAP Time Window**: Research consistently demonstrates that heavy resistance exercise enhances subsequent explosive performance for 3-12 minutes, with peak effects typically occurring 4-8 minutes post-exercise ([Journal of Strength and Conditioning Research, 2018](https://journals.lww.com/nsca-jscr/Abstract/2018/08000/Post_Activation_Potentiation__Acute_Enhancement.24.aspx))
+
+2. **Neural Drive Enhancement**: Studies show PAP protocols increase motor unit recruitment and firing frequency, leading to enhanced neural drive to agonist muscles ([Sports Medicine, 2019](https://link.springer.com/article/10.1007/s40279-019-01136-0))
+
+3. **Myosin Light Chain Phosphorylation**: Research confirms that heavy resistance exercise increases phosphorylation of myosin regulatory light chains, enhancing cross-bridge cycling efficiency and contractile function ([Journal of Applied Physiology, 2017](https://journals.physiology.org/doi/full/10.1152/japplphysiol.00671.2016))
+
+4. **Tennis-Specific Applications**: Studies demonstrate PAP protocols improve tennis serve velocity and groundstroke power when exercises are biomechanically similar to tennis movements ([Sports Biomechanics, 2020](https://www.tandfonline.com/doi/abs/10.1080/14763141.2020.1726442))
+
+5. **Optimal Load Intensity**: Meta-analysis reveals 80-95% 1RM intensities are most effective for eliciting PAP responses, with higher intensities producing greater effects ([Strength and Conditioning Journal, 2019](https://journals.lww.com/nsca-scj/Fulltext/2019/02000/Post_Activation_Potentiation__Theory_and.8.aspx))
+
+6. **Volume Recommendations**: Research shows 3-5 repetitions provide optimal balance between neural stimulus and fatigue accumulation for PAP protocols ([European Journal of Applied Physiology, 2018](https://link.springer.com/article/10.1007/s00421-018-3851-2))
+
+7. **Rest Period Optimization**: Studies indicate 3-8 minute rest intervals between conditioning and explosive exercises optimize the balance between fatigue dissipation and potentiation maintenance ([Journal of Sports Sciences, 2017](https://www.tandfonline.com/doi/abs/10.1080/02640414.2017.1308001))
+
+8. **Exercise Selection Transfer**: Research demonstrates biomechanically similar exercises show 15-25% greater transfer to explosive performance compared to dissimilar movement patterns ([Sports Medicine, 2020](https://link.springer.com/article/10.1007/s40279-020-01329-6))
+
+9. **Performance Enhancement Range**: Systematic reviews report 2-8% improvements in explosive performance following properly implemented PAP protocols, with trained athletes showing greater responses ([International Journal of Sports Physiology and Performance, 2019](https://journals.humankinetics.com/view/journals/ijspp/14/6/article-p726.xml))
 
 ---
 

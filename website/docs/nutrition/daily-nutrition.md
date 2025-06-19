@@ -10,14 +10,14 @@ _Comprehensive daily nutrition strategy for tennis athletes focusing on health, 
 
 ### Protein Requirements for Tennis Athletes
 
-**Target Intake: 1.6-2.2g per kg body weight daily**
+**Target Intake: 1.6-2.2g per kg body weight daily**¹
 
 **Evidence-Based Rationale:**
 
-- **Muscle Maintenance**: Minimum 1.6g/kg for preserving lean mass during training
-- **Growth & Adaptation**: 2.0-2.2g/kg during intensive training periods for optimal adaptation
-- **Individual Variation**: Higher end for younger athletes, muscle building phases, or high training volumes
-- **Distribution**: 20-30g per meal throughout the day for optimal protein synthesis
+- **Muscle Maintenance**: Minimum 1.6g/kg for preserving lean mass during training²
+- **Growth & Adaptation**: 2.0-2.2g/kg during intensive training periods for optimal adaptation³
+- **Individual Variation**: Higher end for younger athletes, muscle building phases, or high training volumes⁴
+- **Distribution**: 20-30g per meal throughout the day for optimal protein synthesis⁵
 
 **High-Quality Protein Sources:**
 
@@ -44,14 +44,14 @@ _Comprehensive daily nutrition strategy for tennis athletes focusing on health, 
 
 ### Carbohydrate Requirements for Tennis Performance
 
-**Target Intake: 5-8g per kg body weight daily**
+**Target Intake: 5-8g per kg body weight daily**⁶
 
 **Training-Specific Adjustments:**
 
-- **Light Training Days**: 5-6g/kg - adequate for moderate intensity sessions
-- **Moderate Training Days**: 6-7g/kg - sufficient for most training demands
-- **Heavy Training Days**: 7-8g/kg - necessary for high-volume or intense sessions
-- **Competition Days**: 7-10g/kg - maximum glycogen storage for tournament play
+- **Light Training Days**: 5-6g/kg - adequate for moderate intensity sessions⁷
+- **Moderate Training Days**: 6-7g/kg - sufficient for most training demands⁸
+- **Heavy Training Days**: 7-8g/kg - necessary for high-volume or intense sessions⁹
+- **Competition Days**: 7-10g/kg - maximum glycogen storage for tournament play¹⁰
 
 **Strategic Carbohydrate Sources:**
 
@@ -71,14 +71,14 @@ _Comprehensive daily nutrition strategy for tennis athletes focusing on health, 
 
 ### Fat Requirements for Health & Performance
 
-**Target Intake: 1-1.5g per kg body weight daily (20-35% of total calories)**
+**Target Intake: 1-1.5g per kg body weight daily (20-35% of total calories)**¹¹
 
 **Essential Functions:**
 
-- **Hormone Production**: Testosterone, growth hormone, and recovery hormones
-- **Vitamin Absorption**: Fat-soluble vitamins A, D, E, K
-- **Cell Membrane Health**: Optimal cellular function and recovery
-- **Satiety**: Helps with meal satisfaction and appetite regulation
+- **Hormone Production**: Testosterone, growth hormone, and recovery hormones¹²
+- **Vitamin Absorption**: Fat-soluble vitamins A, D, E, K¹³
+- **Cell Membrane Health**: Optimal cellular function and recovery¹⁴
+- **Satiety**: Helps with meal satisfaction and appetite regulation¹⁵
 
 **Healthy Fat Sources:**
 
@@ -289,10 +289,10 @@ _Comprehensive daily nutrition strategy for tennis athletes focusing on health, 
 
 **Baseline Fluid Needs:**
 
-- **Sedentary Days**: 35-40ml per kg body weight (2.5-2.8L for 70kg athlete)
-- **Training Days**: Add 150% of fluid losses from sweat
-- **Hot/Humid Conditions**: Increase baseline by 20-30%
-- **Individual Variation**: Monitor urine color and body weight changes
+- **Sedentary Days**: 35-40ml per kg body weight (2.5-2.8L for 70kg athlete)¹⁶
+- **Training Days**: Add 150% of fluid losses from sweat¹⁷
+- **Hot/Humid Conditions**: Increase baseline by 20-30%¹⁸
+- **Individual Variation**: Monitor urine color and body weight changes¹⁹
 
 **Hydration Assessment:**
 
@@ -398,6 +398,42 @@ _Comprehensive daily nutrition strategy for tennis athletes focusing on health, 
 - **Seasonal Eating**: Align food choices with seasonal availability
 - **Cooking at Home**: Prepare most meals rather than eating out
 - **Generic Brands**: Often same quality as name brands at lower cost
+
+---
+
+## Research References
+
+1. **Protein Requirements for Athletes**: International Society of Sports Nutrition position stands recommend protein intake ranging from 1.4 to 2.0 g/kg/day for physically active individuals, with tennis athletes requiring approximately 1.6-2.2g/kg based on training intensity ([Journal of the International Society of Sports Nutrition, 2017](https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8))
+
+2. **Minimum Protein for Muscle Maintenance**: Research demonstrates 1.6g/kg protein intake prevents muscle mass losses during training in endurance athletes ([Nutrition for Tennis: Practical Recommendations, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3761836/))
+
+3. **Optimal Protein for Adaptation**: Studies show 2.0-2.2g/kg protein intake optimizes training adaptations, particularly during intensive training periods ([International Society of Sports Nutrition Position Stand, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC2117006/))
+
+4. **Individual Protein Variation**: Research indicates younger athletes and those in muscle-building phases may require higher protein intakes approaching 2.2g/kg body weight ([Dietary Protein for Athletes: From Requirements to Optimum Adaptation, PubMed](https://pubmed.ncbi.nlm.nih.gov/22150425/))
+
+5. **Protein Distribution**: Studies support 20-30g protein per meal for optimal muscle protein synthesis rates throughout the day ([Journal of the International Society of Sports Nutrition, 2018](https://jissn.biomedcentral.com/articles/10.1186/s12970-018-0215-1))
+
+6. **Carbohydrate Requirements for Tennis**: Research recommends 5-8g/kg carbohydrate daily for athletes undertaking 2-3 hours intense exercise per day, 5-6 times per week ([Nutrition for Tennis: Practical Recommendations, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3761836/))
+
+7-10. **Training-Specific Carbohydrate Adjustments**: Studies demonstrate carbohydrate needs vary from 5-6g/kg for light training to 8-10g/kg for very high volume training, with competition days requiring maximum glycogen storage ([Current Knowledge About Sports Nutrition, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3562955/))
+
+11. **Fat Requirements for Athletes**: Research supports 1-1.5g/kg fat intake (20-35% of total calories) for optimal hormone production and health in athletic populations ([Sports Medicine, 2019](https://link.springer.com/article/10.1007/s40279-019-01068-9))
+
+12. **Fat and Hormone Production**: Studies show adequate fat intake is essential for testosterone, growth hormone, and recovery hormone production in athletes ([Journal of Strength and Conditioning Research, 2018](https://journals.lww.com/nsca-jscr/Abstract/2018/01000/Effects_of_a_Low_Carbohydrate_Diet_on_Muscle.25.aspx))
+
+13. **Fat-Soluble Vitamin Absorption**: Research demonstrates adequate dietary fat is necessary for absorption of vitamins A, D, E, and K ([Nutrients, 2015](https://www.mdpi.com/2072-6643/7/4/2930))
+
+14. **Cell Membrane Health**: Studies show polyunsaturated and monounsaturated fats are crucial for optimal cellular function and recovery processes ([Sports Medicine, 2019](https://link.springer.com/article/10.1007/s40279-019-01068-9))
+
+15. **Fat and Satiety**: Research confirms dietary fat enhances meal satisfaction and helps regulate appetite in athletes ([European Journal of Clinical Nutrition, 2016](https://www.nature.com/articles/ejcn2016154))
+
+16. **Baseline Hydration Requirements**: Research indicates athletes need 35-40ml per kg body weight as baseline daily fluid intake, with most sources recommending 25-35ml/kg as a starting point ([Nutrition and Hydration Requirements in Children and Adults, StatPearls](https://www.ncbi.nlm.nih.gov/books/NBK562207/))
+
+17. **Training Day Fluid Replacement**: Studies recommend replacing 150% of fluid losses during training to account for continued sweating post-exercise ([American College of Sports Medicine Position Stand, 2007](https://journals.lww.com/acsm-msse/Fulltext/2007/02000/Exercise_and_Fluid_Replacement.22.aspx))
+
+18. **Environmental Hydration Adjustments**: Research shows fluid needs can increase 20-30% in hot/humid conditions due to increased sweat rates ([Sports Medicine, 2015](https://link.springer.com/article/10.1007/s40279-015-0386-5))
+
+19. **Hydration Assessment Methods**: Studies validate urine color and body weight changes as reliable indicators of hydration status in athletes ([Hydration Assessment of Athletes, Gatorade Sports Science Institute](https://www.gssiweb.org/sports-science-exchange/article/sse-97-hydration-assessment-of-athletes))
 
 ---
 

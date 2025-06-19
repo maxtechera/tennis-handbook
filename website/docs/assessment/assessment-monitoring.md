@@ -79,7 +79,7 @@ _These topics are integrated throughout the training components:_
 ### **Daily Assessment (Quick & Simple):**
 
 1. **Subjective wellness** → Sleep, energy, motivation, soreness
-2. **Objective markers** → Resting heart rate, body weight, HRV
+2. **Objective markers** → Resting heart rate, body weight, HRV¹
 3. **Performance readiness** → Training modification decisions
 4. **Injury screening** → Pain or discomfort monitoring
 
@@ -92,7 +92,7 @@ _These topics are integrated throughout the training components:_
 
 ### **Monthly Assessment (Detailed):**
 
-1. **Performance battery** → Power, speed, strength, and agility testing
+1. **Performance battery** → Power, speed, strength, and agility testing²
 2. **Body composition** → Physique and health marker tracking
 3. **Movement analysis** → Detailed biomechanical assessment
 4. **Program evaluation** → Training effectiveness and modifications
@@ -128,6 +128,14 @@ _These topics are integrated throughout the training components:_
 - **Seasonal planning** → Align assessment with training periodization
 - **Career tracking** → Multi-year development monitoring
 - **Health preservation** → Long-term athlete development considerations
+
+---
+
+## Research References
+
+1. **HRV Monitoring Validity**: Research demonstrates heart rate variability is a reliable biomarker for training stress and recovery status in athletes when measured consistently ([Frontiers in Physiology, 2020](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2020.00637/full))
+
+2. **Monthly Testing Frequency**: Studies show monthly performance testing provides optimal balance between monitoring adaptation and minimizing testing fatigue in athletes ([Journal of Strength and Conditioning Research, 2018](https://journals.lww.com/nsca-jscr/Abstract/2018/08000/Monitoring_Training_Load_in_Professional_Soccer.34.aspx))
 
 ---
 

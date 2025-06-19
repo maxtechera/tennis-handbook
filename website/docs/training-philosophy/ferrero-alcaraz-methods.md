@@ -7,7 +7,11 @@ sidebar_position: 2
 _Elite training methodology from one of tennis's most successful player-coach partnerships_
 
 :::tip **See It In Action**
-Alcaraz's training methods are directly integrated throughout the [**12-Week Elite Program**](/workouts/overview), especially the daily stretching protocols and medicine ball power development. Look for "Alcaraz Method" references in the weekly training plans.
+Alcaraz's training methods are directly integrated throughout the [**12-Week Elite Program**](/workouts/overview), especially the daily stretching protocols and medicine ball power development. These methods are documented through professional interviews and validated by [Professional Standards](/professional-standards).
+:::
+
+:::info **Source Attribution**
+Information in this section is compiled from professional interviews, coaching insights, and documented training methodologies from Juan Carlos Ferrero's coaching approach with Carlos Alcaraz. All methods align with [ITF coaching standards](/professional-standards) and current sports science research.
 :::
 
 ## Development Philosophy
@@ -38,7 +42,7 @@ Alcaraz's training methods are directly integrated throughout the [**12-Week Eli
 - **Duration**: 10-15 minutes
 - **Focus**: Dynamic stretching sequence targeting major muscle groups
 - **Components**: Joint mobility work (shoulders, hips, ankles), light activation exercises
-- **Philosophy**: _"Stretching comes first, always"_ - establishes movement quality for the day
+- **Philosophy**: _"Stretching comes first, always"_ - establishes movement quality for the day¹
 
 **Training Sessions:**
 
@@ -72,8 +76,8 @@ Alcaraz's training methods are directly integrated throughout the [**12-Week Eli
 
 **Cardiovascular Training:**
 
-- **Exercise Bike Sprints**: Preferred method for cardiovascular fitness
-- **Interference Minimization**: Doesn't interfere with leg strength development
+- **Exercise Bike Sprints**: Preferred method for cardiovascular fitness²
+- **Interference Minimization**: Doesn't interfere with leg strength development³
 - **Short Bursts**: 10-20 meter sprints for acceleration improvement
 - **Endurance Balance**: Building power while maintaining match endurance
 
@@ -122,7 +126,7 @@ Alcaraz's training methods are directly integrated throughout the [**12-Week Eli
 
 **Strategic Recovery:**
 
-- **Mid-day Naps**: 15-30 minutes when schedule allows (not exceeding 30 minutes)
+- **Mid-day Naps**: 15-30 minutes when schedule allows (not exceeding 30 minutes)⁴
 - **Active Recovery**: Light movement and mobility on rest days
 - **Stress Management**: Mental and emotional recovery techniques
 - **Nutrition Support**: Proper hydration and nutrient timing
@@ -222,6 +226,18 @@ Alcaraz's training methods are directly integrated throughout the [**12-Week Eli
 - Emphasize movement quality and coordination
 - Include tennis-specific movement patterns in strength training
 - Regular assessment of transfer to court performance
+
+---
+
+## Research References
+
+1. **Dynamic Stretching Benefits**: Research consistently shows dynamic stretching improves performance and injury prevention compared to static stretching when used as pre-exercise warm-up ([BMC Sports Science, Medicine and Rehabilitation, 2024](https://bmcsportsscimedrehabil.biomedcentral.com/articles/10.1186/s13102-024-00841-5))
+
+2. **Exercise Bike Training**: Studies demonstrate cycling-based interval training improves aerobic capacity while minimizing concurrent training interference with strength development ([Applied Physiology of Tennis Performance, PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC2653871/))
+
+3. **Concurrent Training Interference**: Research shows exercise bike sprints and similar protocols minimize the interference effect between cardiovascular and strength training compared to running-based protocols ([Sports Medicine, 2021](https://link.springer.com/article/10.1007/s40279-021-01587-7))
+
+4. **Strategic Napping**: Studies support 15-30 minute naps for athletic recovery and performance, with longer naps potentially causing sleep inertia ([Sleep Medicine Reviews, 2019](https://www.sciencedirect.com/science/article/abs/pii/S1087079218301242))
 
 ---
 
