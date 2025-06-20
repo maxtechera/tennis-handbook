@@ -1,0 +1,151 @@
+.workout-nav {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  margin-bottom: 2rem;
+  position: sticky;
+  top: var(--ifm-navbar-height);
+  background: var(--ifm-background-color);
+  z-index: 10;
+  padding: 0 1rem;
+}
+
+.workout-nav__container {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 0;
+}
+
+.workout-nav__container::-webkit-scrollbar {
+  display: none;
+}
+
+.workout-nav__tab {
+  flex-shrink: 0;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: var(--ifm-color-content-secondary);
+  border-bottom: 3px solid transparent;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.workout-nav__tab:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.workout-nav__tab--active {
+  color: var(--ifm-color-primary);
+  border-bottom-color: var(--ifm-color-primary);
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Previous Week Button */
+.workout-nav__prev-week {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, var(--ifm-color-secondary), var(--ifm-color-secondary-light));
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border: 1px solid var(--ifm-color-secondary);
+  margin-right: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.workout-nav__prev-week:hover {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, var(--ifm-color-secondary-dark), var(--ifm-color-secondary));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.workout-nav__prev-week-arrow {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.workout-nav__prev-week:hover .workout-nav__prev-week-arrow {
+  transform: translateX(-3px);
+}
+
+.workout-nav__prev-week-text {
+  white-space: nowrap;
+}
+
+/* Next Week Button */
+.workout-nav__next-week {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, var(--ifm-color-success), var(--ifm-color-success-light));
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border: 1px solid var(--ifm-color-success);
+  margin-left: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.workout-nav__next-week:hover {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, var(--ifm-color-success-dark), var(--ifm-color-success));
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.workout-nav__next-week-arrow {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.workout-nav__next-week:hover .workout-nav__next-week-arrow {
+  transform: translateX(3px);
+}
+
+.workout-nav__next-week-text {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .workout-nav {
+    margin: 0 -1rem 2rem -1rem;
+    padding: 0 0.5rem;
+  }
+  
+  .workout-nav__tab {
+    padding: 0.75rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .workout-nav__prev-week {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .workout-nav__next-week {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}

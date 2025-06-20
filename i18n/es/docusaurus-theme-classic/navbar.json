@@ -1,18 +1,18 @@
 {
   "title": {
-    "message": "Tennis Training Handbook",
+    "message": "Manual Completo de Entrenamiento de Tenis",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "Tennis Training Logo",
+    "message": "Logo de Entrenamiento de Tenis",
     "description": "The alt text of navbar logo"
   },
   "item.label.Complete Handbook": {
-    "message": "Complete Handbook",
+    "message": "Manual Completo",
     "description": "Navbar item with label Complete Handbook"
   },
   "item.label.12-Week Program": {
-    "message": "12-Week Program",
+    "message": "Programa de 12 Semanas",
     "description": "Navbar item with label 12-Week Program"
   },
   "item.label.GitHub": {

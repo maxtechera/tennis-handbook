@@ -1,0 +1,197 @@
+.programNavigator {
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+  font-size: 1.8rem;
+}
+
+.header p {
+  color: var(--ifm-color-secondary);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.phasesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.phaseCard {
+  background: var(--ifm-card-background-color, white);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.phaseCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--phase-color);
+}
+
+.phaseCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--phase-color);
+}
+
+.phaseHeader h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--ifm-heading-color);
+  font-size: 1.3rem;
+}
+
+.phaseHeader p {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-secondary);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.weeksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.weekButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.weekButton:hover {
+  background: var(--phase-color);
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quickLinks {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.quickLinks h3 {
+  margin: 0 0 1rem 0;
+  color: var(--ifm-heading-color);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.quickLinksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.quickLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--ifm-card-background-color, white);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  transition: all 0.2s ease;
+}
+
+.quickLink:hover {
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary-lightest);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quickLinkIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.quickLink div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.quickLink strong {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.quickLink small {
+  color: var(--ifm-color-secondary);
+  font-size: 0.8rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .phasesGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .weeksGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .quickLinksGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .phaseCard {
+    padding: 1rem;
+  }
+  
+  .quickLink {
+    padding: 0.75rem;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .weeksGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .quickLinksGrid {
+    grid-template-columns: 1fr;
+  }
+}

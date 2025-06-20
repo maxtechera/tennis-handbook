@@ -321,5 +321,141 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "homepage.hero.title": {
+    "message": "🎾 Manual de Tenis",
+    "description": "Main homepage title"
+  },
+  "homepage.hero.subtitle": {
+    "message": "Aprende cómo entrenan realmente los profesionales del tenis",
+    "description": "Main homepage subtitle"
+  },
+  "homepage.hero.button": {
+    "message": "Ver Lo Que Hacen 🚀",
+    "description": "Main CTA button on homepage"
+  },
+  "homepage.paths.title": {
+    "message": "Elige Tu Capítulo",
+    "description": "Choose your path section title"
+  },
+  "homepage.paths.subtitle": {
+    "message": "Escoge lo que quieres aprender",
+    "description": "Choose your path section subtitle"
+  },
+  "homepage.beginner.title": {
+    "message": "🌱 Los Fundamentos",
+    "description": "Beginner path card title"
+  },
+  "homepage.beginner.description": {
+    "message": "¿Nuevo en entrenamientos serios? Empieza con lo que realmente importa:",
+    "description": "Beginner path card description"
+  },
+  "homepage.beginner.item1": {
+    "message": "Cómo los pros realmente estructuran su entrenamiento",
+    "description": "Beginner path first item"
+  },
+  "homepage.beginner.item2": {
+    "message": "Qué ejercicios realmente priorizan",
+    "description": "Beginner path second item"
+  },
+  "homepage.beginner.item3": {
+    "message": "Los patrones semanales que funcionan",
+    "description": "Beginner path third item"
+  },
+  "homepage.beginner.item4": {
+    "message": "Métodos de recuperación que realmente funcionan",
+    "description": "Beginner path fourth item"
+  },
+  "homepage.beginner.button": {
+    "message": "Empezar Aquí",
+    "description": "Beginner path button"
+  },
+  "homepage.intermediate.title": {
+    "message": "⚡ Los Métodos Reales",
+    "description": "Intermediate path card title"
+  },
+  "homepage.intermediate.description": {
+    "message": "¿Listo para ir más profundo? Aprende sobre:",
+    "description": "Intermediate path card description"
+  },
+  "homepage.intermediate.item1": {
+    "message": "Cómo los pros realmente se mantienen libres de lesiones",
+    "description": "Intermediate path first item"
+  },
+  "homepage.intermediate.item2": {
+    "message": "La ciencia detrás de la potencia explosiva",
+    "description": "Intermediate path second item"
+  },
+  "homepage.intermediate.item3": {
+    "message": "Por qué los pros entrenan como lo hacen",
+    "description": "Intermediate path third item"
+  },
+  "homepage.intermediate.item4": {
+    "message": "Técnicas avanzadas de recuperación",
+    "description": "Intermediate path fourth item"
+  },
+  "homepage.intermediate.button": {
+    "message": "Aprender Más",
+    "description": "Intermediate path button"
+  },
+  "homepage.advanced.title": {
+    "message": "🏆 Detrás de Cámaras",
+    "description": "Advanced path card title"
+  },
+  "homepage.advanced.description": {
+    "message": "¿Quieres la imagen completa? Ve:",
+    "description": "Advanced path card description"
+  },
+  "homepage.advanced.item1": {
+    "message": "En qué se enfocan realmente los entrenadores top",
+    "description": "Advanced path first item"
+  },
+  "homepage.advanced.item2": {
+    "message": "Cómo se preparan para grandes torneos",
+    "description": "Advanced path second item"
+  },
+  "homepage.advanced.item3": {
+    "message": "Horarios reales de entrenamiento profesional",
+    "description": "Advanced path third item"
+  },
+  "homepage.advanced.item4": {
+    "message": "Cómo rastrean y miden el progreso",
+    "description": "Advanced path fourth item"
+  },
+  "homepage.advanced.button": {
+    "message": "Ver Todo",
+    "description": "Advanced path button"
+  },
+  "homepage.featured.title": {
+    "message": "Dentro de Tu Manual",
+    "description": "Featured training systems section title"
+  },
+  "homepage.featured.subtitle": {
+    "message": "Métodos reales de entrenamiento de los entrenadores detrás de los campeones de hoy",
+    "description": "Featured training systems section subtitle"
+  },
+  "homepage.program.title": {
+    "message": "🎯 Método de Entrenamiento de 12 Semanas",
+    "description": "12-week program card title"
+  },
+  "homepage.program.description": {
+    "message": "Ve cómo los pros estructuran 12 semanas de entrenamiento. Las progresiones reales, el timing y los métodos que usan.",
+    "description": "12-week program card description"
+  },
+  "homepage.program.button": {
+    "message": "Ver el Método",
+    "description": "12-week program card button"
+  },
+  "homepage.methods.title": {
+    "message": "🔬 Lo Que Hacen los Entrenadores",
+    "description": "Elite methods database card title"
+  },
+  "homepage.methods.description": {
+    "message": "El enfoque de Ferrero con Alcaraz. Los métodos de Panichi con Sinner. Insights reales de entrenadores campeones.",
+    "description": "Elite methods database card description"
+  },
+  "homepage.methods.button": {
+    "message": "Aprender Sus Métodos",
+    "description": "Elite methods database card button"
   }
 }

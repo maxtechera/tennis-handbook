@@ -1,0 +1,21 @@
+.translationNotice {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin: 20px 0;
+  color: #856404;
+}
+
+.translationNotice p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="dark"] .translationNotice {
+    background-color: #332701;
+    border-color: #664e00;
+    color: #d39e00;
+  }
+}

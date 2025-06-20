@@ -4,6 +4,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 import styles from "./index.module.css";
 
@@ -13,17 +14,23 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          🎾 Elite Tennis Training
+          <Translate id="homepage.hero.title">
+            🎾 The Tennis Training Handbook
+          </Translate>
         </Heading>
         <p className="hero__subtitle">
-          Research-backed training programs for self-taught tennis pros
+          <Translate id="homepage.hero.subtitle">
+            Go behind the scenes with the world's top players and learn what they actually do
+          </Translate>
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Start Your Training Journey 🚀
+            <Translate id="homepage.hero.button">
+              See What They Do 🚀
+            </Translate>
           </Link>
         </div>
       </div>
@@ -38,9 +45,15 @@ function QuickStartSection() {
         <div className="row">
           <div className="col col--12">
             <div className="text--center margin-bottom--lg">
-              <Heading as="h2">Choose Your Path</Heading>
+              <Heading as="h2">
+                <Translate id="homepage.paths.title">
+                  Choose Your Chapter
+                </Translate>
+              </Heading>
               <p className="hero__subtitle">
-                Start where you are, progress systematically
+                <Translate id="homepage.paths.subtitle">
+                  Pick what you want to learn about
+                </Translate>
               </p>
             </div>
           </div>
@@ -49,15 +62,39 @@ function QuickStartSection() {
           <div className="col col--4">
             <div className="card margin--md">
               <div className="card__header">
-                <h3>🌱 Beginner Path</h3>
+                <h3>
+                  <Translate id="homepage.beginner.title">
+                    🌱 The Fundamentals
+                  </Translate>
+                </h3>
               </div>
               <div className="card__body">
-                <p>New to tennis training? Start with foundations:</p>
+                <p>
+                  <Translate id="homepage.beginner.description">
+                    New to serious training? Start with what really matters:
+                  </Translate>
+                </p>
                 <ul>
-                  <li>Learn elite training philosophy</li>
-                  <li>Master basic exercises</li>
-                  <li>3-day training template</li>
-                  <li>Recovery fundamentals</li>
+                  <li>
+                    <Translate id="homepage.beginner.item1">
+                      How pros actually structure their training
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.beginner.item2">
+                      Which exercises they actually prioritize
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.beginner.item3">
+                      The weekly patterns that work
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.beginner.item4">
+                      Recovery methods that actually work
+                    </Translate>
+                  </li>
                 </ul>
               </div>
               <div className="card__footer">
@@ -65,7 +102,9 @@ function QuickStartSection() {
                   className="button button--primary button--block"
                   to="/docs/training-philosophy/overview"
                 >
-                  Start Here
+                  <Translate id="homepage.beginner.button">
+                    Start Here
+                  </Translate>
                 </Link>
               </div>
             </div>
@@ -73,15 +112,39 @@ function QuickStartSection() {
           <div className="col col--4">
             <div className="card margin--md">
               <div className="card__header">
-                <h3>⚡ Intermediate Path</h3>
+                <h3>
+                  <Translate id="homepage.intermediate.title">
+                    ⚡ The Real Methods
+                  </Translate>
+                </h3>
               </div>
               <div className="card__body">
-                <p>Ready to advance your training:</p>
+                <p>
+                  <Translate id="homepage.intermediate.description">
+                    Ready to go deeper? Learn about:
+                  </Translate>
+                </p>
                 <ul>
-                  <li>Tendon health science</li>
-                  <li>Power development methods</li>
-                  <li>4-day training template</li>
-                  <li>Advanced recovery protocols</li>
+                  <li>
+                    <Translate id="homepage.intermediate.item1">
+                      How pros actually stay injury-free
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.intermediate.item2">
+                      The science behind explosive power
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.intermediate.item3">
+                      Why pros train the way they do
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.intermediate.item4">
+                      Advanced recovery techniques
+                    </Translate>
+                  </li>
                 </ul>
               </div>
               <div className="card__footer">
@@ -89,7 +152,9 @@ function QuickStartSection() {
                   className="button button--primary button--block"
                   to="/docs/specialized/tendon-health-science"
                 >
-                  Level Up
+                  <Translate id="homepage.intermediate.button">
+                    Learn More
+                  </Translate>
                 </Link>
               </div>
             </div>
@@ -97,15 +162,39 @@ function QuickStartSection() {
           <div className="col col--4">
             <div className="card margin--md">
               <div className="card__header">
-                <h3>🏆 Advanced Path</h3>
+                <h3>
+                  <Translate id="homepage.advanced.title">
+                    🏆 Behind the Scenes
+                  </Translate>
+                </h3>
               </div>
               <div className="card__body">
-                <p>Maximize your potential:</p>
+                <p>
+                  <Translate id="homepage.advanced.description">
+                    Want the complete picture? See:
+                  </Translate>
+                </p>
                 <ul>
-                  <li>Elite coaching methods</li>
-                  <li>Competition preparation</li>
-                  <li>5-day training template</li>
-                  <li>Performance monitoring</li>
+                  <li>
+                    <Translate id="homepage.advanced.item1">
+                      What top coaches actually focus on
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.advanced.item2">
+                      How they prepare for big tournaments
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.advanced.item3">
+                      Real pro training schedules
+                    </Translate>
+                  </li>
+                  <li>
+                    <Translate id="homepage.advanced.item4">
+                      How they track and measure progress
+                    </Translate>
+                  </li>
                 </ul>
               </div>
               <div className="card__footer">
@@ -113,7 +202,9 @@ function QuickStartSection() {
                   className="button button--primary button--block"
                   to="/docs/programming/competition-preparation"
                 >
-                  Go Elite
+                  <Translate id="homepage.advanced.button">
+                    See Everything
+                  </Translate>
                 </Link>
               </div>
             </div>
@@ -134,8 +225,16 @@ function FeaturedContent() {
         <div className="row">
           <div className="col col--12">
             <div className="text--center margin-bottom--lg">
-              <Heading as="h2">Featured Training Systems</Heading>
-              <p>Proven methods from the world's best coaches and athletes</p>
+              <Heading as="h2">
+                <Translate id="homepage.featured.title">
+                  Inside Your Handbook
+                </Translate>
+              </Heading>
+              <p>
+                <Translate id="homepage.featured.subtitle">
+                  Real training methods from the coaches behind today's champions
+                </Translate>
+              </p>
             </div>
           </div>
         </div>
@@ -143,12 +242,17 @@ function FeaturedContent() {
           <div className="col col--6">
             <div className="card margin--md">
               <div className="card__header">
-                <h3>🎯 12-Week Training Program</h3>
+                <h3>
+                  <Translate id="homepage.program.title">
+                    🎯 12-Week Training Method
+                  </Translate>
+                </h3>
               </div>
               <div className="card__body">
                 <p>
-                  Complete periodized program with weekly progressions designed
-                  for tennis-specific adaptations.
+                  <Translate id="homepage.program.description">
+                    See how pros structure 12 weeks of training. The real progressions, timing, and methods they use.
+                  </Translate>
                 </p>
               </div>
               <div className="card__footer">
@@ -156,7 +260,9 @@ function FeaturedContent() {
                   className="button button--outline button--primary"
                   to="/docs/workouts/overview"
                 >
-                  View Program
+                  <Translate id="homepage.program.button">
+                    See the Method
+                  </Translate>
                 </Link>
               </div>
             </div>
@@ -164,12 +270,17 @@ function FeaturedContent() {
           <div className="col col--6">
             <div className="card margin--md">
               <div className="card__header">
-                <h3>🔬 Elite Methods Database</h3>
+                <h3>
+                  <Translate id="homepage.methods.title">
+                    🔬 What the Coaches Do
+                  </Translate>
+                </h3>
               </div>
               <div className="card__body">
                 <p>
-                  Learn from Carlos Alcaraz's coach Juan Carlos Ferrero and
-                  Jannik Sinner's coach Marco Panichi.
+                  <Translate id="homepage.methods.description">
+                    Ferrero's approach with Alcaraz. Panichi's methods with Sinner. Real insights from championship coaches.
+                  </Translate>
                 </p>
               </div>
               <div className="card__footer">
@@ -177,7 +288,9 @@ function FeaturedContent() {
                   className="button button--outline button--primary"
                   to="/docs/training-philosophy/ferrero-alcaraz-methods"
                 >
-                  Explore Methods
+                  <Translate id="homepage.methods.button">
+                    Learn Their Methods
+                  </Translate>
                 </Link>
               </div>
             </div>

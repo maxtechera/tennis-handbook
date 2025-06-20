@@ -40,14 +40,12 @@ const config: Config = {
         direction: "ltr",
         htmlLang: "en",
         calendar: "gregory",
-        path: "en",
       },
       es: {
         label: "Español",
         direction: "ltr",
         htmlLang: "es",
         calendar: "gregory",
-        path: "es",
       },
     },
   },
@@ -56,10 +54,6 @@ const config: Config = {
   markdown: {
     mermaid: false,
     format: "detect", // Auto-detect md vs mdx
-    preprocessor: ({ filePath, fileContent }) => {
-      // This preprocessor ensures proper Unicode handling
-      return fileContent;
-    },
   },
 
   presets: [
@@ -129,6 +123,10 @@ const config: Config = {
           sidebarId: "workoutsSidebar",
           position: "left",
           label: "12-Week Program",
+        },
+        {
+          type: "localeDropdown",
+          position: "right",
         },
         {
           href: "https://github.com/elite-tennis/tennis-training",

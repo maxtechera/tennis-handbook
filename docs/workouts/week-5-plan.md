@@ -2,9 +2,20 @@
 sidebar_position: 7
 ---
 
+import WeekNav from '@site/src/components/WeekNav';
+
+<WeekNav currentWeek={5} />
+
 # Week 5 - Detailed Daily Training Routine (Intensity Ramp-Up)
 
+## 📅 Weekly Navigation
+
+**Quick Jump to Day:**
+- [Monday](#monday--lower-body-power--explosive-tennis) | [Tuesday](#tuesday--upper-body-strength--precision-tennis) | [Wednesday](#wednesday--upper-body-power--conditioning) | [Thursday](#thursday--aerobic-capacity--skill-refinement) | [Friday](#friday--explosive-full-body--agility-tennis) | [Saturday](#saturday--match-or-moderate-conditioning) | [Sunday](#sunday--rest--comprehensive-recovery)
+
 ## Monday – Lower Body Power & Explosive Tennis
+
+**Navigation:** [Tuesday ➡️](#tuesday--upper-body-strength--precision-tennis)
 
 | Time | Exercise/Drill | Sets×Reps | Instructions |
 |------|-------------------|-----------|--------------|
@@ -20,6 +31,8 @@ sidebar_position: 7
 
 ## Tuesday – Upper Body Strength & Precision Tennis
 
+**Navigation:** [⬅️ Monday](#monday--lower-body-power--explosive-tennis) | [Wednesday ➡️](#wednesday--upper-body-power--conditioning)
+
 | Time | Exercise/Drill | Sets×Reps | Instructions |
 |------|-------------------|-----------|--------------|
 | 07:30–08:15 | Incline Bench Press | 4×5 | Increased load, controlled tempo |
@@ -33,6 +46,8 @@ sidebar_position: 7
 ---
 
 ## Wednesday – Upper Body Power & Conditioning
+
+**Navigation:** [⬅️ Tuesday](#tuesday--upper-body-strength--precision-tennis) | [Thursday ➡️](#thursday--aerobic-capacity--skill-refinement)
 
 | Time | Exercise/Drill | Sets×Reps | Instructions |
 |------|-------------------|-----------|--------------|
@@ -48,6 +63,8 @@ sidebar_position: 7
 
 ## Thursday – Aerobic Capacity & Skill Refinement
 
+**Navigation:** [⬅️ Wednesday](#wednesday--upper-body-power--conditioning) | [Friday ➡️](#friday--explosive-full-body--agility-tennis)
+
 | Time | Exercise/Drill | Sets×Reps | Instructions |
 |------|-------------------|-----------|--------------|
 | 07:30–08:20 | Aerobic Bike Intervals | 5×3 min | Moderate intensity, controlled breathing |
@@ -60,6 +77,8 @@ sidebar_position: 7
 ---
 
 ## Friday – Explosive Full-Body & Agility Tennis
+
+**Navigation:** [⬅️ Thursday](#thursday--aerobic-capacity--skill-refinement) | [Saturday ➡️](#saturday--match-or-moderate-conditioning)
 
 | Time | Exercise/Drill | Sets×Reps | Instructions |
 |------|-------------------|-----------|--------------|
@@ -75,12 +94,16 @@ sidebar_position: 7
 
 ## Saturday – Match or Moderate Conditioning
 
+**Navigation:** [⬅️ Friday](#friday--explosive-full-body--agility-tennis) | [Sunday ➡️](#sunday--rest--comprehensive-recovery)
+
 - Match: Structured warm-up, focused competition, detailed cool-down.
 - No match: Moderate Zone-2 jog (30 min), extended stretching (20 min).
 
 ---
 
 ## Sunday – Rest & Comprehensive Recovery
+
+**Navigation:** [⬅️ Saturday](#saturday--match-or-moderate-conditioning) | [🔄 Back to Top](#weekly-navigation)
 
 - Gentle yoga or leisure walk (30 min).
 - Extensive foam rolling and breathing exercises.

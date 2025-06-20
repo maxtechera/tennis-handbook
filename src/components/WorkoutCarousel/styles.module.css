@@ -1,0 +1,471 @@
+/* Workout Mode Toggle */
+.workoutModeToggle {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  margin: 2rem 0;
+  color: white;
+}
+
+.startWorkoutBtn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.startWorkoutBtn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.modeDescription {
+  margin-top: 1rem;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+/* Full-Screen Carousel Container */
+.workoutCarousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1a1a1a;
+  color: #f5f5f5;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.workoutHeader {
+  background: #2a2a2a;
+  border-bottom: 1px solid #404040;
+  padding: 0.5rem 0.75rem;
+  color: #f5f5f5;
+  position: relative;
+  flex-shrink: 0;
+  safe-area-inset-top: env(safe-area-inset-top);
+  padding-top: calc(0.5rem + env(safe-area-inset-top));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exitBtn {
+  background: #404040;
+  border: none;
+  color: #f5f5f5;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.exitBtn:hover {
+  background: #505050;
+}
+
+.workoutTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.1;
+  flex: 1;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progressBar {
+  width: 50px;
+  height: 2px;
+  background: #404040;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: #f5f5f5;
+  transition: width 0.5s ease;
+  border-radius: 1px;
+}
+
+.progressText {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #b0b0b0;
+  min-width: 30px;
+}
+
+/* Main Content Area */
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #1a1a1a;
+  min-height: 0;
+}
+
+/* Phase Indicator */
+.phaseIndicator {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  background: #2a2a2a;
+  border-bottom: 1px solid #404040;
+  flex-shrink: 0;
+}
+
+.phaseIcon {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+}
+
+.phaseInfo {
+  flex: 1;
+}
+
+.phaseTitle {
+  margin: 0;
+  font-size: 1rem;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.phaseTime {
+  margin: 0.15rem 0 0 0;
+  font-size: 0.8rem;
+  color: #b0b0b0;
+  font-weight: 400;
+}
+
+/* Exercise Card */
+.exerciseCard {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  text-align: center;
+  min-height: 0;
+}
+
+.exerciseHeader {
+  margin-bottom: 1rem;
+}
+
+.exerciseName {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.5rem;
+  color: #f5f5f5;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.exerciseCounter {
+  background: #404040;
+  color: #f5f5f5;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Video Section */
+.videoContainer {
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #2a2a2a;
+  flex-shrink: 0;
+}
+
+.exerciseVideo {
+  width: 100%;
+  height: 35vh;
+  min-height: 200px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.fullscreenVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  border-radius: 0;
+  background: #000;
+}
+
+.fullscreenOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.exerciseDetails {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.exerciseSpec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.specLabel {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.specValue {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  line-height: 1;
+}
+
+.instructions, .cues {
+  background: #2a2a2a;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.instructions h4, .cues h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1rem;
+  color: #f5f5f5;
+  font-weight: 600;
+}
+
+.instructions ul, .cues ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: none;
+}
+
+.instructions li, .cues li {
+  margin-bottom: 0.75rem;
+  color: #d0d0d0;
+  line-height: 1.4;
+  position: relative;
+}
+
+.instructions li::before {
+  content: "•";
+  color: #f5f5f5;
+  font-weight: bold;
+  position: absolute;
+  left: -1rem;
+}
+
+.cues li {
+  font-style: italic;
+  color: #d0d0d0;
+}
+
+.cues li::before {
+  content: "💬";
+  position: absolute;
+  left: -1rem;
+}
+
+/* Navigation Controls */
+.navigationControls {
+  padding: 1rem;
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+  background: #1a1a1a;
+  border-top: 1px solid #404040;
+  flex-shrink: 0;
+}
+
+.completeBtn {
+  width: 100%;
+  padding: 1rem;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  margin-bottom: 0.75rem;
+}
+
+.completeBtn:hover:not(:disabled) {
+  background: #e0e0e0;
+}
+
+.completeBtn:disabled {
+  background: #404040;
+  color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+.navControls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.navBtn {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #404040;
+  background: #2a2a2a;
+  color: #f5f5f5;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.navBtn:hover:not(:disabled) {
+  background: #353535;
+  border-color: #555;
+}
+
+.navBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .exerciseName {
+    font-size: 1.8rem;
+  }
+  
+  .exerciseDetails {
+    gap: 1.5rem;
+  }
+  
+  .specValue {
+    font-size: 1.6rem;
+  }
+  
+  .exerciseVideo {
+    height: 30vh;
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .exerciseDetails {
+    gap: 1rem;
+  }
+  
+  .exerciseHeader {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  
+  .exerciseName {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  .exerciseCounter {
+    align-self: center;
+  }
+  
+  .specValue {
+    font-size: 1.4rem;
+  }
+  
+  .exerciseVideo {
+    height: 25vh;
+    min-height: 160px;
+  }
+  
+  .navigationControls {
+    padding: 1rem;
+  }
+  
+  .completeBtn {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  
+  .navBtn {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Touch and Gesture Support */
+@media (hover: none) {
+  .completeBtn:hover {
+    transform: none;
+  }
+  
+  .navBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Landscape Mobile */
+@media (max-width: 896px) and (orientation: landscape) {
+  .exerciseCard {
+    padding: 1rem 1.5rem;
+  }
+  
+  .exerciseName {
+    font-size: 1.5rem;
+  }
+  
+  .workoutHeader {
+    padding: 1rem;
+    padding-top: calc(1rem + env(safe-area-inset-top));
+  }
+  
+  .workoutTitle {
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+}
