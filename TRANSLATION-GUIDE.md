@@ -1,89 +1,208 @@
-# Spanish Translation Guide
+# Guía de Mantenimiento de Traducciones
 
-This project uses LibreTranslate for Spanish translations with Docusaurus i18n.
+Esta guía explica cómo mantener las traducciones al español actualizadas cuando se modifica el contenido en inglés.
 
-## Quick Start
+## 🚀 Inicio Rápido
 
-### 1. Start LibreTranslate
-
-```bash
-docker compose -f docker-compose.libretranslate.yml up -d
-```
-
-Note: First run will download language models (takes a few minutes).
-
-### 2. Translate Files
+### 1. Verificar Estado de Traducciones
 
 ```bash
-# Single file
-node scripts/translate.js docs/intro.md
-
-# Overwrite existing
-node scripts/translate.js docs/intro.md --force
+# Ejecutar script de verificación
+node scripts/check-translations.js
 ```
 
-### 3. View Spanish Site
+Este comando te mostrará:
+- ✅ Archivos actualizados
+- ⚠️ Archivos que necesitan actualización  
+- ❌ Archivos que faltan traducir
+
+### 2. Traducir/Actualizar Archivo Específico
 
 ```bash
-pnpm start:es
+# Ver información de un archivo específico
+node scripts/translate-file.js workouts/week-1/monday.mdx
 ```
 
-The site will be available at `http://localhost:3000/es/`
+Este comando te dará instrucciones específicas para Claude Code.
 
-## Translating All Files
+## 🛠️ Flujo de Trabajo Recomendado
+
+### Cuando Modifiques Contenido en Inglés:
+
+1. **Después de editar archivos en inglés**, ejecuta:
+   ```bash
+   node scripts/check-translations.js
+   ```
+
+2. **Revisa el reporte** para identificar archivos que necesitan traducción/actualización
+
+3. **Solicita a Claude Code** que traduzca los archivos identificados:
+   ```
+   "He modificado contenido en inglés. El script detectó estos archivos que necesitan actualización:
+   
+   [copiar lista del script]
+   
+   Por favor traduce/actualiza estos archivos manteniendo todos los componentes React y estructura."
+   ```
+
+4. **Claude ejecutará las traducciones** automáticamente
+
+5. **Verifica el build** después de que Claude complete:
+   ```bash
+   pnpm build
+   ```
+
+### Ejemplo de Flujo Completo:
 
 ```bash
-# Translate all documentation
-for file in docs/**/*.md; do
-  node scripts/translate.js "$file"
-  sleep 1
-done
+# 1. Verificar estado
+node scripts/check-translations.js
+
+# 2. Si hay archivos desactualizados, por ejemplo workouts/week-5/monday.mdx:
+node scripts/translate-file.js workouts/week-5/monday.mdx
+
+# 3. Usar Claude Code con las instrucciones mostradas
+# 4. Verificar build
+pnpm build
+
+# 5. Repetir para otros archivos si es necesario
 ```
 
-## Building for Production
+## 📋 Scripts Disponibles
+
+### `check-translations.js`
+- **Propósito**: Verificar el estado completo de todas las traducciones
+- **Salida**: Reporte detallado + archivo JSON + comandos sugeridos
+- **Uso**: `node scripts/check-translations.js`
+
+### `translate-file.js`
+- **Propósito**: Analizar un archivo específico y generar instrucciones para Claude
+- **Salida**: Información del archivo + instrucciones para Claude Code
+- **Uso**: `node scripts/translate-file.js <ruta-relativa>`
+
+## 🎯 Mejores Prácticas
+
+### Para Mantener Traducciones:
+
+1. **Ejecuta verificación regularmente** (al menos después de cada sesión de edición)
+
+2. **Traduce en lotes pequeños** (5-10 archivos a la vez) para mayor precisión
+
+3. **Verifica siempre el build** después de las traducciones
+
+4. **Mantén consistencia terminológica** usando la misma terminología técnica
+
+### Para Trabajar con Claude Code:
+
+1. **Ejecuta el script de verificación** para ver qué archivos necesitan trabajo
+
+2. **Solicita a Claude Code** que traduzca los archivos identificados
+
+3. **Proporciona contexto claro** a Claude sobre qué archivos traducir:
+   ```
+   "He detectado que estos archivos necesitan traducción:
+   [lista de archivos del script]
+   
+   Traduce estos archivos manteniendo todos los elementos técnicos"
+   ```
+
+4. **Claude debe preservar todos los elementos técnicos**:
+   - Componentes React (`<WorkoutNav>`, etc.)
+   - Frontmatter (`sidebar_position`, etc.)
+   - Tablas de Markdown
+   - Referencias de video
+   - Enlaces internos
+
+5. **Terminología consistente que Claude debe usar**:
+   - "entrenamiento" para "training"
+   - "ejercicio" para "exercise"  
+   - "sesión" para "session"
+   - "semana" para "week"
+   - "potencia" para "power"
+   - "fuerza" para "strength"
+
+## 🔧 Configuración Avanzada
+
+### Agregar Scripts a package.json
+
+Puedes agregar estos comandos a tu `package.json`:
+
+```json
+{
+  "scripts": {
+    "check-translations": "node scripts/check-translations.js",
+    "translate-help": "node scripts/translate-file.js",
+    "build-check": "pnpm build && echo '✅ Build exitoso - traducciones válidas'"
+  }
+}
+```
+
+Luego usar:
+```bash
+pnpm check-translations
+pnpm run translate-help workouts/week-1/monday.mdx
+pnpm run build-check
+```
+
+### Integración con Git Hooks
+
+Para verificar traducciones automáticamente antes de commits:
 
 ```bash
-pnpm build:es
+# Crear .git/hooks/pre-commit
+#!/bin/sh
+echo "🔍 Verificando estado de traducciones..."
+node scripts/check-translations.js
 ```
 
-## Manual Improvements
+## 📊 Entendiendo los Reportes
 
-Edit files in `i18n/es/docusaurus-plugin-content-docs/current/` to improve translations.
+### Reporte de Consola
+- **✅ Actualizados**: Traducciones al día
+- **⚠️ Desactualizados**: Inglés modificado después que español
+- **❌ Faltantes**: Archivos sin traducir
 
-## Important: Link Translation Pattern
+### Archivo JSON (`translation-status.json`)
+Contiene datos estructurados para integración con otras herramientas:
+- Resumen numérico
+- Lista detallada de archivos
+- Fechas de modificación
+- Rutas completas
 
-**CRITICAL:** When translating files, ensure internal links use **relative paths** instead of absolute paths:
+### Comandos Sugeridos
+El script genera comandos listos para usar con Claude Code para actualizar las traducciones necesarias.
 
-### ❌ Wrong (causes broken links)
-```markdown
-[Training Philosophy](/training-philosophy/overview)
-[12-Week Program](/workouts/overview)
-[Exercise Database](/exercises/exercise-database)
+## 🚨 Solución de Problemas
+
+### Error de Build MDX
+Si el build falla con errores MDX:
+1. Verifica que no haya caracteres especiales sin escapar (`<`, `>`, `&`)
+2. Revisa la sintaxis de las tablas Markdown
+3. Asegúrate que los componentes React estén correctamente escritos
+
+### Fechas Incorrectas
+Si las fechas de modificación parecen incorrectas:
+1. El script usa Git para fechas más precisas
+2. Fallback a fechas del sistema de archivos
+3. Considera hacer commit de cambios para mejorar precisión
+
+### Archivos No Detectados
+Si un archivo no aparece en el reporte:
+1. Verifica que tenga extensión `.md` o `.mdx`
+2. Asegúrate que no esté en patrones ignorados
+3. Confirma que esté en el directorio `docs/`
+
+## 🔄 Integración Continua
+
+Para proyectos con CI/CD, considera agregar verificación automática:
+
+```yaml
+# GitHub Actions ejemplo
+- name: Check Translation Status
+  run: |
+    node scripts/check-translations.js
+    # Opcional: fallar si hay traducciones desactualizadas
+    # node scripts/check-translations.js --strict
 ```
 
-### ✅ Correct (works with i18n)
-```markdown
-[Training Philosophy](training-philosophy/overview)
-[12-Week Program](workouts/overview)
-[Exercise Database](exercises/exercise-database)
-```
-
-### Cross-section links (use relative paths)
-```markdown
-[Professional Standards](../professional-standards)
-[Exercise Database](../exercises/exercise-database)
-```
-
-**Why:** Docusaurus i18n expects relative paths so it can automatically handle locale routing:
-- English: `/docs/training-philosophy/overview`
-- Spanish: `/es/docs/training-philosophy/overview`
-
-Absolute paths break this automatic routing and cause 404 errors in translated versions.
-
-## Troubleshooting
-
-If translation fails:
-
-1. Check LibreTranslate is running: `docker ps`
-2. Wait for language models to download on first run
-3. Check logs: `docker logs libretranslate`
+Esto te ayudará a mantener las traducciones siempre actualizadas de forma automática.

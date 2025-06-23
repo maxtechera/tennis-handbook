@@ -1,0 +1,576 @@
+{
+  "timestamp": "2025-06-23T09:50:28.156Z",
+  "summary": {
+    "upToDate": 140,
+    "outdated": 0,
+    "missing": 0,
+    "total": 140
+  },
+  "details": {
+    "missing": [],
+    "outdated": [],
+    "upToDate": [
+      {
+        "path": "assessment/assessment-monitoring.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "assessment/performance-testing.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "equipment-guide.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "exercises/exercise-database.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "exercises/lower-body-exercises.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "exercises/upper-body-exercises.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "intro.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "nutrition/daily-nutrition.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "nutrition/nutrition-support.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "nutrition/performance-nutrition.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "professional-standards.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "program-optimization-summary.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "programming/auto-regulation.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "programming/competition-preparation.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "programming/periodization-models.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "programming/training-programming.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "programming/training-templates.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "recovery/advanced-recovery.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "recovery/daily-recovery.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "recovery/recovery-protocols.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "specialized/neural-adaptations.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "specialized/post-activation-potentiation.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "specialized/power-development.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "specialized/speed-strength-continuum.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "specialized/tendon-health-science.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "specialized/tendon-science-foundations.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "specialized/tennis-specific-tendon-protocols.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "training-philosophy/ferrero-alcaraz-methods.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "training-philosophy/overview.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "training-philosophy/sinner-panichi-methods.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "training-philosophy/specialized-methods.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "troubleshooting.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/overview.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-10-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-11-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-12-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-2-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-3-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-4-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-5-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-6-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-7-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-8-plan.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9/friday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9/index.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9/monday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9/saturday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9/sunday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9/thursday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9/tuesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9/wednesday.mdx",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-9-plan.md",
+        "status": "ACTUALIZADO"
+      }
+    ],
+    "englishOnly": []
+  }
+}

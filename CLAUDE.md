@@ -6,6 +6,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is a Docusaurus-powered website for Elite Tennis Training Research - a comprehensive collection of research-backed tennis-specific training programs and methodologies. The project focuses on elite coaching methods from world-class coaches like Juan Carlos Ferrero (Alcaraz's coach) and Marco Panichi (Sinner's coach).
 
+## Project Context
+
+- **Linear Project**: Tennis Handbook (check for current tasks)
+- **Current Phase**: Spanish translation implementation
+- **Status**: See PROJECT_STATUS.md for latest
+- **Decisions**: See DECISIONS.md for architecture choices
+
+## Memory Sync Points
+
+1. **Before Starting Work**:
+   - Check PROJECT_STATUS.md for current state
+   - Review any new Linear issues/comments
+   - Check git status for work in progress
+
+2. **During Work**:
+   - Update Linear issues when starting tasks
+   - Document decisions in comments
+   - Keep PROJECT_STATUS.md current
+
+3. **After Work**:
+   - Update PROJECT_STATUS.md with progress
+   - Commit with descriptive messages
+   - Update Linear issue status
+
 ## Development Commands
 
 ### Setup

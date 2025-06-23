@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './styles.module.css';
 
 interface WorkoutPhase {
@@ -33,10 +33,8 @@ export default function WorkoutCarousel({ phases, workoutTitle }: WorkoutCarouse
   const [isCarouselMode, setIsCarouselMode] = useState(false);
   const [exerciseCompleted, setExerciseCompleted] = useState<{ [key: string]: boolean }>({});
   const [isVideoFullscreen, setIsVideoFullscreen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   
-  // Refs for auto-scrolling
-  const exerciseCardRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLDivElement>(null);
 
   const currentPhaseData = phases[currentPhase];
   const currentExerciseData = currentPhaseData?.exercises[currentExercise];
@@ -50,49 +48,32 @@ export default function WorkoutCarousel({ phases, workoutTitle }: WorkoutCarouse
     );
   }
 
-  // Auto-scroll when exercise changes
+  // Auto-scroll when exercise changes - ONLY sync background page
   useEffect(() => {
     if (isCarouselMode) {
-      // Scroll within the modal
-      setTimeout(() => {
-        if (currentExerciseData?.videoUrl) {
-          scrollToVideo();
-        } else {
-          scrollToTop();
-        }
-      }, 150);
-
-      // Sync background page scroll
+      // Sync background page scroll only
       setTimeout(() => {
         scrollBackgroundPage();
       }, 200);
     }
   }, [currentPhase, currentExercise, isCarouselMode]);
 
-  // Auto-scroll to top when exercise changes
-  const scrollToTop = () => {
-    if (exerciseCardRef.current) {
-      exerciseCardRef.current.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-  };
+  // Handle sticky behavior when scrolling
+  useEffect(() => {
+    if (isCarouselMode) return; // Don't handle sticky when in guided mode
 
-  // Auto-scroll to video when switching exercises
-  const scrollToVideo = () => {
-    if (videoRef.current && exerciseCardRef.current) {
-      const videoElement = videoRef.current;
-      const cardElement = exerciseCardRef.current;
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const viewportHeight = window.innerHeight;
       
-      const videoTop = videoElement.offsetTop - cardElement.offsetTop;
-      
-      cardElement.scrollTo({
-        top: Math.max(0, videoTop - 20), // 20px offset from top
-        behavior: 'smooth'
-      });
-    }
-  };
+      // Make sticky when scrolled past one viewport height
+      setIsSticky(scrollPosition > viewportHeight * 0.8);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isCarouselMode]);
+
 
   // Scroll background page to sync with guided workout
   const scrollBackgroundPage = () => {
@@ -159,9 +140,21 @@ export default function WorkoutCarousel({ phases, workoutTitle }: WorkoutCarouse
   };
 
   const nextExercise = () => {
-    if (currentExercise < currentPhaseData.exercises.length - 1) {
+    // Mark current exercise as completed when moving forward
+    const key = `${currentPhase}-${currentExercise}`;
+    setExerciseCompleted(prev => ({ ...prev, [key]: true }));
+
+    // Check if this is the last exercise of the last phase
+    const isLastExercise = currentPhase === phases.length - 1 && currentExercise === currentPhaseData.exercises.length - 1;
+    
+    if (isLastExercise) {
+      // Finish workout - exit guided mode
+      setIsCarouselMode(false);
+    } else if (currentExercise < currentPhaseData.exercises.length - 1) {
+      // Move to next exercise in current phase
       setCurrentExercise(currentExercise + 1);
     } else if (currentPhase < phases.length - 1) {
+      // Move to first exercise of next phase
       setCurrentPhase(currentPhase + 1);
       setCurrentExercise(0);
     }
@@ -176,15 +169,6 @@ export default function WorkoutCarousel({ phases, workoutTitle }: WorkoutCarouse
     }
   };
 
-  const markExerciseComplete = () => {
-    const key = `${currentPhase}-${currentExercise}`;
-    setExerciseCompleted(prev => ({ ...prev, [key]: true }));
-    
-    // Auto-advance after marking complete
-    setTimeout(() => {
-      nextExercise();
-    }, 1000);
-  };
 
   const isExerciseComplete = (phaseIndex: number, exerciseIndex: number) => {
     return exerciseCompleted[`${phaseIndex}-${exerciseIndex}`] || false;
@@ -198,17 +182,32 @@ export default function WorkoutCarousel({ phases, workoutTitle }: WorkoutCarouse
 
   if (!isCarouselMode) {
     return (
-      <div className={styles.workoutModeToggle}>
-        <button 
-          className={styles.startWorkoutBtn}
-          onClick={() => setIsCarouselMode(true)}
-        >
-          🏃‍♂️ Start Guided Workout
-        </button>
-        <p className={styles.modeDescription}>
-          Switch to guided mode for a step-by-step workout experience
-        </p>
-      </div>
+      <>
+        {/* Regular toggle button */}
+        <div className={styles.workoutModeToggle}>
+          <button 
+            className={styles.startWorkoutBtn}
+            onClick={() => setIsCarouselMode(true)}
+          >
+            🏃‍♂️ Start Guided Workout
+          </button>
+          <p className={styles.modeDescription}>
+            Switch to guided mode for a step-by-step workout experience
+          </p>
+        </div>
+        
+        {/* Sticky button when scrolled */}
+        {isSticky && (
+          <div className={styles.stickyWorkoutToggle}>
+            <button 
+              className={styles.stickyStartBtn}
+              onClick={() => setIsCarouselMode(true)}
+            >
+              🏃‍♂️ Start Guided Workout
+            </button>
+          </div>
+        )}
+      </>
     );
   }
 
@@ -246,7 +245,7 @@ export default function WorkoutCarousel({ phases, workoutTitle }: WorkoutCarouse
         </div>
 
         {/* Exercise Card */}
-        <div className={styles.exerciseCard} ref={exerciseCardRef}>
+        <div className={styles.exerciseCard}>
           <div className={styles.exerciseHeader}>
             <h3 className={styles.exerciseName}>{currentExerciseData.name}</h3>
             <div className={styles.exerciseCounter}>
@@ -256,7 +255,7 @@ export default function WorkoutCarousel({ phases, workoutTitle }: WorkoutCarouse
 
           {/* Video Section */}
           {currentExerciseData.videoUrl && (
-            <div className={styles.videoContainer} ref={videoRef}>
+            <div className={styles.videoContainer}>
               <iframe
                 src={currentExerciseData.videoUrl}
                 title={`${currentExerciseData.name} demonstration`}
@@ -324,30 +323,22 @@ export default function WorkoutCarousel({ phases, workoutTitle }: WorkoutCarouse
       {/* Navigation */}
       <div className={styles.navigationControls}>
         <button 
-          className={styles.completeBtn}
-          onClick={markExerciseComplete}
-          disabled={isExerciseComplete(currentPhase, currentExercise)}
+          className={styles.navBtn}
+          onClick={prevExercise}
+          disabled={currentPhase === 0 && currentExercise === 0}
         >
-          {isExerciseComplete(currentPhase, currentExercise) ? '✓ Completed' : 'Complete Exercise'}
+          ← Previous
         </button>
         
-        <div className={styles.navControls}>
-          <button 
-            className={styles.navBtn}
-            onClick={prevExercise}
-            disabled={currentPhase === 0 && currentExercise === 0}
-          >
-            ← Previous
-          </button>
-          
-          <button 
-            className={styles.navBtn}
-            onClick={nextExercise}
-            disabled={currentPhase === phases.length - 1 && currentExercise === currentPhaseData.exercises.length - 1}
-          >
-            Next →
-          </button>
-        </div>
+        <button 
+          className={styles.nextBtn}
+          onClick={nextExercise}
+        >
+          {currentPhase === phases.length - 1 && currentExercise === currentPhaseData.exercises.length - 1 
+            ? 'Finish Workout' 
+            : 'Next →'
+          }
+        </button>
       </div>
     </div>
   );

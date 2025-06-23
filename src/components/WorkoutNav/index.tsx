@@ -39,44 +39,44 @@ export default function WorkoutNav({ weekNumber }: WorkoutNavProps) {
   return (
     <div className="workout-nav">
       <div className="workout-nav__container">
-        {prevWeekPath && (
-          <Link
-            to={prevWeekPath}
-            className="workout-nav__prev-week"
-          >
-            <span className="workout-nav__prev-week-arrow">←</span>
-            <span className="workout-nav__prev-week-text">
-              Week {weekNumber - 1}
-            </span>
-          </Link>
-        )}
+      {prevWeekPath && (
+        <Link
+          to={prevWeekPath}
+          className="workout-nav__prev-week"
+        >
+          <span className="workout-nav__prev-week-arrow">←</span>
+          <span className="workout-nav__prev-week-text">
+            Week {weekNumber - 1}
+          </span>
+        </Link>
+      )}
 
-        {days.map((day) => {
-          const isActive = currentPath === day.path || 
-                          (day.key === 'index' && currentPath === `/docs/workouts/week-${weekNumber}/index`);
-          
-          return (
-            <Link
-              key={day.key}
-              to={day.path}
-              className={`workout-nav__tab ${isActive ? 'workout-nav__tab--active' : ''}`}
-            >
-              {day.label}
-            </Link>
-          );
-        })}
+      {days.map((day) => {
+        const isActive = currentPath === day.path || 
+                        (day.key === 'index' && currentPath === `/docs/workouts/week-${weekNumber}/index`);
         
-        {nextWeekPath && (
+        return (
           <Link
-            to={nextWeekPath}
-            className="workout-nav__next-week"
+            key={day.key}
+            to={day.path}
+            className={`workout-nav__tab ${isActive ? 'workout-nav__tab--active' : ''}`}
           >
-            <span className="workout-nav__next-week-arrow">→</span>
-            <span className="workout-nav__next-week-text">
-              Next Week {weekNumber + 1}
-            </span>
+            {day.label}
           </Link>
-        )}
+        );
+      })}
+      
+      {nextWeekPath && (
+        <Link
+          to={nextWeekPath}
+          className="workout-nav__next-week"
+        >
+          <span className="workout-nav__next-week-arrow">→</span>
+          <span className="workout-nav__next-week-text">
+            Next Week {weekNumber + 1}
+          </span>
+        </Link>
+      )}
       </div>
     </div>
   );

@@ -12,7 +12,11 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "check-translations": "node scripts/check-translations.js",
+    "translation-status": "node scripts/quick-translation-check.js",
+    "translation-quick": "node scripts/quick-translation-check.js",
+    "build-check": "pnpm build && echo '✅ Build exitoso - traducciones válidas'"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
