@@ -457,5 +457,56 @@
   "homepage.methods.button": {
     "message": "Aprender Sus Métodos",
     "description": "Elite methods database card button"
+  },
+  "emailCapture.title": {
+    "message": "Mejora Tu Juego de Tenis"
+  },
+  "emailCapture.description": {
+    "message": "Recibe consejos de entrenamiento semanales, rutinas de ejercicios y contenido exclusivo de jugadores de élite."
+  },
+  "emailCapture.placeholder": {
+    "message": "Ingresa tu email"
+  },
+  "emailCapture.emailLabel": {
+    "message": "Dirección de email"
+  },
+  "emailCapture.loading": {
+    "message": "Suscribiendo..."
+  },
+  "emailCapture.submit": {
+    "message": "Recibe Consejos Gratis"
+  },
+  "emailCapture.consent": {
+    "message": "Acepto recibir consejos y actualizaciones de tenis. Puedes cancelar la suscripción en cualquier momento."
+  },
+  "emailCapture.consentRequired": {
+    "message": "Por favor acepta recibir emails"
+  },
+  "emailCapture.success": {
+    "message": "¡Bienvenido! Revisa tu email para confirmar tu suscripción."
+  },
+  "emailCapture.error": {
+    "message": "Algo salió mal. Por favor intenta de nuevo."
+  },
+  "emailCapture.privacy": {
+    "message": "Respetamos tu privacidad. Sin spam, nunca."
+  },
+  "emailCapture.bar.text": {
+    "message": "Recibe consejos de entrenamiento de tenis gratis cada semana"
+  },
+  "emailCapture.bar.placeholder": {
+    "message": "Tu email"
+  },
+  "emailCapture.bar.submit": {
+    "message": "Suscribirse"
+  },
+  "emailCapture.bar.success": {
+    "message": "✓ ¡Bienvenido! Revisa tu email"
+  },
+  "contentEmailCapture.title": {
+    "message": "🎾 ¿Quieres Más Consejos de Entrenamiento?"
+  },
+  "contentEmailCapture.subtitle": {
+    "message": "Únete a miles de jugadores que reciben consejos semanales de entrenadores de élite"
   }
 }

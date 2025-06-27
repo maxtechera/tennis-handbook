@@ -5,6 +5,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
+import { EmailCaptureForm, EmailCapturePopup, EmailCaptureBar } from "@site/src/components/EmailCapture";
 
 import styles from "./index.module.css";
 
@@ -32,6 +33,9 @@ function HomepageHeader() {
               See What They Do 🚀
             </Translate>
           </Link>
+        </div>
+        <div className={styles.emailCaptureHero}>
+          <EmailCaptureForm variant="hero" source="homepage-hero" />
         </div>
       </div>
     </header>
@@ -313,6 +317,8 @@ export default function Home(): ReactNode {
         <QuickStartSection />
         <FeaturedContent />
       </main>
+      <EmailCapturePopup />
+      <EmailCaptureBar />
     </Layout>
   );
 }

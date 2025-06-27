@@ -1,0 +1,201 @@
+.emailCapture {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emailCapture.hero {
+  margin: 3rem 0;
+  padding: 3rem;
+  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+  color: white;
+}
+
+.emailCapture.popup {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  max-width: 400px;
+  z-index: 999;
+  animation: slideIn 0.3s ease-out;
+}
+
+.emailCapture.footer {
+  margin: 0;
+  padding: 1.5rem;
+  background: var(--ifm-footer-background-color);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.hero .title {
+  color: white;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.hero .description {
+  color: white;
+}
+
+.form {
+  margin-bottom: 1rem;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .inputGroup {
+    flex-direction: column;
+  }
+}
+
+.input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: white;
+  transition: border-color 0.2s;
+  min-width: 250px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.hero .button {
+  background: white;
+  color: var(--ifm-color-primary);
+}
+
+.hero .button:hover:not(:disabled) {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.consent {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-top: 0.125rem;
+  cursor: pointer;
+}
+
+.message {
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.message.success {
+  background: var(--ifm-color-success-contrast-background);
+  color: var(--ifm-color-success-dark);
+  border: 1px solid var(--ifm-color-success-dark);
+}
+
+.message.error {
+  background: var(--ifm-color-danger-contrast-background);
+  color: var(--ifm-color-danger-dark);
+  border: 1px solid var(--ifm-color-danger-dark);
+}
+
+.privacy {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.hero .privacy {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .emailCapture.popup {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    max-width: none;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+}
