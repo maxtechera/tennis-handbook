@@ -1,0 +1,214 @@
+.progressContainer {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--ifm-heading-color);
+}
+
+.status {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.progressBar {
+  position: relative;
+  height: 24px;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.progressFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
+  border-radius: 12px;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ifm-font-color-base);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.statItem {
+  text-align: center;
+  padding: 0.75rem;
+  background: var(--ifm-background-color);
+  border-radius: 8px;
+}
+
+.statLabel {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--ifm-color-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.statValue {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+}
+
+.lessonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.lessonDot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lessonDot.completed {
+  background: #4CAF50;
+}
+
+.lessonDot.current {
+  background: #2196F3;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(33, 150, 243, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+  }
+}
+
+.lessonDot:hover {
+  transform: scale(1.1);
+}
+
+.notes {
+  background: var(--ifm-background-color);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.notes h5 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--ifm-heading-color);
+}
+
+.notes p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ifm-font-color-base);
+  font-style: italic;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.continueButton,
+.reviewButton {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.continueButton {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+.continueButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.reviewButton {
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.reviewButton:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .progressContainer {
+    padding: 1rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .lessonGrid {
+    grid-template-columns: repeat(auto-fill, minmax(25px, 1fr));
+  }
+
+  .lessonDot {
+    width: 25px;
+    height: 25px;
+    font-size: 0.625rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}

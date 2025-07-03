@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Progreso - Tennis Handbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .progress-visual {
+            margin-bottom: 25px;
+        }
+        
+        .progress-label {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #059669, #10b981);
+            width: 25%;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .streak {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .streak-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #f59e0b;
+        }
+        
+        .streak-label {
+            font-size: 18px;
+            color: #92400e;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .stat-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .prs-section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .pr-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+        
+        .pr-item:last-child {
+            border-bottom: none;
+        }
+        
+        .pr-exercise {
+            font-weight: 500;
+        }
+        
+        .pr-value {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .pr-number {
+            font-weight: bold;
+            color: #059669;
+        }
+        
+        .pr-improvement {
+            font-size: 14px;
+            color: #10b981;
+            background: #d1fae5;
+            padding: 2px 8px;
+            border-radius: 12px;
+        }
+        
+        .continue-btn {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            text-decoration: none;
+            display: block;
+        }
+        
+        .continue-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-title">📊 Tu Progreso</div>
+        
+        <div class="progress-visual">
+            <div class="progress-label">Progreso General del Programa</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+                <div class="progress-text">Semana 3 de 12</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="streak">
+        <div class="streak-number">22 🔥</div>
+        <div class="streak-label">¡Días de Entrenamiento Seguidos!</div>
+    </div>
+    
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon">💪</div>
+            <div class="stat-value">18</div>
+            <div class="stat-label">Entrenamientos Completados</div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-value">14.5</div>
+            <div class="stat-label">Horas Entrenadas</div>
+        </div>
+    </div>
+    
+    <div class="prs-section">
+        <div class="section-title">🏆 Records Personales Recientes</div>
+        
+        <div class="pr-item">
+            <div class="pr-exercise">Sentadilla</div>
+            <div class="pr-value">
+                <div class="pr-number">85kg</div>
+                <div class="pr-improvement">+10kg</div>
+            </div>
+        </div>
+        
+        <div class="pr-item">
+            <div class="pr-exercise">Salto de Caja</div>
+            <div class="pr-value">
+                <div class="pr-number">107cm</div>
+                <div class="pr-improvement">+8cm</div>
+            </div>
+        </div>
+        
+        <div class="pr-item">
+            <div class="pr-exercise">Lanzamiento Balón Med</div>
+            <div class="pr-value">
+                <div class="pr-number">12kg</div>
+                <div class="pr-improvement">+2kg</div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="#" class="continue-btn">
+        Continuar Entrenamiento de Hoy →
+    </a>
+</body>
+</html>

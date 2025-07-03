@@ -1,0 +1,242 @@
+.drillCard {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.drillCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.drillCard.completed {
+  border-color: #4CAF50;
+  background: rgba(76, 175, 80, 0.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--ifm-heading-color);
+}
+
+.difficulty {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.description {
+  color: var(--ifm-font-color-base);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.details {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-secondary);
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.difficultySelector {
+  background: var(--ifm-background-color);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.difficultySelector label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-font-color-base);
+}
+
+.difficultyButtons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.difficultyButton {
+  flex: 1;
+  padding: 0.5rem;
+  background: white;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+.difficultyButton:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.difficultyButton.selected {
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+
+.repetitions {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ifm-font-color-base);
+}
+
+.variations {
+  margin-bottom: 1rem;
+}
+
+.variationsToggle {
+  background: none;
+  border: none;
+  color: var(--ifm-color-primary);
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.variationsToggle:hover {
+  text-decoration: underline;
+}
+
+.variationsList {
+  margin-top: 0.75rem;
+  padding-left: 1rem;
+}
+
+.variation {
+  background: var(--ifm-background-color);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.variationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.variationHeader h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--ifm-heading-color);
+}
+
+.variationDifficulty {
+  padding: 0.125rem 0.5rem;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.variation p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ifm-font-color-base);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.startButton {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.startButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.videoLink {
+  padding: 0.75rem 1.5rem;
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.videoLink:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .drillCard {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .videoLink {
+    text-align: center;
+    justify-content: center;
+  }
+}

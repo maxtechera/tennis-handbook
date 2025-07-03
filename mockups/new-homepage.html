@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Handbook - New Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-primary {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+        }
+        
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .card-description {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .card-action {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .new-badge {
+            background: #10b981;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .or-divider {
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            margin: 20px 0;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🎾</div>
+            <div class="title">Tennis Handbook</div>
+            <div class="tagline">Train Like the Pros, Understand the Science</div>
+        </div>
+        
+        <div class="card card-primary">
+            <div class="card-icon">💪</div>
+            <div class="card-title">
+                Start Daily Training
+                <span class="new-badge">NEW</span>
+            </div>
+            <div class="card-description">
+                Simple, mobile-friendly workouts. See today's training, track progress, get stronger.
+            </div>
+            <div class="card-action">
+                Quick 30-second setup →
+            </div>
+        </div>
+        
+        <div class="or-divider">— or —</div>
+        
+        <div class="card">
+            <div class="card-icon">📚</div>
+            <div class="card-title">Explore Knowledge Base</div>
+            <div class="card-description">
+                Deep dive into elite training methods, exercise science, and coaching philosophy.
+            </div>
+            <div class="card-action">
+                Browse 300+ articles →
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">🔍</div>
+            <div class="card-title">Search Specific Topic</div>
+            <div class="card-description">
+                Know what you're looking for? Jump straight to any exercise or concept.
+            </div>
+            <div class="card-action">
+                Search now →
+            </div>
+        </div>
+    </div>
+</body>
+</html>
