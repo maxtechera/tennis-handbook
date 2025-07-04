@@ -1,0 +1,300 @@
+/* Professional PDF Styling for 7-Day Elite Tennis Workout */
+
+/* Import professional fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Bebas+Neue&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 11pt;
+  line-height: 1.6;
+  color: #2C3E50;
+  background: white;
+}
+
+.pdf-container {
+  max-width: 7.5in;
+  margin: 0 auto;
+  padding: 0.5in;
+}
+
+/* Typography */
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36pt;
+  color: #1B5E20;
+  text-align: center;
+  margin-bottom: 10pt;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1 + p {
+  font-style: italic;
+  text-align: center;
+  color: #558B2F;
+  font-size: 14pt;
+  margin-bottom: 30pt;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24pt;
+  color: #2E7D32;
+  margin-top: 30pt;
+  margin-bottom: 20pt;
+  padding-bottom: 8pt;
+  border-bottom: 3px solid #81C784;
+  letter-spacing: 1px;
+  page-break-after: avoid;
+}
+
+h2.day-header {
+  background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+  padding: 15pt 20pt;
+  border-radius: 8pt;
+  border-bottom: none;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 16pt;
+  color: #388E3C;
+  margin-top: 20pt;
+  margin-bottom: 12pt;
+  font-weight: 600;
+  page-break-after: avoid;
+}
+
+h3.section-header {
+  background: #F1F8E9;
+  padding: 8pt 12pt;
+  border-left: 4pt solid #7CB342;
+  border-radius: 4pt;
+}
+
+h4 {
+  font-size: 14pt;
+  color: #43A047;
+  margin-top: 16pt;
+  margin-bottom: 8pt;
+  font-weight: 600;
+  page-break-after: avoid;
+}
+
+/* Paragraphs and lists */
+p {
+  margin-bottom: 10pt;
+  text-align: justify;
+  orphans: 3;
+  widows: 3;
+}
+
+ul, ol {
+  margin-left: 20pt;
+  margin-bottom: 12pt;
+}
+
+li {
+  margin-bottom: 6pt;
+  line-height: 1.5;
+}
+
+/* Exercise formatting */
+ul li strong:first-child {
+  color: #1B5E20;
+  font-weight: 600;
+}
+
+/* Key points and benefits */
+.key-point, 
+li strong:contains("Key Point:") {
+  color: #E65100;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 4pt;
+}
+
+.tennis-benefit,
+li strong:contains("Tennis Benefit:") {
+  color: #01579B;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 4pt;
+}
+
+/* Special sections */
+blockquote {
+  background: #E3F2FD;
+  border-left: 4pt solid #1976D2;
+  padding: 12pt 16pt;
+  margin: 16pt 0;
+  font-style: italic;
+  border-radius: 4pt;
+  page-break-inside: avoid;
+}
+
+/* Warm-up, workout, cool-down sections */
+h3:contains("Warm-Up"),
+h3:contains("Main Workout"),
+h3:contains("Cool-Down") {
+  background: linear-gradient(90deg, #66BB6A 0%, #81C784 100%);
+  color: white;
+  padding: 8pt 16pt;
+  border-radius: 6pt;
+  border-left: none;
+  margin-top: 24pt;
+}
+
+/* Exercise blocks */
+h4 + ul {
+  background: #FAFAFA;
+  padding: 12pt;
+  border-radius: 6pt;
+  border: 1pt solid #E0E0E0;
+  margin-bottom: 16pt;
+  page-break-inside: avoid;
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  border-top: 2pt solid #E0E0E0;
+  margin: 30pt 0;
+  page-break-after: avoid;
+}
+
+/* Page breaks */
+.page-break {
+  page-break-before: always;
+  margin-top: 0;
+}
+
+/* Pro tips section */
+h2:contains("Bonus Tips") {
+  background: #FFF3E0;
+  color: #E65100;
+  padding: 15pt 20pt;
+  border-bottom: 3pt solid #FFB74D;
+}
+
+/* Footer and contact info */
+p:last-child {
+  text-align: center;
+  color: #757575;
+  font-size: 9pt;
+  margin-top: 30pt;
+  padding-top: 20pt;
+  border-top: 1pt solid #E0E0E0;
+}
+
+/* Lists in assessment section */
+h3:contains("Review This Week") + ul,
+h3:contains("Plan Next Week") + ul {
+  background: #F3E5F5;
+  padding: 12pt 12pt 12pt 30pt;
+  border-radius: 6pt;
+  border-left: 4pt solid #AB47BC;
+}
+
+/* Nutrition section */
+h3:contains("Nutrition") {
+  background: #FFF8E1;
+  color: #F57C00;
+  padding: 8pt 16pt;
+  border-radius: 6pt;
+  border-left: 4pt solid #FFB300;
+}
+
+/* Print optimization */
+@media print {
+  body {
+    font-size: 10pt;
+  }
+  
+  .pdf-container {
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 32pt;
+  }
+  
+  h2 {
+    font-size: 22pt;
+  }
+  
+  h3 {
+    font-size: 14pt;
+  }
+  
+  h4 {
+    font-size: 12pt;
+  }
+  
+  /* Ensure no background colors are lost */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* Special callout boxes */
+.pro-tip {
+  background: linear-gradient(135deg, #FFE082 0%, #FFD54F 100%);
+  padding: 12pt;
+  border-radius: 8pt;
+  margin: 16pt 0;
+  border-left: 4pt solid #F57C00;
+  page-break-inside: avoid;
+}
+
+/* Table styling for workout plans */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16pt 0;
+  page-break-inside: avoid;
+}
+
+th {
+  background: #66BB6A;
+  color: white;
+  padding: 8pt;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 8pt;
+  border-bottom: 1pt solid #E0E0E0;
+}
+
+tr:nth-child(even) {
+  background: #F5F5F5;
+}
+
+/* Final CTA styling */
+h2:contains("Your Next Steps") {
+  background: #1B5E20;
+  color: white;
+  text-align: center;
+  padding: 20pt;
+  border-radius: 8pt;
+  margin-top: 40pt;
+}
+
+h2:contains("Your Next Steps") + ol {
+  background: #E8F5E9;
+  padding: 20pt 20pt 20pt 40pt;
+  border-radius: 8pt;
+  font-size: 12pt;
+  font-weight: 500;
+}

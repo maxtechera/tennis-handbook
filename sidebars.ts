@@ -93,6 +93,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         "workouts/overview",
+        "workouts/week-program-table",
         {
           type: "category",
           label: "Foundation Phase (Weeks 1-3)",
@@ -306,12 +307,13 @@ const sidebars: SidebarsConfig = {
   // Dedicated workout sidebar with improved navigation
   workoutsSidebar: [
     "workouts/overview",
+    "workouts/week-program-table",
     {
       type: "category",
       label: "🌱 Foundation Phase",
       collapsed: false,
       customProps: {
-        description: "Weeks 1-3: Building movement patterns and base fitness"
+        description: "Weeks 1-3: Building movement patterns and base fitness",
       },
       items: [
         {
@@ -363,10 +365,10 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "⚡ Development Phase", 
+      label: "⚡ Development Phase",
       collapsed: false,
       customProps: {
-        description: "Weeks 4-6: Progressive loading and power introduction"
+        description: "Weeks 4-6: Progressive loading and power introduction",
       },
       items: [
         {
@@ -419,9 +421,9 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "🔥 Intensification Phase",
-      collapsed: false, 
+      collapsed: false,
       customProps: {
-        description: "Weeks 7-9: Maximum strength and advanced methods"
+        description: "Weeks 7-9: Maximum strength and advanced methods",
       },
       items: [
         {
@@ -476,7 +478,8 @@ const sidebars: SidebarsConfig = {
       label: "🏆 Peaking Phase",
       collapsed: false,
       customProps: {
-        description: "Weeks 10-12: Competition preparation and peak performance"
+        description:
+          "Weeks 10-12: Competition preparation and peak performance",
       },
       items: [
         {

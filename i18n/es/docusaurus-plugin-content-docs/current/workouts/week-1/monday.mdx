@@ -2,8 +2,9 @@
 sidebar_position: 1
 ---
 
-import WorkoutNav from '@site/src/components/WorkoutNav';
-import WorkoutCarousel from '@site/src/components/WorkoutCarousel';
+import WorkoutNav from "@site/src/components/WorkoutNav";
+import WorkoutCarousel from "@site/src/components/WorkoutCarousel";
+import EmailCapture from "@site/src/components/EmailCapture/EmailCapture.mdx";
 
 <WorkoutNav weekNumber={1} />
 
@@ -13,147 +14,731 @@ _"Implementando Protocolos de la Academia Ferrero con Estructura Djokovic"_
 
 **Navegación Diaria:** [📋 Vista General de la Semana](index) | [Martes ➡️](tuesday)
 
-<WorkoutCarousel 
+<WorkoutCarousel
   workoutTitle="Lunes - Fundación Elite del Tren Inferior"
   phases={[
     {
-      id: 'morning',
-      title: 'Protocolo Matutino',
-      duration: '75 min',
-      timeRange: '06:00-07:15',
-      icon: '🌅',
+      id: "morning",
+      title: "Protocolo Matutino",
+      duration: "75 min",
+      timeRange: "06:00-07:15",
+      icon: "🌅",
       exercises: [
         {
-          name: 'Flujo de Yoga',
-          sets: '1',
-          reps: '20 min',
-          videoUrl: 'https://www.youtube.com/embed/v7AYKMP6rOE',
+          name: "Flujo de Yoga",
+          sets: "1",
+          reps: "20 min",
+          videoUrl: "https://www.youtube.com/embed/v7AYKMP6rOE",
           instructions: [
-            'PREPARACIÓN: Encuentra un espacio silencioso y cómodo con una esterilla de yoga. Asegúrate de que la temperatura ambiente sea cómoda para el movimiento',
-            'RESPIRACIÓN: Comienza con 5 respiraciones profundas, inhalando por la nariz (4 tiempos), exhalando por la boca (6 tiempos)',
-            'SECUENCIA: Sigue el video exactamente - comienza con suaves giros de cuello, círculos de hombros, luego progresa a través de estiramientos gato-vaca',
-            'PROGRESIÓN DEL FLUJO: Postura de montaña → Flexión hacia adelante → Elevación a la mitad → Estocada baja → Perro mirando hacia abajo → Repetir lado opuesto',
-            'TIEMPOS DE MANTENIMIENTO: Mantén cada posición estática durante 30-45 segundos, enfócate en respiración profunda en todo momento',
-            'TRANSICIONES: Muévete lenta y controladamente entre posturas, nunca fuerces ninguna posición',
-            'MINUTOS FINALES: Termina con 2 minutos en postura del niño, enfocándote en la preparación mental para el entrenamiento'
+            "PREPARACIÓN: Encuentra un espacio silencioso y cómodo con una esterilla de yoga. Asegúrate de que la temperatura ambiente sea cómoda para el movimiento",
+            "RESPIRACIÓN: Comienza con 5 respiraciones profundas, inhalando por la nariz (4 tiempos), exhalando por la boca (6 tiempos)",
+            "SECUENCIA: Sigue el video exactamente - comienza con suaves giros de cuello, círculos de hombros, luego progresa a través de estiramientos gato-vaca",
+            "PROGRESIÓN DEL FLUJO: Postura de montaña → Flexión hacia adelante → Elevación a la mitad → Estocada baja → Perro mirando hacia abajo → Repetir lado opuesto",
+            "TIEMPOS DE MANTENIMIENTO: Mantén cada posición estática durante 30-45 segundos, enfócate en respiración profunda en todo momento",
+            "TRANSICIONES: Muévete lenta y controladamente entre posturas, nunca fuerces ninguna posición",
+            "MINUTOS FINALES: Termina con 2 minutos en postura del niño, enfocándote en la preparación mental para el entrenamiento",
           ],
-          cues: ['Mantén movimientos suaves y controlados', 'Enfócate en la conexión respiración-movimiento', 'Usa este tiempo para transición mental al modo de entrenamiento', 'Presta atención extra a cualquier área tensa']
+          cues: [
+            "Mantén movimientos suaves y controlados",
+            "Enfócate en la conexión respiración-movimiento",
+            "Usa este tiempo para transición mental al modo de entrenamiento",
+            "Presta atención extra a cualquier área tensa",
+          ],
         },
         {
-          name: 'Protocolo de Respiración',
-          sets: '1',
-          reps: '5 min',
+          name: "Protocolo de Respiración",
+          sets: "1",
+          reps: "5 min",
           instructions: [
-            'POSICIÓN: Siéntate cómodamente con la columna recta, o acuéstate boca arriba con rodillas dobladas, pies planos en el suelo',
-            'COLOCACIÓN DE MANOS: Coloca una mano en el pecho, una en el estómago para monitorear el patrón respiratorio',
-            'TÉCNICA: Respira solo por la nariz. La mano del estómago debe elevarse más que la del pecho',
-            'PATRÓN 4-7-8: Inhala por la nariz exactamente por 4 tiempos, sintiendo el estómago expandirse',
-            'FASE DE RETENCIÓN: Mantén la respiración exactamente por 7 tiempos - evita la tensión, esto se vuelve más fácil con la práctica',
+            "POSICIÓN: Siéntate cómodamente con la columna recta, o acuéstate boca arriba con rodillas dobladas, pies planos en el suelo",
+            "COLOCACIÓN DE MANOS: Coloca una mano en el pecho, una en el estómago para monitorear el patrón respiratorio",
+            "TÉCNICA: Respira solo por la nariz. La mano del estómago debe elevarse más que la del pecho",
+            "PATRÓN 4-7-8: Inhala por la nariz exactamente por 4 tiempos, sintiendo el estómago expandirse",
+            "FASE DE RETENCIÓN: Mantén la respiración exactamente por 7 tiempos - evita la tensión, esto se vuelve más fácil con la práctica",
             'FASE DE EXHALACIÓN: Exhala por la boca exactamente por 8 tiempos, haciendo un sonido "whoosh"',
-            'REPETICIÓN: Completa 8-10 ciclos completos, luego vuelve a la respiración normal',
-            'PROGRESIÓN: Si te sientes mareado, reduce a patrón 3-5-6 y aumenta gradualmente'
+            "REPETICIÓN: Completa 8-10 ciclos completos, luego vuelve a la respiración normal",
+            "PROGRESIÓN: Si te sientes mareado, reduce a patrón 3-5-6 y aumenta gradualmente",
           ],
-          cues: ['Mantén el conteo constante y consistente', 'Enfócate en que el estómago suba, no el pecho', 'Mantén hombros relajados en todo momento', 'Esto activa el sistema nervioso parasimpático para la recuperación']
+          cues: [
+            "Mantén el conteo constante y consistente",
+            "Enfócate en que el estómago suba, no el pecho",
+            "Mantén hombros relajados en todo momento",
+            "Esto activa el sistema nervioso parasimpático para la recuperación",
+          ],
         },
         {
-          name: 'Medición VFC',
-          sets: '1',
-          reps: '1 lectura',
+          name: "Medición VFC",
+          sets: "1",
+          reps: "1 lectura",
           instructions: [
-            'CONFIGURACIÓN DEL DISPOSITIVO: Usa monitor de frecuencia cardíaca con banda pectoral o app HRV4Training con cámara del smartphone (banda pectoral preferida para precisión)',
-            'MOMENTO: Realiza inmediatamente al despertar, después de orinar, antes de consumir agua o comida',
-            'POSICIÓN: Acuéstate en posición supina (boca arriba) por 2-3 minutos para permitir que la frecuencia cardíaca se estabilice',
-            'AMBIENTE: Asegura habitación silenciosa, sin distracciones, temperatura e iluminación consistentes',
-            'RESPIRACIÓN: Respira normal y naturalmente - no controles tu respiración durante la medición',
-            'MEDICIÓN: Sigue las instrucciones de la app por lectura de 2-5 minutos, permanece completamente quieto y relajado',
-            'REGISTRO: Documenta la lectura junto con calidad del sueño, nivel de estrés, y cómo te sientes (escala 1-10)',
-            'CONSISTENCIA: Mide exactamente a la misma hora cada día para comparación confiable de datos'
+            "CONFIGURACIÓN DEL DISPOSITIVO: Usa monitor de frecuencia cardíaca con banda pectoral o app HRV4Training con cámara del smartphone (banda pectoral preferida para precisión)",
+            "MOMENTO: Realiza inmediatamente al despertar, después de orinar, antes de consumir agua o comida",
+            "POSICIÓN: Acuéstate en posición supina (boca arriba) por 2-3 minutos para permitir que la frecuencia cardíaca se estabilice",
+            "AMBIENTE: Asegura habitación silenciosa, sin distracciones, temperatura e iluminación consistentes",
+            "RESPIRACIÓN: Respira normal y naturalmente - no controles tu respiración durante la medición",
+            "MEDICIÓN: Sigue las instrucciones de la app por lectura de 2-5 minutos, permanece completamente quieto y relajado",
+            "REGISTRO: Documenta la lectura junto con calidad del sueño, nivel de estrés, y cómo te sientes (escala 1-10)",
+            "CONSISTENCIA: Mide exactamente a la misma hora cada día para comparación confiable de datos",
           ],
-          cues: ['Establece línea base de 7 días para comparación', 'Consistencia en tiempo y posición es crucial para datos precisos', 'Nota cualquier factor que afecte la lectura (mal sueño, estrés, enfermedad)']
+          cues: [
+            "Establece línea base de 7 días para comparación",
+            "Consistencia en tiempo y posición es crucial para datos precisos",
+            "Nota cualquier factor que afecte la lectura (mal sueño, estrés, enfermedad)",
+          ],
         },
         {
-          name: 'Evaluación de Calidad de Movimiento',
-          sets: '1',
-          reps: '5 sentadillas',
+          name: "Evaluación de Calidad de Movimiento",
+          sets: "1",
+          reps: "5 sentadillas",
           instructions: [
-            'PREPARACIÓN: Párate con pies separados al ancho de caderas, brazos extendidos sobre la cabeza sosteniendo una varilla ligera o palo de escoba',
-            'POSICIÓN DE VIDEO: Coloca teléfono/cámara en vista lateral para capturar movimiento de cuerpo completo desde tobillo hasta brazos',
-            'EJECUCIÓN: Baja lentamente en sentadilla manteniendo brazos sobre la cabeza, pecho arriba, y peso distribuido uniformemente en los pies',
-            'OBJETIVO DE PROFUNDIDAD: Desciende hasta que muslos estén paralelos al suelo o tan profundo como la movilidad lo permita sin compensación',
-            'PUNTOS DE EVALUACIÓN: Observa colapso de rodillas hacia adentro, elevación de talones, inclinación hacia adelante, o brazos cayendo hacia adelante',
-            'DOCUMENTACIÓN: Nota cualquier limitación - rigidez de tobillo, tensión de cadera, restricción de columna torácica, movilidad de hombro',
-            'LISTA DE VERIFICACIÓN DE FORMA: Talones abajo, rodillas siguiendo dirección de dedos de pies, torso erguido, brazos permanecen sobre la cabeza',
-            'ANÁLISIS: Revisa video para simetría entre lados izquierdo y derecho, patrón de movimiento suave'
+            "PREPARACIÓN: Párate con pies separados al ancho de caderas, brazos extendidos sobre la cabeza sosteniendo una varilla ligera o palo de escoba",
+            "POSICIÓN DE VIDEO: Coloca teléfono/cámara en vista lateral para capturar movimiento de cuerpo completo desde tobillo hasta brazos",
+            "EJECUCIÓN: Baja lentamente en sentadilla manteniendo brazos sobre la cabeza, pecho arriba, y peso distribuido uniformemente en los pies",
+            "OBJETIVO DE PROFUNDIDAD: Desciende hasta que muslos estén paralelos al suelo o tan profundo como la movilidad lo permita sin compensación",
+            "PUNTOS DE EVALUACIÓN: Observa colapso de rodillas hacia adentro, elevación de talones, inclinación hacia adelante, o brazos cayendo hacia adelante",
+            "DOCUMENTACIÓN: Nota cualquier limitación - rigidez de tobillo, tensión de cadera, restricción de columna torácica, movilidad de hombro",
+            "LISTA DE VERIFICACIÓN DE FORMA: Talones abajo, rodillas siguiendo dirección de dedos de pies, torso erguido, brazos permanecen sobre la cabeza",
+            "ANÁLISIS: Revisa video para simetría entre lados izquierdo y derecho, patrón de movimiento suave",
           ],
-          cues: ['Objetivo de alineación perfecta', 'Nota cualquier restricción de movimiento', 'Muévete lenta y controladamente - esto es evaluación, no ejercicio', 'Documenta áreas específicas que necesitan trabajo de movilidad']
-        }
-      ]
+          cues: [
+            "Objetivo de alineación perfecta",
+            "Nota cualquier restricción de movimiento",
+            "Muévete lenta y controladamente - esto es evaluación, no ejercicio",
+            "Documenta áreas específicas que necesitan trabajo de movilidad",
+          ],
+        },
+      ],
     },
     {
-      id: 'tennis',
-      title: 'Fundación de Tenis',
-      duration: '60 min',
-      timeRange: '07:15-08:15',
-      icon: '🎾',
+      id: "tennis",
+      title: "Fundación de Tenis",
+      duration: "60 min",
+      timeRange: "07:15-08:15",
+      icon: "🎾",
       exercises: [
         {
-          name: 'Calentamiento Dinámico',
-          sets: '1',
-          reps: '10 min',
+          name: "Calentamiento Dinámico",
+          sets: "1",
+          reps: "10 min",
           instructions: [
-            'PREPARACIÓN: Comienza con carrera ligera alrededor de la cancha por 3-4 minutos para elevar temperatura corporal',
-            'CÍRCULOS ARTICULARES: Realiza 10 círculos en cada dirección para tobillos, rodillas, caderas, hombros y cuello',
-            'BALANCEOS DE PIERNAS: 10 balanceos adelante-atrás y 10 lado a lado para cada pierna, sosteniéndote de la red',
-            'CÍRCULOS DE BRAZOS: 10 círculos pequeños, 10 medianos, 10 grandes en cada dirección',
-            'MOVIMIENTOS ESPECÍFICOS DE TENIS: Sombra de golpes de derecha, revés, saque sin pelota por 2 minutos',
-            'DESPLAZAMIENTOS: Pasos laterales, pasos cruzados, carrera hacia atrás por toda la línea de base',
-            'ACTIVACIÓN: Saltos pequeños, talones a glúteos, elevación de rodillas por 30 segundos cada uno',
-            'INTEGRACIÓN: Combina movimientos de pies con sombra de golpes por 1 minuto final'
+            "RODILLAS ALTAS: 20 pasos hacia adelante, lleva rodillas a altura de cadera, mantén postura erguida, mueve brazos naturalmente",
+            "ESTOCADAS LATERALES: 10 de cada lado, paso amplio lateral, siéntate hacia atrás en cadera, mantén pierna opuesta recta, regresa al centro",
+            "CÍRCULOS DE BRAZOS: 10 hacia adelante + 10 hacia atrás, comienza pequeño y aumenta gradualmente el tamaño, mantén hombros relajados",
+            "BALANCEOS DE PIERNAS: 10 cada dirección por pierna - adelante/atrás y lado/lado, sostente de pared/cerca para equilibrio si es necesario",
+            "ESTOCADAS CAMINANDO: 10 cada pierna, paso hacia adelante en estocada, empuja a través de talón delantero al siguiente paso",
+            "CÍRCULOS DE TOBILLO: 10 cada dirección por pie, levanta rodilla y rota tobillo para preparar movimiento en cancha",
+            "ROTACIONES DE HOMBRO: 10 cada dirección, brazos a los lados, rota hombros hacia atrás y adelante",
+            "PROGRESIÓN: Comienza movimientos al 50% intensidad, aumenta gradualmente al 80% al final",
           ],
-          cues: ['Aumenta intensidad gradualmente', 'Enfócate en calidad de movimiento sobre velocidad', 'Prepara todos los patrones de movimiento del tenis', 'Debe sentirse energizante, no fatigante']
-        }
-      ]
-    }
+          cues: [
+            "Graba patrones de movimiento para análisis",
+            "Enfócate en calidad sobre velocidad durante calentamiento",
+            "Cada movimiento debe sentirse suave y controlado",
+          ],
+        },
+        {
+          name: "Desarrollo Rally Controlado",
+          sets: "1",
+          reps: "100 pelotas cada lado",
+          instructions: [
+            "POSICIÓN EN CANCHA: Comienza en centro de línea de base, mantén posición lista atlética entre golpes",
+            "ENFOQUE DERECHA: 100 derechas consecutivas - usa agarre apropiado, rota caderas y hombros, sigue hasta hombro opuesto",
+            "ENFOQUE REVÉS: 100 revés consecutivos - mantén base estable, punto de contacto adelante del cuerpo, termina alto",
+            "TÉCNICA TOPSPIN: Trayectoria de raqueta de bajo a alto, cepilla hacia arriba en contacto pelota, siente el spin en cada golpe",
+            "CONTROL DE TEMPO: Mantén ritmo moderado (70% potencia) - enfócate en consistencia sobre potencia",
+            "OBJETIVO DE ATERRIZAJE: Apunta a profundidad línea de saque a línea de base, posición centro cancha para control",
+            "PASO DE RECUPERACIÓN: Después de cada golpe, pequeños pasos de ajuste a posición óptima para siguiente pelota",
+            "SEGUIMIENTO: Cuenta golpes exitosos que aterrizan en cancha con buen topspin - objetivo 85% tasa de éxito",
+          ],
+          cues: [
+            "85% precisión con ritmo controlado",
+            "Seguimiento velocidad y precisión golpes de fondo",
+            "Rally de calidad sobre golpeo potente",
+            "Enfócate en punto de contacto y seguimiento",
+          ],
+        },
+        {
+          name: "Entrenamiento Precisión Direccional",
+          sets: "1",
+          reps: "15 min",
+          instructions: [
+            "CONFIGURACIÓN OBJETIVOS: Coloca conos o marcadores en esquinas y posiciones medio campo - 6 zonas objetivo total",
+            "DRILL CRUZADO: 20 golpes derecha cruzado a zona objetivo, enfócate en control ángulo y profundidad",
+            "DRILL LÍNEA: 20 golpes derecha por línea, apunta a esquina objetivo con precisión",
+            "OBJETIVOS REVÉS: Repite patrones cruzado y por línea con revés, misma precisión objetivo",
+            "PATRÓN SECUENCIA: Alterna entre cruzado y por línea bajo comando o patrón",
+            "POSICIÓN APROXIMACIÓN: Practica golpear mientras te mueves a posición red después de cada colocación precisa",
+            "SEGUIMIENTO ÉXITO: Cuenta golpes aterrizando dentro de 3 pies de zona objetivo, apunta a 80% tasa precisión",
+            "MOVIMIENTO RECUPERACIÓN: Después de cada golpe, regresa a posición centro cancha usando trabajo de pies eficiente",
+          ],
+          cues: [
+            "80% precisión zona objetivo",
+            "Medición eficiencia cobertura cancha",
+            "Piensa colocación sobre potencia",
+            "Usa trabajo de pies apropiado para alcanzar posición contacto óptima",
+          ],
+        },
+      ],
+    },
+    {
+      id: "movement",
+      title: "Preparación Movimiento",
+      duration: "20 min",
+      timeRange: "08:20-08:40",
+      icon: "🏃",
+      exercises: [
+        {
+          name: "Estiramiento Más Grande del Mundo",
+          sets: "3",
+          reps: "8 cada lado",
+          videoUrl: "https://www.youtube.com/embed/FSSDLDhbacc",
+          instructions: [
+            "POSICIÓN INICIAL: Comienza en posición estocada alta - pie derecho adelante, pierna izquierda recta atrás, manos en suelo",
+            "ESTIRAMIENTO FLEXOR CADERA: Baja rodilla trasera al suelo, empuja caderas hacia adelante para estirar frente de pierna trasera",
+            "ROTACIÓN TORÁCICA: Coloca mano derecha en suelo, rota brazo izquierdo hacia techo, sigue con ojos",
+            "MANTENER Y RESPIRAR: Mantén estiramiento por 5 segundos, respira profundo, siente apertura en cadera y columna",
+            "ALCANCE SOBRE CABEZA: Desde rotación, alcanza ambos brazos sobre cabeza y ligeramente atrás para estiramiento adicional",
+            "TRANSICIÓN: Paso atrás a perro mirando abajo, luego paso pie opuesto adelante y repite secuencia",
+            "PROGRESIÓN: Cada rep debe sentirse más profunda que la anterior - usa respiración controlada para relajar en estiramiento",
+            "APLICACIÓN TENIS: Apunta a tensión flexor cadera de posición lista y rotación torácica para saques",
+          ],
+          cues: [
+            "Aborda restricciones cadera tenis",
+            "Muévete lento y siente cada posición",
+            "Respira profundo durante todo el movimiento",
+          ],
+        },
+        {
+          name: "Balanceos Piernas (Multi-Planar)",
+          sets: "2",
+          reps: "12 cada dirección",
+          videoUrl: "https://www.youtube.com/embed/yVdK6aSUYOA",
+          instructions: [
+            "POSICIÓN SOPORTE: Párate junto a pared o cerca, coloca mano en superficie para equilibrio y estabilidad",
+            "BALANCEOS ADELANTE-ATRÁS: Balancea pierna externa adelante y atrás en plano sagital, comienza pequeño y aumenta rango",
+            "BALANCEOS LATERALES: Gira 90 grados, balancea pierna lado a lado a través del cuerpo, mantén torso erguido",
+            "BALANCEOS DIAGONALES: Balancea pierna en patrón diagonal - adelante y a través, luego atrás y hacia lado",
+            "ÉNFASIS CONTROL: Usa control muscular - no dejes que el momentum lleve el movimiento",
+            "PROGRESIÓN: Comienza con 50% rango de movimiento, aumenta gradualmente a rango completo en rep 8-12",
+            "AMBAS PIERNAS: Completa todas direcciones en una pierna, luego cambia a otra pierna para preparación balanceada",
+            "ENFOQUE TENIS: Prepara caderas para patrones movimiento multi-direccional en cancha",
+          ],
+          cues: [
+            "Movilidad cadera rango completo para movimiento cancha",
+            "Controla el balanceo - no dejes que te controle",
+            "Siente la cadera abriéndose en todas las direcciones",
+          ],
+        },
+        {
+          name: "Progresión Puente Glúteo",
+          sets: "3",
+          reps: "15 con mantener 3-seg",
+          videoUrl: "https://www.youtube.com/embed/wAkTXp21Mt4",
+          instructions: [
+            "POSICIÓN INICIAL: Acuéstate boca arriba, rodillas dobladas 90 grados, pies planos en suelo separados ancho cadera",
+            "ACTIVACIÓN: Aprieta glúteos y empuja a través de talones para levantar caderas del suelo",
+            "POSICIÓN SUPERIOR: Crea línea recta de rodillas a hombros, evita arquear espalda baja",
+            "FASE MANTENER: Aprieta glúteos fuerte por 3 segundos completos en la parte superior de cada rep",
+            "DESCENSO CONTROLADO: Baja caderas lentamente de regreso a posición inicial con control",
+            "PROGRESIÓN: Si 15 reps se vuelven fáciles, progresa a versión una pierna (8 reps por pierna)",
+            "CONFIGURACIÓN UNA PIERNA: Extiende una pierna recta, realiza puente con un pie plantado",
+            "ÁREAS ENFOQUE: Siente los glúteos trabajando, no los isquiotibiales o espalda baja",
+          ],
+          cues: [
+            "Activación glútea apuntando fuerza 505-640N",
+            "Implementación investigación glútea 2024",
+            "Aprieta glúteos como tratando de romper una nuez",
+            'Piensa "empuja suelo lejos con talones"',
+          ],
+        },
+      ],
+    },
+    {
+      id: "strength",
+      title: "Fundación Fuerza",
+      duration: "80 min",
+      timeRange: "08:40-10:00",
+      icon: "💪",
+      exercises: [
+        {
+          name: "Sentadilla Trasera con Barra (HSR)",
+          sets: "4",
+          reps: "8 @ 75%",
+          rest: "3 minutos",
+          videoUrl: "https://www.youtube.com/embed/ultWZbUMPL8",
+          instructions: [
+            "PREPARACIÓN: Posiciona barra en espalda superior (trapecio), no cuello. Pies separados ancho hombros, dedos ligeramente hacia afuera",
+            "RESPIRACIÓN: Toma respiración profunda arriba, mantén durante descenso y ascenso, exhala arriba de cada rep",
+            "FASE EXCÉNTRICA: Baja lentamente durante 4 segundos completos, controla peso hacia abajo, siente estiramiento en piernas",
+            "POSICIÓN INFERIOR: Pausa por 1 segundo completo abajo con muslos paralelos al suelo o ligeramente debajo",
+            "FASE CONCÉNTRICA: Impulsa hacia arriba explosivamente a través de talones, empuja suelo lejos, extiende caderas y rodillas juntas",
+            "SELECCIÓN PESO: Usa 70-75% de 1RM estimado (peso que podrías levantar por 3-5 reps máximas)",
+            "PRIORIDAD FORMA: Si la forma se rompe, reduce peso inmediatamente - técnica sobre ego",
+            "PROTOCOLO HSR: Método Resistencia Pesada Lenta para fortalecimiento tendón y adaptación neural",
+          ],
+          cues: [
+            "Control descenso, impulso explosivo, siente carga tendón",
+            "Hunde lento, pausa, explota hacia arriba por talones",
+            "Pecho arriba, rodillas siguen sobre dedos pies",
+            "Impulsa a través de todo el pie, no solo talones",
+          ],
+        },
+        {
+          name: "Peso Muerto Rumano Una Pierna",
+          sets: "3",
+          reps: "10 por pierna",
+          rest: "2 minutos",
+          videoUrl: "https://www.youtube.com/embed/V9f-FW7s8wQ",
+          instructions: [
+            "POSTURA INICIAL: Párate en una pierna, doblez suave en rodilla, pierna opuesta lista para levantar atrás",
+            "INICIACIÓN BISAGRA CADERA: Empuja caderas atrás mientras levantas pierna de no apoyo recta detrás del cuerpo",
+            "CONTROL DESCENSO: Baja torso durante 3 segundos completos mientras mantienes espalda recta",
+            "ESTIRAMIENTO ISQUIOTIBIAL: Siente estiramiento profundo en isquiotibial de pierna apoyo mientras alcanzas hacia suelo",
+            "PUNTO EQUILIBRIO: Baja hasta que torso esté paralelo al suelo o límite flexibilidad - mantén equilibrio",
+            "ACTIVACIÓN GLÚTEO: Impulsa a través de talón de pierna apoyo, aprieta glúteo para regresar a parado",
+            "COORDINACIÓN PIERNA: Pierna levantada actúa como contrapeso - mantenla recta y activa",
+            "PROGRESIÓN PESO: Comienza peso corporal, agrega mancuernas ligeras una vez que domines forma (5-15 libras)",
+          ],
+          cues: [
+            "Patrón bisagra cadera, controla todo el rango",
+            "Empuja caderas atrás, impulsa por talón",
+            "Siente el estiramiento en tu isquiotibial",
+            "Aprieta glúteo para pararte",
+          ],
+        },
+        {
+          name: "Sentadilla Búlgara Dividida (Con Carga)",
+          sets: "3",
+          reps: "10 por pierna",
+          rest: "90 segundos",
+          videoUrl: "https://www.youtube.com/embed/2C-uNgKwPLE",
+          instructions: [
+            "POSICIÓN PREPARACIÓN: Párate 2-3 pies frente a banco, coloca parte superior de pie trasero en banco detrás de ti",
+            "DISTRIBUCIÓN PESO: 90% del peso en pierna delantera, pierna trasera solo para equilibrio y estabilidad",
+            "PATRÓN DESCENSO: Baja directamente hacia abajo doblando rodilla delantera, mantén torso erguido durante todo",
+            "OBJETIVO PROFUNDIDAD: Desciende hasta que muslo delantero esté paralelo al suelo, siente estiramiento en cadera de pierna trasera",
+            "FASE IMPULSO: Empuja explosivamente a través de talón delantero para regresar a posición inicial",
+            "PROGRESIÓN CARGA: Comienza peso corporal, agrega mancuernas (10-25 libras cada mano) cuando forma sea perfecta",
+            "ENFOQUE EQUILIBRIO: Si tambaleas, coloca pie trasero más bajo o cerca del cuerpo para estabilidad",
+            "VERIFICACIÓN DESEQUILIBRIO: Nota si una pierna es más débil - trabaja lado más débil primero o haz reps extra",
+          ],
+          cues: [
+            "Pierna delantera impulsa, pierna trasera solo equilibra",
+            "Control descenso, ascenso explosivo",
+            "Mantén pecho arriba y torso alto",
+            "Siente el trabajo en cuádriceps y glúteos pierna delantera",
+          ],
+        },
+      ],
+    },
+    {
+      id: "recovery",
+      title: "Recuperación y Evaluación",
+      duration: "20 min",
+      timeRange: "10:25-10:45",
+      icon: "🧊",
+      exercises: [
+        {
+          name: "Ducha de Contraste",
+          sets: "3",
+          reps: "30s caliente/30s frío",
+          instructions: [
+            "CONFIGURACIÓN TEMPERATURA: Agua caliente debe ser cómodamente tibia (no escaldante), fría tan tolerable pero segura",
+            "CICLO 1: Comienza con 30 segundos agua caliente, enfócate en grupos musculares principales trabajados (piernas, glúteos)",
+            "TRANSICIÓN: Cambia rápidamente a agua fría por 30 segundos - respira profundo y mantente relajado",
+            "CICLO 2: Regresa a agua caliente por 30 segundos, deja músculos relajar y circulación aumentar",
+            "CICLO 3: Exposición fría final por 30 segundos, luego termina con 30 segundos agua caliente",
+            "FRÍO FINAL: Termina sesión con 30 segundos adicionales agua fría para máximo beneficio",
+            "TÉCNICA RESPIRACIÓN: Respiración controlada durante todo - nunca contengas respiración durante exposición fría",
+            "PROGRESIÓN GRADUAL: Si eres nuevo a exposición fría, comienza con agua más fresca (no fría) y progresa",
+          ],
+          cues: [
+            "Circulación mejorada y recuperación",
+            "Inflamación reducida",
+            "Respira calmadamente durante el frío",
+            "Esto acelera recuperación entre sesiones",
+          ],
+        },
+        {
+          name: "Respiración VFC",
+          sets: "1",
+          reps: "5 minutos",
+          instructions: [
+            "POSICIÓN: Siéntate cómodamente o acuéstate en espacio silencioso, cierra ojos y relaja hombros",
+            "COLOCACIÓN MANOS: Una mano en pecho, una en vientre para monitorear respiración diafragmática apropiada",
+            "PATRÓN RESPIRACIÓN: Secuencia 4-7-8 - inhala nariz 4 tiempos, mantén 7 tiempos, exhala boca 8 tiempos",
+            "INHALACIÓN: Respira por nariz lenta y silenciosamente, mano vientre debe subir más que pecho",
+            "FASE MANTENER: Mantén respiración cómodamente por 7 tiempos - no fuerces o crees tensión",
+            'EXHALACIÓN: Exhala completamente por boca haciendo sonido suave "whoosh" por 8 tiempos',
+            "REPETICIÓN CICLO: Completa 8-10 ciclos completos, luego regresa a respiración natural",
+            "PROGRESIÓN: Si sientes mareo, reduce a patrón 3-5-6 y construye gradualmente durante semanas",
+          ],
+          cues: [
+            "Activación parasimpática",
+            "Reducción estrés",
+            "Enfócate en respiración vientre, no pecho",
+            "Esto ayuda a tu sistema nervioso recuperar",
+          ],
+        },
+        {
+          name: "Documentación Sesión",
+          sets: "1",
+          reps: "4 minutos",
+          instructions: [
+            "CALIFICACIÓN RPE: Califica dificultad sesión general 1-10 (1=muy fácil, 10=esfuerzo máximo)",
+            "EVALUACIÓN ENERGÍA: Documenta energía pre-entrenamiento (1-10) y energía post-entrenamiento (1-10)",
+            "ESCALA DOLOR: Nota cualquier dolor o incomodidad 1-10, especifica ubicación (rodilla, espalda, hombro, etc.)",
+            "CALIDAD MOVIMIENTO: Compara resultados evaluación movimiento con días previos - mejor/igual/peor",
+            "RENDIMIENTO EJERCICIO: Registra pesos usados, series completadas, cualquier punto de colapso forma",
+            "INDICADORES RECUPERACIÓN: Nota calidad sueño, apetito, nivel motivación para siguiente sesión",
+            "NOTAS ADAPTACIÓN: Ejercicios que se sintieron más fáciles/difíciles de lo esperado, preparación para progresión",
+            "PLANIFICACIÓN SEMANAL: Identifica áreas necesitando atención para modificaciones sesión de mañana",
+          ],
+          cues: [
+            "Datos ajuste programa",
+            "Seguimiento adaptación individual",
+            "Auto-evaluación honesta es crucial para progreso",
+            "Estos datos guían evolución de tu programa",
+          ],
+        },
+      ],
+    },
   ]}
 />
 
-## Instrucciones Rápidas de Ejercicios
+---
 
-### Flujo de Yoga (20 min)
-- Sigue video para secuencia completa de yoga
-- Enfócate en respiración profunda y movimientos controlados
-- Mantén cada postura por 30-45 segundos
-- Termina con postura del niño para preparación mental
-- **Referencia de Video**: [Jeff Nippard - Movilidad](https://www.youtube.com/watch?v=8wPpK6xW9s8)
+## Evaluación Elite Pre-Semana (Completar antes del Lunes)
 
-### Protocolo de Respiración 4-7-8
-- Inhala por 4 tiempos, mantén por 7, exhala por 8
-- Enfócate en respiración abdominal
-- Completa 8-10 ciclos completos
-- Activa sistema nervioso parasimpático
-- **Referencia de Video**: [Jeff Nippard - Técnicas de Recuperación](https://www.youtube.com/watch?v=8wPpK6xW9s8)
+### Evaluación Profesional de Movimiento (Método Academia Alcaraz - 20 minutos)
 
-### Sentadilla sobre la Cabeza (Evaluación)
-- Párate con pies separados al ancho de caderas
-- Mantén brazos extendidos sobre la cabeza
-- Baja hasta posición de sentadilla manteniendo alineación
-- Evalúa restricciones de movilidad
-- Documenta áreas que necesitan trabajo
-- **Referencia de Video**: [Jeff Nippard - Evaluación de Movilidad](https://www.youtube.com/watch?v=8wPpK6xW9s8)
+**Evaluaciones Primarias:**
 
-### Medición de Variabilidad de Frecuencia Cardíaca
-- Usa banda pectoral o app de smartphone
-- Mide al despertar antes de comida/bebida
-- Posición consistente acostado boca arriba
-- Documenta junto con calidad de sueño
-- Establece datos de línea base
+- **Evaluación Sentadilla Sobre Cabeza**: 5 reps con análisis video (vistas frontal/lateral/posterior)
+  - _Estándar Elite_: Alineación perfecta, sin compensaciones, profundidad completa
+  - _Notas Profesionales_: Documenta todas desviaciones movimiento para corrección dirigida
+- **Prueba Puente Glúteo Una Pierna**: 15 reps cada pierna con evaluación fuerza
+  - _Integración Investigación_: Prueba capacidad fuerza glútea (objetivo 505-640N para máximo)
+  - _Detección Desequilibrio_: >20% diferencia requiere intervención dirigida
+- **Prueba Y-T-W Hombro**: 15 cada posición con evaluación resistencia
+  - _Estándar Profesional_: Control perfecto durante rango completo de movimiento
+  - _Aplicación Tenis_: Fuerza manguito rotador para desaceleración saque
+- **Mantener Sentadilla Profunda**: 90 segundos con puntuación calidad movimiento
+  - _Referencia Elite_: Talones abajo, rodillas afuera, brazos sobre cabeza sin compensación
 
-## Notas de Rendimiento
-- **Evaluación de Línea Base**: Establece métricas de partida para toda la semana
-- **Calidad de Movimiento**: Identifica áreas de enfoque para corrección
-- **Preparación Neural**: Prepara sistema nervioso para entrenamiento
-- **Fundación de Tenis**: Establece patrones de movimiento fundamentales
+**Evaluaciones Avanzadas (Estándares Precisión Murray):**
+
+- **Peso Muerto Rumano Una Pierna**: 10 reps cada pierna (estabilidad y cadena posterior)
+- **Flexión a Rotación T**: 8 reps total (movilidad torácica y estabilidad core)
+- **Mantener Parada de Manos en Pared**: Tiempo máximo (estabilidad hombro y fuerza core)
+
+### Pruebas Línea Base Elite (Estándares Profesionales)
+
+**Batería Evaluación Potencia:**
+
+- **Salto Vertical**: 5 intentos con mejor registrado (objetivo +5-7% para Semana 12)
+- **Salto Largo**: 3 intentos (línea base potencia horizontal)
+- **Pase Pecho Pelota Medicinal**: 3 intentos midiendo velocidad
+- **Lanzamiento Sobre Cabeza Pelota Medicinal**: 3 intentos para correlación potencia saque
+
+**Pruebas Fuerza y Estabilidad:**
+
+- **Fuerza Agarre**: 5 intentos cada mano (importancia específica tenis)
+- **Equilibrio Una Pierna**: Ojos cerrados, 60 segundos cada pierna
+- **Mantener Plancha**: Tiempo máximo con forma perfecta
+
+**Establecimiento Monitoreo Profesional:**
+
+- **Línea Base VFC**: Establecimiento 7 días usando protocolos HRV4Training
+- **Evaluación Calidad Sueño**: Métricas profesionales eficiencia y calidad sueño
+- **Línea Base Velocidad Saque**: Medición radar con 10 saques esfuerzo máximo
+- **Movimiento Cancha**: Evaluación rapidez primer paso y cambio dirección
 
 ---
 
-**Navegación Diaria:** [📋 Vista General de la Semana](index) | [Martes ➡️](tuesday)
+## 🌅 Protocolo Matutino Elite (06:00-07:15) - Integración Djokovic {#morning}
+
+### ⏰ 6:00-6:20 AM: Yoga Matutino y Respiración Djokovic
+
+:::tip Seguimiento Completamiento
+Marca cada componente mientras lo completas:
+:::
+
+#### 🧘 Componente Flujo Yoga
+
+- [ ] **Duración:** 20 minutos
+- [ ] **Método:** Rutina 20 minutos de Djokovic
+- [ ] **Enfoque:** Consistencia diaria para preparación sistema nervioso
+
+<details>
+<summary>💡 Notas Coaching Profesional</summary>
+
+- Mantén práctica diaria consistente
+- Enfócate en preparación sistema nervioso
+- Usa este tiempo para transición mental al modo entrenamiento
+
+</details>
+
+#### 🫁 Protocolo Respiración
+
+- [ ] **Duración:** 5 minutos
+- [ ] **Patrón:** 4-7-8 respiración (Inhala 4, mantén 7, exhala 8)
+- [ ] **Enfoque:** Activación sistema nervioso parasimpático
+
+#### 📊 Medición VFC
+
+- [ ] **Dispositivo:** Banda pectoral o HRV4Training app
+- [ ] **Momento:** Inmediatamente al despertar
+- [ ] **Posición:** Acostado boca arriba, 2-3 min
+- [ ] **Documentación:** Registra con calidad sueño (1-10)
+
+#### 📹 Evaluación Calidad Movimiento
+
+- [ ] **Ejercicio:** 5 sentadillas sobre cabeza con video
+- [ ] **Análisis:** Documenta restricciones movimiento
+- [ ] **Objetivo:** Identificar áreas trabajo movilidad
+
+---
+
+## 🎾 Fundación Tenis Elite (07:15-08:15) - Integración Ferrero {#tennis}
+
+### ⏰ 7:15-7:25 AM: Calentamiento Dinámico
+
+:::tip Seguimiento Patrones Movimiento
+Graba patrones movimiento para análisis técnico
+:::
+
+#### Secuencia Calentamiento (10 minutos):
+
+- [ ] **Rodillas Altas**: 20 pasos, altura cadera
+- [ ] **Estocadas Laterales**: 10 cada lado
+- [ ] **Círculos Brazos**: 10 adelante + 10 atrás
+- [ ] **Balanceos Piernas**: 10 cada dirección por pierna
+- [ ] **Estocadas Caminando**: 10 cada pierna
+- [ ] **Círculos Tobillo**: 10 cada dirección por pie
+- [ ] **Rotaciones Hombro**: 10 cada dirección
+
+### ⏰ 7:25-7:55 AM: Desarrollo Rally Controlado
+
+#### Rally Fundación:
+
+- [ ] **Derechas**: 100 pelotas consecutivas @ 70% potencia
+- [ ] **Revés**: 100 pelotas consecutivas @ 70% potencia
+- [ ] **Objetivo Precisión**: 85% tasa éxito
+- [ ] **Enfoque Técnica**: Topspin, punto contacto, seguimiento
+
+### ⏰ 7:55-8:15 AM: Entrenamiento Precisión Direccional
+
+#### Objetivos Precisión (15 minutos):
+
+- [ ] **Cruzado Derecha**: 20 golpes a zona objetivo
+- [ ] **Línea Derecha**: 20 golpes a esquina objetivo
+- [ ] **Cruzado Revés**: 20 golpes a zona objetivo
+- [ ] **Línea Revés**: 20 golpes a esquina objetivo
+- [ ] **Objetivo Precisión**: 80% dentro 3 pies zona objetivo
+
+---
+
+## 🏃 Preparación Movimiento Elite (08:20-08:40) {#movement}
+
+### Secuencia Movilidad (20 minutos)
+
+#### 🔄 Estiramiento Más Grande del Mundo
+
+- [ ] **Series**: 3 × 8 cada lado
+- [ ] **Enfoque**: Restricciones cadera tenis, rotación torácica
+- [ ] **Técnica**: Mantén 5 segundos cada posición
+
+#### 🦵 Balanceos Piernas Multi-Planar
+
+- [ ] **Series**: 2 × 12 cada dirección
+- [ ] **Patrones**: Adelante-atrás, lateral, diagonal
+- [ ] **Enfoque**: Movilidad cadera para movimiento cancha
+
+#### 🍑 Progresión Puente Glúteo
+
+- [ ] **Series**: 3 × 15 con mantener 3-seg
+- [ ] **Objetivo Fuerza**: 505-640N activación glútea
+- [ ] **Progresión**: Una pierna cuando 15 reps sea fácil
+
+---
+
+## 💪 Fundación Fuerza Elite (08:40-10:00) - Integración Precisión Murray {#strength}
+
+_"Implementando Estándares Programación Profesional con Protocolos Respaldados Investigación"_
+
+:::caution Fase 1: Fuerza Fundación (Método Precisión Murray)
+Sigue cada serie mientras la completas. Descansa completamente entre ejercicios.
+:::
+
+### 🏋️ Ejercicio 1: Sentadilla Trasera Barra (HSR)
+
+**Objetivo:** 4 series × 8 reps @ 75% | **Descanso:** 3 minutos entre series
+
+#### Seguimiento Series:
+
+- [ ] **Serie 1:** **\_** kg × 8 reps ✓
+- [ ] **Serie 2:** **\_** kg × 8 reps ✓
+- [ ] **Serie 3:** **\_** kg × 8 reps ✓
+- [ ] **Serie 4:** **\_** kg × 8 reps ✓
+
+<details>
+<summary>🎯 Instrucciones Protocolo Elite</summary>
+
+**Técnica:**
+
+- Excéntrico 4 segundos (bajada)
+- Pausa 1 segundo abajo
+- Concéntrico explosivo (subida)
+- Objetivo 70-75% 1RM estimado
+
+**Claves Profesionales:**
+
+- "Control descenso, impulso explosivo, siente carga tendón"
+- "Hunde lento, pausa, explota hacia arriba por talones"
+
+</details>
+
+<details>
+<summary>🔬 Integración Investigación</summary>
+
+- Carga HSR tendón para adaptación específica tenis
+- Adaptación neural en ventana RFD 0-100ms
+- Construye potencia explosiva para saques y movimiento cancha
+
+</details>
+
+---
+
+### 🏋️ Ejercicio 2: Peso Muerto Rumano Una Pierna
+
+**Objetivo:** 3 series × 10 reps por pierna | **Descanso:** 2 minutos entre series
+
+#### Seguimiento Series:
+
+- [ ] **Serie 1:** Izq **\_** kg × 10 ✓ | Der **\_** kg × 10 ✓
+- [ ] **Serie 2:** Izq **\_** kg × 10 ✓ | Der **\_** kg × 10 ✓
+- [ ] **Serie 3:** Izq **\_** kg × 10 ✓ | Der **\_** kg × 10 ✓
+
+<details>
+<summary>🎯 Instrucciones Protocolo Elite</summary>
+
+**Técnica:**
+
+- Enfoque excéntrico 3 segundos
+- Siente engagement isquiotibial-glúteo
+- Patrón bisagra cadera, controla todo el rango
+
+**Claves Profesionales:**
+
+- "Patrón bisagra cadera, controla todo el rango"
+- "Empuja caderas atrás, impulsa por talón"
+
+</details>
+
+<details>
+<summary>🔬 Integración Investigación</summary>
+
+- Ejercicio glúteo tier-1 (investigación 2024)
+- Apunta los tres músculos glúteos óptimamente
+- Desarrollo fuerza 267-389N para glúteo menor
+
+</details>
+
+---
+
+### 🏋️ Ejercicio 3: Sentadilla Búlgara Dividida (Con Carga)
+
+**Objetivo:** 3 series × 10 reps por pierna | **Descanso:** 90 segundos entre series
+
+#### Seguimiento Series:
+
+- [ ] **Serie 1:** Izq **\_** kg × 10 ✓ | Der **\_** kg × 10 ✓
+- [ ] **Serie 2:** Izq **\_** kg × 10 ✓ | Der **\_** kg × 10 ✓
+- [ ] **Serie 3:** Izq **\_** kg × 10 ✓ | Der **\_** kg × 10 ✓
+
+<details>
+<summary>🎯 Instrucciones Protocolo Elite</summary>
+
+**Técnica:**
+
+- Aborda desequilibrios evaluación
+- Progresa de peso corporal a variaciones con carga
+- Pierna delantera impulsa, pierna trasera solo equilibra
+
+**Claves Profesionales:**
+
+- "Pierna delantera impulsa, pierna trasera solo equilibra"
+- "Control descenso, ascenso explosivo"
+
+</details>
+
+<details>
+<summary>🔬 Integración Investigación</summary>
+
+- Fuerza unilateral específica tenis
+- Aplicación transferencia movimiento cancha
+- Aborda desequilibrios movimiento de evaluación
+
+</details>
+
+---
+
+## 🧊 Recuperación Elite y Evaluación Profesional (10:25-10:45) {#recovery}
+
+_"Integración Power Plate Nadal con Protocolos Recuperación Djokovic"_
+
+:::success Lista Verificación Completamiento Recuperación
+Marca cada protocolo como completo. Recuperación apropiada es esencial para adaptación.
+:::
+
+### 🚿 Protocolo Ducha Contraste
+
+- [ ] **Duración:** 6 minutos total
+- [ ] **Ciclo 1:** 30s caliente → 30s frío ✓
+- [ ] **Ciclo 2:** 30s caliente → 30s frío ✓
+- [ ] **Ciclo 3:** 30s caliente → 30s frío ✓
+- [ ] **Finalizar:** Termina en agua fría
+- [ ] **Beneficios:** Circulación mejorada y recuperación, inflamación reducida
+
+### 🫁 Protocolo Respiración VFC
+
+- [ ] **Duración:** 5 minutos
+- [ ] **Patrón:** Ciclo respiración 4-7-8
+- [ ] **Técnica:** Inhala 4s, mantén 7s, exhala 8s
+- [ ] **Propósito:** Activación parasimpática, reducción estrés
+
+### 📝 Documentación Sesión
+
+- [ ] **RPE (Tasa Esfuerzo Percibido):** **\_**/10
+- [ ] **Nivel Energía Post-Entrenamiento:** **\_**/10
+- [ ] **Dolor/Incomodidad:** **\_**/10 (Ubicación: **\_\_\_**)
+- [ ] **Notas Calidad Movimiento:** ********\_\_\_********
+- [ ] **Adaptaciones Necesarias:** **********\_**********
+
+<details>
+<summary>📊 Preguntas Evaluación Profesional</summary>
+
+**Califica cada área (escala 1-10):**
+
+- Calidad sesión general: **\_**/10
+- Mantenimiento forma ejercicio: **\_**/10
+- Enfoque mental durante entrenamiento: **\_**/10
+- Recuperación entre series: **\_**/10
+
+**Evaluaciones Sí/No:**
+
+- ¿Completaste todas las series prescritas? S/N
+- ¿Mantuviste forma apropiada durante todo? S/N
+- ¿Te sentiste desafiado pero no abrumado? S/N
+- ¿Estás listo para sesión de mañana? S/N
+
+</details>
+
+---
+
+<EmailCapture />
+
+---
+
+**Navegación:** [📋 Vista General Semana](index) | [Martes ➡️](tuesday)

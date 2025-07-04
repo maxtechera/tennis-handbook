@@ -1,6 +1,7 @@
 import React, { useState, FormEvent } from 'react';
 import styles from './EmailCaptureForm.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
+import { API_CONFIG } from '../../config/api';
 
 interface EmailCaptureFormProps {
   variant?: 'hero' | 'inline' | 'popup' | 'footer';
@@ -30,35 +31,24 @@ export function EmailCaptureForm({ variant = 'inline', onSuccess, source }: Emai
     setMessage('');
 
     try {
-      // ConvertKit API integration
-      const formId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID;
-      const apiKey = process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
-
-      if (!formId || !apiKey) {
-        throw new Error('ConvertKit configuration missing');
-      }
-
-      const response = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
+      // Use the API endpoint from configuration
+      const response = await fetch(API_CONFIG.SUBSCRIBE_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          api_key: apiKey,
           email,
-          tags: ['tennis-workout', source],
-          fields: {
-            gdpr_consent: hasConsent ? 'yes' : 'no',
-            signup_source: source,
-            signup_date: new Date().toISOString(),
-            language: document.documentElement.lang || 'en',
-          }
+          source,
+          consent: hasConsent,
+          timestamp: new Date().toISOString(),
+          language: document.documentElement.lang || 'en',
         }),
       });
 
       const data = await response.json();
 
-      if (!response.ok || !data.subscription) {
+      if (!response.ok || !data.success) {
         throw new Error(data.error || 'Subscription failed');
       }
 

@@ -7,7 +7,7 @@ sidebar_position: 1
 _Elite training methodologies from world-class coaches, academies, and professional standards_
 
 :::tip **Professional Foundation**
-All methods in this section are grounded in [Professional Standards & Methods](/professional-standards), including ITF guidelines, elite academy systems, and current sports science research.
+All methods in this section are grounded in [Professional Standards & Methods](/docs/professional-standards), including ITF guidelines, elite academy systems, and current sports science research.
 :::
 
 This section presents the most effective training philosophies in modern tennis, organized by coaching methodology and practical application. Each approach has been validated through elite athlete success and professional recognition.

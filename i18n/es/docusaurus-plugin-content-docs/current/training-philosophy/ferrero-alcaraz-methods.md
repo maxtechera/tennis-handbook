@@ -7,11 +7,11 @@ sidebar_position: 2
 _Metodología de entrenamiento elite de una de las asociaciones jugador-entrenador más exitosas del tenis_
 
 :::tip **Véelo en Acción**
-Los métodos de entrenamiento de Alcaraz están directamente integrados a través del [**Programa Elite de 12 Semanas**](/workouts/overview), especialmente los protocolos de estiramiento diario y el desarrollo de potencia con balón medicinal. Estos métodos están documentados a través de entrevistas profesionales y validados por [Estándares Profesionales](/professional-standards).
+Los métodos de entrenamiento de Alcaraz están directamente integrados a través del [**Programa Elite de 12 Semanas**](/docs/workouts/overview), especialmente los protocolos de estiramiento diario y el desarrollo de potencia con balón medicinal. Estos métodos están documentados a través de entrevistas profesionales y validados por [Estándares Profesionales](/docs/professional-standards)
 :::
 
 :::info **Atribución de Fuente**
-La información en esta sección está compilada de entrevistas profesionales, conocimientos de entrenamiento y metodologías de entrenamiento documentadas del enfoque de entrenamiento de Juan Carlos Ferrero con Carlos Alcaraz. Todos los métodos se alinean con [estándares de entrenamiento ITF](/professional-standards) e investigación actual de ciencias del deporte.
+La información en esta sección está compilada de entrevistas profesionales, conocimientos de entrenamiento y metodologías de entrenamiento documentadas del enfoque de entrenamiento de Juan Carlos Ferrero con Carlos Alcaraz. Todos los métodos se alinean con [estándares de entrenamiento ITF](/docs/professional-standards) e investigación actual de ciencias del deporte.
 :::
 
 ## Filosofía de Desarrollo

@@ -7,11 +7,11 @@ sidebar_position: 2
 _Elite training methodology from one of tennis's most successful player-coach partnerships_
 
 :::tip **See It In Action**
-Alcaraz's training methods are directly integrated throughout the [**12-Week Elite Program**](/workouts/overview), especially the daily stretching protocols and medicine ball power development. These methods are documented through professional interviews and validated by [Professional Standards](/professional-standards).
+Alcaraz's training methods are directly integrated throughout the [**12-Week Elite Program**](/docs/workouts/overview), especially the daily stretching protocols and medicine ball power development. These methods are documented through professional interviews and validated by [Professional Standards](/docs/professional-standards).
 :::
 
 :::info **Source Attribution**
-Information in this section is compiled from professional interviews, coaching insights, and documented training methodologies from Juan Carlos Ferrero's coaching approach with Carlos Alcaraz. All methods align with [ITF coaching standards](/professional-standards) and current sports science research.
+Information in this section is compiled from professional interviews, coaching insights, and documented training methodologies from Juan Carlos Ferrero's coaching approach with Carlos Alcaraz. All methods align with [ITF coaching standards](/docs/professional-standards) and current sports science research.
 :::
 
 ## Development Philosophy

@@ -7,7 +7,7 @@ sidebar_position: 4
 _Métodos de entrenamiento basados en evidencia de especialistas líderes en acondicionamiento para tenis, academias élite y científicos del ejercicio_
 
 :::info **Métodos Integrados de Academia**
-Esta sección combina ciencia de acondicionamiento especializada con metodologías probadas de academia de Mouratoglou, Bollettieri, Método Español y sistemas de la Academia Nadal, todo validado a través de [Estándares Profesionales](/professional-standards).
+Esta sección combina ciencia de acondicionamiento especializada con metodologías probadas de academia de Mouratoglou, Bollettieri, Método Español y sistemas de la Academia Nadal, todo validado a través de [Estándares Profesionales](/docs/professional-standards).
 :::
 
 ## Marco Luparo - Acondicionamiento Específico para Tenis
@@ -303,7 +303,7 @@ Esta sección combina ciencia de acondicionamiento especializada con metodologí
 
 ### Integración de Estándares Profesionales
 
-Todas las metodologías de academia se alinean con [Estándares Profesionales ITF](/professional-standards):
+Todas las metodologías de academia se alinean con [Estándares Profesionales ITF](/docs/professional-standards):
 
 - **Desarrollo Progresivo**: Desarrollo de habilidades y físico apropiado para la edad
 - **Adaptación Individual**: Enfoques personalizados dentro de marcos sistemáticos

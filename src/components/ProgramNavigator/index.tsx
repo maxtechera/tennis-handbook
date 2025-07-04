@@ -97,6 +97,14 @@ export default function ProgramNavigator(): JSX.Element {
       <div className={styles.quickLinks}>
         <h3>⚡ Quick Access</h3>
         <div className={styles.quickLinksGrid}>
+          <Link to="/docs/workouts/week-program-table" className={styles.quickLink}>
+            <span className={styles.quickLinkIcon}>📊</span>
+            <div>
+              <strong>Program Overview</strong>
+              <small>12-Week Table</small>
+            </div>
+          </Link>
+          
           <Link to="/docs/workouts/week-1" className={styles.quickLink}>
             <span className={styles.quickLinkIcon}>🎯</span>
             <div>
@@ -106,7 +114,7 @@ export default function ProgramNavigator(): JSX.Element {
           </Link>
           
           <Link to="/docs/assessment/assessment-monitoring" className={styles.quickLink}>
-            <span className={styles.quickLinkIcon}>📊</span>
+            <span className={styles.quickLinkIcon}>📋</span>
             <div>
               <strong>Assessment</strong>
               <small>Test & Monitor</small>
