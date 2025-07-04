@@ -1,0 +1,83 @@
+{
+  "survey_metadata": {
+    "survey_id": "platform-validation-2025",
+    "ticket_id": "MAX-21",
+    "created_date": "2025-01-04",
+    "launch_date": null,
+    "close_date": null,
+    "status": "draft"
+  },
+  "email_campaign": {
+    "subject_lines": {
+      "primary": "Quick question - help shape Tennis Handbook's future 🎾",
+      "variant_a": "2-minute survey: What features would help your training?",
+      "variant_b": "Your input needed: Tennis Handbook evolution 🎾"
+    },
+    "send_schedule": {
+      "initial_send": null,
+      "reminder_1": null,
+      "reminder_2": null,
+      "results_share": null
+    }
+  },
+  "targeting": {
+    "minimum_subscribers": 100,
+    "segment": "all_active_subscribers",
+    "exclusions": []
+  },
+  "response_tracking": {
+    "total_sent": 0,
+    "emails_opened": 0,
+    "emails_clicked": 0,
+    "surveys_started": 0,
+    "surveys_completed": 0,
+    "response_rate": "0%",
+    "completion_rate": "0%"
+  },
+  "results_summary": {
+    "usage_frequency": {
+      "daily": 0,
+      "2-3_per_week": 0,
+      "weekly": 0,
+      "monthly": 0,
+      "rarely": 0
+    },
+    "primary_goal": {
+      "workout_program": 0,
+      "learn_exercises": 0,
+      "general_fitness": 0,
+      "injury_prevention": 0,
+      "other": 0
+    },
+    "biggest_challenge": {
+      "too_much_content": 0,
+      "tracking_progress": 0,
+      "mobile_experience": 0,
+      "finding_exercises": 0,
+      "other": 0
+    },
+    "premium_interest": {
+      "yes_9": 0,
+      "yes_19": 0,
+      "maybe": 0,
+      "no": 0
+    },
+    "wanted_features": {
+      "progress_tracking": 0,
+      "video_demos": 0,
+      "personalized_plans": 0,
+      "community": 0,
+      "mobile_app": 0,
+      "other": 0
+    },
+    "device_preference": {
+      "mobile": 0,
+      "tablet": 0,
+      "desktop": 0,
+      "mixed": 0
+    }
+  },
+  "key_insights": [],
+  "action_items": [],
+  "notes": []
+}
