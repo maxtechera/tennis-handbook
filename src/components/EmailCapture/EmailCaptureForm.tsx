@@ -30,22 +30,36 @@ export function EmailCaptureForm({ variant = 'inline', onSuccess, source }: Emai
     setMessage('');
 
     try {
-      const response = await fetch('/api/subscribe', {
+      // ConvertKit API integration
+      const formId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID;
+      const apiKey = process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
+
+      if (!formId || !apiKey) {
+        throw new Error('ConvertKit configuration missing');
+      }
+
+      const response = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          api_key: apiKey,
           email,
-          source,
-          consent: hasConsent,
-          timestamp: new Date().toISOString(),
-          language: document.documentElement.lang || 'en',
+          tags: ['tennis-workout', source],
+          fields: {
+            gdpr_consent: hasConsent ? 'yes' : 'no',
+            signup_source: source,
+            signup_date: new Date().toISOString(),
+            language: document.documentElement.lang || 'en',
+          }
         }),
       });
 
-      if (!response.ok) {
-        throw new Error('Subscription failed');
+      const data = await response.json();
+
+      if (!response.ok || !data.subscription) {
+        throw new Error(data.error || 'Subscription failed');
       }
 
       setStatus('success');
@@ -60,11 +74,13 @@ export function EmailCaptureForm({ variant = 'inline', onSuccess, source }: Emai
         window.gtag('event', 'email_capture', {
           event_category: 'engagement',
           event_label: source,
+          method: 'ConvertKit',
         });
       }
 
       onSuccess?.();
     } catch (error) {
+      console.error('ConvertKit subscription error:', error);
       setStatus('error');
       setMessage(translate({
         id: 'emailCapture.error',
