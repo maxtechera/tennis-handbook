@@ -30,22 +30,36 @@ export function EmailCaptureBar() {
     setStatus('loading');
 
     try {
-      const response = await fetch('/api/subscribe', {
+      // ConvertKit API integration
+      const formId = process.env.NEXT_PUBLIC_CONVERTKIT_FORM_ID;
+      const apiKey = process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY;
+
+      if (!formId || !apiKey) {
+        throw new Error('ConvertKit configuration missing');
+      }
+
+      const response = await fetch(`https://api.convertkit.com/v3/forms/${formId}/subscribe`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          api_key: apiKey,
           email,
-          source: 'footer-bar',
-          consent: true,
-          timestamp: new Date().toISOString(),
-          language: document.documentElement.lang || 'en',
+          tags: ['tennis-workout', 'footer-bar'],
+          fields: {
+            gdpr_consent: 'yes',
+            signup_source: 'footer-bar',
+            signup_date: new Date().toISOString(),
+            language: document.documentElement.lang || 'en',
+          }
         }),
       });
 
-      if (!response.ok) {
-        throw new Error('Subscription failed');
+      const data = await response.json();
+
+      if (!response.ok || !data.subscription) {
+        throw new Error(data.error || 'Subscription failed');
       }
 
       setStatus('success');
@@ -55,6 +69,7 @@ export function EmailCaptureBar() {
         window.gtag('event', 'email_capture', {
           event_category: 'engagement',
           event_label: 'footer-bar',
+          method: 'ConvertKit',
         });
       }
 
@@ -62,6 +77,7 @@ export function EmailCaptureBar() {
         setIsVisible(false);
       }, 3000);
     } catch (error) {
+      console.error('ConvertKit subscription error:', error);
       setStatus('error');
     }
   };
