@@ -7,7 +7,7 @@ sidebar_position: 5
 _Marco integral de salud de tendones para atletas de tenis_
 
 :::note **Aplicado A Través de Tu Entrenamiento**
-Los protocolos HSR (Resistencia Lenta Pesada) detallados aquí están sistemáticamente implementados comenzando en [Semana 1](/workouts/week-1-plan) y progresan a través de todas las fases del [Programa de 12 Semanas](/workouts/overview). Ver ejercicios específicos de acondicionamiento de tendones en la [Base de Datos de Ejercicios](/exercises/exercise-database).
+Los protocolos HSR (Resistencia Lenta Pesada) detallados aquí están sistemáticamente implementados comenzando en [Semana 1](/docs/workouts/week-1-plan) y progresan a través de todas las fases del [Programa de 12 Semanas](/docs/workouts/overview). Ver ejercicios específicos de acondicionamiento de tendones en la [Base de Datos de Ejercicios](/docs/exercises/exercise-database).
 :::
 
 ---

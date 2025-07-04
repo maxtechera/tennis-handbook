@@ -7,7 +7,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "npx vercel --prod",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -16,14 +16,21 @@
     "check-translations": "node scripts/check-translations.js",
     "translation-status": "node scripts/quick-translation-check.js",
     "translation-quick": "node scripts/quick-translation-check.js",
-    "build-check": "pnpm build && echo '✅ Build exitoso - traducciones válidas'"
+    "build-check": "pnpm build && echo '✅ Build exitoso - traducciones válidas'",
+    "generate-pdf": "node scripts/pdf-generation/simple-pdf-generator.js",
+    "generate-lead-magnet": "node scripts/pdf-generation/generate-lead-magnet-pdf.js",
+    "deploy:convertkit": "./scripts/deploy-convertkit.sh",
+    "deploy:staging": "node scripts/deploy.js staging",
+    "deploy:production": "node scripts/deploy.js production"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
     "@docusaurus/preset-classic": "3.8.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "marked": "^16.0.0",
     "prism-react-renderer": "^2.3.0",
+    "puppeteer": "^24.11.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

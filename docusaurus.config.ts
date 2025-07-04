@@ -125,6 +125,11 @@ const config: Config = {
           label: "12-Week Program",
         },
         {
+          to: "/docs/workouts/week-program-table",
+          position: "left",
+          label: "📊 Program Overview",
+        },
+        {
           type: "localeDropdown",
           position: "right",
         },
@@ -143,7 +148,7 @@ const config: Config = {
           items: [
             {
               label: "Elite Philosophy",
-              to: "/docs/training-philosophy",
+              to: "/docs/training-philosophy/overview",
             },
             {
               label: "Exercise Database",
@@ -185,7 +190,7 @@ const config: Config = {
             },
             {
               label: "Weekly Plans",
-              to: "/docs/workouts",
+              to: "/docs/workouts/overview",
             },
           ],
         },

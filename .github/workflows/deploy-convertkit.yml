@@ -1,0 +1,179 @@
+name: Deploy with ConvertKit Integration
+
+on:
+  push:
+    branches:
+      - main
+      - production
+  pull_request:
+    types: [opened, synchronize]
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: 'Deployment stage'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - development
+          - staging
+          - production
+
+env:
+  NODE_VERSION: '18.x'
+  PNPM_VERSION: '8'
+
+jobs:
+  validate:
+    name: Validate ConvertKit Integration
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      
+      - name: Test ConvertKit API
+        env:
+          CONVERTKIT_API_KEY: ${{ secrets.CONVERTKIT_API_KEY }}
+          CONVERTKIT_FORM_ID: ${{ secrets.CONVERTKIT_FORM_ID }}
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "X-Api-Secret: ${CONVERTKIT_API_KEY}" \
+            "https://api.convertkit.com/v3/forms/${CONVERTKIT_FORM_ID}")
+          
+          if [ "$response" -ne 200 ]; then
+            echo "ConvertKit API validation failed (HTTP $response)"
+            exit 1
+          fi
+          
+          echo "ConvertKit API validation successful"
+
+  build:
+    name: Build Project
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ env.PNPM_VERSION }}
+      
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+      
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      
+      - name: Build project
+        run: pnpm build
+        env:
+          CONVERTKIT_API_KEY: ${{ secrets.CONVERTKIT_API_KEY }}
+          CONVERTKIT_FORM_ID: ${{ secrets.CONVERTKIT_FORM_ID }}
+          NEXT_PUBLIC_CONVERTKIT_FORM_ID: ${{ secrets.CONVERTKIT_FORM_ID }}
+      
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: build/
+          retention-days: 1
+
+  deploy:
+    name: Deploy to Vercel
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    environment:
+      name: ${{ github.event.inputs.stage || 'production' }}
+      url: ${{ steps.deploy.outputs.url }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-output
+          path: build/
+      
+      - name: Deploy to Vercel
+        id: deploy
+        run: |
+          if [ "${{ github.event.inputs.stage || 'production' }}" == "production" ]; then
+            DEPLOYMENT_URL=$(npx vercel --prod --token="${{ secrets.VERCEL_TOKEN }}" \
+              -e CONVERTKIT_API_KEY="${{ secrets.CONVERTKIT_API_KEY }}" \
+              -e CONVERTKIT_FORM_ID="${{ secrets.CONVERTKIT_FORM_ID }}" \
+              -e NEXT_PUBLIC_CONVERTKIT_FORM_ID="${{ secrets.CONVERTKIT_FORM_ID }}" \
+              --yes)
+          else
+            DEPLOYMENT_URL=$(npx vercel --token="${{ secrets.VERCEL_TOKEN }}" \
+              -e CONVERTKIT_API_KEY="${{ secrets.CONVERTKIT_API_KEY }}" \
+              -e CONVERTKIT_FORM_ID="${{ secrets.CONVERTKIT_FORM_ID }}" \
+              -e NEXT_PUBLIC_CONVERTKIT_FORM_ID="${{ secrets.CONVERTKIT_FORM_ID }}" \
+              --yes)
+          fi
+          
+          echo "url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
+          echo "Deployed to: $DEPLOYMENT_URL"
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+  test-deployment:
+    name: Test Deployment
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test site availability
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" "${{ needs.deploy.outputs.url }}")
+          if [ "$response" -ne 200 ]; then
+            echo "Site returned HTTP $response"
+            exit 1
+          fi
+          echo "Site is accessible"
+      
+      - name: Test ConvertKit integration
+        run: |
+          if curl -s "${{ needs.deploy.outputs.url }}" | grep -q "convertkit"; then
+            echo "ConvertKit form detected on the page"
+          else
+            echo "Warning: ConvertKit form not detected on the page"
+          fi
+      
+      - name: Notify deployment status
+        if: always()
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "✅ Deployment successful!"
+          else
+            echo "❌ Deployment failed!"
+          fi

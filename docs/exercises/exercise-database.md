@@ -7,20 +7,21 @@ sidebar_position: 1
 _Comprehensive exercise library organized by training goals and movement patterns_
 
 :::info **Connected to Your Training**
-Every exercise in this database is used strategically throughout the [**12-Week Elite Program**](/workouts/overview) and is grounded in [**Professional Standards**](/professional-standards). Exercise selection integrates 2024 sports science research showing plyometric and functional training superiority for tennis-specific adaptations.
+Every exercise in this database is used strategically throughout the [**12-Week Elite Program**](/docs/workouts/overview) and is grounded in [**Professional Standards**](/docs/professional-standards). Exercise selection integrates 2024 sports science research showing plyometric and functional training superiority for tennis-specific adaptations.
 :::
 
 :::tip **2024 Research Integration**
-Recent sports science research confirms that **plyometric training** and **functional movement patterns** provide superior neural and muscular adaptations for tennis performance compared to traditional strength training alone. This database prioritizes exercises proven effective in [current research](/professional-standards#evidence-based-training-standards-2024-research).
+Recent sports science research confirms that **plyometric training** and **functional movement patterns** provide superior neural and muscular adaptations for tennis performance compared to traditional strength training alone. This database prioritizes exercises proven effective in [current research](/docs/professional-standards#evidence-based-training-standards-2024-research).
 :::
 
 :::note **Exercise Validation**
 All exercises in this database are:
-- Validated through [Professional Standards](/professional-standards) and elite academy methodologies
+
+- Validated through [Professional Standards](/docs/professional-standards) and elite academy methodologies
 - Supported by current sports science research from peer-reviewed sources
 - Applied successfully in professional tennis training environments
 - Aligned with [ITF coaching education principles](https://www.itftennis.com/en/growing-the-game/coaching/)
-:::
+  :::
 
 ## Table of Contents
 
@@ -479,22 +480,26 @@ All exercises in this database are:
 **Alcaraz-Specific Exercises:**¹⁹
 
 **Agility & Plyometric Training:**
+
 - **Ladder Drills**: 10 sets focusing on footwork and explosiveness (performed at 5:00 PM training sessions)
 - **Box Jumps**: 15 reps enhancing vertical power and reactive strength
 - **Side-to-Side Hops**: 8-minute sessions incorporating lateral movement patterns
 
 **Medicine Ball Power Development:**²⁰
+
 - **Rotational Throws**: 3 sets x 12 reps each direction for core power and stroke enhancement
 - **Tactical Throwing Positions**: Various angles and positions mimicking tennis stroke patterns
 - **Russian Twists with Medicine Ball**: 3 sets x 20 reps for rotational core strength
 
 **Strength Training Components:**²¹
+
 - **Barbell/Dumbbell Squats**: 3 sets x 10 reps for leg power development
 - **Lunges with Dumbbells**: 3 sets x 10 reps per leg for unilateral strength
 - **Single-Leg Romanian Deadlifts**: 3 sets x 10 reps per leg for hamstring and glute strength
 - **Plyometric Push-ups**: 3 sets x 10 reps for explosive upper body power
 
 **Recovery Integration:**²²
+
 - **Cool-down Stretching**: 20-minute hamstring and quad focus with foam rolling
 - **Resistance Band Work**: Strength building without excessive bulk
 - **Dynamic Court Coverage**: Agility drills emphasizing lateral movement efficiency
@@ -510,17 +515,20 @@ All exercises in this database are:
 **Sinner Training Equipment & Methods:**²⁴
 
 **Technogym Integration:**
+
 - **Skillrun Explosive Power Testing**: Advanced treadmill work for athlete-specific conditioning
 - **Kinematic/Kinetic Evaluations**: Balance assessment for tennis-specific movements (stopping, direction changes)
 - **Wellness Ball Training**: Core stability and functional movement patterns
 - **Jump Rope**: Cardiovascular conditioning with coordination enhancement
 
 **Recovery & Mobility Tools:**²⁵
+
 - **Foam Roller Protocols**: Systematic myofascial release
 - **Wellness Rack**: Functional movement and strength training
 - **Technogym Bike**: Endurance work with precise monitoring
 
 **Mental Training Integration:**²⁶
+
 - **Formula Medicine**: Mental training program adapted from Formula 1 for focus and performance under pressure
 
 ### Elite Training Principles from Top Players
@@ -528,16 +536,19 @@ All exercises in this database are:
 **Professional Training Standards:**²⁷
 
 **Bilateral Strength Foundation:**
+
 - **"Strength is King"**: Platform for power development, endurance, and force absorption
 - **Nervous System Training**: Moderately heavy weights for neural adaptations
 - **Power Platform**: Strength serves as foundation for explosive development
 
 **Tennis-Specific Power Endurance:**²⁸
+
 - **Repeated Dynamic Movements**: Training for continuous power expression during matches
 - **Unilateral Power Development**: Single-leg pushing and wide-stretched shot capability
 - **Multi-directional Speed**: Unpredictable movement pattern preparation
 
 **Professional Daily Structure:**²⁹
+
 - **20-30 Minute Warm-ups**: Mobility, activation (tennis band exercises), movement drills
 - **Plyometric Integration**: Strength and reaction time enhancement
 - **Strength Endurance Circuits**: Twice weekly for match-specific conditioning
@@ -546,6 +557,7 @@ All exercises in this database are:
 ### Implementation for Amateur Players
 
 **Alcaraz-Inspired Training Session:**
+
 1. **Dynamic Warm-up** (15 minutes): High knees, lateral lunges, arm circles
 2. **Medicine Ball Circuit** (20 minutes): Rotational throws, Russian twists, tactical positions
 3. **Agility Training** (15 minutes): Ladder drills, box jumps, side-to-side hops
@@ -553,6 +565,7 @@ All exercises in this database are:
 5. **Recovery** (15 minutes): Stretching, foam rolling, flexibility work
 
 **Sinner-Inspired Functional Session:**
+
 1. **Movement Preparation** (10 minutes): Three-dimensional warm-up
 2. **Explosive Power** (20 minutes): Skillrun-style interval work, jump rope
 3. **Functional Strength** (20 minutes): Multiplanar exercises, stability challenges
@@ -591,6 +604,7 @@ All exercises in this database are:
 **High-Intensity Interval Training (HIIT) Protocols:**³³
 
 **Protocol 1: Tennis Match Simulation**
+
 - **Work Intervals**: 4-10 seconds high intensity (mimicking point duration)
 - **Recovery**: 10-20 seconds active recovery (between points)
 - **Extended Rest**: 60-90 seconds (between games)
@@ -598,6 +612,7 @@ All exercises in this database are:
 - **Intensity**: 90-95% maximum heart rate during work intervals
 
 **Protocol 2: VO2 Max Optimization**³⁴
+
 - **Work Intervals**: 3-5 minutes at 90-95% max heart rate
 - **Recovery**: 2-3 minutes at 40% max heart rate
 - **Repetitions**: 4-6 intervals per session
@@ -605,6 +620,7 @@ All exercises in this database are:
 - **Expected Improvement**: 5.5-7.2% increase in VO2max
 
 **Protocol 3: Short Interval Power**³⁵
+
 - **Work Intervals**: ≤30 seconds maximum effort
 - **Recovery**: Equal or longer rest periods (1:1 to 1:2 ratio)
 - **Volume**: ≤5 minutes total work time
@@ -616,6 +632,7 @@ All exercises in this database are:
 **On-Court Tennis Training (OTT):**³⁶
 
 **Court-Based Interval Protocol:**
+
 - **Rally Drills**: 30-45 seconds continuous rallying
 - **Movement Patterns**: Side-to-side, forward-backward court coverage
 - **Recovery**: 15-30 seconds active recovery
@@ -623,6 +640,7 @@ All exercises in this database are:
 - **Heart Rate**: 85-90% maximum during work intervals
 
 **Tennis Ball Machine Intervals:**
+
 - **Feed Rate**: High-intensity ball delivery (1 ball every 2-3 seconds)
 - **Duration**: 60-90 seconds continuous
 - **Recovery**: 60-90 seconds between sets
@@ -642,6 +660,7 @@ All exercises in this database are:
 **Professional Standards Integration:**³⁸
 
 **Daily Aerobic Structure:**
+
 - **Morning**: 20-30 minute aerobic base (bike/run)
 - **Pre-Tennis**: Dynamic warm-up with gradual intensity increase
 - **Court Training**: Tennis-specific interval work
@@ -651,18 +670,21 @@ All exercises in this database are:
 ### Implementation Guidelines for Amateur Players
 
 **Beginner VO2 Max Protocol (Week 1-4):**
+
 1. **Base Building**: 20-30 minutes moderate-intensity cardio (65-75% max HR)
 2. **Introduction Intervals**: 30 seconds work, 90 seconds recovery x 8 repetitions
 3. **Court Integration**: 15-minute rally practice with movement focus
 4. **Frequency**: 3 sessions per week
 
 **Intermediate Protocol (Week 5-8):**
+
 1. **Extended Intervals**: 1-2 minutes work, 1-2 minutes recovery x 6 repetitions
 2. **Tennis Simulation**: Point-play intervals with realistic rest periods
 3. **Mixed Training**: Alternate bike/run intervals with court-based training
 4. **Frequency**: 4 sessions per week
 
 **Advanced Protocol (Week 9-12):**
+
 1. **Competition Simulation**: 3-5 minute intervals at match intensity
 2. **Sport-Specific**: Majority of training conducted on tennis court
 3. **Recovery Optimization**: Heart rate-guided recovery periods
@@ -679,6 +701,7 @@ All exercises in this database are:
 - **Zone 5 (Neuromuscular)**: 90-100% max HR - Anaerobic power
 
 **Progress Indicators:**
+
 - **Resting Heart Rate**: Decreasing trend indicates improved fitness
 - **Recovery Heart Rate**: Faster return to baseline between intervals
 - **Sustained Pace**: Ability to maintain higher intensities longer
@@ -691,6 +714,7 @@ All exercises in this database are:
 ### Rafael Nadal's Training System
 
 **Daily Training Schedule:**⁴⁰
+
 - **Morning**: Wake at 8:30 AM, tennis training 9:30 AM - 1:30 PM (4 hours court time)
 - **Afternoon**: Gym training 4:30 PM - 7:00 PM (2.5 hours strength/conditioning)
 - **Total**: 6.5 hours daily training combining court work and physical preparation
@@ -698,23 +722,27 @@ All exercises in this database are:
 **Strength Training Components:**⁴¹
 
 **Power Plate Training (Whole-Body Vibration):**
+
 - **Platform Work**: Standing flat-footed, then on toes for calf development
 - **Single-Leg Stability**: Hold platform with hands, stand on one leg
 - **Seated Vibration**: Feet on platform, arms extended for core activation
 - **Frequency**: 30-50 muscle contractions per second vs. 1-2 without vibration
 
 **Resistance Band Circuit:**
+
 - **Standing Wall Anchors**: Knee bands for front bends (standing sit-ups)
 - **Applications**: Sporadic burst training for tennis-specific movement patterns
 - **Benefits**: Strength and mobility development for gameplay demands
 
 **Bodyweight Training Protocol:**
+
 - **Pull-ups**: Slight body raises, repeated for 60-second intervals
 - **Push-up Variations**: Elevated stands to maximize dip range
 - **Core Work**: Standing sit-ups anchored with resistance bands
 - **Integration**: Medicine ball and resistance band intensity modifications
 
 **Seasonal Periodization:**⁴²
+
 - **Off-Season**: 1-2 hours daily weight training (bench press, trap pull-downs, leg extensions, bicep curls)
 - **In-Season**: Tennis-specific exercises with reduced gym volume
 - **Tournament Prep**: Light resistance work focused on movement preparation
@@ -722,6 +750,7 @@ All exercises in this database are:
 ### Novak Djokovic's Comprehensive Program
 
 **Daily Training Structure:**⁴³
+
 - **6:00 AM**: 20-minute yoga session (daily consistency)
 - **9:00 AM**: Court training with partner (1.5-2 hours variable intensity)
 - **12:00 PM**: Lunch break and recovery
@@ -733,6 +762,7 @@ All exercises in this database are:
 **Specific Programming Details:**⁴⁴
 
 **Warm-up Protocol (15 minutes):**
+
 - **Cardiovascular**: 5-minute jog or stationary bike
 - **Dynamic Sequence**: 10-15 reps each exercise, no rest between:
   - Jumping jacks, walking high knees, walking high kicks
@@ -740,12 +770,14 @@ All exercises in this database are:
   - Low side-to-side lunge, inverted hamstring, inchworm
 
 **Calisthenics Structure:**⁴⁵
+
 - **Frequency**: 3 times per week
 - **Format**: 3-4 sets of 10-12 repetitions per exercise
 - **Exercises**: Push-ups, pull-ups, squats, lunges, box jumps, burpees
 - **Flexibility Integration**: 30-second holds progressing to 1-minute positions
 
 **Strength Training Exercises:**
+
 - **Upper Body**: Push-ups, pull-ups, tricep pull-downs, bench presses
 - **Lower Body**: Squats, lunges with plyometric integration
 - **Core**: Incorporated throughout all movements for tennis-specific stability
@@ -755,16 +787,19 @@ All exercises in this database are:
 **Strength Training Protocol (Jez Green System):**⁴⁶
 
 **Core Workout Structure:**
+
 - **Format**: 6 sets of 5 reps for all primary exercises
 - **Method**: Strength exercise (A) immediately followed by plyometric (B)
 - **Goal**: Power development without excessive muscle bulk
 
 **Specific Exercise Programming:**
+
 - **Weighted Pull-ups**: 6 sets x 5 reps with 20kg weight belt
 - **Weighted Dips**: 6 sets x 5 reps with same 20kg loading
 - **Olympic Lifting**: 5 sets x 5 reps power cleans for session finisher
 
 **Daily Training Schedule (2024):**⁴⁷
+
 - **9:00 AM**: Physiotherapy session (injury prevention/recovery)
 - **9:30 AM**: 30-minute warm-up with strength coach
 - **10:00 AM - 12:00 PM**: Court training with coaching team
@@ -773,6 +808,7 @@ All exercises in this database are:
 - **6:00 PM**: Training completion
 
 **Cardio Evolution:**⁴⁸
+
 - **Previous**: 400m track intervals (4 laps total volume)
 - **Current**: VersaClimber (zero-impact, high-intensity vertical cardio)
 - **Additional**: Resistance bungees and beach volleyball court sprint drills
@@ -783,30 +819,35 @@ All exercises in this database are:
 **Periodized Set/Rep Schemes:**⁴⁹
 
 **Phase 1 (Foundation - 6-8 weeks):**
+
 - **Frequency**: 2-3 sessions per week, minimum 1 day rest between
 - **Volume**: 8-10 reps, 2-4 sets
 - **Rest**: 1-2 minutes between sets
 - **Focus**: Movement quality and base strength development
 
 **Phase 2 (Maximum Strength):**
+
 - **Frequency**: 2-3 sessions per week
 - **Volume**: 6-8 exercises, 3-4 sets per exercise
 - **Load**: 85-95% 1RM for neural adaptations
 - **Focus**: Peak strength development
 
 **Phase 3 (Power/In-Season):**
+
 - **Frequency**: 2 sessions per week (maintenance)
 - **Volume**: 8-10 reps, 2-4 sets
 - **Rest**: 10-15 seconds between reps, 1+ minute between sets
 - **Focus**: Power transfer and injury prevention
 
 **Circuit Training Integration:**⁵⁰
+
 - **Frequency**: 2 times per week for strength endurance
 - **Format**: 1-minute exercise periods, 30-second rest intervals
 - **Circuits**: 2-3 complete rounds with 2-minute rest between circuits
 - **Duration**: Approximately 60 minutes per session
 
 **Professional Standards Integration:**⁵¹
+
 - **Traditional Approach**: "3 sets of 8" for general strength development
 - **Advanced Method**: "8 sets of 3" for superior strength adaptations
 - **Optimal Programming**: 3+ sets of 3-6 reps for maximum strength and power

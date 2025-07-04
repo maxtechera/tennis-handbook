@@ -7,7 +7,7 @@ sidebar_position: 4
 _Evidence-based training methods from leading tennis conditioning specialists, elite academies, and exercise scientists_
 
 :::info **Integrated Academy Methods**
-This section combines specialized conditioning science with proven academy methodologies from Mouratoglou, Bollettieri, Spanish Method, and Nadal Academy systems, all validated through [Professional Standards](/professional-standards).
+This section combines specialized conditioning science with proven academy methodologies from Mouratoglou, Bollettieri, Spanish Method, and Nadal Academy systems, all validated through [Professional Standards](/docs/professional-standards).
 :::
 
 ## Marco Luparo - Tennis-Specific Conditioning
@@ -159,18 +159,21 @@ This section combines specialized conditioning science with proven academy metho
 **Key Training Principles:**
 
 **Adaptive Coaching Approach:**
+
 - Complete assessment of individual psychology and learning style
 - "Chameleon coaching" - adapting method to each player's needs
 - No pre-packaged training sessions or standardized speeches
 - Continuous observation and method adjustment
 
 **Holistic Development Integration:**
+
 - Technical development combined with mental and emotional growth
 - Results-oriented culture with relentless excellence pursuit
 - Constant questioning and innovation in training methods
 - Integration of physical conditioning with tennis-specific skills
 
 **Training Structure Applications:**
+
 - Maximum 4 players per court for personalized attention
 - Regular video analysis for immediate feedback and correction
 - Weekly match simulation for competition preparation
@@ -183,18 +186,21 @@ This section combines specialized conditioning science with proven academy metho
 **The Spanish Method Framework:**
 
 **Movement-First Training:**
+
 - Court positioning as the foundation of all technical skills
 - Ball preparation through superior footwork and anticipation
 - Development of defensive capabilities before offensive skills
 - Emphasis on "feet before hands" in all training progressions
 
 **Four-Pillar Development System:**
+
 1. **Technical**: Offense, defense, and transition game development
 2. **Tactical**: Pattern recognition and strategic implementation
 3. **Physical**: Personalized conditioning based on individual needs
 4. **Mental**: Competitive mindset and pressure management
 
 **Training Methodology:**
+
 - Small group lessons (2:1 player-to-coach ratio) for individual attention
 - Primary coach assignment for comprehensive development tracking
 - X and V drill progressions for systematic skill building
@@ -207,18 +213,21 @@ This section combines specialized conditioning science with proven academy metho
 **Revolutionary Training Concepts:**
 
 **Total Immersion Environment:**
+
 - 24/7 tennis focus and competitive atmosphere
 - Boarding environment for complete development focus
 - Peer competition driving daily improvement
 - Character building through structured adversity
 
 **Power-Based Modern Tennis:**
+
 - Emphasis on serve and forehand as primary weapons
 - Utilization of modern racket technology for power development
 - Aggressive baseline game as foundational strategy
 - Physical dominance prioritized over traditional finesse
 
 **Training Philosophy:**
+
 - Intensity and effort over perfect technical knowledge
 - Adaptation to individual player strengths and characteristics
 - Innovation and rule-breaking for competitive advantage
@@ -231,24 +240,28 @@ This section combines specialized conditioning science with proven academy metho
 **Core Training Values:**
 
 **Character-First Development:**
+
 - Effort and self-discipline as non-negotiable foundations
 - Respect and humility integrated into all training activities
 - Friendship and teamwork emphasized alongside individual excellence
 - Overcoming adversity as essential life and tennis skill
 
 **Modern Game Integration:**
+
 - Technology utilization for performance analysis and improvement
 - Faster decision-making training for modern game demands
 - Enhanced speed and agility development
 - Statistical analysis for strategic game planning
 
 **Training Sequence Philosophy:**
+
 1. **"Eyes first"**: Court vision and situation awareness
 2. **"Mind second"**: Tactical decision-making under pressure
 3. **"Legs third"**: Movement and court positioning
 4. **"Hands last"**: Technical stroke execution
 
 **Comprehensive Development:**
+
 - Order and responsibility as daily life skills
 - Tolerance and teamwork in all academy activities
 - Integration of academic and athletic development
@@ -261,24 +274,28 @@ This section combines specialized conditioning science with proven academy metho
 ### Academy Method Integration in Training
 
 **From Mouratoglou Method:**
+
 - Individual assessment and personalized program adaptation
 - Continuous observation and method refinement
 - Video analysis integration for immediate feedback
 - Holistic development beyond pure tennis skills
 
 **From Spanish Method:**
+
 - Movement quality prioritization in all exercises
 - Court positioning awareness in tennis-specific training
 - Small group training for individual attention
 - Systematic progression through pattern development
 
 **From Bollettieri Legacy:**
+
 - High-intensity training environment and competitive standards
 - Power development emphasis in strength and conditioning
 - Total commitment and discipline in training approach
 - Innovation and adaptation of conventional methods
 
 **From Nadal Academy:**
+
 - Values integration in all training activities
 - Modern technology utilization for performance enhancement
 - Character development alongside physical development
@@ -286,7 +303,7 @@ This section combines specialized conditioning science with proven academy metho
 
 ### Professional Standards Integration
 
-All academy methodologies align with [ITF Professional Standards](/professional-standards):
+All academy methodologies align with [ITF Professional Standards](/docs/professional-standards):
 
 - **Progressive Development**: Age-appropriate skill and physical development
 - **Individual Adaptation**: Personalized approaches within systematic frameworks

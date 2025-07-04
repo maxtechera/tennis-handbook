@@ -7,7 +7,7 @@ sidebar_position: 1
 _Strategic programming framework for tennis-specific strength and power development based on professional standards and current research_
 
 :::info **Evidence-Based Programming**
-This programming approach integrates [**Professional Standards**](/professional-standards) with 2024 research findings on tennis periodization, addressing the unique challenges of a "no off-season" sport while maintaining systematic development.
+This programming approach integrates [**Professional Standards**](/docs/professional-standards) with 2024 research findings on tennis periodization, addressing the unique challenges of a "no off-season" sport while maintaining systematic development.
 :::
 
 :::note **Modern Periodization Research (2024)**

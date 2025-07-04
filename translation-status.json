@@ -1,14 +1,47 @@
 {
-  "timestamp": "2025-06-23T09:50:28.156Z",
+  "timestamp": "2025-07-04T15:32:59.062Z",
   "summary": {
-    "upToDate": 140,
-    "outdated": 0,
+    "upToDate": 139,
+    "outdated": 4,
     "missing": 0,
-    "total": 140
+    "total": 143
   },
   "details": {
     "missing": [],
-    "outdated": [],
+    "outdated": [
+      {
+        "path": "workouts/overview.mdx",
+        "englishFile": "docs/workouts/overview.mdx",
+        "spanishFile": "i18n/es/docusaurus-plugin-content-docs/current/workouts/overview.mdx",
+        "englishDate": "2025-07-03T23:19:22.000Z",
+        "spanishDate": "2025-06-23T14:57:56.000Z",
+        "status": "DESACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/monday.mdx",
+        "englishFile": "docs/workouts/week-1/monday.mdx",
+        "spanishFile": "i18n/es/docusaurus-plugin-content-docs/current/workouts/week-1/monday.mdx",
+        "englishDate": "2025-06-27T03:10:46.000Z",
+        "spanishDate": "2025-06-23T14:57:56.000Z",
+        "status": "DESACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1/wednesday.mdx",
+        "englishFile": "docs/workouts/week-1/wednesday.mdx",
+        "spanishFile": "i18n/es/docusaurus-plugin-content-docs/current/workouts/week-1/wednesday.mdx",
+        "englishDate": "2025-06-26T11:52:02.000Z",
+        "spanishDate": "2025-06-23T14:57:56.000Z",
+        "status": "DESACTUALIZADO"
+      },
+      {
+        "path": "workouts/week-1-plan.md",
+        "englishFile": "docs/workouts/week-1-plan.md",
+        "spanishFile": "i18n/es/docusaurus-plugin-content-docs/current/workouts/week-1-plan.md",
+        "englishDate": "2025-07-03T23:08:59.000Z",
+        "spanishDate": "2025-06-20T09:14:50.000Z",
+        "status": "DESACTUALIZADO"
+      }
+    ],
     "upToDate": [
       {
         "path": "assessment/assessment-monitoring.md",
@@ -36,6 +69,10 @@
       },
       {
         "path": "intro.md",
+        "status": "ACTUALIZADO"
+      },
+      {
+        "path": "lead-magnets/7-day-tennis-workout-plan.md",
         "status": "ACTUALIZADO"
       },
       {
@@ -139,7 +176,7 @@
         "status": "ACTUALIZADO"
       },
       {
-        "path": "workouts/overview.mdx",
+        "path": "workouts/12-week-program-table.md",
         "status": "ACTUALIZADO"
       },
       {
@@ -148,10 +185,6 @@
       },
       {
         "path": "workouts/week-1/index.mdx",
-        "status": "ACTUALIZADO"
-      },
-      {
-        "path": "workouts/week-1/monday.mdx",
         "status": "ACTUALIZADO"
       },
       {
@@ -168,10 +201,6 @@
       },
       {
         "path": "workouts/week-1/tuesday.mdx",
-        "status": "ACTUALIZADO"
-      },
-      {
-        "path": "workouts/week-1/wednesday.mdx",
         "status": "ACTUALIZADO"
       },
       {

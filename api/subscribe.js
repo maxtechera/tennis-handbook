@@ -52,10 +52,17 @@ export default async function handler(req, res) {
   try {
     // ConvertKit Integration
     const CONVERTKIT_API_SECRET = process.env.CONVERTKIT_API_SECRET;
-    const CONVERTKIT_FORM_ID = process.env.CONVERTKIT_FORM_ID;
+    // Support language-specific form IDs or fall back to default
+    const formIdKey = language === 'es' ? 'CONVERTKIT_FORM_ID_ES' : 'CONVERTKIT_FORM_ID_EN';
+    const CONVERTKIT_FORM_ID = process.env[formIdKey] || process.env.CONVERTKIT_FORM_ID;
 
     if (!CONVERTKIT_API_SECRET || !CONVERTKIT_FORM_ID) {
-      console.error('Missing ConvertKit configuration');
+      console.error('Missing ConvertKit configuration:', {
+        hasSecret: !!CONVERTKIT_API_SECRET,
+        hasFormId: !!CONVERTKIT_FORM_ID,
+        language,
+        formIdKey
+      });
       return res.status(500).json({ error: 'Server configuration error' });
     }
 

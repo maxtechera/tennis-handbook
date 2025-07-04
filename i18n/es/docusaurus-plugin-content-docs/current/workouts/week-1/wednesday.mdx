@@ -2,7 +2,8 @@
 sidebar_position: 3
 ---
 
-import WorkoutNav from '@site/src/components/WorkoutNav';
+import WorkoutNav from "@site/src/components/WorkoutNav";
+import WorkoutCarousel from "@site/src/components/WorkoutCarousel";
 
 <WorkoutNav weekNumber={1} />
 
@@ -12,49 +13,417 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 
 **Navegación Diaria:** [📋 Vista General de la Semana](index) | [⬅️ Martes](tuesday) | [Jueves ➡️](thursday)
 
+<WorkoutCarousel
+  workoutTitle="Miércoles - Hipertrofia Mejorada de Tren Superior"
+  phases={[
+    {
+      id: "assessment",
+      title: "Preparación Mitad de Semana",
+      duration: "10 min",
+      timeRange: "07:00-07:10",
+      icon: "📊",
+      exercises: [
+        {
+          name: "Evaluación VFC y Recuperación",
+          sets: "1",
+          reps: "5 min",
+          instructions: [
+            "PROTOCOLO MATUTINO: Toma lectura VFC inmediatamente al despertar, antes de cualquier movimiento o consumo de agua",
+            "COMPARACIÓN LÍNEA BASE: Compara con lecturas lunes y martes - busca patrones o cambios significativos",
+            "VERIFICACIÓN FATIGA: Califica fatiga acumulativa en escala 1-10, considerando dolor, energía, y motivación",
+            "ANÁLISIS SUEÑO: Documenta horas exactas de sueño, calificación calidad (1-10), y cualquier interrupción sueño",
+            "AUTO-REGULACIÓN: Si VFC baja >10% de línea base O fatiga >7/10, reduce volumen de hoy 30%",
+            "EVALUACIÓN MOVIMIENTO: Realiza prueba sentadilla sobre cabeza - 5 reps lentas con brazos sobre cabeza",
+            "VERIFICACIÓN COMPENSACIÓN: Nota cualquier restricción movimiento comparado con línea base lunes",
+            "PUNTO DECISIÓN: Luz verde (procede según plan), Amarillo (reduce volumen), Rojo (recuperación activa solo)",
+          ],
+          cues: [
+            "Documenta todas lecturas para análisis tendencia semanal",
+            "Sé honesto sobre niveles fatiga",
+            "Mejor modificar que forzar a través de fatiga excesiva",
+          ],
+        },
+      ],
+    },
+    {
+      id: "tennis",
+      title: "Simulación Competición",
+      duration: "60 min",
+      timeRange: "07:15-08:15",
+      icon: "🎾",
+      exercises: [
+        {
+          name: "Calentamiento Dinámico",
+          sets: "1",
+          reps: "10 min",
+          instructions: [
+            "MOVIMIENTO CANCHA: Comienza con trote ligero alrededor perímetro cancha - 2 vueltas adelante, 1 vuelta atrás",
+            "TRABAJO LATERAL: Pasos laterales a lo largo línea base - 2 series cada dirección, aumenta velocidad gradualmente",
+            "PASOS CRUZADOS: Drill carioca longitud cancha completa - enfócate en rotación cadera y coordinación",
+            "SPRINTS PROGRESIVOS: 50% velocidad x2, 70% velocidad x2, 90% velocidad x1 - longitud cancha completa",
+            "GOLPES SOMBRA: 10 derechas, 10 revés, 10 saques - enfócate en rango completo movimiento",
+            "ESTIRAMIENTO DINÁMICO: Balanceos piernas, círculos brazos, giros torso - 10 reps cada dirección",
+            "DRILLS REACCIÓN: Pies rápidos en lugar por 10 segundos x3 series con 20 segundos descanso",
+            "PREPARACIÓN MENTAL: Visualiza escenarios partido mientras completas movimientos calentamiento",
+          ],
+          cues: [
+            "Aumenta intensidad gradualmente",
+            "Enfócate en calidad movimiento sobre velocidad inicialmente",
+            "Prepárate mentalmente para mentalidad competición",
+          ],
+        },
+        {
+          name: "Juego Partido Set 1 - Línea Base",
+          sets: "1",
+          reps: "20 min",
+          instructions: [
+            "PUNTUACIÓN: Juega juegos a 4, debe ganar por 2 juegos. Usa puntuación sin ventaja para eficiencia",
+            "ENFOQUE PRIMARIO: Consistencia y profundidad - apunta a objetivos 2-3 pies dentro línea base",
+            "SELECCIÓN GOLPE: 70% patrones cruzados, 30% por línea cuando oportunidad se presenta",
+            "POSICIONAMIENTO: Regresa a marca central después cada golpe, mantén posición cancha óptima",
+            "SEGUIMIENTO MÉTRICAS: Cuenta errores no forzados - objetivo menos 20% tasa error",
+            "LONGITUD RALLY: Apunta a rallies 8+ golpes, construye puntos pacientemente desde línea base",
+            "ESTRATEGIA SAQUE: 70% primeros saques a cuerpo/revés, enfócate en colocación sobre potencia",
+            "ENFOQUE MENTAL: Mantente presente, enfócate en un punto a la vez, reinicia después errores",
+          ],
+          cues: [
+            "Consistencia sobre ganadores",
+            "Golpes profundos con margen",
+            "Sigue porcentaje error",
+            "Construye confianza a través juego sólido",
+          ],
+        },
+        {
+          name: "Juego Partido Set 2 - Agresivo",
+          sets: "1",
+          reps: "20 min",
+          instructions: [
+            "PUNTUACIÓN: Continúa formato juegos a 4, implementa patrones más agresivos",
+            "CAMBIO TÁCTICO: Busca pelotas cortas para atacar, muévete adelante cuando oportunidad lo permite",
+            "INTENTOS GANADOR: Cuando dentro línea base, ve por objetivos agresivos con 80% potencia",
+            "ESTRATEGIA SAQUE: Aumenta ritmo primer saque a 80-85%, apunta a esquinas",
+            "GOLPES APROXIMACIÓN: Ataca cualquier pelota aterrizando en caja saque, sigue a posición red",
+            "JUEGO RED: Comprométete a voleas cuando aproximándote, sin retroceso una vez adelante",
+            "GESTIÓN RIESGO: Acepta tasa error más alta (25-30%) para ganadores aumentados",
+            "MOMENTUM: Crea presión a través posicionamiento agresivo y selección golpe",
+          ],
+          cues: [
+            "Agresión controlada",
+            "Comprométete completamente a golpes",
+            "Porcentaje primer saque >60%",
+            "Sigue cuenta ganadores",
+          ],
+        },
+        {
+          name: "Juego Partido Set 3 - Puntos Presión",
+          sets: "1",
+          reps: "20 min",
+          instructions: [
+            "FORMATO: Juega tiebreaks a 7 puntos, debe ganar por 2. Juega 3-4 tiebreaks total",
+            "SIMULACIÓN PRESIÓN: Cada punto cuenta - practica respiración competición entre puntos",
+            "PUNTOS GRANDES: En puntos juego/set, implementa tus patrones porcentaje más alto",
+            "SELECCIÓN SAQUE: Mezcla ubicaciones pero ve a fortaleza en puntos cruciales",
+            "ESTRATEGIA RESTO: Haz restos agresivos, pon presión en sacador inmediatamente",
+            "FORTALEZA MENTAL: Usa auto-charla positiva, mantén lenguaje corporal confiado",
+            "EJECUCIÓN CLUTCH: Enfócate en proceso (técnica) no resultado (ganar/perder)",
+            "RECUPERACIÓN: Toma 20 segundos completos entre puntos, usa para planificación táctica",
+          ],
+          cues: [
+            "Gana >50% puntos presión",
+            "Lenguaje corporal fuerte durante todo",
+            "Ejecuta bajo presión",
+            "Aprende de cada tiebreak",
+          ],
+        },
+      ],
+    },
+    {
+      id: "strength",
+      title: "Fuerza Tren Superior",
+      duration: "75 min",
+      timeRange: "08:20-09:35",
+      icon: "💪",
+      exercises: [
+        {
+          name: "Press Banco con Mancuernas - Enfoque Velocidad",
+          sets: "4",
+          reps: "8",
+          rest: "2.5 min",
+          videoUrl: "https://www.youtube.com/embed/VmB1G1K7v94",
+          instructions: [
+            "PREPARACIÓN: Acuéstate en banco con pies planos en suelo, omóplatos tirados hacia atrás y abajo, ligero arco en espalda baja",
+            "POSICIÓN MANCUERNAS: Sostén mancuernas a nivel pecho con palmas hacia adelante, codos a ángulo 45 grados del torso",
+            "FASE EXCÉNTRICA: Baja pesos durante exactamente 2 segundos, controla descenso hasta justo sobre nivel pecho",
+            "POSICIÓN INFERIOR: Pausa breve abajo, mantén tensión, siente estiramiento a través músculos pecho",
+            "CONCÉNTRICO EXPLOSIVO: Impulsa mancuernas hacia arriba tan rápido como sea posible manteniendo control - apunta a velocidad barra 0.8-1.0 m/s",
+            "POSICIÓN SUPERIOR: Para justo antes bloqueo para mantener tensión muscular, mancuernas directamente sobre hombros",
+            "SELECCIÓN PESO: Usa 70-75% de 1RM estimado - suficientemente pesado para desafiar pero ligero suficiente para velocidad",
+            "SEGUIMIENTO VELOCIDAD: Si disponible, usa seguidor velocidad. De otro modo, enfócate en intención explosiva con buena forma",
+          ],
+          cues: [
+            "Explosivo arriba, controlado abajo",
+            "Mantén arco y impulso piernas",
+            "Sigue velocidad barra si es posible",
+            "Enfócate en desarrollo potencia",
+          ],
+        },
+        {
+          name: "Remo Inclinado con Mancuernas",
+          sets: "4",
+          reps: "8",
+          rest: "2 min",
+          instructions: [
+            "POSICIÓN INICIAL: Párate con pies separados ancho cadera, bisagra en caderas a ángulo torso 45 grados, rodillas ligeramente dobladas",
+            "ALINEACIÓN ESPINAL: Mantén columna neutra durante todo - imagina balanceando vaso agua en espalda baja",
+            "AGARRE: Sostén mancuernas con agarre neutro (palmas frente a frente), brazos colgando directamente abajo",
+            "MOVIMIENTO TIRÓN: Impulsa codos hacia atrás y arriba, tirando mancuernas a costillas inferiores, lidera con codos no manos",
+            "CONTRACCIÓN PICO: Aprieta omóplatos juntos FUERTE por 1 segundo completo en posición superior",
+            "CONTROL EXCÉNTRICO: Baja pesos lentamente durante 2-3 segundos, mantén engagement espalda superior durante todo",
+            "PATRÓN RESPIRACIÓN: Exhala durante tirón (concéntrico), inhala durante bajada (excéntrico)",
+            "ERRORES COMUNES: Evita rotación torso, mantén bisagra cadera, no dejes hombros redondear hacia adelante",
+          ],
+          cues: [
+            "Aprieta y mantén arriba",
+            "Codos cerca del cuerpo",
+            "Siente dorsales y romboides trabajando",
+            "Mantén espalda plana durante todo",
+          ],
+        },
+        {
+          name: "Press Landmine → Golpe Pelota Medicinal (Complejo PAP)",
+          sets: "3",
+          reps: "6 + 4",
+          rest: "3 min",
+          instructions: [
+            "PREPARACIÓN LANDMINE: Asegura barra en accesorio landmine o esquina, carga peso apropiado en extremo libre",
+            "POSTURA: Postura escalonada con pie opuesto adelante del brazo presionando, ligera inclinación adelante",
+            "EJECUCIÓN PRESS: Sostén barra a hombro, presiona arriba y ligeramente adelante en ángulo 45 grados",
+            "INTENSIDAD: Usa 80% esfuerzo - desafiante pero con 2-3 reps en reserva para calidad",
+            "INTENCIÓN EXPLOSIVA: Enfócate en presionar tan rápido como sea posible aunque barra se mueva lento",
+            "TRANSICIÓN: Después 6 presses, descansa exactamente 20 segundos - esto es crucial para efecto PAP",
+            "GOLPES PELOTA MEDICINAL: Inmediatamente después 20s descanso, realiza 4 golpes pelota medicinal esfuerzo máximo",
+            "TÉCNICA GOLPE: Levanta pelota sobre cabeza con extensión completa, golpea abajo con cuerpo entero, velocidad máxima",
+          ],
+          cues: [
+            "Press pesado prepara sistema nervioso",
+            "Descanso 20 segundos es crucial",
+            "Potencia máxima en golpes",
+            "Descanso completo 3 minutos entre complejos",
+          ],
+        },
+        {
+          name: "Dominadas Agarre Neutro",
+          sets: "3",
+          reps: "AMRAP",
+          rest: "2 min",
+          instructions: [
+            "AGARRE: Usa manijas agarre neutro (palmas frente a frente) o agarre supino si no disponible",
+            "POSICIÓN INICIAL: Cuelgue muerto con brazos completamente extendidos pero hombros ligeramente activados (no completamente relajados)",
+            "INICIACIÓN: Comienza tirón deprimiendo omóplatos hacia abajo y atrás, luego impulsa codos abajo",
+            "FASE TIRÓN: Tira hasta barbilla pase barra, enfócate en usar dorsales y espalda superior, no solo brazos",
+            "POSICIÓN SUPERIOR: Pausa breve arriba, siente contracción completa en dorsales y espalda media",
+            "DESCENSO: Baja bajo control durante 2-3 segundos, resiste gravedad, mantén tensión muscular",
+            "PROTOCOLO AMRAP: Realiza tantas reps calidad como sea posible - para cuando forma se degrade",
+            "SEGUIMIENTO PROGRESIÓN: Registra reps totales a través todas 3 series, apunta agregar 1-2 reps semanalmente",
+          ],
+          cues: [
+            "Rango completo movimiento",
+            "Controla negativo",
+            "Sigue progresión semanal",
+            "Calidad sobre cantidad",
+          ],
+        },
+        {
+          name: "Face-pulls con Cable",
+          sets: "3",
+          reps: "12",
+          rest: "1.5 min",
+          instructions: [
+            "ALTURA CABLE: Coloca cable a altura cara o ligeramente arriba, conecta manija cuerda",
+            "POSTURA: Párate distancia brazo del cable, ligera postura escalonada para estabilidad",
+            "POSICIÓN INICIAL: Brazos extendidos hacia adelante, mantén ligera flexión en codos",
+            "MOVIMIENTO TIRÓN: Tira codos hacia atrás y alto, separa extremos cuerda mientras tiras",
+            "ROTACIÓN EXTERNA: En rango final, rota hombros externamente para que nudillos apunten a techo",
+            "CONTRACCIÓN PICO: Mantén por 1 segundo, siente contracción intensa en deltoides posteriores y romboides",
+            "RETORNO: Regresa lentamente a posición inicial, mantén tensión durante rango entero",
+            "ENFOQUE: Este ejercicio contrarresta postura hombros hacia adelante común en jugadores tenis",
+          ],
+          cues: [
+            "Codos altos durante todo",
+            "Tira aparte al final",
+            "Tempo lento y controlado",
+            "Siente deltoides posteriores trabajando",
+          ],
+        },
+      ],
+    },
+    {
+      id: "conditioning",
+      title: "Finalizador Metabólico",
+      duration: "15 min",
+      timeRange: "09:35-09:50",
+      icon: "🔥",
+      exercises: [
+        {
+          name: "Cuerdas de Batalla",
+          sets: "3",
+          reps: "20s trabajo, 20s descanso",
+          instructions: [
+            "PREPARACIÓN: Párate con pies más anchos que hombros, ligera posición sentadilla, core activado",
+            "AGARRE: Sostén un extremo cuerda en cada mano, mantén agarre firme pero no muerte",
+            "PATRÓN ONDAS: Ondas alternantes - crea patrón onda consistente de manos a ancla",
+            "INTENSIDAD: Esfuerzo máximo por 20 segundos completos - esto debe sentirse como sprint",
+            "POSICIÓN CUERPO: Mantente bajo en postura atlética, usa cuerpo entero no solo brazos",
+            "RESPIRACIÓN: Respira forzada y rítmicamente - no contengas respiración",
+            "CLAVE MENTAL: Cuenta ondas si ayuda mantener intensidad - apunta a 30+ por intervalo",
+            "RECUPERACIÓN: Durante 20s descanso, sacude brazos y prepárate mentalmente para siguiente esfuerzo",
+          ],
+          cues: [
+            "Activación cuerpo completo",
+            "Esfuerzo 9/10 RPE",
+            "Mantén amplitud onda",
+            "Usa piernas para generar potencia",
+          ],
+        },
+        {
+          name: "Swings con Kettlebell",
+          sets: "3",
+          reps: "20s trabajo, 60s descanso",
+          instructions: [
+            "PREPARACIÓN: Pies más anchos que hombros, kettlebell en suelo 12 pulgadas frente a pies",
+            "PATRÓN BISAGRA: Empuja caderas hacia atrás (no sentadilla abajo), mantén columna neutra, agarra manija con ambas manos",
+            "INICIACIÓN: Excursiona kettlebell hacia atrás entre piernas como excursionar fútbol americano, carga isquiotibiales y glúteos",
+            "IMPULSO CADERA: Impulsa caderas explosivamente hacia adelante (no arriba), aprieta glúteos fuerte arriba",
+            "POSICIÓN FLOTACIÓN: Kettlebell debe flotar a nivel ojos solo de potencia cadera, brazos son solo ganchos",
+            "DESCENSO: Deja gravedad traer kettlebell abajo, bisagra caderas hacia atrás mientras KB se aproxima al cuerpo",
+            "RITMO: Encuentra ritmo suave y poderoso - aproximadamente 1 swing por segundo",
+            "RESPIRACIÓN: Exhala forzadamente arriba de cada swing, inhala en descenso",
+          ],
+          cues: [
+            "Bisagra cadera no sentadilla",
+            "Potencia de glúteos",
+            "Brazos se mantienen relajados",
+            "Mantén espalda plana durante todo",
+          ],
+        },
+      ],
+    },
+    {
+      id: "recovery",
+      title: "Recuperación y Evaluación",
+      duration: "15 min",
+      timeRange: "09:50-10:05",
+      icon: "🧘",
+      exercises: [
+        {
+          name: "Trabajo Tejido Blando Dirigido",
+          sets: "1",
+          reps: "5 min",
+          instructions: [
+            "RODAMIENTO DORSALES: Acuéstate de lado con rodillo espuma bajo área axila, rueda lentamente hacia dorsal inferior, 60s cada lado",
+            "TÉCNICA: Cuando encuentres punto sensible, pausa por 10-15 segundos, respira profundo, deja tejido liberar",
+            "DELTOIDES POSTERIOR: Usa pelota lacrosse contra pared, encuentra músculo hombro posterior, presión suave por 30s cada",
+            "RODAMIENTO CUÁDRICEPS: Acuéstate boca abajo con rodillo bajo muslos, rueda de cadera hasta justo sobre rodilla, 90s cada pierna",
+            "EVITAR: No ruedes directamente en banda IT (lado del muslo) - enfócate en cuádriceps e isquiotibiales en lugar",
+            "PRESIÓN: Comienza con peso corporal, reduce presión si demasiado doloroso - debe ser 6-7/10 incomodidad",
+            "RESPIRACIÓN: Mantén respiración profunda durante todo - ayuda sistema nervioso relajar y tejidos liberar",
+            "HIDRATACIÓN: Bebe agua inmediatamente después para ayudar eliminar desecho metabólico de tejidos",
+          ],
+          cues: [
+            "Rodamiento lento y controlado",
+            "Pausa en puntos sensibles",
+            "Respiración profunda durante todo",
+            "Enfócate en músculos trabajados",
+          ],
+        },
+        {
+          name: "Protocolo Respiración Contraste",
+          sets: "1",
+          reps: "5 min",
+          instructions: [
+            "FASE 1 - ACTIVACIÓN (1 min): Respiraciones rápidas y superficiales a través nariz, 30-40 respiraciones por minuto",
+            "PROPÓSITO: Aumenta tono simpático, ayuda transición de alta intensidad a recuperación",
+            "TRANSICIÓN (30s): Regresa a respiración normal, nota cambios frecuencia cardíaca y energía",
+            "FASE 2 - RECUPERACIÓN (3 min): Respiración diafragmática profunda, 4 tiempos dentro por nariz, 6 tiempos fuera por boca",
+            "COLOCACIÓN MANOS: Una mano en pecho, una en vientre - vientre debe subir más que pecho",
+            "ENFOQUE MENTAL: Visualiza técnica tenis perfecta durante respiración recuperación",
+            "INTEGRACIÓN (30s): Combina respiración con visualización objetivos entrenamiento mañana",
+            "COMPLETAMIENTO: Termina con 3 respiraciones normales y evaluación cómo te sientes",
+          ],
+          cues: [
+            "Contraste dramático entre fases",
+            "Usa para reinicio sistema nervioso",
+            "Perfecto para recuperación post-entrenamiento",
+          ],
+        },
+        {
+          name: "Verificación Progreso Mitad de Semana",
+          sets: "1",
+          reps: "5 min",
+          instructions: [
+            "CALIDAD ENTRENAMIENTO: Califica sesión de hoy 1-10 por esfuerzo, técnica, y enfoque",
+            "SEGUIMIENTO ENERGÍA: Compara energía actual con inicio semana - ¿ritmo sostenible?",
+            "NOTAS TÉCNICAS: Documenta cualquier patrón movimiento que se sintió particularmente bueno o desafiante",
+            "NECESIDADES RECUPERACIÓN: Evalúa honestamente si necesitas recuperación extra antes mañana",
+            "VERIFICACIÓN CONFIANZA: Califica estado mental y nivel confianza 1-10",
+            "REVISIÓN NUTRICIÓN: Confirma nutrición pre/post entrenamiento estuvo en punto",
+            "VERIFICACIÓN HIDRATACIÓN: Calcula ingesta agua total - apunta a 0.5-1oz por libra peso corporal",
+            "PLANIFICACIÓN: Basado en evaluación, nota cualquier modificación necesaria para mañana",
+          ],
+          cues: [
+            "Auto-evaluación honesta",
+            "Sigue tendencias semanales",
+            "Ajusta plan si necesario",
+            "Celebra progreso mitad de semana",
+          ],
+        },
+      ],
+    },
+  ]}
+/>
+
 ---
 
-## Evaluación de Preparación de Mitad de Semana (07:00-07:10)
-
-| Parámetro                      | Rango Objetivo          | Lectura Miércoles | Respuesta de Auto-Regulación                  |
-| ------------------------------ | --------------------- | ----------- | ----------------------------------------- |
-| **% Cambio VFC desde Línea Base** | ±5%                   | \_\_\_%     | &gt;-10% = procede, &lt;-10% = reduce intensidad |
-| **Calidad de Sueño**              | ≥7/10                 | \_\_\_/10   | &lt;6 = reduce volumen 30%                 |
-| **Fatiga Acumulativa**         | ≤6/10                 | \_\_\_/10   | &gt;7 = día de recuperación activa                  |
-| **Motivación**                 | ≥7/10                 | \_\_\_/10   | &lt;6 = solo enfoque técnico                 |
-| **Verificación Calidad de Movimiento**     | Sentadilla sobre cabeza suave | Pasa/Falla   | Falla = 15 min movilidad extra              |
+| Parámetro                              | Rango Objetivo                | Lectura Miércoles | Respuesta de Auto-Regulación                     |
+| -------------------------------------- | ----------------------------- | ----------------- | ------------------------------------------------ |
+| **% Cambio VFC desde Línea Base**      | ±5%                           | \_\_\_%           | &gt;-10% = procede, &lt;-10% = reduce intensidad |
+| **Calidad de Sueño**                   | ≥7/10                         | \_\_\_/10         | &lt;6 = reduce volumen 30%                       |
+| **Fatiga Acumulativa**                 | ≤6/10                         | \_\_\_/10         | &gt;7 = día de recuperación activa               |
+| **Motivación**                         | ≥7/10                         | \_\_\_/10         | &lt;6 = solo enfoque técnico                     |
+| **Verificación Calidad de Movimiento** | Sentadilla sobre cabeza suave | Pasa/Falla        | Falla = 15 min movilidad extra                   |
 
 ## Sets de Práctica de Tenis - Simulación Competitiva (07:15-08:15)
 
 ### Estructura de Juego de Partido
 
-| Tipo de Set                   | Duración | Puntuación        | Enfoque                | Métricas de Éxito          |
-| -------------------------- | -------- | -------------- | -------------------- | ------------------------ |
-| **Set 1: Juego de Línea Base**   | 20 min   | Juegos a 4     | Consistencia, profundidad   | &lt;20% errores no forzados     |
-| **Set 2: Juego Agresivo** | 20 min   | Juegos a 4     | Oportunidades de ganadores | 60% primeros saques dentro        |
-| **Set 3: Puntos de Presión** | 20 min   | Tiebreaks a 7 | Fortaleza mental     | Ganar &gt;50% puntos de presión |
+| Tipo de Set                    | Duración | Puntuación    | Enfoque                    | Métricas de Éxito               |
+| ------------------------------ | -------- | ------------- | -------------------------- | ------------------------------- |
+| **Set 1: Juego de Línea Base** | 20 min   | Juegos a 4    | Consistencia, profundidad  | &lt;20% errores no forzados     |
+| **Set 2: Juego Agresivo**      | 20 min   | Juegos a 4    | Oportunidades de ganadores | 60% primeros saques dentro      |
+| **Set 3: Puntos de Presión**   | 20 min   | Tiebreaks a 7 | Fortaleza mental           | Ganar &gt;50% puntos de presión |
 
 ### Seguimiento de Rendimiento
 
-| Estadística            | Objetivo | Real  | Notas                 |
-| -------------------- | ------ | ------- | --------------------- |
-| **Ganadores**          | 15-20  | \_\_\_  | Calidad sobre cantidad |
-| **Errores No Forzados**  | &lt;25    | \_\_\_  | Prioridad consistencia  |
-| **% Primer Saque**    | &gt;60%   | \_\_\_% | Potencia con control    |
-| **Puntos de Quiebre Ganados** | &gt;40%   | \_\_\_% | Rendimiento bajo presión  |
+| Estadística                   | Objetivo | Real    | Notas                    |
+| ----------------------------- | -------- | ------- | ------------------------ |
+| **Ganadores**                 | 15-20    | \_\_\_  | Calidad sobre cantidad   |
+| **Errores No Forzados**       | &lt;25   | \_\_\_  | Prioridad consistencia   |
+| **% Primer Saque**            | &gt;60%  | \_\_\_% | Potencia con control     |
+| **Puntos de Quiebre Ganados** | &gt;40%  | \_\_\_% | Rendimiento bajo presión |
 
 ## Bloque de Entrenamiento Mejorado de Tren Superior (08:20-09:35)
 
 ### Enfoque en Hipertrofia y Fuerza
 
-| Ejercicio                      | Series×Reps | Descanso    | Instrucciones de Enfoque de Velocidad   | Beneficios de Hipertrofia       |
-| ----------------------------- | --------- | ------- | ----------------------------- | -------------------------- |
-| **Press de Pecho con Mancuernas (Velocidad)** | 4×8       | 2.5 min | Concéntrica rápida (0.8-1.0 m/s) | Pecho, hombros, tríceps  |
-|                               |           |         | Excéntrica controlada de 2 seg    | Desarrollo de potencia          |
-|                               |           |         | Enfoque en velocidad de barra            | Adaptaciones neurales         |
-|                               |           |         | 70-75% 1RM estimado          | Combinación fuerza-potencia |
+| Ejercicio                                     | Series×Reps | Descanso | Instrucciones de Enfoque de Velocidad | Beneficios de Hipertrofia   |
+| --------------------------------------------- | ----------- | -------- | ------------------------------------- | --------------------------- |
+| **Press de Pecho con Mancuernas (Velocidad)** | 4×8         | 2.5 min  | Concéntrica rápida (0.8-1.0 m/s)      | Pecho, hombros, tríceps     |
+|                                               |             |          | Excéntrica controlada de 2 seg        | Desarrollo de potencia      |
+|                                               |             |          | Enfoque en velocidad de barra         | Adaptaciones neurales       |
+|                                               |             |          | 70-75% 1RM estimado                   | Combinación fuerza-potencia |
 
 **Instrucciones Detalladas del Press de Pecho con Mancuernas:**
+
 - **CONFIGURACIÓN**: Acuéstate en banco con mancuernas a nivel del pecho, pies planos en el piso, ligero arco en espalda baja
 - **AGARRE**: Sostén mancuernas con palmas hacia adelante, muñecas rectas y fuertes
 - **DESCENSO**: Baja pesos durante 2 segundos completos, controla el peso hasta nivel del pecho
@@ -64,12 +433,13 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 - **RESPIRACIÓN**: Inhala durante descenso, exhala forzadamente durante fase explosiva ascendente
 - **PESO**: Usa 70-75% de 1RM estimado (peso que podrías presionar por 3-5 reps máximas)
 
-| **Remo Inclinado con Mancuernas**          | 4×8       | 2 min   | Aprieta arriba por 1 segundo   | Romboides, trapecios medios, dorsales |
-|                               |           |         | Controla negativo lentamente       | Fuerza postural          |
-|                               |           |         | Siente músculos trabajando          | Desarrollo equilibrado       |
-|                               |           |         | Mantén espalda plana            | Integración estabilidad del core |
+| **Remo Inclinado con Mancuernas** | 4×8 | 2 min | Aprieta arriba por 1 segundo | Romboides, trapecios medios, dorsales |
+| | | | Controla negativo lentamente | Fuerza postural |
+| | | | Siente músculos trabajando | Desarrollo equilibrado |
+| | | | Mantén espalda plana | Integración estabilidad del core |
 
 **Instrucciones Detalladas del Remo Inclinado con Mancuernas:**
+
 - **CONFIGURACIÓN**: Pies separados al ancho de caderas, bisagra en caderas con ligera flexión de rodilla, mancuernas colgando directo abajo
 - **POSICIÓN DE ESPALDA**: Mantén espalda plana durante todo el ejercicio, pecho arriba, ojos mirando ligeramente adelante
 - **FASE DE TIRÓN**: Tira mancuernas hacia costillas inferiores, lidera con codos, aprieta omóplatos juntos
@@ -81,15 +451,16 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 
 ### Introducción PAP (Potenciación Post-Activación)
 
-| Complejo       | Ejercicio               | Series×Reps | Descanso  | Instrucciones                 | Beneficios              |
-| ------------- | ---------------------- | --------- | ----- | ---------------------------- | --------------------- |
-| **Complejo 1** | Press Landmine (Pesado) | 3×6       | -     | 80% esfuerzo, intención explosiva | Acondicionamiento de fuerza |
-|               | → Golpe con Pelota Medicinal        | 3×4       | 3 min | 20s después del press, velocidad máxima   | Expresión de potencia      |
-|               |                        |           |       | Extensión completa sobre cabeza      | Potenciación neural   |
+| Complejo       | Ejercicio                    | Series×Reps | Descanso | Instrucciones                           | Beneficios                  |
+| -------------- | ---------------------------- | ----------- | -------- | --------------------------------------- | --------------------------- |
+| **Complejo 1** | Press Landmine (Pesado)      | 3×6         | -        | 80% esfuerzo, intención explosiva       | Acondicionamiento de fuerza |
+|                | → Golpe con Pelota Medicinal | 3×4         | 3 min    | 20s después del press, velocidad máxima | Expresión de potencia       |
+|                |                              |             |          | Extensión completa sobre cabeza         | Potenciación neural         |
 
 **Instrucciones Detalladas del Complejo PAP:**
 
 **Press Landmine (Pesado):**
+
 - **CONFIGURACIÓN**: Un extremo de barra en base landmine o esquina, carga el otro extremo con peso
 - **POSTURA**: Postura escalonada, sostén barra a nivel del hombro con ambas manos
 - **EJECUCIÓN**: Presiona barra hacia arriba y ligeramente adelante en ángulo de 45 grados
@@ -98,6 +469,7 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 - **DESCANSO**: Descansa inmediatamente 20 segundos para permitir que el sistema nervioso se prepare para trabajo de potencia
 
 **Golpe con Pelota Medicinal:**
+
 - **TIMING**: Comienza exactamente 20 segundos después de completar serie de press landmine
 - **CONFIGURACIÓN**: Párate con pies separados al ancho de hombros, sostén pelota medicinal sobre cabeza con ambas manos
 - **EJECUCIÓN**: Golpea pelota hacia abajo tan fuerte como sea posible usando todo el cuerpo, activa core
@@ -107,17 +479,18 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 
 ### Tirón y Cadena Posterior
 
-| Ejercicio                  | Series×Reps | Instrucciones                   | Objetivo de Progresión            |
-| ------------------------- | --------- | ------------------------------ | --------------------------- |
-| **Dominadas Agarre Neutro** | 3×AMRAP   | Sigue reps totales semanalmente        | +1-2 reps por semana          |
-|                           |           | Descenso controlado             | Progresión: 25+ reps totales |
-|                           |           | Extensión completa abajo       | Eventualmente reps con peso    |
-| **Face-pulls**            | 3×12      | Codos altos, rotación externa | Mantenimiento salud de hombro |
-|                           |           | Lento y controlado            | Énfasis deltoides posterior       |
+| Ejercicio                   | Series×Reps | Instrucciones                   | Objetivo de Progresión        |
+| --------------------------- | ----------- | ------------------------------- | ----------------------------- |
+| **Dominadas Agarre Neutro** | 3×AMRAP     | Sigue reps totales semanalmente | +1-2 reps por semana          |
+|                             |             | Descenso controlado             | Progresión: 25+ reps totales  |
+|                             |             | Extensión completa abajo        | Eventualmente reps con peso   |
+| **Face-pulls**              | 3×12        | Codos altos, rotación externa   | Mantenimiento salud de hombro |
+|                             |             | Lento y controlado              | Énfasis deltoides posterior   |
 
 **Instrucciones Detalladas de Tirón y Cadena Posterior:**
 
 **Dominadas Agarre Neutro:**
+
 - **AGARRE**: Usa agarre neutro (palmas frente a frente) si está disponible, o agarre supino
 - **POSICIÓN INICIAL**: Cuelga con brazos completamente extendidos, hombros activados (no completamente relajados)
 - **FASE DE TIRÓN**: Tira pecho hacia barra, lidera con pecho no barbilla, aprieta omóplatos
@@ -128,6 +501,7 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 - **PROGRESIÓN**: Sigue reps totales en todas las 3 series, apunta a agregar 1-2 reps semanalmente
 
 **Face-pulls:**
+
 - **CONFIGURACIÓN**: Coloca cable a altura de cara o usa banda de resistencia anclada a punto firme
 - **AGARRE**: Sostén cuerda/banda con agarre pronado, brazos extendidos hacia adelante
 - **FASE DE TIRÓN**: Tira codos hacia atrás y arriba a altura de hombros, separa manos
@@ -140,16 +514,17 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 
 ### Circuito de Alta Intensidad
 
-| Ronda       | Ejercicio     | Tiempo Trabajo | Descanso | Intensidad | Enfoque               |
-| ----------- | ------------ | --------- | ---- | --------- | ------------------- |
-| **Ronda 1** | Cuerdas de Batalla | 20s       | 20s  | 9/10 RPE  | Potencia de cuerpo completo     |
-|             | Swings con KB    | 20s       | 60s  | 8/10 RPE  | Empuje de cadera           |
-| **Ronda 2** | Cuerdas de Batalla | 20s       | 20s  | 9/10 RPE  | Mantener intensidad  |
-|             | Swings con KB    | 20s       | 60s  | 8/10 RPE  | Precisión técnica |
-| **Ronda 3** | Cuerdas de Batalla | 20s       | 20s  | 9/10 RPE  | Fortaleza mental    |
-|             | Swings con KB    | 20s       | 60s  | 8/10 RPE  | Terminar fuerte       |
+| Ronda       | Ejercicio          | Tiempo Trabajo | Descanso | Intensidad | Enfoque                     |
+| ----------- | ------------------ | -------------- | -------- | ---------- | --------------------------- |
+| **Ronda 1** | Cuerdas de Batalla | 20s            | 20s      | 9/10 RPE   | Potencia de cuerpo completo |
+|             | Swings con KB      | 20s            | 60s      | 8/10 RPE   | Empuje de cadera            |
+| **Ronda 2** | Cuerdas de Batalla | 20s            | 20s      | 9/10 RPE   | Mantener intensidad         |
+|             | Swings con KB      | 20s            | 60s      | 8/10 RPE   | Precisión técnica           |
+| **Ronda 3** | Cuerdas de Batalla | 20s            | 20s      | 9/10 RPE   | Fortaleza mental            |
+|             | Swings con KB      | 20s            | 60s      | 8/10 RPE   | Terminar fuerte             |
 
 **Señales de Coaching:**
+
 - Cuerdas de Batalla: "Golpea fuerte hacia abajo, activa core"
 - Swings con KB: "Empuje de cadera, no movimiento de sentadilla"
 - Monitorea degradación de forma
@@ -157,6 +532,7 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 **Instrucciones Detalladas de Acondicionamiento Metabólico:**
 
 **Cuerdas de Batalla:**
+
 - **CONFIGURACIÓN**: Agarra una cuerda en cada mano, párate con pies separados al ancho de hombros, ligera postura atlética
 - **MOVIMIENTO**: Alterna golpeando cuerdas hacia abajo tan fuerte como sea posible, usa todo el cuerpo
 - **ACTIVACIÓN DEL CORE**: Mantén core apretado durante todo el ejercicio, no dejes que las cuerdas te jalen hacia adelante
@@ -165,6 +541,7 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 - **RESPIRACIÓN**: Respira forzadamente - no aguantes respiración durante alta intensidad
 
 **Swings con Kettlebell:**
+
 - **CONFIGURACIÓN**: Párate con pies más anchos que hombros, kettlebell en el suelo entre pies
 - **AGARRE**: Bisagra en caderas, agarra kettlebell con ambas manos, mantén espalda plana
 - **EMPUJE DE CADERA**: Empuja caderas explosivamente hacia adelante para balancear kettlebell a nivel de ojos
@@ -177,39 +554,39 @@ _"Construyendo Volumen e Intensidad Competitiva"_
 
 ### Trabajo de Tejido Blando
 
-| Herramienta              | Área Objetivo       | Duración      | Técnica                         | Propósito                    |
-| ----------------- | ----------------- | ------------- | --------------------------------- | -------------------------- |
-| **Rodillo de Espuma**   | Dorsal ancho  | 60s cada lado | Pases lentos, pausa en puntos tensos | Liberación de tensión espalda superior |
-| **Pelota de Lacrosse** | Deltoides posterior | 30s cada lado | Presión suave, movimientos pequeños  | Movilidad de hombro          |
-| **Rodillo de Espuma**   | Cuádriceps        | 90s cada pierna  | Rueda lentamente, evita banda IT        | Preparación tren inferior     |
+| Herramienta            | Área Objetivo       | Duración        | Técnica                              | Propósito                              |
+| ---------------------- | ------------------- | --------------- | ------------------------------------ | -------------------------------------- |
+| **Rodillo de Espuma**  | Dorsal ancho        | 60s cada lado   | Pases lentos, pausa en puntos tensos | Liberación de tensión espalda superior |
+| **Pelota de Lacrosse** | Deltoides posterior | 30s cada lado   | Presión suave, movimientos pequeños  | Movilidad de hombro                    |
+| **Rodillo de Espuma**  | Cuádriceps          | 90s cada pierna | Rueda lentamente, evita banda IT     | Preparación tren inferior              |
 
 ### Protocolo de Respiración de Contraste
 
-| Fase           | Duración | Método                             | Propósito                    |
-| --------------- | -------- | ---------------------------------- | -------------------------- |
-| **Activación**  | 1 min    | Respiraciones rápidas y superficiales             | Estimulación simpática    |
-| **Transición**  | 30s      | Respiración normal                   | Transición del sistema          |
-| **Recuperación**    | 3 min    | Respiración diafragmática profunda       | Activación parasimpática |
-| **Integración** | 30s      | Visualización de técnica perfecta | Mejora del aprendizaje motor |
+| Fase             | Duración | Método                                | Propósito                    |
+| ---------------- | -------- | ------------------------------------- | ---------------------------- |
+| **Activación**   | 1 min    | Respiraciones rápidas y superficiales | Estimulación simpática       |
+| **Transición**   | 30s      | Respiración normal                    | Transición del sistema       |
+| **Recuperación** | 3 min    | Respiración diafragmática profunda    | Activación parasimpática     |
+| **Integración**  | 30s      | Visualización de técnica perfecta     | Mejora del aprendizaje motor |
 
 ### Evaluación de Mitad de Semana
 
-| Métrica               | Escala | Calificación Miércoles | Tendencia Semanal        |
-| -------------------- | ----- | ---------------- | ------------------- |
-| **Calidad de Entrenamiento** | 1-10  | \_\_\_/10        | Comparado con Lun/Mar |
-| **Niveles de Energía**    | 1-10  | \_\_\_/10        | ¿Sostenible?        |
-| **Enfoque Técnico**  | 1-10  | \_\_\_/10        | Áreas de mejora   |
-| **Necesidad de Recuperación**    | 1-10  | \_\_\_/10        | Plan para mañana   |
-| **Confianza**       | 1-10  | \_\_\_/10        | Verificación estado mental  |
+| Métrica                       | Escala | Calificación Miércoles | Tendencia Semanal          |
+| ----------------------------- | ------ | ---------------------- | -------------------------- |
+| **Calidad de Entrenamiento**  | 1-10   | \_\_\_/10              | Comparado con Lun/Mar      |
+| **Niveles de Energía**        | 1-10   | \_\_\_/10              | ¿Sostenible?               |
+| **Enfoque Técnico**           | 1-10   | \_\_\_/10              | Áreas de mejora            |
+| **Necesidad de Recuperación** | 1-10   | \_\_\_/10              | Plan para mañana           |
+| **Confianza**                 | 1-10   | \_\_\_/10              | Verificación estado mental |
 
 ### Verificación de Timing Nutricional
 
-| Timing                      | Comida/Suplemento      | Propósito                    | ¿Completado?       |
-| --------------------------- | -------------------- | -------------------------- | ---------------- |
-| **Pre-entrenamiento** (1-2h)     | Carbohidratos + proteína      | Energía + protección muscular | ✓/✗              |
-| **Post-entrenamiento** (&lt;30 min) | Proteína + carbohidratos      | Inicio de recuperación        | ✓/✗              |
-| **Proteína Diaria**           | Seguir ingesta         | Objetivo 1.8-2.2g/kg         | \_\_\_g total    |
-| **Hidratación**               | Agua + electrolitos | Rendimiento + recuperación     | \_\_\_L consumidos |
+| Timing                              | Comida/Suplemento        | Propósito                     | ¿Completado?       |
+| ----------------------------------- | ------------------------ | ----------------------------- | ------------------ |
+| **Pre-entrenamiento** (1-2h)        | Carbohidratos + proteína | Energía + protección muscular | ✓/✗                |
+| **Post-entrenamiento** (&lt;30 min) | Proteína + carbohidratos | Inicio de recuperación        | ✓/✗                |
+| **Proteína Diaria**                 | Seguir ingesta           | Objetivo 1.8-2.2g/kg          | \_\_\_g total      |
+| **Hidratación**                     | Agua + electrolitos      | Rendimiento + recuperación    | \_\_\_L consumidos |
 
 ---
 
