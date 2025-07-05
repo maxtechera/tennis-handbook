@@ -1,0 +1,86 @@
+{
+  "migration_rules": [
+    {
+      "source": "_docs/STRATEGY.md",
+      "action": "MERGE",
+      "merge_with": "_docs/Strategy/STRATEGY.md",
+      "target": "docs/00_PROJECT_OVERVIEW/vision.md",
+      "extract_sections": {
+        "product_elements": "docs/01_PRODUCT/product-strategy.md",
+        "technical_elements": "docs/02_TECH_ARCHITECTURE/technical-strategy.md"
+      }
+    },
+    {
+      "source": "_docs/ARCHITECTURE.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/02_TECH_ARCHITECTURE/architecture-overview.md",
+      "add_header": "> **Status: ACTIVE** | Last updated: 2025-07-05"
+    },
+    {
+      "source": "_docs/Implementation/email-capture-*.md",
+      "action": "CONSOLIDATE",
+      "target": "docs/01_PRODUCT/features/email-capture-spec.md",
+      "consolidation_template": "feature-spec.md.template"
+    },
+    {
+      "source": "_docs/ACTIVE_SPRINT.md",
+      "action": "RENAME",
+      "target": "docs/06_OPERATIONS/current-sprint.md"
+    },
+    {
+      "source": "_docs/README.md",
+      "action": "MERGE_INTO",
+      "target": "docs/00_PROJECT_OVERVIEW/index.md"
+    },
+    {
+      "source": "_docs/Strategy/BUSINESS-MODEL.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/00_PROJECT_OVERVIEW/business-model.md"
+    },
+    {
+      "source": "_docs/Strategy/PLATFORM-ROADMAP.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/01_PRODUCT/roadmap.md"
+    },
+    {
+      "source": "_docs/Strategy/PROGRESSIVE-DISCLOSURE-STRATEGY.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/01_PRODUCT/progressive-disclosure-strategy.md"
+    },
+    {
+      "source": "_docs/Reference/Brand-Guidelines.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/05_BRAND/brand-guidelines.md"
+    },
+    {
+      "source": "_docs/Reference/spanish-translation-guide.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/04_CONTENT/localization-guide.md"
+    },
+    {
+      "source": "_docs/Reference/user-validation-toolkit.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/01_PRODUCT/user-research-methods.md"
+    },
+    {
+      "source": "_docs/Implementation/api-deployment.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/02_TECH_ARCHITECTURE/deployment-guide.md"
+    },
+    {
+      "source": "_docs/Implementation/convertkit-setup.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/07_EXTERNAL/convertkit-integration.md"
+    },
+    {
+      "source": "_docs/IMPLEMENTATION_CHECKLIST.md",
+      "action": "MOVE_AND_UPDATE",
+      "target": "docs/06_OPERATIONS/implementation-checklist.md"
+    },
+    {
+      "source": "_docs/Archive/*",
+      "action": "MOVE",
+      "target": "docs/99_TEMPORARY/archive/"
+    }
+  ]
+}
