@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Elite Tennis Workout Plan</title>
+    <style>
+        /* Professional Print-Ready Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        @page {
+            size: letter;
+            margin: 0.75in 1in;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 11pt;
+            line-height: 1.7;
+            color: #2C3E50;
+            background: white;
+            margin: 0;
+            padding: 40px;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+        
+        /* Typography */
+        h1 {
+            color: #1B5E20;
+            font-size: 36pt;
+            text-align: center;
+            margin-bottom: 16pt;
+            font-weight: 800;
+            letter-spacing: -1pt;
+            padding-bottom: 16pt;
+            border-bottom: 4px solid #66BB6A;
+        }
+        
+        h1 + p {
+            text-align: center;
+            color: #558B2F;
+            font-style: italic;
+            font-size: 16pt;
+            margin-bottom: 32pt;
+            font-weight: 500;
+        }
+        
+        h2 {
+            color: #2E7D32;
+            font-size: 24pt;
+            margin-top: 48pt;
+            margin-bottom: 24pt;
+            padding: 16pt 20pt;
+            background: linear-gradient(to right, #E8F5E9, rgba(232, 245, 233, 0));
+            border-left: 6px solid #66BB6A;
+            page-break-before: always;
+            page-break-after: avoid;
+            font-weight: 700;
+        }
+        
+        h2:first-of-type {
+            page-break-before: avoid;
+            margin-top: 0;
+        }
+        
+        h3 {
+            color: #388E3C;
+            font-size: 18pt;
+            margin-top: 32pt;
+            margin-bottom: 16pt;
+            font-weight: 600;
+            page-break-after: avoid;
+        }
+        
+        h4 {
+            color: #43A047;
+            font-size: 14pt;
+            margin-top: 24pt;
+            margin-bottom: 12pt;
+            padding: 8pt 16pt;
+            background: #F1F8E9;
+            border-left: 4px solid #81C784;
+            font-weight: 600;
+            page-break-after: avoid;
+        }
+        
+        /* Content */
+        p {
+            margin-bottom: 12pt;
+            text-align: justify;
+            orphans: 3;
+            widows: 3;
+        }
+        
+        ul, ol {
+            margin-left: 24pt;
+            margin-bottom: 16pt;
+            padding-left: 12pt;
+        }
+        
+        li {
+            margin-bottom: 8pt;
+            line-height: 1.6;
+        }
+        
+        li strong:first-child {
+            color: #1B5E20;
+            font-weight: 600;
+        }
+        
+        /* Special formatting */
+        li strong:contains("Key Point") {
+            color: #E65100 !important;
+        }
+        
+        li strong:contains("Tennis Benefit") {
+            color: #1565C0 !important;
+        }
+        
+        /* Exercise blocks */
+        h4 + ul {
+            background: #FAFAFA;
+            padding: 16pt;
+            border-radius: 8pt;
+            border: 1px solid #E0E0E0;
+            margin-bottom: 24pt;
+            page-break-inside: avoid;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        /* Section backgrounds */
+        h3:contains("Warm-Up"),
+        h3:contains("Main Workout"),
+        h3:contains("Cool-Down") {
+            background: linear-gradient(135deg, #66BB6A 0%, #81C784 100%);
+            color: white;
+            padding: 12pt 20pt;
+            border-radius: 8pt;
+            margin-top: 32pt;
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        /* Horizontal rules */
+        hr {
+            border: none;
+            border-top: 3px solid #E0E0E0;
+            margin: 40pt 0;
+            page-break-after: avoid;
+        }
+        
+        /* Pro tips section */
+        h2:contains("Bonus Tips") {
+            background: linear-gradient(to right, #FFF3E0, rgba(255, 243, 224, 0));
+            color: #E65100;
+            border-left-color: #FF6F00;
+        }
+        
+        h3:contains("Alcaraz"),
+        h3:contains("Sinner") {
+            background: #FFF3E0;
+            padding: 16pt;
+            border-radius: 8pt;
+            color: #E65100;
+            border-left: 4px solid #FF6F00;
+            margin: 24pt 0;
+        }
+        
+        /* Assessment sections */
+        h3:contains("Review"),
+        h3:contains("Plan") {
+            background: #F3E5F5;
+            padding: 12pt 20pt;
+            border-radius: 8pt;
+            color: #6A1B9A;
+            border-left: 4px solid #AB47BC;
+        }
+        
+        /* Nutrition section */
+        h3:contains("Nutrition") {
+            background: #FFF8E1;
+            padding: 12pt 20pt;
+            border-radius: 8pt;
+            color: #F57C00;
+            border-left: 4px solid #FFB300;
+        }
+        
+        /* CTA sections */
+        h2:contains("Your Next Steps") {
+            background: #1B5E20;
+            color: white;
+            text-align: center;
+            padding: 24pt;
+            border-radius: 12pt;
+            margin-top: 48pt;
+            border: none;
+        }
+        
+        h2:contains("Your Next Steps") + ol {
+            background: #E8F5E9;
+            padding: 24pt 24pt 24pt 48pt;
+            border-radius: 12pt;
+            font-size: 13pt;
+            font-weight: 500;
+            margin-top: -12pt;
+        }
+        
+        /* Print optimization */
+        @media print {
+            body {
+                padding: 0;
+                font-size: 10pt;
+            }
+            
+            h1 { font-size: 32pt; }
+            h2 { font-size: 20pt; }
+            h3 { font-size: 16pt; }
+            h4 { font-size: 13pt; }
+            
+            /* Ensure backgrounds print */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            
+            /* Page numbers */
+            @page {
+                @bottom-center {
+                    content: counter(page) " of " counter(pages);
+                    font-size: 9pt;
+                    color: #666;
+                }
+                
+                @top-center {
+                    content: "7-Day Elite Tennis Workout Plan";
+                    font-size: 9pt;
+                    color: #666;
+                }
+            }
+        }
+        
+        /* Print button */
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        
+        .print-button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">📄 Save as PDF</button>
+    
+    <div class="content">
+        <h1>7-Day Elite Tennis Workout Plan</h1>
+<p><em>Transform Your Game with Pro Training Methods</em></p>
+<h2>Welcome, Future Champion!</h2>
+<p>You&#39;re about to discover the exact training methods used by today&#39;s top tennis professionals. This isn&#39;t another generic fitness plan - it&#39;s a carefully crafted progression based on what actually works at the highest level.</p>
+<p><strong>What makes this different:</strong></p>
+<ul>
+<li>Based on real pro training data</li>
+<li>Focuses on tennis-specific power</li>
+<li>Prevents common injuries</li>
+<li>Takes just 45-60 minutes per day</li>
+</ul>
+<hr>
+<h2>Day 1: Power Foundation</h2>
+<p><em>Build explosive strength from the ground up</em></p>
+<h3>Warm-Up (10 minutes)</h3>
+<ol>
+<li><strong>Arm Circles</strong> - 30 seconds forward, 30 seconds backward</li>
+<li><strong>Leg Swings</strong> - 15 each direction per leg</li>
+<li><strong>Walking Lunges with Twist</strong> - 10 per side</li>
+<li><strong>Jumping Jacks</strong> - 60 seconds</li>
+<li><strong>Dynamic Stretching</strong> - Focus on hips and shoulders</li>
+</ol>
+<h3>Main Workout (35 minutes)</h3>
+<h4>A. Medicine Ball Slams</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 8</li>
+<li><strong>Rest:</strong> 90 seconds</li>
+<li><strong>Key Point:</strong> Drive from your core, not just arms</li>
+<li><strong>Tennis Benefit:</strong> Improves serve power</li>
+</ul>
+<h4>B. Box Jumps</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 5</li>
+<li><strong>Rest:</strong> 2 minutes</li>
+<li><strong>Key Point:</strong> Land softly, reset each rep</li>
+<li><strong>Tennis Benefit:</strong> First-step explosiveness</li>
+</ul>
+<h4>C. Single-Leg Romanian Deadlifts</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 10 per leg</li>
+<li><strong>Rest:</strong> 60 seconds</li>
+<li><strong>Key Point:</strong> Keep hips square</li>
+<li><strong>Tennis Benefit:</strong> Prevents hamstring injuries</li>
+</ul>
+<h4>D. Core Circuit (3 rounds)</h4>
+<ol>
+<li><strong>Plank</strong> - 45 seconds</li>
+<li><strong>Russian Twists</strong> - 20 reps</li>
+<li><strong>Bird Dogs</strong> - 10 per side</li>
+<li><strong>Rest</strong> - 60 seconds between rounds</li>
+</ol>
+<h3>Cool-Down (10 minutes)</h3>
+<ul>
+<li>Light walking</li>
+<li>Static stretching</li>
+<li>Focus on hip flexors and shoulders</li>
+</ul>
+<hr>
+<h2>Day 2: Court Movement Mastery</h2>
+<p><em>Develop elite-level agility</em></p>
+<h3>Warm-Up (10 minutes)</h3>
+<ul>
+<li>Same as Day 1, add lateral shuffles</li>
+</ul>
+<h3>Main Workout (35 minutes)</h3>
+<h4>A. Agility Ladder Drills (10 minutes)</h4>
+<ol>
+<li><strong>Two Feet In</strong> - 3 passes</li>
+<li><strong>Lateral Shuffle</strong> - 3 passes each direction</li>
+<li><strong>In-In-Out-Out</strong> - 3 passes</li>
+<li><strong>Single Leg Hops</strong> - 2 passes each leg</li>
+</ol>
+<h4>B. Lateral Bounds</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 8 per side</li>
+<li><strong>Rest:</strong> 90 seconds</li>
+<li><strong>Key Point:</strong> Stick the landing</li>
+<li><strong>Tennis Benefit:</strong> Improves lateral movement</li>
+</ul>
+<h4>C. Spider Drill</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Duration:</strong> 30 seconds</li>
+<li><strong>Rest:</strong> 90 seconds</li>
+<li><strong>Key Point:</strong> Low center of gravity</li>
+<li><strong>Tennis Benefit:</strong> Multi-directional speed</li>
+</ul>
+<h4>D. Deceleration Practice</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 5 sprints with sudden stops</li>
+<li><strong>Rest:</strong> 60 seconds</li>
+<li><strong>Key Point:</strong> Control the stop</li>
+<li><strong>Tennis Benefit:</strong> Injury prevention</li>
+</ul>
+<h3>Recovery Session (15 minutes)</h3>
+<ul>
+<li>Foam rolling: IT band, quads, calves</li>
+<li>Tennis ball on feet</li>
+<li>Light stretching</li>
+</ul>
+<hr>
+<h2>Day 3: Upper Body Strength</h2>
+<p><em>Build a powerful, injury-resistant upper body</em></p>
+<h3>Warm-Up (10 minutes)</h3>
+<ul>
+<li>Arm circles, band work, light cardio</li>
+</ul>
+<h3>Main Workout (35 minutes)</h3>
+<h4>A. Pull-Ups (or Assisted)</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 8</li>
+<li><strong>Rest:</strong> 2 minutes</li>
+<li><strong>Key Point:</strong> Full range of motion</li>
+<li><strong>Tennis Benefit:</strong> Serve acceleration</li>
+</ul>
+<h4>B. Dumbbell Shoulder Press</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 10</li>
+<li><strong>Rest:</strong> 90 seconds</li>
+<li><strong>Key Point:</strong> Don&#39;t arch back</li>
+<li><strong>Tennis Benefit:</strong> Overhead stability</li>
+</ul>
+<h4>C. Cable Rotations</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 15 per side</li>
+<li><strong>Rest:</strong> 60 seconds</li>
+<li><strong>Key Point:</strong> Rotate from core</li>
+<li><strong>Tennis Benefit:</strong> Groundstroke power</li>
+</ul>
+<h4>D. Band Work Circuit (2 rounds)</h4>
+<ol>
+<li><strong>External Rotations</strong> - 15 per arm</li>
+<li><strong>Face Pulls</strong> - 20 reps</li>
+<li><strong>Band Pull-Aparts</strong> - 15 reps</li>
+<li><strong>Rest</strong> - 60 seconds between rounds</li>
+</ol>
+<h3>Cool-Down (10 minutes)</h3>
+<ul>
+<li>Shoulder stretches</li>
+<li>Wrist mobility</li>
+<li>Light cardio</li>
+</ul>
+<hr>
+<h2>Day 4: Active Recovery</h2>
+<p><em>Strategic rest for maximum gains</em></p>
+<h3>Morning Movement (20-30 minutes)</h3>
+<p>Choose one:</p>
+<ul>
+<li>Easy bike ride</li>
+<li>Swimming</li>
+<li>Brisk walk</li>
+<li>Yoga flow</li>
+</ul>
+<h3>Mobility Work (20 minutes)</h3>
+<ol>
+<li><strong>Hip 90/90 Stretch</strong> - 2 minutes per side</li>
+<li><strong>Thoracic Spine Rotations</strong> - 15 per side</li>
+<li><strong>Ankle Circles</strong> - 20 each direction</li>
+<li><strong>Shoulder Dislocations</strong> (with band) - 15 reps</li>
+<li><strong>Cat-Cow Stretch</strong> - 10 reps</li>
+</ol>
+<h3>Tendon Loading (10 minutes)</h3>
+<p>Light, controlled movements:</p>
+<ul>
+<li><strong>Calf Raises</strong> - 2x20 (slow)</li>
+<li><strong>Wrist Curls</strong> - 2x15 (light weight)</li>
+<li><strong>Shoulder Shrugs</strong> - 2x15</li>
+</ul>
+<h3>Mental Recovery</h3>
+<ul>
+<li>Review your week&#39;s nutrition</li>
+<li>Plan next week&#39;s training</li>
+<li>Visualize successful match play</li>
+</ul>
+<hr>
+<h2>Day 5: Lower Body Power</h2>
+<p><em>Generate force from the ground up</em></p>
+<h3>Warm-Up (10 minutes)</h3>
+<ul>
+<li>Dynamic stretching with focus on glutes and hamstrings</li>
+</ul>
+<h3>Main Workout (35 minutes)</h3>
+<h4>A. Trap Bar Jumps (or Squat Jumps)</h4>
+<ul>
+<li><strong>Sets:</strong> 5</li>
+<li><strong>Reps:</strong> 3</li>
+<li><strong>Rest:</strong> 3 minutes</li>
+<li><strong>Key Point:</strong> Maximum effort each rep</li>
+<li><strong>Tennis Benefit:</strong> Explosive power</li>
+</ul>
+<h4>B. Bulgarian Split Squats</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 10 per leg</li>
+<li><strong>Rest:</strong> 90 seconds</li>
+<li><strong>Key Point:</strong> Back knee toward ground</li>
+<li><strong>Tennis Benefit:</strong> Single-leg strength</li>
+</ul>
+<h4>C. Nordic Hamstring Curls (Eccentric)</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 8-12</li>
+<li><strong>Rest:</strong> 90 seconds</li>
+<li><strong>Key Point:</strong> Control the descent</li>
+<li><strong>Tennis Benefit:</strong> Hamstring injury prevention</li>
+</ul>
+<h4>D. Calf Raise Complex</h4>
+<ol>
+<li><strong>Double Leg Raises</strong> - 15 reps</li>
+<li><strong>Single Leg Raises</strong> - 10 per leg</li>
+<li><strong>Rest</strong> - 90 seconds</li>
+<li><strong>Repeat</strong> - 3 total sets</li>
+</ol>
+<h3>Cool-Down (10 minutes)</h3>
+<ul>
+<li>Quad and hamstring stretches</li>
+<li>Calf stretches</li>
+<li>Light walking</li>
+</ul>
+<hr>
+<h2>Day 6: Total Body Integration</h2>
+<p><em>Bring it all together</em></p>
+<h3>Warm-Up (10 minutes)</h3>
+<ul>
+<li>Full body dynamic warm-up</li>
+</ul>
+<h3>Main Workout (35 minutes)</h3>
+<h4>A. Turkish Get-Ups</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 5 per side</li>
+<li><strong>Rest:</strong> 2 minutes</li>
+<li><strong>Key Point:</strong> Slow and controlled</li>
+<li><strong>Tennis Benefit:</strong> Full-body coordination</li>
+</ul>
+<h4>B. Battle Ropes</h4>
+<ul>
+<li><strong>Sets:</strong> 5</li>
+<li><strong>Duration:</strong> 20 seconds all-out</li>
+<li><strong>Rest:</strong> 40 seconds</li>
+<li><strong>Key Point:</strong> Use your whole body</li>
+<li><strong>Tennis Benefit:</strong> Conditioning + power</li>
+</ul>
+<h4>C. Anti-Rotation Press</h4>
+<ul>
+<li><strong>Sets:</strong> 3</li>
+<li><strong>Reps:</strong> 10 per side</li>
+<li><strong>Rest:</strong> 60 seconds</li>
+<li><strong>Key Point:</strong> Resist rotation</li>
+<li><strong>Tennis Benefit:</strong> Core stability</li>
+</ul>
+<h4>D. Plank Complex (2 rounds)</h4>
+<ol>
+<li><strong>Standard Plank</strong> - 45 seconds</li>
+<li><strong>Side Plank</strong> (left) - 30 seconds</li>
+<li><strong>Side Plank</strong> (right) - 30 seconds</li>
+<li><strong>Plank Up-Downs</strong> - 10 reps</li>
+<li><strong>Rest</strong> - 90 seconds between rounds</li>
+</ol>
+<h3>Cool-Down (15 minutes)</h3>
+<ul>
+<li>Full body stretching routine</li>
+<li>Deep breathing exercises</li>
+<li>Reflect on the week</li>
+</ul>
+<hr>
+<h2>Day 7: Recovery &amp; Planning</h2>
+<p><em>Prepare for continued success</em></p>
+<h3>Morning Assessment (20 minutes)</h3>
+<p>Rate yourself 1-10:</p>
+<ul>
+<li>Energy levels: ___</li>
+<li>Muscle soreness: ___</li>
+<li>Sleep quality: ___</li>
+<li>Motivation: ___</li>
+<li>Performance improvement: ___</li>
+</ul>
+<h3>Light Movement (20-30 minutes)</h3>
+<p>Choose based on how you feel:</p>
+<ul>
+<li><strong>Feeling Great:</strong> Light tennis practice</li>
+<li><strong>Slightly Sore:</strong> Easy swim or bike</li>
+<li><strong>Very Sore:</strong> Gentle yoga or walking</li>
+</ul>
+<h3>Planning Session (20 minutes)</h3>
+<h4>Review This Week:</h4>
+<ul>
+<li>Which workouts felt best?</li>
+<li>What was most challenging?</li>
+<li>Any pain or discomfort?</li>
+<li>Nutrition adherence?</li>
+</ul>
+<h4>Plan Next Week:</h4>
+<ul>
+<li>Increase intensity by 5-10%</li>
+<li>Add 1-2 reps per exercise</li>
+<li>Focus on weak areas</li>
+<li>Schedule your workouts</li>
+</ul>
+<h3>Nutrition Focus</h3>
+<p><strong>Post-Workout Meal Ideas:</strong></p>
+<ul>
+<li>Grilled chicken + sweet potato + vegetables</li>
+<li>Salmon + quinoa + spinach salad</li>
+<li>Greek yogurt + berries + granola + protein powder</li>
+</ul>
+<p><strong>Hydration Target:</strong> </p>
+<ul>
+<li>Body weight (lbs) ÷ 2 = ounces of water daily</li>
+<li>Add 16-24 oz per hour of training</li>
+</ul>
+<hr>
+<h2>Bonus Tips from the Pros</h2>
+<h3>Alcaraz&#39;s Secret</h3>
+<p>&quot;I do 20 minutes of core work every single day. Not just planks - rotational work that mimics tennis movements.&quot;</p>
+<h3>Sinner&#39;s Recovery Rule</h3>
+<p>&quot;For every hour of hard training, I do 30 minutes of recovery work. This includes stretching, foam rolling, and breathing exercises.&quot;</p>
+<h3>Common Mistakes to Avoid</h3>
+<ol>
+<li><strong>Too Much, Too Soon</strong> - Build gradually</li>
+<li><strong>Skipping Warm-Ups</strong> - Always prepare your body</li>
+<li><strong>Ignoring Pain</strong> - Discomfort is OK, pain is not</li>
+<li><strong>Poor Nutrition</strong> - Fuel your training properly</li>
+<li><strong>Inadequate Sleep</strong> - Aim for 8+ hours</li>
+</ol>
+<hr>
+<h2>Your Next Steps</h2>
+<ol>
+<li><strong>Print this plan</strong> or save it to your phone</li>
+<li><strong>Schedule your workouts</strong> in your calendar</li>
+<li><strong>Track your progress</strong> - note weights and reps</li>
+<li><strong>Join our community</strong> for support and tips</li>
+<li><strong>Stay consistent</strong> - Results come with time</li>
+</ol>
+<h3>Need More?</h3>
+<p>Visit [website] for:</p>
+<ul>
+<li>Video demonstrations of each exercise</li>
+<li>12-week progressive programs</li>
+<li>Nutrition guides</li>
+<li>Injury prevention protocols</li>
+</ul>
+<p>Remember: The best players in the world didn&#39;t get there overnight. They committed to smart, consistent training. Now it&#39;s your turn.</p>
+<p><strong>Let&#39;s build your elite tennis fitness together!</strong></p>
+<hr>
+<p><em>Questions? Email [your email] - I personally read and respond to every message.</em></p>
+<p><strong>Legal:</strong> Always consult with a healthcare provider before starting any new exercise program. These workouts are for educational purposes and should be modified based on your individual fitness level and health status.</p>
+
+    </div>
+    
+    <script>
+        // Auto-hide print button after 10 seconds
+        setTimeout(() => {
+            const btn = document.querySelector('.print-button');
+            if (btn) {
+                btn.style.opacity = '0.7';
+            }
+        }, 10000);
+        
+        // Show print instructions if opened directly
+        if (window.location.protocol === 'file:') {
+            const instructions = document.createElement('div');
+            instructions.style.cssText = 'position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #2196F3; color: white; padding: 16px 24px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 14px; z-index: 1000; text-align: center;';
+            instructions.innerHTML = '<strong>💡 Pro Tip:</strong> For best results, use Chrome or Edge browser<br>Print settings: Letter size, Default margins, Background graphics ON';
+            document.body.appendChild(instructions);
+            
+            setTimeout(() => {
+                instructions.style.display = 'none';
+            }, 15000);
+        }
+    </script>
+</body>
+</html>
