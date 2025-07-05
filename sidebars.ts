@@ -300,7 +300,7 @@ const sidebars: SidebarsConfig = {
         },
       ],
     },
-    "program-optimization-summary",
+
     "troubleshooting",
   ],
 

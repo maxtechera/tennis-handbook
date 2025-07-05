@@ -1,0 +1,70 @@
+{
+  "decisions": [
+    {
+      "date": "2025-01-15",
+      "decision": "Implement progressive disclosure strategy",
+      "rationale": "Users overwhelmed by 300+ pages of free content, <5% completion rate",
+      "outcome": "Expected 2x email signups, enables monetization path",
+      "reversible": true,
+      "status": "implementing"
+    },
+    {
+      "date": "2025-01-10",
+      "decision": "Spanish-first monetization approach",
+      "rationale": "Spanish users show 3x engagement across all metrics",
+      "outcome": "Focus development on Spanish premium features before English",
+      "reversible": false,
+      "status": "validated"
+    },
+    {
+      "date": "2025-01-08",
+      "decision": "Choose ConvertKit over MailChimp",
+      "rationale": "Better automation features, tag-based segmentation for progressive unlocking",
+      "outcome": "Successfully integrated, 48% open rate achieved",
+      "reversible": true,
+      "status": "completed"
+    },
+    {
+      "date": "2025-01-05",
+      "decision": "Daily Training Revolution strategy over simple paywall",
+      "rationale": "Solves engagement problem while monetizing, fitness apps proven at €19-39/month",
+      "outcome": "User validation shows 60%+ interest, 40%+ pricing tolerance",
+      "reversible": false,
+      "status": "validated"
+    },
+    {
+      "date": "2024-12-20",
+      "decision": "Maintain Docusaurus over migrating to Next.js",
+      "rationale": "95+ Lighthouse scores, excellent SEO, static hosting benefits",
+      "outcome": "Maintained performance while adding features progressively",
+      "reversible": true,
+      "status": "completed"
+    },
+    {
+      "date": "2024-12-15",
+      "decision": "100% Spanish translation with cultural adaptation",
+      "rationale": "Spanish market opportunity identified through analytics",
+      "outcome": "3x engagement validated, Spanish users stay 18min vs 6min",
+      "reversible": false,
+      "status": "completed"
+    },
+    {
+      "date": "2024-11-01",
+      "decision": "Focus on elite coach methodologies",
+      "rationale": "Differentiation in crowded tennis training market",
+      "outcome": "300+ pages of Ferrero/Panichi methods documented",
+      "reversible": false,
+      "status": "completed"
+    }
+  ],
+  "decision_framework": {
+    "criteria": [
+      "Maintains 95+ Lighthouse performance",
+      "Supports Spanish market advantage",
+      "Enables progressive monetization",
+      "Preserves SEO rankings",
+      "Reduces implementation complexity"
+    ],
+    "process": "Document rationale → Test with small group → Measure impact → Full rollout or revert"
+  }
+}

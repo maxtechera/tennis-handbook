@@ -8,27 +8,39 @@ This is a Docusaurus-powered website for Elite Tennis Training Research - a comp
 
 ## Project Context
 
-- **Linear Project**: Tennis Handbook (check for current tasks)
-- **Current Phase**: Spanish translation implementation
-- **Status**: See PROJECT_STATUS.md for latest
-- **Decisions**: See DECISIONS.md for architecture choices
+- **Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)
+- **Current Phase**: Progressive Disclosure Implementation
+- **Documentation Hub**: See _docs/README.md for all docs
+- **Active Work**: Check _docs/ACTIVE_SPRINT.md
+- **Key Decisions**: See _docs/context/decisions.json
 
 ## Memory Sync Points
 
 1. **Before Starting Work**:
    - Check PROJECT_STATUS.md for current state
-   - Review any new Linear issues/comments
+   - Read _docs/ACTIVE_SPRINT.md for today's priorities
+   - Review _docs/context/decisions.json for recent decisions
    - Check git status for work in progress
 
 2. **During Work**:
    - Update Linear issues when starting tasks
-   - Document decisions in comments
-   - Keep PROJECT_STATUS.md current
+   - Document decisions in _docs/context/decisions.json
+   - Check _docs/context/constraints.md before implementing
+   - Reference _docs/context/patterns.md for proven approaches
 
 3. **After Work**:
-   - Update PROJECT_STATUS.md with progress
+   - Update _docs/ACTIVE_SPRINT.md with daily notes
+   - Update PROJECT_STATUS.md if metrics change
    - Commit with descriptive messages
    - Update Linear issue status
+
+## 🔑 Key Context
+
+- **Spanish users = 3x engagement** (validated)
+- **Target price = €19-29/month** Spanish first
+- **Current phase = Progressive disclosure** implementation
+- **Never break 95+ Lighthouse** performance scores
+- **Strategy**: Daily Training Revolution (not just content)
 
 ## Development Commands
 

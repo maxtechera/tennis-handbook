@@ -1,16 +1,26 @@
 # Project Status: Tennis Handbook
 
-**Last Updated**: January 2025
-**Current Phase**: Strategic Exploration Phase - Platform Evolution Analysis
-**Linear Project**: Tennis Handbook
-**Strategic Options**: Documented in STRATEGIC-PLATFORM-OPTIONS.md
+**Last Updated**: July 5, 2025  
+**Current Phase**: Progressive Disclosure Implementation  
+**Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)  
+**Quick Links**: [Strategy](./_docs/STRATEGY.md) | [Current Sprint](./_docs/ACTIVE_SPRINT.md) | [Architecture](./_docs/ARCHITECTURE.md)
 
-## Current Sprint Focus
+## 📊 Quick Metrics
 
-- ✅ Spanish translation implementation COMPLETE
-- ✅ Exercise instruction enhancements COMPLETE (100% - all 84 files)
-- ✅ Translation workflow and tooling established
-- 📋 Documenting project context for AI memory (MAX-11)
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| Email Subscribers | 500+ | 5,000 | 🟡 Growing 15%/week |
+| Spanish Engagement | 3x baseline | Maintain 3x | ✅ Stable |
+| MRR | €0 | €25k (Month 6) | 🟡 Pre-launch |
+| Lighthouse Score | 95+ | 95+ | ✅ Maintained |
+| Content Complete | 100% | 100% | ✅ Done |
+
+## 🎯 Current Sprint Focus
+
+- 🔄 ConvertKit integration setup (MAX-79)
+- 📧 Email capture implementation (MAX-46)
+- 📊 Progressive disclosure system
+- 📋 Documentation consolidation for Claude Code
 
 ## Recent Progress
 
@@ -102,10 +112,30 @@
 - **Platform**: GitHub Pages
 - **Status**: Ready for deployment after commit
 
-## Quick Links
+## 🔑 Recent Key Decisions
 
-- [Linear Project](https://linear.app/max-techera/project/tennis-handbook-c4f6bc308190)
-- [Business Context](./BUSINESS_CONTEXT.md)
-- [Architecture Decisions](./DECISIONS.md)
-- [Translation Guide](./TRANSLATION-GUIDE.md)
-- [Exercise Instructions Progress](./EXERCISE-INSTRUCTION-PROGRESS.md)
+1. **Progressive Disclosure Strategy** (Jan 15)
+   - Gate content to increase email signups
+   - Rationale: <5% completion rate with open access
+   - Status: Implementing
+
+2. **Spanish-First Monetization** (Jan 10)
+   - Launch premium features in Spanish market first
+   - Rationale: 3x engagement validated
+   - Status: Preparing ConvertKit
+
+3. **Daily Training Revolution** (Jan 5)
+   - Transform from content library to training companion
+   - Rationale: Solves engagement + enables €19-29/month pricing
+   - Status: Validated, building MVP
+
+[See all decisions](./_docs/context/decisions.json)
+
+## 🔗 Quick Links
+
+- [Linear Project](https://linear.app/max-techera/project/tennis-handbook)
+- [Strategy Document](./_docs/STRATEGY.md)
+- [Architecture Guide](./_docs/ARCHITECTURE.md)
+- [Active Sprint](./_docs/ACTIVE_SPRINT.md)
+- [Success Patterns](./_docs/context/patterns.md)
+- [Constraints](./_docs/context/constraints.md)
