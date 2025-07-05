@@ -1,0 +1,13 @@
+node_modules
+.git
+.gitignore
+README.md
+.docusaurus
+.cache-loader
+docs
+src
+_docs
+scripts
+*.log
+.env*
+COMMIT_MESSAGE.md
