@@ -22,13 +22,13 @@ While competitors bolt on i18n as an afterthought, our **Docusaurus-native imple
 
 ### 1. **Implementation & Strategy**
 
-- **[i18n Structure](./Structure.md)** - Technical architecture that enabled our discovery
-- **[Translation Guide](./TranslationGuide.md)** - How we ensure quality over quantity
-- **[Translation Progress](./TranslationProgress.md)** - 100% completion tracking system
+- **[i18n Structure](./structure.md)** - Technical architecture that enabled our discovery
+- **[Translation Guide](./translation-guide.md)** - How we ensure quality over quantity
+- **[Translation Progress](./translation-progress.md)** - 100% completion tracking system
 
 ### 2. **Market Validation**
 
-- **[User Validation Toolkit - Spanish](./UserValidationToolkit-ES.md)** - Spanish-specific research framework
+- **[User Validation Toolkit - Spanish](./user-validation-toolkit-es.md)** - Spanish-specific research framework
 
 ## 🏗️ The i18n Architecture That Changed Everything
 
@@ -67,15 +67,11 @@ No deploy without 100% Spanish parity - this discipline paid off.
 
 ## 📊 The 3x Discovery Data
 
-### Engagement Metrics Comparison
+See [Shared Metrics & Data](../SHARED-METRICS.md#spanish-market-discovery) for detailed Spanish engagement metrics showing:
 
-| Metric              | English | Spanish | Multiple |
-| ------------------- | ------- | ------- | -------- |
-| Session Duration    | 6 min   | 18 min  | **3x**   |
-| Pages per Session   | 3.2     | 9.6     | **3x**   |
-| Return Rate (7-day) | 25%     | 75%     | **3x**   |
-| Email Signup        | 1.1%    | 2.2%    | **2x**   |
-| Social Shares       | 0.5%    | 2.5%    | **5x**   |
+- 3x higher session duration and pages per session
+- 2x email signup rate and 5x social sharing
+- SEO dominance in Spanish keywords
 
 ### Why Spanish Users Engage More
 
@@ -83,13 +79,6 @@ No deploy without 100% Spanish parity - this discipline paid off.
 2. **Cultural Fit**: Personal coaching style resonates
 3. **Player Identification**: Nadal, Alcaraz examples
 4. **Community Aspect**: Higher social sharing culture
-
-### SEO Impact
-
-- **Spanish Keywords**: Less competition, higher rankings
-- **"entrenamiento tenis"**: #1 in 2 weeks
-- **"método Ferrero"**: #1 immediately
-- **Regional Variations**: Ranking in Spain, Mexico, Argentina
 
 ## 🌐 Spanish-First Strategy Evolution
 

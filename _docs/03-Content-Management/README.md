@@ -8,13 +8,7 @@
 
 ### The Elite Methods Documentation
 
-We didn't create generic tennis workouts. We **reverse-engineered and documented the exact training methods** used by:
-
-- **Juan Carlos Ferrero** (Carlos Alcaraz's coach) - Power-based, aggressive baseline training
-- **Marco Panichi** (Jannik Sinner's coach) - Movement efficiency and injury prevention
-- **Goran Ivanišević** (Novak Djokovic's coach) - Mental resilience and adaptability
-
-No other platform has this level of direct elite coach methodology documentation.
+We didn't create generic tennis workouts. We **reverse-engineered and documented the exact training methods** from [elite coaches](../SHARED-METRICS.md#elite-coach-references) including Ferrero (Alcaraz), Panichi (Sinner), and Ivanišević (Djokovic). No other platform has this level of direct elite coach methodology documentation.
 
 ### The Research Foundation
 
@@ -22,18 +16,18 @@ No other platform has this level of direct elite coach methodology documentation
 
 ### The Spanish Content Discovery
 
-Our 100% Spanish translation revealed a **3x engagement rate** compared to English. This wasn't just translation - it was cultural adaptation with Spanish player examples, local tournament references, and region-specific terminology.
+Our 100% Spanish translation revealed a **[3x engagement rate](../SHARED-METRICS.md#spanish-market-discovery)** compared to English. This wasn't just translation - it was cultural adaptation with Spanish player examples, local tournament references, and region-specific terminology.
 
 ## 🗂️ Content Documentation
 
 ### 1. **Content Organization**
 
-- **[Content Taxonomy](./ContentTaxonomy.md)** - How 300+ pages organize into a coherent training system
+- **[Content Taxonomy](./content-taxonomy.md)** - How 300+ pages organize into a coherent training system
 
 ### 2. **Knowledge Management**
 
 - **[Notion Integration](./NotionIntegration/)** - Extracting patterns and decisions for future projects
-  - **[Sample Entries](./NotionIntegration/NotionSampleEntries.md)** - Real examples of knowledge capture
+  - **[Sample Entries](./NotionIntegration/notion-sample-entries.md)** - Real examples of knowledge capture
 
 ## 🏗️ The Content Architecture That Drives SEO
 

@@ -12,7 +12,7 @@ Unlike generic fitness apps or tennis technique sites, Tennis Handbook provides 
 
 ### The Spanish Market Discovery
 
-Our data shows **Spanish users demonstrate 3x higher engagement** than English users. This isn't just translation - it's a massive underserved market of tennis-passionate Spanish speakers who lack access to elite training content in their language. We have 100% Spanish translation completed, positioning us uniquely in this market.
+Our data shows Spanish users demonstrate **[3x higher engagement](../SHARED-METRICS.md#spanish-market-discovery)** than English users. This isn't just translation - it's a massive underserved market of tennis-passionate Spanish speakers who lack access to elite training content in their language. We have 100% Spanish translation completed, positioning us uniquely in this market.
 
 ### The Content-First Strategy
 
@@ -22,17 +22,17 @@ While competitors chase features, we built **300+ pages of research-backed conte
 
 ### 1. **Foundation Documents**
 
-- **[Business Context](./BUSINESS_CONTEXT.md)** - Why elite tennis training + Spanish market = massive opportunity
-- **[Project Timeline](./ProjectTimeline.md)** - How we built content-first, then features (420+ hours invested)
+- **[Business Context](./business-context.md)** - Why elite tennis training + Spanish market = massive opportunity
+- **[Project Timeline](./project-timeline.md)** - How we built content-first, then features (420+ hours invested)
 
 ### 2. **Strategic Analysis**
 
-- **[Strategic Summary](./STRATEGIC-SUMMARY.md)** - The critical decision: Stay static or evolve into daily training companion?
-- **[Platform Options Analysis](./STRATEGIC-PLATFORM-OPTIONS.md)** - Four paths forward, each leveraging our unique assets differently
+- **[Strategic Summary](./strategic-summary.md)** - The critical decision: Stay static or evolve into daily training companion?
+- **[Platform Options Analysis](./strategic-platform-options.md)** - Four paths forward, each leveraging our unique assets differently
 
 ### 3. **Product Vision**
 
-- **[PRD - Platform Evolution (Consolidated)](./PRD-Platform-Evolution-Consolidated.md)** - The "Netflix of Tennis Training" vision - if validated
+- **[Platform Evolution PRD](./platform-evolution-prd.md)** - The "Netflix of Tennis Training" vision - if validated
 
 ## 🏆 Our Strategic Advantages
 
@@ -62,18 +62,12 @@ While competitors chase features, we built **300+ pages of research-backed conte
 
 ## 📊 The Numbers That Matter
 
-### Current Reality
+See [Shared Metrics & Data](../SHARED-METRICS.md) for detailed metrics on:
 
-- **Organic Traffic**: 10,000+ visitors/month (zero marketing spend)
-- **Spanish Engagement**: 3x higher than English
-- **Content Volume**: 300+ pages, 84 workouts, 224+ citations
-- **Development Cost**: 420 hours (no external funding needed)
-
-### Validated Opportunities
-
-- **Premium Pricing**: $19-39/month (fitness app benchmarks)
-- **Spanish Market**: 87M global tennis players, large Spanish-speaking segment
-- **B2B Potential**: Tennis academies need structured programs
+- Current traffic and engagement statistics
+- Spanish market performance (3x multiplier)
+- Content volume and development investment
+- Market validation and pricing research
 
 ## 🚀 Strategic Decision Framework
 

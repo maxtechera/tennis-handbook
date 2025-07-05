@@ -22,13 +22,13 @@ Our existing **WorkoutCarousel and ProgressProvider components** aren't accident
 
 ### 1. **Architecture & Strategy**
 
-- **[Technique Learning Architecture](./TECHNIQUE-LEARNING-ARCHITECTURE.md)** - How we transform static → interactive
-- **[Implementation Plan](./ImplementationPlan.md)** - Spanish-first rollout strategy
-- **[Competitive Analysis](./TECHNIQUE-LEARNING-COMPETITIVE-ANALYSIS.md)** - Why no one else can copy this
+- **[Technique Learning Architecture](./technique-learning-architecture.md)** - How we transform static → interactive
+- **[Implementation Plan](./implementation-plan.md)** - Spanish-first rollout strategy
+- **[Competitive Analysis](./technique-learning-competitive-analysis.md)** - Why no one else can copy this
 
 ### 2. **Development Progress**
 
-- **[Exercise Instruction Progress](./ExerciseInstructionProgress.md)** - Current state of 84 workouts ready for video
+- **[Exercise Instruction Progress](./exercise-instruction-progress.md)** - Current state of 84 workouts ready for video
 
 ## 🏗️ The Unique Technical Approach
 

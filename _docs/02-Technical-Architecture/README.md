@@ -22,8 +22,8 @@ While the site appears static, we've built **WorkoutCarousel, WorkoutNav, and Em
 
 ### 1. **Core Architecture**
 
-- **[Technical Architecture](./TECHNICAL-ARCHITECTURE.md)** - Why Docusaurus + static generation = perfect for our use case
-- **[API Deployment Guide](./ApiDeployment.md)** - Serverless email capture that scales to zero
+- **[Technical Architecture](./technical-architecture.md)** - Why Docusaurus + static generation = perfect for our use case
+- **[API Deployment Guide](./api-deployment.md)** - Serverless email capture that scales to zero
 
 ## 🏗️ What Makes Our Architecture Different
 

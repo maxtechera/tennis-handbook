@@ -22,25 +22,24 @@ While competitors use single popup forms, we implemented **4 strategic capture v
 
 ### 1. **Strategic Documentation**
 
-- **[ConvertKit Integration Requirements](./ConvertKitIntegrationRequirements.md)** - Why ConvertKit + our audience = perfect fit
-- **[ConvertKit Content Strategy](./ConvertKitContentStrategy.md)** - Elite positioning from first email
-- **[ConvertKit Integration Specs](./ConvertKitIntegrationSpecs.md)** - Technical implementation for scale
+- **[ConvertKit Integration Requirements](./convertkit-integration-requirements.md)** - Why ConvertKit + our audience = perfect fit
+- **[ConvertKit Content Strategy](./convertkit-content-strategy.md)** - Elite positioning from first email
+- **[ConvertKit Integration Specs](./convertkit-integration-specs.md)** - Technical implementation for scale
 
 ### 2. **Implementation Guides**
 
-- **[Email Capture Implementation Guide](./EMAIL_CAPTURE_IMPLEMENTATION_GUIDE.md)** - The 4-variant system explained
+- **[Implementation Guide](./implementation-guide.md)** - The 4-variant system explained
 - **[Email Capture Setup](./email-capture-setup.md)** - Zero to deployed in 45 minutes
-- **[ConvertKit Setup](./MAX-73-CONVERTKIT-SETUP.md)** - Platform configuration for Spanish segments
+- **[ConvertKit Setup](./convertkit-setup.md)** - Platform configuration for Spanish segments
 
 ### 3. **Testing & Optimization**
 
-- **[Email Capture Testing Guide](./EMAIL_CAPTURE_TESTING_GUIDE.md)** - Spanish vs English A/B testing
-- **[Email Capture README](./EMAIL_CAPTURE_README.md)** - Quick reference for optimization
+- **[Testing Guide](./testing-guide.md)** - Spanish vs English A/B testing
 
 ### 4. **Results & Learning**
 
-- **[Email Capture Summary](./MAX-46-EMAIL-CAPTURE-SUMMARY.md)** - What worked (Spanish) and why
-- **[PR Summary](./PR_SUMMARY_MAX-46.md)** - Technical implementation decisions
+- **[Email Capture Summary](./email-capture-summary.md)** - What worked (Spanish) and why
+- **[PR Summary](./pr-summary.md)** - Technical implementation decisions
 
 ## 🏗️ The 4-Variant Capture System
 
@@ -88,19 +87,11 @@ While competitors use single popup forms, we implemented **4 strategic capture v
 
 ## 📊 Performance Metrics by Segment
 
-### Overall Performance
+See [Shared Metrics & Data](../SHARED-METRICS.md#email-capture-performance) for detailed email capture metrics showing:
 
-- **Conversion Rate**: 2.1% (industry average: 1-1.5%)
-- **Email Open Rate**: 42% (industry average: 20-25%)
-- **Click Rate**: 18% (industry average: 7-10%)
-- **Unsubscribe Rate**: 0.8% (excellent retention)
-
-### Spanish Segment Outperformance
-
-- **Signup Rate**: 4.2% (2x English rate)
-- **Open Rate**: 48% (vs 38% English)
-- **Engagement**: 3x link clicks
-- **Sharing**: 5x forward rate
+- 2x higher Spanish signup rates
+- Industry-beating open rates (42%+)
+- Spanish segment outperformance across all metrics
 
 ### Lead Magnet Performance
 

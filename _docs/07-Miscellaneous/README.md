@@ -22,18 +22,18 @@ Our **User Validation Toolkits** aren't generic templates - they're specifically
 
 ### 1. **Knowledge Management**
 
-- **[Knowledge Extraction Demo](./KnowledgeExtractionDemo.md)** - How we extract patterns from Tennis Handbook for future projects
-- **[Citation Tracking](./CitationTracking.md)** - 224+ research citations organized for reuse
-- **[Workflow Summary](./WorkflowSummary.md)** - The repeatable process that built Tennis Handbook
+- **[Knowledge Extraction Demo](./knowledge-extraction-demo.md)** - How we extract patterns from Tennis Handbook for future projects
+- **[Citation Tracking](./citation-tracking.md)** - 224+ research citations organized for reuse
+- **[Workflow Summary](./workflow-summary.md)** - The repeatable process that built Tennis Handbook
 
 ### 2. **User Research**
 
-- **[User Validation Toolkit](./UserValidationToolkit.md)** - Framework for validating our strategic pivots
-- **[User Feedback Framework](./UserFeedbackFramework.md)** - Systematic approach to learning from users
+- **[User Validation Toolkit](./user-validation-toolkit.md)** - Framework for validating our strategic pivots
+- **[User Feedback Framework](./user-feedback-framework.md)** - Systematic approach to learning from users
 
 ### 3. **Brand & Standards**
 
-- **[Brand Guidelines](./BrandGuidelines.md)** - Elite positioning through consistent execution
+- **[Brand Guidelines](./brand-guidelines.md)** - Elite positioning through consistent execution
 
 ## 🏗️ Knowledge Extraction System
 
