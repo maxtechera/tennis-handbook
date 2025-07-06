@@ -1,0 +1,168 @@
+.personalizationStep {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--ifm-color-secondary-darker);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.phoneInput {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.phoneLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ifm-heading-color);
+  margin-bottom: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--ifm-color-primary-rgb), 0.1);
+}
+
+.phoneHint {
+  display: block;
+  font-size: 0.813rem;
+  color: var(--ifm-color-secondary-darker);
+  margin-top: 0.25rem;
+}
+
+.skipNotice {
+  background: var(--ifm-color-info-lightest);
+  border: 1px solid var(--ifm-color-info-lighter);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.skipText {
+  font-size: 0.875rem;
+  color: var(--ifm-color-info-darker);
+  margin: 0;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.backButton,
+.skipButton,
+.nextButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 100px;
+}
+
+.backButton {
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-secondary-darker);
+  border: 2px solid var(--ifm-color-emphasis-300);
+}
+
+.backButton:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+.skipButton {
+  background: transparent;
+  color: var(--ifm-color-secondary);
+  border: 2px solid transparent;
+  text-decoration: underline;
+}
+
+.skipButton:hover {
+  color: var(--ifm-color-secondary-darker);
+}
+
+.nextButton {
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  flex: 1;
+  max-width: 200px;
+}
+
+.nextButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.938rem;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
+
+  .backButton {
+    order: 2;
+    flex: 1;
+  }
+
+  .skipButton {
+    order: 3;
+    flex: 1;
+  }
+
+  .nextButton {
+    order: 1;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 0.5rem;
+  }
+}
