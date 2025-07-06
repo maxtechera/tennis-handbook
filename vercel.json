@@ -1,13 +1,8 @@
 {
-  "buildCommand": "echo 'Skipping build'",
-  "outputDirectory": ".",
+  "buildCommand": "pnpm build",
+  "outputDirectory": "build",
   "installCommand": "pnpm install",
   "framework": null,
-  "functions": {
-    "api/subscribe.js": {
-      "runtime": "nodejs20.x"
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",
