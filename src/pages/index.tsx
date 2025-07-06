@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { useState, useEffect } from "react";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -6,6 +7,10 @@ import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
 import Translate from "@docusaurus/Translate";
 import { EmailCaptureForm, EmailCapturePopup, EmailCaptureBar } from "@site/src/components/EmailCapture";
+import OnboardingWizard from "@site/src/components/OnboardingWizard";
+import { subscribeWithWizard } from "@site/src/config/api";
+import { trackWizardComplete, trackWizardAbandon, trackWizardStart } from "@site/src/utils/analytics";
+import { createWizardSteps, getWizardTranslations } from "@site/src/utils/wizard-steps";
 
 import styles from "./index.module.css";
 
@@ -14,7 +19,7 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className="hero__title text-blue-600">
           <Translate id="homepage.hero.title">
             🎾 The Tennis Training Handbook
           </Translate>
@@ -306,7 +311,66 @@ function FeaturedContent() {
 }
 
 export default function Home(): ReactNode {
-  const { siteConfig } = useDocusaurusContext();
+  const { siteConfig, i18n } = useDocusaurusContext();
+  const [showWizard, setShowWizard] = useState(false);
+  const [wizardComplete, setWizardComplete] = useState(false);
+  
+  // Get current language
+  const currentLanguage = i18n.currentLocale || 'en';
+  const wizardSteps = createWizardSteps(currentLanguage);
+  const wizardTranslations = getWizardTranslations(currentLanguage);
+
+  // Check if user should see wizard (new visitors, haven't completed)
+  useEffect(() => {
+    const hasCompletedWizard = localStorage.getItem('wizard_completed');
+    const hasSeenWizard = localStorage.getItem('wizard_seen');
+    
+    // Show wizard to new visitors after a delay
+    if (!hasCompletedWizard && !hasSeenWizard) {
+      const timer = setTimeout(() => {
+        setShowWizard(true);
+        localStorage.setItem('wizard_seen', 'true');
+        trackWizardStart(currentLanguage);
+      }, 5000); // Show after 5 seconds
+      
+      return () => clearTimeout(timer);
+    }
+  }, [currentLanguage]);
+
+  const handleWizardComplete = async (wizardData: any) => {
+    try {
+      // Submit to API
+      const email = wizardData.personalInfo?.email;
+      if (email) {
+        const response = await subscribeWithWizard(email, wizardData, wizardData.personalInfo?.whatsapp);
+        
+        if (response.success) {
+          // Track completion
+          trackWizardComplete(wizardData);
+          
+          // Mark as completed
+          localStorage.setItem('wizard_completed', 'true');
+          setWizardComplete(true);
+          
+          // Navigate to recommended content if provided
+          if (response.personalization?.recommendedContent?.[0]) {
+            window.location.href = response.personalization.recommendedContent[0].path;
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Wizard submission error:', error);
+    } finally {
+      setShowWizard(false);
+    }
+  };
+
+  const handleWizardSkip = () => {
+    // Track abandonment
+    trackWizardAbandon(0, wizardSteps.length);
+    setShowWizard(false);
+  };
+
   return (
     <Layout
       title="Elite Tennis Training"
@@ -317,8 +381,29 @@ export default function Home(): ReactNode {
         <QuickStartSection />
         <FeaturedContent />
       </main>
-      <EmailCapturePopup />
-      <EmailCaptureBar />
+      
+      {/* Wizard Modal */}
+      {showWizard && (
+        <div className={styles.wizardModal}>
+          <div className={styles.wizardContainer}>
+            <OnboardingWizard
+              steps={wizardSteps}
+              onComplete={handleWizardComplete}
+              onSkip={handleWizardSkip}
+              persistKey="tennis-handbook-wizard"
+              translations={wizardTranslations}
+            />
+          </div>
+        </div>
+      )}
+      
+      {/* Regular email capture for users who skip wizard */}
+      {!wizardComplete && (
+        <>
+          <EmailCapturePopup />
+          <EmailCaptureBar />
+        </>
+      )}
     </Layout>
   );
 }

@@ -1,0 +1,214 @@
+.wizardContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--ifm-background-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.wizardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  position: relative;
+  z-index: 10;
+}
+
+.skipButton {
+  background: none;
+  border: none;
+  color: var(--ifm-color-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease;
+}
+
+.skipButton:hover {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darker);
+}
+
+.skipButton:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.stepContent {
+  flex: 1;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}
+
+.stepContent.animating {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.wizardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  background: var(--ifm-background-surface-color);
+  border-top: 1px solid var(--ifm-toc-border-color);
+  gap: 1rem;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ifm-toc-border-color);
+  min-width: 120px;
+  justify-content: center;
+}
+
+.navButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.navButton:not(:disabled):hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.navButton:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.navButton.primary {
+  background: #2e8555;
+  color: white;
+  border-color: #2e8555;
+}
+
+.navButton.primary:not(:disabled):hover {
+  background: #236a43;
+  border-color: #236a43;
+}
+
+.navIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.previousButton .navIcon {
+  margin-right: 0.25rem;
+}
+
+.nextButton .navIcon {
+  margin-left: 0.25rem;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .wizardContainer {
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+  }
+
+  .wizardHeader {
+    padding: 0.75rem;
+  }
+
+  .stepContent {
+    padding: 1.5rem 1rem;
+  }
+
+  .wizardFooter {
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+    background: var(--ifm-background-surface-color);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navButton {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    min-width: 100px;
+  }
+
+  .navIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .wizardContainer {
+    min-height: auto;
+  }
+
+  .stepContent {
+    padding: 1rem;
+    min-height: calc(100vh - 120px);
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .wizardContainer {
+  background: var(--ifm-background-color);
+}
+
+[data-theme='dark'] .wizardHeader,
+[data-theme='dark'] .wizardFooter {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-toc-border-color);
+}
+
+[data-theme='dark'] .navButton {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-toc-border-color);
+}
+
+[data-theme='dark'] .navButton:not(:disabled):hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+[data-theme='dark'] .navButton.primary {
+  background: #2e8555;
+  border-color: #2e8555;
+}
+
+[data-theme='dark'] .navButton.primary:not(:disabled):hover {
+  background: #3a9c68;
+  border-color: #3a9c68;
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: reduce) {
+  .stepContent,
+  .navButton,
+  .skipButton {
+    transition: none;
+  }
+}

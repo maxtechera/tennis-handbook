@@ -20,13 +20,37 @@
 - [ ] Test subscriber flow
 - [ ] Document API credentials
 
-#### Email Capture System (MAX-46)
-- [ ] Homepage hero form component
-- [ ] Content gate components
-- [ ] Exit intent popup
-- [ ] Footer sticky bar
-- [ ] Analytics tracking integration
-- [ ] A/B test variants
+#### Email Capture System (MAX-46) - ENHANCED WITH ONBOARDING WIZARD
+- [ ] **Phase 1: Foundation (2 hours)**
+  - [ ] Create OnboardingWizard component structure
+  - [ ] Build step navigation system
+  - [ ] Implement progress indicator
+  - [ ] Set up state management hooks
+
+- [ ] **Phase 2: Data Collection Steps (2 hours)**
+  - [ ] WelcomeStep - email + introduction
+  - [ ] BackgroundStep - training experience/goals  
+  - [ ] ChallengesStep - current issues/constraints
+  - [ ] PersonalizationStep - preferences/interests
+  - [ ] CompletionStep - thank you + recommendations
+
+- [ ] **Phase 3: API Integration (2 hours)**
+  - [ ] Extend `/api/subscribe` for rich data
+  - [ ] Implement ConvertKit advanced tagging
+  - [ ] Map wizard data to custom fields
+  - [ ] Add wizard completion tracking
+
+- [ ] **Phase 4: UX Polish (1 hour)**
+  - [ ] Mobile-responsive design
+  - [ ] Tennis Handbook branding
+  - [ ] Accessibility compliance (WCAG 2.1 AA)
+  - [ ] Smooth step transitions
+
+- [ ] **Phase 5: Testing & Deployment (1 hour)**
+  - [ ] End-to-end wizard flow testing
+  - [ ] ConvertKit data verification
+  - [ ] Performance impact testing (<100ms)
+  - [ ] Homepage integration
 
 #### Progressive Disclosure (MAX-80)
 - [ ] Implement content gating logic

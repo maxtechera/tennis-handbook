@@ -14,6 +14,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  plugins: ["./src/plugins/tailwind-config.js"],
+
   // Set the production url of your site here
   url: "https://tennis-training.dev",
   // Set the /<baseUrl>/ pathname under which your site is served

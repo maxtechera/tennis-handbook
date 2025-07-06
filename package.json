@@ -39,8 +39,11 @@
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
+    "@tailwindcss/postcss": "^4.1.11",
     "deepl-node": "^1.18.0",
     "deeplx": "^0.3.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
     "typescript": "~5.6.2"
   },
   "browserslist": {
