@@ -41,12 +41,6 @@ const config: Config = {
         htmlLang: "en",
         calendar: "gregory",
       },
-      es: {
-        label: "Español",
-        direction: "ltr",
-        htmlLang: "es",
-        calendar: "gregory",
-      },
     },
   },
 
@@ -128,10 +122,6 @@ const config: Config = {
           to: "/docs/workouts/week-program-table",
           position: "left",
           label: "📊 Program Overview",
-        },
-        {
-          type: "localeDropdown",
-          position: "right",
         },
         {
           href: "https://github.com/elite-tennis/tennis-training",
