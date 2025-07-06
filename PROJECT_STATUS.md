@@ -1,7 +1,7 @@
 # Project Status: Tennis Handbook
 
-**Last Updated**: July 5, 2025  
-**Current Phase**: Progressive Disclosure Implementation  
+**Last Updated**: July 6, 2025  
+**Current Phase**: Email System Deployment  
 **Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)  
 **Quick Links**: [Strategy](./_docs/STRATEGY.md) | [Current Sprint](./_docs/ACTIVE_SPRINT.md) | [Architecture](./_docs/ARCHITECTURE.md)
 
@@ -17,37 +17,58 @@
 
 ## 🎯 Current Sprint Focus
 
-- 🔄 ConvertKit integration setup (MAX-79)
-- 📧 Email capture implementation (MAX-46)
-- 📊 Progressive disclosure system
-- 📋 Documentation consolidation for Claude Code
+- ✅ Onboarding Wizard Implementation (MAX-46) - COMPLETE & MERGED
+- 🔄 ConvertKit Production Setup (MAX-79) - IN PROGRESS
+- 📊 Progressive Disclosure System (MAX-80) - NEXT
+- 🚀 API Deployment to Vercel - IMMEDIATE
 
 ## Recent Progress
 
+### July 6, 2025
+- ✅ **MERGED PR #7**: Intelligent Onboarding Wizard
+  - 48 files changed, 7,724 insertions
+  - 30+ new React components
+  - Full ConvertKit integration with 50+ custom fields
+  - Spanish/English support with WhatsApp option
+  - Mobile-optimized progressive flow
+
+### Previous Sprint
 - ✅ Created comprehensive Spanish translation workflow documentation
 - ✅ Built translation tracking system with scripts
 - ✅ Translated ALL workout content (Weeks 1-12) to Spanish
 - ✅ Enhanced all 84 workout files with detailed exercise instructions
 - ✅ Implemented WorkoutCarousel and WorkoutNav components
-- ✅ Created business context documentation
-- ✅ Established architectural decision records
 
-## Uncommitted Changes Summary
+## 🚨 Immediate Actions (Next 48 Hours)
 
-- **91 files changed**, 5313 insertions, 910 deletions
-- Complete Spanish translations in `/i18n/es/`
-- Enhanced exercise instructions across all workouts
-- New documentation: BUSINESS_CONTEXT.md, DECISIONS.md, WORKFLOW-SUMMARY.md
-- Translation scripts and tooling
-- Component improvements (WorkoutCarousel, WorkoutNav)
+1. **Deploy API to Vercel** (1 hour)
+   - Create Vercel project
+   - Configure environment variables
+   - Deploy api/subscribe.js endpoint
+   - Update production URLs
+
+2. **ConvertKit Production Setup** (30 min)
+   - Add API keys to Vercel
+   - Create 50+ custom fields
+   - Configure tag structure
+   - Test subscription flow
+
+3. **Create Lead Magnet** (2 hours)
+   - Design 7-Day Workout PDF
+   - Spanish translation
+   - Upload to ConvertKit
+   - Configure auto-delivery
 
 ## Active Branches
 
-- `master` - Main development branch with extensive uncommitted changes
+- `main` - Production branch (onboarding wizard merged)
+- No active feature branches
 
 ## Blockers
 
-- None - ready for commit and deployment
+- ConvertKit API keys needed for production
+- Vercel deployment pending
+- Lead magnet PDF creation needed
 
 ## Immediate Next Steps
 

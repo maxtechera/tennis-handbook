@@ -154,6 +154,8 @@ export default async function handler(req, res) {
     "http://localhost:3001",
     "https://tenis.mtech.uy",
     "https://www.tenis.mtech.uy",
+    "https://tennis-handbook.vercel.app",
+    "https://tennis-workout.vercel.app",
   ];
 
   const origin = req.headers.origin;

@@ -5,7 +5,7 @@ const isProduction = typeof window !== 'undefined' && window.location.hostname !
 export const API_CONFIG = {
   // Update this when you deploy your API endpoint
   SUBSCRIBE_URL: isProduction
-    ? 'https://your-tennis-handbook-api.vercel.app/api/subscribe' // TODO: Update with your production URL
+    ? 'https://tennis-handbook.vercel.app/api/subscribe'
     : '/api/subscribe',
   
   // Analytics endpoint (optional)

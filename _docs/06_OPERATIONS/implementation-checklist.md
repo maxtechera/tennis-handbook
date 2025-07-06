@@ -12,6 +12,32 @@
 
 ### 🔴 Current Sprint (July 1-14, 2025)
 
+#### 🚨 IMMEDIATE ACTIONS (Next 48 Hours)
+- [ ] **Deploy API to Vercel** (1 hour)
+  - [ ] Create Vercel project
+  - [ ] Add environment variables
+  - [ ] Deploy api/subscribe.js
+  - [ ] Update API_CONFIG in src/config/api.ts
+  - [ ] Test production endpoint
+
+- [ ] **ConvertKit Production Setup** (30 min)
+  - [ ] Add API keys to Vercel env
+  - [ ] Create custom fields (50+ fields)
+  - [ ] Set up tag structure
+  - [ ] Test subscription flow
+
+- [ ] **Create Lead Magnet PDF** (2 hours)
+  - [ ] Design 7-Day Workout PDF
+  - [ ] Spanish version
+  - [ ] Upload to ConvertKit
+  - [ ] Configure auto-delivery
+
+- [ ] **Monitor & Optimize** (Ongoing)
+  - [ ] Track wizard completion rates
+  - [ ] Monitor conversion metrics
+  - [ ] A/B test messaging
+  - [ ] Fix any production issues
+
 #### ConvertKit Integration (MAX-79)
 - [x] Create ConvertKit account
 - [x] Configure initial form
@@ -20,37 +46,38 @@
 - [ ] Test subscriber flow
 - [ ] Document API credentials
 
-#### Email Capture System (MAX-46) - ENHANCED WITH ONBOARDING WIZARD
-- [ ] **Phase 1: Foundation (2 hours)**
-  - [ ] Create OnboardingWizard component structure
-  - [ ] Build step navigation system
-  - [ ] Implement progress indicator
-  - [ ] Set up state management hooks
+#### Email Capture System (MAX-46) - ✅ ONBOARDING WIZARD COMPLETE
+- [x] **Phase 1: Foundation** - DONE
+  - [x] Create OnboardingWizard component structure
+  - [x] Build step navigation system
+  - [x] Implement progress indicator
+  - [x] Set up state management hooks
 
-- [ ] **Phase 2: Data Collection Steps (2 hours)**
-  - [ ] WelcomeStep - email + introduction
-  - [ ] BackgroundStep - training experience/goals  
-  - [ ] ChallengesStep - current issues/constraints
-  - [ ] PersonalizationStep - preferences/interests
-  - [ ] CompletionStep - thank you + recommendations
+- [x] **Phase 2: Data Collection Steps** - DONE
+  - [x] WelcomeStep - email + introduction
+  - [x] BackgroundStep - training experience/goals  
+  - [x] ChallengesStep - current issues/constraints
+  - [x] PersonalizationStep - preferences/interests
+  - [x] CompletionStep - thank you + recommendations
 
-- [ ] **Phase 3: API Integration (2 hours)**
-  - [ ] Extend `/api/subscribe` for rich data
-  - [ ] Implement ConvertKit advanced tagging
-  - [ ] Map wizard data to custom fields
-  - [ ] Add wizard completion tracking
+- [x] **Phase 3: API Integration** - DONE
+  - [x] Extend `/api/subscribe` for rich data
+  - [x] Implement ConvertKit advanced tagging
+  - [x] Map wizard data to custom fields
+  - [x] Add wizard completion tracking
 
-- [ ] **Phase 4: UX Polish (1 hour)**
-  - [ ] Mobile-responsive design
-  - [ ] Tennis Handbook branding
-  - [ ] Accessibility compliance (WCAG 2.1 AA)
-  - [ ] Smooth step transitions
+- [x] **Phase 4: UX Polish** - DONE
+  - [x] Mobile-responsive design
+  - [x] Tennis Handbook branding
+  - [x] Accessibility compliance (WCAG 2.1 AA)
+  - [x] Smooth step transitions
 
-- [ ] **Phase 5: Testing & Deployment (1 hour)**
-  - [ ] End-to-end wizard flow testing
-  - [ ] ConvertKit data verification
-  - [ ] Performance impact testing (<100ms)
-  - [ ] Homepage integration
+- [ ] **Phase 5: Production Setup (Remaining)**
+  - [x] Homepage integration - DONE
+  - [ ] Deploy API to Vercel
+  - [ ] Configure ConvertKit API keys
+  - [ ] Create lead magnet PDF
+  - [ ] Set up welcome email sequence
 
 #### Progressive Disclosure (MAX-80)
 - [ ] Implement content gating logic
