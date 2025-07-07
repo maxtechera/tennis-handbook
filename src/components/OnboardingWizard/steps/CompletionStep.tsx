@@ -175,13 +175,13 @@ export function CompletionStep({ onNext, onBack, data, wizardData }: CompletionS
             <div key={index} className={styles.recommendationCard}>
               <div className={styles.recIcon}>{rec.icon}</div>
               <h4 className={styles.recTitle}>
-                <Translate id={rec.title}>{rec.title}</Translate>
+                <Translate id={rec.title} />
               </h4>
               <p className={styles.recDescription}>
-                <Translate id={rec.description}>{rec.description}</Translate>
+                <Translate id={rec.description} />
               </p>
               <Link to={rec.link} className={styles.recLink}>
-                <Translate id={rec.linkText}>{rec.linkText}</Translate>
+                <Translate id={rec.linkText} />
                 <span className={styles.arrow}>→</span>
               </Link>
             </div>
