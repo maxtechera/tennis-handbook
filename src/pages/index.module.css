@@ -49,7 +49,7 @@
 }
 
 .wizardContainer {
-  background: var(--ifm-background-color);
+  background: #ffffff;
   border-radius: 0; /* No radius on mobile */
   box-shadow: none; /* No shadow on mobile */
   max-width: 100%;
@@ -114,7 +114,7 @@
 }
 
 [data-theme='dark'] .wizardContainer {
-  background: var(--ifm-background-color);
+  background: #1b1b1d;
 }
 
 [data-theme='dark'] .wizardCloseButton {

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: var(--ifm-background-color);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -13,8 +13,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem;
-  background: var(--ifm-background-surface-color);
-  border-bottom: 1px solid var(--ifm-toc-border-color);
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
   position: sticky;
   top: 0;
   z-index: 20;
@@ -25,7 +25,7 @@
 .skipButton {
   background: none;
   border: none;
-  color: var(--ifm-color-primary);
+  color: #2563eb;
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
@@ -40,12 +40,12 @@
 }
 
 .skipButton:hover {
-  background: var(--ifm-color-primary-lightest);
-  color: var(--ifm-color-primary-darker);
+  background: #dbeafe;
+  color: #1d4ed8;
 }
 
 .skipButton:focus {
-  outline: 2px solid var(--ifm-color-primary);
+  outline: 2px solid #2563eb;
   outline-offset: 2px;
 }
 
@@ -77,8 +77,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: var(--ifm-background-surface-color);
-  border-top: 1px solid var(--ifm-toc-border-color);
+  background: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
   gap: 0.75rem;
   position: fixed;
   bottom: 0;
@@ -100,9 +100,9 @@
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: var(--ifm-background-color);
-  color: var(--ifm-font-color-base);
-  border: 1px solid var(--ifm-toc-border-color);
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #e0e0e0;
   min-width: 100px;
   min-height: 48px; /* Touch-friendly size */
   justify-content: center;
@@ -116,24 +116,24 @@
 }
 
 .navButton:not(:disabled):hover {
-  background: var(--ifm-color-emphasis-100);
-  border-color: var(--ifm-color-emphasis-300);
+  background: #f3f4f6;
+  border-color: #d1d5db;
 }
 
 .navButton:focus {
-  outline: 2px solid var(--ifm-color-primary);
+  outline: 2px solid #2563eb;
   outline-offset: 2px;
 }
 
 .navButton.primary {
-  background: var(--ifm-color-primary);
+  background: #2563eb;
   color: white;
-  border-color: var(--ifm-color-primary);
+  border-color: #2563eb;
 }
 
 .navButton.primary:not(:disabled):hover {
-  background: var(--ifm-color-primary-dark);
-  border-color: var(--ifm-color-primary-dark);
+  background: #1d4ed8;
+  border-color: #1d4ed8;
   color: white;
 }
 
@@ -161,6 +161,8 @@
   .wizardHeader {
     padding: 1rem 1.5rem;
     position: relative;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
   }
 
   .stepContent {
@@ -175,6 +177,8 @@
     position: relative;
     box-shadow: none;
     min-height: auto;
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
   }
 
   .navButton {
@@ -230,33 +234,34 @@
 
 /* Dark mode adjustments */
 [data-theme='dark'] .wizardContainer {
-  background: var(--ifm-background-color);
+  background: #1b1b1d;
 }
 
 [data-theme='dark'] .wizardHeader,
 [data-theme='dark'] .wizardFooter {
-  background: var(--ifm-background-surface-color);
-  border-color: var(--ifm-toc-border-color);
+  background: #242526;
+  border-color: #3a3b3c;
 }
 
 [data-theme='dark'] .navButton {
-  background: var(--ifm-background-surface-color);
-  border-color: var(--ifm-toc-border-color);
+  background: #242526;
+  border-color: #3a3b3c;
+  color: #e3e3e3;
 }
 
 [data-theme='dark'] .navButton:not(:disabled):hover {
-  background: var(--ifm-color-emphasis-200);
+  background: #3a3b3c;
 }
 
 [data-theme='dark'] .navButton.primary {
-  background: var(--ifm-color-primary);
-  border-color: var(--ifm-color-primary);
+  background: #3b82f6;
+  border-color: #3b82f6;
   color: #ffffff;
 }
 
 [data-theme='dark'] .navButton.primary:not(:disabled):hover {
-  background: var(--ifm-color-primary-light);
-  border-color: var(--ifm-color-primary-light);
+  background: #2563eb;
+  border-color: #2563eb;
   color: #ffffff;
 }
 
