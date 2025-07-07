@@ -117,12 +117,23 @@ export default function OnboardingWizard({
     }
   };
 
+  const scrollToTop = () => {
+    // Scroll the wizard container to top
+    const wizardContent = document.querySelector('[class*="wizardContent"]');
+    if (wizardContent) {
+      wizardContent.scrollTop = 0;
+    }
+    // Also ensure the modal is at the top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const handleNext = () => {
     if (currentStep < steps.length - 1) {
       setIsAnimating(true);
       setTimeout(() => {
         setCurrentStep(prev => prev + 1);
         setIsAnimating(false);
+        scrollToTop();
       }, 300);
     } else {
       handleComplete();
@@ -135,6 +146,7 @@ export default function OnboardingWizard({
       setTimeout(() => {
         setCurrentStep(prev => prev - 1);
         setIsAnimating(false);
+        scrollToTop();
       }, 300);
     }
   };

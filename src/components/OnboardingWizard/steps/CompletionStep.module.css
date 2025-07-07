@@ -34,7 +34,7 @@
 
 .subtitle {
   font-size: 1.125rem;
-  color: var(--ifm-color-secondary-darker);
+  color: var(--ifm-font-color-secondary);
   margin: 0;
 }
 
@@ -47,10 +47,17 @@
 }
 
 .nextSteps {
-  background: var(--ifm-color-primary-lightest);
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
+}
+
+/* Dark mode adjustment for nextSteps */
+[data-theme="dark"] .nextSteps {
+  background: rgba(76, 175, 80, 0.15);
+  border-color: rgba(76, 175, 80, 0.4);
 }
 
 .steps {
@@ -71,7 +78,7 @@
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  background: var(--ifm-color-primary);
+  background: #4caf50;
   color: white;
   border-radius: 50%;
   font-weight: 600;
@@ -85,15 +92,16 @@
 .stepTitle {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--ifm-heading-color);
+  color: var(--ifm-font-color-base);
   margin: 0 0 0.25rem 0;
 }
 
 .stepDescription {
   font-size: 0.875rem;
-  color: var(--ifm-color-secondary-darker);
+  color: var(--ifm-font-color-secondary);
   margin: 0;
   line-height: 1.5;
+  opacity: 0.8;
 }
 
 .recommendations {
@@ -128,15 +136,16 @@
 .recTitle {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--ifm-heading-color);
+  color: var(--ifm-font-color-base);
   margin: 0 0 0.5rem 0;
 }
 
 .recDescription {
   font-size: 0.875rem;
-  color: var(--ifm-color-secondary-darker);
+  color: var(--ifm-font-color-secondary);
   margin: 0 0 1rem 0;
   line-height: 1.5;
+  opacity: 0.8;
 }
 
 .recLink {

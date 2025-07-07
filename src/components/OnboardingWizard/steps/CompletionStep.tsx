@@ -4,15 +4,22 @@ import Link from '@docusaurus/Link';
 import styles from './CompletionStep.module.css';
 
 interface CompletionStepProps {
+  onNext: (data: any) => void;
+  onBack: () => void;
   data: any;
+  wizardData?: any;
 }
 
-export function CompletionStep({ data }: CompletionStepProps) {
+export function CompletionStep({ onNext, onBack, data, wizardData }: CompletionStepProps) {
+  const personalInfo = wizardData?.['personal-info'] || {};
+  const backgroundInfo = wizardData?.['background'] || {};
+  const challengesInfo = wizardData?.['challenges'] || {};
+  
   const getPersonalizedRecommendations = () => {
     const recommendations = [];
 
     // Based on experience level
-    if (data.experienceLevel === 'beginner') {
+    if (backgroundInfo.experienceLevel === 'beginner') {
       recommendations.push({
         icon: '📚',
         title: 'onboarding.completion.rec.beginner.title',
@@ -20,7 +27,7 @@ export function CompletionStep({ data }: CompletionStepProps) {
         link: '/docs/training-philosophy/overview',
         linkText: 'onboarding.completion.rec.beginner.link'
       });
-    } else if (data.experienceLevel === 'competitive') {
+    } else if (backgroundInfo.experienceLevel === 'competitive') {
       recommendations.push({
         icon: '🏆',
         title: 'onboarding.completion.rec.competitive.title',
@@ -31,7 +38,7 @@ export function CompletionStep({ data }: CompletionStepProps) {
     }
 
     // Based on challenges
-    if (data.challenges?.includes('strength')) {
+    if (challengesInfo.challenges?.includes('strength')) {
       recommendations.push({
         icon: '💪',
         title: 'onboarding.completion.rec.strength.title',
@@ -41,7 +48,7 @@ export function CompletionStep({ data }: CompletionStepProps) {
       });
     }
 
-    if (data.challenges?.includes('injury_prevention')) {
+    if (challengesInfo.challenges?.includes('injury_prevention')) {
       recommendations.push({
         icon: '🏥',
         title: 'onboarding.completion.rec.injury.title',
@@ -86,12 +93,13 @@ export function CompletionStep({ data }: CompletionStepProps) {
           </Translate>
         </h2>
         <p className={styles.subtitle}>
-          <Translate
-            id="onboarding.completion.subtitle"
-            values={{ name: data.name }}
-          >
-            {`${data.name}, tu programa personalizado está listo`}
-          </Translate>
+          {personalInfo.name ? (
+            `${personalInfo.name}, tu programa personalizado está listo`
+          ) : (
+            <Translate id="onboarding.completion.subtitle">
+              Tu programa personalizado está listo
+            </Translate>
+          )}
         </p>
       </div>
 
@@ -135,7 +143,7 @@ export function CompletionStep({ data }: CompletionStepProps) {
             </div>
           </div>
 
-          {data.communicationPreferences?.includes('whatsapp') && (
+          {wizardData?.['personalization']?.communicationPreferences?.includes('whatsapp') && (
             <div className={styles.step}>
               <span className={styles.stepNumber}>3</span>
               <div className={styles.stepContent}>

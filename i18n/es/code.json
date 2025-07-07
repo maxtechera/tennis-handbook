@@ -985,5 +985,95 @@
   },
   "homepage.fomo.signups": {
     "message": "{count} jugadores comenzaron su plan personalizado en las últimas 24 horas"
+  },
+  "onboarding.completion.title": {
+    "message": "¡Bienvenido al Elite Tennis Training!"
+  },
+  "onboarding.completion.subtitle": {
+    "message": "Tu programa personalizado está listo"
+  },
+  "onboarding.completion.nextsteps.title": {
+    "message": "Tus próximos pasos"
+  },
+  "onboarding.completion.step1.title": {
+    "message": "Revisa tu email"
+  },
+  "onboarding.completion.step1.desc": {
+    "message": "Te hemos enviado tu guía de inicio rápido y acceso al programa"
+  },
+  "onboarding.completion.step2.title": {
+    "message": "Descarga los PDFs"
+  },
+  "onboarding.completion.step2.desc": {
+    "message": "Accede a todos los programas de entrenamiento en formato PDF"
+  },
+  "onboarding.completion.step3.title": {
+    "message": "Únete al grupo de WhatsApp"
+  },
+  "onboarding.completion.step3.desc": {
+    "message": "Recibirás una invitación en las próximas 24 horas"
+  },
+  "onboarding.completion.recommendations.title": {
+    "message": "Recomendado para ti"
+  },
+  "onboarding.completion.rec.beginner.title": {
+    "message": "Fundamentos del Entrenamiento"
+  },
+  "onboarding.completion.rec.beginner.desc": {
+    "message": "Empieza con los conceptos básicos del entrenamiento profesional"
+  },
+  "onboarding.completion.rec.beginner.link": {
+    "message": "Ver fundamentos"
+  },
+  "onboarding.completion.rec.competitive.title": {
+    "message": "Métodos de Elite"
+  },
+  "onboarding.completion.rec.competitive.desc": {
+    "message": "Descubre los métodos de entrenadores medallistas olímpicos"
+  },
+  "onboarding.completion.rec.competitive.link": {
+    "message": "Explorar métodos"
+  },
+  "onboarding.completion.rec.strength.title": {
+    "message": "Desarrollo de Fuerza"
+  },
+  "onboarding.completion.rec.strength.desc": {
+    "message": "Mejora tu potencia explosiva con métodos probados"
+  },
+  "onboarding.completion.rec.strength.link": {
+    "message": "Ver ejercicios"
+  },
+  "onboarding.completion.rec.injury.title": {
+    "message": "Prevención de Lesiones"
+  },
+  "onboarding.completion.rec.injury.desc": {
+    "message": "Mantente saludable con protocolos científicos"
+  },
+  "onboarding.completion.rec.injury.link": {
+    "message": "Ver protocolos"
+  },
+  "onboarding.completion.rec.program.title": {
+    "message": "Programa de 12 Semanas"
+  },
+  "onboarding.completion.rec.program.desc": {
+    "message": "Tu plan completo de entrenamiento progresivo"
+  },
+  "onboarding.completion.rec.program.link": {
+    "message": "Comenzar programa"
+  },
+  "onboarding.completion.rec.methods.title": {
+    "message": "Filosofías de Entrenamiento"
+  },
+  "onboarding.completion.rec.methods.desc": {
+    "message": "Conoce las filosofías de los mejores entrenadores"
+  },
+  "onboarding.completion.rec.methods.link": {
+    "message": "Explorar filosofías"
+  },
+  "onboarding.completion.cta.primary": {
+    "message": "Comenzar mi programa"
+  },
+  "onboarding.completion.cta.secondary": {
+    "message": "Explorar el contenido"
   }
 }
