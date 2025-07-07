@@ -28,7 +28,7 @@
 .title {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--ifm-heading-color);
+  color: #059669;
   margin-bottom: 0.5rem;
 }
 
@@ -41,14 +41,14 @@
 .sectionTitle {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--ifm-heading-color);
+  color: #059669;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .nextSteps {
-  background: rgba(76, 175, 80, 0.1);
-  border: 1px solid rgba(76, 175, 80, 0.3);
+  background: rgba(16, 185, 129, 0.1);
+  border: 2px solid rgba(16, 185, 129, 0.3);
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -56,8 +56,8 @@
 
 /* Dark mode adjustment for nextSteps */
 [data-theme="dark"] .nextSteps {
-  background: rgba(76, 175, 80, 0.15);
-  border-color: rgba(76, 175, 80, 0.4);
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
 }
 
 .steps {
@@ -78,7 +78,7 @@
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  background: #4caf50;
+  background: #10b981;
   color: white;
   border-radius: 50%;
   font-weight: 600;
@@ -154,13 +154,13 @@
   gap: 0.25rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--ifm-color-primary);
+  color: #059669;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .recLink:hover {
-  color: var(--ifm-color-primary-dark);
+  color: #047857;
   gap: 0.5rem;
 }
 
@@ -191,27 +191,28 @@
 }
 
 .primaryButton {
-  background: var(--ifm-color-primary);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
 }
 
 .primaryButton:hover {
-  background: var(--ifm-color-primary-dark);
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
   color: white;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
 }
 
 .secondaryButton {
   background: transparent;
-  color: var(--ifm-color-primary);
-  border: 2px solid var(--ifm-color-primary);
+  color: #059669;
+  border: 2px solid #10b981;
 }
 
 .secondaryButton:hover {
-  background: var(--ifm-color-primary-lightest);
-  color: var(--ifm-color-primary-dark);
-  border-color: var(--ifm-color-primary-dark);
+  background: rgba(16, 185, 129, 0.1);
+  color: #047857;
+  border-color: #059669;
 }
 
 /* Mobile-first responsive design */

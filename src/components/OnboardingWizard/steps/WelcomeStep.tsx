@@ -176,7 +176,7 @@ export function WelcomeStep({ onNext, data }: WelcomeStepProps) {
                 </Translate>
               ) : (
                 <Translate id="onboarding.welcome.cta.simple">
-                  📧 ENVIAR PDF GRATIS
+                  📧 DESCARGAR PDF GRATIS
                 </Translate>
               )}
             </button>
