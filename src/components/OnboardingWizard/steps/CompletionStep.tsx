@@ -175,13 +175,100 @@ export function CompletionStep({ onNext, onBack, data, wizardData }: CompletionS
             <div key={index} className={styles.recommendationCard}>
               <div className={styles.recIcon}>{rec.icon}</div>
               <h4 className={styles.recTitle}>
-                <Translate id={rec.title} />
+                {rec.title === 'onboarding.completion.rec.program.title' && (
+                  <Translate id="onboarding.completion.rec.program.title">
+                    Programa de 12 Semanas
+                  </Translate>
+                )}
+                {rec.title === 'onboarding.completion.rec.methods.title' && (
+                  <Translate id="onboarding.completion.rec.methods.title">
+                    Filosofías de Entrenamiento
+                  </Translate>
+                )}
+                {rec.title === 'onboarding.completion.rec.beginner.title' && (
+                  <Translate id="onboarding.completion.rec.beginner.title">
+                    Fundamentos del Entrenamiento
+                  </Translate>
+                )}
+                {rec.title === 'onboarding.completion.rec.competitive.title' && (
+                  <Translate id="onboarding.completion.rec.competitive.title">
+                    Métodos de Elite
+                  </Translate>
+                )}
+                {rec.title === 'onboarding.completion.rec.strength.title' && (
+                  <Translate id="onboarding.completion.rec.strength.title">
+                    Desarrollo de Fuerza
+                  </Translate>
+                )}
+                {rec.title === 'onboarding.completion.rec.injury.title' && (
+                  <Translate id="onboarding.completion.rec.injury.title">
+                    Prevención de Lesiones
+                  </Translate>
+                )}
               </h4>
               <p className={styles.recDescription}>
-                <Translate id={rec.description} />
+                {rec.description === 'onboarding.completion.rec.program.desc' && (
+                  <Translate id="onboarding.completion.rec.program.desc">
+                    Tu plan completo de entrenamiento progresivo
+                  </Translate>
+                )}
+                {rec.description === 'onboarding.completion.rec.methods.desc' && (
+                  <Translate id="onboarding.completion.rec.methods.desc">
+                    Conoce las filosofías de los mejores entrenadores
+                  </Translate>
+                )}
+                {rec.description === 'onboarding.completion.rec.beginner.desc' && (
+                  <Translate id="onboarding.completion.rec.beginner.desc">
+                    Empieza con los conceptos básicos del entrenamiento profesional
+                  </Translate>
+                )}
+                {rec.description === 'onboarding.completion.rec.competitive.desc' && (
+                  <Translate id="onboarding.completion.rec.competitive.desc">
+                    Descubre los métodos de entrenadores medallistas olímpicos
+                  </Translate>
+                )}
+                {rec.description === 'onboarding.completion.rec.strength.desc' && (
+                  <Translate id="onboarding.completion.rec.strength.desc">
+                    Mejora tu potencia explosiva con métodos probados
+                  </Translate>
+                )}
+                {rec.description === 'onboarding.completion.rec.injury.desc' && (
+                  <Translate id="onboarding.completion.rec.injury.desc">
+                    Mantente saludable con protocolos científicos
+                  </Translate>
+                )}
               </p>
               <Link to={rec.link} className={styles.recLink}>
-                <Translate id={rec.linkText} />
+                {rec.linkText === 'onboarding.completion.rec.program.link' && (
+                  <Translate id="onboarding.completion.rec.program.link">
+                    Comenzar programa
+                  </Translate>
+                )}
+                {rec.linkText === 'onboarding.completion.rec.methods.link' && (
+                  <Translate id="onboarding.completion.rec.methods.link">
+                    Explorar filosofías
+                  </Translate>
+                )}
+                {rec.linkText === 'onboarding.completion.rec.beginner.link' && (
+                  <Translate id="onboarding.completion.rec.beginner.link">
+                    Ver fundamentos
+                  </Translate>
+                )}
+                {rec.linkText === 'onboarding.completion.rec.competitive.link' && (
+                  <Translate id="onboarding.completion.rec.competitive.link">
+                    Explorar métodos
+                  </Translate>
+                )}
+                {rec.linkText === 'onboarding.completion.rec.strength.link' && (
+                  <Translate id="onboarding.completion.rec.strength.link">
+                    Ver ejercicios
+                  </Translate>
+                )}
+                {rec.linkText === 'onboarding.completion.rec.injury.link' && (
+                  <Translate id="onboarding.completion.rec.injury.link">
+                    Ver protocolos
+                  </Translate>
+                )}
                 <span className={styles.arrow}>→</span>
               </Link>
             </div>
