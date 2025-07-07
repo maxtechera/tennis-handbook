@@ -118,13 +118,11 @@ export default function OnboardingWizard({
   };
 
   const scrollToTop = () => {
-    // Scroll the wizard container to top
-    const wizardContent = document.querySelector('[class*="wizardContent"]');
-    if (wizardContent) {
-      wizardContent.scrollTop = 0;
+    // Find the wizard container and scroll it to top
+    const wizardContainer = document.querySelector(`.${styles.wizardContainer}`);
+    if (wizardContainer) {
+      wizardContainer.scrollTop = 0;
     }
-    // Also ensure the modal is at the top
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleNext = () => {

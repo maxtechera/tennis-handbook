@@ -99,36 +99,8 @@ export function PersonalizationStep({ onNext, onBack, data, wizardData }: Person
     }
   ];
 
-  // Real-time updates for each preference change
-  useEffect(() => {
-    if (language && personalInfo.email && personalInfo.isSubscriber) {
-      updateSubscriberTags(personalInfo.email, {
-        'personalization': { language },
-        'personal-info': personalInfo,
-        'background-info': backgroundInfo
-      }).catch(console.error);
-    }
-  }, [language, personalInfo, backgroundInfo]);
-
-  useEffect(() => {
-    if (communicationPreferences.length && personalInfo.email && personalInfo.isSubscriber) {
-      updateSubscriberTags(personalInfo.email, {
-        'personalization': { language, communicationPreferences },
-        'personal-info': personalInfo,
-        'background-info': backgroundInfo
-      }).catch(console.error);
-    }
-  }, [communicationPreferences, language, personalInfo, backgroundInfo]);
-
-  useEffect(() => {
-    if (interests.length && personalInfo.email && personalInfo.isSubscriber) {
-      updateSubscriberTags(personalInfo.email, {
-        'personalization': { language, communicationPreferences, interests },
-        'personal-info': personalInfo,
-        'background-info': backgroundInfo
-      }).catch(console.error);
-    }
-  }, [interests, language, communicationPreferences, personalInfo, backgroundInfo]);
+  // Removed automatic API calls to prevent issues when navigating back/forward
+  // API updates will happen only when the entire wizard is completed
 
   const validateSpanishPhone = (phone: string) => {
     // Spanish phone format: +34 6XX XXX XXX or +34 7XX XXX XXX

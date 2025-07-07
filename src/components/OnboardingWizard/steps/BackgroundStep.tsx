@@ -97,35 +97,8 @@ export function BackgroundStep({ onNext, onBack, data, wizardData }: BackgroundS
   const userName = personalInfo.name;
 
   // Submit each field individually as it's completed
-  useEffect(() => {
-    if (experienceLevel && personalInfo.email && personalInfo.isSubscriber) {
-      // Update subscriber with experience level tag
-      updateSubscriberTags(personalInfo.email, {
-        'background-info': { experienceLevel },
-        'personal-info': personalInfo
-      }).catch(console.error);
-    }
-  }, [experienceLevel, personalInfo]);
-
-  useEffect(() => {
-    if (ageGroup && personalInfo.email && personalInfo.isSubscriber) {
-      // Update subscriber with age group tag
-      updateSubscriberTags(personalInfo.email, {
-        'background-info': { experienceLevel, ageGroup },
-        'personal-info': personalInfo
-      }).catch(console.error);
-    }
-  }, [ageGroup, experienceLevel, personalInfo]);
-
-  useEffect(() => {
-    if (trainingFrequency && personalInfo.email && personalInfo.isSubscriber) {
-      // Update subscriber with training frequency tag
-      updateSubscriberTags(personalInfo.email, {
-        'background-info': { experienceLevel, ageGroup, trainingFrequency },
-        'personal-info': personalInfo
-      }).catch(console.error);
-    }
-  }, [trainingFrequency, experienceLevel, ageGroup, personalInfo]);
+  // Removed automatic API calls to prevent issues when navigating back/forward
+  // API updates will happen only when the entire wizard is completed
 
   // Auto-proceed when all fields are filled
   useEffect(() => {
