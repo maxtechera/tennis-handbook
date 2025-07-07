@@ -1,14 +1,15 @@
 .questionCard {
   background: var(--ifm-card-background-color);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--ifm-global-shadow-lw);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .questionCard:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--ifm-global-shadow-md);
 }
 
 .header {
@@ -59,4 +60,14 @@
   .subtitle {
     font-size: 0.813rem;
   }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .questionCard {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme="dark"] .subtitle {
+  color: var(--ifm-color-emphasis-600);
 }

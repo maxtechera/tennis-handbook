@@ -98,12 +98,14 @@ We provide real insights into professional tennis training methods without claim
 
 ## Content Attribution Standards
 
+**Important**: See [naming-guidelines.md](./naming-guidelines.md) for specific player/coach name replacements.
+
 ### Tier 1: Direct Professional Sources
 **When**: Direct quotes, interviews, documented sessions
 **How**: 
-- "According to Juan Carlos Ferrero..."
-- "As documented in Panichi's training..."
-- "Ferrero's approach with Alcaraz..."
+- "According to Olympic gold medalist coaches..."
+- "As documented in elite fitness training..."
+- "Championship coaches' approach with world #1 players..."
 
 ### Tier 2: Verified Practices
 **When**: Methods confirmed through multiple sources
@@ -129,9 +131,9 @@ We provide real insights into professional tennis training methods without claim
 ## Spanish Market Adaptations
 
 ### Cultural References
-- Use Spanish player examples (Alcaraz, Nadal)
+- Use Spanish tennis excellence examples (world #1 players, legendary champions)
 - Reference Spanish tournaments
-- Include Spanish coach methodologies
+- Include Spanish coaching methodologies
 - Respect cultural training preferences
 
 ### Language Style
@@ -142,7 +144,7 @@ We provide real insights into professional tennis training methods without claim
 
 ### Spanish Voice Examples
 **Hero**: "Descubre cómo entrenan realmente los mejores tenistas del mundo"
-**Feature**: "Los métodos reales de Ferrero con Alcaraz"
+**Feature**: "Los métodos reales de entrenadores medallistas olímpicos con jugadores #1"
 **CTA**: "Únete a miles de tenistas que ya conocen estos métodos"
 
 ## Quality Standards
@@ -176,7 +178,7 @@ We provide real insights into professional tennis training methods without claim
 "See how pros structure 12 weeks of training. The real progressions, timing, and methods they use."
 
 **Educational Content:**
-"Ferrero's approach with Alcaraz emphasizes explosive movement patterns. Here's what we've observed from their training sessions..."
+"Olympic gold medalist coaches' approach with world #1 players emphasizes explosive movement patterns. Here's what we've observed from their training sessions..."
 
 ### ❌ Avoid These
 
@@ -184,7 +186,7 @@ We provide real insights into professional tennis training methods without claim
 "Discover the secret training methods that will transform your game forever"
 
 **Too Presumptuous:**
-"Train exactly like Alcaraz with this elite program"
+"Train exactly like world #1 players with this elite program"
 
 **Too Clickbait:**
 "The one weird trick that pros don't want you to know"

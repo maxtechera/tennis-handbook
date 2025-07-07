@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# Jannik Sinner & Marco Panichi Training Methods
+# Elite Fitness Coach Training Methods
 
-_Advanced training methodology from Marco Panichi, former fitness coach to Novak Djokovic (2017-2024) and current coach to Jannik Sinner_
+_Advanced training methodology from ATP tour fitness experts working with top-10 players_
 
-## Marco Panichi Training Philosophy
+## Elite Fitness Training Philosophy
 
 ### Core Methodology Principles
 
@@ -14,7 +14,7 @@ _Advanced training methodology from Marco Panichi, former fitness coach to Novak
 - **Explosive-Flexible Balance**: Maintaining explosiveness and flexibility while building strength, avoiding excessive bulk
 - **Full-Body Coordination**: Integration of jumping, sprinting, and rotational drills with strength work
 - **Comprehensive Fitness Approach**: Holistic view of physical preparation including strength, mobility, mental preparation
-- **Experience-Based Adaptations**: 7+ years with Djokovic provide insights into long-term athletic development
+- **Experience-Based Adaptations**: Decades of tour experience provide insights into long-term athletic development
 
 ### Individual Psychology Integration
 

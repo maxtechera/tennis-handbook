@@ -11,7 +11,7 @@ Cada ejercicio en esta base de datos se utiliza estratégicamente a lo largo del
 :::
 
 :::tip **Integración de Investigación 2024**
-La investigación reciente en ciencias del deporte confirma que el **entrenamiento pliométrico** y los **patrones de movimiento funcional** proporcionan adaptaciones neurales y musculares superiores para el rendimiento en tenis comparado con el entrenamiento de fuerza tradicional únicamente. Esta base de datos prioriza ejercicios probados como efectivos en [investigación actual](../professional-standards#evidence-based-training-standards-2024-research).
+La investigación reciente en ciencias del deporte confirma que el **entrenamiento pliométrico** y los **patrones de movimiento funcional** proporcionan adaptaciones neurales y musculares superiores para el rendimiento en tenis comparado con el entrenamiento de fuerza tradicional únicamente. Esta base de datos prioriza ejercicios probados como efectivos en investigación actual.
 :::
 
 :::note **Validación de Ejercicios**

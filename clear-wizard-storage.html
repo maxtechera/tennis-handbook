@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Wizard Storage</title>
+</head>
+<body>
+    <h1>Clear Wizard Storage</h1>
+    <button onclick="clearStorage()">Clear Storage and Reload</button>
+    
+    <script>
+        function clearStorage() {
+            localStorage.removeItem('wizard_completed');
+            localStorage.removeItem('wizard_seen');
+            localStorage.removeItem('tennis-handbook-wizard');
+            alert('Storage cleared! Now go to http://localhost:3000 and wait 5 seconds.');
+            window.location.href = 'http://localhost:3000';
+        }
+    </script>
+</body>
+</html>

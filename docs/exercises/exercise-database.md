@@ -11,7 +11,7 @@ Every exercise in this database is used strategically throughout the [**12-Week 
 :::
 
 :::tip **2024 Research Integration**
-Recent sports science research confirms that **plyometric training** and **functional movement patterns** provide superior neural and muscular adaptations for tennis performance compared to traditional strength training alone. This database prioritizes exercises proven effective in [current research](/docs/professional-standards#evidence-based-training-standards-2024-research).
+Recent sports science research confirms that **plyometric training** and **functional movement patterns** provide superior neural and muscular adaptations for tennis performance compared to traditional strength training alone. This database prioritizes exercises proven effective in current research.
 :::
 
 :::note **Exercise Validation**

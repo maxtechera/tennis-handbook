@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Docusaurus-powered website for Elite Tennis Training Research - a comprehensive collection of research-backed tennis-specific training programs and methodologies. The project focuses on elite coaching methods from world-class coaches like Juan Carlos Ferrero (Alcaraz's coach) and Marco Panichi (Sinner's coach).
+This is a Docusaurus-powered website for Elite Tennis Training Research - a comprehensive collection of research-backed tennis-specific training programs and methodologies. The project focuses on elite coaching methods from Olympic gold medalist coaches and ATP tour fitness experts working with world #1 players.
 
 ## Project Context
 

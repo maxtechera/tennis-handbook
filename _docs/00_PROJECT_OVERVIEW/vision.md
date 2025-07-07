@@ -58,7 +58,7 @@ Transform 300+ pages of elite coaching content into a guided daily training expe
 - **Geographic Split**: Spain 40%, Mexico 25%, Argentina 15%, Other LATAM 20%
 
 ### Content Moat
-- Elite coach methodologies (Ferrero, Panichi, Ivanišević)
+- Elite coach methodologies (Olympic gold medalists, ATP tour experts)
 - 224+ research citations backing every method
 - 84 complete workouts ready for productization
 - 100% Spanish translation with cultural adaptation

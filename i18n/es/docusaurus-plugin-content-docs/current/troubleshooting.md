@@ -89,9 +89,9 @@ _Soluciones rápidas para desafíos comunes de implementación_
 
 | Problema                      | Causa Probable                | Solución                                                                                         |
 | ----------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------ |
-| Inclinación hacia adelante    | Movilidad limitada de tobillo | [Trabajo de movilidad de tobillo](exercises/exercise-database#ankle-circles--calf-raises)        |
-| Rodillas hacia adentro        | Glúteos débiles               | Activación con [caminatas con banda](/docs/exercises/exercise-database#lateral-band-walks)       |
-| No puedo alcanzar profundidad | Tensión en flexores de cadera | [Estiramiento de flexores de cadera](/docs/exercises/exercise-database#world-s-greatest-stretch) |
+| Inclinación hacia adelante    | Movilidad limitada de tobillo | Trabajo de movilidad de tobillo        |
+| Rodillas hacia adentro        | Glúteos débiles               | Activación con caminatas con banda       |
+| No puedo alcanzar profundidad | Tensión en flexores de cadera | Estiramiento de flexores de cadera |
 
 ### **"Las Dominadas Son Imposibles"**
 
@@ -217,7 +217,7 @@ _Soluciones rápidas para desafíos comunes de implementación_
 
 **Restricciones de Presupuesto:**
 
-- Comenzar con [configuración económica](/docs/equipment-guide#under-200-complete-setup)
+- Comenzar con configuración económica (ver Guía de Equipo)
 - Comprar equipo progresivamente mes a mes
 - Considerar mercado de equipo usado
 - Asociarse con compañero de entrenamiento para compartir costos

@@ -39,7 +39,7 @@ Transform elite tennis training knowledge into a personalized daily training com
 - WhatsApp-first communication
 - PDF download options for all workouts
 - Community challenges and social features
-- Cultural references (Alcaraz, Nadal examples)
+- Cultural references (world #1 players, legendary champions)
 - Payment methods for LATAM markets
 
 ### Phase 3: English Market (Month 5-6)

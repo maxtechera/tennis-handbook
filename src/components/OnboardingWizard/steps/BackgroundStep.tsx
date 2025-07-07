@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Translate from '@docusaurus/Translate';
 import { QuestionCard } from '../components/QuestionCard';
 import { OptionSelector, Option } from '../components/OptionSelector';
+import { updateSubscriberTags } from '@site/src/config/api';
 import styles from './BackgroundStep.module.css';
 
 interface BackgroundStepProps {
   onNext: (data: any) => void;
   onBack: () => void;
   data: any;
+  wizardData?: any; // Full wizard data for personalization
 }
 
 const experienceLevels: Option[] = [
@@ -85,41 +87,77 @@ const trainingFrequencies: Option[] = [
   }
 ];
 
-export function BackgroundStep({ onNext, onBack, data }: BackgroundStepProps) {
+export function BackgroundStep({ onNext, onBack, data, wizardData }: BackgroundStepProps) {
   const [experienceLevel, setExperienceLevel] = useState(data.experienceLevel || '');
   const [ageGroup, setAgeGroup] = useState(data.ageGroup || '');
   const [trainingFrequency, setTrainingFrequency] = useState(data.trainingFrequency || '');
   const [errors, setErrors] = useState<{[key: string]: string}>({});
+  
+  const personalInfo = wizardData?.['personal-info'] || {};
+  const userName = personalInfo.name;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const newErrors: typeof errors = {};
+  // Submit each field individually as it's completed
+  useEffect(() => {
+    if (experienceLevel && personalInfo.email && personalInfo.isSubscriber) {
+      // Update subscriber with experience level tag
+      updateSubscriberTags(personalInfo.email, {
+        'background-info': { experienceLevel },
+        'personal-info': personalInfo
+      }).catch(console.error);
+    }
+  }, [experienceLevel, personalInfo]);
 
-    if (!experienceLevel) {
-      newErrors.experienceLevel = 'Selecciona tu nivel de experiencia';
+  useEffect(() => {
+    if (ageGroup && personalInfo.email && personalInfo.isSubscriber) {
+      // Update subscriber with age group tag
+      updateSubscriberTags(personalInfo.email, {
+        'background-info': { experienceLevel, ageGroup },
+        'personal-info': personalInfo
+      }).catch(console.error);
     }
-    if (!ageGroup) {
-      newErrors.ageGroup = 'Selecciona tu grupo de edad';
-    }
-    if (!trainingFrequency) {
-      newErrors.trainingFrequency = 'Selecciona tu frecuencia de entrenamiento';
-    }
+  }, [ageGroup, experienceLevel, personalInfo]);
 
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-      return;
+  useEffect(() => {
+    if (trainingFrequency && personalInfo.email && personalInfo.isSubscriber) {
+      // Update subscriber with training frequency tag
+      updateSubscriberTags(personalInfo.email, {
+        'background-info': { experienceLevel, ageGroup, trainingFrequency },
+        'personal-info': personalInfo
+      }).catch(console.error);
     }
+  }, [trainingFrequency, experienceLevel, ageGroup, personalInfo]);
 
-    onNext({ experienceLevel, ageGroup, trainingFrequency });
-  };
+  // Auto-proceed when all fields are filled
+  useEffect(() => {
+    if (experienceLevel && ageGroup && trainingFrequency) {
+      // Small delay to show the selection
+      const timer = setTimeout(() => {
+        onNext({
+          experienceLevel,
+          ageGroup,
+          trainingFrequency
+        });
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [experienceLevel, ageGroup, trainingFrequency, onNext]);
 
   return (
     <div className={styles.backgroundStep}>
       <div className={styles.header}>
         <h2 className={styles.title}>
-          <Translate id="onboarding.background.title">
-            Cuéntanos sobre tu experiencia
-          </Translate>
+          {userName ? (
+            <Translate 
+              id="onboarding.background.title.personalized"
+              values={{ name: userName }}
+            >
+              Perfecto {userName}, cuéntanos sobre tu experiencia
+            </Translate>
+          ) : (
+            <Translate id="onboarding.background.title">
+              Cuéntanos sobre tu experiencia
+            </Translate>
+          )}
         </h2>
         <p className={styles.subtitle}>
           <Translate id="onboarding.background.subtitle">
@@ -128,7 +166,7 @@ export function BackgroundStep({ onNext, onBack, data }: BackgroundStepProps) {
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <div className={styles.form}>
         <QuestionCard
           title="onboarding.background.experience.title"
           subtitle="onboarding.background.experience.subtitle"
@@ -195,19 +233,7 @@ export function BackgroundStep({ onNext, onBack, data }: BackgroundStepProps) {
           )}
         </QuestionCard>
 
-        <div className={styles.actions}>
-          <button
-            type="button"
-            onClick={onBack}
-            className={styles.backButton}
-          >
-            <Translate id="onboarding.actions.back">Atrás</Translate>
-          </button>
-          <button type="submit" className={styles.nextButton}>
-            <Translate id="onboarding.actions.next">Continuar</Translate>
-          </button>
-        </div>
-      </form>
+      </div>
     </div>
   );
 }

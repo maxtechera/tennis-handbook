@@ -103,7 +103,7 @@ import WeekNav from '@site/src/components/WeekNav';
 
 ## Sunday – Rest & Comprehensive Recovery
 
-**Navigation:** [⬅️ Saturday](#saturday--match-or-moderate-conditioning) | [🔄 Back to Top](#weekly-navigation)
+**Navigation:** [⬅️ Saturday](#saturday--match-or-moderate-conditioning) | [🔄 Back to Top](#-weekly-navigation)
 
 - Gentle yoga or leisure walk (30 min).
 - Extensive foam rolling and breathing exercises.

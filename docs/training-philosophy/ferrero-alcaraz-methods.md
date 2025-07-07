@@ -2,23 +2,23 @@
 sidebar_position: 2
 ---
 
-# Carlos Alcaraz & Juan Carlos Ferrero Training Methods
+# Olympic Gold Medalist Coaching Methods
 
-_Elite training methodology from one of tennis's most successful player-coach partnerships_
+_Elite training methodology from Olympic gold medalist coaches working with world #1 players_
 
 :::tip **See It In Action**
-Alcaraz's training methods are directly integrated throughout the [**12-Week Elite Program**](/docs/workouts/overview), especially the daily stretching protocols and medicine ball power development. These methods are documented through professional interviews and validated by [Professional Standards](/docs/professional-standards).
+These championship-proven training methods are directly integrated throughout the [**12-Week Elite Program**](/docs/workouts/overview), especially the daily stretching protocols and medicine ball power development. These methods are documented through professional interviews and validated by [Professional Standards](/docs/professional-standards).
 :::
 
 :::info **Source Attribution**
-Information in this section is compiled from professional interviews, coaching insights, and documented training methodologies from Juan Carlos Ferrero's coaching approach with Carlos Alcaraz. All methods align with [ITF coaching standards](/docs/professional-standards) and current sports science research.
+Information in this section is compiled from professional interviews, coaching insights, and documented training methodologies from Olympic gold medalist coaches working with current world champions. All methods align with [ITF coaching standards](/docs/professional-standards) and current sports science research.
 :::
 
 ## Development Philosophy
 
 ### Core Principles
 
-- **Continuous Improvement**: Ferrero emphasizes that Alcaraz's success comes from a mindset of constant learning and improvement, never being satisfied with current performance levels
+- **Continuous Improvement**: Olympic gold medalist coaches emphasize that world #1 players' success comes from a mindset of constant learning and improvement, never being satisfied with current performance levels
 - **Humility in Training**: Despite success, maintaining hunger for improvement and listening to coaches and support team
 - **Consistent Hard Work**: Daily commitment to training excellence, with particular emphasis on starting each day with thorough stretching
 - **Mental Maturity**: Developing emotional regulation and focus under pressure through consistent training routines
@@ -29,7 +29,7 @@ Information in this section is compiled from professional interviews, coaching i
 - **Process Over Outcome**: Focus on daily excellence and consistent habits rather than immediate results
 - **Holistic Development**: Integration of physical, technical, tactical, and mental training elements
 - **Long-term Vision**: Patient development approach that prioritizes career longevity over short-term gains
-- **Individual Adaptation**: Understanding Alcaraz's unique characteristics and adapting training accordingly
+- **Individual Adaptation**: Understanding each player's unique characteristics and adapting training accordingly
 
 ---
 

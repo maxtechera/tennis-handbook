@@ -36,8 +36,8 @@ This handbook integrates **elite athlete insights** from world-class tennis prof
 
 Learn from the world's best coaches and athletes:
 
-- **Carlos Alcaraz & Juan Carlos Ferrero** development approach
-- **Marco Panichi's** advanced methodologies (Sinner's coach)
+- **World #1 players & Olympic gold medalist coaches** development approach
+- **Elite fitness coaches'** advanced methodologies used with top ATP players
 - **Evidence-based programming** from sports science experts
 
 ### 💪 Exercise Systems & Techniques

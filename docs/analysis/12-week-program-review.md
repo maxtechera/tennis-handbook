@@ -10,13 +10,13 @@ This document provides a comprehensive analysis of the 12-week elite tennis trai
 
 ## Table of Contents
 
-1. [Research Citations Catalog](#research-citations-catalog)
-2. [Elite Player Methods Mapping](#elite-player-methods-mapping)
-3. [Volume Progression Analysis](#volume-progression-analysis)
-4. [Periodization Structure](#periodization-structure)
-5. [Training Distribution Analysis](#training-distribution-analysis)
-6. [Progressive Overload Verification](#progressive-overload-verification)
-7. [Recommendations](#recommendations)
+1. [Research Citations Catalog](#1-research-citations-catalog)
+2. [Elite Player Methods Mapping](#2-elite-player-methods-mapping)
+3. [Volume Progression Analysis](#3-volume-progression-analysis)
+4. [Periodization Structure](#4-periodization-structure)
+5. [Training Distribution Analysis](#5-training-distribution-analysis)
+6. [Progressive Overload Verification](#6-progressive-overload-verification)
+7. [Recommendations](#7-recommendations)
 
 ---
 

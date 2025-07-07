@@ -1,0 +1,255 @@
+/* Wizard progress display */
+.progressContainer {
+  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-color-success-lightest) 100%);
+  border: 1px solid var(--ifm-color-primary-light);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin: 0 0 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ifm-color-primary), var(--ifm-color-success));
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--ifm-color-primary-light);
+}
+
+.wave {
+  font-size: 1.25rem;
+  animation: wave 1s ease-in-out;
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+.greetingText {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary-darkest);
+  line-height: 1.3;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0.5rem;
+  border: 1px solid var(--ifm-color-primary-lighter);
+  transition: all 0.2s ease;
+}
+
+.infoItem:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.infoIcon {
+  font-size: 1.125rem;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ifm-color-primary-lightest);
+  border-radius: 50%;
+  border: 1px solid var(--ifm-color-primary-light);
+}
+
+.infoContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.infoLabel {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  margin-bottom: 0.125rem;
+}
+
+.infoValue {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary-darkest);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.subscribedBadge {
+  background: var(--ifm-color-success-lightest);
+  color: var(--ifm-color-success-darkest);
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  border: 1px solid var(--ifm-color-success-light);
+  flex-shrink: 0;
+}
+
+.progressSummary {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--ifm-color-primary-dark);
+  font-style: italic;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--ifm-color-primary-light);
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .progressContainer {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-success-darkest) 100%);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .progressContainer::before {
+  background: linear-gradient(90deg, var(--ifm-color-primary-light), var(--ifm-color-success-light));
+}
+
+[data-theme='dark'] .greeting {
+  border-color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .greetingText {
+  color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] .infoItem {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .infoItem:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] .infoIcon {
+  background: var(--ifm-color-primary-darkest);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .infoLabel {
+  color: var(--ifm-color-primary-light);
+}
+
+[data-theme='dark'] .infoValue {
+  color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] .subscribedBadge {
+  background: var(--ifm-color-success-darkest);
+  color: var(--ifm-color-success-lightest);
+  border-color: var(--ifm-color-success-dark);
+}
+
+[data-theme='dark'] .progressSummary {
+  color: var(--ifm-color-primary-light);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .progressContainer {
+    padding: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .greeting {
+    gap: 0.5rem;
+    margin-bottom: 0.875rem;
+    padding-bottom: 0.625rem;
+  }
+  
+  .greetingText {
+    font-size: 0.9375rem;
+  }
+  
+  .infoGrid {
+    gap: 0.625rem;
+  }
+  
+  .infoItem {
+    padding: 0.5rem;
+  }
+  
+  .infoIcon {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+  
+  .infoLabel {
+    font-size: 0.6875rem;
+  }
+  
+  .infoValue {
+    font-size: 0.8125rem;
+  }
+  
+  .subscribedBadge {
+    font-size: 0.625rem;
+    padding: 0.0625rem 0.25rem;
+  }
+  
+  .progressSummary {
+    font-size: 0.75rem;
+    padding-top: 0.625rem;
+  }
+}
+
+/* Animation for new items */
+@keyframes slideInFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.infoItem {
+  animation: slideInFade 0.3s ease-out;
+}

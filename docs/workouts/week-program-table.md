@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Complete Weekly Structure with Daily Breakdowns
 
-This comprehensive guide provides detailed daily tables for the entire 12-week elite tennis training program. Each day includes specific timing, exercises, sets, reps, rest periods, and technique cues. Based on 224+ research citations and methods from Alcaraz, Sinner, Djokovic, Murray, and Nadal.
+This comprehensive guide provides detailed daily tables for the entire 12-week elite tennis training program. Each day includes specific timing, exercises, sets, reps, rest periods, and technique cues. Based on 224+ research citations and methods from world #1 players, Grand Slam champions, and Olympic gold medalists.
 
 ### 📊 How to Use This Guide
 
@@ -23,11 +23,11 @@ This comprehensive guide provides detailed daily tables for the entire 12-week e
 - [Weeks 3-12: Coming Soon](#phase-2-power-development-weeks-4-6)
 
 ### Key Program Features:
-- **6.5 hours daily training** (4 hours court + 2.5 hours gym) following Alcaraz protocol
+- **6.5 hours daily training** (4 hours court + 2.5 hours gym) following world #1 player protocols
 - **Velocity-based training zones** with bar speed monitoring (0.75-1.00 m/s)
 - **RFD optimization** in 0-100ms window for tennis-specific movements
-- **Three-dimensional functional training** (Sinner-Panichi method)
-- **Daily 20-minute yoga** and 4-7-8 breathing (Djokovic system)
+- **Three-dimensional functional training** (ATP tour fitness expert method)
+- **Daily 20-minute yoga** and 4-7-8 breathing (elite recovery system)
 
 ### Phase 1: Elite Foundation (Weeks 1-3)
 
@@ -37,10 +37,10 @@ This comprehensive guide provides detailed daily tables for the entire 12-week e
 
 | Time | Activity | Duration | Details |
 |------|----------|----------|---------|
-| 6:00-6:20 | Morning Protocol | 20 min | Djokovic Yoga Flow + 4-7-8 Breathing (8 cycles) |
+| 6:00-6:20 | Morning Protocol | 20 min | Elite Yoga Flow + 4-7-8 Breathing (8 cycles) |
 | 6:20-6:30 | Preparation | 10 min | HRV Measurement + Movement Screen |
 | 7:00-8:15 | Tennis Training | 75 min | **Baseline Construction Drills**<br/>• Crosscourt Forehands: 4×5 min (80% intensity)<br/>• Crosscourt Backhands: 4×5 min (80% intensity)<br/>• Figure-8 Patterns: 3×8 min<br/>• Depth Control: 3×5 min |
-| 8:30-9:00 | Dynamic Warm-up | 30 min | **Alcaraz Academy Protocol**<br/>• Ladder Drills: 2×6 patterns<br/>• Medicine Ball Rotations: 3×10<br/>• Dynamic Stretching Circuit |
+| 8:30-9:00 | Dynamic Warm-up | 30 min | **Elite Academy Protocol**<br/>• Ladder Drills: 2×6 patterns<br/>• Medicine Ball Rotations: 3×10<br/>• Dynamic Stretching Circuit |
 | 9:00-10:30 | Gym Session | 90 min | See detailed table below |
 | 10:30-11:00 | Recovery | 30 min | Protein Shake + Static Stretching |
 
@@ -58,7 +58,7 @@ This comprehensive guide provides detailed daily tables for the entire 12-week e
 
 | Time | Activity | Duration | Details |
 |------|----------|----------|---------|
-| 6:00-6:20 | Morning Protocol | 20 min | Djokovic Yoga + Breathing |
+| 6:00-6:20 | Morning Protocol | 20 min | Elite Yoga + Breathing |
 | 7:00-8:15 | Tennis Training | 75 min | **Serve & Volley Development**<br/>• First Serve Practice: 5×10 serves (targets)<br/>• Serve & Volley Patterns: 6×5 min<br/>• Approach Shot Integration: 4×8 reps |
 | 9:00-10:00 | Personal Coaching | 60 min | Technical refinement with video analysis |
 | 10:30-12:00 | Gym Session | 90 min | See detailed table below |

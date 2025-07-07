@@ -142,26 +142,6 @@ export function ChallengesStep({ onNext, onBack, data }: ChallengesStepProps) {
             </Translate>
           </p>
         </div>
-
-        <div className={styles.actions}>
-          <button
-            type="button"
-            onClick={onBack}
-            className={styles.backButton}
-          >
-            <Translate id="onboarding.actions.back">Atrás</Translate>
-          </button>
-          <button
-            type="button"
-            onClick={handleSkip}
-            className={styles.skipButton}
-          >
-            <Translate id="onboarding.actions.skip">Omitir</Translate>
-          </button>
-          <button type="submit" className={styles.nextButton}>
-            <Translate id="onboarding.actions.next">Continuar</Translate>
-          </button>
-        </div>
       </form>
     </div>
   );

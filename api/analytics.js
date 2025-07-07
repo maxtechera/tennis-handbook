@@ -1,18 +1,28 @@
 // Vercel Serverless Function for Analytics
 // Simple analytics collection endpoint
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Enable CORS
   const allowedOrigins = [
     "http://localhost:3000",
     "http://localhost:3001",
+    "http://localhost:64725",
     "https://tenis.mtech.uy",
     "https://www.tenis.mtech.uy",
   ];
 
   const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
+  
+  // In development, allow all localhost origins
+  const isDevelopment = process.env.NODE_ENV !== 'production';
+  
+  if (isDevelopment && origin && origin.startsWith("http://localhost:")) {
     res.setHeader("Access-Control-Allow-Origin", origin);
+  } else if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  } else if (isDevelopment) {
+    // Fallback for development - allow any localhost
+    res.setHeader("Access-Control-Allow-Origin", "*");
   }
 
   res.setHeader("Access-Control-Allow-Credentials", "true");
@@ -56,20 +66,20 @@ export default async function handler(req, res) {
     // 3. Forward to other analytics services (Mixpanel, Amplitude, etc.)
 
     // For ConvertKit specific events, you could also update subscriber tags
-    if (event === 'wizard_complete' && properties.email) {
+    if (event === "wizard_complete" && properties.email) {
       // Update ConvertKit subscriber with completion tag
       // This would use the ConvertKit API to add tags
     }
 
-    return res.status(200).json({ 
+    return res.status(200).json({
       success: true,
-      message: "Event tracked successfully" 
+      message: "Event tracked successfully",
     });
   } catch (error) {
     console.error("Analytics error:", error);
-    return res.status(500).json({ 
+    return res.status(500).json({
       error: "Failed to track event",
-      success: false 
+      success: false,
     });
   }
 }

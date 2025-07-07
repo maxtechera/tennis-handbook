@@ -89,9 +89,9 @@ Having issues with your training? This guide addresses the most common questions
 
 | Problem           | Likely Cause           | Solution                                                                            |
 | ----------------- | ---------------------- | ----------------------------------------------------------------------------------- |
-| Forward lean      | Limited ankle mobility | [Ankle mobility work](/docs/exercises/exercise-database#ankle-circles--calf-raises) |
-| Knee cave         | Weak glutes            | [Band walks](/docs/exercises/exercise-database#lateral-band-walks) activation       |
-| Can't reach depth | Hip flexor tightness   | [Hip flexor stretching](/docs/exercises/exercise-database#world-s-greatest-stretch) |
+| Forward lean      | Limited ankle mobility | Ankle mobility work - see exercise database |
+| Knee cave         | Weak glutes            | Band walks activation - see exercise database       |
+| Can't reach depth | Hip flexor tightness   | Hip flexor stretching - see exercise database |
 
 ### **"Pull-ups Are Impossible"**
 
@@ -217,7 +217,7 @@ Having issues with your training? This guide addresses the most common questions
 
 **Budget Constraints:**
 
-- Start with [budget setup](/docs/equipment-guide#under-200-complete-setup)
+- Start with budget setup (see Equipment Guide)
 - Buy equipment progressively month by month
 - Consider used equipment marketplace
 - Partner with training buddy to share costs

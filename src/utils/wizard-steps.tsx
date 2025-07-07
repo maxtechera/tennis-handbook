@@ -5,6 +5,7 @@
 import React from 'react';
 import { 
   WelcomeStep, 
+  WelcomeSuccessStep,
   PersonalizationStep, 
   BackgroundStep, 
   ChallengesStep, 
@@ -22,6 +23,10 @@ export function createWizardSteps(language: string = 'en'): OnboardingStep[] {
     {
       id: 'welcome',
       content: <WelcomeStep language={language} />,
+    },
+    {
+      id: 'welcome-success',
+      content: <WelcomeSuccessStep language={language} />,
     },
     {
       id: 'personalization',

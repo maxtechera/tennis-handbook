@@ -508,5 +508,482 @@
   },
   "contentEmailCapture.subtitle": {
     "message": "Únete a miles de jugadores que reciben consejos semanales de entrenadores de élite"
+  },
+  "homepage.hero.wizardCTA": {
+    "message": "Empieza Tu Plan Personalizado 🎾"
+  },
+  "onboarding.welcome.title": {
+    "message": "Entrena como los mejores del mundo"
+  },
+  "onboarding.welcome.subtitle": {
+    "message": "Accede a los métodos de entrenamiento de los mejores jugadores del mundo"
+  },
+  "onboarding.welcome.value1": {
+    "message": "Programas de medallistas olímpicos"
+  },
+  "onboarding.welcome.value2": {
+    "message": "Métodos de entrenadores elite del ATP"
+  },
+  "onboarding.welcome.value3": {
+    "message": "Actualizaciones por WhatsApp"
+  },
+  "onboarding.welcome.value4": {
+    "message": "PDFs descargables incluidos"
+  },
+  "onboarding.welcome.form.title": {
+    "message": "Únete a la revolución del entrenamiento"
+  },
+  "onboarding.welcome.form.subtitle": {
+    "message": "Comencemos con tu información básica"
+  },
+  "onboarding.welcome.name.label": {
+    "message": "Nombre"
+  },
+  "onboarding.welcome.name.placeholder": {
+    "message": "Tu nombre"
+  },
+  "onboarding.welcome.name.required": {
+    "message": "El nombre es requerido"
+  },
+  "onboarding.welcome.email.label": {
+    "message": "Email"
+  },
+  "onboarding.welcome.email.placeholder": {
+    "message": "tu@email.com"
+  },
+  "onboarding.welcome.email.required": {
+    "message": "El email es requerido"
+  },
+  "onboarding.welcome.email.invalid": {
+    "message": "Por favor ingresa un email válido"
+  },
+  "onboarding.welcome.cta": {
+    "message": "Empezar mi entrenamiento elite"
+  },
+  "onboarding.welcome.privacy": {
+    "message": "Respetamos tu privacidad. Sin spam, solo contenido de valor."
+  },
+  "onboarding.personalization.title": {
+    "message": "Personaliza tu experiencia"
+  },
+  "onboarding.personalization.subtitle": {
+    "message": "Opcional - Recibe contenido adaptado a tus preferencias"
+  },
+  "onboarding.personalization.language.title": {
+    "message": "Idioma preferido"
+  },
+  "onboarding.personalization.language.subtitle": {
+    "message": "Elige el idioma para tu contenido"
+  },
+  "onboarding.personalization.language.spanish": {
+    "message": "Español"
+  },
+  "onboarding.personalization.language.spanish.desc": {
+    "message": "Contenido en tu idioma nativo"
+  },
+  "onboarding.personalization.language.english": {
+    "message": "Inglés"
+  },
+  "onboarding.personalization.language.english.desc": {
+    "message": "Contenido en inglés"
+  },
+  "onboarding.personalization.comm.title": {
+    "message": "¿Cómo prefieres recibir las actualizaciones?"
+  },
+  "onboarding.personalization.comm.subtitle": {
+    "message": "Puedes elegir uno o ambos"
+  },
+  "onboarding.personalization.comm.email": {
+    "message": "Email"
+  },
+  "onboarding.personalization.comm.email.desc": {
+    "message": "Tips semanales por email"
+  },
+  "onboarding.personalization.comm.whatsapp": {
+    "message": "WhatsApp"
+  },
+  "onboarding.personalization.comm.whatsapp.desc": {
+    "message": "Recibe tips directos por WhatsApp"
+  },
+  "onboarding.personalization.phone.label": {
+    "message": "Número de WhatsApp"
+  },
+  "onboarding.personalization.phone.hint": {
+    "message": "Incluye el código de país (+34)"
+  },
+  "onboarding.personalization.phone.error": {
+    "message": "Por favor ingresa un número válido de España (+34 6XX XXX XXX)"
+  },
+  "onboarding.personalization.interests.title": {
+    "message": "¿Qué te interesa más?"
+  },
+  "onboarding.personalization.interests.subtitle": {
+    "message": "Selecciona todos los que apliquen"
+  },
+  "onboarding.personalization.interests.tips": {
+    "message": "Tips semanales"
+  },
+  "onboarding.personalization.interests.tips.desc": {
+    "message": "Consejos prácticos cada semana"
+  },
+  "onboarding.personalization.interests.analysis": {
+    "message": "Análisis de pros"
+  },
+  "onboarding.personalization.interests.analysis.desc": {
+    "message": "Estudios de jugadores profesionales"
+  },
+  "onboarding.personalization.interests.workouts": {
+    "message": "Nuevos entrenamientos"
+  },
+  "onboarding.personalization.interests.workouts.desc": {
+    "message": "Rutinas y ejercicios nuevos"
+  },
+  "onboarding.personalization.interests.nutrition": {
+    "message": "Nutrición"
+  },
+  "onboarding.personalization.interests.nutrition.desc": {
+    "message": "Consejos de alimentación"
+  },
+  "onboarding.personalization.skip.text": {
+    "message": "Puedes cambiar estas preferencias en cualquier momento"
+  },
+  "onboarding.actions.back": {
+    "message": "Atrás"
+  },
+  "onboarding.actions.skip": {
+    "message": "Omitir"
+  },
+  "onboarding.actions.complete": {
+    "message": "Completar"
+  },
+  "onboarding.actions.next": {
+    "message": "Continuar"
+  },
+  "onboarding.background.title": {
+    "message": "Cuéntanos sobre ti"
+  },
+  "onboarding.background.subtitle": {
+    "message": "Esto nos ayuda a personalizar tu plan de entrenamiento"
+  },
+  "onboarding.background.experience.title": {
+    "message": "¿Cuál es tu nivel de experiencia?"
+  },
+  "onboarding.background.experience.subtitle": {
+    "message": "Selecciona el que mejor te describa"
+  },
+  "onboarding.background.experience.beginner": {
+    "message": "Principiante"
+  },
+  "onboarding.background.experience.beginner.desc": {
+    "message": "Nuevo en el tenis o jugador casual"
+  },
+  "onboarding.background.experience.intermediate": {
+    "message": "Intermedio"
+  },
+  "onboarding.background.experience.intermediate.desc": {
+    "message": "Juego regularmente, nivel club"
+  },
+  "onboarding.background.experience.advanced": {
+    "message": "Avanzado"
+  },
+  "onboarding.background.experience.advanced.desc": {
+    "message": "Jugador competitivo, torneos locales"
+  },
+  "onboarding.background.experience.competitive": {
+    "message": "Competitivo"
+  },
+  "onboarding.background.experience.competitive.desc": {
+    "message": "Torneos nacionales o profesional"
+  },
+  "onboarding.background.age.title": {
+    "message": "Grupo de edad"
+  },
+  "onboarding.background.age.subtitle": {
+    "message": "Ayuda a adaptar los ejercicios"
+  },
+  "onboarding.background.age.junior": {
+    "message": "Junior"
+  },
+  "onboarding.background.age.junior.desc": {
+    "message": "Menos de 18 años"
+  },
+  "onboarding.background.age.adult": {
+    "message": "Adulto"
+  },
+  "onboarding.background.age.adult.desc": {
+    "message": "18-50 años"
+  },
+  "onboarding.background.age.senior": {
+    "message": "Senior"
+  },
+  "onboarding.background.age.senior.desc": {
+    "message": "Más de 50 años"
+  },
+  "onboarding.background.frequency.title": {
+    "message": "¿Con qué frecuencia entrenas?"
+  },
+  "onboarding.background.frequency.subtitle": {
+    "message": "Personalized training plans"
+  },
+  "onboarding.background.frequency.low": {
+    "message": "1-2 veces por semana"
+  },
+  "onboarding.background.frequency.low.desc": {
+    "message": "Jugador recreativo"
+  },
+  "onboarding.background.frequency.medium": {
+    "message": "3-4 veces por semana"
+  },
+  "onboarding.background.frequency.medium.desc": {
+    "message": "Jugador regular"
+  },
+  "onboarding.background.frequency.high": {
+    "message": "5-6 veces por semana"
+  },
+  "onboarding.background.frequency.high.desc": {
+    "message": "Jugador dedicado"
+  },
+  "onboarding.background.frequency.daily": {
+    "message": "Todos los días"
+  },
+  "onboarding.background.frequency.daily.desc": {
+    "message": "Entrenamiento profesional"
+  },
+  "onboarding.welcome.loading": {
+    "message": "Creando tu cuenta..."
+  },
+  "wizard.userInfo.welcomeBack": {
+    "message": "Hola, {name}"
+  },
+  "wizard.userInfo.subscribed": {
+    "message": "Suscrito"
+  },
+  "wizard.progress.greeting": {
+    "message": "Hola {name}, sigamos personalizando tu plan"
+  },
+  "wizard.progress.email": {
+    "message": "Email"
+  },
+  "wizard.progress.subscribed": {
+    "message": "Suscrito"
+  },
+  "wizard.progress.experience": {
+    "message": "Nivel"
+  },
+  "wizard.progress.frequency": {
+    "message": "Frecuencia"
+  },
+  "wizard.progress.language": {
+    "message": "Idioma"
+  },
+  "wizard.progress.whatsapp": {
+    "message": "WhatsApp"
+  },
+  "wizard.progress.summary": {
+    "message": "Tu plan se está personalizando con cada respuesta"
+  },
+  "onboarding.personalization.title.personalized": {
+    "message": "Hola {name}, personaliza tu experiencia"
+  },
+  "onboarding.background.title.personalized": {
+    "message": "Perfecto {name}, cuéntanos sobre tu experiencia"
+  },
+  "onboarding.challenges.title": {
+    "message": "¿Qué aspectos quieres mejorar?"
+  },
+  "onboarding.challenges.subtitle": {
+    "message": "Opcional - Ayúdanos a enfocar tu entrenamiento"
+  },
+  "onboarding.challenges.areas.title": {
+    "message": "Áreas de mejora"
+  },
+  "onboarding.challenges.areas.subtitle": {
+    "message": "Selecciona todas las que apliquen"
+  },
+  "onboarding.challenges.strength": {
+    "message": "Fuerza"
+  },
+  "onboarding.challenges.strength.desc": {
+    "message": "Desarrollar potencia muscular"
+  },
+  "onboarding.challenges.endurance": {
+    "message": "Resistencia"
+  },
+  "onboarding.challenges.endurance.desc": {
+    "message": "Mejorar aguante cardiovascular"
+  },
+  "onboarding.challenges.flexibility": {
+    "message": "Flexibilidad"
+  },
+  "onboarding.challenges.flexibility.desc": {
+    "message": "Aumentar rango de movimiento"
+  },
+  "onboarding.challenges.speed": {
+    "message": "Velocidad"
+  },
+  "onboarding.challenges.speed.desc": {
+    "message": "Mejorar rapidez en la cancha"
+  },
+  "onboarding.challenges.consistency": {
+    "message": "Consistencia"
+  },
+  "onboarding.challenges.consistency.desc": {
+    "message": "Entrenar de forma regular"
+  },
+  "onboarding.challenges.injury": {
+    "message": "Prevención de lesiones"
+  },
+  "onboarding.challenges.injury.desc": {
+    "message": "Evitar lesiones y mantenerse sano"
+  },
+  "onboarding.goals.title": {
+    "message": "Objetivos principales"
+  },
+  "onboarding.goals.subtitle": {
+    "message": "¿Qué quieres lograr?"
+  },
+  "onboarding.goals.competition": {
+    "message": "Competir"
+  },
+  "onboarding.goals.competition.desc": {
+    "message": "Participar en torneos"
+  },
+  "onboarding.goals.fitness": {
+    "message": "Fitness general"
+  },
+  "onboarding.goals.fitness.desc": {
+    "message": "Mejorar condición física"
+  },
+  "onboarding.goals.technique": {
+    "message": "Técnica"
+  },
+  "onboarding.goals.technique.desc": {
+    "message": "Perfeccionar golpes"
+  },
+  "onboarding.goals.fun": {
+    "message": "Diversión"
+  },
+  "onboarding.goals.fun.desc": {
+    "message": "Disfrutar del juego"
+  },
+  "onboarding.challenges.skip.text": {
+    "message": "Estos datos son opcionales. Puedes omitirlos si prefieres."
+  },
+  "onboarding.welcome.pdf.title": {
+    "message": "Descarga GRATIS tu rutina de 7 días"
+  },
+  "onboarding.welcome.pdf.subtitle": {
+    "message": "Métodos reales de entrenadores que han llevado jugadores al #1 del mundo"
+  },
+  "onboarding.welcome.pdf.form.title": {
+    "message": "Solo necesitamos tu email"
+  },
+  "onboarding.welcome.pdf.form.subtitle": {
+    "message": "Sin tarjeta de crédito • Descarga inmediata • 100% gratis"
+  },
+  "onboarding.welcome.pdf.cta": {
+    "message": "ENVIAR PDF GRATIS"
+  },
+  "onboarding.welcome.pdf.trust": {
+    "message": "12,000+ tenistas ya lo recibieron"
+  },
+  "onboarding.success.hero.welcome.default": {
+    "message": "¡Bienvenido a Elite Tennis!"
+  },
+  "onboarding.success.hero.subtitle": {
+    "message": "Ya eres parte de nuestra comunidad de entrenamiento elite"
+  },
+  "onboarding.success.pdf.sent.title": {
+    "message": "¡Tu PDF está en camino!"
+  },
+  "onboarding.success.pdf.sent.message.default": {
+    "message": "Enviamos tu rutina de 7 días a tu email. Revisa tu bandeja de entrada y confirma tu suscripción."
+  },
+  "onboarding.success.exclusive.title": {
+    "message": "Acceso VIP a todo el sistema completo"
+  },
+  "onboarding.success.exclusive.condition": {
+    "message": "Solo necesitas completar tu perfil ahora (2 minutos) para reservar tu acceso VIP"
+  },
+  "onboarding.success.continue": {
+    "message": "🚀 SÍ, QUIERO ACCESO VIP (2 min)"
+  },
+  "onboarding.success.skip": {
+    "message": "No, solo quiero el PDF"
+  },
+  "onboarding.success.warning": {
+    "message": "⚠️ Perderás acceso al programa completo y la app móvil"
+  },
+  "homepage.hero.title": {
+    "message": "Descubre cómo entrenan realmente los mejores del mundo"
+  },
+  "homepage.hero.subtitle": {
+    "message": "Ve detrás de escenas con entrenadores medallistas olímpicos del ATP Tour. Métodos reales, no teorías."
+  },
+  "homepage.hero.pdfCTA": {
+    "message": "📄 DESCARGAR RUTINA GRATIS (7 días)"
+  },
+  "homepage.hero.urgency": {
+    "message": "🔥 Únete a 12,000+ jugadores obteniendo planes de entrenamiento personalizados"
+  },
+  "homepage.hero.playersUsing": {
+    "message": "Jugadores entrenando"
+  },
+  "homepage.hero.improvement": {
+    "message": "Mejora promedio"
+  },
+  "homepage.hero.viewPlan": {
+    "message": "Ver tu rutina personalizada →"
+  },
+  "homepage.hero.noCard": {
+    "message": "Solo tu email, nada más"
+  },
+  "homepage.hero.instant": {
+    "message": "Descarga inmediata"
+  },
+  "homepage.hero.realMethods": {
+    "message": "Métodos reales de entrenadores ATP"
+  },
+  "homepage.testimonials.title": {
+    "message": "Lo que dicen los jugadores"
+  },
+  "homepage.testimonials.cta": {
+    "message": "Comenzar tu plan personalizado →"
+  },
+  "homepage.featured.title": {
+    "message": "Qué encontrarás en tu rutina de 7 días"
+  },
+  "homepage.featured.subtitle": {
+    "message": "Los métodos exactos que usan los entrenadores de jugadores #1 del mundo. Ahora accesibles para ti."
+  },
+  "homepage.benefits.olympicMethods": {
+    "message": "Métodos de Medallistas Olímpicos"
+  },
+  "homepage.benefits.olympicMethodsDesc": {
+    "message": "Rutinas exactas de entrenadores que han llevado jugadores al oro olímpico"
+  },
+  "homepage.benefits.atpMethods": {
+    "message": "Técnicas del ATP Tour"
+  },
+  "homepage.benefits.atpMethodsDesc": {
+    "message": "Los mismos ejercicios que usan los entrenadores de jugadores #1 del mundo"
+  },
+  "homepage.benefits.sevenDays": {
+    "message": "7 Días Completos"
+  },
+  "homepage.benefits.sevenDaysDesc": {
+    "message": "Una semana completa con ejercicios específicos, progresiones y métodos probados"
+  },
+  "homepage.featured.cta": {
+    "message": "📄 DESCARGAR RUTINA GRATIS AHORA"
+  },
+  "homepage.featured.ctaSubtext": {
+    "message": "Solo tu email • Descarga inmediata • Métodos reales"
+  },
+  "homepage.fomo.live": {
+    "message": "EN VIVO"
+  },
+  "homepage.fomo.signups": {
+    "message": "{count} jugadores comenzaron su plan personalizado en las últimas 24 horas"
   }
 }

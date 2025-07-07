@@ -10,13 +10,13 @@ Este documento proporciona un análisis integral de la estructura del programa d
 
 ## Tabla de Contenidos
 
-1. [Catálogo de Citas de Investigación](#catálogo-de-citas-de-investigación)
-2. [Mapeo de Métodos de Jugadores Elite](#mapeo-de-métodos-de-jugadores-elite)
-3. [Análisis de Progresión de Volumen](#análisis-de-progresión-de-volumen)
-4. [Estructura de Periodización](#estructura-de-periodización)
-5. [Análisis de Distribución de Entrenamiento](#análisis-de-distribución-de-entrenamiento)
-6. [Verificación de Sobrecarga Progresiva](#verificación-de-sobrecarga-progresiva)
-7. [Recomendaciones](#recomendaciones)
+1. [Catálogo de Citas de Investigación](#1-catálogo-de-citas-de-investigación)
+2. [Mapeo de Métodos de Jugadores Elite](#2-mapeo-de-métodos-de-jugadores-elite)
+3. [Análisis de Progresión de Volumen](#3-análisis-de-progresión-de-volumen)
+4. [Estructura de Periodización](#4-estructura-de-periodización)
+5. [Análisis de Distribución de Entrenamiento](#5-análisis-de-distribución-de-entrenamiento)
+6. [Verificación de Sobrecarga Progresiva](#6-verificación-de-sobrecarga-progresiva)
+7. [Recomendaciones](#7-recomendaciones)
 
 ---
 

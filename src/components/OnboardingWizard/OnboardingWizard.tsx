@@ -1,5 +1,7 @@
 import React, { useState, useEffect, ReactNode } from 'react';
 import { ProgressIndicator } from './components/ProgressIndicator';
+import { UserInfoDisplay } from './components/UserInfoDisplay';
+import { WizardProgress } from './components/WizardProgress';
 import styles from './OnboardingWizard.module.css';
 
 export interface OnboardingStep {
@@ -42,6 +44,7 @@ export default function OnboardingWizard({
   const [currentStep, setCurrentStep] = useState(initialStep);
   const [wizardData, setWizardData] = useState<Record<string, any>>({});
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isSubscriber, setIsSubscriber] = useState(false);
 
   // Filter out hidden steps for display purposes
   const visibleSteps = steps.filter(step => !step.isHidden);
@@ -68,7 +71,13 @@ export default function OnboardingWizard({
       
       if (savedData) {
         try {
-          setWizardData(JSON.parse(savedData));
+          const data = JSON.parse(savedData);
+          setWizardData(data);
+          
+          // Check if user is already a subscriber
+          if (data.personalInfo?.email && data.personalInfo?.isSubscriber) {
+            setIsSubscriber(true);
+          }
         } catch (e) {
           console.error('Failed to parse saved wizard data');
         }
@@ -96,6 +105,16 @@ export default function OnboardingWizard({
       ...prev,
       [stepId]: data
     }));
+    
+    // Check if this is the personal info step and email was provided
+    if (stepId === 'personal-info' && data.email && !isSubscriber) {
+      setIsSubscriber(true);
+      // Mark as subscriber in the data
+      setWizardData(prev => ({
+        ...prev,
+        [stepId]: { ...data, isSubscriber: true }
+      }));
+    }
   };
 
   const handleNext = () => {
@@ -143,6 +162,10 @@ export default function OnboardingWizard({
   const isLastStep = currentStep === steps.length - 1;
   const isFirstStep = currentStep === 0;
   const currentStepData = steps[currentStep];
+  
+  // Get user info for display
+  const userInfo = wizardData['personal-info'] || {};
+  const showUserInfo = userInfo.name || userInfo.email;
 
   return (
     <div className={styles.wizardContainer}>
@@ -166,39 +189,52 @@ export default function OnboardingWizard({
       </div>
 
       <div className={`${styles.stepContent} ${isAnimating ? styles.animating : ''}`}>
+        {/* Show wizard progress with accumulated information */}
+        <WizardProgress 
+          wizardData={wizardData}
+          currentStep={currentStepData.id}
+        />
         {React.isValidElement(currentStepData.content) 
           ? React.cloneElement(currentStepData.content as React.ReactElement<any>, {
-              onUpdate: (data: any) => updateStepData(currentStepData.id, data),
-              data: wizardData[currentStepData.id] || {}
+              onNext: (data: any) => {
+                updateStepData(currentStepData.id, data);
+                handleNext();
+              },
+              onBack: handlePrevious,
+              data: wizardData[currentStepData.id] || {},
+              wizardData: wizardData // Pass full wizard data for personalization
             })
           : currentStepData.content
         }
       </div>
 
-      <div className={styles.wizardFooter}>
-        <button
-          className={`${styles.navButton} ${styles.previousButton}`}
-          onClick={handlePrevious}
-          disabled={isFirstStep}
-          aria-label={translations.previous}
-        >
-          <svg className={styles.navIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          {translations.previous}
-        </button>
+      {/* Hide navigation for welcome step and success step */}
+      {currentStepData.id !== 'welcome' && currentStepData.id !== 'welcome-success' && (
+        <div className={styles.wizardFooter}>
+          <button
+            className={`${styles.navButton} ${styles.previousButton}`}
+            onClick={handlePrevious}
+            disabled={isFirstStep}
+            aria-label={translations.previous}
+          >
+            <svg className={styles.navIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+            {translations.previous}
+          </button>
 
-        <button
-          className={`${styles.navButton} ${styles.nextButton} ${styles.primary}`}
-          onClick={handleNext}
-          aria-label={isLastStep ? translations.complete : translations.next}
-        >
-          {isLastStep ? translations.complete : translations.next}
-          <svg className={styles.navIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
+          <button
+            className={`${styles.navButton} ${styles.nextButton} ${styles.primary}`}
+            onClick={handleNext}
+            aria-label={isLastStep ? translations.complete : translations.next}
+          >
+            {isLastStep ? translations.complete : translations.next}
+            <svg className={styles.navIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      )}
     </div>
   );
 }

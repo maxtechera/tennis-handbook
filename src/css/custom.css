@@ -71,3 +71,64 @@ td:contains("—") {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
+
+/* Mobile-specific fixes for the onboarding wizard */
+@media (max-width: 768px) {
+  /* Prevent zoom on input focus on iOS */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"],
+  textarea,
+  select {
+    font-size: 16px !important; /* Must be 16px to prevent zoom on iOS */
+    -webkit-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+  }
+  
+  /* Ensure all interactive elements are touch-friendly */
+  button,
+  a.button,
+  [role="button"],
+  input[type="checkbox"],
+  input[type="radio"],
+  label {
+    min-height: 44px;
+    min-width: 44px;
+    touch-action: manipulation;
+  }
+  
+  /* Prevent double-tap zoom on all elements */
+  * {
+    touch-action: manipulation;
+  }
+  
+  /* Fix for modal scroll issues */
+  body.modal-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+/* Additional mobile optimizations */
+@supports (-webkit-touch-callout: none) {
+  /* iOS specific fixes */
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+  
+  /* Prevent elastic scrolling on iOS */
+  .wizardModal {
+    position: fixed;
+    overflow: hidden;
+  }
+  
+  .wizardContainer {
+    -webkit-overflow-scrolling: touch;
+  }
+}
