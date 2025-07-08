@@ -1,0 +1,164 @@
+.weekTable {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.weekHeader {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.weekHeader h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.weekHeader p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Day Sections */
+.daySection {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.daySection:last-child {
+  border-bottom: none;
+}
+
+.dayTitle {
+  background: var(--ifm-color-primary-lightest);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.sessionTitle {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Tables */
+.scheduleTable,
+.exerciseTable,
+.optionTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.scheduleTable th,
+.exerciseTable th {
+  background: var(--ifm-color-emphasis-200);
+  padding: 0.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.scheduleTable td,
+.exerciseTable td,
+.optionTable td {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-100);
+  font-size: 0.875rem;
+}
+
+.scheduleTable tr:hover,
+.exerciseTable tr:hover,
+.optionTable tr:hover {
+  background: var(--ifm-color-emphasis-50);
+}
+
+/* Recovery Options */
+.recoveryOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.option h5 {
+  background: var(--ifm-color-success-lightest);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.recoveryDay {
+  margin-top: 1rem;
+}
+
+/* Week Summary */
+.weekSummary {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.weekSummary h4 {
+  margin-bottom: 1rem;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.summaryLabel {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.25rem;
+}
+
+.summaryValue {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .recoveryOptions {
+    grid-template-columns: 1fr;
+  }
+  
+  .scheduleTable,
+  .exerciseTable,
+  .optionTable {
+    font-size: 0.75rem;
+  }
+  
+  .scheduleTable td,
+  .exerciseTable td,
+  .optionTable td {
+    padding: 0.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make tables horizontally scrollable on mobile */
+  .scheduleTable,
+  .exerciseTable {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .summaryGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

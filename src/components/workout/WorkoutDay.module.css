@@ -1,0 +1,264 @@
+.workoutDay {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.dayHeader {
+  margin-bottom: 2rem;
+}
+
+.dayHeader h1 {
+  margin-bottom: 0.5rem;
+}
+
+.metadata {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.metadata span {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.phase {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+}
+
+.focus {
+  background: var(--ifm-color-success-lightest);
+  color: var(--ifm-color-success-darkest);
+}
+
+.intensity {
+  background: var(--ifm-color-warning-lightest);
+  color: var(--ifm-color-warning-darkest);
+}
+
+.methods {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* Schedule Overview */
+.scheduleOverview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.timeBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Tables */
+.scheduleTable,
+.drillsTable,
+.exerciseTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.scheduleTable th,
+.drillsTable th,
+.exerciseTable th {
+  background: var(--ifm-color-emphasis-200);
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.scheduleTable td,
+.drillsTable td,
+.exerciseTable td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.scheduleTable tr:hover,
+.drillsTable tr:hover,
+.exerciseTable tr:hover {
+  background: var(--ifm-color-emphasis-50);
+}
+
+/* Schedule Section */
+.scheduleSection h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.category {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.detailsList {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.5rem;
+  font-size: 0.875rem;
+}
+
+/* Tennis Section */
+.tennisSection {
+  margin-top: 2rem;
+}
+
+.trainingMeta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.drillDesc {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.25rem;
+}
+
+.targets {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.25rem;
+}
+
+/* Gym Section */
+.gymSection {
+  margin-top: 2rem;
+}
+
+.sessionMeta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.muscleGroups {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.25rem;
+}
+
+.velocity {
+  font-size: 0.875rem;
+  color: var(--ifm-color-primary);
+}
+
+.cuesList {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.alternative {
+  margin-bottom: 0.5rem;
+}
+
+.alternative strong {
+  display: block;
+  font-size: 0.875rem;
+}
+
+.alternative span {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Recovery Section */
+.recoverySection {
+  margin-top: 2rem;
+}
+
+.recoveryContent {
+  display: grid;
+  gap: 1rem;
+}
+
+.recoveryComponent h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Notes Section */
+.notesSection {
+  margin-top: 2rem;
+}
+
+.notesSection h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Equipment Section */
+.equipmentSection {
+  margin-top: 2rem;
+}
+
+.equipmentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.equipmentCategory h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.equipmentCategory ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scheduleOverview {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .trainingMeta,
+  .sessionMeta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Make tables scrollable on mobile */
+  .scheduleTable,
+  .drillsTable,
+  .exerciseTable {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .equipmentGrid {
+    grid-template-columns: 1fr;
+  }
+}

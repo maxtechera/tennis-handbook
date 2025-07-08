@@ -1,0 +1,367 @@
+# WORKOUT TEMPLATE - Use this as a base for all workout migrations
+# Copy this file and populate with actual workout data
+
+metadata:
+  # Basic identifiers
+  week: 1                                    # Week number (1-12)
+  week_name: "Week Title"                    # e.g., "Elite Foundation", "Power Development"
+  day: "monday"                              # Day of week (lowercase)
+  day_number: 1                              # Day number in week (1-7)
+  
+  # Workout details
+  title: "Workout Title"                     # Main workout title
+  subtitle: "Workout Subtitle"               # Descriptive subtitle
+  phase: "Phase 1: Foundation"               # Training phase
+  phase_week: 1                              # Week within current phase
+  focus: "Training Focus"                    # Main focus area
+  volume_target: "100%"                      # Volume target
+  intensity_target: "70-80%"                # Intensity target
+  
+  # Method integration (athlete/coach methods used)
+  athlete_methods:
+    - "Method 1"
+    - "Method 2"
+  
+  # Equipment needed
+  equipment_needed:
+    - "Equipment 1"
+    - "Equipment 2"
+  
+  # Navigation structure
+  navigation:
+    daily: "[📋 Week Overview](./) | [Next Day ➡️](nextday)"
+    week_overview_link: "./"
+    next_day: "tuesday"
+    next_day_link: "tuesday"
+  
+  # Section headers and UI text
+  section_headers:
+    movement_prep: "Movement Preparation Header"
+    movement_method: "Movement Method Header"
+    professional_assessment_header: "Assessment Header"
+    assessment_admonition:
+      type: "info"
+      title: "Admonition Title"
+      content: "Admonition content"
+
+# Pre-Week Assessment (usually only on Monday)
+pre_week_assessment:
+  title: "Assessment Title"
+  duration: "20 minutes"
+  description: "Assessment description"
+  
+  movement_screen:
+    - name: "Assessment Name"
+      reps: "5 reps"
+      method: "Assessment method"
+      elite_standard: "Standard description"
+      professional_notes: "Professional notes"
+      research: "Research integration"              # Optional
+      imbalance_detection: "Imbalance notes"       # Optional
+      tennis_application: "Tennis application"      # Optional
+      elite_benchmark: "Elite benchmark"           # Optional
+  
+  advanced_assessments:                            # Optional section
+    title: "Advanced Assessment Title"
+    exercises:
+      - name: "Exercise Name"
+        reps: "10 reps"
+        focus: "Focus area"
+
+# Schedule Overview (optional - for time-based layouts)
+schedule_overview:
+  title: "Day Schedule"
+  sessions:
+    - time: "07:15–08:15"
+      activity: "Activity Name"
+      sets_reps: "-"                               # Optional
+      instructions: "Brief instructions"           # Optional
+      exercises:                                   # Optional nested exercises
+        - name: "Exercise Name"
+          sets_reps: "3×10"
+          instructions: "Brief note"
+
+# Morning Protocol (daily)
+morning_protocol:
+  yoga_breathing:
+    yoga_flow:
+      duration: "8 minutes"
+      method: "Flow method"
+      focus: "Focus area"
+      professional_notes:
+        - "Note 1"
+        - "Note 2"
+    
+    breathing_protocol:
+      duration: "5 minutes"
+      pattern: "Breathing pattern"
+      technique: "Breathing technique"
+      parasympathetic_goals:
+        - "Goal 1"
+        - "Goal 2"
+  
+  # Optional section
+  mindful_preparation:
+    duration: "5 minutes"
+    focus: "Mental preparation focus"
+    goal: "Preparation goal"
+
+# Mobility Preparation (Week 2 Tuesday pattern)
+mobility_preparation:                              # Optional
+  title: "Mobility Prep"
+  duration: "Time range"
+  detailed_title: "Detailed section title"
+  
+  components:
+    - name: "Component Name"
+      instructions:                                # Optional - phase-based
+        - phase: "PHASE NAME"
+          instruction: "Phase instruction"
+      exercises:                                   # Optional - type-based
+        - type: "EXERCISE TYPE"
+          instruction: "Exercise instruction"
+
+# Professional Assessment (morning)
+professional_assessment:                           # Optional - varies by day
+  assessments:
+    - category: "Assessment Category"
+      items:
+        - name: "Assessment Item"
+          instruction: "How to perform"
+          target: "Target outcome"
+
+# Tennis Training
+tennis_training:
+  # Pattern 1: Single session (Week 1/2 Monday style)
+  session_name: "Tennis Session Name"              # Optional
+  duration: "07:15–08:15"                         # Optional
+  title: "Session Title"                          # Optional
+  
+  # Structured integration (Week 1 style)
+  alcaraz_integration:                            # Optional
+    warm_up:
+      method: "Warm-up method"
+      standard: "Quality standard"
+      tracking: "How to track"
+    
+    rally_development:
+      standard: "Rally standard"
+      tracking: "Rally tracking"
+    
+    directional_precision:
+      method: "Precision method"
+      standard: "Precision standard"
+      tracking: "Precision tracking"
+    
+    power_accuracy_integration:
+      power_range: "Power range"
+      standard: "Power standard"
+      tracking: "Power tracking"
+  
+  # Drill instructions (Week 2 Monday style)
+  drill_instructions:                             # Optional
+    - type: "DRILL TYPE"
+      instruction: "Detailed drill instruction"
+  
+  # Pattern 2: Multiple sessions (Week 2 Tuesday style)
+  sessions:                                       # Optional
+    - session_name: "Session Name"
+      duration: "Time range"
+      title: "Session Title"
+      
+      components:
+        - name: "Component Name"
+          drills:                                 # Option 1: Drills
+            - type: "DRILL TYPE"
+              instruction: "Drill instruction"
+          focus_areas:                            # Option 2: Focus areas
+            - type: "FOCUS TYPE"
+              instruction: "Focus instruction"
+  
+  elite_success_metrics:
+    metric_1: "Description"
+    metric_2: "Description"
+
+# Movement Preparation
+movement_preparation:
+  exercises:
+    - name: "Exercise Name"
+      sets: "2"
+      reps: "10"
+      description: "Exercise description"
+      focus: "Movement focus"
+  
+  targeted_correctives:                            # Optional
+    - name: "Corrective Exercise"
+      target: "Target area"
+      method: "Correction method"
+
+# Strength Training
+strength_training:
+  phase_description: "Phase description text"
+  
+  main_exercises:
+    - exercise_id: "ex_1"
+      name: "Exercise Name"
+      sets: "3"
+      reps: "10"
+      load: "70% 1RM"
+      rest_seconds: 180
+      tempo_description: "Tempo description"
+      detailed_title: "Section Title"              # Optional - for headers
+      
+      # Pattern 1: Simple instructions (Week 1)
+      detailed_instructions:                       # Optional
+        - "Instruction 1"
+        - "Instruction 2"
+      
+      # Pattern 2: Phase-based instructions (Week 2)
+      technique_points:                            # Optional
+        - phase: "SETUP"
+          instruction: "Setup instruction"
+        - phase: "EXECUTION"
+          instruction: "Execution instruction"
+      
+      # Week-specific notes
+      week_progression_notes:                      # Optional
+        title: "Week X Progression"
+        load_increase: "Progression details"
+      
+      professional_cues:
+        - "Cue 1"
+        - "Cue 2"
+      
+      research_integration:
+        - "Research point 1"
+        - "Research point 2"
+      
+      set_tracking:
+        - set: 1
+          target_reps: 10
+          per_side: false                          # Optional - for unilateral
+        - set: 2
+          target_reps: 10
+        - set: 3
+          target_reps: 10
+  
+  # Advanced sections (optional)
+  phase_2_integration:                             # Optional
+    title: "Phase 2 Integration"
+    exercises:
+      - name: "Advanced Exercise"
+        description: "Exercise description"
+        progression: "Progression notes"
+  
+  advanced_tendon_conditioning:                    # Optional
+    title: "Advanced Tendon Conditioning"
+    exercises:
+      - name: "Tendon Exercise"
+        method: "Exercise method"
+        progression: "Progression scheme"
+  
+  stability_power_block:                           # Optional
+    title: "Stability & Power Block"
+    exercises:
+      - name: "Power Exercise"
+        focus: "Power focus"
+        method: "Exercise method"
+  
+  # Core & Stability (Week 2 pattern)
+  core_stability_block:                            # Optional
+    title: "Core & Stability Work"
+    exercises:
+      - exercise_id: "cs_1"
+        name: "Exercise Name"
+        type: "isometric"                         # isometric, anti-rotation, etc.
+        sets: "3"
+        reps: "12"                                # Optional - for rep-based
+        duration: "45 seconds"                    # Optional - for time-based
+        rest_seconds: 60
+        detailed_title: "Section Title"
+        
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Setup details"
+        
+        set_tracking:
+          - set: 1
+            target_reps: 12                       # Or target_duration
+            per_side: false
+
+# Recovery Protocol
+recovery_protocol:
+  title: "Recovery Protocol Title"
+  
+  sections:
+    - category: "Recovery Category"
+      title: "Section Title"
+      items:
+        - name: "Recovery Item"
+          duration: "Duration"
+          method: "Method description"
+          focus: "Focus area"
+  
+  completion_tracking:                             # Optional checklist items
+    - item: "Tracking Item"
+      description: "Item description"
+
+# Timeline (optional - for detailed scheduling)
+timeline:                                          # Optional
+  - time: "06:00-06:20"
+    activity: "Activity Name"
+    description: "Activity description"
+    components:
+      - name: "Component"
+        duration: "Duration"
+        focus: "Focus area"
+
+# Additional Data Structures for Special Cases
+
+# Workout Carousel Data (if present in original)
+workout_carousel_data:                             # Optional
+  - type: "workout_carousel"
+    title: "Carousel Title"
+    phases:
+      - name: "Phase Name"
+        exercises:
+          - name: "Exercise"
+            details: "Exercise details"
+
+# Tables (for complex data presentation)
+tables:                                            # Optional
+  - table_id: "table_1"
+    title: "Table Title"
+    headers:
+      - "Header 1"
+      - "Header 2"
+    rows:
+      - ["Cell 1", "Cell 2"]
+      - ["Cell 3", "Cell 4"]
+
+# Special Sections (day-specific content)
+special_sections:                                  # Optional
+  # Use for unique content that doesn't fit standard structure
+  custom_section_1:
+    title: "Custom Section Title"
+    content_type: "description"                    # description, list, table, etc.
+    data: "Custom content or structured data"
+
+# Key Focus Points (Week 2 pattern)
+key_focus_points:                                  # Optional
+  - category: "Tennis"
+    focus: "Specific tennis focus for the day"
+  - category: "Strength"
+    focus: "Strength training focus"
+  - category: "Core"
+    focus: "Core work focus"
+
+# Weekly Notes (Week 2 pattern)
+weekly_notes:                                      # Optional
+  week: 2
+  content: "Week-specific progression notes and reminders"
+
+# Notes for Migration
+_migration_notes:                                  # Optional - remove after migration
+  - "Note about source content"
+  - "Decisions made during migration"
+  - "Areas requiring review"
