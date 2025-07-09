@@ -1,0 +1,166 @@
+# Week 1 - Saturday: Match Play or Enhanced Active Recovery
+metadata:
+  week: 1
+  week_name: "Elite Foundation"
+  day: "saturday"
+  day_number: 6
+  title: "Match Play or Enhanced Active Recovery"
+  subtitle: "Competition Application or Restorative Recovery"
+  phase: "Phase 1: Elite Foundation"
+  phase_week: 1
+  focus: "Competition or Recovery"
+  volume_target: "Variable based on option"
+  intensity_target: "High (match) or Low (recovery)"
+  
+  athlete_methods:
+    - "Match play option"
+    - "Active recovery option"
+    - "Recovery monitoring"
+    - "Performance tracking"
+  
+  equipment_needed:
+    - "Tennis court access (Option A)"
+    - "Bike or walking path (Option B)"
+    - "Yoga mat (Option B)"
+    - "Heart rate monitor"
+    - "Hydration supplies"
+  
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Friday](friday) | [Sunday ➡️](sunday)"
+    week_overview_link: "./"
+    prev_day: "friday"
+    prev_day_link: "friday"
+    next_day: "sunday"
+    next_day_link: "sunday"
+
+# NEW PATTERN: Workout options
+workout_options:
+  - option: "A"
+    title: "Match Day Protocol"
+    description: "Competition application of week's training"
+  - option: "B"
+    title: "Active Recovery Protocol"
+    description: "Restorative recovery for training adaptation"
+
+# Option A: Match play
+option_a_match_play:
+  title: "Option A: Match Day Protocol"
+  
+  # Pre-match preparation
+  pre_match_preparation:
+    title: "Pre-Match Preparation (2 hours before)"
+    phases:
+      - phase: "Nutrition"
+        duration: "30 min"
+        activities: "Carb-rich meal (1-2g/kg) + hydration"
+        purpose: "Energy optimization"
+      
+      - phase: "Mental Prep"
+        duration: "20 min"
+        activities: "Visualization, game plan review"
+        purpose: "Psychological readiness"
+      
+      - phase: "Physical Prep"
+        duration: "30 min"
+        activities: "Dynamic warm-up from Tuesday protocol"
+        purpose: "Neural activation"
+      
+      - phase: "Court Prep"
+        duration: "30 min"
+        activities: "Progressive tennis warm-up"
+        purpose: "Sport-specific preparation"
+      
+      - phase: "Final Prep"
+        duration: "10 min"
+        activities: "Breathing, confidence affirmations"
+        purpose: "Peak state achievement"
+  
+  # Performance tracking
+  match_performance_tracking:
+    title: "Match Performance Tracking"
+    statistics:
+      - stat: "First Serve %"
+        target: ">65%"
+        actual_field: "___%"
+        notes: "Power and accuracy balance"
+      
+      - stat: "Winners/Unforced Errors"
+        target: ">1.0 ratio"
+        actual_field: "___ ratio"
+        notes: "Aggressive but controlled"
+      
+      - stat: "Break Points Saved"
+        target: ">60%"
+        actual_field: "___%"
+        notes: "Pressure performance"
+      
+      - stat: "Movement Efficiency"
+        target: "Balanced recovery"
+        actual_field: "___/10"
+        notes: "Court coverage quality"
+  
+  # Post-match recovery
+  post_match_recovery:
+    title: "Post-Match Recovery"
+    phases:
+      - phase: "Immediate"
+        duration: "15 min"
+        activities: "Light walking, hydration, carb replacement"
+        purpose: "Recovery initiation"
+      
+      - phase: "Stretching"
+        duration: "15 min"
+        activities: "Full body static stretching"
+        purpose: "Flexibility maintenance"
+      
+      - phase: "Assessment"
+        duration: "10 min"
+        activities: "Performance review, lesson identification"
+        purpose: "Learning optimization"
+
+# Option B: Active recovery
+option_b_active_recovery:
+  title: "Option B: Active Recovery Protocol"
+  
+  # Low-intensity movement
+  low_intensity_movement:
+    title: "Low-Intensity Movement (60 minutes total)"
+    activities:
+      - activity: "Zone-1 Cycling/Walking"
+        duration: "30 min"
+        intensity: "Very easy (RPE 3-4/10)"
+        focus: "Blood flow enhancement"
+      
+      - activity: "Full Body Mobility Flow"
+        duration: "20 min"
+        intensity: "Yoga-based stretching"
+        focus: "Flexibility restoration"
+      
+      - activity: "Breathing & Relaxation"
+        duration: "10 min"
+        intensity: "Meditation, progressive relaxation"
+        focus: "Stress reduction"
+  
+  # Recovery monitoring
+  recovery_monitoring:
+    title: "Recovery Monitoring"
+    metrics:
+      - metric: "HRV"
+        target: "Within 5% of baseline"
+        actual_field: "___% change"
+        adjustment: "Adjust Sunday activities if needed"
+      
+      - metric: "Subjective Wellness"
+        target: "≥7/10"
+        actual_field: "___/10"
+        adjustment: "Additional recovery if <7"
+      
+      - metric: "Muscle Soreness"
+        target: "≤5/10"
+        actual_field: "___/10"
+        adjustment: "Extra stretching if >5"
+      
+      - metric: "Energy Levels"
+        target: "≥7/10"
+        actual_field: "___/10"
+        adjustment: "Plan Monday intensity accordingly"

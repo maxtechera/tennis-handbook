@@ -1,45 +1,98 @@
 import React from 'react';
 import Details from '@theme/Details';
 
-// Component to render the Pre-Week Assessment section
-export function PreWeekAssessment({ data }: { data: any }) {
-  if (!data) return null;
+// Component to render the Pre-Week Assessment section using unified schema
+export function PreWeekAssessment({ data, assessments }: { data?: any; assessments?: any[] }) {
+  // Support both legacy data structure and new unified assessments array
+  const preWeekAssessment = data || assessments?.find(a => a.type === 'baseline' && a.id === 'pre_week_assessment');
+  
+  if (!preWeekAssessment) return null;
   
   return (
     <>
       <h2>Elite Pre-Week Assessment (Complete before Monday)</h2>
       
-      <h3>{data.title}</h3>
+      <h3>{preWeekAssessment.title}</h3>
+      <p><em>{preWeekAssessment.description}</em></p>
       
-      <p><strong>Primary Assessments:</strong></p>
-      <ul>
-        {data.movement_screen?.map((assessment: any, idx: number) => (
-          <li key={idx}>
-            <strong>{assessment.name}</strong>: {assessment.reps}
-            <ul>
-              <li><em>Elite Standard</em>: {assessment.elite_standard}</li>
-              <li><em>Professional Notes</em>: {assessment.professional_notes}</li>
-              {assessment.research && <li><em>Research Integration</em>: {assessment.research}</li>}
-              {assessment.imbalance_detection && <li><em>Imbalance Detection</em>: {assessment.imbalance_detection}</li>}
-              {assessment.tennis_application && <li><em>Tennis Application</em>: {assessment.tennis_application}</li>}
-              {assessment.elite_benchmark && <li><em>Elite Benchmark</em>: {assessment.elite_benchmark}</li>}
-            </ul>
-          </li>
-        ))}
-      </ul>
-      
-      {data.advanced_assessments && (
-        <>
-          <p><strong>{data.advanced_assessments.title}:</strong></p>
-          <ul>
-            {data.advanced_assessments.exercises?.map((exercise: any, idx: number) => (
-              <li key={idx}>
-                <strong>{exercise.name}</strong>: {exercise.reps} ({exercise.focus})
-              </li>
-            ))}
-          </ul>
-        </>
+      {/* Show attribution if available */}
+      {preWeekAssessment.attribution && (
+        <div className="admonition admonition-info alert alert--info">
+          <div className="admonition-heading">
+            <h5>🏆 Elite Method Attribution</h5>
+          </div>
+          <div className="admonition-content">
+            <p><strong>Source:</strong> {preWeekAssessment.attribution.source}</p>
+            <p><strong>Elite Use:</strong> {preWeekAssessment.attribution.elite_use}</p>
+            <p><strong>Methodology:</strong> {preWeekAssessment.attribution.methodology}</p>
+          </div>
+        </div>
       )}
+      
+      <p><strong>Assessment Components ({preWeekAssessment.duration}):</strong></p>
+      
+      {/* Unified schema components */}
+      {preWeekAssessment.components?.map((component: any, idx: number) => (
+        <div key={component.id || idx} style={{ marginBottom: '2rem' }}>
+          <h4>📊 {component.name}</h4>
+          
+          <table>
+            <tbody>
+              <tr>
+                <td><strong>Protocol</strong></td>
+                <td>{component.measurement?.protocol}</td>
+              </tr>
+              <tr>
+                <td><strong>Repetitions</strong></td>
+                <td>{component.measurement?.repetitions || component.measurement?.duration}</td>
+              </tr>
+              <tr>
+                <td><strong>Equipment</strong></td>
+                <td>{component.measurement?.equipment}</td>
+              </tr>
+              {component.standards && (
+                <>
+                  <tr>
+                    <td><strong>Elite Benchmark</strong></td>
+                    <td>{component.standards.elite_benchmark}</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Good Standard</strong></td>
+                    <td>{component.standards.good_standard}</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Needs Work</strong></td>
+                    <td>{component.standards.needs_work}</td>
+                  </tr>
+                </>
+              )}
+            </tbody>
+          </table>
+          
+          {component.context && (
+            <Details summary="🎯 Assessment Context">
+              <p><strong>Description:</strong> {component.context.description}</p>
+              {component.context.research && <p><strong>Research:</strong> {component.context.research}</p>}
+              <p><strong>Application:</strong> {component.context.application}</p>
+            </Details>
+          )}
+        </div>
+      ))}
+      
+      {/* Legacy format fallback */}
+      {preWeekAssessment.movement_screen?.map((assessment: any, idx: number) => (
+        <li key={idx}>
+          <strong>{assessment.name}</strong>: {assessment.reps}
+          <ul>
+            <li><em>Elite Standard</em>: {assessment.elite_standard}</li>
+            <li><em>Professional Notes</em>: {assessment.professional_notes}</li>
+            {assessment.research && <li><em>Research Integration</em>: {assessment.research}</li>}
+            {assessment.imbalance_detection && <li><em>Imbalance Detection</em>: {assessment.imbalance_detection}</li>}
+            {assessment.tennis_application && <li><em>Tennis Application</em>: {assessment.tennis_application}</li>}
+            {assessment.elite_benchmark && <li><em>Elite Benchmark</em>: {assessment.elite_benchmark}</li>}
+          </ul>
+        </li>
+      ))}
     </>
   );
 }
@@ -103,65 +156,134 @@ export function MorningProtocol({ data }: { data: any }) {
   );
 }
 
-// Component to render Tennis Training tables
+// Component to render Tennis Training tables with detailed programs
 export function TennisTrainingTable({ data }: { data: any }) {
   if (!data) return null;
   
   return (
     <>
-      <h2>Elite Tennis Foundation (07:15-08:15) - Alcaraz Academy Protocol {`{#tennis}`}</h2>
+      <h2>🎾 Elite Tennis Foundation (07:15-08:15) - Alcaraz Academy Protocol {`{#tennis}`}</h2>
       
-      <h3>Alcaraz 20-Minute Dynamic Warm-up Integration</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Time</th>
-            <th>Tennis Component</th>
-            <th>Alcaraz Method</th>
-            <th>Elite Standards</th>
-            <th>Performance Tracking</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>07:15-07:25</strong></td>
-            <td><strong>Court Movement Preparation</strong></td>
-            <td>{data.alcaraz_integration?.warm_up?.method}</td>
-            <td>{data.alcaraz_integration?.warm_up?.standard}</td>
-            <td>{data.alcaraz_integration?.warm_up?.tracking}</td>
-          </tr>
-          <tr>
-            <td><strong>07:25-07:50</strong></td>
-            <td><strong>Controlled Rally Development</strong></td>
-            <td>Precision hitting (100 balls each side)</td>
-            <td>{data.alcaraz_integration?.rally_development?.standard}</td>
-            <td>{data.alcaraz_integration?.rally_development?.tracking}</td>
-          </tr>
-          <tr>
-            <td><strong>07:50-08:05</strong></td>
-            <td><strong>Directional Precision Training</strong></td>
-            <td>{data.alcaraz_integration?.directional_precision?.method}</td>
-            <td>{data.alcaraz_integration?.directional_precision?.standard}</td>
-            <td>{data.alcaraz_integration?.directional_precision?.tracking}</td>
-          </tr>
-          <tr>
-            <td><strong>08:05-08:15</strong></td>
-            <td><strong>Power-Accuracy Integration</strong></td>
-            <td>Controlled pace building ({data.alcaraz_integration?.power_accuracy_integration?.power_range})</td>
-            <td>{data.alcaraz_integration?.power_accuracy_integration?.standard}</td>
-            <td>{data.alcaraz_integration?.power_accuracy_integration?.tracking}</td>
-          </tr>
-        </tbody>
-      </table>
+      <p><em>{data.category} | Duration: {data.total_duration} minutes | Intensity: {data.intensity_avg}</em></p>
       
-      <p><strong>Elite Success Metrics (Alcaraz Standards):</strong></p>
-      <ul>
-        {Object.entries(data.elite_success_metrics || {}).map(([key, value]: [string, any]) => (
-          <li key={key}>
-            <strong>{key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</strong>: {value}
-          </li>
-        ))}
-      </ul>
+      <h3>🏃 Court Movement Preparation ({data.alcaraz_integration?.warm_up?.time})</h3>
+      <p><strong>Method:</strong> {data.alcaraz_integration?.warm_up?.method}</p>
+      <p><strong>Standard:</strong> {data.alcaraz_integration?.warm_up?.standard}</p>
+      
+      {data.alcaraz_integration?.warm_up?.exercises?.map((exercise: any, idx: number) => (
+        <div key={idx} style={{ marginBottom: '1.5rem' }}>
+          <h4>📝 {exercise.name}</h4>
+          <ul style={{ listStyle: 'none' }}>
+            <li>- [ ] <strong>Duration:</strong> {exercise.duration}</li>
+            <li>- [ ] <strong>Sets:</strong> {exercise.sets}</li>
+          </ul>
+          
+          <Details summary="💡 Detailed Instructions">
+            <ul>
+              {exercise.detailed_instructions?.map((instruction: string, i: number) => (
+                <li key={i}>{instruction}</li>
+              ))}
+            </ul>
+          </Details>
+          
+          <Details summary="🎯 Professional Cues">
+            <ul>
+              {exercise.cues?.map((cue: string, i: number) => (
+                <li key={i}>"{cue}"</li>
+              ))}
+            </ul>
+          </Details>
+        </div>
+      ))}
+      
+      <h3>🎯 Rally Development ({data.alcaraz_integration?.rally_development?.time})</h3>
+      <p><strong>Method:</strong> {data.alcaraz_integration?.rally_development?.method}</p>
+      <p><strong>Standard:</strong> {data.alcaraz_integration?.rally_development?.standard}</p>
+      
+      {data.alcaraz_integration?.rally_development?.drills?.map((drill: any, idx: number) => (
+        <div key={idx} style={{ marginBottom: '1.5rem' }}>
+          <h4>🏆 {drill.name}</h4>
+          <ul style={{ listStyle: 'none' }}>
+            <li>- [ ] <strong>Type:</strong> {drill.type}</li>
+            <li>- [ ] <strong>Balls:</strong> {drill.balls}</li>
+            <li>- [ ] <strong>Intensity:</strong> {drill.intensity}</li>
+          </ul>
+          
+          <Details summary="🥎 Forehand Protocol">
+            <ul>
+              {drill.forehand_instructions?.map((instruction: string, i: number) => (
+                <li key={i}>{instruction}</li>
+              ))}
+            </ul>
+          </Details>
+          
+          <Details summary="🥎 Backhand Protocol">
+            <ul>
+              {drill.backhand_instructions?.map((instruction: string, i: number) => (
+                <li key={i}>{instruction}</li>
+              ))}
+            </ul>
+          </Details>
+          
+          <Details summary="🎯 Professional Cues">
+            <ul>
+              {drill.cues?.map((cue: string, i: number) => (
+                <li key={i}>"{cue}"</li>
+              ))}
+            </ul>
+          </Details>
+        </div>
+      ))}
+      
+      <h3>📍 Directional Precision ({data.alcaraz_integration?.directional_precision?.time})</h3>
+      <p><strong>Method:</strong> {data.alcaraz_integration?.directional_precision?.method}</p>
+      <p><strong>Standard:</strong> {data.alcaraz_integration?.directional_precision?.standard}</p>
+      
+      {data.alcaraz_integration?.directional_precision?.drills?.map((drill: any, idx: number) => (
+        <div key={idx} style={{ marginBottom: '1.5rem' }}>
+          <h4>🎯 {drill.name}</h4>
+          <ul style={{ listStyle: 'none' }}>
+            <li>- [ ] <strong>Type:</strong> {drill.type}</li>
+            <li>- [ ] <strong>Duration:</strong> {drill.duration}</li>
+          </ul>
+          
+          <Details summary="📋 Setup & Execution">
+            <ul>
+              {drill.detailed_instructions?.map((instruction: string, i: number) => (
+                <li key={i}>{instruction}</li>
+              ))}
+            </ul>
+          </Details>
+          
+          <Details summary="🎯 Professional Cues">
+            <ul>
+              {drill.cues?.map((cue: string, i: number) => (
+                <li key={i}>"{cue}"</li>
+              ))}
+            </ul>
+          </Details>
+        </div>
+      ))}
+      
+      <h3>⚡ Power-Accuracy Integration ({data.alcaraz_integration?.power_accuracy_integration?.time})</h3>
+      <p><strong>Method:</strong> {data.alcaraz_integration?.power_accuracy_integration?.method}</p>
+      <p><strong>Power Range:</strong> {data.alcaraz_integration?.power_accuracy_integration?.power_range}</p>
+      <p><strong>Standard:</strong> {data.alcaraz_integration?.power_accuracy_integration?.standard}</p>
+      
+      <div className="admonition admonition-tip alert alert--success">
+        <div className="admonition-heading">
+          <h5>🏆 Elite Success Metrics (Alcaraz Standards)</h5>
+        </div>
+        <div className="admonition-content">
+          <ul>
+            {Object.entries(data.elite_success_metrics || {}).map(([key, value]: [string, any]) => (
+              <li key={key}>
+                <strong>{key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</strong>: {value}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </>
   );
 }

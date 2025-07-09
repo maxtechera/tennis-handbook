@@ -1,0 +1,546 @@
+# Week 1 - Friday: Enhanced Full Body Power & Tennis
+metadata:
+  week: 1
+  week_name: "Elite Foundation"
+  day: "friday"
+  day_number: 5
+  title: "Enhanced Full Body Power & Tennis"
+  subtitle: "Explosive Power Development and Week 1 Assessment"
+  phase: "Phase 1: Elite Foundation"
+  phase_week: 1
+  focus: "Power Development & Weekly Assessment"
+  volume_target: "90% (power focus)"
+  intensity_target: "80-90%"
+  
+  athlete_methods:
+    - "Contrast training complexes"
+    - "PAP (Post-Activation Potentiation)"
+    - "Plyometric development"
+    - "Power endurance"
+  
+  equipment_needed:
+    - "Tennis court access"
+    - "Trap bar and weights"
+    - "Box for jumps (12-18 inches)"
+    - "Barbell and bench"
+    - "Dumbbells"
+    - "Medicine ball"
+    - "Measuring tape"
+    - "Heart rate monitor"
+  
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Thursday](thursday) | [Saturday ➡️](saturday)"
+    week_overview_link: "./"
+    prev_day: "thursday"
+    prev_day_link: "thursday"
+    next_day: "saturday"
+    next_day_link: "saturday"
+
+# NEW PATTERN: Weekly performance assessment
+weekly_performance_assessment:
+  title: "Weekly Performance Assessment"
+  time: "07:00-07:10"
+  
+  comparison_table:
+    headers: ["Assessment", "Monday Baseline", "Friday Reading", "Weekly Change", "Performance Indicator"]
+    rows:
+      - assessment: "HRV"
+        monday_baseline: "___ ms"
+        friday_reading: "___ ms"
+        weekly_change: "___% change"
+        indicator: "Adaptation or overreaching?"
+      
+      - assessment: "Grip Strength"
+        monday_baseline: "___ kg (avg both hands)"
+        friday_reading: "___ kg"
+        weekly_change: "___% change"
+        indicator: "Neuromuscular readiness"
+      
+      - assessment: "Subjective Energy"
+        monday_baseline: "___/10"
+        friday_reading: "___/10"
+        weekly_change: "___ point change"
+        indicator: "Weekly fatigue accumulation"
+      
+      - assessment: "Movement Quality"
+        monday_baseline: "Screen score: ___/15"
+        friday_reading: "Quick check: ___/15"
+        weekly_change: "Improvement noted"
+        indicator: "Training effectiveness"
+      
+      - assessment: "Training Motivation"
+        monday_baseline: "___/10"
+        friday_reading: "___/10"
+        weekly_change: "___ point change"
+        indicator: "Psychological readiness"
+
+# Tennis with agility focus
+tennis_training:
+  title: "Tennis Transition & Agility Training"
+  time: "07:15-08:15"
+  
+  court_movement_integration:
+    title: "Court Movement Integration"
+    drills:
+      - drill: "Baseline to Net Transitions"
+        time: "15 min"
+        technical_focus:
+          - "Approach shot technique"
+          - "Volley preparation"
+          - "Recovery positioning"
+        physical_development:
+          - "Forward movement efficiency"
+          - "Deceleration and balance"
+          - "Multi-directional agility"
+      
+      - drill: "Lateral Movement Patterns"
+        time: "15 min"
+        technical_focus:
+          - "Wide ball recovery"
+          - "Court coverage"
+          - "Balance and control"
+        physical_development:
+          - "Lateral power and stability"
+          - "Hip abduction/adduction strength"
+          - "Single-leg stability"
+      
+      - drill: "Reaction and Agility"
+        time: "15 min"
+        technical_focus:
+          - "Split-step timing"
+          - "First-step quickness"
+          - "Direction change efficiency"
+        physical_development:
+          - "Reactive movement quality"
+          - "Acceleration development"
+          - "Deceleration control"
+      
+      - drill: "Match Movement Simulation"
+        time: "15 min"
+        technical_focus:
+          - "Point construction"
+          - "Rally endurance"
+          - "Tactical positioning"
+        physical_development:
+          - "Sport-specific conditioning"
+          - "Movement pattern integration"
+          - "Decision-making under fatigue"
+    
+    success_metrics: "Smooth transitions, balanced landings, quick recovery steps"
+
+# NEW PATTERN: Power development with contrast training
+power_development:
+  title: "Power Development Training Block"
+  time: "08:20-09:35"
+  
+  # NEW PATTERN: Contrast training complexes
+  contrast_complexes:
+    title: "Contrast Training Complexes (Introduction to PAP)"
+    
+    complex_1:
+      name: "Lower Body Power"
+      exercises:
+        - name: "Trap-bar Deadlift (Strength)"
+          sets: "4"
+          reps: "5"
+          load: "80-85% effort, perfect form"
+          benefits: "Heavy strength conditioning"
+          
+          detailed_instructions:
+            - phase: "SETUP"
+              instruction: "Stand inside trap bar with feet hip-width apart, shins close to bar"
+            - phase: "GRIP"
+              instruction: "Grab handles with neutral grip, maintain straight arms throughout"
+            - phase: "POSITION"
+              instruction: "Chest up, shoulders back, slight hip hinge with knees bent"
+            - phase: "LIFT"
+              instruction: "Drive through heels and extend hips and knees simultaneously"
+            - phase: "LOCKOUT"
+              instruction: "Stand tall with shoulders back, hips fully extended"
+            - phase: "LOWERING"
+              instruction: "Control weight down slowly, maintain flat back throughout"
+            - phase: "INTENSITY"
+              instruction: "Use 80-85% effort - challenging but perfect form maintained"
+            - phase: "REST"
+              instruction: "Immediately rest exactly 20-30 seconds before box jumps"
+        
+        - name: "Box Jump (Power)"
+          sets: "4"
+          reps: "3"
+          transition_rest: "20-30s after DL"
+          focus: "max height"
+          landing: "Land softly, step down"
+          benefits: 
+            - "Explosive power expression"
+            - "Post-activation potentiation"
+          
+          detailed_instructions:
+            - phase: "TIMING"
+              instruction: "Begin 20-30 seconds after completing deadlift set"
+            - phase: "APPROACH"
+              instruction: "Stand arm's length from box, feet hip-width apart"
+            - phase: "PREPARATION"
+              instruction: "Quick arm swing back, slight squat down to load legs"
+            - phase: "JUMP"
+              instruction: "Explosive triple extension (ankles, knees, hips), drive arms up"
+            - phase: "LANDING"
+              instruction: "Land softly on balls of feet, absorb impact with bent knees"
+            - phase: "RESET"
+              instruction: "Step down (don't jump down), prepare for next rep"
+            - phase: "FOCUS"
+              instruction: "Maximum height each rep, quality over speed"
+      
+      rest_between_complexes: "4 min"
+    
+    complex_2:
+      name: "Hip Drive Power"
+      exercises:
+        - name: "Hip Thrust (Velocity Focus)"
+          sets: "4"
+          reps: "8"
+          load: "70% weight, maximum speed"
+          benefits: "Posterior chain power"
+          
+          detailed_instructions:
+            - phase: "SETUP"
+              instruction: "Shoulders on bench, feet flat on floor, barbell across hips"
+            - phase: "STARTING"
+              instruction: "Begin with hips low, knees bent 90 degrees"
+            - phase: "DRIVE"
+              instruction: "Explosively drive hips up by squeezing glutes hard"
+            - phase: "TOP"
+              instruction: "Create straight line from knees to shoulders, hold briefly"
+            - phase: "SPEED"
+              instruction: "Focus on maximum velocity upward movement"
+            - phase: "WEIGHT"
+              instruction: "Use 70% of max - allows for explosive movement"
+            - phase: "REST"
+              instruction: "Immediately rest 30 seconds before broad jumps"
+        
+        - name: "Broad Jump"
+          sets: "4"
+          reps: "3"
+          transition_rest: "30s after thrust"
+          focus: "max distance"
+          landing: "Focus on landing mechanics"
+          benefits:
+            - "Horizontal power transfer"
+            - "Sport-specific application"
+          
+          detailed_instructions:
+            - phase: "TIMING"
+              instruction: "Begin exactly 30 seconds after completing hip thrust set"
+            - phase: "STARTING"
+              instruction: "Stand with toes behind starting line, feet hip-width apart"
+            - phase: "PREPARATION"
+              instruction: "Swing arms back while loading into partial squat"
+            - phase: "JUMP"
+              instruction: "Explosive forward jump using arms and legs together"
+            - phase: "FLIGHT"
+              instruction: "Drive knees up during flight, prepare for landing"
+            - phase: "LANDING"
+              instruction: "Land on balls of feet, absorb impact by bending knees"
+            - phase: "MEASUREMENT"
+              instruction: "Distance from start line to back of heels at landing"
+      
+      rest_between_complexes: "3 min"
+  
+  # Upper body power development
+  upper_body_power:
+    title: "Upper Body Power Development"
+    exercises:
+      - name: "DB Overhead Press + MB Slam"
+        type: "complex"
+        sets: "3"
+        reps: "(8+5)"
+        transition: "15-20s transition time"
+        focus: "Heavy press, then explosive slams"
+        tennis_application:
+          - "Serve power development"
+          - "Overhead strength to power"
+          - "Neural drive enhancement"
+        
+        detailed_instructions:
+          - phase: "PRESS SETUP"
+            instruction: "Stand with feet hip-width apart, dumbbells at shoulder level"
+          - phase: "PRESS EXECUTION"
+            instruction: "Press dumbbells overhead with maximum intended velocity"
+          - phase: "PRESS FOCUS"
+            instruction: "Use challenging weight but maintain explosive intent upward"
+          - phase: "TRANSITION"
+            instruction: "Complete all 8 press reps, then immediately grab medicine ball"
+          - phase: "SLAM PREPARATION"
+            instruction: "Hold med ball overhead with both hands, feet shoulder-width apart"
+          - phase: "SLAM EXECUTION"
+            instruction: "Explosively slam ball down using whole body, engage core"
+          - phase: "SLAM POWER"
+            instruction: "Each slam should be maximum effort - this expresses the primed power"
+          - phase: "TIMING"
+            instruction: "15-20 second rest between press and slam sets allows neural readiness"
+      
+      - name: "Rotational Med-Ball Throws"
+        sets: "3"
+        reps: "6 per side"
+        focus: "Maximum velocity release"
+        setup: "Stand 3 feet from wall"
+        execution: "Full body engagement"
+        tennis_application:
+          - "Groundstroke power transfer"
+          - "Rotational power development"
+          - "Tennis-specific movement"
+        
+        detailed_instructions:
+          - phase: "SETUP"
+            instruction: "Stand perpendicular to wall, 3 feet away, holding med ball at chest"
+          - phase: "STARTING POSITION"
+            instruction: "Rotate away from wall, loading up the core and hips"
+          - phase: "ROTATION"
+            instruction: "Explosively rotate toward wall, throwing ball as hard as possible"
+          - phase: "RELEASE POINT"
+            instruction: "Release ball when arms are parallel to ground for maximum power"
+          - phase: "FOLLOW-THROUGH"
+            instruction: "Allow body to naturally rotate through after release"
+          - phase: "CATCH"
+            instruction: "Catch ball on rebound and immediately set up for next throw"
+          - phase: "SIDES"
+            instruction: "Complete all reps on one side before switching to other side"
+          - phase: "POWER FOCUS"
+            instruction: "Think groundstroke power - this is sport-specific rotation"
+  
+  # Functional power
+  functional_power:
+    title: "Functional Power Integration"
+    exercises:
+      - name: "Farmer Carry + Direction Changes"
+        sets: "3"
+        distance: "30m"
+        load: "Heavy load"
+        pattern: "add 90° turns"
+        focus: "Maintain posture throughout"
+        direction_changes: "Quick direction changes"
+        tennis_benefits:
+          - "Grip strength + agility"
+          - "Core stability under load"
+          - "Sport-specific stability"
+        
+        detailed_instructions:
+          - phase: "LOAD SELECTION"
+            instruction: "Use heavy dumbbells or kettlebells (aim for challenging but manageable for 30m)"
+          - phase: "STARTING POSITION"
+            instruction: "Stand tall with weights at sides, shoulders back, core engaged"
+          - phase: "WALKING PATTERN"
+            instruction: "Walk 10m forward, make sharp 90-degree right turn, continue 10m"
+          - phase: "DIRECTION CHANGE"
+            instruction: "At 20m mark, make sharp 90-degree left turn, walk final 10m"
+          - phase: "POSTURE"
+            instruction: "Maintain upright torso throughout - don't let weights pull you forward"
+          - phase: "GRIP"
+            instruction: "Hold weights firmly but don't over-grip - train functional grip strength"
+          - phase: "TURN TECHNIQUE"
+            instruction: "Plant outside foot and pivot quickly, maintain balance throughout"
+          - phase: "PROGRESSION"
+            instruction: "Increase weight when you can complete all 3 sets with perfect posture"
+
+# NEW PATTERN: Plyometric development
+plyometric_development:
+  title: "Explosive Power Endurance"
+  time: "09:35-09:50"
+  
+  circuit:
+    title: "Plyometric Development Circuit"
+    exercises:
+      - name: "Depth Jumps"
+        sets: "3"
+        reps: "6"
+        focus: "Reactive strength"
+        technique: "Minimal ground contact"
+        landing: "Absorb and redirect force"
+        recovery: "90s between sets"
+        quality_focus: "Focus on quality"
+        
+        detailed_instructions:
+          - phase: "SETUP"
+            instruction: "Start on box 12-18 inches high (adjust based on ability)"
+          - phase: "STEP OFF"
+            instruction: "Step off box, don't jump off - land with both feet simultaneously"
+          - phase: "LANDING"
+            instruction: "Land on balls of feet with knees slightly bent, absorb impact quickly"
+          - phase: "IMMEDIATE JUMP"
+            instruction: "As soon as feet touch ground, explode up into maximum vertical jump"
+          - phase: "GROUND CONTACT"
+            instruction: "Minimize time on ground - aim for less than 0.2 seconds"
+          - phase: "FOCUS"
+            instruction: "This trains reactive strength and fast stretch-shortening cycle"
+          - phase: "PROGRESSION"
+            instruction: "Once mastered, can increase box height slightly"
+      
+      - name: "Lateral Bounds"
+        sets: "3"
+        reps: "6 each direction"
+        focus: "Lateral power"
+        technique: "Push off outside leg"
+        landing: "Stick landing on opposite leg"
+        recovery: "90s between sets"
+        quality_focus: "Control over speed"
+        
+        detailed_instructions:
+          - phase: "STARTING POSITION"
+            instruction: "Stand on one leg with slight knee bend, arms ready"
+          - phase: "BOUND"
+            instruction: "Explosively push off laterally with outside leg, drive with arms"
+          - phase: "FLIGHT"
+            instruction: "Aim for maximum distance sideways, not just up"
+          - phase: "LANDING"
+            instruction: "Land on opposite leg, absorb impact, stick the landing"
+          - phase: "CONTROL"
+            instruction: "Hold landing position for 1-2 seconds before next rep"
+          - phase: "ALTERNATION"
+            instruction: "Bound right, land left, then bound left, land right"
+          - phase: "TENNIS APPLICATION"
+            instruction: "Trains lateral court coverage power"
+      
+      - name: "Medicine Ball Slam + Jump"
+        sets: "3"
+        reps: "6"
+        focus: "Full body power"
+        technique: "Explosive slam, immediate jump"
+        integration: "Continuous power output"
+        recovery: "90s between sets"
+        quality_focus: "Maintain technique"
+        
+        detailed_instructions:
+          - phase: "STARTING"
+            instruction: "Hold med ball overhead with both hands, feet hip-width apart"
+          - phase: "SLAM"
+            instruction: "Explosively slam ball down with full body engagement"
+          - phase: "IMMEDIATE JUMP"
+            instruction: "As ball hits ground, immediately jump up vertically"
+          - phase: "RETRIEVAL"
+            instruction: "Land, quickly grab ball, and set up for next rep"
+          - phase: "CONTINUOUS"
+            instruction: "No rest between slam and jump - trains power endurance"
+          - phase: "INTENSITY"
+            instruction: "Maintain maximum effort throughout all 6 reps"
+    
+    power_development_goals:
+      - "Maximum effort on every rep"
+      - "Perfect landing mechanics"
+      - "Progressive improvement in distance/height"
+      - "Maintain quality throughout all sets"
+
+# NEW PATTERN: Weekly assessment and recovery
+weekly_assessment_recovery:
+  title: "Weekly Assessment & Recovery"
+  time: "09:50-10:05"
+  
+  # Power output tests
+  power_output_assessment:
+    title: "Power Output Assessment"
+    tests:
+      - test: "Vertical Jump"
+        result_field: "___ cm"
+        comparison: "___% change"
+        notes: "Power development indicator"
+      
+      - test: "Broad Jump"
+        result_field: "___ cm"
+        comparison: "___% change"
+        notes: "Horizontal power assessment"
+      
+      - test: "Medicine Ball Throw"
+        result_field: "___ meters"
+        comparison: "___% change"
+        notes: "Upper body power expression"
+  
+  # Training quality review
+  training_quality_review:
+    title: "Weekly Training Quality Review"
+    headers: ["Training Day", "Energy Level (1-10)", "Technical Quality (1-10)", "Power Expression (1-10)", "Recovery Quality (1-10)"]
+    days:
+      - day: "Monday"
+        energy: "___/10"
+        technical: "___/10"
+        power: "___/10"
+        recovery: "___/10"
+      
+      - day: "Tuesday"
+        energy: "___/10"
+        technical: "___/10"
+        power: "___/10"
+        recovery: "___/10"
+      
+      - day: "Wednesday"
+        energy: "___/10"
+        technical: "___/10"
+        power: "___/10"
+        recovery: "___/10"
+      
+      - day: "Thursday"
+        energy: "___/10"
+        technical: "___/10"
+        power: "___/10"
+        recovery: "___/10"
+      
+      - day: "Friday"
+        energy: "___/10"
+        technical: "___/10"
+        power: "___/10"
+        recovery: "___/10"
+      
+      - day: "Weekly Average"
+        energy: "___/10"
+        technical: "___/10"
+        power: "___/10"
+        recovery: "___/10"
+  
+  # Week 1 completion
+  week_1_completion:
+    title: "Week 1 Completion Assessment"
+    objectives:
+      - objective: "Movement Assessment"
+        success_criteria: "Complete screen, identify 2-3 areas"
+        achievement: "✓ Complete / ✗ Incomplete"
+      
+      - objective: "HRV Tracking"
+        success_criteria: "7/7 days consistent measurement"
+        achievement: "___/7 days"
+      
+      - objective: "Auto-regulation"
+        success_criteria: "Understand and apply RPE system"
+        achievement: "✓ Mastered / ○ Learning / ✗ Struggling"
+      
+      - objective: "HSR Protocols"
+        success_criteria: "Complete all tendon work pain-free"
+        achievement: "✓ Achieved / ○ Some discomfort / ✗ Pain"
+      
+      - objective: "Contrast Training"
+        success_criteria: "Demonstrate proper PAP form"
+        achievement: "✓ Excellent / ○ Good / ✗ Needs work"
+      
+      - objective: "Tennis Accuracy"
+        success_criteria: "Achieve 80%+ serve accuracy"
+        achievement: "___% average"
+  
+  # Immediate recovery
+  immediate_recovery:
+    title: "Immediate Recovery Protocol"
+    phases:
+      - phase: "Cool-down"
+        duration: "5 min"
+        activity: "Light walking, dynamic stretching"
+        purpose: "Heart rate normalization"
+      
+      - phase: "Hydration"
+        duration: "2 min"
+        activity: "500ml water + electrolytes"
+        purpose: "Rehydration initiation"
+      
+      - phase: "Reflection"
+        duration: "3 min"
+        activity: "Note power feelings, technique quality"
+        purpose: "Learning consolidation"
+      
+      - phase: "Planning"
+        duration: "5 min"
+        activity: "Plan weekend recovery activities"
+        purpose: "Preparation for Week 2"

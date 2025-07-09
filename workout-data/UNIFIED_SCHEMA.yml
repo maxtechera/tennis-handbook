@@ -1,0 +1,538 @@
+# UNIFIED WORKOUT SCHEMA - Agent Alpha Output
+# This schema standardizes all workout YAML files for consistent component consumption
+
+metadata:
+  # Basic identifiers - REQUIRED for all files
+  period: 1                                        # Training period number
+  period_name: "Foundation Phase"                  # Phase name
+  day_id: "week_1_monday"                         # Unique identifier (week_X_day)
+  day_name: "Monday"                              # Human-readable day
+
+  # Workout details - REQUIRED
+  title: "Workout Title"                          # Main title
+  subtitle: "Workout Subtitle"                    # Descriptive subtitle
+  phase: "Training Phase"                         # Current phase description
+  focus_areas:                                    # Multiple focus areas
+    - "Primary Focus"
+    - "Secondary Focus"
+
+  # Training parameters - REQUIRED
+  training_parameters:
+    volume: "100%"                               # Volume indicator
+    intensity: "70-80%"                          # Intensity range
+    density: "moderate"                          # Work:rest ratio
+    duration: "90-120 minutes"                   # Total session time
+
+  # Elite Method Attribution - OPTIONAL but recommended
+  elite_methods:                                   
+    - name: "Method Name"
+      type: "strength|power|skill|recovery"
+      attribution:
+        athlete: "Athlete Name"                  # Specific athlete
+        coach: "Coach Name"                      # Specific coach
+        academy: "Training Facility"            # Training facility
+        quote: "Direct quote"                   # Direct quote
+        source: "Source documentation"          # Source
+        verification: "How verified"            # Verification method
+        year: "2024"                           # Year
+        context: "Usage context"               # When/where used
+        results: "Performance outcomes"         # Results achieved
+
+  # Equipment needed - REQUIRED
+  equipment_required:
+    essential:                                   # Must-have equipment
+      - "Equipment 1"
+    optional:                                    # Nice-to-have
+      - "Equipment 2"
+
+  # Navigation - REQUIRED
+  navigation:
+    daily: "Week Overview | Previous | Next"     # Daily navigation text
+    overview_link: "./"                         # Week overview link
+    next_link: "next_day"                       # Next day link
+    previous_link: "previous_day"               # Previous day link (null for Monday)
+
+  # Display configuration - OPTIONAL
+  display_config:
+    section_headers:                             # Custom section headers
+      assessment: "Assessment Protocol"
+      preparation: "Movement Preparation"
+      skill_training: "Tennis Training"
+      conditioning: "Strength Development"
+      recovery: "Recovery Protocol"
+
+    ui_elements:                                 # UI components
+      - type: "info|warning|tip|success"
+        title: "Element Title"
+        content: "Element content"
+        icon: "⚠️"                              # Optional icon
+
+# UNIFIED ASSESSMENT STRUCTURE - All assessment types use this format
+assessments:
+  - id: "assessment_unique_id"                   # Unique identifier
+    type: "baseline|daily|progress|weekly"       # Assessment type
+    title: "Assessment Title"                   # Display title
+    timing: "pre-session|during|post-session"   # When to perform
+    duration: "20 minutes"                     # Time required
+    description: "Assessment description"       # Brief description
+
+    # Attribution for assessment methods - OPTIONAL
+    attribution:
+      source: "Assessment source"
+      methodology: "Who developed this"
+      validation: "How validated"
+      elite_use: "Which athletes use this"
+
+    # Assessment components - REQUIRED
+    components:
+      - id: "component_unique_id"                # Component identifier
+        name: "Component Name"                  # Display name
+        type: "movement|strength|power|skill|physiological"    # Component type
+        category: "primary|secondary|optional"   # Importance level
+
+        # Measurement protocol - REQUIRED
+        measurement:
+          protocol: "How to measure"            # Measurement method
+          repetitions: "5 reps"                # Reps/attempts
+          duration: "30 seconds"               # Time (if applicable)
+          equipment: "Equipment needed"        # Required equipment
+
+        # Performance standards - OPTIONAL
+        standards:
+          elite_benchmark: "Elite level standard"
+          good_standard: "Good level standard"
+          needs_work: "Needs improvement threshold"
+
+        # Scoring/tracking - OPTIONAL
+        scoring:
+          method: "How to score"
+          scale: "1-10 or pass/fail"
+          recording: "What to record"
+
+        # Context and application - OPTIONAL
+        context:
+          description: "Why this matters"
+          research: "Supporting research"
+          application: "Performance application"
+
+        # STANDARDIZED INSTRUCTION FORMAT - Use this for all instructions
+        detailed_instructions:
+          - phase: "SETUP"                      # Phase identifier (SETUP, EXECUTION, COMPLETION, etc.)
+            instruction: "Setup instructions"   # Instruction text
+          - phase: "EXECUTION"
+            instruction: "Execution instructions"
+          - phase: "COMPLETION"
+            instruction: "Completion instructions"
+
+        # Coaching cues - REQUIRED for exercises
+        cues:
+          - "Coaching cue 1"
+          - "Coaching cue 2"
+
+    # Comparison data for progress assessments - OPTIONAL
+    comparison_table:
+      headers: ["Metric", "Baseline", "Current", "Change"]
+      rows:
+        - metric: "HRV"
+          baseline: "___ ms"
+          current: "___ ms"
+          change: "___% change"
+
+# UNIFIED TIMELINE STRUCTURE - Required for WorkoutCarousel component
+# This structure feeds the carousel component and schedule blocks
+timeline:
+  - time_start: "07:00"                         # Start time (24-hour format)
+    time_end: "08:00"                          # End time (24-hour format)
+    duration: 60                               # Duration in minutes
+    category: "assessment|preparation|main|recovery"  # Block category
+    phase_id: "phase_identifier"               # Unique phase ID (for component linking)
+    phase_title: "Phase Title"                 # Display title
+    phase_icon: "🎾"                          # Phase icon (emoji)
+    activity: "Activity Name"                  # Activity name
+    description: "Activity description"        # Brief description
+    location: "gym|court|home|recovery_area"   # Location type
+
+# PHASE IDENTIFIERS - Standard phase IDs for consistency
+# morning: Morning protocols, assessments
+# tennis: Tennis-specific training
+# movement: Movement preparation, warm-up
+# strength: Strength and conditioning
+# conditioning: Metabolic conditioning, finishers  
+# recovery: Recovery and regeneration
+# assessment: Assessment-only blocks
+
+# SKILL TRAINING SESSIONS - Tennis and sport-specific training
+skill_training:
+  sessions:
+    - id: "session_unique_id"
+      type: "technical|tactical|integrated"      # Session type
+      title: "Session Title"
+      duration: "60 minutes"
+      intensity: "70-80%"
+
+      # Session attribution - OPTIONAL
+      attribution:
+        methodology: "Training methodology"
+        elite_use: "Which players use this"
+
+      # Session components
+      components:
+        - id: "component_id"
+          name: "Component Name"
+          type: "drill|exercise|game"
+          category: "primary|auxiliary|optional"
+
+          # Time allocation
+          time_structure:
+            type: "duration|sets_reps|intervals"
+            value: "20 minutes"
+            rest: "30 seconds"
+
+          # Implementation details - REQUIRED
+          detailed_instructions:
+            - phase: "SETUP"                    # Phase identifier
+              instruction: "Setup instructions"  # Instruction text
+            - phase: "EXECUTION"
+              instruction: "Execution instructions"
+            - phase: "COMPLETION"
+              instruction: "Completion instructions"
+
+          # Coaching cues - REQUIRED
+          cues:
+            - "Coaching cue 1"
+            - "Coaching cue 2"
+
+          # Success criteria - OPTIONAL
+          success_criteria:
+            - metric: "Accuracy percentage"
+              target: "80%"
+              tracking: "Count successful shots"
+
+# CONDITIONING BLOCKS - Strength, power, conditioning
+conditioning_blocks:
+  - id: "block_unique_id"
+    type: "strength|power|endurance|mixed"       # Block type
+    title: "Block Title"
+    description: "Block description"
+    duration: "45 minutes"
+
+    # Block exercises
+    exercises:
+      - id: "exercise_unique_id"
+        name: "Exercise Name"
+        category: "primary|auxiliary|corrective" # Exercise category
+        order: 1                                # Exercise order
+
+        # Loading parameters - REQUIRED
+        loading:
+          sets: "3"
+          reps: "10"
+          intensity: "70% 1RM"
+          rest_seconds: 120
+          tempo: "3-0-1-0"                     # Tempo notation
+
+        # STANDARDIZED INSTRUCTION FORMAT - REQUIRED for all exercises
+        # Use structured phase-based instructions for consistency
+        detailed_instructions:
+          - phase: "SETUP"                      # Standard phases: SETUP, EXECUTION, COMPLETION
+            instruction: "Setup instruction"   # Extended phases: CORE_ENGAGEMENT, DESCENT, ASCENT, 
+          - phase: "EXECUTION"                  #                 BREATHING, SAFETY, PROGRESSION
+            instruction: "Execution instruction"
+          - phase: "COMPLETION"
+            instruction: "Completion instruction"
+
+        # LEGACY SUPPORT - Some files may still use simple instructions array
+        # These will be converted to detailed_instructions during migration
+        instructions:                           # DEPRECATED - convert to detailed_instructions
+          - "Simple instruction 1"              # Will be converted to phase: "EXECUTION"
+          - "Simple instruction 2"
+
+        # Coaching cues - REQUIRED for all exercises
+        cues:
+          - "Coaching cue 1"
+          - "Coaching cue 2"
+
+        # Set tracking template - OPTIONAL
+        set_tracking:
+          - set: 1
+            target_reps: 10
+            actual_reps: ""                    # For recording
+            rpe: ""                           # RPE if used
+            notes: ""                         # Notes field
+
+        # Exercise benefits - OPTIONAL
+        benefits:
+          primary: "Primary benefit"
+          secondary: "Secondary benefit"
+          sport_specific: "Sport application"
+
+# RECOVERY PROTOCOLS - Recovery and regeneration
+recovery_protocols:
+  - id: "protocol_unique_id"
+    type: "immediate|delayed|next_day"           # Recovery type
+    title: "Recovery Protocol Title"
+    duration: "30 minutes"
+    timing: "post-training"
+
+    # Recovery components
+    components:
+      - id: "component_id"
+        name: "Component Name"
+        type: "mobility|therapy|breathing|nutrition"
+        duration: "10 minutes"
+        order: 1
+
+        # Implementation details
+        detailed_instructions:
+          - phase: "SETUP"
+            instruction: "Setup instruction"
+          - phase: "EXECUTION"
+            instruction: "Execution instruction"
+
+        # Target areas
+        focus_areas:
+          - "Target area 1"
+          - "Target area 2"
+
+# SCHEDULE/TIMELINE - Daily schedule structure
+schedule:
+  type: "time-based"                            # Schedule type
+  total_duration: "4 hours"
+
+  blocks:
+    - id: "block_id"
+      time: "07:00-08:00"                      # Time range
+      title: "Block Title"
+      type: "assessment|preparation|main|recovery"
+
+      activities:
+        - name: "Activity Name"
+          duration: "30 minutes"
+          type: "warm-up|main|cool-down"
+          description: "Activity description"
+
+      # Optional carousel data
+      carousel_data:
+        phase_id: "phase_1"
+        phase_title: "Phase Title"
+        phase_icon: "🎾"
+        location: "Court|Gym|Recovery"
+
+# MONITORING & TRACKING - Performance monitoring
+monitoring:
+  performance_metrics:
+    - id: "metric_id"
+      name: "Metric Name"
+      type: "quantitative|qualitative"
+      category: "strength|power|endurance|skill"
+
+      # Measurement details
+      measurement:
+        method: "How to measure"
+        frequency: "Daily|Weekly|Monthly"
+        equipment: "Equipment needed"
+
+      # Performance standards
+      standards:
+        elite: "Elite level value"
+        good: "Good level value"
+        average: "Average level value"
+
+      # Tracking data
+      tracking:
+        baseline: "Starting value"
+        current: "Current value"
+        target: "Goal value"
+        trend: "improving|stable|declining"
+
+# PLANNING & PROGRESSION - Session planning
+planning:
+  next_session:
+    focus_points:
+      - "Focus point 1"
+      - "Focus point 2"
+    adjustments:
+      - "Adjustment 1"
+      - "Adjustment 2"
+
+# BACKWARD COMPATIBILITY - Maintain existing patterns
+# These sections preserve compatibility with current components
+
+# For monday.mdx compatibility
+pre_week_assessment:
+  title: "Pre-Week Assessment Title"
+  duration: "20 minutes"
+  description: "Assessment description"
+  movement_screen:
+    - name: "Assessment Name"
+      reps: "5 reps"
+      method: "Assessment method"
+      elite_standard: "Elite standard"
+      professional_notes: "Professional notes"
+
+# For morning protocol compatibility
+morning_protocol:
+  phase_id: "morning"
+  title: "Morning Protocol Title"
+  anchor_id: "morning"
+  
+  yoga_breathing:
+    yoga_flow:
+      name: "Yoga Flow"
+      duration: "20 minutes"
+      method: "Method description"
+      focus: "Focus description"
+      video_url: "https://youtube.com/..."
+      detailed_instructions: []
+      cues: []
+    
+    breathing_protocol:
+      name: "Breathing Protocol"
+      duration: "5 minutes"
+      pattern: "4-7-8 pattern"
+      technique: "Technique description"
+      detailed_instructions: []
+      cues: []
+  
+  professional_assessment:
+    time: "6:30-7:15"
+    duration: 45
+    title: "Professional Assessment"
+    assessments:
+      - name: "Assessment Name"
+        protocol: "Assessment protocol"
+        standard: "Standard"
+        notes: "Notes"
+        detailed_instructions: []
+        cues: []
+
+# For tennis training compatibility
+tennis_training:
+  phase_id: "tennis"
+  title: "Tennis Training Title"
+  anchor_id: "tennis"
+  category: "Training Category"
+  total_duration: 60
+  court_time: 60
+  intensity_avg: "70-85%"
+
+# For strength training compatibility
+strength_training:
+  phase_id: "strength"
+  title: "Strength Training Title"
+  anchor_id: "strength"
+  session_name: "Session Name"
+  total_duration: 80
+  exercise_count: 8
+  primary_focus: "Primary Focus"
+  secondary_focus: "Secondary Focus"
+  
+  main_exercises:
+    - exercise_id: "exercise_1"
+      name: "Exercise Name"
+      category: "exercise_category"
+      muscle_groups: ["muscle1", "muscle2"]
+      sets: 4
+      reps: 8
+      load: "75% 1RM"
+      rest_seconds: 180
+      tempo: "4-1-X-0"
+      video_url: "https://youtube.com/..."
+      detailed_instructions: []
+      technique_cues: []
+      professional_cues: []
+      set_tracking: []
+
+# For recovery protocol compatibility
+recovery_protocol:
+  phase_id: "recovery"
+  title: "Recovery Protocol Title"
+  anchor_id: "recovery"
+  duration: 20
+
+# DATA TRANSFORMATION PATTERNS
+# These patterns handle migration from legacy formats to unified schema
+
+transformation_rules:
+  # Assessment transformation
+  daily_assessment: "Convert to assessments[0] with type: 'daily'"
+  mid_week_assessment: "Convert to assessments[0] with type: 'progress'"
+  weekly_performance_assessment: "Convert to assessments[0] with type: 'weekly'"
+  
+  # Instruction transformation  
+  instructions_array: "Convert to detailed_instructions with phase: 'EXECUTION'"
+  simple_strings: "Wrap in phase-instruction structure"
+  
+  # Time format transformation
+  time_ranges: "Convert to time_start/time_end format"
+  duration_strings: "Convert to integer minutes"
+
+# COMPONENT COMPATIBILITY MAPPING
+# Maps unified schema to component expectations
+component_mappings:
+  WorkoutCarouselFromData:
+    requires: "timeline[]"
+    phase_mapping: "phase_id -> component sections"
+    
+  PreWeekAssessment:
+    requires: "pre_week_assessment.movement_screen[]"
+    fallback: "assessments[] with type: 'baseline'"
+    
+  MorningProtocol:
+    requires: "morning_protocol.yoga_breathing"
+    structure: "yoga_breathing + professional_assessment"
+    
+  TennisTrainingTable:
+    requires: "tennis_training"
+    flexible_structure: true
+    
+  StrengthTrainingSection:
+    requires: "strength_training.main_exercises[]"
+    supports: "detailed_instructions, set_tracking"
+
+# SCHEMA VALIDATION RULES
+# These rules should be enforced by build-time validation
+
+required_fields:
+  - metadata.day_id
+  - metadata.title
+  - metadata.navigation
+  - timeline
+  - assessments
+
+field_types:
+  metadata.period: integer
+  timeline.duration: integer
+  timeline.time_start: time_string  # Format: "HH:MM"
+  timeline.time_end: time_string    # Format: "HH:MM"
+  
+naming_conventions:
+  ids: snake_case                   # exercise_001, assessment_hrv
+  phase_ids: snake_case            # morning, tennis, strength
+  file_names: "week-X/day.yml"     # week-1/monday.yml
+
+validation_rules:
+  timeline_consistency: "time_end must be after time_start"
+  duration_matching: "duration must match time_end - time_start"
+  phase_id_uniqueness: "phase_ids must be unique within timeline"
+  assessment_components: "assessments must have at least one component"
+
+# MIGRATION STRATEGY
+# Step-by-step migration approach for parallel agents
+
+migration_phases:
+  1_schema_validation: "Validate all current files against new schema"
+  2_content_preservation: "Catalog all elite attributions and content"
+  3_structure_conversion: "Convert file structures to unified format"
+  4_component_testing: "Test components with new data structures"
+  5_layout_validation: "Ensure pixel-perfect layout preservation"
+
+# NOTES ON IMPLEMENTATION
+# 1. All sections are optional except metadata, timeline, and assessments
+# 2. Attribution is embedded throughout for credibility
+# 3. Flexible enough for any sport or training style
+# 4. Preserves all specific athlete/coach references
+# 5. Maintains backward compatibility with existing components
+# 6. Supports beautiful layout rendering
+# 7. Enables parallel agent development through clear dependencies
+# 8. Provides transformation utilities for seamless migration

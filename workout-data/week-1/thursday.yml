@@ -1,0 +1,415 @@
+# Week 1 - Thursday: Enhanced Conditioning & Technical Tennis
+metadata:
+  week: 1
+  week_name: "Elite Foundation"
+  day: "thursday"
+  day_number: 4
+  title: "Enhanced Conditioning & Technical Tennis"
+  subtitle: "Building Aerobic Base and Technical Precision"
+  phase: "Phase 1: Elite Foundation"
+  phase_week: 1
+  focus: "Aerobic Base & Technical Skills"
+  volume_target: "80% (recovery emphasis)"
+  intensity_target: "60-70%"
+  
+  athlete_methods:
+    - "Zone-2 aerobic training"
+    - "Technical skill development"
+    - "Movement quality focus"
+    - "Tendon health protocols"
+  
+  equipment_needed:
+    - "Heart rate monitor"
+    - "Bike or treadmill"
+    - "Pull-up bar"
+    - "Resistance bands"
+    - "Medicine ball"
+    - "Tennis court access"
+    - "Step or platform"
+    - "Foam roller"
+  
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Wednesday](wednesday) | [Friday ➡️](friday)"
+    week_overview_link: "./"
+    prev_day: "wednesday"
+    prev_day_link: "wednesday"
+    next_day: "friday"
+    next_day_link: "friday"
+
+# Recovery assessment comparing to earlier days
+recovery_assessment:
+  title: "Recovery Status Assessment"
+  time: "07:00-07:10"
+  
+  comparison_table:
+    headers: ["Recovery Indicator", "Tuesday Baseline", "Thursday Reading", "Adaptation Response"]
+    rows:
+      - indicator: "HRV Trend"
+        tuesday_baseline: "__% from baseline"
+        thursday_reading: "__% from baseline"
+        response: "Accumulating fatigue if >-15%"
+      
+      - indicator: "Sleep Debt"
+        tuesday_baseline: "___/10 quality"
+        thursday_reading: "___/10 quality"
+        response: "<7 = lighter intensity today"
+      
+      - indicator: "Muscle Soreness"
+        tuesday_baseline: "___/10 overall"
+        thursday_reading: "___/10 overall"
+        response: ">7 = extra mobility work"
+      
+      - indicator: "Energy Levels"
+        tuesday_baseline: "___/10 morning"
+        thursday_reading: "___/10 morning"
+        response: "<6 = technique focus only"
+      
+      - indicator: "Training Eagerness"
+        tuesday_baseline: "___/10 motivation"
+        thursday_reading: "___/10 motivation"
+        response: "Auto-regulate accordingly"
+
+# NEW PATTERN: Aerobic development section
+aerobic_development:
+  title: "Enhanced Aerobic Development"
+  time: "07:30-08:20"
+  
+  # NEW PATTERN: Cardiovascular phases
+  cardiovascular_base:
+    title: "Cardiovascular Base Building"
+    phases:
+      - phase: "Phase 1"
+        exercise: "Zone-2 Intervals"
+        duration: "4×3 min"
+        heart_rate_target: "65-75% HRmax"
+        purpose: "Aerobic base development"
+        instructions: "Nasal breathing only"
+      
+      - phase: "Active Recovery"
+        duration: "90s between"
+        heart_rate_target: "50-60% HRmax"
+        purpose: "Lactate clearance"
+        instructions: "Easy spinning/walking"
+        additional: "Track HRV during"
+        monitoring: "Use HR strap if available"
+  
+  # Core integration within aerobic section
+  core_integration:
+    title: "Core Integration Training"
+    exercises:
+      - name: "Hanging Leg Raises"
+        sets: "3"
+        reps: "12"
+        instructions: "Controlled lift, no swing"
+        focus: "Focus on lower abdominals"
+        tempo: "2-sec hold at top"
+        tennis_benefits:
+          - "Core strength for serves"
+          - "Improved serve power"
+          - "Enhanced court movement"
+        
+        detailed_instructions:
+          - phase: "SETUP"
+            instruction: "Hang from pull-up bar with overhand grip, arms fully extended, body straight"
+          - phase: "STARTING POSITION"
+            instruction: "Let legs hang straight down, engage core to prevent swaying"
+          - phase: "LIFT PHASE"
+            instruction: "Slowly raise knees toward chest by contracting lower abdominals"
+          - phase: "TOP POSITION"
+            instruction: "Bring knees as high as possible (ideally to chest level), hold for 2 seconds"
+          - phase: "LOWERING"
+            instruction: "Control the descent slowly over 3-4 seconds, resist gravity"
+          - phase: "FORM CHECK"
+            instruction: "No swinging or using momentum - all movement from core muscles"
+          - phase: "PROGRESSION"
+            instruction: "If too difficult, start with bent knee raises; if easy, progress to straight leg raises"
+          - phase: "BREATHING"
+            instruction: "Exhale during lift phase, inhale during lowering"
+      
+      - name: "Dead Bug + Reach"
+        sets: "3"
+        reps: "8 per side"
+        instructions: "Opposite arm/leg extension"
+        focus: "Maintain flat back"
+        tempo: "Slow, controlled movement"
+        tennis_benefits:
+          - "Core stability coordination"
+          - "Reduced back injury risk"
+          - "Better movement efficiency"
+        
+        detailed_instructions:
+          - phase: "SETUP"
+            instruction: "Lie on back, arms extended toward ceiling, knees bent at 90 degrees"
+          - phase: "STARTING POSITION"
+            instruction: "Press lower back flat against floor, engage core muscles"
+          - phase: "MOVEMENT"
+            instruction: "Slowly extend opposite arm overhead and opposite leg straight"
+          - phase: "EXTENSION"
+            instruction: "Arm reaches back toward floor, leg extends until heel nearly touches ground"
+          - phase: "CONTROL"
+            instruction: "Move arm and leg simultaneously, maintain core stability throughout"
+          - phase: "RETURN"
+            instruction: "Slowly bring arm and leg back to starting position with control"
+          - phase: "ALTERNATION"
+            instruction: "Complete all reps on one side, then switch to other arm/leg combination"
+          - phase: "CORE FOCUS"
+            instruction: "Never let lower back arch off the floor - this is the key challenge"
+  
+  # NEW PATTERN: Tendon health protocols
+  tendon_health:
+    title: "Tennis-Specific Tendon Health"
+    exercises:
+      - name: "Side Plank + Clamshells"
+        type: "combination"
+        sets: "3"
+        work: "(30s+10)"
+        hsr_protocol: "Isometric hold + dynamic"
+        progression: "Progress to single-arm reach"
+        alignment: "Maintain perfect alignment"
+        tennis_application:
+          - "Hip stability for wide shots"
+          - "Lateral movement strength"
+          - "Injury prevention"
+        
+        detailed_instructions:
+          - phase: "SIDE PLANK SETUP"
+            instruction: "Lie on side, forearm on ground perpendicular to body, body in straight line"
+          - phase: "ALIGNMENT"
+            instruction: "Stack hips, shoulders, and feet - no sagging or pike position"
+          - phase: "HOLD"
+            instruction: "Maintain perfect position for 30 seconds, breathe normally throughout"
+          - phase: "CLAMSHELL TRANSITION"
+            instruction: "Immediately after plank, bend knees 90 degrees, keep feet together"
+          - phase: "CLAMSHELL MOVEMENT"
+            instruction: "Lift top knee up while keeping feet together, feel glute activation"
+          - phase: "REPETITIONS"
+            instruction: "10 clamshells with control, focus on glute working not hip flexor"
+          - phase: "PROGRESSION"
+            instruction: "Once easy, add single-arm reach during plank hold"
+          - phase: "TENNIS APPLICATION"
+            instruction: "Builds hip stability for wide defensive shots and lateral movement"
+      
+      - name: "Calf Raise + Tibialis"
+        type: "superset"
+        sets: "3"
+        reps: "(12+15)"
+        hsr_protocol: "3-sec eccentric focus"
+        range: "Full range of motion"
+        focus: "Both plantarflexion/dorsiflexion"
+        tennis_application:
+          - "Push-off power improvement"
+          - "Ankle stability enhancement"
+          - "Balanced lower leg strength"
+        
+        detailed_instructions:
+          - phase: "CALF RAISE SETUP"
+            instruction: "Stand on edge of step with balls of feet on step, heels hanging off"
+          - phase: "CALF RAISE EXECUTION"
+            instruction: "Rise up on toes as high as possible, hold 1 second at top"
+          - phase: "ECCENTRIC FOCUS"
+            instruction: "Lower heels slowly over 3 full seconds below step level"
+          - phase: "RANGE"
+            instruction: "Full stretch at bottom, maximum contraction at top"
+          - phase: "TIBIALIS SETUP"
+            instruction: "Stand with heels on step, toes hanging off (opposite position)"
+          - phase: "TIBIALIS EXECUTION"
+            instruction: "Lift toes up toward shins as high as possible, hold briefly"
+          - phase: "CONTROL"
+            instruction: "Lower toes slowly, feel work in front of shins (tibialis anterior)"
+          - phase: "PROGRESSION"
+            instruction: "Add weight vest or dumbbells when bodyweight becomes easy"
+
+# NEW PATTERN: Movement quality section
+movement_quality:
+  title: "Movement Quality Enhancement"
+  time: "08:25-08:45"
+  
+  targeted_correctives:
+    title: "Targeted Correctives from Monday Screen"
+    exercises:
+      - movement_issue: "Overhead Squat Forward Lean"
+        corrective_exercise: "Thoracic Extension + Lat Stretch"
+        duration: "5 min"
+        coaching_focus: "Open chest, reach tall"
+      
+      - movement_issue: "Ankle Dorsiflexion Limitation"
+        corrective_exercise: "Wall Ankle Stretch + Calf Stretch"
+        duration: "5 min"
+        coaching_focus: "Drive knee over toe"
+      
+      - movement_issue: "Hip Flexor Tightness"
+        corrective_exercise: "Couch Stretch + Hip Flexor Stretch"
+        duration: "5 min"
+        coaching_focus: "Push hips forward"
+      
+      - movement_issue: "Shoulder Internal Rotation"
+        corrective_exercise: "Doorway Stretch + Band ER"
+        duration: "5 min"
+        coaching_focus: "Feel opening in front"
+
+# Technical tennis with skill blocks
+tennis_training:
+  title: "Technical Tennis Development"
+  time: "08:45-09:45"
+  
+  # NEW PATTERN: Skill development blocks
+  skill_development:
+    title: "Skill Development Progression"
+    blocks:
+      - skill: "Slice Mastery"
+        time: "20 min"
+        technical_focus:
+          - "Low-to-high swing path"
+          - "Underspin generation"
+          - "Court positioning"
+        success_criteria:
+          - "80% balls land short"
+          - "Consistent bounce height"
+          - "Good court coverage"
+      
+      - skill: "Drop Shot Precision"
+        time: "15 min"
+        technical_focus:
+          - "Touch and feel development"
+          - "Disguise and timing"
+          - "Follow-up positioning"
+        success_criteria:
+          - "70% balls land in service box"
+          - "Opponent doesn't reach ball"
+          - "Ready for passing shot"
+      
+      - skill: "Controlled Serving"
+        time: "20 min"
+        technical_focus:
+          - "Consistency over power"
+          - "Placement variety"
+          - "Rhythm and timing"
+        success_criteria:
+          - "80% first serves in"
+          - "Hit all service box areas"
+          - "Smooth, repeatable motion"
+  
+  # Movement patterns
+  movement_patterns:
+    title: "Tennis-Specific Movement Patterns"
+    patterns:
+      - pattern: "Recovery Step Practice"
+        time: "5 min"
+        focus: "Return to ready position"
+        physical_development: "Efficient movement patterns"
+      
+      - pattern: "Split Step Timing"
+        time: "5 min"
+        focus: "Landing as opponent strikes"
+        physical_development: "Improved reaction time"
+      
+      - pattern: "Court Coverage Drills"
+        time: "5 min"
+        focus: "Lateral and linear movement"
+        physical_development: "Movement efficiency"
+
+# NEW PATTERN: Aerobic consolidation
+aerobic_consolidation:
+  title: "Aerobic Base Consolidation"
+  time: "09:50-10:20"
+  
+  zone_2_training:
+    title: "Zone-2 Sustained Training"
+    component: "Steady State Cycling"
+    duration: "30 min"
+    intensity:
+      - "Conversational pace"
+      - "Nasal breathing preferred"
+      - "Comfortable sustainable effort"
+    monitoring:
+      - "HR 60-70% max"
+      - "Rate of Perceived Exertion 5-6/10"
+      - "Should feel 'easy' throughout"
+    
+    benefits:
+      - "Enhanced fat oxidation capacity"
+      - "Improved cardiac output"
+      - "Better recovery between high-intensity sessions"
+      - "Increased mitochondrial density"
+
+# Enhanced recovery with mobility focus
+recovery_protocol:
+  title: "Enhanced Mobility & Recovery"
+  time: "10:20-10:40"
+  
+  # NEW PATTERN: Targeted mobility by area
+  targeted_mobility:
+    title: "Targeted Mobility Based on Movement Screen"
+    areas:
+      - area: "Hip Flexors"
+        exercise: "Couch Stretch"
+        duration: "90s each side"
+        purpose: "Improved hip extension"
+      
+      - area: "Thoracic Spine"
+        exercise: "Quadruped T-Spine Rotation"
+        duration: "60s"
+        purpose: "Better serve rotation"
+      
+      - area: "Shoulders"
+        exercise: "Doorway Chest Stretch"
+        duration: "60s"
+        purpose: "Improved overhead mobility"
+      
+      - area: "Ankles"
+        exercise: "Wall Ankle Mobilization"
+        duration: "60s each side"
+        purpose: "Enhanced court movement"
+      
+      - area: "Wrists"
+        exercise: "Flexor/Extensor Stretches"
+        duration: "30s each direction"
+        purpose: "Racquet control improvement"
+  
+  # End of session protocol
+  end_session_protocol:
+    title: "End-of-Session Recovery Protocol"
+    protocols:
+      - protocol: "Heart Rate Normalization"
+        duration: "5 min"
+        method: "Light walking/easy cycling"
+        purpose: "Gradual return to resting state"
+      
+      - protocol: "Gentle Breathing"
+        duration: "3 min"
+        method: "Diaphragmatic breathing"
+        purpose: "Parasympathetic activation"
+      
+      - protocol: "Hydration Check"
+        duration: "2 min"
+        method: "Assess urine color, weigh-in"
+        purpose: "Monitor hydration status"
+      
+      - protocol: "Session Notes"
+        duration: "5 min"
+        method: "Document energy, technique, feel"
+        purpose: "Training adaptation tracking"
+
+# Thursday-specific assessment
+thursday_assessment:
+  title: "Thursday Assessment Summary"
+  metrics:
+    - metric: "Aerobic Session Quality"
+      value: "___/10"
+      notes: "Sustainable effort?"
+    
+    - metric: "Technical Skill Progress"
+      value: "___/10"
+      notes: "Improvement areas noted"
+    
+    - metric: "Movement Quality"
+      value: "___/10"
+      notes: "Screen limitations addressed"
+    
+    - metric: "Energy After Session"
+      value: "___/10"
+      notes: "Recovery need for tomorrow"
+    
+    - metric: "Overall Training Feel"
+      value: "___/10"
+      notes: "Weekly fatigue accumulation"

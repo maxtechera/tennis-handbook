@@ -1,0 +1,513 @@
+{
+  "metadata": {
+    "week": 2,
+    "week_name": "Building Intensity",
+    "day": "tuesday",
+    "day_number": 2,
+    "title": "Upper Body & Tennis Skills",
+    "subtitle": "Strength Development with Technical Tennis Focus",
+    "phase": "Phase 1: Foundation",
+    "phase_week": 2,
+    "focus": "Upper Body Strength & Tennis Technique",
+    "volume_target": "100%",
+    "intensity_target": "65-75%",
+    "athlete_methods": [
+      "Upper body power development",
+      "Technical skills refinement",
+      "Serve and volley focus"
+    ],
+    "equipment_needed": [
+      "Incline bench",
+      "Dumbbells",
+      "Lat pulldown machine",
+      "Resistance bands",
+      "Tennis court access",
+      "Cones for footwork drills",
+      "Video recording device (optional)"
+    ],
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Wednesday ➡️](wednesday)",
+      "week_overview_link": "./",
+      "next_day": "wednesday",
+      "next_day_link": "wednesday"
+    }
+  },
+  "schedule_overview": {
+    "title": "Tuesday Schedule",
+    "sessions": [
+      {
+        "time": "07:30–08:15",
+        "activity": "Upper Body Strength",
+        "exercises": [
+          {
+            "name": "Incline DB Press",
+            "sets_reps": "3×8",
+            "instructions": "Controlled, full ROM"
+          },
+          {
+            "name": "Lat Pulldowns",
+            "sets_reps": "3×10",
+            "instructions": "Focus on lats engagement"
+          },
+          {
+            "name": "Band Pull-apart",
+            "sets_reps": "3×15",
+            "instructions": "Consistent tension"
+          }
+        ]
+      },
+      {
+        "time": "08:30–08:50",
+        "activity": "Mobility Prep",
+        "sets_reps": "-",
+        "instructions": "Shoulder and wrist circles, band stretches"
+      },
+      {
+        "time": "09:00–10:00",
+        "activity": "Tennis Serve & Volley Drills",
+        "sets_reps": "-",
+        "instructions": "Emphasis on precision and explosive serves"
+      },
+      {
+        "time": "10:00–11:00",
+        "activity": "Personal Coaching Session",
+        "sets_reps": "-",
+        "instructions": "Footwork agility and technical refinement"
+      }
+    ]
+  },
+  "strength_training": {
+    "phase_description": "Tuesday combines upper body strength development with intensive tennis skills work, focusing on serve power and technical precision.",
+    "main_exercises": [
+      {
+        "exercise_id": "ex_1",
+        "name": "Incline DB Press",
+        "sets": "3",
+        "reps": "8",
+        "load": "Select weight for 8 rep max",
+        "rest_seconds": 120,
+        "detailed_title": "Controlled Full Range of Motion Instructions",
+        "technique_points": [
+          {
+            "phase": "SETUP",
+            "instruction": "Set incline bench to 30-45 degrees, sit with dumbbells resting on thighs"
+          },
+          {
+            "phase": "STARTING POSITION",
+            "instruction": "Lie back and position dumbbells at chest level, feet flat on floor"
+          },
+          {
+            "phase": "GRIP",
+            "instruction": "Hold dumbbells with palms facing forward, wrists straight and strong"
+          },
+          {
+            "phase": "DESCENT",
+            "instruction": "Lower weights slowly over 3 seconds, feel stretch in chest muscles"
+          },
+          {
+            "phase": "BOTTOM POSITION",
+            "instruction": "Lower until dumbbells are at chest level, elbows slightly below shoulders"
+          },
+          {
+            "phase": "PRESS",
+            "instruction": "Drive weights up and slightly together, focusing on chest muscle contraction"
+          },
+          {
+            "phase": "BREATHING",
+            "instruction": "Inhale during descent, exhale forcefully during pressing phase"
+          },
+          {
+            "phase": "TENNIS APPLICATION",
+            "instruction": "Builds upper body power for overhead serves and volleys"
+          },
+          {
+            "phase": "PROGRESSION",
+            "instruction": "Increase weight when you can complete all reps with perfect form"
+          }
+        ],
+        "set_tracking": [
+          {
+            "set": 1,
+            "target_reps": 8
+          },
+          {
+            "set": 2,
+            "target_reps": 8
+          },
+          {
+            "set": 3,
+            "target_reps": 8
+          }
+        ]
+      },
+      {
+        "exercise_id": "ex_2",
+        "name": "Lat Pulldowns",
+        "sets": "3",
+        "reps": "10",
+        "load": "Weight for 10 controlled reps",
+        "rest_seconds": 90,
+        "detailed_title": "Lat Engagement Focus Instructions",
+        "technique_points": [
+          {
+            "phase": "SETUP",
+            "instruction": "Sit at lat pulldown machine, adjust thigh pads to secure legs"
+          },
+          {
+            "phase": "GRIP",
+            "instruction": "Use wide overhand grip, hands wider than shoulders on bar"
+          },
+          {
+            "phase": "STARTING POSITION",
+            "instruction": "Sit tall with slight lean back, chest up, shoulders down"
+          },
+          {
+            "phase": "PULL PHASE",
+            "instruction": "Pull bar down to upper chest, leading with elbows not hands"
+          },
+          {
+            "phase": "LAT FOCUS",
+            "instruction": "Think 'pull elbows back and down' to target lats specifically"
+          },
+          {
+            "phase": "SQUEEZE",
+            "instruction": "Hold peak contraction for 1 second, feel lats working"
+          },
+          {
+            "phase": "RETURN",
+            "instruction": "Slowly return bar to start over 3 seconds, maintain tension"
+          },
+          {
+            "phase": "AVOID",
+            "instruction": "Don't lean back excessively or use momentum to move weight"
+          },
+          {
+            "phase": "TENNIS APPLICATION",
+            "instruction": "Strengthens pulling muscles for groundstroke power"
+          },
+          {
+            "phase": "PROGRESSION",
+            "instruction": "Increase weight when you can feel lats working throughout full range"
+          }
+        ],
+        "set_tracking": [
+          {
+            "set": 1,
+            "target_reps": 10
+          },
+          {
+            "set": 2,
+            "target_reps": 10
+          },
+          {
+            "set": 3,
+            "target_reps": 10
+          }
+        ]
+      },
+      {
+        "exercise_id": "ex_3",
+        "name": "Band Pull-aparts",
+        "sets": "3",
+        "reps": "15",
+        "load": "Medium resistance band",
+        "rest_seconds": 60,
+        "detailed_title": "Consistent Tension Instructions",
+        "technique_points": [
+          {
+            "phase": "SETUP",
+            "instruction": "Hold resistance band with both hands, arms extended in front at chest height"
+          },
+          {
+            "phase": "GRIP",
+            "instruction": "Hands shoulder-width apart on band, palms facing down"
+          },
+          {
+            "phase": "PULL",
+            "instruction": "Pull band apart by squeezing shoulder blades together"
+          },
+          {
+            "phase": "PEAK",
+            "instruction": "Pull until band touches chest, feel work in rear delts and rhomboids"
+          },
+          {
+            "phase": "TENSION",
+            "instruction": "Maintain constant tension in band throughout entire movement"
+          },
+          {
+            "phase": "RETURN",
+            "instruction": "Slowly return to start position, resist band's pull"
+          },
+          {
+            "phase": "POSTURE",
+            "instruction": "Keep shoulders down, don't shrug up during movement"
+          },
+          {
+            "phase": "BREATHING",
+            "instruction": "Exhale during pull apart, inhale during return"
+          },
+          {
+            "phase": "TENNIS APPLICATION",
+            "instruction": "Counters forward shoulder posture from tennis stance"
+          },
+          {
+            "phase": "PROGRESSION",
+            "instruction": "Use thicker band or wider grip when current becomes easy"
+          }
+        ],
+        "set_tracking": [
+          {
+            "set": 1,
+            "target_reps": 15
+          },
+          {
+            "set": 2,
+            "target_reps": 15
+          },
+          {
+            "set": 3,
+            "target_reps": 15
+          }
+        ]
+      }
+    ]
+  },
+  "mobility_preparation": {
+    "title": "Mobility Prep",
+    "duration": "08:30–08:50",
+    "detailed_title": "Shoulder and Wrist Preparation Instructions",
+    "components": [
+      {
+        "name": "Shoulder Circles",
+        "instructions": [
+          {
+            "phase": "SETUP",
+            "instruction": "Stand with arms at sides, relaxed shoulder position"
+          },
+          {
+            "phase": "SMALL CIRCLES",
+            "instruction": "Start with 10 small circles forward, 10 backward"
+          },
+          {
+            "phase": "LARGE CIRCLES",
+            "instruction": "Progress to 10 large arm circles each direction"
+          },
+          {
+            "phase": "CONTROL",
+            "instruction": "Smooth, controlled movement, feel shoulder joint warming up"
+          },
+          {
+            "phase": "PURPOSE",
+            "instruction": "Increases blood flow and range of motion for serves"
+          }
+        ]
+      },
+      {
+        "name": "Wrist Circles",
+        "instructions": [
+          {
+            "phase": "POSITION",
+            "instruction": "Extend arms forward, make fists with both hands"
+          },
+          {
+            "phase": "CIRCLES",
+            "instruction": "10 circles each direction with both wrists simultaneously"
+          },
+          {
+            "phase": "RANGE",
+            "instruction": "Full range of motion, feel wrist joint loosening"
+          },
+          {
+            "phase": "PURPOSE",
+            "instruction": "Prepares wrists for racquet impact and control"
+          }
+        ]
+      },
+      {
+        "name": "Band Stretches",
+        "exercises": [
+          {
+            "type": "SHOULDER DISLOCATES",
+            "instruction": "Hold band wide, slowly rotate arms overhead and behind back"
+          },
+          {
+            "type": "EXTERNAL ROTATIONS",
+            "instruction": "Elbow at 90°, rotate forearm out against band resistance"
+          },
+          {
+            "type": "INTERNAL ROTATIONS",
+            "instruction": "Rotate forearm in against band resistance"
+          },
+          {
+            "type": "REPS",
+            "instruction": "10-12 each movement, focus on smooth controlled motion"
+          },
+          {
+            "type": "PURPOSE",
+            "instruction": "Activates rotator cuff muscles before tennis practice"
+          }
+        ]
+      }
+    ]
+  },
+  "tennis_training": {
+    "sessions": [
+      {
+        "session_name": "Tennis Serve & Volley Drills",
+        "duration": "09:00–10:00",
+        "title": "Precision and Explosive Serves Instructions",
+        "components": [
+          {
+            "name": "Serve Development",
+            "drills": [
+              {
+                "type": "TOSS CONSISTENCY",
+                "instruction": "Practice 20 tosses without hitting, same spot every time"
+              },
+              {
+                "type": "TROPHY POSITION",
+                "instruction": "Hold serve position for 3 seconds, check arm and racquet placement"
+              },
+              {
+                "type": "LEG DRIVE",
+                "instruction": "Focus on driving up with legs, transfer power from ground up"
+              },
+              {
+                "type": "CONTACT POINT",
+                "instruction": "Hit ball at highest comfortable reach, full arm extension"
+              },
+              {
+                "type": "FOLLOW-THROUGH",
+                "instruction": "Complete follow-through across body, land on front foot"
+              },
+              {
+                "type": "PRECISION TARGET",
+                "instruction": "Aim for specific service box corners, 75% accuracy goal"
+              },
+              {
+                "type": "EXPLOSIVE INTENT",
+                "instruction": "Maximum effort on each serve while maintaining control"
+              }
+            ]
+          },
+          {
+            "name": "Volley Development",
+            "drills": [
+              {
+                "type": "READY POSITION",
+                "instruction": "Athletic stance at net, racquet up and ready"
+              },
+              {
+                "type": "FOOTWORK",
+                "instruction": "Small adjustment steps to get behind ball"
+              },
+              {
+                "type": "CONTACT",
+                "instruction": "Hit ball in front of body with firm wrist"
+              },
+              {
+                "type": "COMPACT SWING",
+                "instruction": "Short, punching motion, no big backswing"
+              },
+              {
+                "type": "DEPTH CONTROL",
+                "instruction": "Aim for service line depth on volleys"
+              },
+              {
+                "type": "REACTION DRILLS",
+                "instruction": "Quick exchanges to improve reaction time"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "session_name": "Personal Coaching Session",
+        "duration": "10:00–11:00",
+        "title": "Footwork Agility and Technical Refinement Instructions",
+        "components": [
+          {
+            "name": "Footwork Agility",
+            "drills": [
+              {
+                "type": "SPLIT STEP TIMING",
+                "instruction": "Practice landing as opponent strikes ball"
+              },
+              {
+                "type": "FIRST STEP",
+                "instruction": "Explosive first step in all directions from ready position"
+              },
+              {
+                "type": "RECOVERY STEPS",
+                "instruction": "Quick small steps back to center court position"
+              },
+              {
+                "type": "LATERAL MOVEMENT",
+                "instruction": "Wide shots with proper crossover and recovery"
+              },
+              {
+                "type": "CONE DRILLS",
+                "instruction": "Use cones for precise footwork patterns"
+              }
+            ]
+          },
+          {
+            "name": "Technical Refinement",
+            "focus_areas": [
+              {
+                "type": "VIDEO ANALYSIS",
+                "instruction": "Record strokes for immediate feedback"
+              },
+              {
+                "type": "SLOW MOTION PRACTICE",
+                "instruction": "Break down serve and groundstrokes into components"
+              },
+              {
+                "type": "GRIP CHECK",
+                "instruction": "Ensure proper grip for each stroke type"
+              },
+              {
+                "type": "STANCE ANALYSIS",
+                "instruction": "Open vs closed stance for different situations"
+              },
+              {
+                "type": "TIMING ADJUSTMENT",
+                "instruction": "Work on early preparation and contact point"
+              },
+              {
+                "type": "CONSISTENCY FOCUS",
+                "instruction": "Groove repeatable stroke patterns"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "key_focus_points": [
+    {
+      "category": "Upper Body Strength",
+      "focus": "Focus on controlled movements with full range of motion"
+    },
+    {
+      "category": "Lat Engagement",
+      "focus": "Emphasize proper lat activation during pulldowns"
+    },
+    {
+      "category": "Mobility",
+      "focus": "Thorough shoulder and wrist preparation for tennis"
+    },
+    {
+      "category": "Serve Power",
+      "focus": "Emphasis on precision and explosive serves"
+    },
+    {
+      "category": "Technical Development",
+      "focus": "Footwork agility and technical refinement"
+    }
+  ],
+  "weekly_notes": {
+    "week": 2,
+    "content": "Tuesday combines upper body strength development with intensive tennis skills work, focusing on serve power and technical precision."
+  }
+}

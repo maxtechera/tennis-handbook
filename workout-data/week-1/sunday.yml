@@ -1,0 +1,377 @@
+# Week 1 - Sunday: Complete Recovery & Weekly Assessment
+metadata:
+  week: 1
+  week_name: "Elite Foundation"
+  day: "sunday"
+  day_number: 7
+  title: "Complete Recovery & Weekly Assessment"
+  subtitle: "Comprehensive Recovery and Week 1 Evaluation"
+  phase: "Phase 1: Elite Foundation"
+  phase_week: 1
+  focus: "Recovery & Assessment"
+  volume_target: "0% (complete rest)"
+  intensity_target: "Recovery only"
+  
+  athlete_methods:
+    - "Complete recovery"
+    - "Weekly assessment"
+    - "Planning for Week 2"
+    - "Sleep optimization"
+  
+  equipment_needed:
+    - "Heart rate monitor"
+    - "HRV measurement device"
+    - "Scale for weigh-in"
+    - "Recovery tools (foam roller, etc.)"
+    - "Notebook for planning"
+  
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Saturday](saturday) | [Week 2 ➡️](../week-2/)"
+    week_overview_link: "./"
+    prev_day: "saturday"
+    prev_day_link: "saturday"
+    next_week: "week-2"
+    next_week_link: "../week-2/"
+
+# Complete recovery protocol
+recovery_protocol:
+  title: "Complete Recovery Protocol"
+  
+  morning_recovery:
+    title: "Morning Recovery Routine"
+    activities:
+      - activity: "Natural Wake-up"
+        duration: "-"
+        method: "No alarm, sleep until natural awakening"
+        benefits: "Full sleep cycle completion"
+      
+      - activity: "Gentle Movement"
+        duration: "20 min"
+        method: "Easy walk, light stretching"
+        benefits: "Circulation activation"
+      
+      - activity: "Mindful Breakfast"
+        duration: "30 min"
+        method: "Whole foods, adequate protein"
+        benefits: "Nutritional restoration"
+      
+      - activity: "Hydration Assessment"
+        duration: "5 min"
+        method: "Urine color check, baseline hydration"
+        benefits: "Fluid balance optimization"
+
+# NEW PATTERN: Comprehensive weekly review
+weekly_review:
+  title: "Comprehensive Weekly Review"
+  
+  # Physical performance analysis
+  physical_performance:
+    title: "Physical Performance Analysis"
+    metrics:
+      - metric: "HRV Average"
+        week_1_baseline: "___ ms"
+        week_1_final: "___ ms"
+        change: "___%"
+        week_2_target: "Maintain or improve 5%"
+      
+      - metric: "Sleep Quality Average"
+        week_1_baseline: "___/10"
+        week_1_final: "___/10"
+        change: "___ points"
+        week_2_target: "Target ≥7.5/10"
+      
+      - metric: "Training RPE Average"
+        week_1_baseline: "___/10"
+        week_1_final: "___/10"
+        change: "___ points"
+        week_2_target: "Sustainable 6-7/10"
+      
+      - metric: "Vertical Jump"
+        week_1_baseline: "___ cm"
+        week_1_final: "___ cm"
+        change: "___%"
+        week_2_target: "+2-5% improvement"
+      
+      - metric: "Grip Strength"
+        week_1_baseline: "___ kg"
+        week_1_final: "___ kg"
+        change: "___%"
+        week_2_target: "Maintain or improve"
+  
+  # Movement quality progression
+  movement_quality:
+    title: "Movement Quality Progression"
+    components:
+      - component: "Overhead Squat"
+        week_1_score: "___/5"
+        improvements_noted: "________"
+        week_2_focus: "_______"
+      
+      - component: "Single-leg Glute Bridge"
+        week_1_score: "___/5"
+        improvements_noted: "________"
+        week_2_focus: "_______"
+      
+      - component: "Shoulder Y-T-W"
+        week_1_score: "___/5"
+        improvements_noted: "________"
+        week_2_focus: "_______"
+      
+      - component: "Deep Squat Hold"
+        week_1_score: "___ seconds"
+        improvements_noted: "________"
+        week_2_focus: "_______"
+  
+  # Tennis performance review
+  tennis_performance:
+    title: "Tennis Performance Review"
+    elements:
+      - element: "Serve Accuracy"
+        week_1_average: "___%"
+        best_session: "___%"
+        areas_for_improvement: "________"
+      
+      - element: "Groundstroke Consistency"
+        week_1_average: "___%"
+        best_session: "___%"
+        areas_for_improvement: "________"
+      
+      - element: "Movement Efficiency"
+        week_1_average: "___/10"
+        best_session: "___/10"
+        areas_for_improvement: "________"
+      
+      - element: "Match Performance"
+        week_1_average: "___/10"
+        best_session: "___/10"
+        areas_for_improvement: "________"
+
+# NEW PATTERN: Week 2 planning
+week_2_planning:
+  title: "Week 2 Planning & Preparation"
+  
+  # Program modifications
+  program_modifications:
+    title: "Program Modifications Based on Week 1"
+    areas:
+      - area: "Training Intensity"
+        week_1_assessment: "Too easy / Appropriate / Too hard"
+        week_2_adjustment: "Increase 5% / Maintain / Reduce 10%"
+      
+      - area: "Recovery Protocols"
+        week_1_assessment: "Insufficient / Adequate / Excessive"
+        week_2_adjustment: "Add modalities / Continue / Simplify"
+      
+      - area: "Movement Correctives"
+        week_1_assessment: "Not addressing / Helping / Solved"
+        week_2_adjustment: "Change approach / Continue / Reduce"
+      
+      - area: "Nutrition Timing"
+        week_1_assessment: "Poor / Good / Excellent"
+        week_2_adjustment: "Adjust timing / Maintain / Optimize further"
+  
+  # Meal preparation
+  meal_preparation:
+    title: "Meal Preparation for Week 2"
+    meals:
+      - meal: "Breakfast"
+        prep_strategy: "______"
+        protein_source: "______"
+        carb_source: "______"
+        healthy_fats: "______"
+      
+      - meal: "Pre-training"
+        prep_strategy: "______"
+        protein_source: "______"
+        carb_source: "______"
+        healthy_fats: "______"
+      
+      - meal: "Post-training"
+        prep_strategy: "______"
+        protein_source: "______"
+        carb_source: "______"
+        healthy_fats: "______"
+      
+      - meal: "Dinner"
+        prep_strategy: "______"
+        protein_source: "______"
+        carb_source: "______"
+        healthy_fats: "______"
+
+# NEW PATTERN: Daily metrics system
+daily_metrics_system:
+  title: "Daily Metrics System"
+  
+  # Morning assessment protocol
+  morning_assessment:
+    title: "Morning Assessment Protocol (5-7 minutes)"
+    metrics:
+      - metric: "Heart Rate Variability"
+        method: "Smartphone app (HRV4Training recommended)"
+        optimal_range: "Establish personal baseline"
+        timing: "Post-urination, consistent position"
+        frequency: "Same time daily (±30 min)"
+        baseline_data:
+          day_1: "___ ms"
+          day_7: "___ ms"
+          weekly_avg: "___ ms"
+        auto_regulation:
+          - ">-10% from baseline = proceed"
+          - "-10-20% = reduce intensity 20%"
+          - "<-20% = active recovery only"
+      
+      - metric: "Resting Heart Rate"
+        method: "60-second manual count or device"
+        optimal_range: "Individual baseline ±5 bpm"
+        timing: "Consistent position and timing"
+        baseline_data:
+          day_1: "___ bpm"
+          day_7: "___ bpm"
+        auto_regulation:
+          - ">10 bpm above baseline = caution"
+          - "Focus on 7-day rolling average"
+      
+      - metric: "Sleep Assessment"
+        components:
+          - name: "Sleep Duration"
+            optimal_range: "7.5-9 hours nightly"
+            day_1: "___ hrs"
+            auto_regulation: "<7 hours = reduce training 20%"
+          
+          - name: "Sleep Quality (1-10)"
+            optimal_range: "≥7 for optimal training"
+            day_7: "___/10"
+            auto_regulation: "<6 = significant volume reduction"
+          
+          - name: "Sleep Efficiency"
+            optimal_range: ">85% (time asleep/time in bed)"
+            week_avg: "___%"
+            auto_regulation: "<80% = sleep hygiene review"
+      
+      - metric: "Body Weight"
+        method: "Digital scale, same conditions"
+        optimal_range: "±2% weekly variation"
+        timing: "Minimal clothing, post-urination"
+        baseline_data:
+          day_1: "___ kg"
+          day_7: "___ kg"
+        auto_regulation:
+          - ">3% change = hydration check"
+          - "Track 3-7 day trends"
+
+# NEW PATTERN: Strategic nutrition targets
+nutrition_targets:
+  title: "Strategic Nutrition Targets"
+  body_weight_field: "___ kg"
+  
+  nutrients:
+    - nutrient: "Protein"
+      calculation: "2.0 g/kg (tennis athletes)"
+      daily_target: "___ g total"
+      meal_distribution:
+        breakfast: "___g"
+        lunch: "___g"
+        dinner: "___g"
+    
+    - nutrient: "Carbohydrates"
+      training_days:
+        calculation: "5-6 g/kg"
+        target: "___ g"
+        timing:
+          pre_training: "___g"
+          post_training: "___g"
+      rest_days:
+        calculation: "3-4 g/kg"
+        target: "___ g"
+        focus: "Focus on whole grains, fruits, vegetables"
+    
+    - nutrient: "Fats"
+      calculation: "1.2-1.5 g/kg"
+      daily_target: "___ g total"
+      omega_3_priority: "___g EPA+DHA"
+    
+    - nutrient: "Water"
+      baseline:
+        calculation: "35-40 ml/kg baseline"
+        target: "___ L baseline"
+      training_addition: "+500ml per hour of training"
+      training_days_total: "___ L"
+      monitoring: "Monitor urine color (pale yellow target)"
+
+# NEW PATTERN: Sleep optimization system
+sleep_optimization:
+  title: "Sleep Optimization System"
+  
+  # Environment checklist
+  environment_checklist:
+    title: "Sleep Environment Optimization Checklist"
+    factors:
+      - factor: "Temperature"
+        optimal_setting: "65-68°F (18-20°C)"
+        current_status: "Current: ___°F"
+        week_1_improvements: "________"
+      
+      - factor: "Darkness"
+        optimal_setting: "Complete blackout"
+        current_status: "Blackout curtains: ✓/✗"
+        week_1_improvements: "________"
+      
+      - factor: "Noise"
+        optimal_setting: "<30 decibels"
+        current_status: "White noise/earplugs: ✓/✗"
+        week_1_improvements: "________"
+      
+      - factor: "Air Quality"
+        optimal_setting: "Fresh, circulating"
+        current_status: "Air purifier/plants: ✓/✗"
+        week_1_improvements: "________"
+      
+      - factor: "Technology"
+        optimal_setting: "No screens 1hr before bed"
+        current_status: "Phone charging location:"
+        week_1_improvements: "________"
+      
+      - factor: "Mattress/Pillow"
+        optimal_setting: "Personal comfort"
+        current_status: "Comfort rating: ___/10"
+        week_1_improvements: "________"
+  
+  # Sleep routine
+  sleep_routine:
+    title: "Sleep Routine Protocol"
+    target_bedtime: "__:__ PM"
+    routine:
+      - time_before: "3 hours"
+        activity: "Last large meal"
+        purpose: "Avoid digestive interference"
+        week_1_compliance: "___/7 nights"
+      
+      - time_before: "2 hours"
+        activity: "Last caffeine intake"
+        purpose: "Prevent sleep disruption"
+        week_1_compliance: "___/7 nights"
+      
+      - time_before: "1 hour"
+        activity: "All screens off"
+        purpose: "Melatonin production"
+        week_1_compliance: "___/7 nights"
+      
+      - time_before: "45 minutes"
+        activity: "Dim lights, prep room"
+        purpose: "Circadian rhythm support"
+        week_1_compliance: "___/7 nights"
+      
+      - time_before: "30 minutes"
+        activity: "Reading/stretching/meditation"
+        purpose: "Relaxation response"
+        week_1_compliance: "___/7 nights"
+      
+      - time_before: "15 minutes"
+        activity: "Final room setup, bathroom"
+        purpose: "Eliminate disruptions"
+        week_1_compliance: "___/7 nights"
+      
+      - time_before: "Bedtime"
+        activity: "Consistent time ±30 min"
+        purpose: "Rhythm establishment"
+        week_1_compliance: "___/7 nights"

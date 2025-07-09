@@ -85,6 +85,29 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    './src/plugins/workout-data-plugin',
+    
+    // Configure webpack to handle YAML files
+    async function yamlLoaderPlugin(context, options) {
+      return {
+        name: 'yaml-loader',
+        configureWebpack(config, isServer, utils) {
+          return {
+            module: {
+              rules: [
+                {
+                  test: /\.ya?ml$/,
+                  use: 'js-yaml-loader',
+                },
+              ],
+            },
+          };
+        },
+      };
+    },
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: "img/tennis-training-social.jpg",
@@ -154,39 +177,35 @@ const config: Config = {
               label: "Programming",
               to: "/docs/programming/training-programming",
             },
-          ],
-        },
-        {
-          title: "Specialized Methods",
-          items: [
             {
-              label: "Tendon Health",
-              to: "/docs/specialized/tendon-health-science",
-            },
-            {
-              label: "Power Development",
-              to: "/docs/specialized/power-development",
-            },
-            {
-              label: "Recovery Protocols",
+              label: "Recovery Methods",
               to: "/docs/recovery/recovery-protocols",
             },
           ],
         },
         {
-          title: "Support Systems",
+          title: "Quick Links",
           items: [
             {
-              label: "Nutrition",
-              to: "/docs/nutrition/nutrition-support",
+              label: "Weekly Schedule",
+              to: "/docs/workouts/week-program-table",
             },
             {
-              label: "Assessment",
-              to: "/docs/assessment/assessment-monitoring",
+              label: "Assessment Guide",
+              to: "/docs/assessment/performance-testing",
             },
             {
-              label: "Weekly Plans",
-              to: "/docs/workouts/overview",
+              label: "Nutrition Support",
+              to: "/docs/nutrition/performance-nutrition",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "GitHub",
+              href: "https://github.com/elite-tennis/tennis-training",
             },
           ],
         },
