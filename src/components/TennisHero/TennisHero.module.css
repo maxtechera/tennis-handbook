@@ -3,7 +3,7 @@
   min-height: 100vh;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  background: linear-gradient(135deg, #1b5e20, #004d40);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +71,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.1;
+  opacity: 0.05;
   pointer-events: none;
 }
 
@@ -81,7 +81,7 @@
   left: 10%;
   right: 10%;
   height: 4px;
-  background: #2e7d32;
+  background: #81c784;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -91,7 +91,7 @@
   left: 15%;
   right: 15%;
   height: 3px;
-  background: #388e3c;
+  background: #81c784;
   opacity: 0.8;
 }
 
@@ -102,7 +102,7 @@
   transform: translateX(-50%);
   width: 3px;
   height: 200px;
-  background: #43a047;
+  background: #81c784;
   opacity: 0.6;
 }
 
@@ -115,7 +115,7 @@
   background: linear-gradient(
     90deg,
     transparent 10%,
-    #1b5e20 50%,
+    #a5d6a7 50%,
     transparent 90%
   );
   transform: translateY(-50%);
@@ -185,13 +185,13 @@
 
 .titleLine1 {
   display: block;
-  color: #1a237e;
+  color: #e3f2fd;
   animation: slideInFromLeft 0.8s ease-out;
 }
 
 .titleLine2 {
   display: block;
-  color: #4caf50;
+  color: #81c784;
   font-size: 1.2em;
   animation: slideInFromRight 0.8s ease-out 0.2s both;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -222,7 +222,7 @@
 /* Subtitle */
 .subtitle {
   font-size: clamp(1.1rem, 3vw, 1.4rem);
-  color: #424242;
+  color: #b0bec5;
   margin-bottom: 2.5rem;
   animation: fadeInUp 0.8s ease-out 0.4s both;
   font-weight: 500;
@@ -314,7 +314,7 @@
 .statText {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #616161;
+  color: #90a4ae;
 }
 
 @keyframes bounce {
@@ -366,7 +366,7 @@
 }
 
 .trustItem {
-  color: #616161;
+  color: #90a4ae;
   font-size: 0.9rem;
   display: flex;
   align-items: center;
@@ -477,54 +477,7 @@
   }
 }
 
-/* Dark mode adjustments */
-[data-theme="dark"] .tennisHero {
-  background: linear-gradient(135deg, #1b5e20, #004d40);
-}
-
-[data-theme="dark"] .courtLines {
-  opacity: 0.05;
-}
-
-[data-theme="dark"] .baseline,
-[data-theme="dark"] .serviceLine,
-[data-theme="dark"] .centerLine {
-  background: #81c784;
-}
-
-[data-theme="dark"] .netPost {
-  background: linear-gradient(
-    90deg,
-    transparent 10%,
-    #a5d6a7 50%,
-    transparent 90%
-  );
-}
-
-[data-theme="dark"] .titleLine1 {
-  color: #e3f2fd;
-}
-
-[data-theme="dark"] .titleLine2 {
-  color: #81c784;
-}
-
-[data-theme="dark"] .subtitle {
-  color: #e0e0e0;
-}
-
-[data-theme="dark"] .statText {
-  color: #bdbdbd;
-}
-
-[data-theme="dark"] .trustItem {
-  color: #9e9e9e;
-}
-
-[data-theme="dark"] .urgencyBanner {
-  background: linear-gradient(135deg, #3e2723, #4e342e);
-  color: #ff6f00;
-}
+/* Dark mode styles removed - now using dark theme universally */
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {

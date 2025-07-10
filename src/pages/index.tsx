@@ -429,68 +429,65 @@ export default function Home(): ReactNode {
       }
     }
 
-    // Auto-show wizard for new visitors (faster)
-    if (!hasCompletedWizard && !hasSeenWizard && shouldShowWizard) {
-      const timer = setTimeout(() => {
-        setShowWizard(true);
-        localStorage.setItem("wizard_seen", "true");
-        trackWizardStart(currentLanguage);
+    // Auto-show wizard for new visitors (DISABLED - user request)
+    // if (!hasCompletedWizard && !hasSeenWizard && shouldShowWizard) {
+    //   const timer = setTimeout(() => {
+    //     setShowWizard(true);
+    //     localStorage.setItem("wizard_seen", "true");
+    //     trackWizardStart(currentLanguage);
 
-        sendEvent({
-          event: "wizard_triggered",
-          category: "Onboarding",
-          label: "auto_timer",
-          properties: {
-            delay_seconds: 2,
-            language: currentLanguage,
-          },
-        });
-      }, 2000); // Reduced from 3 seconds
+    //     sendEvent({
+    //       event: "wizard_triggered",
+    //       category: "Onboarding",
+    //       label: "auto_timer",
+    //       properties: {
+    //         delay_seconds: 2,
+    //         language: currentLanguage,
+    //       },
+    //     });
+    //   }, 2000); // Reduced from 3 seconds
 
-      return () => clearTimeout(timer);
-    }
+    //   return () => clearTimeout(timer);
+    // }
   }, [currentLanguage]);
 
-  // Exit intent detection
+  // Exit intent detection (DISABLED - user request)
   useEffect(() => {
-    const handleMouseLeave = (e: MouseEvent) => {
-      // Check if wizard was recently dismissed
-      const hasDismissedWizard = localStorage.getItem("wizard_dismissed");
-      const lastDismissedTime = localStorage.getItem("wizard_dismissed_time");
-
-      let canShowWizard = true;
-      if (hasDismissedWizard && lastDismissedTime) {
-        const dismissedTime = parseInt(lastDismissedTime);
-        const hoursSinceDismissed =
-          (Date.now() - dismissedTime) / (1000 * 60 * 60);
-        if (hoursSinceDismissed < 24) {
-          canShowWizard = false;
-        }
-      }
-
-      if (
-        e.clientY <= 0 &&
-        !exitIntentTriggered &&
-        !wizardComplete &&
-        !showWizard &&
-        canShowWizard
-      ) {
-        setExitIntentTriggered(true);
-        triggerWizard();
-
-        sendEvent({
-          event: "wizard_triggered",
-          category: "Onboarding",
-          label: "exit_intent",
-          properties: {
-            language: currentLanguage,
-          },
-        });
-      }
-    };
-
-    document.addEventListener("mouseleave", handleMouseLeave);
-    return () => document.removeEventListener("mouseleave", handleMouseLeave);
+    // DISABLED: Exit intent trigger disabled per user request
+    // const handleMouseLeave = (e: MouseEvent) => {
+    //   // Check if wizard was recently dismissed
+    //   const hasDismissedWizard = localStorage.getItem("wizard_dismissed");
+    //   const lastDismissedTime = localStorage.getItem("wizard_dismissed_time");
+    //   let canShowWizard = true;
+    //   if (hasDismissedWizard && lastDismissedTime) {
+    //     const dismissedTime = parseInt(lastDismissedTime);
+    //     const hoursSinceDismissed =
+    //       (Date.now() - dismissedTime) / (1000 * 60 * 60);
+    //     if (hoursSinceDismissed < 24) {
+    //       canShowWizard = false;
+    //     }
+    //   }
+    //   if (
+    //     e.clientY <= 0 &&
+    //     !exitIntentTriggered &&
+    //     !wizardComplete &&
+    //     !showWizard &&
+    //     canShowWizard
+    //   ) {
+    //     setExitIntentTriggered(true);
+    //     triggerWizard();
+    //     sendEvent({
+    //       event: "wizard_triggered",
+    //       category: "Onboarding",
+    //       label: "exit_intent",
+    //       properties: {
+    //         language: currentLanguage,
+    //       },
+    //     });
+    //   }
+    // };
+    // document.addEventListener("mouseleave", handleMouseLeave);
+    // return () => document.removeEventListener("mouseleave", handleMouseLeave);
   }, [
     exitIntentTriggered,
     wizardComplete,

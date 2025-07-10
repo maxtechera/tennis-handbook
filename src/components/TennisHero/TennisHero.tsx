@@ -307,7 +307,7 @@ export default function TennisHero({
   const ballsRef = useRef<InteractiveTennisBall[]>([]);
   const animationRef = useRef<number>();
   const [isPhysicsActive, setIsPhysicsActive] = useState(false);
-  const [motionPermission, setMotionPermission] = useState<string>("prompt");
+  const [motionPermission, setMotionPermission] = useState<string>("granted");
   const [showMotionPrompt, setShowMotionPrompt] = useState(false);
   const deviceOrientationRef = useRef<{
     alpha: number;

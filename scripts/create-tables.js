@@ -57,8 +57,10 @@ async function createTables() {
     
     // Create indexes
     await sql`
-      CREATE INDEX IF NOT EXISTS session_idx ON wizard_submissions(session_id);
-      CREATE INDEX IF NOT EXISTS user_idx ON wizard_submissions(user_id);
+      CREATE INDEX IF NOT EXISTS session_idx ON wizard_submissions(session_id)
+    `;
+    await sql`
+      CREATE INDEX IF NOT EXISTS user_idx ON wizard_submissions(user_id)
     `;
     
     // Create email_captures table
@@ -94,8 +96,10 @@ async function createTables() {
     
     // Create indexes
     await sql`
-      CREATE INDEX IF NOT EXISTS event_type_idx ON conversion_events(event_type);
-      CREATE INDEX IF NOT EXISTS event_session_idx ON conversion_events(session_id);
+      CREATE INDEX IF NOT EXISTS event_type_idx ON conversion_events(event_type)
+    `;
+    await sql`
+      CREATE INDEX IF NOT EXISTS event_session_idx ON conversion_events(session_id)
     `;
     
     console.log('✨ All tables created successfully!');

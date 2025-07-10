@@ -5,8 +5,8 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Complete Tennis Handbook",
-  tagline: "Elite methodologies, comprehensive science, practical application",
+  title: "Elite Tennis Training",
+  tagline: "Entrena como los #1 del mundo",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -112,7 +112,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/tennis-training-social.jpg",
 
-    // Add meta tags for proper character encoding
+    // Add meta tags for proper character encoding and mobile/PWA support
     metadata: [
       {
         name: "charset",
@@ -120,11 +120,69 @@ const config: Config = {
       },
       {
         name: "viewport",
-        content: "width=device-width, initial-scale=1.0",
+        content: "width=device-width, initial-scale=1.0, viewport-fit=cover",
       },
       {
         "http-equiv": "Content-Type",
         content: "text/html; charset=utf-8",
+      },
+      // PWA and mobile app meta tags
+      {
+        name: "theme-color",
+        content: "#1b5e20", // Dark green from hero gradient
+      },
+      {
+        name: "apple-mobile-web-app-capable",
+        content: "yes",
+      },
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black-translucent",
+      },
+      {
+        name: "apple-mobile-web-app-title",
+        content: "Elite Tennis",
+      },
+      {
+        name: "mobile-web-app-capable",
+        content: "yes",
+      },
+      {
+        name: "application-name",
+        content: "Elite Tennis Training",
+      },
+      {
+        name: "msapplication-TileColor",
+        content: "#1b5e20",
+      },
+      {
+        name: "msapplication-navbutton-color",
+        content: "#1b5e20",
+      },
+      // Social media and SEO
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:title",
+        content: "Elite Tennis Training - Entrena como los #1 del mundo",
+      },
+      {
+        property: "og:description",
+        content: "Métodos exactos de entrenadores de Alcaraz, Sinner y medallistas olímpicos. Rutina personalizada GRATIS.",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Elite Tennis Training",
+      },
+      {
+        name: "twitter:description",
+        content: "Entrena como los #1 del mundo 🎾",
       },
     ],
 

@@ -130,6 +130,25 @@ export const conversionEvents = pgTable('conversion_events', {
   };
 });
 
+export const appStats = pgTable('app_stats', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  statType: text('stat_type').notNull(), // 'balls_thrown', 'workouts_completed', 'exercises_viewed', etc.
+  count: integer('count').notNull().default(0),
+  sessionId: text('session_id'),
+  userId: uuid('user_id').references(() => users.id),
+  metadata: jsonb('metadata'), // Additional data like { ballsPerThrow: 3, device: 'mobile' }
+  userAgent: text('user_agent'),
+  ipAddress: text('ip_address'),
+  createdAt: timestamp('created_at').defaultNow().notNull(),
+}, (table) => {
+  return {
+    typeIdx: index('stat_type_idx').on(table.statType),
+    sessionIdx: index('stat_session_idx').on(table.sessionId),
+    userIdx: index('stat_user_idx').on(table.userId),
+    createdAtIdx: index('stat_created_idx').on(table.createdAt),
+  };
+});
+
 // Type exports for TypeScript
 export type User = typeof users.$inferSelect;
 export type NewUser = typeof users.$inferInsert;
