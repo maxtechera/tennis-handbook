@@ -11,7 +11,9 @@ interface AnalyzingStepProps {
 type AnalysisPhase = 'analyzing' | 'calculating' | 'revealing' | 'completed';
 
 export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: AnalyzingStepProps) {
-  const [phase, setPhase] = useState<AnalysisPhase>('analyzing');
+  const [phaseIndex, setPhaseIndex] = useState(0);
+  const phases: AnalysisPhase[] = ['analyzing', 'calculating', 'revealing', 'completed'];
+  const phase = phases[phaseIndex];
   const [showPlan, setShowPlan] = useState(false);
 
   // Get user's selections for personalization
@@ -76,17 +78,17 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
 
   useEffect(() => {
     const sequence = async () => {
-      // Phase 1: Analyzing (5 seconds - analysis + value point)
-      await new Promise(resolve => setTimeout(resolve, 5000));
-      setPhase('calculating');
+      // Each phase for 2 seconds
+      for (let i = 0; i < phases.length; i++) {
+        await new Promise(resolve => setTimeout(resolve, 2000));
+        
+        if (i < phases.length - 1) {
+          setPhaseIndex(i + 1);
+        }
+      }
       
-      // Phase 2: Calculating (5 seconds - analysis + value point)  
-      await new Promise(resolve => setTimeout(resolve, 5000));
-      setPhase('revealing');
-      
-      // Phase 3: Revealing (5 seconds - analysis + value point)
-      await new Promise(resolve => setTimeout(resolve, 5000));
-      setPhase('completed');
+      // Brief pause before auto-advance
+      await new Promise(resolve => setTimeout(resolve, 1000));
       
       // Auto-advance to email capture
       onNext({
@@ -163,40 +165,124 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
     return phaseContent[phase] || phaseContent.analyzing;
   };
 
-  const analyzingInfo = getAnalyzingText();
+  const getAllPhaseContent = () => {
+    const allPhases: AnalysisPhase[] = ['analyzing', 'calculating', 'revealing', 'completed'];
+    return allPhases.map(p => getAnalyzingText(p));
+  };
+
+  const getAnalyzingTextForPhase = (specificPhase: AnalysisPhase) => {
+    const phaseContent = {
+      analyzing: {
+        analysis: {
+          title: 'Detectando errores técnicos...',
+          subtitle: '🔍 Encontrando esos malos hábitos escondidos',
+          icon: '🕵️'
+        },
+        solution: {
+          title: '✅ Técnica Correcta desde el Día 1',
+          description: 'Aprende los fundamentos que usan los pros - evita años de malos hábitos',
+          benefit: 'Progreso 3x más rápido con técnica correcta',
+          color: 'blue'
+        }
+      },
+      calculating: {
+        analysis: {
+          title: 'Analizando falta de consistencia...',
+          subtitle: '🎾 ¿Por qué unos días juegas bien y otros...?',
+          icon: '📊'
+        },
+        solution: {
+          title: '✅ Sistema de Entrenamiento Progresivo',
+          description: 'Rutinas estructuradas que garantizan mejora constante',
+          benefit: 'Consistencia profesional en 30 días',
+          color: 'purple'
+        }
+      },
+      revealing: {
+        analysis: {
+          title: 'Midiendo potencial sin explotar...',
+          subtitle: '💎 Hay un jugador élite esperando salir',
+          icon: '⚡'
+        },
+        solution: {
+          title: '✅ Metodología de Campeones Olímpicos',
+          description: 'Los mismos métodos que usan entrenadores de top 10 mundial',
+          benefit: 'Desbloquea tu máximo potencial',
+          color: 'orange'
+        }
+      },
+      completed: {
+        analysis: {
+          title: '¡Análisis completo!',
+          subtitle: '🏆 Tu roadmap personalizado está listo',
+          icon: '🎯'
+        },
+        solution: {
+          title: '🎁 Descarga tu Plan GRATIS',
+          description: 'Todo personalizado para tu nivel y objetivos',
+          benefit: 'Comienza tu transformación HOY',
+          color: 'green'
+        }
+      }
+    };
+
+    return phaseContent[specificPhase] || phaseContent.analyzing;
+  };
 
   return (
     <div className={styles.analyzingStep}>
-      <div className={styles.content}>
-        
-        {/* Analysis Section */}
-        <div key={`analysis-${phase}`} className={styles.analysisSection}>
-          <div className={styles.animationContainer}>
-            <div className={styles.loadingIcon}>{analyzingInfo.analysis.icon}</div>
-            <div className={styles.loadingDots}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          
-          <div className={styles.analyzingText}>
-            <h2 className={styles.title}>{analyzingInfo.analysis.title}</h2>
-            <p className={styles.subtitle}>{analyzingInfo.analysis.subtitle}</p>
-          </div>
-        </div>
+      <div className={styles.carouselContainer}>
+        <div 
+          className={styles.carouselTrack} 
+          style={{ transform: `translateX(-${phaseIndex * 100}%)` }}
+        >
+          {phases.map((p, index) => {
+            const info = getAnalyzingTextForPhase(p);
+            return (
+              <div key={p} className={styles.carouselSlide}>
+                <div className={styles.content}>
+                  {/* Analysis Section */}
+                  <div className={styles.analysisSection}>
+                    <div className={styles.animationContainer}>
+                      <div className={styles.loadingIcon}>{info.analysis.icon}</div>
+                      <div className={styles.loadingDots}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    
+                    <div className={styles.analyzingText}>
+                      <h2 className={styles.title}>{info.analysis.title}</h2>
+                      <p className={styles.subtitle}>{info.analysis.subtitle}</p>
+                    </div>
+                  </div>
 
-        {/* Solution Value */}
-        <div key={`solution-${phase}`} className={styles.solutionSection}>
-          <div className={`${styles.solutionCard} ${styles[analyzingInfo.solution.color]}`}>
-            <h3 className={styles.solutionTitle}>{analyzingInfo.solution.title}</h3>
-            <p className={styles.solutionDescription}>{analyzingInfo.solution.description}</p>
-            <div className={styles.benefitBadge}>
-              <span className={styles.benefitText}>{analyzingInfo.solution.benefit}</span>
-            </div>
-          </div>
+                  {/* Solution Value */}
+                  <div className={styles.solutionSection}>
+                    <div className={`${styles.solutionCard} ${styles[info.solution.color]}`}>
+                      <h3 className={styles.solutionTitle}>{info.solution.title}</h3>
+                      <p className={styles.solutionDescription}>{info.solution.description}</p>
+                      <div className={styles.benefitBadge}>
+                        <span className={styles.benefitText}>{info.solution.benefit}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
-
+      </div>
+      
+      {/* Progress dots */}
+      <div className={styles.progressDots}>
+        {phases.map((p, index) => (
+          <div 
+            key={index} 
+            className={`${styles.dot} ${index === phaseIndex ? styles.active : ''}`}
+          />
+        ))}
       </div>
     </div>
   );

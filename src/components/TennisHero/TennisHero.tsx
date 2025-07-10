@@ -315,7 +315,7 @@ export default function TennisHero({
   const ballsRef = useRef<InteractiveTennisBall[]>([]);
   const animationRef = useRef<number>();
   const [isPhysicsActive, setIsPhysicsActive] = useState(false);
-  const [motionPermission, setMotionPermission] = useState<string>("granted");
+  const [motionPermission, setMotionPermission] = useState<string>("unknown");
   const [showMotionPrompt, setShowMotionPrompt] = useState(false);
   const deviceOrientationRef = useRef<{
     alpha: number;
@@ -405,30 +405,160 @@ export default function TennisHero({
 
   // Request device orientation permission
   const requestOrientationPermission = async () => {
-    if (
+    // Check if we need permission (iOS 13+)
+    const needsOrientationPermission = 
       typeof DeviceOrientationEvent !== "undefined" &&
-      typeof (DeviceOrientationEvent as any).requestPermission === "function"
-    ) {
+      typeof (DeviceOrientationEvent as any).requestPermission === "function";
+      
+    const needsMotionPermission = 
+      typeof DeviceMotionEvent !== "undefined" &&
+      typeof (DeviceMotionEvent as any).requestPermission === "function";
+    
+    if (needsOrientationPermission || needsMotionPermission) {
       try {
-        const permission = await (
-          DeviceOrientationEvent as any
-        ).requestPermission();
-        setMotionPermission(permission);
-        setShowMotionPrompt(false);
-        if (permission === "granted") {
-          setIsPhysicsActive(true);
+        // Always request both permissions
+        let orientationPermission = "granted";
+        let motionPermissionResult = "granted";
+        
+        if (needsOrientationPermission) {
+          orientationPermission = await (
+            DeviceOrientationEvent as any
+          ).requestPermission();
         }
-        return permission === "granted";
-      } catch (error) {
-        console.log("Orientation permission error:", error);
+        
+        if (needsMotionPermission) {
+          try {
+            motionPermissionResult = await (
+              DeviceMotionEvent as any
+            ).requestPermission();
+          } catch (error) {
+            console.log("Motion permission error:", error);
+          }
+        }
+        
+        const finalPermission = orientationPermission === "granted" && motionPermissionResult === "granted" ? "granted" : "denied";
+        setMotionPermission(finalPermission);
         setShowMotionPrompt(false);
+        
+        if (finalPermission === "granted") {
+          setIsPhysicsActive(true);
+          // Remove any existing listeners first
+          window.removeEventListener("deviceorientation", handleDeviceOrientation);
+          window.removeEventListener("devicemotion", handleDeviceMotion);
+          // Set up the event listeners now that we have permission
+          window.addEventListener("deviceorientation", handleDeviceOrientation);
+          window.addEventListener("devicemotion", handleDeviceMotion);
+        }
+        
+        return finalPermission === "granted";
+      } catch (error) {
+        console.log("Permission request error:", error);
+        setShowMotionPrompt(false);
+        setMotionPermission("denied");
         return false;
       }
     } else {
+      // Not iOS 13+ or desktop - no permission needed
+      setMotionPermission("granted");
       setIsPhysicsActive(true);
       return true;
     }
   };
+  
+  // Define event handlers outside so they can be referenced
+  const handleDeviceOrientation = (event: DeviceOrientationEvent) => {
+    if (event.alpha !== null && event.beta !== null && event.gamma !== null) {
+      deviceOrientationRef.current = {
+        alpha: event.alpha,
+        beta: event.beta,
+        gamma: event.gamma,
+      };
+    }
+  };
+  
+  const handleDeviceMotion = (event: DeviceMotionEvent) => {
+    const acceleration = event.accelerationIncludingGravity;
+    if (
+      acceleration &&
+      acceleration.x !== null &&
+      acceleration.y !== null &&
+      acceleration.z !== null
+    ) {
+      const x = acceleration.x;
+      const y = acceleration.y;
+      const z = acceleration.z;
+
+      // Calculate shake intensity
+      const deltaX = Math.abs(x - lastAcceleration.current.x);
+      const deltaY = Math.abs(y - lastAcceleration.current.y);
+      const deltaZ = Math.abs(z - lastAcceleration.current.z);
+      const totalDelta = deltaX + deltaY + deltaZ;
+
+      // Track acceleration history for more accurate shake detection
+      accelerationHistory.current.push(totalDelta);
+      if (accelerationHistory.current.length > 10) {
+        accelerationHistory.current.shift();
+      }
+
+      // Calculate average recent acceleration
+      const avgAcceleration =
+        accelerationHistory.current.reduce((a, b) => a + b, 0) /
+        accelerationHistory.current.length;
+
+      if (totalDelta > 1.5 || avgAcceleration > 1) {
+        handleShake(totalDelta);
+      }
+
+      lastAcceleration.current = { x, y, z };
+    }
+  };
+  
+  const lastAcceleration = useRef({ x: 0, y: 0, z: 0 });
+  
+  // Enhanced shake detection
+  const handleShake = useCallback((intensity: number) => {
+    const now = Date.now();
+    if (now - lastShakeTime.current < 200) return; // Shorter debounce for responsiveness
+    lastShakeTime.current = now;
+
+    const canvas = canvasRef.current;
+    if (!canvas || !ballsRef.current) return;
+
+    // Add new ball very easily when shaking (super sensitive)
+    if (intensity > 2 && Math.random() > 0.3) {
+      // Even lower threshold for easier ball creation
+      const maxBalls = 100;
+
+      // Remove oldest ball if we would exceed the limit (FIFO)
+      if (ballsRef.current.length >= maxBalls) {
+        ballsRef.current.shift(); // Remove oldest ball
+      }
+
+      // Get CTA button position for spawning
+      const buttonRect = ctaButtonRef.current?.getBoundingClientRect();
+      const canvasRect = canvas.getBoundingClientRect();
+      const spawnY = buttonRect
+        ? buttonRect.top - canvasRect.top - 30 // 30px above button
+        : canvas.height * 0.5; // Fallback to middle
+
+      const ball = new InteractiveTennisBall(
+        canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
+        spawnY
+      );
+      // Throw toward the walls with strong horizontal velocity
+      const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
+      ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
+      ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
+      ballsRef.current.push(ball); // Add newest ball
+      setBallCount(ballsRef.current.length);
+
+      // Track shake-generated ball
+      trackBallThrows(1);
+    }
+
+    // Set shake intensity for ball physics - Much stronger!
+    shakeIntensity.current = Math.min(intensity / 2, 20); // 4x stronger, 4x higher max
+  }, [trackBallThrows]);
 
   // Fetch ball stats on mount
   useEffect(() => {
@@ -437,51 +567,38 @@ export default function TennisHero({
 
   // Setup device orientation and motion detection
   useEffect(() => {
-    const handleDeviceOrientation = (event: DeviceOrientationEvent) => {
-      if (event.alpha !== null && event.beta !== null && event.gamma !== null) {
-        deviceOrientationRef.current = {
-          alpha: event.alpha, // compass direction
-          beta: event.beta, // front-back tilt (-180 to 180)
-          gamma: event.gamma, // left-right tilt (-90 to 90)
-        };
-      }
-    };
+    // Only set up listeners if we don't need permission or have permission
+    const checkAndSetupMotion = () => {
+      const needsPermission = 
+        (typeof DeviceOrientationEvent !== "undefined" &&
+         typeof (DeviceOrientationEvent as any).requestPermission === "function") ||
+        (typeof DeviceMotionEvent !== "undefined" &&
+         typeof (DeviceMotionEvent as any).requestPermission === "function");
 
-    // Setup motion permissions for iOS 13+
-    const setupMotionEvents = async () => {
-      // Check if we need permission for DeviceMotionEvent
-      if (
-        typeof DeviceMotionEvent !== "undefined" &&
-        typeof (DeviceMotionEvent as any).requestPermission === "function"
-      ) {
-        try {
-          const permission = await (DeviceMotionEvent as any).requestPermission();
-          if (permission === "granted") {
-            window.addEventListener("deviceorientation", handleDeviceOrientation);
-            setIsPhysicsActive(true);
-          }
-        } catch (error) {
-          console.log("Motion permission error:", error);
-          // Still try to activate physics
+      if (needsPermission) {
+        // iOS 13+ - only set up if permission granted
+        if (motionPermission === "granted") {
+          window.addEventListener("deviceorientation", handleDeviceOrientation);
+          window.addEventListener("devicemotion", handleDeviceMotion);
           setIsPhysicsActive(true);
         }
       } else {
-        // Android or older iOS - no permission needed
+        // Desktop or Android - no permission needed
         window.addEventListener("deviceorientation", handleDeviceOrientation);
+        window.addEventListener("devicemotion", handleDeviceMotion);
         setIsPhysicsActive(true);
+        setMotionPermission("granted");
       }
     };
 
-    // For desktop or if permissions already granted
-    if (typeof DeviceOrientationEvent === "undefined") {
-      // Desktop - activate physics immediately
-      setIsPhysicsActive(true);
-    } else {
-      setupMotionEvents();
-    }
+    // Check immediately and also after a small delay (for iOS Safari)
+    checkAndSetupMotion();
+    const timeoutId = setTimeout(checkAndSetupMotion, 100);
 
     return () => {
+      clearTimeout(timeoutId);
       window.removeEventListener("deviceorientation", handleDeviceOrientation);
+      window.removeEventListener("devicemotion", handleDeviceMotion);
     };
   }, [motionPermission]);
 
@@ -629,93 +746,8 @@ export default function TennisHero({
     canvas.addEventListener("touchmove", handlePointerMove, { passive: false });
     canvas.addEventListener("touchend", handlePointerUp, { passive: false });
 
-    // Enhanced shake detection
-    const handleShake = (intensity: number) => {
-      const now = Date.now();
-      if (now - lastShakeTime.current < 200) return; // Shorter debounce for responsiveness
-      lastShakeTime.current = now;
-
-      // Add new ball very easily when shaking (super sensitive)
-      if (intensity > 2 && Math.random() > 0.3) {
-        // Even lower threshold for easier ball creation
-        const maxBalls = 100;
-
-        // Remove oldest ball if we would exceed the limit (FIFO)
-        if (ballsRef.current.length >= maxBalls) {
-          ballsRef.current.shift(); // Remove oldest ball
-        }
-
-        // Get CTA button position for spawning
-        const buttonRect = ctaButtonRef.current?.getBoundingClientRect();
-        const canvasRect = canvas.getBoundingClientRect();
-        const spawnY = buttonRect
-          ? buttonRect.top - canvasRect.top - 30 // 30px above button
-          : canvas.height * 0.5; // Fallback to middle
-
-        const ball = new InteractiveTennisBall(
-          canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
-          spawnY
-        );
-        // Throw toward the walls with strong horizontal velocity
-        const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
-        ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
-        ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
-        ballsRef.current.push(ball); // Add newest ball
-        setBallCount(ballsRef.current.length);
-
-        // Track shake-generated ball
-        trackBallThrows(1);
-      }
-
-      // Set shake intensity for ball physics - Much stronger!
-      shakeIntensity.current = Math.min(intensity / 2, 20); // 4x stronger, 4x higher max
-    };
-
-    // Advanced shake detection with acceleration tracking
-    let lastX = 0,
-      lastY = 0,
-      lastZ = 0;
-    const handleDeviceMotion = (event: DeviceMotionEvent) => {
-      const acceleration = event.accelerationIncludingGravity;
-      if (
-        acceleration &&
-        acceleration.x !== null &&
-        acceleration.y !== null &&
-        acceleration.z !== null
-      ) {
-        const x = acceleration.x;
-        const y = acceleration.y;
-        const z = acceleration.z;
-
-        // Calculate shake intensity
-        const deltaX = Math.abs(x - lastX);
-        const deltaY = Math.abs(y - lastY);
-        const deltaZ = Math.abs(z - lastZ);
-        const totalDelta = deltaX + deltaY + deltaZ;
-
-        // Track acceleration history for more accurate shake detection
-        accelerationHistory.current.push(totalDelta);
-        if (accelerationHistory.current.length > 10) {
-          accelerationHistory.current.shift();
-        }
-
-        // Calculate average recent acceleration
-        const avgAcceleration =
-          accelerationHistory.current.reduce((a, b) => a + b, 0) /
-          accelerationHistory.current.length;
-
-        if (totalDelta > 1.5 || avgAcceleration > 1) {
-          // More sensitive shake detection
-          handleShake(totalDelta);
-        }
-
-        lastX = x;
-        lastY = y;
-        lastZ = z;
-      }
-    };
-
-    window.addEventListener("devicemotion", handleDeviceMotion);
+    // Note: handleShake and handleDeviceMotion are defined outside this effect
+    // and will be added/removed by the motion setup effect based on permissions
 
     // Ultra-realistic animation loop with collision detection
     const animate = () => {
@@ -798,7 +830,6 @@ export default function TennisHero({
 
     return () => {
       window.removeEventListener("resize", resizeCanvas);
-      window.removeEventListener("devicemotion", handleDeviceMotion);
       
       resizeObserver.disconnect();
 
@@ -899,9 +930,18 @@ export default function TennisHero({
         {/* Add More Balls Button - Now below CTA */}
         <button
           onClick={async () => {
-            // Request motion permission on first interaction (iOS)
+            // Always request motion permission on iOS when not granted
             if (motionPermission !== "granted") {
-              await requestOrientationPermission();
+              const granted = await requestOrientationPermission();
+              if (!granted) {
+                // Permission denied, but still throw balls without motion controls
+                console.log("Motion permission denied, balls will be thrown without motion controls");
+              }
+            }
+            
+            // Always activate physics when button is clicked (even without motion)
+            if (!isPhysicsActive) {
+              setIsPhysicsActive(true);
             }
             
             const canvas = canvasRef.current;
@@ -947,8 +987,9 @@ export default function TennisHero({
             }
           }}
           className={styles.addBallsButton}
+          title={motionPermission === "granted" ? "Lanzar pelotas (Movimiento activado 📱)" : "Lanzar pelotas (Clic para activar movimiento)"}
         >
-          🎾
+          🎾 {motionPermission !== "granted" && "📱"}
         </button>
 
         {/* Trust Indicators */}
