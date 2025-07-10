@@ -1,8 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import Translate from '@docusaurus/Translate';
-import { CardLayout, CardStack, CardHeader, CardContent, CardActions } from '../components/CardLayout';
-import { TennisBallAnimation, TennisScene } from '../components/TennisBallAnimation';
-import styles from './ValuePreviewStep.module.css';
+import React, { useState, useEffect } from "react";
+import Translate from "@docusaurus/Translate";
+import {
+  CardLayout,
+  CardStack,
+  CardHeader,
+  CardContent,
+  CardActions,
+} from "../components/CardLayout";
+import {
+  TennisBallAnimation,
+  TennisScene,
+} from "../components/TennisBallAnimation";
+import styles from "./ValuePreviewStep.module.css";
 
 interface ValuePreviewStepProps {
   onNext: (data: any) => void;
@@ -24,84 +33,91 @@ interface PersonalizedContent {
 
 const getPersonalizedContent = (level: string): PersonalizedContent => {
   switch (level) {
-    case 'beginner':
+    case "beginner":
       return {
-        title: 'Plan de Fundamentos Sólidos',
-        description: 'Perfecto para construir una base técnica correcta desde el inicio',
+        title: "Plan de Fundamentos Sólidos",
+        description:
+          "Perfecto para construir una base técnica correcta desde el inicio",
         benefits: [
-          'Técnicas básicas de golpeo correctas',
-          'Posicionamiento y movimiento en cancha',
-          'Desarrollo de consistencia y confianza',
-          'Fundamentos de estrategia básica'
+          "Técnicas básicas de golpeo correctas",
+          "Posicionamiento y movimiento en cancha",
+          "Desarrollo de consistencia y confianza",
+          "Fundamentos de estrategia básica",
         ],
-        focusAreas: ['Técnica', 'Consistencia', 'Movimiento', 'Fundamentos'],
-        timeframe: '4-6 semanas para ver mejoras',
-        intensity: 'Moderada, 2-3 sesiones por semana',
-        icon: '🌱',
-        color: 'linear-gradient(135deg, #4CAF50, #8BC34A)'
+        focusAreas: ["Técnica", "Consistencia", "Movimiento", "Fundamentos"],
+        timeframe: "4-6 semanas para ver mejoras",
+        intensity: "Moderada, 2-3 sesiones por semana",
+        icon: "🌱",
+        color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
       };
-    
-    case 'intermediate':
+
+    case "intermediate":
       return {
-        title: 'Plan de Desarrollo Avanzado',
-        description: 'Lleva tu juego al siguiente nivel con técnicas refinadas',
+        title: "Plan de Desarrollo Avanzado",
+        description: "Lleva tu juego al siguiente nivel con técnicas refinadas",
         benefits: [
-          'Refinamiento de golpes y variaciones',
-          'Estrategia táctica avanzada',
-          'Mejora de resistencia y velocidad',
-          'Preparación para competencia'
+          "Refinamiento de golpes y variaciones",
+          "Estrategia táctica avanzada",
+          "Mejora de resistencia y velocidad",
+          "Preparación para competencia",
         ],
-        focusAreas: ['Táctica', 'Potencia', 'Resistencia', 'Competencia'],
-        timeframe: '6-8 semanas para dominar',
-        intensity: 'Alta, 3-4 sesiones por semana',
-        icon: '🎾',
-        color: 'linear-gradient(135deg, #2196F3, #1976D2)'
+        focusAreas: ["Táctica", "Potencia", "Resistencia", "Competencia"],
+        timeframe: "6-8 semanas para dominar",
+        intensity: "Alta, 3-4 sesiones por semana",
+        icon: "🎾",
+        color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
       };
-    
-    case 'advanced':
+
+    case "advanced":
       return {
-        title: 'Plan de Perfeccionamiento Elite',
-        description: 'Técnicas avanzadas y estrategias de competidores profesionales',
+        title: "Plan de Perfeccionamiento Elite",
+        description:
+          "Técnicas avanzadas y estrategias de competidores profesionales",
         benefits: [
-          'Técnicas de jugadores profesionales',
-          'Estrategia mental y psicológica',
-          'Optimización de rendimiento',
-          'Preparación para torneos serios'
+          "Técnicas de jugadores profesionales",
+          "Estrategia mental y psicológica",
+          "Optimización de rendimiento",
+          "Preparación para torneos serios",
         ],
-        focusAreas: ['Precisión', 'Estrategia', 'Mental', 'Competencia'],
-        timeframe: '8-10 semanas para perfeccionar',
-        intensity: 'Muy alta, 4-5 sesiones por semana',
-        icon: '🏆',
-        color: 'linear-gradient(135deg, #FF9800, #F57C00)'
+        focusAreas: ["Precisión", "Estrategia", "Mental", "Competencia"],
+        timeframe: "8-10 semanas para perfeccionar",
+        intensity: "Muy alta, 4-5 sesiones por semana",
+        icon: "🏆",
+        color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
       };
-    
-    case 'professional':
+
+    case "professional":
       return {
-        title: 'Plan de Entrenamiento Profesional',
-        description: 'Métodos de entrenadores olímpicos y ATP/WTA',
+        title: "Plan de Entrenamiento Profesional",
+        description: "Métodos de entrenadores olímpicos y ATP/WTA",
         benefits: [
-          'Periodización profesional',
-          'Análisis técnico avanzado',
-          'Preparación física específica',
-          'Estrategias de alto rendimiento'
+          "Periodización profesional",
+          "Análisis técnico avanzado",
+          "Preparación física específica",
+          "Estrategias de alto rendimiento",
         ],
-        focusAreas: ['Periodización', 'Análisis', 'Rendimiento', 'Competencia'],
-        timeframe: '12+ semanas de desarrollo',
-        intensity: 'Profesional, 5-6 sesiones por semana',
-        icon: '👑',
-        color: 'linear-gradient(135deg, #9C27B0, #7B1FA2)'
+        focusAreas: ["Periodización", "Análisis", "Rendimiento", "Competencia"],
+        timeframe: "12+ semanas de desarrollo",
+        intensity: "Profesional, 5-6 sesiones por semana",
+        icon: "👑",
+        color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
       };
-    
+
     default:
-      return getPersonalizedContent('beginner');
+      return getPersonalizedContent("beginner");
   }
 };
 
-export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }: ValuePreviewStepProps) {
+export function ValuePreviewStep({
+  onNext,
+  onBack,
+  data = {},
+  wizardData = {},
+}: ValuePreviewStepProps) {
   const [showContent, setShowContent] = useState(false);
   const [currentBenefit, setCurrentBenefit] = useState(0);
-  
-  const userLevel = wizardData?.level || 'beginner';
+
+  const userLevel = wizardData?.level || "beginner";
   const content = getPersonalizedContent(userLevel);
 
   useEffect(() => {
@@ -126,8 +142,8 @@ export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }:
     onNext({
       previewSeen: true,
       personalizedContent: content,
-      engagementLevel: 'high',
-      timestamp: new Date().toISOString()
+      engagementLevel: "high",
+      timestamp: new Date().toISOString(),
     });
   };
 
@@ -151,9 +167,9 @@ export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }:
     <div className={styles.valuePreviewStep}>
       <CardStack spacing="lg">
         {/* Header with Tennis Scene */}
-        <CardLayout 
-          variant="primary" 
-          padding="lg" 
+        <CardLayout
+          variant="primary"
+          padding="lg"
           animation="slideUp"
           className={styles.headerCard}
           style={{ background: content.color }}
@@ -163,7 +179,7 @@ export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }:
             title={content.title}
             subtitle={content.description}
           />
-          <TennisScene 
+          <TennisScene
             showBall={true}
             showRacket={false}
             ballAnimation="float"
@@ -175,15 +191,13 @@ export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }:
         <CardLayout padding="lg" animation="slideUp">
           <CardContent>
             <div className={styles.benefitsShowcase}>
-              <h3 className={styles.benefitsTitle}>
-                Lo que conseguirás:
-              </h3>
+              <h3 className={styles.benefitsTitle}>Lo que conseguirás:</h3>
               <div className={styles.benefitsList}>
                 {content.benefits.map((benefit, index) => (
                   <div
                     key={index}
                     className={`${styles.benefitItem} ${
-                      index === currentBenefit ? styles.active : ''
+                      index === currentBenefit ? styles.active : ""
                     }`}
                   >
                     <div className={styles.benefitIcon}>✨</div>
@@ -240,8 +254,12 @@ export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }:
             <div className={styles.socialProof}>
               <div className={styles.proofIcon}>🔥</div>
               <div className={styles.proofText}>
-                <p><strong>500+ jugadores</strong> ya han mejorado su juego</p>
-                <p><strong>87%</strong> recomienda este programa</p>
+                <p>
+                  <strong>500+ jugadores</strong> ya han mejorado su juego
+                </p>
+                <p>
+                  <strong>87%</strong> recomienda este programa
+                </p>
               </div>
             </div>
           </CardContent>
@@ -250,7 +268,7 @@ export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }:
         {/* CTA */}
         <CardLayout padding="lg" animation="slideUp">
           <CardActions>
-            <button 
+            <button
               className={styles.ctaButton}
               onClick={handleContinue}
               style={{ background: content.color }}
@@ -261,7 +279,8 @@ export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }:
           </CardActions>
           <div className={styles.ctaNote}>
             <p>
-              Siguiente: Solo necesitamos tu email para enviarte el plan completo
+              Siguiente: Solo necesitamos tu email para enviarte el plan
+              completo
             </p>
           </div>
         </CardLayout>
@@ -269,10 +288,7 @@ export function ValuePreviewStep({ onNext, onBack, data = {}, wizardData = {} }:
         {/* Progress */}
         <div className={styles.progressIndicator}>
           <div className={styles.progressBar}>
-            <div 
-              className={styles.progressFill}
-              style={{ width: '40%' }}
-            />
+            <div className={styles.progressFill} style={{ width: "40%" }} />
           </div>
           <p className={styles.progressText}>
             Paso 2 de 5 • Plan personalizado listo

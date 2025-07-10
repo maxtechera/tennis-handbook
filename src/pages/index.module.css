@@ -36,9 +36,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,12 +51,14 @@
 }
 
 .wizardContainer {
-  background: transparent;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 0; /* No radius on mobile */
   box-shadow: none; /* No shadow on mobile */
   max-width: 100%;
   width: 100%;
-  height: 100vh; /* Full height on mobile */
+  height: 100%;
   overflow: hidden; /* Let inner elements handle scroll */
   animation: slideUp 0.3s ease-out;
   position: relative;
@@ -111,15 +113,15 @@
 }
 
 /* Dark mode adjustments for wizard */
-[data-theme="dark"] .wizardModal {
-  background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
+/* [data-theme="dark"] .wizardModal { */
+/* background-color: rgba(0, 0, 0, 0.3); */
+/* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+/* } */
 
-[data-theme="dark"] .wizardContainer {
+/* [data-theme="dark"] .wizardContainer {
   background: transparent;
-}
+} */
 
 [data-theme="dark"] .wizardCloseButton {
   background: #242526;

@@ -20,21 +20,21 @@
 
 /* Card Variants */
 .card.primary {
-  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
   color: white;
-  border-color: #4CAF50;
+  border-color: #4caf50;
 }
 
 .card.success {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
   color: white;
   border-color: #667eea;
 }
 
 .card.warning {
-  background: linear-gradient(135deg, #FFD700, #FFA000);
-  color: #1A1A1A;
-  border-color: #FFD700;
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
+  color: #1a1a1a;
+  border-color: #ffd700;
 }
 
 .card.primary:hover,
@@ -71,25 +71,35 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { 
+  from {
     opacity: 0;
     transform: translateY(20px);
   }
-  to { 
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes celebration {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Card Stack */
@@ -131,28 +141,33 @@
 }
 
 .badge-primary {
-  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
   color: white;
 }
 
 .badge-success {
-  background: linear-gradient(135deg, #2196F3, #1976D2);
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
   color: white;
 }
 
 .badge-warning {
-  background: linear-gradient(135deg, #FFD700, #FFA000);
-  color: #1A1A1A;
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
+  color: #1a1a1a;
 }
 
 .badge-danger {
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
   color: white;
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .icon {
@@ -163,8 +178,13 @@
 }
 
 @keyframes iconFloat {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-5px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 .title {
@@ -222,36 +242,36 @@
   .card {
     border-radius: 12px;
   }
-  
+
   .card.padding-sm {
     padding: 0.75rem;
   }
-  
+
   .card.padding-md {
     padding: 1rem;
   }
-  
+
   .card.padding-lg {
     padding: 1.5rem;
   }
-  
+
   .icon {
     font-size: 2.5rem;
   }
-  
+
   .title {
     font-size: 1.25rem;
   }
-  
+
   .subtitle {
     font-size: 0.9rem;
   }
-  
+
   .cardActions {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .cardActions.align-left,
   .cardActions.align-center,
   .cardActions.align-right {
@@ -260,22 +280,22 @@
 }
 
 /* Dark mode support */
-[data-theme='dark'] .card {
+[data-theme="dark"] .card {
   background: #242526;
   border-color: #3a3b3c;
   color: #e3e3e3;
 }
 
-[data-theme='dark'] .card:hover {
+[data-theme="dark"] .card:hover {
   background: #2a2b2c;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-[data-theme='dark'] .title {
+[data-theme="dark"] .title {
   color: #e3e3e3;
 }
 
-[data-theme='dark'] .subtitle {
+[data-theme="dark"] .subtitle {
   color: #b0b3b8;
 }
 
@@ -284,20 +304,20 @@
   .card.padding-lg {
     padding: 1rem;
   }
-  
+
   .icon {
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .title {
     font-size: 1.125rem;
   }
-  
+
   .cardHeader {
     margin-bottom: 1rem;
   }
-  
+
   .cardContent {
     margin-bottom: 1rem;
   }

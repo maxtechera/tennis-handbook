@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
-import Translate from '@docusaurus/Translate';
-import { CardLayout, CardStack, CardHeader, CardContent, CardActions } from '../components/CardLayout';
-import { TennisBallAnimation } from '../components/TennisBallAnimation';
-import styles from './MicroQuizStep.module.css';
+import React, { useState } from "react";
+import Translate from "@docusaurus/Translate";
+import {
+  CardLayout,
+  CardStack,
+  CardHeader,
+  CardContent,
+  CardActions,
+} from "../components/CardLayout";
+import { TennisBallAnimation } from "../components/TennisBallAnimation";
+import { tennisBallEvents } from "@site/src/utils/tennis-ball-events";
+import styles from "./MicroQuizStep.module.css";
 
 interface MicroQuizStepProps {
   onNext: (data: any) => void;
@@ -10,7 +17,7 @@ interface MicroQuizStepProps {
   data?: any;
 }
 
-type TennisLevel = 'beginner' | 'intermediate' | 'advanced' | 'professional';
+type TennisLevel = "beginner" | "intermediate" | "advanced" | "professional";
 
 interface LevelOption {
   id: TennisLevel;
@@ -22,36 +29,40 @@ interface LevelOption {
 
 const levelOptions: LevelOption[] = [
   {
-    id: 'beginner',
-    title: 'Principiante',
-    description: 'Nuevo en el tenis o menos de 1 año',
-    icon: '🌱',
-    color: 'linear-gradient(135deg, #4CAF50, #8BC34A)'
+    id: "beginner",
+    title: "Principiante",
+    description: "Nuevo en el tenis o menos de 1 año",
+    icon: "🌱",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'intermediate',
-    title: 'Intermedio',
-    description: '1-3 años jugando regularmente',
-    icon: '🎾',
-    color: 'linear-gradient(135deg, #2196F3, #1976D2)'
+    id: "intermediate",
+    title: "Intermedio",
+    description: "1-3 años jugando regularmente",
+    icon: "🎾",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'advanced',
-    title: 'Avanzado',
-    description: '3+ años, juego competitivo',
-    icon: '🏆',
-    color: 'linear-gradient(135deg, #FF9800, #F57C00)'
+    id: "advanced",
+    title: "Avanzado",
+    description: "3+ años, juego competitivo",
+    icon: "🏆",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'professional',
-    title: 'Profesional',
-    description: 'Competidor serio o entrenador',
-    icon: '👑',
-    color: 'linear-gradient(135deg, #9C27B0, #7B1FA2)'
-  }
+    id: "professional",
+    title: "Profesional",
+    description: "Competidor serio o entrenador",
+    icon: "👑",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
+  },
 ];
 
-export function MicroQuizStep({ onNext, onBack, data = {} }: MicroQuizStepProps) {
+export function MicroQuizStep({
+  onNext,
+  onBack,
+  data = {},
+}: MicroQuizStepProps) {
   const [selectedLevel, setSelectedLevel] = useState<TennisLevel | null>(
     data.level || null
   );
@@ -60,13 +71,16 @@ export function MicroQuizStep({ onNext, onBack, data = {} }: MicroQuizStepProps)
   const handleLevelSelect = (level: TennisLevel) => {
     setSelectedLevel(level);
     setShowCelebration(true);
-    
+
+    // Trigger small tennis ball celebration
+    tennisBallEvents.explode(5); // 5 balls for quiz selection
+
     // Auto-advance after celebration
     setTimeout(() => {
       onNext({
         level,
         engagement: 100, // High engagement for completing first step
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
     }, 1000);
   };
@@ -86,11 +100,12 @@ export function MicroQuizStep({ onNext, onBack, data = {} }: MicroQuizStepProps)
             <button
               key={option.id}
               className={`${styles.levelOption} ${
-                selectedLevel === option.id ? styles.selected : ''
+                selectedLevel === option.id ? styles.selected : ""
               }`}
               onClick={() => handleLevelSelect(option.id)}
               style={{
-                background: selectedLevel === option.id ? option.color : undefined
+                background:
+                  selectedLevel === option.id ? option.color : undefined,
               }}
             >
               <div className={styles.optionIcon}>{option.icon}</div>
@@ -99,9 +114,7 @@ export function MicroQuizStep({ onNext, onBack, data = {} }: MicroQuizStepProps)
                 <p className={styles.optionDescription}>{option.description}</p>
               </div>
               {selectedLevel === option.id && (
-                <div className={styles.selectedIndicator}>
-                  ✓
-                </div>
+                <div className={styles.selectedIndicator}>✓</div>
               )}
             </button>
           ))}

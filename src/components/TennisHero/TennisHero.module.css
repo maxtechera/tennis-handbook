@@ -1,8 +1,8 @@
 .tennisHero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
-  height: 100vh;
+  height: 100dvh;
   height: 100dvh; /* Dynamic viewport height for mobile browsers */
   overflow: hidden;
   background: linear-gradient(135deg, #2e7d32, #1b5e20);
@@ -20,7 +20,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   height: 100dvh; /* Dynamic viewport height for mobile browsers */
   pointer-events: auto;
   z-index: 5;
@@ -45,7 +45,8 @@
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, border-color 0.3s ease;
   animation: pulse 2s infinite;
   pointer-events: auto; /* Ensure button can be clicked */
 }
@@ -80,7 +81,7 @@
 
 /* Tennis Court Outer Lines */
 .courtLines::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10%;
   left: 15%;
@@ -92,7 +93,7 @@
 
 /* Singles Court Lines */
 .courtLines::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 10%;
   left: 20%;
@@ -114,7 +115,7 @@
 
 /* Top baseline */
 .baseline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-80vh + 10vh + 10vh); /* Mirror to top */
   left: 0;
@@ -134,7 +135,7 @@
 
 /* Top service line */
 .serviceLine::before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-50vh + 25vh + 25vh); /* Mirror to top */
   left: 0;
@@ -155,7 +156,7 @@
 
 /* Top center service line */
 .centerLine::before {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-65vh); /* Position at top */
   left: 0;
@@ -177,7 +178,7 @@
 
 /* Net pattern */
 .netPost::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -20px;
   left: 0;
@@ -194,7 +195,7 @@
 
 /* Net posts */
 .netPost::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -30px;
   height: 60px;
@@ -340,7 +341,8 @@
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, border-color 0.3s ease;
   animation: fadeInUp 0.8s ease-out 0.8s both, pulse 2s ease-in-out infinite;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -573,9 +575,9 @@
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .tennisHero {
-    min-height: 100vh;
+    min-height: 100dvh;
     min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
-    height: 100vh;
+    height: 100dvh;
     height: 100dvh; /* Dynamic viewport height for mobile browsers */
   }
 
@@ -615,7 +617,7 @@
   .courtLines {
     opacity: 0.1;
   }
-  
+
   /* Adjust court lines for mobile */
   .courtLines::before {
     left: 5%;
@@ -623,18 +625,18 @@
     top: 15%;
     bottom: 15%;
   }
-  
+
   .courtLines::after {
     left: 10%;
     right: 10%;
   }
-  
+
   .baseline,
   .serviceLine {
     left: 5%;
     right: 5%;
   }
-  
+
   .netPost {
     left: 0;
     right: 0;

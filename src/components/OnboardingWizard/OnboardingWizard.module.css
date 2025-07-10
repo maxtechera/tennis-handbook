@@ -1,8 +1,9 @@
 /* Mobile-first base styles */
 .wizardContainer {
-  display: flex;
+  display: grid;
+  grid-template-rows: 60px auto;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
   background: transparent;
   position: relative;
   overflow: hidden;
@@ -24,7 +25,6 @@
   min-height: 60px;
   position: relative;
 }
-
 
 .skipButton {
   background: none;
@@ -54,20 +54,25 @@
 }
 
 .stepContent {
+  overflow: auto;
+  height: calc(100dvh - 138px);
   flex: 1;
   padding: 0;
   padding-bottom: 120px; /* Space for fixed footer */
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   width: 100%;
   transform: translateX(0);
-  transition: transform 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   position: relative;
   z-index: 10; /* Above blur overlay */
+}
+.stepContent > div {
+  min-height: 100%;
 }
 
 /* Forward animation (next step) - slide left */
@@ -82,7 +87,7 @@
 
 /* Carousel-style enter animations */
 .stepContent {
-  animation: slideInFromRight 0.35s cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+  animation: slideInFromRight 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 @keyframes slideInFromRight {
@@ -131,7 +136,7 @@
 .backIcon {
   width: 18px;
   height: 18px;
-  color: #666666;
+  color: white;
 }
 
 .wizardFooter {
@@ -198,7 +203,7 @@
 }
 
 .navButton:focus {
-  outline: 2px solid #32CD32;
+  outline: 2px solid #32cd32;
   outline-offset: 2px;
 }
 
@@ -288,39 +293,39 @@
 }
 
 /* Dark mode adjustments */
-[data-theme='dark'] .wizardContainer {
+[data-theme="dark"] .wizardContainer {
   background: transparent;
 }
 
-[data-theme='dark'] .wizardHeader {
+[data-theme="dark"] .wizardHeader {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-[data-theme='dark'] .wizardFooter {
+[data-theme="dark"] .wizardFooter {
   background: transparent;
 }
 
-[data-theme='dark'] .backButton {
+[data-theme="dark"] .backButton {
   background: transparent;
 }
 
-[data-theme='dark'] .backButton:hover {
+[data-theme="dark"] .backButton:hover {
   background: rgba(255, 255, 255, 0.05);
 }
 
-[data-theme='dark'] .backIcon {
-  color: #b0b3b8;
+[data-theme="dark"] .backIcon {
+  color: white;
 }
 
-[data-theme='dark'] .nextButton {
-  background: linear-gradient(135deg, #32CD32, #228B22);
+[data-theme="dark"] .nextButton {
+  background: linear-gradient(135deg, #32cd32, #228b22);
   color: #ffffff;
 }
 
-[data-theme='dark'] .nextButton:not(:disabled):hover {
-  background: linear-gradient(135deg, #228B22, #006400);
+[data-theme="dark"] .nextButton:not(:disabled):hover {
+  background: linear-gradient(135deg, #228b22, #006400);
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(50, 205, 50, 0.4);
 }
@@ -335,7 +340,7 @@
     transition: none;
     animation: none;
   }
-  
+
   .stepContent.animating.forward,
   .stepContent.animating.backward {
     transition: none;

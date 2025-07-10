@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styles from './MicroQuizStep.module.css';
+import React, { useState } from "react";
+import styles from "./MicroQuizStep.module.css";
 
 interface GoalsQuizStepProps {
   onNext: (data: any) => void;
@@ -7,7 +7,7 @@ interface GoalsQuizStepProps {
   data?: any;
 }
 
-type TennisGoal = 'fitness' | 'competitive' | 'recreational' | 'professional';
+type TennisGoal = "fitness" | "competitive" | "recreational" | "professional";
 
 interface GoalOption {
   id: TennisGoal;
@@ -19,36 +19,40 @@ interface GoalOption {
 
 const goalOptions: GoalOption[] = [
   {
-    id: 'fitness',
-    title: 'Fitness y Salud',
-    description: 'Mejorar mi condición física general',
-    icon: '💪',
-    color: 'linear-gradient(135deg, #4CAF50, #8BC34A)'
+    id: "fitness",
+    title: "Fitness y Salud",
+    description: "Mejorar mi condición física general",
+    icon: "💪",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'recreational',
-    title: 'Diversión',
-    description: 'Jugar por placer y socializar',
-    icon: '😊',
-    color: 'linear-gradient(135deg, #FF9800, #F57C00)'
+    id: "recreational",
+    title: "Diversión",
+    description: "Jugar por placer y socializar",
+    icon: "😊",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'competitive',
-    title: 'Competición',
-    description: 'Mejorar mi juego competitivo',
-    icon: '🏆',
-    color: 'linear-gradient(135deg, #2196F3, #1976D2)'
+    id: "competitive",
+    title: "Competición",
+    description: "Mejorar mi juego competitivo",
+    icon: "🏆",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'professional',
-    title: 'Alto Rendimiento',
-    description: 'Entrenar como un profesional',
-    icon: '👑',
-    color: 'linear-gradient(135deg, #9C27B0, #7B1FA2)'
-  }
+    id: "professional",
+    title: "Alto Rendimiento",
+    description: "Entrenar como un profesional",
+    icon: "👑",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
+  },
 ];
 
-export function GoalsQuizStep({ onNext, onBack, data = {} }: GoalsQuizStepProps) {
+export function GoalsQuizStep({
+  onNext,
+  onBack,
+  data = {},
+}: GoalsQuizStepProps) {
   const [selectedGoal, setSelectedGoal] = useState<TennisGoal | null>(
     data.goal || null
   );
@@ -57,13 +61,13 @@ export function GoalsQuizStep({ onNext, onBack, data = {} }: GoalsQuizStepProps)
   const handleGoalSelect = (goal: TennisGoal) => {
     setSelectedGoal(goal);
     setShowCelebration(true);
-    
+
     // Auto-advance after celebration
     setTimeout(() => {
       onNext({
         goal,
         engagement: 100,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
     }, 1000);
   };
@@ -83,11 +87,12 @@ export function GoalsQuizStep({ onNext, onBack, data = {} }: GoalsQuizStepProps)
             <button
               key={option.id}
               className={`${styles.levelOption} ${
-                selectedGoal === option.id ? styles.selected : ''
+                selectedGoal === option.id ? styles.selected : ""
               }`}
               onClick={() => handleGoalSelect(option.id)}
               style={{
-                background: selectedGoal === option.id ? option.color : undefined
+                background:
+                  selectedGoal === option.id ? option.color : undefined,
               }}
             >
               <div className={styles.optionIcon}>{option.icon}</div>
@@ -96,9 +101,7 @@ export function GoalsQuizStep({ onNext, onBack, data = {} }: GoalsQuizStepProps)
                 <p className={styles.optionDescription}>{option.description}</p>
               </div>
               {selectedGoal === option.id && (
-                <div className={styles.selectedIndicator}>
-                  ✓
-                </div>
+                <div className={styles.selectedIndicator}>✓</div>
               )}
             </button>
           ))}

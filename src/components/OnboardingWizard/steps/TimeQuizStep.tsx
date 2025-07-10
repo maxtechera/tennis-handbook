@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styles from './MicroQuizStep.module.css';
+import React, { useState } from "react";
+import styles from "./MicroQuizStep.module.css";
 
 interface TimeQuizStepProps {
   onNext: (data: any) => void;
@@ -7,7 +7,7 @@ interface TimeQuizStepProps {
   data?: any;
 }
 
-type TimeCommitment = 'minimal' | 'moderate' | 'dedicated' | 'intensive';
+type TimeCommitment = "minimal" | "moderate" | "dedicated" | "intensive";
 
 interface TimeOption {
   id: TimeCommitment;
@@ -19,33 +19,33 @@ interface TimeOption {
 
 const timeOptions: TimeOption[] = [
   {
-    id: 'minimal',
-    title: '30-45 min',
-    description: '2-3 veces por semana',
-    icon: '⏰',
-    color: 'linear-gradient(135deg, #4CAF50, #8BC34A)'
+    id: "minimal",
+    title: "30-45 min",
+    description: "2-3 veces por semana",
+    icon: "⏰",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'moderate',
-    title: '1 hora',
-    description: '3-4 veces por semana',
-    icon: '🕐',
-    color: 'linear-gradient(135deg, #2196F3, #1976D2)'
+    id: "moderate",
+    title: "1 hora",
+    description: "3-4 veces por semana",
+    icon: "🕐",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'dedicated',
-    title: '1-2 horas',
-    description: '4-5 veces por semana',
-    icon: '⏲️',
-    color: 'linear-gradient(135deg, #FF9800, #F57C00)'
+    id: "dedicated",
+    title: "1-2 horas",
+    description: "4-5 veces por semana",
+    icon: "⏲️",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'intensive',
-    title: '2+ horas',
-    description: '6+ veces por semana',
-    icon: '⏱️',
-    color: 'linear-gradient(135deg, #9C27B0, #7B1FA2)'
-  }
+    id: "intensive",
+    title: "2+ horas",
+    description: "6+ veces por semana",
+    icon: "⏱️",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
+  },
 ];
 
 export function TimeQuizStep({ onNext, onBack, data = {} }: TimeQuizStepProps) {
@@ -57,13 +57,13 @@ export function TimeQuizStep({ onNext, onBack, data = {} }: TimeQuizStepProps) {
   const handleTimeSelect = (time: TimeCommitment) => {
     setSelectedTime(time);
     setShowCelebration(true);
-    
+
     // Auto-advance after celebration
     setTimeout(() => {
       onNext({
         timeCommitment: time,
         engagement: 100,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       });
     }, 1000);
   };
@@ -83,11 +83,12 @@ export function TimeQuizStep({ onNext, onBack, data = {} }: TimeQuizStepProps) {
             <button
               key={option.id}
               className={`${styles.levelOption} ${
-                selectedTime === option.id ? styles.selected : ''
+                selectedTime === option.id ? styles.selected : ""
               }`}
               onClick={() => handleTimeSelect(option.id)}
               style={{
-                background: selectedTime === option.id ? option.color : undefined
+                background:
+                  selectedTime === option.id ? option.color : undefined,
               }}
             >
               <div className={styles.optionIcon}>{option.icon}</div>
@@ -96,9 +97,7 @@ export function TimeQuizStep({ onNext, onBack, data = {} }: TimeQuizStepProps) {
                 <p className={styles.optionDescription}>{option.description}</p>
               </div>
               {selectedTime === option.id && (
-                <div className={styles.selectedIndicator}>
-                  ✓
-                </div>
+                <div className={styles.selectedIndicator}>✓</div>
               )}
             </button>
           ))}

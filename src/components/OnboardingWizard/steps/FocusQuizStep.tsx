@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styles from './MicroQuizStep.module.css';
+import React, { useState } from "react";
+import styles from "./MicroQuizStep.module.css";
 
 interface FocusQuizStepProps {
   onNext: (data: any) => void;
@@ -7,7 +7,7 @@ interface FocusQuizStepProps {
   data?: any;
 }
 
-type FocusArea = 'technique' | 'power' | 'endurance' | 'strategy';
+type FocusArea = "technique" | "power" | "endurance" | "strategy";
 
 interface FocusOption {
   id: FocusArea;
@@ -19,36 +19,40 @@ interface FocusOption {
 
 const focusOptions: FocusOption[] = [
   {
-    id: 'technique',
-    title: 'Técnica',
-    description: 'Perfeccionar golpes y movimientos',
-    icon: '🎯',
-    color: 'linear-gradient(135deg, #4CAF50, #8BC34A)'
+    id: "technique",
+    title: "Técnica",
+    description: "Perfeccionar golpes y movimientos",
+    icon: "🎯",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'power',
-    title: 'Potencia',
-    description: 'Aumentar fuerza y velocidad',
-    icon: '💥',
-    color: 'linear-gradient(135deg, #FF9800, #F57C00)'
+    id: "power",
+    title: "Potencia",
+    description: "Aumentar fuerza y velocidad",
+    icon: "💥",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'endurance',
-    title: 'Resistencia',
-    description: 'Mejorar condición cardiovascular',
-    icon: '🏃‍♂️',
-    color: 'linear-gradient(135deg, #2196F3, #1976D2)'
+    id: "endurance",
+    title: "Resistencia",
+    description: "Mejorar condición cardiovascular",
+    icon: "🏃‍♂️",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
   },
   {
-    id: 'strategy',
-    title: 'Táctica',
-    description: 'Desarrollar juego inteligente',
-    icon: '🧠',
-    color: 'linear-gradient(135deg, #9C27B0, #7B1FA2)'
-  }
+    id: "strategy",
+    title: "Táctica",
+    description: "Desarrollar juego inteligente",
+    icon: "🧠",
+    color: "linear-gradient(135deg, #4CAF50, #8BC34A)",
+  },
 ];
 
-export function FocusQuizStep({ onNext, onBack, data = {} }: FocusQuizStepProps) {
+export function FocusQuizStep({
+  onNext,
+  onBack,
+  data = {},
+}: FocusQuizStepProps) {
   const [selectedFocus, setSelectedFocus] = useState<FocusArea | null>(
     data.focusArea || null
   );
@@ -57,14 +61,14 @@ export function FocusQuizStep({ onNext, onBack, data = {} }: FocusQuizStepProps)
   const handleFocusSelect = (focus: FocusArea) => {
     setSelectedFocus(focus);
     setShowCelebration(true);
-    
+
     // Extended sequence: celebration → analyzing → value reveal → advance
     setTimeout(() => {
       onNext({
         focusArea: focus,
         engagement: 100,
         timestamp: new Date().toISOString(),
-        triggerAnalyzing: true // Signal to start analyzing sequence
+        triggerAnalyzing: true, // Signal to start analyzing sequence
       });
     }, 1000);
   };
@@ -84,11 +88,12 @@ export function FocusQuizStep({ onNext, onBack, data = {} }: FocusQuizStepProps)
             <button
               key={option.id}
               className={`${styles.levelOption} ${
-                selectedFocus === option.id ? styles.selected : ''
+                selectedFocus === option.id ? styles.selected : ""
               }`}
               onClick={() => handleFocusSelect(option.id)}
               style={{
-                background: selectedFocus === option.id ? option.color : undefined
+                background:
+                  selectedFocus === option.id ? option.color : undefined,
               }}
             >
               <div className={styles.optionIcon}>{option.icon}</div>
@@ -97,9 +102,7 @@ export function FocusQuizStep({ onNext, onBack, data = {} }: FocusQuizStepProps)
                 <p className={styles.optionDescription}>{option.description}</p>
               </div>
               {selectedFocus === option.id && (
-                <div className={styles.selectedIndicator}>
-                  ✓
-                </div>
+                <div className={styles.selectedIndicator}>✓</div>
               )}
             </button>
           ))}

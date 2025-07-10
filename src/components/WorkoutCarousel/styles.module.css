@@ -261,7 +261,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   z-index: 10000;
   border-radius: 0;
   background: #000;
@@ -272,7 +272,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background: rgba(0, 0, 0, 0.8);
   z-index: 9999;
   cursor: pointer;
@@ -310,7 +310,8 @@
   line-height: 1;
 }
 
-.instructions, .cues {
+.instructions,
+.cues {
   background: #2a2a2a;
   border: 1px solid #404040;
   border-radius: 8px;
@@ -319,20 +320,23 @@
   text-align: left;
 }
 
-.instructions h4, .cues h4 {
+.instructions h4,
+.cues h4 {
   margin: 0 0 0.75rem 0;
   font-size: 1rem;
   color: #f5f5f5;
   font-weight: 600;
 }
 
-.instructions ul, .cues ul {
+.instructions ul,
+.cues ul {
   margin: 0;
   padding-left: 1.5rem;
   list-style: none;
 }
 
-.instructions li, .cues li {
+.instructions li,
+.cues li {
   margin-bottom: 0.75rem;
   color: #d0d0d0;
   line-height: 1.4;
@@ -420,15 +424,15 @@
   .exerciseName {
     font-size: 1.8rem;
   }
-  
+
   .exerciseDetails {
     gap: 1.5rem;
   }
-  
+
   .specValue {
     font-size: 1.6rem;
   }
-  
+
   .exerciseVideo {
     height: 30vh;
     min-height: 180px;
@@ -439,52 +443,52 @@
   .exerciseDetails {
     gap: 1rem;
   }
-  
+
   .exerciseHeader {
     flex-direction: column;
     gap: 0.75rem;
     align-items: center;
   }
-  
+
   .exerciseName {
     font-size: 1.6rem;
     text-align: center;
   }
-  
+
   .exerciseCounter {
     align-self: center;
   }
-  
+
   .specValue {
     font-size: 1.4rem;
   }
-  
+
   .exerciseVideo {
     height: 25vh;
     min-height: 160px;
   }
-  
+
   .navigationControls {
     padding: 1rem;
   }
-  
+
   .navBtn {
     padding: 0.75rem;
     font-size: 0.9rem;
   }
-  
+
   .nextBtn {
     font-size: 1rem;
     padding: 0.75rem;
   }
-  
+
   .stickyWorkoutToggle {
     bottom: 1rem;
     left: 1rem;
     right: 1rem;
     transform: none;
   }
-  
+
   .stickyStartBtn {
     width: 100%;
     padding: 1rem;
@@ -497,7 +501,7 @@
   .nextBtn:hover {
     background: #f5f5f5;
   }
-  
+
   .navBtn:hover {
     background: #2a2a2a;
   }
@@ -508,16 +512,16 @@
   .exerciseCard {
     padding: 1rem 1.5rem;
   }
-  
+
   .exerciseName {
     font-size: 1.5rem;
   }
-  
+
   .workoutHeader {
     padding: 1rem;
     padding-top: calc(1rem + env(safe-area-inset-top));
   }
-  
+
   .workoutTitle {
     font-size: 1.3rem;
     margin: 1rem 0 0.5rem 0;

@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Elite Tennis Training",
+  title: "Tenis Manual",
   tagline: "Entrena como los #1 del mundo",
   favicon: "img/logo.png",
 
@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://tennis-training.dev",
+  url: "https://tenis.mtech.uy",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -175,7 +175,7 @@ const config: Config = {
       },
       {
         name: "application-name",
-        content: "Elite Tennis Training",
+        content: "Tenis Manual",
       },
       {
         name: "msapplication-TileColor",
@@ -192,11 +192,12 @@ const config: Config = {
       },
       {
         property: "og:title",
-        content: "Elite Tennis Training - Entrena como los #1 del mundo",
+        content: "Tenis Manual - Entrena como los #1 del mundo",
       },
       {
         property: "og:description",
-        content: "Métodos exactos de entrenadores de Alcaraz, Sinner y medallistas olímpicos. Rutina personalizada GRATIS.",
+        content:
+          "Métodos exactos de entrenadores de Alcaraz, Sinner y medallistas olímpicos. Rutina personalizada GRATIS.",
       },
       {
         name: "twitter:card",
@@ -204,7 +205,7 @@ const config: Config = {
       },
       {
         name: "twitter:title",
-        content: "Elite Tennis Training",
+        content: "Tenis Manual",
       },
       {
         name: "twitter:description",
@@ -213,7 +214,7 @@ const config: Config = {
     ],
 
     navbar: {
-      title: "Tennis Handbook",
+      title: "Tenis Manual",
       logo: {
         alt: "Tennis Training Logo",
         src: "img/logo.png",
@@ -294,7 +295,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Elite Tennis Training Research. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Tenis Manual Research. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

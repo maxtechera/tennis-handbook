@@ -3,6 +3,7 @@ import Translate from "@docusaurus/Translate";
 import clsx from "clsx";
 import styles from "./TennisHero.module.css";
 import { sessionManager } from "../../utils/session";
+import { tennisBallEvents } from "../../utils/tennis-ball-events";
 
 // Ultra-realistic physics ball class with collision and grabbing
 class InteractiveTennisBall {
@@ -36,7 +37,7 @@ class InteractiveTennisBall {
     this.gravityScale = 1;
     this.color = "#CFFF00";
     this.sleeping = false;
-    this.sleepThreshold = 0.5; // Increased threshold to reduce twitching
+    this.sleepThreshold = 0.1; // Lower threshold so balls sleep less easily
     this.sleepFrames = 0;
     this.lastX = x;
     this.lastY = y;
@@ -118,8 +119,13 @@ class InteractiveTennisBall {
     const minDistance = this.radius + other.radius;
 
     if (distance < minDistance && distance > 0.001) {
-      // Skip if both balls are sleeping
-      if (this.sleeping && other.sleeping) return;
+      // Wake up sleeping balls on collision
+      if (this.sleeping || other.sleeping) {
+        this.sleeping = false;
+        other.sleeping = false;
+        this.sleepFrames = 0;
+        other.sleepFrames = 0;
+      }
 
       // Collision detected - separate balls with dampening
       const overlap = minDistance - distance;
@@ -153,10 +159,10 @@ class InteractiveTennisBall {
 
       // Collision impulse with mass consideration
       const impulse = (2 * speed) / (this.mass + other.mass);
-      const restitution = Math.min(this.restitution, other.restitution) * 0.5; // Less bouncy when piled
+      const restitution = Math.min(this.restitution, other.restitution) * 0.8; // More bouncy collisions
 
       // Apply impulse to both balls with dampening
-      const impulseDamping = 0.7;
+      const impulseDamping = 0.85; // Less damping for livelier collisions
       if (!this.sleeping) {
         this.vx += impulse * other.mass * nx * restitution * impulseDamping;
         this.vy += impulse * other.mass * ny * restitution * impulseDamping;
@@ -166,16 +172,22 @@ class InteractiveTennisBall {
         other.vy -= impulse * this.mass * ny * restitution * impulseDamping;
       }
 
-      // Wake up if hit hard enough
+      // Always wake up on any collision
       const impulseMagnitude = Math.abs(impulse);
-      if (impulseMagnitude > 5) {
-        if (this.sleeping) {
-          this.sleeping = false;
-          this.sleepFrames = 0;
-        }
-        if (other.sleeping) {
-          other.sleeping = false;
-          other.sleepFrames = 0;
+      if (impulseMagnitude > 0.5) {
+        // Much lower threshold
+        this.sleeping = false;
+        other.sleeping = false;
+        this.sleepFrames = 0;
+        other.sleepFrames = 0;
+
+        // Give a little boost to make collisions more fun
+        if (impulseMagnitude > 1) {
+          const boostFactor = 1.2;
+          this.vx *= boostFactor;
+          this.vy *= boostFactor;
+          other.vx *= boostFactor;
+          other.vy *= boostFactor;
         }
       }
     }
@@ -198,11 +210,11 @@ class InteractiveTennisBall {
 
     // Skip physics if ball is sleeping (like real balls at rest)
     if (this.sleeping) {
-      // Only wake up if there's significant movement or device tilt
+      // Wake up more easily from device tilt or shake
       if (
-        Math.abs(gravityX) > 0.3 ||
-        Math.abs(gravityY - 0.3) > 0.3 ||
-        shake > 5
+        Math.abs(gravityX) > 0.15 ||
+        Math.abs(gravityY - 0.3) > 0.15 ||
+        shake > 1
       ) {
         this.sleeping = false;
         this.sleepFrames = 0;
@@ -268,11 +280,15 @@ class InteractiveTennisBall {
     const positionChange = Math.abs(this.x - prevX) + Math.abs(this.y - prevY);
 
     // Increment sleep frames if ball is barely moving
-    if (totalVelocity < this.sleepThreshold && positionChange < 0.1) {
+    if (
+      totalVelocity < this.sleepThreshold &&
+      positionChange < 0.05 &&
+      !bounced
+    ) {
       this.sleepFrames++;
 
-      // Go to sleep after being still for several frames
-      if (this.sleepFrames > 10) {
+      // Go to sleep after being still for much longer (30 frames instead of 10)
+      if (this.sleepFrames > 30) {
         this.sleeping = true;
         this.vx = 0;
         this.vy = 0;
@@ -621,6 +637,63 @@ export default function TennisHero({
     [trackBallThrows]
   );
 
+  // Function to spawn celebration balls
+  const spawnCelebrationBalls = useCallback((count: number = 20) => {
+    const canvas = canvasRef.current;
+    if (!canvas || !isPhysicsActive) return;
+    
+    const maxBalls = 1000;
+    const ballsToAdd = count;
+    
+    // Remove oldest balls if we would exceed the limit (FIFO)
+    const currentCount = ballsRef.current.length;
+    const ballsToRemove = Math.max(0, currentCount + ballsToAdd - maxBalls);
+    
+    if (ballsToRemove > 0) {
+      ballsRef.current.splice(0, ballsToRemove);
+    }
+    
+    // Add celebration balls with firework-like pattern
+    for (let i = 0; i < ballsToAdd; i++) {
+      // Get center of canvas for spawn point
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+      
+      const ball = new InteractiveTennisBall(
+        centerX + (Math.random() - 0.5) * 40, // Center with small variation
+        centerY
+      );
+      
+      // Create firework explosion pattern
+      const angle = (Math.PI * 2 * i) / ballsToAdd + Math.random() * 0.3;
+      const speed = 15 + Math.random() * 10; // Strong outward velocity
+      
+      ball.vx = Math.cos(angle) * speed;
+      ball.vy = Math.sin(angle) * speed - 5; // Slight upward bias
+      
+      ballsRef.current.push(ball);
+    }
+    
+    setBallCount(ballsRef.current.length);
+    trackBallThrows(ballsToAdd);
+  }, [isPhysicsActive, trackBallThrows]);
+
+  // Subscribe to tennis ball events
+  useEffect(() => {
+    const unsubscribe = tennisBallEvents.subscribe((count) => {
+      // Ensure physics is active first
+      if (!isPhysicsActive) {
+        setIsPhysicsActive(true);
+        // Wait a frame for physics to initialize
+        setTimeout(() => spawnCelebrationBalls(count), 100);
+      } else {
+        spawnCelebrationBalls(count);
+      }
+    });
+    
+    return unsubscribe;
+  }, [isPhysicsActive, spawnCelebrationBalls]);
+
   // Fetch ball stats on mount
   useEffect(() => {
     fetchBallStats();
@@ -747,7 +820,7 @@ export default function TennisHero({
       mousePos.current = pos;
 
       // Create area-of-effect explosion pushing all nearby balls away
-      const explosionRadius = 80; // Radius of effect
+      const explosionRadius = 120; // Larger radius of effect
       let ballsAffected = 0;
 
       for (const ball of ballsRef.current) {
@@ -758,13 +831,14 @@ export default function TennisHero({
         if (distance < explosionRadius) {
           ballsAffected++;
           ball.sleeping = false;
+          ball.sleepFrames = 0; // Reset sleep counter
 
           // Calculate direction away from click point
           const angle = Math.atan2(dy, dx);
 
           // Force decreases with distance (closer = stronger push)
-          const maxForce = 15;
-          const forceMultiplier = Math.max(0.2, 1 - distance / explosionRadius);
+          const maxForce = 20; // Stronger force
+          const forceMultiplier = Math.max(0.3, 1 - distance / explosionRadius);
           const force = maxForce * forceMultiplier;
 
           // Apply force in direction away from click
@@ -922,7 +996,17 @@ export default function TennisHero({
       });
 
       // Apply shake effect and update balls
-      ballsRef.current.forEach((ball) => {
+      ballsRef.current.forEach((ball, index) => {
+        // Periodic random wake-up to keep things lively
+        if (ball.sleeping && Math.random() < 0.002) {
+          // 0.2% chance per frame
+          ball.sleeping = false;
+          ball.sleepFrames = 0;
+          // Give a small random impulse
+          ball.vx = (Math.random() - 0.5) * 2;
+          ball.vy = -Math.random() * 3 - 1; // Slight upward bias
+        }
+
         ball.update(
           canvas.width,
           canvas.height,
@@ -1033,6 +1117,21 @@ export default function TennisHero({
           </Translate>
         </p>
         {/* Add More Balls Button - Now below CTA */}
+
+        {/* CTA Button */}
+        <button
+          ref={ctaButtonRef}
+          onClick={onCTAClick}
+          className={styles.ctaButton}
+          aria-label="Descargar rutina gratis"
+        >
+          <span className={styles.ctaText}>
+            <Translate id="homepage.hero.cta">
+              DESCARGAR RUTINA GRATIS
+            </Translate>
+          </span>
+          <div className={styles.ctaIcon}>⚡</div>
+        </button>
         <button
           onClick={async () => {
             // Always request motion permission on iOS when not granted
@@ -1102,21 +1201,6 @@ export default function TennisHero({
         >
           🎾 {motionPermission !== "granted" && "📱"}
         </button>
-        {/* CTA Button */}
-        <button
-          ref={ctaButtonRef}
-          onClick={onCTAClick}
-          className={styles.ctaButton}
-          aria-label="Descargar rutina gratis"
-        >
-          <span className={styles.ctaText}>
-            <Translate id="homepage.hero.cta">
-              DESCARGAR RUTINA GRATIS
-            </Translate>
-          </span>
-          <div className={styles.ctaIcon}>⚡</div>
-        </button>
-
         {/* Social Proof */}
         <div className={styles.socialProof}>
           <div className={styles.activityText}>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
+import { tennisBallEvents } from '@site/src/utils/tennis-ball-events';
 import styles from './CompletionStep.module.css';
 
 interface CompletionStepProps {
@@ -15,9 +16,11 @@ export function CompletionStep({ onNext, onBack, data, wizardData }: CompletionS
   const userName = personalInfo.name;
 
   useEffect(() => {
-    // Trigger confetti animation after component mounts
+    // Trigger tennis ball celebration after component mounts
     const timer = setTimeout(() => {
       setShowConfetti(true);
+      // Trigger a big tennis ball explosion for completion!
+      tennisBallEvents.explode(30); // 30 balls for final celebration
     }, 500);
     return () => clearTimeout(timer);
   }, []);
