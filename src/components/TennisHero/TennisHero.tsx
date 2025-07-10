@@ -449,14 +449,16 @@ export default function TennisHero({
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
-    // Initialize balls with realistic distribution
+    // Initialize balls with realistic distribution - Many more balls!
     const initializeBalls = () => {
       ballsRef.current = [];
-      for (let i = 0; i < 5; i++) {
+      const ballCount = Math.min(20, Math.floor(canvas.width / 40)); // Responsive ball count
+      for (let i = 0; i < ballCount; i++) {
         ballsRef.current.push(
           new InteractiveTennisBall(
             Math.random() * (canvas.width - 60) + 30,
-            Math.random() * (canvas.height - 60) + 30
+            Math.random() * (canvas.height - 60) + 30,
+            10 + Math.random() * 10 // Varied ball sizes (10-20px radius)
           )
         );
       }
@@ -531,14 +533,15 @@ export default function TennisHero({
 
       // Add new ball occasionally when shaking hard
       if (
-        intensity > 20 &&
-        ballsRef.current.length < 10 &&
-        Math.random() > 0.7
+        intensity > 15 &&
+        ballsRef.current.length < 35 &&
+        Math.random() > 0.5
       ) {
         ballsRef.current.push(
           new InteractiveTennisBall(
             Math.random() * (canvas.width - 60) + 30,
-            20
+            20,
+            8 + Math.random() * 12 // Varied sizes for new balls
           )
         );
       }

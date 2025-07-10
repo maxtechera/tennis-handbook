@@ -29,44 +29,47 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Hide navbar on homepage - Direct approach */
-html[data-current-path="/"] .navbar,
-html[data-current-path="/es"] .navbar,
-html[data-current-path="/es/"] .navbar,
-body[data-pathname="/"] .navbar,
-body[data-pathname="/es"] .navbar,
-body[data-pathname="/es/"] .navbar {
+/* Hide navbar on homepage - Universal approach */
+/* Target any path that's just root or /es */
+body[data-path="/"] .navbar,
+body[data-path="/es"] .navbar,
+body[data-path="/es/"] .navbar,
+html:has([data-page-id="/"]) .navbar,
+html:has([data-page-id="/es"]) .navbar {
   display: none !important;
 }
 
-/* Alternative - target by page class */
-.theme-doc-sidebar-container,
-[class*="docPage"] .navbar {
-  /* Keep navbar on doc pages */
-}
-
-/* Homepage specific navbar hiding */
-body:not([class*="docs"]):not([class*="blog"]) .navbar {
+/* Most direct approach - hide navbar when NOT on docs or blog */
+nav.navbar {
   display: none !important;
 }
 
-/* Ensure main content takes full height on homepage */
-body:not([class*="docs"]):not([class*="blog"]) main {
+/* Show navbar only on specific pages */
+[class*="docPage"] nav.navbar,
+[class*="blogPage"] nav.navbar,
+[class*="docs"] nav.navbar,
+[class*="blog"] nav.navbar {
+  display: flex !important;
+}
+
+/* Ensure main content takes full height */
+main {
   padding-top: 0 !important;
   margin-top: 0 !important;
 }
 
-/* Hide navbar when homepage class is present */
+/* Restore normal padding for doc pages */
+[class*="docPage"] main,
+[class*="blogPage"] main,
+[class*="docs"] main,
+[class*="blog"] main {
+  padding-top: var(--ifm-navbar-height) !important;
+}
+
+/* Homepage layout classes */
 .homepage-layout .navbar,
 .homepage-no-navbar .navbar {
   display: none !important;
-}
-
-/* Remove any top padding/margin when navbar is hidden */
-.homepage-layout main,
-.homepage-no-navbar main {
-  padding-top: 0 !important;
-  margin-top: 0 !important;
 }
 
 /* Ensure proper Unicode character rendering */
