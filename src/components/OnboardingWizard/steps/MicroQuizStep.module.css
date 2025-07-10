@@ -50,8 +50,10 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1rem;
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* border: 1px solid #e0e0e0; */
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -266,10 +268,10 @@
   color: #b0b3b8;
 }
 
-[data-theme="dark"] .levelOption {
-  background: #242526;
-  border-color: #3a3b3c;
-}
+/* [data-theme="dark"] .levelOption { */
+/* background: #242526; */
+/* border-color: #3a3b3c; */
+/* } */
 
 [data-theme="dark"] .levelOption:hover {
   border-color: #4caf50;

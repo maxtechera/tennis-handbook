@@ -1185,12 +1185,10 @@ export default function TennisHero({
           ref={ctaButtonRef}
           onClick={onCTAClick}
           className={styles.ctaButton}
-          aria-label="Ver experiencia interactiva completa"
+          aria-label="DESCARGAR RUTINA GRATIS"
         >
           <span className={styles.ctaText}>
-            <Translate id="homepage.hero.cta">
-              VER EXPERIENCIA INTERACTIVA
-            </Translate>
+            <Translate id="homepage.hero.cta">DESCARGAR RUTINA</Translate>
           </span>
           <div className={styles.ctaIcon}>⚡</div>
         </button>
