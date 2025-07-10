@@ -33,6 +33,16 @@ export default async function handler(req, res) {
     try {
       const { statType = 'balls_thrown' } = req.query;
       
+      // Check if database is available
+      if (!process.env.POSTGRES_URL) {
+        // Return demo data in development
+        return res.status(200).json({ 
+          total: 42069,
+          recent: 420,
+          statType
+        });
+      }
+      
       // Get total count from database
       const result = await sql`
         SELECT COALESCE(SUM(count), 0) as total

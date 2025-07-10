@@ -145,6 +145,12 @@
   margin-bottom: 2rem;
   animation: urgencyPulse 2s ease-in-out infinite;
   box-shadow: 0 4px 15px rgba(255, 152, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.urgencyBannerHidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .fireEmoji {
@@ -241,15 +247,15 @@
 
 /* Add More Balls Button */
 .addBallsButton {
-  background: transparent;
-  color: #757575;
-  border: 1px solid rgba(117, 117, 117, 0.3);
-  border-radius: 20px;
-  padding: 8px 20px;
-  font-size: 14px;
-  font-weight: 500;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   animation: fadeInUp 0.8s ease-out 0.8s both;
   margin-top: 1rem;
@@ -258,14 +264,14 @@
   margin-left: auto;
   margin-right: auto;
   pointer-events: auto; /* Ensure button can be clicked */
+  backdrop-filter: blur(10px);
 }
 
 .addBallsButton:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 193, 7, 0.1);
-  border-color: rgba(255, 193, 7, 0.5);
-  color: #f57c00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .addBallsButton:active {
@@ -379,25 +385,19 @@
   animation: fadeInUp 0.8s ease-out 1.2s both;
 }
 
-.activityBadge {
-  display: inline-block;
-  background: rgba(117, 117, 117, 0.1);
-  color: #757575;
-  padding: 0.25rem 0.6rem;
-  border-radius: 12px;
-  font-size: 0.65rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border: 1px solid rgba(117, 117, 117, 0.15);
-}
-
 .activityText {
-  color: #888888;
-  font-size: 0.85rem;
-  font-weight: 400;
-  font-style: italic;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Floating Elements */

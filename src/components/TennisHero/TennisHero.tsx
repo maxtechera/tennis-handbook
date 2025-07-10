@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import Translate from "@docusaurus/Translate";
 import clsx from "clsx";
 import styles from "./TennisHero.module.css";
@@ -32,7 +32,7 @@ class InteractiveTennisBall {
     this.gravityScale = 1;
     this.color = "#CFFF00";
     this.sleeping = false;
-    this.sleepThreshold = 0.1; // Velocity below which ball "sleeps"
+    this.sleepThreshold = 0.5; // Increased threshold to reduce twitching
   }
 
   // Check if point is inside ball (for touching)
@@ -180,9 +180,11 @@ class InteractiveTennisBall {
       }
     }
 
-    // Apply STRONG gravity based on device orientation
-    this.vx += gravityX * this.gravityScale * 2.5; // 3x stronger gravity effect
-    this.vy += gravityY * this.gravityScale * 2.5; // 3x stronger gravity effect
+    // Apply gravity based on device orientation (only if moving)
+    if (!this.sleeping) {
+      this.vx += gravityX * this.gravityScale * 1.5; // Reduced gravity effect
+      this.vy += gravityY * this.gravityScale * 1.5; // Reduced gravity effect
+    }
 
     // Apply air resistance (more realistic)
     this.vx *= this.airResistance;
@@ -221,10 +223,15 @@ class InteractiveTennisBall {
 
     // Check if ball should go to sleep (like real physics)
     const totalVelocity = Math.abs(this.vx) + Math.abs(this.vy);
-    if (totalVelocity < this.sleepThreshold && !bounced) {
+    if (
+      totalVelocity < this.sleepThreshold &&
+      !bounced &&
+      this.y > height - this.radius - 5
+    ) {
+      // Only sleep if near the ground
       this.sleeping = true;
-      this.vx *= 0.8;
-      this.vy *= 0.8;
+      this.vx = 0;
+      this.vy = 0;
     }
   }
 
@@ -320,6 +327,82 @@ export default function TennisHero({
   const grabbedBall = useRef<InteractiveTennisBall | null>(null);
   const mousePos = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const [ballCount, setBallCount] = useState(0);
+  const [totalBallsThrown, setTotalBallsThrown] = useState<number | null>(null);
+  const [isLoadingStats, setIsLoadingStats] = useState(true);
+  const pendingThrows = useRef<number>(0);
+  const analyticsQueue = useRef<
+    Array<{ statType: string; count: number; sessionId: string }>
+  >([]);
+  const analyticsTimer = useRef<NodeJS.Timeout | null>(null);
+  const sessionId = useRef<string>(
+    `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+  );
+
+  // Fetch total ball count from database
+  const fetchBallStats = useCallback(async () => {
+    try {
+      const response = await fetch("/api/track-stats?statType=balls_thrown");
+      if (response.ok) {
+        const data = await response.json();
+        setTotalBallsThrown(data.total || 0);
+      }
+    } catch (error) {
+      console.error("Error fetching ball stats:", error);
+      // Fallback to a default value
+      setTotalBallsThrown(1337);
+    } finally {
+      setIsLoadingStats(false);
+    }
+  }, []);
+
+  // Send analytics in batch
+  const sendAnalyticsBatch = useCallback(async () => {
+    if (analyticsQueue.current.length === 0) return;
+
+    const events = [...analyticsQueue.current];
+    analyticsQueue.current = [];
+
+    try {
+      await fetch("/api/track-stats", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ events }),
+      });
+    } catch (error) {
+      console.error("Error sending analytics:", error);
+      // Re-add events to queue on failure
+      analyticsQueue.current = [...events, ...analyticsQueue.current];
+    }
+  }, []);
+
+  // Track ball throws with batching
+  const trackBallThrows = useCallback(
+    (count: number) => {
+      // Optimistically update UI
+      setTotalBallsThrown((prev) => (prev || 0) + count);
+      pendingThrows.current += count;
+
+      // Add to analytics queue
+      analyticsQueue.current.push({
+        statType: "balls_thrown",
+        count,
+        sessionId: sessionId.current,
+      });
+
+      // Clear existing timer
+      if (analyticsTimer.current) {
+        clearTimeout(analyticsTimer.current);
+      }
+
+      // Set new timer to batch send after 500ms of inactivity
+      analyticsTimer.current = setTimeout(() => {
+        sendAnalyticsBatch();
+      }, 500);
+    },
+    [sendAnalyticsBatch]
+  );
 
   // Request device orientation permission
   const requestOrientationPermission = async () => {
@@ -347,6 +430,11 @@ export default function TennisHero({
       return true;
     }
   };
+
+  // Fetch ball stats on mount
+  useEffect(() => {
+    fetchBallStats();
+  }, [fetchBallStats]);
 
   // Setup device orientation detection
   useEffect(() => {
@@ -547,6 +635,9 @@ export default function TennisHero({
         ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
         ballsRef.current.push(ball); // Add newest ball
         setBallCount(ballsRef.current.length);
+
+        // Track shake-generated ball
+        trackBallThrows(1);
       }
 
       // Set shake intensity for ball physics - Much stronger!
@@ -701,7 +792,6 @@ export default function TennisHero({
       {/* Interactive Physics Canvas */}
       <canvas ref={canvasRef} className={styles.physicsScene} />
 
-
       {/* Court Lines Background */}
       <div className={styles.courtLines}>
         <div className={styles.baseline} />
@@ -713,14 +803,12 @@ export default function TennisHero({
       {/* Content Container */}
       <div className={styles.contentContainer}>
         {/* Urgency Banner */}
-        {showUrgency && (
-          <div className={styles.urgencyBanner}>
-            <span className={styles.fireEmoji}>📊</span>
-            <Translate id="homepage.hero.urgency">
-              87% menos raquetas rotas desde que entrenan con nosotros*
-            </Translate>
-          </div>
-        )}
+        <div className={clsx(styles.urgencyBanner, !showUrgency && styles.urgencyBannerHidden)}>
+          <span className={styles.fireEmoji}>📊</span>
+          <Translate id="homepage.hero.urgency">
+            87% menos raquetas rotas desde que entrenan con nosotros*
+          </Translate>
+        </div>
 
         {/* Main Title with Animation */}
         <h1 className={styles.heroTitle}>
@@ -819,11 +907,14 @@ export default function TennisHero({
                 ballsRef.current.push(ball); // Add to end (newest)
               }
               setBallCount(ballsRef.current.length);
+
+              // Track the ball throws
+              trackBallThrows(ballsToAdd);
             }
           }}
           className={styles.addBallsButton}
         >
-          🎾 Más Pelotas ({ballCount}/50)
+          🎾
         </button>
 
         {/* Trust Indicators */}
@@ -844,15 +935,15 @@ export default function TennisHero({
 
         {/* Social Proof */}
         <div className={styles.socialProof}>
-          <div className={styles.activityBadge}>
-            <Translate id="homepage.hero.activity">
-              ACTIVIDAD RECIENTE
-            </Translate>
-          </div>
           <div className={styles.activityText}>
-            <Translate id="homepage.hero.downloads">
-              248 personas descargaron la rutina en las últimas 24 horas
-            </Translate>
+            {isLoadingStats ? (
+              <span>Cargando...</span>
+            ) : (
+              <span>
+                🎾 {totalBallsThrown?.toLocaleString() || "0"} pelotas lanzadas
+                por la comunidad
+              </span>
+            )}
           </div>
         </div>
       </div>

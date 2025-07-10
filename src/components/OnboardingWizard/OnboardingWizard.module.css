@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #ffffff;
+  background: linear-gradient(135deg, #1b5e20, #004d40);
   position: relative;
   overflow: hidden;
 }
@@ -13,7 +13,10 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 1.5rem;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: sticky;
   top: 0;
   z-index: 20;
@@ -25,7 +28,7 @@
 .skipButton {
   background: none;
   border: none;
-  color: #007AFF;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 400;
   cursor: pointer;
