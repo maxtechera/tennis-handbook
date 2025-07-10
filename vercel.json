@@ -4,9 +4,9 @@
   "installCommand": "pnpm install",
   "framework": null,
   "functions": {
-    "api/dist/analytics.js": {},
-    "api/dist/analytics-wizard.js": {},
-    "api/dist/track-stats.js": {},
+    "api/dist/analytics.js": { "memory": 512, "maxDuration": 15 },
+    "api/dist/analytics-wizard.js": { "memory": 512, "maxDuration": 15 },
+    "api/dist/track-stats.js": { "memory": 512, "maxDuration": 15 },
     "api/dist/wizard-start.js": {
       "memory": 512,
       "maxDuration": 15
