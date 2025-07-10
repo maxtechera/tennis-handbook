@@ -14,17 +14,14 @@
       "runtime": "edge"
     },
     "api/dist/wizard-start.js": {
-      "runtime": "nodejs22.x",
       "memory": 512,
       "maxDuration": 15
     },
     "api/dist/wizard-save.js": {
-      "runtime": "nodejs22.x", 
       "memory": 512,
       "maxDuration": 15
     },
     "api/dist/wizard-complete.js": {
-      "runtime": "nodejs22.x",
       "memory": 512,
       "maxDuration": 15
     }
