@@ -365,12 +365,9 @@ export default function TennisHero({
       if (
         typeof (DeviceOrientationEvent as any).requestPermission === "function"
       ) {
-        // iOS 13+ needs permission
-        if (motionPermission === "prompt") {
-          setShowMotionPrompt(true);
-        } else if (motionPermission === "granted") {
-          window.addEventListener("deviceorientation", handleDeviceOrientation);
-        }
+        // iOS 13+ needs permission - but we'll try to add listener anyway
+        window.addEventListener("deviceorientation", handleDeviceOrientation);
+        setIsPhysicsActive(true);
       } else {
         // Android or older iOS
         window.addEventListener("deviceorientation", handleDeviceOrientation);
@@ -704,17 +701,6 @@ export default function TennisHero({
       {/* Interactive Physics Canvas */}
       <canvas ref={canvasRef} className={styles.physicsScene} />
 
-      {/* Motion Permission Prompt */}
-      {showMotionPrompt && (
-        <div className={styles.motionPrompt}>
-          <button
-            onClick={requestOrientationPermission}
-            className={styles.motionButton}
-          >
-            🎾 Activar Física Realista
-          </button>
-        </div>
-      )}
 
       {/* Court Lines Background */}
       <div className={styles.courtLines}>
