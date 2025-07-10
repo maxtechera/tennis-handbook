@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Translate, { translate } from "@docusaurus/Translate";
 import { QuestionCard } from "../components/QuestionCard";
 import { createSubscriber } from "@site/src/config/api";
@@ -27,6 +27,7 @@ export function WelcomeStep({
     subscription?: string;
   }>({});
   const [isLoading, setIsLoading] = useState(false);
+  const emailInputRef = useRef<HTMLInputElement>(null);
   
   // Validate email function
   const validateEmail = (email: string) => {
@@ -53,6 +54,13 @@ export function WelcomeStep({
     };
     return levels[userLevel] || levels.intermediate;
   };
+
+  // Autofocus email input on mount if empty
+  useEffect(() => {
+    if (emailInputRef.current && !email) {
+      emailInputRef.current.focus();
+    }
+  }, []);
 
   // Countdown timer effect
   useEffect(() => {
@@ -202,6 +210,7 @@ export function WelcomeStep({
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.inputGroup}>
             <input
+              ref={emailInputRef}
               id="email"
               type="email"
               value={email}
@@ -215,6 +224,7 @@ export function WelcomeStep({
                 errors.email ? styles.error : ""
               }`}
               required
+              autoFocus
             />
             {errors.email && (
               <span className={styles.errorMessage}>{errors.email}</span>

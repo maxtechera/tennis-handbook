@@ -606,8 +606,12 @@
 
 [data-theme="dark"] .emailInput {
   background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: white;
   color: #ffffff;
+}
+
+[data-theme="dark"] .emailInput::placeholder {
+  color: white;
 }
 
 [data-theme="dark"] .emailInput:focus {

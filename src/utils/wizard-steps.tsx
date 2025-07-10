@@ -10,6 +10,9 @@ import {
   GoalsQuizStep,
   TimeQuizStep,
   FocusQuizStep,
+  ExperienceLevelStep,
+  AgeGroupStep,
+  TrainingFrequencyStep,
   AnalyzingStep,
   PersonalizationStep, 
   BackgroundStep, 
@@ -62,7 +65,21 @@ export function createWizardSteps(language: string = 'en'): OnboardingStep[] {
       content: <WelcomeSuccessStep />,
     },
     
-    // Phase 5: Detailed Quiz
+    // Phase 5: Additional Profile Questions
+    {
+      id: 'experience-level',
+      content: <ExperienceLevelStep />,
+    },
+    {
+      id: 'age-group',
+      content: <AgeGroupStep />,
+    },
+    {
+      id: 'training-frequency',
+      content: <TrainingFrequencyStep />,
+    },
+    
+    // Phase 6: Detailed Quiz
     {
       id: 'personalization',
       content: <PersonalizationStep includeWhatsApp={isSpanish} />,
@@ -76,7 +93,7 @@ export function createWizardSteps(language: string = 'en'): OnboardingStep[] {
       content: <ChallengesStep />,
     },
     
-    // Phase 6: Results & Completion
+    // Phase 7: Results & Completion
     {
       id: 'completion',
       content: <CompletionStep />,
