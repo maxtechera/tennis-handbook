@@ -514,12 +514,25 @@ export default function TennisHero({
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Set canvas size to full hero height
+    // Set canvas size to match container's actual height
     const resizeCanvas = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = window.innerHeight; // Full viewport height
+      const container = canvas.parentElement;
+      if (container) {
+        canvas.width = container.offsetWidth;
+        canvas.height = container.offsetHeight; // Use container's actual height (which uses dvh)
+      }
     };
     resizeCanvas();
+    
+    // Use ResizeObserver for better viewport change detection
+    const resizeObserver = new ResizeObserver(() => {
+      resizeCanvas();
+    });
+    
+    if (canvas.parentElement) {
+      resizeObserver.observe(canvas.parentElement);
+    }
+    
     window.addEventListener("resize", resizeCanvas);
 
     // Initialize balls with realistic distribution - Many more balls!
@@ -786,6 +799,8 @@ export default function TennisHero({
     return () => {
       window.removeEventListener("resize", resizeCanvas);
       window.removeEventListener("devicemotion", handleDeviceMotion);
+      
+      resizeObserver.disconnect();
 
       canvas.removeEventListener("mousedown", handlePointerDown);
       canvas.removeEventListener("mousemove", handlePointerMove);
