@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Elite Tennis Training",
   tagline: "Entrena como los #1 del mundo",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -111,6 +111,32 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: "img/tennis-training-social.jpg",
+
+    // Add head tags for PWA icons
+    headTags: [
+      {
+        tagName: "link",
+        attributes: {
+          rel: "apple-touch-icon",
+          href: "/img/logo.png",
+        },
+      },
+      {
+        tagName: "link",
+        attributes: {
+          rel: "icon",
+          type: "image/png",
+          href: "/img/logo.png",
+        },
+      },
+      {
+        tagName: "link",
+        attributes: {
+          rel: "manifest",
+          href: "/manifest.json",
+        },
+      },
+    ],
 
     // Add meta tags for proper character encoding and mobile/PWA support
     metadata: [
