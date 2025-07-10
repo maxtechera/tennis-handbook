@@ -496,55 +496,50 @@ export default function Home(): ReactNode {
     currentLanguage,
   ]);
 
-  // Scroll-based trigger
+  // Scroll-based trigger (DISABLED - user request)
   useEffect(() => {
-    const handleScroll = () => {
-      // Check if wizard was recently dismissed
-      const hasDismissedWizard = localStorage.getItem("wizard_dismissed");
-      const lastDismissedTime = localStorage.getItem("wizard_dismissed_time");
-
-      let canShowWizard = true;
-      if (hasDismissedWizard && lastDismissedTime) {
-        const dismissedTime = parseInt(lastDismissedTime);
-        const hoursSinceDismissed =
-          (Date.now() - dismissedTime) / (1000 * 60 * 60);
-        if (hoursSinceDismissed < 24) {
-          canShowWizard = false;
-        }
-      }
-
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight;
-      const scrollPercentage =
-        (scrollY / (documentHeight - windowHeight)) * 100;
-
-      // Trigger at 30% scroll down
-      if (
-        scrollPercentage > 30 &&
-        !wizardComplete &&
-        !showWizard &&
-        scrollY > lastScrollY.current &&
-        canShowWizard
-      ) {
-        triggerWizard();
-
-        sendEvent({
-          event: "wizard_triggered",
-          category: "Onboarding",
-          label: "scroll_trigger",
-          properties: {
-            scroll_percentage: Math.round(scrollPercentage),
-            language: currentLanguage,
-          },
-        });
-      }
-
-      lastScrollY.current = scrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    // DISABLED: Scroll trigger disabled per user request
+    // const handleScroll = () => {
+    //   // Check if wizard was recently dismissed
+    //   const hasDismissedWizard = localStorage.getItem("wizard_dismissed");
+    //   const lastDismissedTime = localStorage.getItem("wizard_dismissed_time");
+    //   let canShowWizard = true;
+    //   if (hasDismissedWizard && lastDismissedTime) {
+    //     const dismissedTime = parseInt(lastDismissedTime);
+    //     const hoursSinceDismissed =
+    //       (Date.now() - dismissedTime) / (1000 * 60 * 60);
+    //     if (hoursSinceDismissed < 24) {
+    //       canShowWizard = false;
+    //     }
+    //   }
+    //   const scrollY = window.scrollY;
+    //   const windowHeight = window.innerHeight;
+    //   const documentHeight = document.documentElement.scrollHeight;
+    //   const scrollPercentage =
+    //     (scrollY / (documentHeight - windowHeight)) * 100;
+    //   // Trigger at 30% scroll down
+    //   if (
+    //     scrollPercentage > 30 &&
+    //     !wizardComplete &&
+    //     !showWizard &&
+    //     scrollY > lastScrollY.current &&
+    //     canShowWizard
+    //   ) {
+    //     triggerWizard();
+    //     sendEvent({
+    //       event: "wizard_triggered",
+    //       category: "Onboarding",
+    //       label: "scroll_trigger",
+    //       properties: {
+    //         scroll_percentage: Math.round(scrollPercentage),
+    //         language: currentLanguage,
+    //       },
+    //     });
+    //   }
+    //   lastScrollY.current = scrollY;
+    // };
+    // window.addEventListener("scroll", handleScroll);
+    // return () => window.removeEventListener("scroll", handleScroll);
   }, [wizardComplete, showWizard, triggerWizard, currentLanguage]);
 
   // Time-based reminder
