@@ -9,7 +9,11 @@
 .emailCapture.hero {
   margin: 3rem 0;
   padding: 3rem;
-  background: linear-gradient(135deg, var(--ifm-color-primary-dark) 0%, var(--ifm-color-primary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-dark) 0%,
+    var(--ifm-color-primary) 100%
+  );
   color: white;
 }
 
@@ -24,7 +28,7 @@
 
 .emailCapture.footer {
   margin: 0;
-  padding: 1.5rem;
+  padding: 1rem;
   background: var(--ifm-footer-background-color);
   border-radius: 0;
   box-shadow: none;
@@ -57,7 +61,7 @@
 
 .description {
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   opacity: 0.9;
 }
 
@@ -190,11 +194,11 @@
     left: 1rem;
     max-width: none;
   }
-  
+
   .title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-  
+
   .description {
     font-size: 1rem;
   }

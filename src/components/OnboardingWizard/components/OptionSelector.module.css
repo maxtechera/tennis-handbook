@@ -57,7 +57,7 @@
 }
 
 .small .emoji {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .large .emoji {
@@ -89,8 +89,8 @@
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
-  width: 1.5rem; /* Larger for touch */
-  height: 1.5rem; /* Larger for touch */
+  width: 1rem; /* Larger for touch */
+  height: 1rem; /* Larger for touch */
   border: 2px solid var(--ifm-color-emphasis-300);
   border-radius: 4px;
   background: white;
@@ -138,7 +138,7 @@
   .columns2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .columns3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -154,7 +154,7 @@
   }
 
   .emoji {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .small .emoji {
@@ -192,7 +192,7 @@
   }
 
   .emoji {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .label {

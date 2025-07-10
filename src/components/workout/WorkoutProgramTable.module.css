@@ -38,7 +38,7 @@
 }
 
 .sessionTitle {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
@@ -49,7 +49,7 @@
 .optionTable {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .scheduleTable th,
@@ -98,7 +98,7 @@
 /* Week Summary */
 .weekSummary {
   margin-top: 3rem;
-  padding: 1.5rem;
+  padding: 1rem;
   background: var(--ifm-color-emphasis-100);
   border-radius: 8px;
 }
@@ -135,13 +135,13 @@
   .recoveryOptions {
     grid-template-columns: 1fr;
   }
-  
+
   .scheduleTable,
   .exerciseTable,
   .optionTable {
     font-size: 0.75rem;
   }
-  
+
   .scheduleTable td,
   .exerciseTable td,
   .optionTable td {
@@ -157,7 +157,7 @@
     overflow-x: auto;
     white-space: nowrap;
   }
-  
+
   .summaryGrid {
     grid-template-columns: 1fr 1fr;
   }

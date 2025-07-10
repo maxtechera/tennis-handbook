@@ -2,10 +2,10 @@
   position: relative;
   min-height: 100dvh;
   min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
-  height: 100dvh;
-  height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  /* height: 100dvh; */
+  min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
   overflow: hidden;
-  background: linear-gradient(135deg, #2e7d32, #1b5e20);
+  background: linear-gradient(135deg, #203780, #203780);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,8 +20,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100dvh;
-  height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  min-height: 100dvh;
+
   pointer-events: auto;
   z-index: 5;
   opacity: 0.8;
@@ -79,13 +79,13 @@
   pointer-events: none;
 }
 
-/* Tennis Court Outer Lines */
+/* Tennis Court Outer Lines - Doubles Court */
 .courtLines::before {
   content: "";
   position: absolute;
   top: 10%;
-  left: 15%;
-  right: 15%;
+  left: 10%;
+  right: 10%;
   bottom: 10%;
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -96,18 +96,19 @@
   content: "";
   position: absolute;
   top: 10%;
-  left: 20%;
-  right: 20%;
+  left: 15%;
+  right: 15%;
   bottom: 10%;
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-left: 2px solid rgba(255, 255, 255, 0.25);
+  border-right: 2px solid rgba(255, 255, 255, 0.25);
 }
 
+/* Bottom baseline */
 .baseline {
   position: absolute;
   bottom: 10%;
-  left: 15%;
-  right: 15%;
+  left: 10%;
+  right: 10%;
   height: 3px;
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -117,18 +118,19 @@
 .baseline::before {
   content: "";
   position: absolute;
-  top: calc(-80vh + 10vh + 10vh); /* Mirror to top */
+  top: calc(10% - 90% + 10%);
   left: 0;
   right: 0;
   height: 3px;
   background: rgba(255, 255, 255, 0.3);
 }
 
+/* Bottom service line */
 .serviceLine {
   position: absolute;
-  bottom: 25%;
-  left: 15%;
-  right: 15%;
+  bottom: 30%;
+  left: 10%;
+  right: 10%;
   height: 2px;
   background: rgba(255, 255, 255, 0.25);
 }
@@ -137,39 +139,41 @@
 .serviceLine::before {
   content: "";
   position: absolute;
-  top: calc(-50vh + 25vh + 25vh); /* Mirror to top */
+  top: calc(30% - 70% - 30%);
   left: 0;
   right: 0;
   height: 2px;
   background: rgba(255, 255, 255, 0.25);
 }
 
+/* Center service line bottom */
 .centerLine {
   position: absolute;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 15%;
+  height: 20%;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Top center service line */
+/* Center service line top */
 .centerLine::before {
   content: "";
   position: absolute;
-  top: calc(-65vh); /* Position at top */
+  bottom: calc(90% - 20% - 10%);
   left: 0;
   width: 2px;
-  height: 15vh;
+  height: 20%;
   background: rgba(255, 255, 255, 0.2);
 }
 
+/* Net line */
 .netPost {
   position: absolute;
   top: 50%;
-  left: 10%;
-  right: 10%;
+  left: 5%;
+  right: 5%;
   height: 4px;
   background: rgba(255, 255, 255, 0.4);
   transform: translateY(-50%);
@@ -223,7 +227,7 @@
   gap: 0.5rem;
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
   color: #e65100;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -269,19 +273,19 @@
 .heroTitle {
   font-size: clamp(2.5rem, 7vw, 4.5rem);
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 900;
 }
 
 .titleLine1 {
   display: block;
-  color: #e3f2fd;
+  color: white;
   animation: slideInFromLeft 0.8s ease-out;
 }
 
 .titleLine2 {
   display: block;
-  color: #81c784;
+  color: white;
   font-size: 1.2em;
   animation: slideInFromRight 0.8s ease-out 0.2s both;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -312,7 +316,7 @@
 /* Subtitle */
 .subtitle {
   font-size: clamp(1.1rem, 3vw, 1.4rem);
-  color: #b0bec5;
+  color: white;
   margin-bottom: 2.5rem;
   animation: fadeInUp 0.8s ease-out 0.4s both;
   font-weight: 500;
@@ -449,7 +453,7 @@
 }
 
 .ctaIcon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   position: relative;
   z-index: 1;
 }
@@ -459,13 +463,13 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   animation: fadeInUp 0.8s ease-out 1s both;
   flex-wrap: wrap;
 }
 
 .trustItem {
-  color: #90a4ae;
+  color: white;
   font-size: 0.9rem;
   display: flex;
   align-items: center;
@@ -482,7 +486,7 @@
   display: inline-block;
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border-radius: 25px;
   font-size: 1rem;
   font-weight: 500;
@@ -576,14 +580,12 @@
 @media screen and (max-width: 768px) {
   .tennisHero {
     min-height: 100dvh;
-    min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
-    height: 100dvh;
-    height: 100dvh; /* Dynamic viewport height for mobile browsers */
+    /* height: 100dvh; */
   }
 
-  .contentContainer {
-    padding: 1.5rem;
-  }
+  /* .contentContainer {
+    padding: 1.0rem;
+  } */
 
   .addBallsButton {
     font-size: 14px;
@@ -591,7 +593,7 @@
   }
 
   .visualStats {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .statIcon {

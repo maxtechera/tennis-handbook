@@ -1,22 +1,30 @@
 /* Wizard progress display */
 .progressContainer {
-  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-color-success-lightest) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-lightest) 0%,
+    var(--ifm-color-success-lightest) 100%
+  );
   border: 1px solid var(--ifm-color-primary-light);
   border-radius: 0.75rem;
   padding: 1rem;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
   position: relative;
   overflow: hidden;
 }
 
 .progressContainer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--ifm-color-primary), var(--ifm-color-success));
+  background: linear-gradient(
+    90deg,
+    var(--ifm-color-primary),
+    var(--ifm-color-success)
+  );
   border-radius: 0.75rem 0.75rem 0 0;
 }
 
@@ -35,9 +43,16 @@
 }
 
 @keyframes wave {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(20deg); }
-  75% { transform: rotate(-10deg); }
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
 }
 
 .greetingText {
@@ -138,52 +153,60 @@
 }
 
 /* Dark mode adjustments */
-[data-theme='dark'] .progressContainer {
-  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-success-darkest) 100%);
+[data-theme="dark"] .progressContainer {
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-darkest) 0%,
+    var(--ifm-color-success-darkest) 100%
+  );
   border-color: var(--ifm-color-primary-dark);
 }
 
-[data-theme='dark'] .progressContainer::before {
-  background: linear-gradient(90deg, var(--ifm-color-primary-light), var(--ifm-color-success-light));
+[data-theme="dark"] .progressContainer::before {
+  background: linear-gradient(
+    90deg,
+    var(--ifm-color-primary-light),
+    var(--ifm-color-success-light)
+  );
 }
 
-[data-theme='dark'] .greeting {
+[data-theme="dark"] .greeting {
   border-color: var(--ifm-color-primary-dark);
 }
 
-[data-theme='dark'] .greetingText {
+[data-theme="dark"] .greetingText {
   color: var(--ifm-color-primary-lightest);
 }
 
-[data-theme='dark'] .infoItem {
+[data-theme="dark"] .infoItem {
   background: rgba(0, 0, 0, 0.3);
   border-color: var(--ifm-color-primary-dark);
 }
 
-[data-theme='dark'] .infoItem:hover {
+[data-theme="dark"] .infoItem:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
-[data-theme='dark'] .infoIcon {
+[data-theme="dark"] .infoIcon {
   background: var(--ifm-color-primary-darkest);
   border-color: var(--ifm-color-primary-dark);
 }
 
-[data-theme='dark'] .infoLabel {
+[data-theme="dark"] .infoLabel {
   color: var(--ifm-color-primary-light);
 }
 
-[data-theme='dark'] .infoValue {
+[data-theme="dark"] .infoValue {
   color: var(--ifm-color-primary-lightest);
 }
 
-[data-theme='dark'] .subscribedBadge {
+[data-theme="dark"] .subscribedBadge {
   background: var(--ifm-color-success-darkest);
   color: var(--ifm-color-success-lightest);
   border-color: var(--ifm-color-success-dark);
 }
 
-[data-theme='dark'] .progressSummary {
+[data-theme="dark"] .progressSummary {
   color: var(--ifm-color-primary-light);
   border-color: var(--ifm-color-primary-dark);
 }
@@ -194,44 +217,44 @@
     padding: 0.875rem;
     margin-bottom: 1.25rem;
   }
-  
+
   .greeting {
     gap: 0.5rem;
     margin-bottom: 0.875rem;
     padding-bottom: 0.625rem;
   }
-  
+
   .greetingText {
     font-size: 0.9375rem;
   }
-  
+
   .infoGrid {
     gap: 0.625rem;
   }
-  
+
   .infoItem {
     padding: 0.5rem;
   }
-  
+
   .infoIcon {
     width: 28px;
     height: 28px;
     font-size: 1rem;
   }
-  
+
   .infoLabel {
     font-size: 0.6875rem;
   }
-  
+
   .infoValue {
     font-size: 0.8125rem;
   }
-  
+
   .subscribedBadge {
     font-size: 0.625rem;
     padding: 0.0625rem 0.25rem;
   }
-  
+
   .progressSummary {
     font-size: 0.75rem;
     padding-top: 0.625rem;

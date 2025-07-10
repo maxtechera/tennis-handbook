@@ -2,8 +2,8 @@
   background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
   transition: all 0.3s ease;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .drillCard.completed {
-  border-color: #4CAF50;
+  border-color: #4caf50;
   background: rgba(76, 175, 80, 0.05);
 }
 
@@ -47,7 +47,7 @@
 
 .details {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
 }
@@ -173,12 +173,12 @@
 .actions {
   display: flex;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .startButton {
   flex: 1;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   background: var(--ifm-color-primary);
   color: white;
   border: none;
@@ -195,7 +195,7 @@
 }
 
 .videoLink {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   background: var(--ifm-background-color);
   color: var(--ifm-color-primary);
   border: 2px solid var(--ifm-color-primary);

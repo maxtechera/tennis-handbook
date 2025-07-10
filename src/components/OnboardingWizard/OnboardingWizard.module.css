@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -41,7 +41,7 @@
   justify-content: center;
   position: absolute;
   top: 50%;
-  right: 1.5rem;
+  right: 1rem;
   transform: translateY(-50%);
 }
 
@@ -57,7 +57,7 @@
   overflow: auto;
   height: calc(100dvh - 138px);
   flex: 1;
-  padding: 0;
+  padding: 16px;
   padding-bottom: 120px; /* Space for fixed footer */
   /* display: flex; */
   flex-direction: column;
@@ -110,8 +110,8 @@
 
 .backButton {
   position: fixed;
-  bottom: 1.5rem;
-  left: 1.5rem;
+  bottom: 1rem;
+  left: 1rem;
   z-index: 30;
   background: transparent;
   border: none;
@@ -143,7 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   background: transparent;
   gap: 1rem;
   position: fixed;
@@ -221,7 +221,7 @@
   }
 
   .wizardHeader {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
     position: relative;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
@@ -237,7 +237,7 @@
   }
 
   .wizardFooter {
-    padding: 1.5rem;
+    padding: 1rem;
     position: relative;
     min-height: auto;
     background: transparent;
@@ -268,13 +268,13 @@
   }
 
   .wizardFooter {
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1rem;
     min-height: 72px;
   }
 
   .nextButton {
     min-width: 100px;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1rem;
   }
 }
 

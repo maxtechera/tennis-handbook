@@ -2,7 +2,7 @@
   background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -31,7 +31,7 @@
   background: var(--ifm-color-emphasis-200);
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .progressFill {
@@ -39,7 +39,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
+  background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%);
   border-radius: 12px;
   transition: width 0.3s ease;
 }
@@ -59,7 +59,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .statItem {
@@ -87,7 +87,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .lessonDot {
@@ -105,11 +105,11 @@
 }
 
 .lessonDot.completed {
-  background: #4CAF50;
+  background: #4caf50;
 }
 
 .lessonDot.current {
-  background: #2196F3;
+  background: #2196f3;
   animation: pulse 2s infinite;
 }
 
@@ -133,7 +133,7 @@
   background: var(--ifm-background-color);
   border-radius: 8px;
   padding: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .notes h5 {
@@ -157,7 +157,7 @@
 .continueButton,
 .reviewButton {
   flex: 1;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   border: none;
   border-radius: 6px;
   font-size: 1rem;

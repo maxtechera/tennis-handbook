@@ -638,45 +638,48 @@ export default function TennisHero({
   );
 
   // Function to spawn celebration balls
-  const spawnCelebrationBalls = useCallback((count: number = 20) => {
-    const canvas = canvasRef.current;
-    if (!canvas || !isPhysicsActive) return;
-    
-    const maxBalls = 1000;
-    const ballsToAdd = count;
-    
-    // Remove oldest balls if we would exceed the limit (FIFO)
-    const currentCount = ballsRef.current.length;
-    const ballsToRemove = Math.max(0, currentCount + ballsToAdd - maxBalls);
-    
-    if (ballsToRemove > 0) {
-      ballsRef.current.splice(0, ballsToRemove);
-    }
-    
-    // Add celebration balls with firework-like pattern
-    for (let i = 0; i < ballsToAdd; i++) {
-      // Get center of canvas for spawn point
-      const centerX = canvas.width / 2;
-      const centerY = canvas.height / 2;
-      
-      const ball = new InteractiveTennisBall(
-        centerX + (Math.random() - 0.5) * 40, // Center with small variation
-        centerY
-      );
-      
-      // Create firework explosion pattern
-      const angle = (Math.PI * 2 * i) / ballsToAdd + Math.random() * 0.3;
-      const speed = 15 + Math.random() * 10; // Strong outward velocity
-      
-      ball.vx = Math.cos(angle) * speed;
-      ball.vy = Math.sin(angle) * speed - 5; // Slight upward bias
-      
-      ballsRef.current.push(ball);
-    }
-    
-    setBallCount(ballsRef.current.length);
-    trackBallThrows(ballsToAdd);
-  }, [isPhysicsActive, trackBallThrows]);
+  const spawnCelebrationBalls = useCallback(
+    (count: number = 20) => {
+      const canvas = canvasRef.current;
+      if (!canvas || !isPhysicsActive) return;
+
+      const maxBalls = 1000;
+      const ballsToAdd = count;
+
+      // Remove oldest balls if we would exceed the limit (FIFO)
+      const currentCount = ballsRef.current.length;
+      const ballsToRemove = Math.max(0, currentCount + ballsToAdd - maxBalls);
+
+      if (ballsToRemove > 0) {
+        ballsRef.current.splice(0, ballsToRemove);
+      }
+
+      // Add celebration balls with firework-like pattern
+      for (let i = 0; i < ballsToAdd; i++) {
+        // Get center of canvas for spawn point
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+
+        const ball = new InteractiveTennisBall(
+          centerX + (Math.random() - 0.5) * 40, // Center with small variation
+          centerY
+        );
+
+        // Create firework explosion pattern
+        const angle = (Math.PI * 2 * i) / ballsToAdd + Math.random() * 0.3;
+        const speed = 15 + Math.random() * 10; // Strong outward velocity
+
+        ball.vx = Math.cos(angle) * speed;
+        ball.vy = Math.sin(angle) * speed - 5; // Slight upward bias
+
+        ballsRef.current.push(ball);
+      }
+
+      setBallCount(ballsRef.current.length);
+      trackBallThrows(ballsToAdd);
+    },
+    [isPhysicsActive, trackBallThrows]
+  );
 
   // Subscribe to tennis ball events
   useEffect(() => {
@@ -690,7 +693,7 @@ export default function TennisHero({
         spawnCelebrationBalls(count);
       }
     });
-    
+
     return unsubscribe;
   }, [isPhysicsActive, spawnCelebrationBalls]);
 
@@ -1211,24 +1214,23 @@ export default function TennisHero({
                 🎾 {totalBallsThrown?.toLocaleString() || "0"} pelotas lanzadas
                 por la comunidad
               </span>
-            )}
+            )}{" "}
+            {/* Trust Indicators */}
+            <div className={styles.trustIndicators}>
+              <span className={styles.trustItem}>
+                ✅{" "}
+                <Translate id="homepage.hero.trust1">
+                  Sin tarjetas de crédito
+                </Translate>
+              </span>
+              <span className={styles.trustItem}>
+                ✅{" "}
+                <Translate id="homepage.hero.trust2">
+                  Acceso inmediato por email
+                </Translate>
+              </span>
+            </div>
           </div>
-        </div>
-
-        {/* Trust Indicators */}
-        <div className={styles.trustIndicators}>
-          <span className={styles.trustItem}>
-            ✅{" "}
-            <Translate id="homepage.hero.trust1">
-              Sin tarjetas de crédito
-            </Translate>
-          </span>
-          <span className={styles.trustItem}>
-            ✅{" "}
-            <Translate id="homepage.hero.trust2">
-              Acceso inmediato por email
-            </Translate>
-          </span>
         </div>
       </div>
     </div>

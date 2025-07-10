@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -23,7 +23,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  background: linear-gradient(135deg, #4CAF50, #10b981, #059669);
+  background: linear-gradient(135deg, #4caf50, #10b981, #059669);
   top: -10px;
   left: var(--position);
   transform: rotate(var(--rotation));
@@ -88,7 +88,7 @@
 .nextSteps {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -98,16 +98,22 @@
   -webkit-backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   animation: slideIn 0.6s ease-out;
   animation-fill-mode: both;
   transition: all 0.3s ease;
 }
 
-.stepCard:nth-child(1) { animation-delay: 0.6s; }
-.stepCard:nth-child(2) { animation-delay: 0.7s; }
-.stepCard:nth-child(3) { animation-delay: 0.8s; }
+.stepCard:nth-child(1) {
+  animation-delay: 0.6s;
+}
+.stepCard:nth-child(2) {
+  animation-delay: 0.7s;
+}
+.stepCard:nth-child(3) {
+  animation-delay: 0.8s;
+}
 
 @keyframes slideIn {
   from {
@@ -157,7 +163,7 @@
   font-weight: 600;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .linkGrid {
@@ -192,7 +198,7 @@
 }
 
 .linkIcon {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* Final CTA */

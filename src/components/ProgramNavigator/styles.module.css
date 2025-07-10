@@ -23,7 +23,7 @@
 .phasesGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -31,14 +31,14 @@
   background: var(--ifm-card-background-color, white);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
   position: relative;
   overflow: hidden;
 }
 
 .phaseCard::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -100,7 +100,7 @@
   background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-top: 2rem;
 }
 
@@ -140,7 +140,7 @@
 }
 
 .quickLinkIcon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   flex-shrink: 0;
 }
 
@@ -166,20 +166,20 @@
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .weeksGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .quickLinksGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
   }
-  
+
   .phaseCard {
     padding: 1rem;
   }
-  
+
   .quickLink {
     padding: 0.75rem;
     gap: 0.5rem;
@@ -190,7 +190,7 @@
   .weeksGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .quickLinksGrid {
     grid-template-columns: 1fr;
   }

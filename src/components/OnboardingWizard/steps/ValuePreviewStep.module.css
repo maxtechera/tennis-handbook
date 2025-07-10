@@ -17,12 +17,13 @@
 }
 
 @keyframes iconGlow {
-  0%, 100% { 
-    transform: scale(1); 
+  0%,
+  100% {
+    transform: scale(1);
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
   }
-  50% { 
-    transform: scale(1.1); 
+  50% {
+    transform: scale(1.1);
     filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
   }
 }
@@ -41,7 +42,7 @@
 }
 
 .loadingState h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 1rem 0 0.5rem 0;
   font-weight: 600;
 }
@@ -57,10 +58,10 @@
 }
 
 .benefitsTitle {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0 0 1.5rem 0;
-  color: #1A1A1A;
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
 }
 
 .benefitsList {
@@ -85,8 +86,8 @@
 .benefitItem.active {
   opacity: 1;
   transform: translateX(0);
-  background: linear-gradient(135deg, #E8F5E8, #F1F8E9);
-  border: 1px solid #4CAF50;
+  background: linear-gradient(135deg, #e8f5e8, #f1f8e9);
+  border: 1px solid #4caf50;
 }
 
 .benefitIcon {
@@ -95,14 +96,19 @@
 }
 
 @keyframes sparkle {
-  0%, 100% { transform: scale(1) rotate(0deg); }
-  50% { transform: scale(1.2) rotate(180deg); }
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg);
+  }
 }
 
 .benefitItem span {
   font-size: 1rem;
   font-weight: 500;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .focusAreas {
@@ -113,7 +119,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .focusGrid {
@@ -141,7 +147,7 @@
 .focusItem span {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .trainingDetails {
@@ -160,7 +166,7 @@
 }
 
 .detailIcon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1;
 }
 
@@ -168,7 +174,7 @@
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 0.25rem 0;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .detailItem p {
@@ -190,8 +196,13 @@
 }
 
 @keyframes fire {
-  0%, 100% { transform: scale(1) rotate(-5deg); }
-  50% { transform: scale(1.1) rotate(5deg); }
+  0%,
+  100% {
+    transform: scale(1) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg);
+  }
 }
 
 .proofText {
@@ -201,7 +212,7 @@
 .proofText p {
   margin: 0 0 0.5rem 0;
   font-size: 0.95rem;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 
 .proofText p:last-child {
@@ -215,7 +226,7 @@
   gap: 0.5rem;
   width: 100%;
   padding: 1.25rem 2rem;
-  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
   color: white;
   border: none;
   border-radius: 12px;
@@ -241,8 +252,13 @@
 }
 
 @keyframes rocket {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-3px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 .ctaNote {
@@ -273,26 +289,35 @@
 
 .progressFill {
   height: 100%;
-  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  background: linear-gradient(90deg, #4caf50, #8bc34a);
   border-radius: 20px;
   transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
 .progressFill::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
   animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .progressText {
@@ -306,50 +331,50 @@
   .valuePreviewStep {
     padding: 1rem;
   }
-  
+
   .levelIcon {
     font-size: 2.5rem;
   }
-  
+
   .benefitsTitle {
     font-size: 1.25rem;
   }
-  
+
   .focusGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
   }
-  
+
   .focusItem {
     padding: 0.75rem;
   }
-  
+
   .trainingDetails {
     gap: 0.75rem;
   }
-  
+
   .detailItem {
     padding: 0.75rem;
     gap: 0.75rem;
   }
-  
+
   .detailIcon {
     font-size: 1.25rem;
   }
-  
+
   .ctaButton {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
   }
-  
+
   .socialProof {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
   }
-  
+
   .proofIcon {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -358,72 +383,72 @@
   .benefitsList {
     min-height: 60px;
   }
-  
+
   .focusGrid {
     gap: 0.5rem;
   }
-  
+
   .focusItem {
     padding: 0.5rem;
   }
-  
+
   .trainingDetails {
     gap: 0.5rem;
   }
-  
+
   .detailItem {
     padding: 0.5rem;
   }
 }
 
 /* Dark mode support */
-[data-theme='dark'] .benefitsTitle,
-[data-theme='dark'] .focusTitle {
+[data-theme="dark"] .benefitsTitle,
+[data-theme="dark"] .focusTitle {
   color: #e3e3e3;
 }
 
-[data-theme='dark'] .benefitItem {
+[data-theme="dark"] .benefitItem {
   background: #242526;
   color: #e3e3e3;
 }
 
-[data-theme='dark'] .benefitItem.active {
+[data-theme="dark"] .benefitItem.active {
   background: linear-gradient(135deg, #1a2f1a, #2a3b2a);
 }
 
-[data-theme='dark'] .focusItem {
+[data-theme="dark"] .focusItem {
   background: #242526;
   color: #e3e3e3;
 }
 
-[data-theme='dark'] .focusItem:hover {
+[data-theme="dark"] .focusItem:hover {
   background: #2a3b2a;
 }
 
-[data-theme='dark'] .detailItem {
+[data-theme="dark"] .detailItem {
   background: #242526;
 }
 
-[data-theme='dark'] .detailItem h4 {
+[data-theme="dark"] .detailItem h4 {
   color: #e3e3e3;
 }
 
-[data-theme='dark'] .detailItem p {
+[data-theme="dark"] .detailItem p {
   color: #b0b3b8;
 }
 
-[data-theme='dark'] .proofText p {
+[data-theme="dark"] .proofText p {
   color: #e3e3e3;
 }
 
-[data-theme='dark'] .ctaNote p {
+[data-theme="dark"] .ctaNote p {
   color: #b0b3b8;
 }
 
-[data-theme='dark'] .progressBar {
+[data-theme="dark"] .progressBar {
   background: #3a3b3c;
 }
 
-[data-theme='dark'] .progressText {
+[data-theme="dark"] .progressText {
   color: #b0b3b8;
 }

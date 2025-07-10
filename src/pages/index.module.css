@@ -247,7 +247,7 @@
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .trustBadge {
@@ -277,7 +277,7 @@
   font-style: italic;
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .testimonialAuthor {
@@ -370,7 +370,7 @@
   background-color: var(--ifm-background-surface-color);
   border: 2px solid var(--ifm-color-primary);
   border-radius: 12px;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   max-width: 350px;
   z-index: 1000;
@@ -413,7 +413,7 @@
 
   .primaryCTA {
     font-size: 1.1rem;
-    padding: 0.875rem 1.5rem;
+    padding: 0.875rem 1rem;
   }
 
   .trustIndicators {

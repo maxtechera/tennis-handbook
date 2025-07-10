@@ -182,7 +182,7 @@
 }
 
 .phaseIcon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 0.6rem;
 }
 
@@ -221,7 +221,7 @@
 
 .exerciseName {
   margin: 0 0 0.75rem 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #f5f5f5;
   font-weight: 600;
   line-height: 1.2;
@@ -281,7 +281,7 @@
 .exerciseDetails {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 1rem;
   flex-wrap: wrap;
   flex-shrink: 0;
@@ -331,7 +331,7 @@
 .instructions ul,
 .cues ul {
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   list-style: none;
 }
 
@@ -426,7 +426,7 @@
   }
 
   .exerciseDetails {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .specValue {
@@ -510,11 +510,11 @@
 /* Landscape Mobile */
 @media (max-width: 896px) and (orientation: landscape) {
   .exerciseCard {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
   }
 
   .exerciseName {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .workoutHeader {

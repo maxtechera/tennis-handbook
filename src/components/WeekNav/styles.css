@@ -1,5 +1,5 @@
 .week-nav {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 12px;
   overflow: hidden;
@@ -7,9 +7,13 @@
 }
 
 .week-nav__header {
-  background: linear-gradient(135deg, var(--phase-color, #6b7280), rgba(var(--phase-color, 107, 114, 128), 0.8));
+  background: linear-gradient(
+    135deg,
+    var(--phase-color, #6b7280),
+    rgba(var(--phase-color, 107, 114, 128), 0.8)
+  );
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
 }
 
 .week-nav__current {
@@ -139,7 +143,7 @@
 }
 
 .week-nav__grid-toggle summary {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   cursor: pointer;
   font-weight: 600;
   color: var(--ifm-color-primary);
@@ -211,29 +215,29 @@
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
-  
+
   .week-nav__button--prev,
   .week-nav__button--next {
     justify-content: center;
   }
-  
+
   .week-nav__button-content {
     text-align: center;
   }
-  
+
   .week-nav__grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 0.5rem;
   }
-  
+
   .week-nav__current {
     gap: 0.75rem;
   }
-  
+
   .week-nav__emoji {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-  
+
   .week-nav__current-title {
     font-size: 1.1rem;
   }
@@ -243,16 +247,16 @@
   .week-nav__header {
     padding: 1rem;
   }
-  
+
   .week-nav__controls {
     padding: 0.75rem;
   }
-  
+
   .week-nav__button {
     padding: 0.5rem 0.75rem;
     min-height: 50px;
   }
-  
+
   .week-nav__grid {
     grid-template-columns: repeat(4, 1fr);
   }
