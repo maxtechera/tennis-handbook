@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState, useCallback } from "react";
 import Translate from "@docusaurus/Translate";
 import clsx from "clsx";
 import styles from "./TennisHero.module.css";
+import { sessionManager } from "../../utils/session";
 
 // Ultra-realistic physics ball class with collision and grabbing
 class InteractiveTennisBall {
@@ -334,9 +335,7 @@ export default function TennisHero({
     Array<{ statType: string; count: number; sessionId: string }>
   >([]);
   const analyticsTimer = useRef<NodeJS.Timeout | null>(null);
-  const sessionId = useRef<string>(
-    `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
-  );
+  const sessionId = useRef<string>(sessionManager.getSessionId());
 
   // Fetch total ball count from database
   const fetchBallStats = useCallback(async () => {
@@ -436,7 +435,7 @@ export default function TennisHero({
     fetchBallStats();
   }, [fetchBallStats]);
 
-  // Setup device orientation detection
+  // Setup device orientation and motion detection
   useEffect(() => {
     const handleDeviceOrientation = (event: DeviceOrientationEvent) => {
       if (event.alpha !== null && event.beta !== null && event.gamma !== null) {
@@ -448,22 +447,37 @@ export default function TennisHero({
       }
     };
 
-    // Check if we need to request permission
-    if (typeof DeviceOrientationEvent !== "undefined") {
+    // Setup motion permissions for iOS 13+
+    const setupMotionEvents = async () => {
+      // Check if we need permission for DeviceMotionEvent
       if (
-        typeof (DeviceOrientationEvent as any).requestPermission === "function"
+        typeof DeviceMotionEvent !== "undefined" &&
+        typeof (DeviceMotionEvent as any).requestPermission === "function"
       ) {
-        // iOS 13+ needs permission - but we'll try to add listener anyway
-        window.addEventListener("deviceorientation", handleDeviceOrientation);
-        setIsPhysicsActive(true);
+        try {
+          const permission = await (DeviceMotionEvent as any).requestPermission();
+          if (permission === "granted") {
+            window.addEventListener("deviceorientation", handleDeviceOrientation);
+            setIsPhysicsActive(true);
+          }
+        } catch (error) {
+          console.log("Motion permission error:", error);
+          // Still try to activate physics
+          setIsPhysicsActive(true);
+        }
       } else {
-        // Android or older iOS
+        // Android or older iOS - no permission needed
         window.addEventListener("deviceorientation", handleDeviceOrientation);
         setIsPhysicsActive(true);
       }
-    } else {
+    };
+
+    // For desktop or if permissions already granted
+    if (typeof DeviceOrientationEvent === "undefined") {
       // Desktop - activate physics immediately
       setIsPhysicsActive(true);
+    } else {
+      setupMotionEvents();
     }
 
     return () => {
@@ -609,8 +623,8 @@ export default function TennisHero({
       lastShakeTime.current = now;
 
       // Add new ball very easily when shaking (super sensitive)
-      if (intensity > 4 && Math.random() > 0.1) {
-        // Much lower threshold, much higher chance
+      if (intensity > 2 && Math.random() > 0.3) {
+        // Even lower threshold for easier ball creation
         const maxBalls = 100;
 
         // Remove oldest ball if we would exceed the limit (FIFO)
@@ -677,8 +691,8 @@ export default function TennisHero({
           accelerationHistory.current.reduce((a, b) => a + b, 0) /
           accelerationHistory.current.length;
 
-        if (totalDelta > 3 || avgAcceleration > 2) {
-          // 4x more sensitive
+        if (totalDelta > 1.5 || avgAcceleration > 1) {
+          // More sensitive shake detection
           handleShake(totalDelta);
         }
 
@@ -869,7 +883,12 @@ export default function TennisHero({
 
         {/* Add More Balls Button - Now below CTA */}
         <button
-          onClick={() => {
+          onClick={async () => {
+            // Request motion permission on first interaction (iOS)
+            if (motionPermission !== "granted") {
+              await requestOrientationPermission();
+            }
+            
             const canvas = canvasRef.current;
             if (canvas) {
               const maxBalls = 100;
