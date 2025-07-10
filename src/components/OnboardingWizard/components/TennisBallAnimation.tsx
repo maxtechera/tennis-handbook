@@ -20,6 +20,7 @@ export function TennisBallAnimation({
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [velocity, setVelocity] = useState({ x: 0, y: 0 });
   const [isFlying, setIsFlying] = useState(false);
+  const [hasMoved, setHasMoved] = useState(false);
   
   const ballRef = useRef<HTMLDivElement>(null);
   const dragDataRef = useRef({
@@ -47,8 +48,10 @@ export function TennisBallAnimation({
     if (!draggable) return;
     
     e.preventDefault();
+    e.stopPropagation();
     setIsDragging(true);
     setIsFlying(false);
+    setHasMoved(false);
     
     const rect = ballRef.current?.getBoundingClientRect();
     if (rect) {
@@ -68,8 +71,10 @@ export function TennisBallAnimation({
     if (!draggable) return;
     
     e.preventDefault();
+    e.stopPropagation();
     setIsDragging(true);
     setIsFlying(false);
+    setHasMoved(false);
     
     const touch = e.touches[0];
     const rect = ballRef.current?.getBoundingClientRect();
@@ -95,6 +100,11 @@ export function TennisBallAnimation({
     if (deltaTime > 0) {
       const deltaX = clientX - dragDataRef.current.lastX;
       const deltaY = clientY - dragDataRef.current.lastY;
+      
+      // Track if there's been actual movement
+      if (Math.abs(deltaX) > 1 || Math.abs(deltaY) > 1) {
+        setHasMoved(true);
+      }
       
       dragDataRef.current.velocityX = deltaX / deltaTime * 1000;
       dragDataRef.current.velocityY = deltaY / deltaTime * 1000;
@@ -125,12 +135,13 @@ export function TennisBallAnimation({
     const velY = dragDataRef.current.velocityY;
     const speed = Math.sqrt(velX * velX + velY * velY);
     
-    if (speed > 300) { // Minimum velocity for flick
+    // Only trigger flick if there was actual movement and sufficient velocity
+    if (speed > 300 && hasMoved) { // Minimum velocity AND actual movement
       setVelocity({ x: velX, y: velY });
       setIsFlying(true);
       onFlick?.({ x: velX, y: velY });
     }
-  }, [isDragging, onFlick]);
+  }, [isDragging, onFlick, hasMoved]);
 
   // Physics animation for flying ball
   useEffect(() => {
@@ -194,6 +205,19 @@ export function TennisBallAnimation({
     };
   }, [isFlying, velocity]);
 
+  // Handle simple clicks without drag
+  const handleClick = useCallback((e: React.MouseEvent) => {
+    if (!draggable) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    
+    // For draggable balls, prevent click events that might interfere
+    e.preventDefault();
+    e.stopPropagation();
+  }, [draggable]);
+
   // Global mouse/touch event handlers
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => handleMove(e.clientX, e.clientY);
@@ -231,6 +255,7 @@ export function TennisBallAnimation({
       style={ballStyle}
       onMouseDown={handleMouseDown}
       onTouchStart={handleTouchStart}
+      onClick={handleClick}
     >
       <div className={styles.ballSurface}>
         <div className={styles.ballCurve}></div>

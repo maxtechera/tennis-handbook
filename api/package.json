@@ -4,10 +4,11 @@
   "type": "module",
   "private": true,
   "description": "Serverless API functions for Tennis Workout application",
-  "main": "index.js",
   "scripts": {
-    "dev": "vercel dev",
-    "build": "vercel build",
+    "build": "tsc && node build-post-process.js",
+    "typecheck": "tsc --noEmit",
+    "dev": "echo 'API functions served by Vercel dev from root'",
+    "clean": "rimraf dist",
     "test": "node test-db.js",
     "setup": "node dev-setup.js",
     "query": "node db-query.js"
@@ -17,6 +18,9 @@
     "@vercel/node": "^5.3.4"
   },
   "devDependencies": {
+    "typescript": "~5.6.2",
+    "@types/node": "^22.0.0",
+    "rimraf": "^6.0.1",
     "vercel": "^37.0.0"
   },
   "engines": {

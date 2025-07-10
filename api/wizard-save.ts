@@ -86,7 +86,7 @@ async function syncToConvertKit(
 
     if (!response.ok) {
       console.error("ConvertKit sync error:", data);
-      return { success: false, error: data.message || "Failed to sync" };
+      return { success: false, error: (data as any).message || "Failed to sync" };
     }
 
     console.log(
@@ -96,7 +96,7 @@ async function syncToConvertKit(
 
     return {
       success: true,
-      subscriberId: data.subscription?.subscriber?.id,
+      subscriberId: (data as any).subscription?.subscriber?.id,
     };
   } catch (error: any) {
     console.error("ConvertKit sync error:", error);

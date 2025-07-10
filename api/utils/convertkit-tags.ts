@@ -3,7 +3,7 @@
  * This ensures consistent tagging across all sync points
  */
 
-export function generateConvertKitTags(data = {}) {
+export function generateConvertKitTags(data: any = {}) {
   const tags = new Set(['tennis-handbook']); // Always include base tag
   
   // Extract data from various sources
@@ -155,8 +155,8 @@ export function generateConvertKitTags(data = {}) {
         'daily': 'daily-trainer'
       };
       
-      if (frequencyMap[trainingFrequency.trainingFrequency]) {
-        tags.add(frequencyMap[trainingFrequency.trainingFrequency]);
+      if (frequencyMap[trainingFrequency.trainingFrequency as keyof typeof frequencyMap]) {
+        tags.add(frequencyMap[trainingFrequency.trainingFrequency as keyof typeof frequencyMap]);
       }
     }
 
@@ -326,7 +326,7 @@ export function generateConvertKitTags(data = {}) {
 /**
  * Calculate engagement score based on user data
  */
-function calculateEngagementScore(data) {
+function calculateEngagementScore(data: any) {
   let score = 0;
   const { wizardData = {} } = data;
 
@@ -355,9 +355,9 @@ function calculateEngagementScore(data) {
 /**
  * Generate custom fields for ConvertKit
  */
-export function generateCustomFields(data = {}) {
+export function generateCustomFields(data: any = {}) {
   const { wizardData = {}, metadata = {} } = data;
-  const fields = {
+  const fields: any = {
     source: data.source || 'unknown',
     language: data.language || 'en',
     signup_date: new Date().toISOString()
