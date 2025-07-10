@@ -89,6 +89,17 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: "Events array is required" });
     }
     
+    // Check if database is available
+    if (!process.env.POSTGRES_URL) {
+      // Return success even without database
+      return res.status(200).json({ 
+        success: true,
+        totals: {},
+        eventsProcessed: events.length,
+        demo: true
+      });
+    }
+    
     // Get user agent and IP
     const userAgent = req.headers['user-agent'] || '';
     const ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || 'unknown';
