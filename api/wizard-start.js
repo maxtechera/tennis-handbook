@@ -1,7 +1,8 @@
 import { sql } from '@vercel/postgres';
+import { generateConvertKitTags, generateCustomFields } from './utils/convertkit-tags.js';
 
 // Helper function to submit to Kit.com (ConvertKit)
-async function submitToKitCom(email, sessionId) {
+async function submitToKitCom(email, sessionId, wizardData = {}) {
   const CONVERTKIT_API_SECRET = process.env.CONVERTKIT_API_SECRET;
   const CONVERTKIT_FORM_ID = process.env.CONVERTKIT_FORM_ID_ES || process.env.CONVERTKIT_FORM_ID;
   
@@ -11,20 +12,30 @@ async function submitToKitCom(email, sessionId) {
   }
   
   try {
+    // Generate comprehensive tags and custom fields
+    const tagData = {
+      email,
+      source: 'wizard-start',
+      language: 'es', // Spanish form primarily
+      sessionId,
+      wizardData,
+      timestamp: new Date()
+    };
+    
+    const tags = generateConvertKitTags(tagData);
+    const customFields = generateCustomFields(tagData);
+    
     const payload = {
       api_secret: CONVERTKIT_API_SECRET,
       email: email,
       fields: {
+        ...customFields,
         source: 'wizard-start',
         wizard_started: 'yes',
         wizard_started_at: new Date().toISOString(),
         session_id: sessionId
       },
-      tags: [
-        'tennis-handbook',
-        'onboarding-wizard-started',
-        'spanish' // Assuming Spanish users primarily
-      ]
+      tags: tags
     };
     
     const response = await fetch(
@@ -98,7 +109,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { email, sessionId, source = 'wizard' } = req.body;
+    const { email, sessionId, source = 'wizard', wizardData = {} } = req.body;
     
     // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -118,20 +129,30 @@ export default async function handler(req, res) {
     const ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || 'unknown';
     
     if (isDatabaseAvailable) {
-      // Quick email capture with kit_submitted status
+      // Quick email capture with processing flag
       await sql`
-        INSERT INTO email_captures (email, source, metadata, kit_submitted, kit_subscriber_id, kit_submitted_at)
+        INSERT INTO email_captures (
+          email, 
+          source, 
+          metadata, 
+          kit_submitted, 
+          kit_subscriber_id, 
+          kit_submitted_at,
+          processing_started_at
+        )
         VALUES (
           ${email}, 
           ${source}, 
           ${JSON.stringify({ sessionId })},
           FALSE,
           NULL,
-          NULL
+          NULL,
+          NOW()
         )
         ON CONFLICT (email) DO UPDATE SET
           source = EXCLUDED.source,
-          metadata = EXCLUDED.metadata
+          metadata = EXCLUDED.metadata,
+          processing_started_at = NOW()
       `;
       
       // Create wizard submission entry
@@ -168,8 +189,8 @@ export default async function handler(req, res) {
     }
     
     // Submit to Kit.com (ConvertKit)
-    console.log('📤 Submitting to Kit.com...');
-    const kitResult = await submitToKitCom(email, sessionId);
+    console.log('📤 Submitting to Kit.com with comprehensive tags...');
+    const kitResult = await submitToKitCom(email, sessionId, wizardData);
     
     if (!kitResult.success) {
       console.error('Kit.com submission failed:', kitResult.error);
