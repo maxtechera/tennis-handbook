@@ -5,7 +5,8 @@
   /* height: 100dvh; */
   min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
   overflow: hidden;
-  background: linear-gradient(135deg, #203780, #203780);
+  background: url('./background.png') center center / cover no-repeat;
+  background-color: #203780; /* Fallback color */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,15 +69,16 @@
   }
 }
 
-/* Court Lines Background */
+/* Court Lines Background - Hidden for now */
 .courtLines {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.15;
+  opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 /* Tennis Court Outer Lines - Doubles Court */
@@ -285,7 +287,8 @@
 
 .titleLine2 {
   display: block;
-  color: white;
+  color: linear-gradient(135deg, #4caf50, #388e3c);
+  color: #4caf50;
   font-size: 1.2em;
   animation: slideInFromRight 0.8s ease-out 0.2s both;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -378,30 +381,94 @@
 
 /* Visual Stats */
 .visualStats {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   margin-bottom: 2.5rem;
   animation: fadeInUp 0.8s ease-out 0.6s both;
-  flex-wrap: wrap;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .statItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  aspect-ratio: 1;
+  position: relative;
   transition: transform 0.3s ease;
 }
 
+/* Liquid Glass Orb Effect */
+.statItem::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.1) 40%,
+    rgba(255, 255, 255, 0.05) 60%,
+    transparent 80%
+  );
+  border-radius: 50%;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 
+    0 8px 32px rgba(31, 38, 135, 0.37),
+    inset 0 -5px 20px rgba(255, 255, 255, 0.25),
+    inset 0 5px 20px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Glass refraction effect */
+.statItem::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.4) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  top: 25%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
 .statItem:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px) scale(1.05);
+}
+
+.statItem:hover::before {
+  box-shadow: 
+    0 15px 45px rgba(31, 38, 135, 0.4),
+    inset 0 -5px 30px rgba(255, 255, 255, 0.3),
+    inset 0 5px 30px rgba(255, 255, 255, 0.35);
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.15) 40%,
+    rgba(255, 255, 255, 0.08) 60%,
+    transparent 80%
+  );
 }
 
 .statIcon {
   font-size: 2.5rem;
-  animation: bounce 2s ease-in-out infinite;
-  animation-delay: calc(var(--index, 0) * 0.2s);
+  position: relative;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite;
+  animation-delay: calc(var(--index, 0) * 0.3s);
 }
 
 .statItem:nth-child(1) .statIcon {
@@ -417,7 +484,25 @@
 .statText {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #90a4ae;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 100px;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-2deg);
+  }
+  75% {
+    transform: translateY(5px) rotate(2deg);
+  }
 }
 
 @keyframes bounce {
@@ -594,10 +679,28 @@
 
   .visualStats {
     gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .statItem::before {
+    width: 80px;
+    height: 80px;
+  }
+
+  .statItem::after {
+    width: 20px;
+    height: 20px;
   }
 
   .statIcon {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .statText {
+    font-size: 0.75rem;
+    max-width: 70px;
   }
 
   .ctaButton {

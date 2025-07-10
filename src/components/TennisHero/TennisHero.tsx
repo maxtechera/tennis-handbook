@@ -23,6 +23,10 @@ class InteractiveTennisBall {
   sleepFrames: number;
   lastX: number;
   lastY: number;
+  rotation: number;
+  rotationSpeed: number;
+  static ballImage: HTMLImageElement | null = null;
+  static imageLoaded: boolean = false;
 
   constructor(x: number, y: number, radius: number = 15) {
     this.x = x;
@@ -41,6 +45,17 @@ class InteractiveTennisBall {
     this.sleepFrames = 0;
     this.lastX = x;
     this.lastY = y;
+    this.rotation = Math.random() * Math.PI * 2; // Random initial rotation
+    this.rotationSpeed = 0; // Will be calculated based on velocity
+
+    // Load the image once for all balls
+    if (!InteractiveTennisBall.ballImage) {
+      InteractiveTennisBall.ballImage = new Image();
+      InteractiveTennisBall.ballImage.src = "/img/logo.png";
+      InteractiveTennisBall.ballImage.onload = () => {
+        InteractiveTennisBall.imageLoaded = true;
+      };
+    }
   }
 
   // Check if point is inside ball (for touching)
@@ -142,6 +157,11 @@ class InteractiveTennisBall {
         other.x += separationX;
         other.y += separationY;
       }
+
+      // Add spin on collision
+      const impactForce = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
+      this.rotationSpeed += (Math.random() - 0.5) * impactForce * 0.2;
+      other.rotationSpeed += (Math.random() - 0.5) * impactForce * 0.2;
 
       // Calculate collision response (momentum transfer)
       const nx = dx / distance; // Normal vector
@@ -248,6 +268,16 @@ class InteractiveTennisBall {
     this.x += this.vx;
     this.y += this.vy;
 
+    // Update rotation based on velocity (rolling effect)
+    const speed = Math.sqrt(this.vx * this.vx + this.vy * this.vy);
+    this.rotationSpeed = (this.vx / this.radius) * 0.5; // Rolling rotation
+
+    // Add the stored rotation speed (from collisions, etc)
+    this.rotation += this.rotationSpeed;
+
+    // Dampen rotation speed over time
+    this.rotationSpeed *= 0.98;
+
     // Enhanced boundary collisions with realistic physics
     let bounced = false;
 
@@ -255,10 +285,12 @@ class InteractiveTennisBall {
     if (this.x - this.radius < 0) {
       this.x = this.radius;
       this.vx = -this.vx * this.restitution;
+      this.rotationSpeed = -this.rotationSpeed * 0.7; // Reverse spin on wall bounce
       bounced = true;
     } else if (this.x + this.radius > width) {
       this.x = width - this.radius;
       this.vx = -this.vx * this.restitution;
+      this.rotationSpeed = -this.rotationSpeed * 0.7; // Reverse spin on wall bounce
       bounced = true;
     }
 
@@ -266,12 +298,16 @@ class InteractiveTennisBall {
     if (this.y - this.radius < 0) {
       this.y = this.radius;
       this.vy = -this.vy * this.restitution;
+      // Add spin based on horizontal velocity
+      this.rotationSpeed += this.vx * 0.1;
       bounced = true;
     } else if (this.y + this.radius > height) {
       this.y = height - this.radius;
       this.vy = -this.vy * this.restitution;
       // Ground friction when bouncing
       this.vx *= this.friction;
+      // Add backspin on ground bounce
+      this.rotationSpeed = -Math.abs(this.vy) * 0.2;
       bounced = true;
     }
 
@@ -303,11 +339,9 @@ class InteractiveTennisBall {
   }
 
   draw(ctx: CanvasRenderingContext2D) {
-    // Tennis ball with realistic shadow
+    // Draw shadow
     const shadowOffset = 3;
     const shadowOpacity = 0.3;
-
-    // Draw shadow
     ctx.globalAlpha = shadowOpacity;
     ctx.beginPath();
     ctx.ellipse(
@@ -321,49 +355,70 @@ class InteractiveTennisBall {
     );
     ctx.fillStyle = "#000000";
     ctx.fill();
-
     ctx.globalAlpha = 1;
 
-    // Tennis ball gradient
-    const gradient = ctx.createRadialGradient(
-      this.x - this.radius / 3,
-      this.y - this.radius / 3,
-      0,
-      this.x,
-      this.y,
-      this.radius
-    );
-    gradient.addColorStop(0, "hsl(66, 100%, 85%)");
-    gradient.addColorStop(0.3, "hsl(66, 100%, 75%)");
-    gradient.addColorStop(0.7, "hsl(65, 95%, 65%)");
-    gradient.addColorStop(1, "hsl(64, 90%, 55%)");
+    // If image is loaded, draw it, otherwise fallback to gradient
+    if (InteractiveTennisBall.imageLoaded && InteractiveTennisBall.ballImage) {
+      // Save context state for rotation
+      ctx.save();
 
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-    ctx.fillStyle = gradient;
-    ctx.fill();
+      // Translate to ball center and rotate
+      ctx.translate(this.x, this.y);
+      ctx.rotate(this.rotation);
 
-    // Tennis ball seam
-    ctx.strokeStyle = "rgba(255, 255, 255, 0.8)";
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius * 0.8, 0, Math.PI);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radius * 0.8, Math.PI, Math.PI * 2);
-    ctx.stroke();
+      // Draw the image centered at origin (after translation)
+      ctx.drawImage(
+        InteractiveTennisBall.ballImage,
+        -this.radius,
+        -this.radius,
+        this.radius * 2,
+        this.radius * 2
+      );
 
-    // Highlight for 3D effect
-    ctx.beginPath();
-    ctx.arc(
-      this.x - this.radius / 4,
-      this.y - this.radius / 4,
-      this.radius / 4,
-      0,
-      Math.PI * 2
-    );
-    ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
-    ctx.fill();
+      // Restore context state
+      ctx.restore();
+    } else {
+      // Fallback to original gradient rendering
+      const gradient = ctx.createRadialGradient(
+        this.x - this.radius / 3,
+        this.y - this.radius / 3,
+        0,
+        this.x,
+        this.y,
+        this.radius
+      );
+      gradient.addColorStop(0, "hsl(66, 100%, 85%)");
+      gradient.addColorStop(0.3, "hsl(66, 100%, 75%)");
+      gradient.addColorStop(0.7, "hsl(65, 95%, 65%)");
+      gradient.addColorStop(1, "hsl(64, 90%, 55%)");
+
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      // Tennis ball seam
+      ctx.strokeStyle = "rgba(255, 255, 255, 0.8)";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius * 0.8, 0, Math.PI);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius * 0.8, Math.PI, Math.PI * 2);
+      ctx.stroke();
+
+      // Highlight for 3D effect
+      ctx.beginPath();
+      ctx.arc(
+        this.x - this.radius / 4,
+        this.y - this.radius / 4,
+        this.radius / 4,
+        0,
+        Math.PI * 2
+      );
+      ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
+      ctx.fill();
+    }
   }
 }
 
@@ -620,9 +675,11 @@ export default function TennisHero({
           canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
           spawnY
         );
-        // Throw toward the walls with strong horizontal velocity
+        // Throw toward the walls with strong horizontal velocity and curve
         const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
-        ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
+        // Add curve factor: 3-8 units of horizontal velocity for curve
+        const curveFactor = 3 + Math.random() * 5;
+        ball.vx = direction * (12 + Math.random() * 8) + curveFactor * (Math.random() < 0.5 ? -1 : 1); // Strong horizontal with curve
         ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
         ballsRef.current.push(ball); // Add newest ball
         setBallCount(ballsRef.current.length);
@@ -669,7 +726,9 @@ export default function TennisHero({
         const angle = (Math.PI * 2 * i) / ballsToAdd + Math.random() * 0.3;
         const speed = 15 + Math.random() * 10; // Strong outward velocity
 
-        ball.vx = Math.cos(angle) * speed;
+        // Add curve factor to celebration balls
+        const curveFactor = 2 + Math.random() * 6; // 2-8 units of curve
+        ball.vx = Math.cos(angle) * speed + curveFactor * (Math.random() < 0.5 ? -1 : 1);
         ball.vy = Math.sin(angle) * speed - 5; // Slight upward bias
 
         ballsRef.current.push(ball);
@@ -806,9 +865,11 @@ export default function TennisHero({
           canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
           spawnY
         );
-        // Throw toward the walls with strong horizontal velocity
+        // Throw toward the walls with strong horizontal velocity and curve
         const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
-        ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
+        // Add curve factor for initial balls
+        const curveFactor = 3 + Math.random() * 5; // 3-8 units of curve
+        ball.vx = direction * (12 + Math.random() * 8) + curveFactor * (Math.random() < 0.5 ? -1 : 1); // Strong horizontal with curve
         ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
         ballsRef.current.push(ball);
       }
@@ -1088,6 +1149,7 @@ export default function TennisHero({
           </span>
         </h1>
 
+        {/* Add More Balls Button - Now below CTA */}
         {/* Visual Stats */}
         <div className={styles.visualStats}>
           <div className={styles.statItem}>
@@ -1119,8 +1181,6 @@ export default function TennisHero({
             realista
           </Translate>
         </p>
-        {/* Add More Balls Button - Now below CTA */}
-
         {/* CTA Button */}
         <button
           ref={ctaButtonRef}
@@ -1183,9 +1243,11 @@ export default function TennisHero({
                   canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
                   spawnY
                 );
-                // Throw toward the walls with strong horizontal velocity
+                // Throw toward the walls with strong horizontal velocity and curve
                 const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
-                ball.vx = direction * (15 + Math.random() * 5); // Extra strong horizontal -20 to -15 or 15 to 20
+                // Add curve factor for button-spawned balls
+                const curveFactor = 4 + Math.random() * 6; // 4-10 units of curve for more dramatic effect
+                ball.vx = direction * (15 + Math.random() * 5) + curveFactor * (Math.random() < 0.5 ? -1 : 1); // Extra strong horizontal with curve
                 ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
                 ballsRef.current.push(ball); // Add to end (newest)
               }
