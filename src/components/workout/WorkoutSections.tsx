@@ -180,8 +180,15 @@ export function TennisTrainingTable({ data }: { data: any }) {
           
           <Details summary="💡 Detailed Instructions">
             <ul>
-              {exercise.detailed_instructions?.map((instruction: string, i: number) => (
-                <li key={i}>{instruction}</li>
+              {/* Handle detailed_instructions as either array of strings or array of objects */}
+              {exercise.detailed_instructions?.map((instruction: any, i: number) => (
+                <li key={i}>
+                  {typeof instruction === 'string' 
+                    ? instruction 
+                    : instruction.phase 
+                      ? <><strong>{instruction.phase}:</strong> {instruction.instruction}</>
+                      : instruction.instruction || instruction}
+                </li>
               ))}
             </ul>
           </Details>
@@ -249,8 +256,15 @@ export function TennisTrainingTable({ data }: { data: any }) {
           
           <Details summary="📋 Setup & Execution">
             <ul>
-              {drill.detailed_instructions?.map((instruction: string, i: number) => (
-                <li key={i}>{instruction}</li>
+              {/* Handle detailed_instructions as either array of strings or array of objects */}
+              {drill.detailed_instructions?.map((instruction: any, i: number) => (
+                <li key={i}>
+                  {typeof instruction === 'string' 
+                    ? instruction 
+                    : instruction.phase 
+                      ? <><strong>{instruction.phase}:</strong> {instruction.instruction}</>
+                      : instruction.instruction || instruction}
+                </li>
               ))}
             </ul>
           </Details>
@@ -326,9 +340,42 @@ export function StrengthTrainingSection({ data }: { data: any }) {
             <p><strong>Technique:</strong></p>
             <ul>
               <li>{exercise.tempo_description}</li>
-              {exercise.detailed_instructions?.map((instruction: string, i: number) => (
-                <li key={i}>{instruction}</li>
-              ))}
+              {/* Handle different detailed_instructions structures */}
+              {(() => {
+                const instructions = exercise.detailed_instructions;
+                if (!instructions) return null;
+                
+                // Week 2+ structure: object with technique_points array
+                if (instructions.technique_points && Array.isArray(instructions.technique_points)) {
+                  return (
+                    <>
+                      {instructions.title && <li><strong>{instructions.title}</strong></li>}
+                      {instructions.technique_points.map((instruction: any, i: number) => (
+                        <li key={i}>
+                          {instruction.phase 
+                            ? <><strong>{instruction.phase}:</strong> {instruction.instruction}</>
+                            : instruction.instruction || instruction}
+                        </li>
+                      ))}
+                    </>
+                  );
+                }
+                
+                // Week 1 structure: direct array
+                if (Array.isArray(instructions)) {
+                  return instructions.map((instruction: any, i: number) => (
+                    <li key={i}>
+                      {typeof instruction === 'string' 
+                        ? instruction 
+                        : instruction.phase 
+                          ? <><strong>{instruction.phase}:</strong> {instruction.instruction}</>
+                          : instruction.instruction || instruction}
+                    </li>
+                  ));
+                }
+                
+                return null;
+              })()}
             </ul>
             
             <p><strong>Professional Cues:</strong></p>

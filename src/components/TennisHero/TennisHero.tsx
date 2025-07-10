@@ -517,9 +517,16 @@ export default function TennisHero({
       ballsRef.current = [];
       const initialBallCount = Math.min(20, Math.floor(canvas.width / 40)); // Responsive ball count
       for (let i = 0; i < initialBallCount; i++) {
+        // Get CTA button position for spawning
+        const buttonRect = ctaButtonRef.current?.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+        const spawnY = buttonRect
+          ? buttonRect.top - canvasRect.top - 30 // 30px above button
+          : canvas.height * 0.5; // Fallback to middle
+
         const ball = new InteractiveTennisBall(
           canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
-          canvas.height * 0.8 // Start from bottom 20%
+          spawnY
         );
         // Throw toward the walls with strong horizontal velocity
         const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
@@ -598,20 +605,30 @@ export default function TennisHero({
       lastShakeTime.current = now;
 
       // Add new ball occasionally when shaking hard
-      if (
-        intensity > 15 &&
-        ballsRef.current.length < 35 &&
-        Math.random() > 0.5
-      ) {
+      if (intensity > 15 && Math.random() > 0.5) {
+        const maxBalls = 50;
+
+        // Remove oldest ball if we would exceed the limit (FIFO)
+        if (ballsRef.current.length >= maxBalls) {
+          ballsRef.current.shift(); // Remove oldest ball
+        }
+
+        // Get CTA button position for spawning
+        const buttonRect = ctaButtonRef.current?.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+        const spawnY = buttonRect
+          ? buttonRect.top - canvasRect.top - 30 // 30px above button
+          : canvas.height * 0.5; // Fallback to middle
+
         const ball = new InteractiveTennisBall(
           canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
-          canvas.height * 0.8 // Start from bottom
+          spawnY
         );
         // Throw toward the walls with strong horizontal velocity
         const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
         ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
         ball.vy = -6 - Math.random() * 3; // Moderate upward velocity -6 to -9
-        ballsRef.current.push(ball);
+        ballsRef.current.push(ball); // Add newest ball
         setBallCount(ballsRef.current.length);
       }
 
@@ -859,25 +876,47 @@ export default function TennisHero({
         <button
           onClick={() => {
             const canvas = canvasRef.current;
-            if (canvas && ballsRef.current.length < 50) {
-              // Add 3 balls at once
-              for (let i = 0; i < 3; i++) {
+            if (canvas) {
+              const maxBalls = 50;
+              const ballsToAdd = 3;
+
+              // Remove oldest balls if we would exceed the limit (FIFO)
+              const currentCount = ballsRef.current.length;
+              const ballsToRemove = Math.max(
+                0,
+                currentCount + ballsToAdd - maxBalls
+              );
+
+              if (ballsToRemove > 0) {
+                ballsRef.current.splice(0, ballsToRemove); // Remove from beginning (oldest)
+              }
+
+              // Always add new balls
+              for (let i = 0; i < ballsToAdd; i++) {
+                // Get CTA button position for spawning
+                const buttonRect =
+                  ctaButtonRef.current?.getBoundingClientRect();
+                const canvasRect = canvas.getBoundingClientRect();
+                const spawnY = buttonRect
+                  ? buttonRect.top - canvasRect.top - 30 // 30px above button
+                  : canvas.height * 0.5; // Fallback to middle
+
                 const ball = new InteractiveTennisBall(
                   canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
-                  canvas.height * 0.8 // Start from bottom
+                  spawnY
                 );
                 // Throw toward the walls with strong horizontal velocity
                 const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
                 ball.vx = direction * (15 + Math.random() * 5); // Extra strong horizontal -20 to -15 or 15 to 20
                 ball.vy = -8 - Math.random() * 4; // Good upward velocity -8 to -12
-                ballsRef.current.push(ball);
+                ballsRef.current.push(ball); // Add to end (newest)
               }
               setBallCount(ballsRef.current.length);
             }
           }}
           className={styles.addBallsButton}
         >
-          🎾 Más Pelotas ({ballCount})
+          🎾 Más Pelotas ({ballCount}/50)
         </button>
 
         {/* Trust Indicators */}
