@@ -1,6 +1,7 @@
 {
   "name": "tennis-workout-api",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "description": "Serverless API functions for Tennis Workout application",
   "main": "index.js",

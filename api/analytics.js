@@ -1,7 +1,7 @@
 // Vercel Serverless Function for Analytics
 // Simple analytics collection endpoint
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   // Enable CORS
   const allowedOrigins = [
     "http://localhost:3000",
