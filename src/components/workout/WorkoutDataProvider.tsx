@@ -10,8 +10,8 @@ export function WorkoutCarouselFromData({ week, day }: { week: number; day: stri
   
   if (!data) return null;
   
-  // Transform the timeline data into WorkoutCarousel phases
-  const phases = data.timeline
+  // Transform the schedule data into WorkoutCarousel phases
+  const phases = (data.schedule?.blocks || [])
     .filter(entry => entry.phase_id) // Only entries with phase_id are carousel phases
     .map(entry => {
       // Get exercises for this phase
@@ -24,30 +24,30 @@ export function WorkoutCarouselFromData({ week, day }: { week: number; day: stri
               name: 'Yoga Flow',
               sets: '1',
               reps: '20 min',
-              videoUrl: data.morning_protocol?.yoga_breathing?.yoga_flow?.video_url,
-              instructions: data.morning_protocol?.yoga_breathing?.yoga_flow?.detailed_instructions || [],
-              cues: data.morning_protocol?.yoga_breathing?.yoga_flow?.cues || []
+              videoUrl: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'yoga_flow')?.video_url,
+              instructions: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'yoga_flow')?.detailed_instructions || [],
+              cues: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'yoga_flow')?.cues || []
             },
             {
               name: 'Breathing Protocol',
               sets: '1',
               reps: '5 min',
-              instructions: data.morning_protocol?.yoga_breathing?.breathing_protocol?.detailed_instructions || [],
-              cues: data.morning_protocol?.yoga_breathing?.breathing_protocol?.cues || []
+              instructions: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'breathing_protocol')?.detailed_instructions || [],
+              cues: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'breathing_protocol')?.cues || []
             },
             {
               name: 'HRV Measurement',
               sets: '1',
               reps: '1 reading',
-              instructions: data.morning_protocol?.professional_assessment?.assessments?.[0]?.detailed_instructions || [],
-              cues: data.morning_protocol?.professional_assessment?.assessments?.[0]?.cues || []
+              instructions: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'hrv_measurement')?.detailed_instructions || [],
+              cues: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'hrv_measurement')?.cues || []
             },
             {
               name: 'Movement Quality Screen',
               sets: '1',
               reps: '5 squats',
-              instructions: data.morning_protocol?.professional_assessment?.assessments?.[3]?.detailed_instructions || [],
-              cues: data.morning_protocol?.professional_assessment?.assessments?.[3]?.cues || []
+              instructions: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'movement_screen')?.detailed_instructions || [],
+              cues: data.preparation_phases?.find(p => p.id === 'morning_protocol')?.components?.find(c => c.id === 'movement_screen')?.cues || []
             }
           ];
           break;
@@ -126,11 +126,11 @@ export function WorkoutCarouselFromData({ week, day }: { week: number; day: stri
 
 // Export other data transformation functions
 export function getPreWeekAssessment() {
-  return workoutData.pre_week_assessment;
+  return workoutData.assessments?.find(a => a.id === 'pre_week_assessment');
 }
 
 export function getMorningProtocol() {
-  return workoutData.morning_protocol;
+  return workoutData.preparation_phases?.find(p => p.id === 'morning_protocol');
 }
 
 export function getTennisTraining() {

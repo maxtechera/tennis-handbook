@@ -1,0 +1,669 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Strength Accumulation",
+    "day_id": "week_2_friday",
+    "day_name": "Friday",
+    "title": "Elite Power Development & Tennis Agility",
+    "subtitle": "Explosive Training with Reactive Plyometrics",
+    "phase": "Phase 2: Strength Accumulation",
+    "focus_areas": [
+      "Explosive Power Development",
+      "Tennis Agility",
+      "Reactive Strength",
+      "Posterior Chain Power"
+    ],
+    "training_parameters": {
+      "volume": "100%",
+      "intensity": "85-90%",
+      "density": "high",
+      "duration": "2 hours 35 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Power Development Protocol",
+        "type": "strength",
+        "attribution": {
+          "source": "Jeff Nippard - Power Training",
+          "verification": "Video documentation",
+          "context": "Science-based power development"
+        }
+      },
+      {
+        "name": "Reactive Plyometric System",
+        "type": "power",
+        "attribution": {
+          "source": "Jeff Nippard - Plyometric Training",
+          "verification": "Video reference",
+          "context": "Evidence-based plyometric progression"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Trap bar and plates",
+        "Barbell and bench",
+        "Dumbbells",
+        "Medicine ball",
+        "Pull-up bar",
+        "Tennis court access",
+        "Plyometric box (12-18 inches)"
+      ],
+      "optional": [
+        "Agility ladder",
+        "Cones for drills",
+        "Kettlebell"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Saturday ➡️](saturday)",
+      "overview_link": "./",
+      "next_link": "saturday",
+      "previous_link": "thursday"
+    },
+    "display_config": {
+      "section_headers": {
+        "skill_training": "Tennis Agility Training",
+        "conditioning": "Explosive Strength Development",
+        "recovery": "Recovery Protocol"
+      }
+    }
+  },
+  "schedule_overview": {
+    "title": "Friday Schedule",
+    "sessions": [
+      {
+        "time": "07:15–08:15",
+        "activity": "Tennis Transition & Agility Drills",
+        "instructions": "Aggressive transitions, quick lateral movements"
+      },
+      {
+        "time": "08:25–09:35",
+        "activity": "Explosive Strength Training",
+        "exercises": [
+          {
+            "name": "Trap-bar Deadlift",
+            "sets_reps": "4×6",
+            "instructions": "Increased load, controlled execution"
+          },
+          {
+            "name": "Hip Thrusts",
+            "sets_reps": "3×10",
+            "instructions": "Explosive drive, controlled eccentric"
+          },
+          {
+            "name": "Push Press",
+            "sets_reps": "3×8",
+            "instructions": "Power from hips, full overhead extension"
+          },
+          {
+            "name": "Med-Ball Slams",
+            "sets_reps": "3×10",
+            "instructions": "Explosive throws, full-body engagement"
+          },
+          {
+            "name": "Farmer's Carry",
+            "sets_reps": "2×40m",
+            "instructions": "Upright, stable grip"
+          }
+        ]
+      },
+      {
+        "time": "09:35–09:50",
+        "activity": "Reactive Plyometrics",
+        "sets_reps": "3×5",
+        "instructions": "Depth jumps, lateral bounds, minimal ground contact"
+      }
+    ]
+  },
+  "skill_training": {
+    "section_title": "Tennis Agility Training",
+    "sessions": [
+      {
+        "id": "agility_session",
+        "type": "integrated",
+        "title": "Transition & Agility Drills",
+        "duration": "60 minutes",
+        "intensity": "85-90%",
+        "structure": {
+          "warm_up": "10 minutes",
+          "main_work": "45 minutes",
+          "cool_down": "5 minutes"
+        },
+        "components": [
+          {
+            "id": "transition_drills",
+            "name": "Aggressive Transition Drills",
+            "type": "drill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "25 minutes",
+              "rest": "30 seconds between sets"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Cones, ladder",
+              "players": "1-2 players"
+            },
+            "implementation": {
+              "method": "High-intensity transition practice",
+              "focus": "Quick direction changes",
+              "key_points": "Explosive first steps, maintain balance"
+            },
+            "instructions": [
+              {
+                "phase": "SETUP",
+                "text": "Set up cones for directional changes"
+              },
+              {
+                "phase": "EXECUTION",
+                "text": "Aggressive transitions between shots"
+              },
+              {
+                "phase": "FOCUS",
+                "text": "Quick lateral movements"
+              },
+              {
+                "phase": "INTENSITY",
+                "text": "Maximum effort on each transition"
+              }
+            ],
+            "cues": [
+              "Explosive first step",
+              "Stay low in transitions",
+              "Quick recovery to center"
+            ],
+            "progressions": {
+              "level_1": "Basic transitions",
+              "level_2": "Complex patterns",
+              "level_3": "Reactive transitions"
+            },
+            "success_criteria": [
+              {
+                "metric": "Transition speed",
+                "target": "< 2 seconds",
+                "tracking": "Time between shots"
+              },
+              {
+                "metric": "Balance maintenance",
+                "target": "95%+",
+                "tracking": "Successful recoveries"
+              }
+            ]
+          },
+          {
+            "id": "lateral_agility",
+            "name": "Lateral Movement Patterns",
+            "type": "drill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "20 minutes"
+            },
+            "implementation": {
+              "method": "Quick lateral movement drills",
+              "focus": "Change of direction speed",
+              "key_points": "Push off outside foot, maintain low center"
+            },
+            "instructions": [
+              {
+                "phase": "PATTERNS",
+                "text": "Lateral shuffles, crossover steps"
+              },
+              {
+                "phase": "SPEED",
+                "text": "Maximum velocity movements"
+              },
+              {
+                "phase": "RECOVERY",
+                "text": "Quick stops and direction changes"
+              }
+            ],
+            "cues": [
+              "Stay on balls of feet",
+              "Drive with outside leg",
+              "Maintain athletic position"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "explosive_strength",
+      "type": "power",
+      "title": "Explosive Strength Development",
+      "description": "Heavy power movements with Week 2 load progression",
+      "duration": "70 minutes",
+      "exercises": [
+        {
+          "id": "trap_bar_deadlift",
+          "name": "Trap-bar Deadlift",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "4",
+            "reps": "6",
+            "intensity": "85-90% 1RM",
+            "rest": "3 minutes",
+            "tempo": "1-1-X-1"
+          },
+          "execution": {
+            "setup": [
+              "Stand inside trap bar",
+              "Feet hip-width apart",
+              "Neutral spine position"
+            ],
+            "technique": [
+              "Hip hinge pattern with neutral spine",
+              "Explosive drive through heels and hips",
+              "Control descent slowly and deliberately",
+              "Focus on perfect form with heavier weight"
+            ]
+          },
+          "technique_points": [
+            {
+              "phase": "SETUP",
+              "instruction": "Week 2 load increase from previous week"
+            },
+            {
+              "phase": "DRIVE",
+              "instruction": "Explosive concentric phase"
+            },
+            {
+              "phase": "CONTROL",
+              "instruction": "Slow eccentric for time under tension"
+            }
+          ],
+          "cues": [
+            "Drive through whole foot",
+            "Chest up, lats engaged",
+            "Powerful hip extension"
+          ],
+          "week_progression_notes": {
+            "title": "Load Progression",
+            "load_increase": "5-10% increase from Week 1"
+          },
+          "tracking": {
+            "type": "standard",
+            "format": "sets_reps",
+            "sets": [
+              {
+                "set": 1,
+                "target": "6 reps @ 85%",
+                "actual": "",
+                "rpe": "",
+                "notes": "___"
+              },
+              {
+                "set": 2,
+                "target": "6 reps @ 87.5%",
+                "actual": "",
+                "rpe": "",
+                "notes": "___"
+              },
+              {
+                "set": 3,
+                "target": "6 reps @ 90%",
+                "actual": "",
+                "rpe": "",
+                "notes": "___"
+              },
+              {
+                "set": 4,
+                "target": "6 reps @ 90%",
+                "actual": "",
+                "rpe": "",
+                "notes": "___"
+              }
+            ]
+          },
+          "attribution": {
+            "source": "Jeff Nippard - Deadlift Guide",
+            "verification": "https://www.youtube.com/watch?v=op9kVnSso6Q"
+          }
+        },
+        {
+          "id": "hip_thrusts",
+          "name": "Hip Thrusts",
+          "category": "primary",
+          "order": 2,
+          "loading": {
+            "sets": "3",
+            "reps": "10",
+            "intensity": "75-80%",
+            "rest": "2 minutes",
+            "tempo": "1-1-X-2"
+          },
+          "execution": {
+            "setup": [
+              "Shoulders on bench, feet flat on floor",
+              "Bar positioned on hip crease",
+              "Core engaged before lift"
+            ],
+            "technique": [
+              "Explosive hip drive, squeeze glutes hard",
+              "Control descent slowly",
+              "Create straight line from knees to shoulders",
+              "Focus on posterior chain power"
+            ]
+          },
+          "cues": [
+            "Explosive drive phase",
+            "Peak glute contraction",
+            "Controlled negative"
+          ],
+          "attribution": {
+            "source": "Jeff Nippard - Hip Thrust Guide",
+            "verification": "https://www.youtube.com/watch?v=xDmFkJxPzeM"
+          }
+        },
+        {
+          "id": "push_press",
+          "name": "Push Press",
+          "category": "auxiliary",
+          "order": 3,
+          "loading": {
+            "sets": "3",
+            "reps": "8",
+            "intensity": "70-75%",
+            "rest": "90 seconds",
+            "tempo": "X-X-X-1"
+          },
+          "execution": {
+            "setup": [
+              "Bar in front rack position",
+              "Feet shoulder-width apart",
+              "Core braced"
+            ],
+            "technique": [
+              "Start with slight knee dip",
+              "Explosive leg drive to initiate movement",
+              "Press bar overhead in one fluid motion",
+              "Land stable with arms locked out",
+              "Generate power from lower body"
+            ]
+          },
+          "cues": [
+            "Dip-drive-press sequence",
+            "Power from legs",
+            "Stable overhead position"
+          ],
+          "attribution": {
+            "source": "Jeff Nippard - Push Press Guide",
+            "verification": "https://www.youtube.com/watch?v=iaBVSJm78ko"
+          }
+        },
+        {
+          "id": "med_ball_slams",
+          "name": "Med-Ball Slams",
+          "category": "auxiliary",
+          "order": 4,
+          "loading": {
+            "sets": "3",
+            "reps": "10",
+            "intensity": "Maximum effort",
+            "rest": "60 seconds"
+          },
+          "execution": {
+            "setup": [
+              "Medicine ball appropriate weight",
+              "Athletic stance",
+              "Ball held overhead"
+            ],
+            "technique": [
+              "Hold ball overhead with both hands",
+              "Slam down hard with maximum force",
+              "Full body engagement from core",
+              "Explosive intent on every rep",
+              "Quick retrieval for next rep"
+            ]
+          },
+          "cues": [
+            "Maximum force each rep",
+            "Full body involvement",
+            "Quick reset"
+          ],
+          "attribution": {
+            "source": "Jeff Nippard - Power Training",
+            "verification": "https://www.youtube.com/watch?v=K8aGBKy3a1k"
+          }
+        },
+        {
+          "id": "farmers_carry",
+          "name": "Farmer's Carry",
+          "category": "auxiliary",
+          "order": 5,
+          "loading": {
+            "sets": "2",
+            "distance": "40m",
+            "intensity": "Heavy",
+            "rest": "2 minutes"
+          },
+          "execution": {
+            "setup": [
+              "Heavy dumbbells or farmer's handles",
+              "Neutral grip",
+              "Shoulders back and down"
+            ],
+            "technique": [
+              "Heavy loads challenging your grip",
+              "Maintain upright posture throughout",
+              "Stable grip without over-squeezing",
+              "Take controlled steps forward",
+              "Core engaged to prevent leaning"
+            ]
+          },
+          "cues": [
+            "Tall posture",
+            "Controlled breathing",
+            "Steady pace"
+          ],
+          "tracking": {
+            "type": "distance",
+            "format": "sets_distance",
+            "sets": [
+              {
+                "set": 1,
+                "target": "40m with heavy load",
+                "actual": "___kg for ___m",
+                "notes": "___"
+              },
+              {
+                "set": 2,
+                "target": "40m with heavy load",
+                "actual": "___kg for ___m",
+                "notes": "___"
+              }
+            ]
+          },
+          "attribution": {
+            "source": "Jeff Nippard - Farmer's Walk",
+            "verification": "https://www.youtube.com/watch?v=p8FWv6bUJ7w"
+          }
+        }
+      ]
+    }
+  ],
+  "plyometric_development": [
+    {
+      "id": "reactive_plyo",
+      "type": "power",
+      "title": "Reactive Plyometrics",
+      "duration": "15 minutes",
+      "circuit": {
+        "power_development_goals": [
+          "Minimal ground contact time",
+          "Maximum vertical displacement",
+          "Reactive strength development"
+        ]
+      },
+      "exercises": [
+        {
+          "id": "depth_jumps",
+          "name": "Depth Jumps",
+          "sets": "3",
+          "reps": "5",
+          "rest": "90 seconds",
+          "execution": {
+            "setup": [
+              "Box 12-18 inches high",
+              "Clear landing area",
+              "Athletic ready position"
+            ],
+            "technique": [
+              "Step off box (don't jump)",
+              "Land and immediately jump up maximally",
+              "Minimal ground contact time",
+              "Focus on reactive strength",
+              "Soft landing then explosive takeoff"
+            ]
+          },
+          "cues": [
+            "Quick ground contact",
+            "Maximum height on jump",
+            "Land ready to repeat"
+          ],
+          "success_criteria": [
+            {
+              "metric": "Ground contact time",
+              "target": "< 0.25 seconds",
+              "tracking": "Visual assessment"
+            }
+          ],
+          "attribution": {
+            "source": "Jeff Nippard - Plyometric Training",
+            "verification": "https://www.youtube.com/watch?v=tcY1dI5-Teo"
+          }
+        },
+        {
+          "id": "lateral_bounds",
+          "name": "Lateral Bounds",
+          "sets": "3",
+          "reps": "5 per side",
+          "rest": "60 seconds",
+          "execution": {
+            "setup": [
+              "Clear lateral space",
+              "Start on one leg"
+            ],
+            "technique": [
+              "Explosive lateral jump",
+              "Land on opposite leg",
+              "Immediate rebound",
+              "Maintain balance"
+            ]
+          },
+          "cues": [
+            "Power off outside leg",
+            "Stick the landing",
+            "Quick transitions"
+          ]
+        }
+      ]
+    }
+  ],
+  "key_focus_points": [
+    {
+      "category": "Tennis Agility",
+      "focus": "Aggressive transitions with quick lateral movements"
+    },
+    {
+      "category": "Deadlift Power",
+      "focus": "Increased load from Week 1 with controlled execution"
+    },
+    {
+      "category": "Hip Drive",
+      "focus": "Explosive hip thrusts with controlled eccentric phase"
+    },
+    {
+      "category": "Overhead Power",
+      "focus": "Push press generating power from hips with full extension"
+    },
+    {
+      "category": "Explosive Throws",
+      "focus": "Med-ball slams with full-body engagement"
+    },
+    {
+      "category": "Grip Strength",
+      "focus": "Farmer's carry maintaining upright posture"
+    },
+    {
+      "category": "Plyometric Power",
+      "focus": "Reactive plyometrics with minimal ground contact time"
+    }
+  ],
+  "weekly_notes": {
+    "week": 2,
+    "content": "Friday caps off the week with explosive power development, combining tennis agility work with heavy lifting and reactive plyometrics."
+  },
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 60,
+      "strength_minutes": 70,
+      "warmup_minutes": 10,
+      "recovery_minutes": 15,
+      "total_minutes": 155
+    },
+    "intensity": {
+      "tennis_average": "85-90%",
+      "strength_average": "85-90%",
+      "overall_rpe": 9
+    },
+    "distances": {
+      "court_coverage": "3 km",
+      "conditioning_distance": "80m carries"
+    }
+  },
+  "monitoring": {
+    "performance_metrics": [
+      {
+        "id": "deadlift_load",
+        "name": "Trap-bar Deadlift Load",
+        "type": "quantitative",
+        "category": "strength",
+        "measurement": {
+          "method": "Working weight tracking",
+          "frequency": "Weekly"
+        },
+        "tracking": {
+          "baseline": "Week 1 load",
+          "current": "+5-10%",
+          "target": "Progressive increase",
+          "trend": "improving"
+        }
+      },
+      {
+        "id": "ground_contact_time",
+        "name": "Plyometric Contact Time",
+        "type": "quantitative",
+        "category": "power",
+        "measurement": {
+          "method": "Visual assessment",
+          "frequency": "Weekly"
+        },
+        "tracking": {
+          "baseline": "___",
+          "current": "___",
+          "target": "< 0.25 seconds"
+        }
+      }
+    ],
+    "quality_indicators": [
+      {
+        "name": "Power Output",
+        "scale": "1-10",
+        "target": "9+",
+        "description": "Explosive quality of movements"
+      },
+      {
+        "name": "Technical Consistency",
+        "scale": "1-10",
+        "target": "8+",
+        "description": "Form maintenance under fatigue"
+      }
+    ]
+  }
+}

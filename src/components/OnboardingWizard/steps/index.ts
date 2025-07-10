@@ -1,5 +1,10 @@
 export { WelcomeStep } from './WelcomeStep';
 export { WelcomeSuccessStep } from './WelcomeSuccessStep';
+export { MicroQuizStep } from './MicroQuizStep';
+export { GoalsQuizStep } from './GoalsQuizStep';
+export { TimeQuizStep } from './TimeQuizStep';
+export { FocusQuizStep } from './FocusQuizStep';
+export { AnalyzingStep } from './AnalyzingStep';
 export { BackgroundStep } from './BackgroundStep';
 export { ChallengesStep } from './ChallengesStep';
 export { PersonalizationStep } from './PersonalizationStep';

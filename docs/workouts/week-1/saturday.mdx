@@ -3,67 +3,61 @@ sidebar_position: 6
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-1/saturday.yml';
 
 <WorkoutNav weekNumber={1} />
 
-# Saturday - Match Play or Enhanced Active Recovery
+# {workoutData.metadata.title}
 
-_"Competition Application or Restorative Recovery"_
+_{workoutData.metadata.subtitle}_
 
-**Daily Navigation:** [📋 Week Overview](./) | [⬅️ Friday](friday) | [Sunday ➡️](sunday)
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
----
-
-## Option A: Match Day Protocol
-
-### Pre-Match Preparation (2 hours before)
-
-| Phase             | Duration | Activities                            | Purpose                    |
-| ----------------- | -------- | ------------------------------------- | -------------------------- |
-| **Nutrition**     | 30 min   | Carb-rich meal (1-2g/kg) + hydration  | Energy optimization        |
-| **Mental Prep**   | 20 min   | Visualization, game plan review       | Psychological readiness    |
-| **Physical Prep** | 30 min   | Dynamic warm-up from Tuesday protocol | Neural activation          |
-| **Court Prep**    | 30 min   | Progressive tennis warm-up            | Sport-specific preparation |
-| **Final Prep**    | 10 min   | Breathing, confidence affirmations    | Peak state achievement     |
-
-### Match Performance Tracking
-
-| Statistic                   | Target            | Actual       | Notes                      |
-| --------------------------- | ----------------- | ------------ | -------------------------- |
-| **First Serve %**           | &gt;65%              | \_\_\_%      | Power and accuracy balance |
-| **Winners/Unforced Errors** | &gt;1.0 ratio        | \_\_\_ ratio | Aggressive but controlled  |
-| **Break Points Saved**      | &gt;60%              | \_\_\_%      | Pressure performance       |
-| **Movement Efficiency**     | Balanced recovery | \_\_\_/10    | Court coverage quality     |
-
-### Post-Match Recovery
-
-| Phase          | Duration | Activities                                 | Purpose                 |
-| -------------- | -------- | ------------------------------------------ | ----------------------- |
-| **Immediate**  | 15 min   | Light walking, hydration, carb replacement | Recovery initiation     |
-| **Stretching** | 15 min   | Full body static stretching                | Flexibility maintenance |
-| **Assessment** | 10 min   | Performance review, lesson identification  | Learning optimization   |
+<WorkoutCarouselFromData week={1} day="saturday" />
 
 ---
 
-## Option B: Active Recovery Protocol
-
-### Low-Intensity Movement (60 minutes total)
-
-| Activity                    | Duration | Intensity                          | Focus                   |
-| --------------------------- | -------- | ---------------------------------- | ----------------------- |
-| **Zone-1 Cycling/Walking**  | 30 min   | Very easy (RPE 3-4/10)             | Blood flow enhancement  |
-| **Full Body Mobility Flow** | 20 min   | Yoga-based stretching              | Flexibility restoration |
-| **Breathing & Relaxation**  | 10 min   | Meditation, progressive relaxation | Stress reduction        |
-
-### Recovery Monitoring
-
-| Metric                  | Target                | Actual         | Weekend Plan Adjustment            |
-| ----------------------- | --------------------- | -------------- | ---------------------------------- |
-| **HRV**                 | Within 5% of baseline | \_\_\_% change | Adjust Sunday activities if needed |
-| **Subjective Wellness** | &ge;7/10                 | \_\_\_/10      | Additional recovery if &lt;7          |
-| **Muscle Soreness**     | &le;5/10                 | \_\_\_/10      | Extra stretching if &gt;5             |
-| **Energy Levels**       | &ge;7/10                 | \_\_\_/10      | Plan Monday intensity accordingly  |
+<PreWeekAssessment assessments={workoutData.assessments} />
 
 ---
 
-**Daily Navigation:** [📋 Week Overview](./) | [⬅️ Friday](friday) | [Sunday ➡️](sunday)
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

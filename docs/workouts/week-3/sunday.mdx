@@ -1,83 +1,63 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-3/sunday.yml';
 
 <WorkoutNav weekNumber={3} />
 
-# Sunday – Rest & Comprehensive Recovery
+# {workoutData.metadata.title}
 
-## Sunday Recovery Protocol
+_{workoutData.metadata.subtitle}_
 
-### Active Recovery Options
-- **Gentle yoga**: 30 minutes focusing on flexibility and parasympathetic activation
-- **Leisure walk**: 30 minutes at easy pace, preferably in nature
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-### Recovery Techniques
-- **Foam rolling**: Extended session targeting all muscle groups
-- **Breathwork**: Deep breathing exercises for stress reduction
-- **Self-massage**: Address any tight or tender areas from the week
-
-## Weekly Summary & Preparation
-
-### Recovery & Nutrition Week 3
-- **Protein**: 1.8–2.2 g/kg body weight for muscle repair
-- **Hydration**: 2–3 liters water daily, electrolytes as needed
-- **Sleep**: Maintain 7.5–9 hours per night for optimal recovery
-- **Daily monitoring**: Adjust intensity based on fatigue, soreness, and HRV data
-
-## Quick Recovery Instructions
-
-### Gentle Yoga (30 minutes)
-- Flexibility and parasympathetic activation
-- Extended holds (45-60 seconds)
-- Focus on areas tight from training
-- Include restorative poses
-- Deep breathing emphasis throughout
-- **Video Reference**: [Jeff Nippard - Mobility](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-### Nature Walk (30 minutes)
-- Easy pace in natural setting if possible
-- Mental relaxation and stress reduction
-- Fresh air and vitamin D exposure
-- Mindful walking practice
-- No fitness goals, just enjoyment
-
-### Extended Foam Rolling
-- All muscle groups from the week
-- Extra attention to tight areas
-- Include upper back and shoulders
-- Gentle, sustained pressure
-- 20-25 minutes comprehensive session
-- **Video Reference**: [Jeff Nippard - Recovery](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-### Deep Breathing (15 minutes)
-- Stress reduction and recovery focus
-- Various breathing patterns
-- Box breathing (4-4-4-4 count)
-- Focus on nervous system recovery
-- Prepare for Week 4 deload
-
-### Self-Massage
-- Address tender areas from training
-- Include feet, hands, and neck
-- Use various tools if available
-- Gentle, therapeutic pressure
-- Focus on relaxation and recovery
-
-## Key Focus Points
-
-- **Complete Rest**: No structured training, prioritize recovery
-- **Gentle Movement**: Light activity to promote circulation
-- **Stress Management**: Relaxation techniques and breathing work
-- **Preparation**: Mental and physical preparation for Week 4 deload
-- **Assessment**: Evaluate week's progress and adaptation
-
-## Notes
-
-Maintain detailed training logs to assess progression and adjust training variables accordingly for optimal results moving forward into Week 4 deload.
+<WorkoutCarouselFromData week={3} day="sunday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.preparation_phases?.filter(p => p.type === 'assessment')} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.preparation_phases?.filter(p => p.type === 'assessment')} 
+/>
+
+<TennisTrainingTable data={workoutData.skill_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.conditioning_blocks?.find(b => b.type === 'strength')} />
+
+<RecoveryChecklist data={workoutData.recovery_protocols?.find(r => r.type === 'comprehensive')} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Complete Tennis Training Handbook",
+  title: "Complete Tennis Handbook",
   tagline: "Elite methodologies, comprehensive science, practical application",
   favicon: "img/favicon.ico",
 
@@ -86,19 +86,19 @@ const config: Config = {
   ],
 
   plugins: [
-    './src/plugins/workout-data-plugin',
-    
+    "./src/plugins/workout-data-plugin",
+
     // Configure webpack to handle YAML files
     async function yamlLoaderPlugin(context, options) {
       return {
-        name: 'yaml-loader',
+        name: "yaml-loader",
         configureWebpack(config, isServer, utils) {
           return {
             module: {
               rules: [
                 {
                   test: /\.ya?ml$/,
-                  use: 'js-yaml-loader',
+                  use: "js-yaml-loader",
                 },
               ],
             },
@@ -129,10 +129,10 @@ const config: Config = {
     ],
 
     navbar: {
-      title: "Tennis Training Handbook",
+      title: "Tennis Handbook",
       logo: {
         alt: "Tennis Training Logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
       },
       items: [
         {

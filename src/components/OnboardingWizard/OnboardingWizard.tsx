@@ -1,8 +1,9 @@
-import React, { useState, useEffect, ReactNode } from 'react';
-import { ProgressIndicator } from './components/ProgressIndicator';
-import { UserInfoDisplay } from './components/UserInfoDisplay';
-import { WizardProgress } from './components/WizardProgress';
-import styles from './OnboardingWizard.module.css';
+import React, { useState, useEffect, ReactNode, useMemo } from "react";
+import { ProgressIndicator } from "./components/ProgressIndicator";
+import { UserInfoDisplay } from "./components/UserInfoDisplay";
+import { WizardProgress } from "./components/WizardProgress";
+import { useWizardSync } from "./hooks/useWizardSync";
+import styles from "./OnboardingWizard.module.css";
 
 export interface OnboardingStep {
   id: string;
@@ -26,11 +27,11 @@ export interface OnboardingWizardProps {
 }
 
 const defaultTranslations = {
-  next: 'Next',
-  previous: 'Previous',
-  skip: 'Skip',
-  complete: 'Complete',
-  stepOf: 'of'
+  next: "Next",
+  previous: "Previous",
+  skip: "Skip",
+  complete: "Complete",
+  stepOf: "of",
 };
 
 export default function OnboardingWizard({
@@ -38,18 +39,32 @@ export default function OnboardingWizard({
   onComplete,
   onSkip,
   initialStep = 0,
-  persistKey = 'onboarding-wizard',
-  translations = defaultTranslations
+  persistKey = "onboarding-wizard",
+  translations = defaultTranslations,
 }: OnboardingWizardProps) {
   const [currentStep, setCurrentStep] = useState(initialStep);
   const [wizardData, setWizardData] = useState<Record<string, any>>({});
   const [isAnimating, setIsAnimating] = useState(false);
+  const [animationDirection, setAnimationDirection] = useState<'forward' | 'backward'>('forward');
   const [isSubscriber, setIsSubscriber] = useState(false);
 
+  // Generate session ID
+  const sessionId = useMemo(() => {
+    return `wizard-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+  }, []);
+
+  // Initialize database sync
+  const { captureEmail, syncToDatabase, completeWizard } = useWizardSync({
+    sessionId,
+    currentStep,
+    wizardData,
+    isComplete: false,
+  });
+
   // Filter out hidden steps for display purposes
-  const visibleSteps = steps.filter(step => !step.isHidden);
+  const visibleSteps = steps.filter((step) => !step.isHidden);
   const totalVisibleSteps = visibleSteps.length;
-  
+
   // Calculate visible step index
   const getVisibleStepIndex = (stepIndex: number) => {
     let visibleIndex = 0;
@@ -68,21 +83,21 @@ export default function OnboardingWizard({
     if (persistKey) {
       const savedData = localStorage.getItem(`${persistKey}-data`);
       const savedStep = localStorage.getItem(`${persistKey}-step`);
-      
+
       if (savedData) {
         try {
           const data = JSON.parse(savedData);
           setWizardData(data);
-          
+
           // Check if user is already a subscriber
           if (data.personalInfo?.email && data.personalInfo?.isSubscriber) {
             setIsSubscriber(true);
           }
         } catch (e) {
-          console.error('Failed to parse saved wizard data');
+          console.error("Failed to parse saved wizard data");
         }
       }
-      
+
       if (savedStep) {
         const stepIndex = parseInt(savedStep, 10);
         if (!isNaN(stepIndex) && stepIndex >= 0 && stepIndex < steps.length) {
@@ -100,26 +115,30 @@ export default function OnboardingWizard({
     }
   }, [currentStep, wizardData, persistKey]);
 
-  const updateStepData = (stepId: string, data: any) => {
-    setWizardData(prev => ({
+  const updateStepData = async (stepId: string, data: any) => {
+    setWizardData((prev) => ({
       ...prev,
-      [stepId]: data
+      [stepId]: data,
     }));
-    
+
     // Check if this is the personal info step and email was provided
-    if (stepId === 'personal-info' && data.email && !isSubscriber) {
+    if (stepId === "personal-info" && data.email && !isSubscriber) {
       setIsSubscriber(true);
+      // Capture email in database immediately
+      await captureEmail(data.email);
       // Mark as subscriber in the data
-      setWizardData(prev => ({
+      setWizardData((prev) => ({
         ...prev,
-        [stepId]: { ...data, isSubscriber: true }
+        [stepId]: { ...data, isSubscriber: true },
       }));
     }
   };
 
   const scrollToTop = () => {
     // Find the wizard container and scroll it to top
-    const wizardContainer = document.querySelector(`.${styles.wizardContainer}`);
+    const wizardContainer = document.querySelector(
+      `.${styles.wizardContainer}`
+    );
     if (wizardContainer) {
       wizardContainer.scrollTop = 0;
     }
@@ -127,12 +146,12 @@ export default function OnboardingWizard({
 
   const handleNext = () => {
     if (currentStep < steps.length - 1) {
+      setAnimationDirection('forward');
       setIsAnimating(true);
       setTimeout(() => {
-        setCurrentStep(prev => prev + 1);
+        setCurrentStep((prev) => prev + 1);
         setIsAnimating(false);
-        scrollToTop();
-      }, 300);
+      }, 350);
     } else {
       handleComplete();
     }
@@ -140,21 +159,36 @@ export default function OnboardingWizard({
 
   const handlePrevious = () => {
     if (currentStep > 0) {
+      setAnimationDirection('backward');
       setIsAnimating(true);
       setTimeout(() => {
-        setCurrentStep(prev => prev - 1);
+        setCurrentStep((prev) => prev - 1);
         setIsAnimating(false);
-        scrollToTop();
-      }, 300);
+      }, 350);
     }
   };
 
-  const handleComplete = () => {
-    onComplete(wizardData);
-    // Clear saved progress
-    if (persistKey) {
-      localStorage.removeItem(`${persistKey}-data`);
-      localStorage.removeItem(`${persistKey}-step`);
+  const handleComplete = async () => {
+    try {
+      // Complete wizard in database
+      const result = await completeWizard();
+
+      // Call original onComplete with enhanced data
+      onComplete({
+        ...wizardData,
+        ...result,
+        sessionId,
+      });
+
+      // Clear saved progress
+      if (persistKey) {
+        localStorage.removeItem(`${persistKey}-data`);
+        localStorage.removeItem(`${persistKey}-step`);
+      }
+    } catch (error) {
+      console.error("Error completing wizard:", error);
+      // Still call onComplete even if database fails
+      onComplete(wizardData);
     }
   };
 
@@ -172,9 +206,9 @@ export default function OnboardingWizard({
   const isLastStep = currentStep === steps.length - 1;
   const isFirstStep = currentStep === 0;
   const currentStepData = steps[currentStep];
-  
+
   // Get user info for display
-  const userInfo = wizardData['personal-info'] || {};
+  const userInfo = wizardData["personal-info"] || {};
   const showUserInfo = userInfo.name || userInfo.email;
 
   return (
@@ -187,7 +221,7 @@ export default function OnboardingWizard({
             stepText={`${translations.stepOf}`}
           />
         )}
-        {onSkip && (
+        {/* {onSkip && (
           <button
             className={styles.skipButton}
             onClick={handleSkip}
@@ -195,55 +229,74 @@ export default function OnboardingWizard({
           >
             {translations.skip}
           </button>
-        )}
+        )} */}
       </div>
 
-      <div className={`${styles.stepContent} ${isAnimating ? styles.animating : ''}`}>
+      <div
+        className={`${styles.stepContent} ${
+          isAnimating ? styles.animating : ""
+        } ${isAnimating ? styles[animationDirection] : ""}`}
+        key={currentStep}
+      >
         {/* Show wizard progress with accumulated information */}
-        <WizardProgress 
+        <WizardProgress
           wizardData={wizardData}
           currentStep={currentStepData.id}
         />
-        {React.isValidElement(currentStepData.content) 
-          ? React.cloneElement(currentStepData.content as React.ReactElement<any>, {
-              onNext: (data: any) => {
-                updateStepData(currentStepData.id, data);
-                handleNext();
-              },
-              onBack: handlePrevious,
-              data: wizardData[currentStepData.id] || {},
-              wizardData: wizardData // Pass full wizard data for personalization
-            })
-          : currentStepData.content
-        }
+        {React.isValidElement(currentStepData.content)
+          ? React.cloneElement(
+              currentStepData.content as React.ReactElement<any>,
+              {
+                onNext: async (data: any) => {
+                  await updateStepData(currentStepData.id, data);
+                  handleNext();
+                },
+                onBack: handlePrevious,
+                data: wizardData[currentStepData.id] || {},
+                wizardData: wizardData, // Pass full wizard data for personalization
+                captureEmail: captureEmail, // Pass email capture function
+                sessionId: sessionId, // Pass session ID
+              }
+            )
+          : currentStepData.content}
       </div>
 
-      {/* Hide navigation for welcome step and success step */}
-      {currentStepData.id !== 'welcome' && currentStepData.id !== 'welcome-success' && (
-        <div className={styles.wizardFooter}>
-          <button
-            className={`${styles.navButton} ${styles.previousButton}`}
-            onClick={handlePrevious}
-            disabled={isFirstStep}
-            aria-label={translations.previous}
+      {/* Always show back button when not on first step */}
+      {!isFirstStep && (
+        <button
+          className={styles.backButton}
+          onClick={handlePrevious}
+          aria-label={translations.previous}
+        >
+          <svg
+            className={styles.backIcon}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
           >
-            <svg className={styles.navIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            {translations.previous}
-          </button>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+      )}
 
-          <button
-            className={`${styles.navButton} ${styles.nextButton} ${styles.primary}`}
-            onClick={handleNext}
-            aria-label={isLastStep ? translations.complete : translations.next}
-          >
-            {isLastStep ? translations.complete : translations.next}
-            <svg className={styles.navIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+      {/* Show full navigation for steps that need it */}
+      {!["micro-quiz", "goals-quiz", "time-quiz", "focus-quiz", "analyzing", "welcome", "welcome-success"].includes(
+        currentStepData.id
+      ) && (
+      <div className={styles.wizardFooter}>
+        <button
+          className={`${styles.navButton} ${styles.nextButton}`}
+          onClick={handleNext}
+          aria-label={isLastStep ? translations.complete : translations.next}
+        >
+          {isLastStep ? translations.complete : translations.next}
+        </button>
+      </div>
       )}
     </div>
   );

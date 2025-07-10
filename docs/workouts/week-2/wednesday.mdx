@@ -3,50 +3,61 @@ sidebar_position: 4
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-2/wednesday.yml';
 
 <WorkoutNav weekNumber={2} />
 
-# Wednesday – Upper Strength & Anaerobic Conditioning
+# {workoutData.metadata.title}
 
-## Wednesday Schedule
+_{workoutData.metadata.subtitle}_
 
-| Time | Exercise/Drill | Sets×Reps | Instructions |
-|------|---------------|-----------|--------------|
-| 07:15–08:15 | Tennis Practice Sets | - | Competitive intensity, tactical play |
-| 08:25–09:35 | Barbell Bench Press | 4×6 | Heavier load, maintain controlled motion |
-| | T-Bar Row | 4×8 | Flat back, controlled pulls |
-| | DB Shoulder Press | 3×8 | Strict form, core stability |
-| | Chin-ups | 3×AMRAP | Full ROM, controlled |
-| | Face Pulls | 3×12 | High elbows, consistent tension |
-| 09:35–09:50 | HIIT Finisher (Sprint intervals, KB swings) | 3 rounds | Maximal intensity, short rest |
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-## Quick Exercise Instructions
-
-**Barbell Bench Press (4×6)**: Setup flat bench, grip wider than shoulders, lower to chest slowly, press explosively, Week 2 load increase
-
-**T-Bar Row (4×8)**: Flat back position, pull handle to lower ribs, squeeze shoulder blades, control negative
-
-**DB Shoulder Press (3×8)**: Seated/standing, press dumbbells overhead, core tight, full ROM
-
-**Chin-ups (3×AMRAP)**: Underhand grip, pull chest to bar, control descent, max reps each set
-
-**Face Pulls (3×12)**: Cable at face height, pull to face with elbows high, squeeze rear delts
-
-**HIIT Finisher**: 30s sprint intervals + 30s KB swings, 90s rest between rounds, 3 total rounds
-
-## Key Focus Points
-
-- **Competitive Tennis**: Practice sets with competitive intensity and tactical focus
-- **Heavy Upper Body**: Barbell bench press with heavier loads while maintaining control
-- **Posterior Chain**: T-Bar rows with flat back and controlled pulls
-- **Shoulder Stability**: Strict form on DB shoulder press with core engagement
-- **Pull-up Strength**: Full ROM chin-ups to muscular failure (AMRAP)
-- **High-Intensity Finish**: HIIT finisher with sprint intervals and kettlebell swings
-
-## Notes
-
-Wednesday is the most demanding upper body session with competitive tennis followed by heavy lifting and high-intensity metabolic work.
+<WorkoutCarouselFromData week={2} day="wednesday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

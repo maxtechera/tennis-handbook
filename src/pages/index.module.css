@@ -109,21 +109,21 @@
 }
 
 /* Dark mode adjustments for wizard */
-[data-theme='dark'] .wizardModal {
+[data-theme="dark"] .wizardModal {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-[data-theme='dark'] .wizardContainer {
+[data-theme="dark"] .wizardContainer {
   background: #1b1b1d;
 }
 
-[data-theme='dark'] .wizardCloseButton {
+[data-theme="dark"] .wizardCloseButton {
   background: #242526;
   border-color: #3a3b3c;
   color: #e3e3e3;
 }
 
-[data-theme='dark'] .wizardCloseButton:hover {
+[data-theme="dark"] .wizardCloseButton:hover {
   background: #3a3b3c;
   color: #ffffff;
 }
@@ -133,15 +133,16 @@
   .wizardModal {
     padding: 1rem;
   }
-  
+
   .wizardContainer {
     border-radius: 12px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
     max-width: 600px;
     max-height: 90vh;
     height: auto;
   }
-  
+
   .wizardCloseButton {
     display: none; /* Hide on desktop */
   }
@@ -149,7 +150,11 @@
 
 /* Optimized Hero Section */
 .optimizedHero {
-  background: linear-gradient(135deg, var(--ifm-color-primary-lightest) 0%, var(--ifm-background-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary-lightest) 0%,
+    var(--ifm-background-color) 100%
+  );
 }
 
 .heroSubtitle {
@@ -336,7 +341,8 @@
 }
 
 @keyframes blink {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -390,38 +396,65 @@
   .heroSubtitle {
     font-size: 1.1rem;
   }
-  
+
   .socialProofStats {
     gap: 2rem;
   }
-  
+
   .statNumber {
     font-size: 2rem;
   }
-  
+
   .primaryCTA {
     font-size: 1.1rem;
     padding: 0.875rem 1.5rem;
   }
-  
+
   .trustIndicators {
     gap: 1rem;
     font-size: 0.85rem;
   }
-  
+
   .floatingReminder {
     left: 20px;
     right: 20px;
     max-width: none;
   }
-  
+
   .fomoContent {
     flex-direction: column;
     gap: 0.5rem;
   }
-  
+
   .fomoText {
     font-size: 1rem;
     text-align: center;
   }
+}
+
+/* Wizard Complete Section */
+.wizardCompleteSection {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--ifm-background-surface-color);
+}
+
+/* Hide navbar on homepage - multiple selectors for reliability */
+:global(.homepage-no-navbar) :global(nav.navbar),
+:global(.homepage-no-navbar) :global(.navbar),
+:global(.homepage-no-navbar) :global(header) {
+  display: none !important;
+}
+
+/* Ensure content takes full height without navbar */
+:global(.homepage-no-navbar) :global(main),
+:global(.homepage-no-navbar) :global(.main-wrapper) {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Additional fallback for body targeting */
+:global(body.homepage-layout) :global(nav.navbar),
+:global(body.homepage-layout) :global(.navbar) {
+  display: none !important;
 }

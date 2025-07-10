@@ -1,0 +1,613 @@
+{
+  "metadata": {
+    "period": 1,
+    "period_name": "Elite Foundation",
+    "day_id": "week_2_saturday",
+    "day_name": "Saturday",
+    "title": "Elite Competition or Active Recovery",
+    "subtitle": "Week 2 Match Performance or Strategic Recovery Implementation",
+    "phase": "Phase 1: Elite Foundation",
+    "focus_areas": [
+      "Competition Performance",
+      "Active Recovery Implementation",
+      "Mobility Maintenance",
+      "Strategic Recovery Planning"
+    ],
+    "training_parameters": {
+      "volume": "Variable (100% match / 30% recovery)",
+      "intensity": "90% (match) or 50% (recovery)",
+      "density": "low",
+      "duration": "2-4 hours (match) or 1 hour (recovery)"
+    },
+    "elite_methods": [
+      {
+        "name": "Competition Preparation Protocol",
+        "type": "preparation",
+        "attribution": {
+          "method": "Evidence-based warm-up protocols for match performance",
+          "source": "Jeff Nippard - Warm-up Guide",
+          "verification": "Video documentation and research protocols",
+          "context": "Match preparation and performance optimization"
+        }
+      },
+      {
+        "name": "Active Recovery System",
+        "type": "recovery",
+        "attribution": {
+          "method": "Zone-2 training for recovery adaptation",
+          "source": "Jeff Nippard - Cardio Guidelines",
+          "verification": "Video reference and research-based protocols",
+          "context": "Active recovery between high-intensity training sessions"
+        }
+      },
+      {
+        "name": "Dual Option Training",
+        "type": "holistic",
+        "attribution": {
+          "method": "Flexible training approach based on schedule and needs",
+          "source": "Professional tennis scheduling protocols",
+          "verification": "ATP/WTA training periodization methods",
+          "context": "Adaptive training for competition and recovery balance"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Option A: Tennis court access and match equipment",
+        "Option B: Running shoes and yoga mat"
+      ],
+      "optional": [
+        "Heart rate monitor",
+        "Foam roller",
+        "Hydration equipment",
+        "Match performance tracking tools"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Sunday ➡️](sunday)",
+      "overview_link": "./",
+      "next_link": "sunday",
+      "previous_link": "friday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Pre-Activity Assessment",
+        "preparation": "Option-Specific Preparation",
+        "skill_training": "Match Play or Recovery Activity",
+        "conditioning": "Competition or Recovery Implementation",
+        "recovery": "Post-Activity Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "info",
+          "title": "Dual Option Day",
+          "content": "Choose between competitive match play or active recovery",
+          "icon": "🎾"
+        }
+      ]
+    },
+    "day_features": {
+      "has_dual_workout": true,
+      "has_competition_simulation": true
+    }
+  },
+  "workout_options": [
+    {
+      "option": "A",
+      "title": "Match Day Performance",
+      "description": "Competition with full preparation and recovery protocols"
+    },
+    {
+      "option": "B",
+      "title": "Active Recovery Day",
+      "description": "Strategic recovery with Zone-2 cardio and mobility work"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "dual_option_assessment",
+      "type": "decision",
+      "title": "Match vs Recovery Assessment",
+      "timing": "pre-session",
+      "duration": "5 minutes",
+      "description": "Determine appropriate option based on schedule and readiness",
+      "attribution": {
+        "source": "Dual option training assessment protocols",
+        "methodology": "Schedule and readiness-based training decisions",
+        "validation": "Professional tennis training adaptation standards",
+        "elite_use": "ATP/WTA flexible training approaches"
+      },
+      "components": [
+        {
+          "id": "schedule_and_readiness_check",
+          "name": "Schedule and Readiness Assessment",
+          "type": "decision",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Match availability and physical/mental readiness assessment",
+            "repetitions": "Single decision",
+            "equipment": "None"
+          },
+          "standards": {
+            "elite_benchmark": "Clear decision based on optimal training periodization",
+            "good_standard": "Appropriate choice for current training phase",
+            "needs_work": "Unclear decision or inappropriate option selection"
+          },
+          "scoring": {
+            "method": "Option selection with reasoning",
+            "scale": "A (Match) or B (Recovery) with justification",
+            "recording": "Document choice and reasoning for training log"
+          },
+          "context": {
+            "description": "Evaluates best option for current training phase and schedule",
+            "application": "Determines appropriate Saturday training approach"
+          }
+        }
+      ]
+    }
+  ],
+  "preparation_phases": [
+    {
+      "id": "morning_protocol",
+      "title": "Week 2 Morning Protocol - Dual Option",
+      "timing": "6:00-6:15",
+      "duration": "15 minutes",
+      "description": "Morning activation adaptable to chosen option",
+      "attribution": {
+        "source": "Dual option preparation methodology",
+        "methodology": "Flexible morning protocol for match or recovery days",
+        "validation": "Daily preparation for variable training demands",
+        "elite_use": "Professional tennis player adaptive preparation"
+      },
+      "activities": [
+        {
+          "name": "Option Assessment and Mental Preparation",
+          "duration": "3 minutes",
+          "sets": 3,
+          "instructions": [
+            "Deep breathing with option-specific focus",
+            "Mental preparation for chosen activity",
+            "Assessment of energy and readiness levels"
+          ],
+          "implementation": {
+            "execution": "Seated position with activity-specific visualization",
+            "focus": "Mental preparation for match competition or recovery focus",
+            "tennis_application": "Prepares mind for either competitive or recovery approach"
+          }
+        },
+        {
+          "name": "Gentle Universal Activation",
+          "duration": "5 minutes",
+          "sets": 1,
+          "instructions": [
+            "Light joint mobility: 10 each direction",
+            "Gentle movement patterns: 15 repetitions",
+            "Progressive activation suitable for either option"
+          ],
+          "implementation": {
+            "execution": "Low-intensity universal movement patterns",
+            "focus": "Basic activation suitable for both options",
+            "tennis_application": "Prepares body for either match or recovery activities"
+          }
+        },
+        {
+          "name": "Option-Specific Preparation",
+          "duration": "7 minutes",
+          "sets": 2,
+          "instructions": [
+            "Option A: Competitive preparation patterns",
+            "Option B: Recovery-focused gentle movements",
+            "Tailor intensity to chosen option"
+          ],
+          "implementation": {
+            "execution": "Activity-specific preparation",
+            "focus": "Targeted preparation for chosen option",
+            "tennis_application": "Prepares for either competitive match or recovery session"
+          }
+        }
+      ]
+    }
+  ],
+  "tennis_training": {
+    "title": "Match Performance or Recovery Activity",
+    "timing": "Variable based on option",
+    "duration": "90-180 minutes (Option A) or 50 minutes (Option B)",
+    "description": "Competition-level match play or active recovery implementation",
+    "attribution": {
+      "source": "Dual option tennis training methodology",
+      "methodology": "Competition or recovery-focused tennis activities",
+      "validation": "Professional tennis training adaptation standards",
+      "elite_use": "ATP/WTA competition and recovery protocols"
+    },
+    "session_structure": {
+      "option_a_match_play": {
+        "title": "Competitive Match Performance",
+        "timing": "Variable (match dependent)",
+        "duration": "90-180 minutes",
+        "phases": [
+          {
+            "name": "Pre-Match Preparation",
+            "duration": "15-20 minutes",
+            "focus": "Competition readiness",
+            "detailed_instructions": [
+              "Structured warm-up with progressive intensity",
+              "General movement: 5 minutes light jogging and dynamic stretching",
+              "Sport-specific movement: 5 minutes shadow strokes and footwork",
+              "Progressive tennis: 5-10 minutes mini tennis to serving",
+              "Mental preparation: 2-3 minutes game plan and visualization"
+            ]
+          },
+          {
+            "name": "Match Performance",
+            "duration": "60-150 minutes",
+            "focus": "Maximum competitive intensity",
+            "detailed_instructions": [
+              "Maintain high competitive intensity throughout",
+              "Execute tactical game plan with adaptability",
+              "Focus on energy management for full match duration",
+              "Apply all technical and physical training from the week"
+            ]
+          },
+          {
+            "name": "Post-Match Protocol",
+            "duration": "15 minutes",
+            "focus": "Immediate recovery initiation",
+            "detailed_instructions": [
+              "Cool-down walk and light movement",
+              "Immediate hydration and nutrition consideration",
+              "Initial mental processing of match performance"
+            ]
+          }
+        ]
+      },
+      "option_b_recovery_activity": {
+        "title": "Active Recovery Implementation",
+        "timing": "Flexible scheduling",
+        "duration": "50 minutes",
+        "phases": [
+          {
+            "name": "Zone-2 Aerobic Recovery",
+            "duration": "30 minutes",
+            "focus": "Cardiovascular recovery",
+            "detailed_instructions": [
+              "Easy aerobic jog at conversational pace",
+              "Maintain 60-70% maximum heart rate",
+              "Focus on nasal breathing if possible",
+              "Sustainable rhythm throughout duration"
+            ]
+          },
+          {
+            "name": "Dynamic Mobility Session",
+            "duration": "20 minutes",
+            "focus": "Movement quality restoration",
+            "detailed_instructions": [
+              "Lower body mobility: leg swings, hip circles, walking lunges",
+              "Upper body mobility: arm circles, shoulder rolls, cross-body swings",
+              "Core and spine: torso twists, side bends, cat-cow movements",
+              "Target any tight areas identified from the week"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "movement_preparation": {
+    "title": "Option-Specific Movement Preparation",
+    "timing": "Pre-activity (variable)",
+    "duration": "10-20 minutes depending on option",
+    "description": "Preparation tailored to chosen option",
+    "attribution": {
+      "source": "Dual option movement preparation",
+      "methodology": "Activity-specific preparation protocols",
+      "validation": "Match preparation and recovery preparation standards",
+      "elite_use": "Professional athlete option-specific preparation"
+    },
+    "exercises": [
+      {
+        "name": "Universal Joint Mobility",
+        "sets": 2,
+        "reps": 10,
+        "rest_seconds": 30,
+        "protocol": "Basic joint preparation for either option",
+        "tennis_application": "Prepares joints for movement regardless of intensity"
+      },
+      {
+        "name": "Option A: Competition Preparation",
+        "sets": 3,
+        "reps": 15,
+        "rest_seconds": 30,
+        "protocol": "Dynamic preparation for match intensity",
+        "tennis_application": "Prepares for competitive match demands"
+      },
+      {
+        "name": "Option B: Recovery Preparation",
+        "sets": 2,
+        "reps": 8,
+        "rest_seconds": 30,
+        "protocol": "Gentle preparation for recovery activities",
+        "tennis_application": "Prepares for low-intensity recovery work"
+      },
+      {
+        "name": "Mental Preparation",
+        "sets": 1,
+        "reps": 5,
+        "rest_seconds": 60,
+        "protocol": "Option-specific mental preparation",
+        "tennis_application": "Prepares mind for chosen activity focus"
+      }
+    ]
+  },
+  "strength_training": {
+    "title": "Option-Specific Activity Implementation",
+    "timing": "Variable based on option",
+    "duration": "Variable (match duration or 50 minutes)",
+    "description": "Competition performance or structured recovery activities",
+    "attribution": {
+      "source": "Dual option training implementation",
+      "methodology": "Competition or recovery activity protocols",
+      "validation": "Professional tennis competition and recovery standards",
+      "elite_use": "ATP/WTA competition and recovery methods"
+    },
+    "main_exercises": [
+      {
+        "name": "Option A: Match Performance",
+        "sets": "Variable",
+        "reps": "Points, games, sets",
+        "rest_seconds": "Match-dependent",
+        "load": "Maximum competitive intensity",
+        "tempo": "Match pace",
+        "protocol": "Full competitive match with maximum effort",
+        "tennis_application": "Direct application of all training in competitive environment",
+        "detailed_instructions": {
+          "title": "Competitive Match Performance Instructions",
+          "technique_points": [
+            {
+              "phase": "PRE-MATCH FOCUS",
+              "instruction": "Execute structured warm-up with progressive intensity build"
+            },
+            {
+              "phase": "COMPETITIVE INTENSITY",
+              "instruction": "Maintain maximum effort and focus throughout match"
+            },
+            {
+              "phase": "TACTICAL EXECUTION",
+              "instruction": "Apply game plan while adapting to opponent and conditions"
+            },
+            {
+              "phase": "ENERGY MANAGEMENT",
+              "instruction": "Manage intensity for full match duration"
+            },
+            {
+              "phase": "TECHNICAL APPLICATION",
+              "instruction": "Apply all technical work from training week"
+            },
+            {
+              "phase": "MENTAL TOUGHNESS",
+              "instruction": "Maintain focus and composure under pressure"
+            },
+            {
+              "phase": "MATCH STATISTICS",
+              "instruction": "Track performance metrics for post-match analysis"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Option B: Zone-2 Aerobic Recovery",
+        "sets": 1,
+        "reps": "30 minutes",
+        "rest_seconds": "N/A",
+        "load": "60-70% maximum heart rate",
+        "tempo": "Conversational pace",
+        "protocol": "Sustained easy aerobic activity",
+        "tennis_application": "Active recovery supporting training adaptations",
+        "detailed_instructions": {
+          "title": "Active Recovery Implementation Instructions",
+          "technique_points": [
+            {
+              "phase": "INTENSITY MONITORING",
+              "instruction": "Maintain conversational pace throughout duration"
+            },
+            {
+              "phase": "HEART RATE ZONE",
+              "instruction": "Stay in 60-70% maximum heart rate range"
+            },
+            {
+              "phase": "BREATHING FOCUS",
+              "instruction": "Nasal breathing emphasis for recovery adaptation"
+            },
+            {
+              "phase": "MOVEMENT QUALITY",
+              "instruction": "Focus on easy, sustainable rhythm"
+            },
+            {
+              "phase": "RECOVERY INTENT",
+              "instruction": "Promote recovery, not additional training stress"
+            },
+            {
+              "phase": "ENERGY MONITORING",
+              "instruction": "Should feel refreshed, not fatigued after session"
+            },
+            {
+              "phase": "WEEKLY INTEGRATION",
+              "instruction": "Support recovery from high-intensity training week"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Option B: Dynamic Mobility Work",
+        "sets": 2,
+        "reps": "10 each movement",
+        "rest_seconds": 30,
+        "load": "Bodyweight",
+        "tempo": "Controlled movement",
+        "protocol": "Comprehensive mobility maintenance",
+        "tennis_application": "Address movement restrictions from training week",
+        "detailed_instructions": {
+          "title": "Mobility Restoration Instructions",
+          "technique_points": [
+            {
+              "phase": "MOVEMENT QUALITY",
+              "instruction": "Focus on smooth, controlled movements throughout range"
+            },
+            {
+              "phase": "PROGRESSIVE RANGE",
+              "instruction": "Gradually increase range of motion within comfort"
+            },
+            {
+              "phase": "TARGET AREAS",
+              "instruction": "Address major joints used in tennis (hips, shoulders, spine)"
+            },
+            {
+              "phase": "TIGHT AREA FOCUS",
+              "instruction": "Spend extra time on areas that feel restricted"
+            },
+            {
+              "phase": "BREATH COORDINATION",
+              "instruction": "Coordinate breathing with movement patterns"
+            },
+            {
+              "phase": "RECOVERY EMPHASIS",
+              "instruction": "Promote movement quality, not strength development"
+            },
+            {
+              "phase": "WEEKLY INTEGRATION",
+              "instruction": "Address any restrictions developed during training week"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "conditioning_finisher": {
+    "title": "Option-Specific Conclusion",
+    "timing": "End of chosen activity",
+    "duration": "10-15 minutes",
+    "description": "Activity-appropriate conclusion and transition",
+    "attribution": {
+      "source": "Dual option conclusion methodology",
+      "methodology": "Activity-specific conclusion protocols",
+      "validation": "Match and recovery conclusion standards",
+      "elite_use": "Professional activity conclusion methods"
+    },
+    "circuit_structure": [
+      {
+        "name": "Option A: Post-Match Transition",
+        "duration": "15 minutes",
+        "intensity": "Light",
+        "protocol": "Transition from competition to recovery mode",
+        "detailed_instructions": {
+          "title": "Competition to Recovery Transition",
+          "execution_points": [
+            {
+              "phase": "IMMEDIATE COOLDOWN",
+              "instruction": "Light walking and easy movement to gradually reduce intensity"
+            },
+            {
+              "phase": "HYDRATION PRIORITY",
+              "instruction": "Immediate fluid replacement and electrolyte consideration"
+            },
+            {
+              "phase": "MENTAL PROCESSING",
+              "instruction": "Initial match review and emotional processing"
+            },
+            {
+              "phase": "NUTRITION TIMING",
+              "instruction": "Consider post-match nutrition within 30-minute window"
+            },
+            {
+              "phase": "RECOVERY INITIATION",
+              "instruction": "Begin transition to recovery mode for next day preparation"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Option B: Recovery Completion",
+        "duration": "10 minutes",
+        "intensity": "Very light",
+        "protocol": "Gentle conclusion of recovery session",
+        "detailed_instructions": {
+          "title": "Recovery Session Conclusion",
+          "execution_points": [
+            {
+              "phase": "GENTLE COMPLETION",
+              "instruction": "Gradually reduce activity intensity to stillness"
+            },
+            {
+              "phase": "SELF-ASSESSMENT",
+              "instruction": "Assess how body feels after recovery session"
+            },
+            {
+              "phase": "HYDRATION",
+              "instruction": "Maintain hydration throughout and after session"
+            },
+            {
+              "phase": "ENERGY MONITORING",
+              "instruction": "Should feel refreshed and ready for tomorrow"
+            },
+            {
+              "phase": "WEEKLY REFLECTION",
+              "instruction": "Consider overall week and preparation for next week"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "recovery_protocol": {
+    "title": "Option-Specific Recovery Protocol",
+    "timing": "Post-activity",
+    "duration": "15-30 minutes depending on option",
+    "description": "Recovery approach tailored to activity demands",
+    "attribution": {
+      "source": "Dual option recovery methodology",
+      "methodology": "Activity-specific recovery protocols",
+      "validation": "Professional post-competition and post-recovery standards",
+      "elite_use": "ATP/WTA activity-specific recovery methods"
+    },
+    "components": [
+      {
+        "name": "Option A: Post-Match Recovery",
+        "duration": "15 minutes",
+        "protocol": "Comprehensive post-competition recovery",
+        "implementation": {
+          "method": "Thorough cool-down stretching with extended holds",
+          "focus": "Lower and upper body emphasis with core/back integration",
+          "progression": "From light movement to deep static stretching"
+        }
+      },
+      {
+        "name": "Option A: Competition Stretching Sequence",
+        "duration": "15 minutes",
+        "protocol": "Extended stretching for competition recovery",
+        "implementation": {
+          "method": "Hold stretches 30-60 seconds each with deep breathing",
+          "focus": "Hip flexors, hamstrings, calves, shoulders, chest, core",
+          "progression": "Systematic full-body stretching sequence"
+        }
+      },
+      {
+        "name": "Option B: Recovery Session Conclusion",
+        "duration": "10 minutes",
+        "protocol": "Gentle conclusion of recovery activities",
+        "implementation": {
+          "method": "Light stretching and relaxation techniques",
+          "focus": "Maintain relaxed state achieved during recovery session",
+          "progression": "Gentle transition to complete rest"
+        }
+      },
+      {
+        "name": "Universal Recovery Elements",
+        "duration": "5 minutes",
+        "protocol": "Recovery elements applicable to both options",
+        "implementation": {
+          "method": "Hydration, self-assessment, and planning for next day",
+          "focus": "Optimal preparation for Sunday and next week",
+          "progression": "Complete session integration and forward planning"
+        }
+      }
+    ]
+  }
+}

@@ -327,8 +327,8 @@
     "description": "Main homepage title"
   },
   "homepage.hero.subtitle": {
-    "message": "Aprende cómo entrenan realmente los profesionales del tenis",
-    "description": "Main homepage subtitle"
+    "message": "Arrastra las pelotas, agita el dispositivo e inclínalo para física realista",
+    "description": "Hero subtitle with interactive physics instructions"
   },
   "homepage.hero.button": {
     "message": "Ver Lo Que Hacen 🚀",
@@ -915,34 +915,49 @@
     "message": "⚠️ Perderás acceso al programa completo y la app móvil"
   },
   "homepage.hero.title": {
-    "message": "Descubre cómo entrenan realmente los mejores del mundo"
-  },
-  "homepage.hero.subtitle": {
-    "message": "Ve detrás de escenas con entrenadores medallistas olímpicos del ATP Tour. Métodos reales, no teorías."
+    "message": "Métodos de entrenamiento basados en investigación real"
   },
   "homepage.hero.pdfCTA": {
-    "message": "📄 DESCARGAR RUTINA GRATIS (7 días)"
+    "message": "📄 DESCARGAR RUTINA GRATUITA DE 7 DÍAS"
   },
   "homepage.hero.urgency": {
-    "message": "🔥 Únete a 12,000+ jugadores obteniendo planes de entrenamiento personalizados"
+    "message": "🔥 Más de 500 descargas este mes"
   },
   "homepage.hero.playersUsing": {
-    "message": "Jugadores entrenando"
+    "message": "Jugadores activos"
   },
   "homepage.hero.improvement": {
-    "message": "Mejora promedio"
+    "message": "Recomendarían el programa"
   },
   "homepage.hero.viewPlan": {
     "message": "Ver tu rutina personalizada →"
   },
   "homepage.hero.noCard": {
-    "message": "Solo tu email, nada más"
+    "message": "Sin tarjetas de crédito"
   },
   "homepage.hero.instant": {
-    "message": "Descarga inmediata"
+    "message": "Acceso inmediato por email"
   },
   "homepage.hero.realMethods": {
-    "message": "Métodos reales de entrenadores ATP"
+    "message": "Basado en métodos de entrenadores certificados"
+  },
+  "homepage.hero.title1": {
+    "message": "Entrena como"
+  },
+  "homepage.hero.title2": {
+    "message": "los #1 del mundo"
+  },
+  "homepage.hero.stat1": {
+    "message": "Métodos ATP"
+  },
+  "homepage.hero.stat2": {
+    "message": "Respaldo científico"
+  },
+  "homepage.hero.stat3": {
+    "message": "Personalizado"
+  },
+  "homepage.hero.cta": {
+    "message": "DESCARGAR RUTINA GRATIS"
   },
   "homepage.testimonials.title": {
     "message": "Lo que dicen los jugadores"
@@ -951,40 +966,40 @@
     "message": "Comenzar tu plan personalizado →"
   },
   "homepage.featured.title": {
-    "message": "Qué encontrarás en tu rutina de 7 días"
+    "message": "Contenido de tu rutina de 7 días"
   },
   "homepage.featured.subtitle": {
-    "message": "Los métodos exactos que usan los entrenadores de jugadores #1 del mundo. Ahora accesibles para ti."
+    "message": "Ejercicios y métodos compilados de fuentes profesionales verificadas"
   },
   "homepage.benefits.olympicMethods": {
-    "message": "Métodos de Medallistas Olímpicos"
+    "message": "Ejercicios Respaldados por Ciencia"
   },
   "homepage.benefits.olympicMethodsDesc": {
-    "message": "Rutinas exactas de entrenadores que han llevado jugadores al oro olímpico"
+    "message": "Cada ejercicio incluye referencias a estudios científicos publicados"
   },
   "homepage.benefits.atpMethods": {
-    "message": "Técnicas del ATP Tour"
+    "message": "Métodos de Entrenadores Profesionales"
   },
   "homepage.benefits.atpMethodsDesc": {
-    "message": "Los mismos ejercicios que usan los entrenadores de jugadores #1 del mundo"
+    "message": "Técnicas documentadas utilizadas por entrenadores certificados del circuito profesional"
   },
   "homepage.benefits.sevenDays": {
-    "message": "7 Días Completos"
+    "message": "Programa Completo de 7 Días"
   },
   "homepage.benefits.sevenDaysDesc": {
-    "message": "Una semana completa con ejercicios específicos, progresiones y métodos probados"
+    "message": "Plan estructurado con progresiones diarias y adaptaciones según tu nivel"
   },
   "homepage.featured.cta": {
-    "message": "📄 DESCARGAR RUTINA GRATIS AHORA"
+    "message": "📄 DESCARGAR RUTINA GRATUITA"
   },
   "homepage.featured.ctaSubtext": {
-    "message": "Solo tu email • Descarga inmediata • Métodos reales"
+    "message": "Recibirás tips semanales por email • Puedes cancelar cuando quieras"
   },
   "homepage.fomo.live": {
-    "message": "EN VIVO"
+    "message": "ACTIVIDAD RECIENTE"
   },
   "homepage.fomo.signups": {
-    "message": "{count} jugadores comenzaron su plan personalizado en las últimas 24 horas"
+    "message": "{count} personas descargaron la rutina en las últimas 24 horas"
   },
   "onboarding.completion.title": {
     "message": "¡Bienvenido al Elite Tennis Training!"
@@ -1075,5 +1090,21 @@
   },
   "onboarding.completion.cta.secondary": {
     "message": "Explorar el contenido"
+  },
+  "homepage.hero.activity": {
+    "message": "ACTIVIDAD RECIENTE",
+    "description": "Activity badge text"
+  },
+  "homepage.hero.trust1": {
+    "message": "Sin tarjetas de crédito",
+    "description": "Trust indicator 1"
+  },
+  "homepage.hero.trust2": {
+    "message": "Acceso inmediato por email",
+    "description": "Trust indicator 2"
+  },
+  "homepage.hero.downloads": {
+    "message": "248 personas descargaron la rutina en las últimas 24 horas",
+    "description": "Social proof downloads text"
   }
 }

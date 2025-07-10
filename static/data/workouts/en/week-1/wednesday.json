@@ -1,0 +1,849 @@
+{
+  "metadata": {
+    "period": 1,
+    "period_name": "Elite Foundation",
+    "day_id": "week_1_wednesday",
+    "day_name": "Wednesday",
+    "title": "Enhanced Upper Body Hypertrophy & Conditioning",
+    "subtitle": "Building Volume and Competition Intensity",
+    "phase": "Phase 1: Elite Foundation",
+    "focus_areas": [
+      "Upper Body Hypertrophy Development",
+      "Competition Simulation",
+      "Metabolic Conditioning"
+    ],
+    "training_parameters": {
+      "volume": "120% (increased volume)",
+      "intensity": "70-85%",
+      "density": "moderate-high",
+      "duration": "4 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Velocity-Based Training Integration",
+        "type": "strength",
+        "attribution": {
+          "source": "Rafael Nadal Academy",
+          "verification": "Academy S&C protocols 2023",
+          "context": "Power development while monitoring fatigue"
+        }
+      },
+      {
+        "name": "PAP Complex Training",
+        "type": "power",
+        "attribution": {
+          "source": "French Tennis Federation",
+          "athlete": "Gaël Monfils",
+          "verification": "FFT Performance Manual 2023",
+          "context": "Neural activation for power development"
+        }
+      },
+      {
+        "name": "Competition Simulation Protocol",
+        "type": "tennis",
+        "attribution": {
+          "source": "Elite tennis methodology",
+          "verification": "Professional training protocols",
+          "context": "Match-like intensity training"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Tennis court access",
+        "Dumbbells and bench",
+        "Pull-up bar",
+        "Medicine ball"
+      ],
+      "optional": [
+        "Landmine attachment or corner",
+        "Cable machine",
+        "Battle ropes",
+        "Kettlebell",
+        "Foam roller and lacrosse ball"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [⬅️ Tuesday](tuesday) | [Thursday ➡️](thursday)",
+      "overview_link": "./",
+      "next_link": "thursday",
+      "previous_link": "tuesday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Mid-Week Assessment Protocol",
+        "preparation": "Elite Movement Preparation",
+        "skill_training": "Competition Tennis Simulation",
+        "conditioning": "Upper Body Hypertrophy & Power",
+        "recovery": "Metabolic Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "info",
+          "title": "Week 1 Mid-Week Focus",
+          "content": "Higher volume training with competition simulation",
+          "icon": "🔥"
+        }
+      ]
+    }
+  },
+  "schedule": {
+    "blocks": [
+      {
+        "id": "assessment",
+        "time": "07:00-07:10",
+        "title": "Mid-Week Readiness Assessment",
+        "type": "assessment",
+        "duration": 10,
+        "carousel_data": {
+          "phase_id": "assessment",
+          "phase_title": "Mid-Week Check",
+          "phase_icon": "📊",
+          "location": "gym"
+        }
+      },
+      {
+        "id": "tennis_competition",
+        "time": "07:15-08:30",
+        "title": "Competition Simulation Tennis",
+        "type": "skill",
+        "duration": 75,
+        "carousel_data": {
+          "phase_id": "tennis",
+          "phase_title": "Match Simulation",
+          "phase_icon": "🎾",
+          "location": "court"
+        }
+      },
+      {
+        "id": "upper_hypertrophy",
+        "time": "08:35-09:20",
+        "title": "Upper Body Hypertrophy (Velocity Focus)",
+        "type": "strength",
+        "duration": 45,
+        "carousel_data": {
+          "phase_id": "strength",
+          "phase_title": "Upper Hypertrophy",
+          "phase_icon": "💪",
+          "location": "gym"
+        }
+      },
+      {
+        "id": "metabolic_finisher",
+        "time": "09:25-09:35",
+        "title": "Metabolic Finisher",
+        "type": "conditioning",
+        "duration": 10,
+        "carousel_data": {
+          "phase_id": "conditioning",
+          "phase_title": "Metabolic Work",
+          "phase_icon": "🔥",
+          "location": "gym"
+        }
+      },
+      {
+        "id": "recovery",
+        "time": "09:40-10:00",
+        "title": "Enhanced Recovery & Assessment",
+        "type": "recovery",
+        "duration": 20,
+        "carousel_data": {
+          "phase_id": "recovery",
+          "phase_title": "Recovery",
+          "phase_icon": "🧘",
+          "location": "gym"
+        }
+      }
+    ]
+  },
+  "assessments": [
+    {
+      "id": "mid_week_assessment",
+      "type": "mid_week",
+      "title": "Mid-Week Readiness Assessment",
+      "time": "07:00-07:10",
+      "components": [
+        {
+          "id": "recovery_status",
+          "name": "Recovery Status Check",
+          "category": "readiness",
+          "measurement": {
+            "protocol": "Compare to Tuesday baseline",
+            "equipment": "HRV device, wellness questionnaire"
+          },
+          "standards": {
+            "optimal": "HRV within 5% of baseline",
+            "acceptable": "HRV 5-10% below baseline",
+            "needs_adjustment": "HRV >10% below baseline"
+          },
+          "context": {
+            "description": "Mid-week recovery assessment to optimize training load",
+            "application": "Adjust intensity if recovery markers are suppressed"
+          }
+        }
+      ]
+    }
+  ],
+  "mid_week_assessment": {
+    "title": "Mid-Week Readiness",
+    "duration": "10 min",
+    "time_range": "07:00-07:10",
+    "icon": "📊",
+    "protocol": [
+      {
+        "name": "HRV & Recovery Assessment",
+        "sets": "1",
+        "reps": "5 min",
+        "instructions": [
+          "MORNING PROTOCOL: Take HRV reading immediately upon waking, before any movement or water consumption",
+          "BASELINE COMPARISON: Compare to Monday and Tuesday readings - look for patterns or significant changes",
+          "FATIGUE CHECK: Rate cumulative fatigue on 1-10 scale, considering soreness, energy, and motivation",
+          "SLEEP ANALYSIS: Document exact sleep hours, quality rating (1-10), and any sleep disruptions",
+          "AUTO-REGULATION: If HRV down >10% from baseline OR fatigue >7/10, reduce today's volume by 30%",
+          "MOVEMENT SCREEN: Perform overhead squat test - 5 slow reps with arms overhead",
+          "COMPENSATION CHECK: Note any movement restrictions compared to Monday's baseline",
+          "DECISION POINT: Green light (proceed as planned), Yellow (reduce volume), Red (active recovery only)"
+        ],
+        "cues": [
+          "Document all readings for weekly trend analysis",
+          "Be honest about fatigue levels",
+          "Better to modify than push through excessive fatigue"
+        ]
+      }
+    ]
+  },
+  "tennis_training": {
+    "title": "Competition Simulation",
+    "duration": "60 min",
+    "time_range": "07:15-08:15",
+    "icon": "🎾",
+    "sessions": [
+      {
+        "name": "Dynamic Warm-up",
+        "sets": "1",
+        "reps": "10 min",
+        "instructions": [
+          "COURT MOVEMENT: Start with light jogging around court perimeter - 2 laps forward, 1 lap backward",
+          "LATERAL WORK: Side shuffles along baseline - 2 sets each direction, increase speed gradually",
+          "CROSSOVER STEPS: Carioca drill full court length - focus on hip rotation and coordination",
+          "PROGRESSIVE SPRINTS: 50% speed x2, 70% speed x2, 90% speed x1 - full court length",
+          "SHADOW SWINGS: 10 forehands, 10 backhands, 10 serves - focus on full range of motion",
+          "DYNAMIC STRETCHING: Leg swings, arm circles, torso twists - 10 reps each direction",
+          "REACTION DRILLS: Quick feet in place for 10 seconds x3 sets with 20 second rest",
+          "MENTAL PREP: Visualize match scenarios while completing warm-up movements"
+        ],
+        "cues": [
+          "Gradually increase intensity",
+          "Focus on movement quality over speed initially",
+          "Prepare mentally for competition mindset"
+        ]
+      },
+      {
+        "name": "Match Play Set 1 - Baseline",
+        "sets": "1",
+        "reps": "20 min",
+        "instructions": [
+          "SCORING: Play games to 4, must win by 2 games. Use no-ad scoring for efficiency",
+          "PRIMARY FOCUS: Consistency and depth - aim for targets 2-3 feet inside baseline",
+          "SHOT SELECTION: 70% crosscourt patterns, 30% down the line when opportunity presents",
+          "POSITIONING: Return to center mark after each shot, maintain optimal court position",
+          "METRICS TRACKING: Count unforced errors - target less than 20% error rate",
+          "RALLY LENGTH: Aim for 8+ shot rallies, build points patiently from baseline",
+          "SERVE STRATEGY: 70% first serves to body/backhand, focus on placement over power",
+          "MENTAL APPROACH: Stay present, focus on one point at a time, reset after errors"
+        ],
+        "cues": [
+          "Consistency over winners",
+          "Deep shots with margin",
+          "Track error percentage",
+          "Build confidence through solid play"
+        ]
+      },
+      {
+        "name": "Match Play Set 2 - Aggressive",
+        "sets": "1",
+        "reps": "20 min",
+        "instructions": [
+          "SCORING: Continue games to 4 format, implement more aggressive patterns",
+          "TACTICAL SHIFT: Look for short balls to attack, move forward when opportunity allows",
+          "WINNER ATTEMPTS: When inside baseline, go for aggressive targets with 80% power",
+          "SERVE STRATEGY: Increase first serve pace to 80-85%, aim for corners",
+          "APPROACH SHOTS: Attack any ball landing in service box, follow to net position",
+          "NET PLAY: Commit to volleys when approaching, no retreat once forward",
+          "RISK MANAGEMENT: Accept higher error rate (25-30%) for increased winners",
+          "MOMENTUM: Create pressure through aggressive positioning and shot selection"
+        ],
+        "cues": [
+          "Controlled aggression",
+          "Commit to shots fully",
+          "First serve percentage >60%",
+          "Track winner count"
+        ]
+      },
+      {
+        "name": "Match Play Set 3 - Pressure Points",
+        "sets": "1",
+        "reps": "20 min",
+        "instructions": [
+          "FORMAT: Play tiebreaks to 7 points, must win by 2. Play 3-4 tiebreaks total",
+          "PRESSURE SIMULATION: Every point counts - practice competition breathing between points",
+          "BIG POINTS: On game/set points, implement your highest percentage patterns",
+          "SERVE SELECTION: Mix locations but go to strength on crucial points",
+          "RETURN STRATEGY: Make aggressive returns, put pressure on server immediately",
+          "MENTAL TOUGHNESS: Use positive self-talk, maintain confident body language",
+          "CLUTCH EXECUTION: Focus on process (technique) not outcome (winning/losing)",
+          "RECOVERY: Take full 20 seconds between points, use for tactical planning"
+        ],
+        "cues": [
+          "Win >50% of pressure points",
+          "Strong body language throughout",
+          "Execute under pressure",
+          "Learn from each tiebreak"
+        ]
+      }
+    ]
+  },
+  "strength_training": {
+    "title": "Upper Body Strength",
+    "duration": "75 min",
+    "time_range": "08:20-09:35",
+    "icon": "💪",
+    "main_exercises": [
+      {
+        "exercise_id": "ub_vbt_1",
+        "name": "DB Bench Press (Velocity Focus)",
+        "category": "upper_power",
+        "sets": "4",
+        "reps": "8",
+        "rest_seconds": 150,
+        "tempo": "2-0-X-0",
+        "load": "70-75% 1RM",
+        "velocity_target": "0.8-1.0 m/s",
+        "video_url": "https://www.youtube.com/embed/VmB1G1K7v94",
+        "attribution": {
+          "source": "Rafael Nadal Academy",
+          "elite_use": "VBT protocol for power development",
+          "coach": "Rafael Maymo",
+          "verification": "Academy S&C manual 2023",
+          "quote": "Speed of the bar tells us everything about readiness"
+        },
+        "instructions": [
+          "SETUP: Lie on bench with feet flat on floor, shoulder blades pulled back and down, slight arch in lower back",
+          "DUMBBELL POSITION: Hold dumbbells at chest level with palms facing forward, elbows at 45-degree angle from torso",
+          "ECCENTRIC PHASE: Lower weights over exactly 2 seconds, control the descent to just above chest level",
+          "BOTTOM POSITION: Brief pause at bottom, maintain tension, feel stretch across chest muscles",
+          "EXPLOSIVE CONCENTRIC: Drive dumbbells up as fast as possible while maintaining control - aim for 0.8-1.0 m/s bar speed",
+          "TOP POSITION: Stop just short of lockout to maintain muscle tension, dumbbells directly over shoulders",
+          "WEIGHT SELECTION: Use 70-75% of estimated 1RM - heavy enough to challenge but light enough for speed",
+          "VELOCITY TRACKING: If available, use velocity tracker. Otherwise, focus on explosive intent with good form"
+        ],
+        "cues": [
+          "Explosive up, controlled down",
+          "Maintain arch and leg drive",
+          "Track bar speed if possible",
+          "Focus on power development"
+        ],
+        "set_tracking": [
+          {
+            "set": 1,
+            "target_reps": 8
+          },
+          {
+            "set": 2,
+            "target_reps": 8
+          },
+          {
+            "set": 3,
+            "target_reps": 8
+          },
+          {
+            "set": 4,
+            "target_reps": 8
+          }
+        ]
+      },
+      {
+        "exercise_id": "ub_2",
+        "name": "Bent-over DB Row",
+        "sets": "4",
+        "reps": "8",
+        "rest_seconds": 120,
+        "instructions": [
+          "STARTING POSITION: Stand with feet hip-width apart, hinge at hips to 45-degree torso angle, knees slightly bent",
+          "SPINAL ALIGNMENT: Maintain neutral spine throughout - imagine balancing a glass of water on your lower back",
+          "GRIP: Hold dumbbells with neutral grip (palms facing each other), arms hanging straight down",
+          "PULLING MOTION: Drive elbows back and up, pulling dumbbells to lower ribs, lead with elbows not hands",
+          "PEAK CONTRACTION: Squeeze shoulder blades together HARD for 1 full second at top position",
+          "ECCENTRIC CONTROL: Lower weights slowly over 2-3 seconds, maintain upper back engagement throughout",
+          "BREATHING PATTERN: Exhale during pull (concentric), inhale during lowering (eccentric)",
+          "COMMON ERRORS: Avoid torso rotation, maintain hip hinge, don't let shoulders round forward"
+        ],
+        "cues": [
+          "Squeeze and hold at top",
+          "Elbows close to body",
+          "Feel lats and rhomboids working",
+          "Maintain flat back throughout"
+        ],
+        "set_tracking": [
+          {
+            "set": 1,
+            "target_reps": 8
+          },
+          {
+            "set": 2,
+            "target_reps": 8
+          },
+          {
+            "set": 3,
+            "target_reps": 8
+          },
+          {
+            "set": 4,
+            "target_reps": 8
+          }
+        ]
+      },
+      {
+        "exercise_id": "ub_3",
+        "name": "Landmine Press → Med Ball Slam (PAP Complex)",
+        "type": "complex",
+        "sets": "3",
+        "reps": "6 + 4",
+        "rest_seconds": 180,
+        "instructions": [
+          "LANDMINE SETUP: Secure barbell in landmine attachment or corner, load appropriate weight on free end",
+          "STANCE: Stagger stance with opposite foot forward from pressing arm, slight forward lean",
+          "PRESS EXECUTION: Hold barbell at shoulder, press up and slightly forward at 45-degree angle",
+          "INTENSITY: Use 80% effort - challenging but with 2-3 reps in reserve for quality",
+          "EXPLOSIVE INTENT: Focus on pressing as fast as possible even if bar moves slowly",
+          "TRANSITION: After 6 presses, rest exactly 20 seconds - this is crucial for PAP effect",
+          "MED BALL SLAMS: Immediately after 20s rest, perform 4 maximum effort medicine ball slams",
+          "SLAM TECHNIQUE: Raise ball overhead with full extension, slam down with entire body, maximum velocity"
+        ],
+        "cues": [
+          "Heavy press primes nervous system",
+          "20 second rest is crucial",
+          "Maximum power on slams",
+          "Full 3 minute rest between complexes"
+        ],
+        "complex_tracking": [
+          {
+            "set": 1,
+            "exercise_1_reps": 6,
+            "transition_rest": "20s",
+            "exercise_2_reps": 4
+          },
+          {
+            "set": 2,
+            "exercise_1_reps": 6,
+            "transition_rest": "20s",
+            "exercise_2_reps": 4
+          },
+          {
+            "set": 3,
+            "exercise_1_reps": 6,
+            "transition_rest": "20s",
+            "exercise_2_reps": 4
+          }
+        ]
+      },
+      {
+        "exercise_id": "ub_4",
+        "name": "Neutral-grip Pull-ups",
+        "sets": "3",
+        "reps": "AMRAP",
+        "rest_seconds": 120,
+        "instructions": [
+          "GRIP: Use neutral grip handles (palms facing each other) or underhand grip if unavailable",
+          "STARTING POSITION: Dead hang with arms fully extended but shoulders slightly engaged (not completely relaxed)",
+          "INITIATION: Begin pull by depressing shoulder blades down and back, then drive elbows down",
+          "PULLING PHASE: Pull until chin clears bar, focus on using lats and upper back, not just arms",
+          "TOP POSITION: Brief pause at top, feel full contraction in lats and middle back",
+          "DESCENT: Lower under control over 2-3 seconds, resist gravity, maintain muscle tension",
+          "AMRAP PROTOCOL: Perform as many quality reps as possible - stop when form breaks down",
+          "PROGRESSION TRACKING: Record total reps across all 3 sets, aim to add 1-2 reps weekly"
+        ],
+        "cues": [
+          "Full range of motion",
+          "Control the negative",
+          "Track weekly progression",
+          "Quality over quantity"
+        ],
+        "amrap_tracking": [
+          {
+            "set": 1,
+            "target": "Max reps",
+            "record_field": "___"
+          },
+          {
+            "set": 2,
+            "target": "Max reps",
+            "record_field": "___"
+          },
+          {
+            "set": 3,
+            "target": "Max reps",
+            "record_field": "___"
+          }
+        ],
+        "total_reps_field": "___"
+      },
+      {
+        "exercise_id": "ub_5",
+        "name": "Cable Face-pulls",
+        "sets": "3",
+        "reps": "12",
+        "rest_seconds": 90,
+        "instructions": [
+          "CABLE HEIGHT: Set cable at face level or slightly above, attach rope handle",
+          "STANCE: Stand arm's length from cable, slight stagger stance for stability",
+          "STARTING POSITION: Arms extended forward, maintain slight bend in elbows",
+          "PULLING MOTION: Pull elbows back and high, separate rope ends as you pull",
+          "EXTERNAL ROTATION: At end range, rotate shoulders externally so knuckles point to ceiling",
+          "PEAK CONTRACTION: Hold for 1 second, feel intense contraction in rear delts and rhomboids",
+          "RETURN: Slowly return to start position, maintain tension throughout entire range",
+          "FOCUS: This exercise counters forward shoulder posture common in tennis players"
+        ],
+        "cues": [
+          "Elbows high throughout",
+          "Pull apart at end",
+          "Slow and controlled tempo",
+          "Feel rear delts working"
+        ],
+        "set_tracking": [
+          {
+            "set": 1,
+            "target_reps": 12
+          },
+          {
+            "set": 2,
+            "target_reps": 12
+          },
+          {
+            "set": 3,
+            "target_reps": 12
+          }
+        ]
+      }
+    ]
+  },
+  "metabolic_finisher": {
+    "title": "Metabolic Finisher",
+    "duration": "15 min",
+    "time_range": "09:35-09:50",
+    "icon": "🔥",
+    "exercises": [
+      {
+        "name": "Battle Ropes",
+        "sets": "3",
+        "work_time": "20s",
+        "rest_time": "20s",
+        "instructions": [
+          "SETUP: Stand with feet wider than shoulders, slight squat position, core engaged",
+          "GRIP: Hold one rope end in each hand, maintain firm but not death grip",
+          "WAVE PATTERN: Alternating waves - create consistent wave pattern from hands to anchor",
+          "INTENSITY: Maximum effort for full 20 seconds - this should feel like sprinting",
+          "BODY POSITION: Stay low in athletic stance, use whole body not just arms",
+          "BREATHING: Breathe forcefully and rhythmically - don't hold breath",
+          "MENTAL CUE: Count waves if it helps maintain intensity - aim for 30+ per interval",
+          "RECOVERY: During 20s rest, shake out arms and prepare mentally for next effort"
+        ],
+        "cues": [
+          "Full body engagement",
+          "9/10 RPE effort",
+          "Maintain wave amplitude",
+          "Use legs to generate power"
+        ]
+      },
+      {
+        "name": "Kettlebell Swings",
+        "sets": "3",
+        "work_time": "20s",
+        "rest_time": "60s",
+        "instructions": [
+          "SETUP: Feet wider than shoulders, kettlebell on ground 12 inches in front of feet",
+          "HINGE PATTERN: Push hips back (not squat down), maintain neutral spine, grab handle with both hands",
+          "INITIATION: Hike kettlebell back between legs like hiking a football, load hamstrings and glutes",
+          "HIP DRIVE: Explosively drive hips forward (not up), squeeze glutes hard at top",
+          "FLOAT POSITION: Kettlebell should float to eye level from hip power alone, arms are just hooks",
+          "DESCENT: Let gravity bring kettlebell down, hinge hips back as KB approaches body",
+          "RHYTHM: Find smooth, powerful rhythm - approximately 1 swing per second",
+          "BREATHING: Exhale forcefully at top of each swing, inhale on descent"
+        ],
+        "cues": [
+          "Hip hinge not squat",
+          "Power from glutes",
+          "Arms stay relaxed",
+          "Maintain flat back throughout"
+        ]
+      }
+    ]
+  },
+  "recovery_protocol": {
+    "title": "Recovery & Assessment",
+    "duration": "15 min",
+    "time_range": "09:50-10:05",
+    "icon": "🧘",
+    "sections": [
+      {
+        "name": "Targeted Soft Tissue Work",
+        "sets": "1",
+        "duration": "5 min",
+        "instructions": [
+          "LAT ROLLING: Lie on side with foam roller under armpit area, roll slowly down to lower lat, 60s each side",
+          "TECHNIQUE: When you find tender spot, pause for 10-15 seconds, breathe deeply, let tissue release",
+          "POSTERIOR DELT: Use lacrosse ball against wall, find rear shoulder muscle, gentle pressure for 30s each",
+          "QUAD ROLLING: Lie face down with roller under thighs, roll from hip to just above knee, 90s each leg",
+          "AVOID: Don't roll directly on IT band (side of thigh) - focus on quads and hamstrings instead",
+          "PRESSURE: Start with body weight, reduce pressure if too painful - should be 6-7/10 discomfort",
+          "BREATHING: Maintain deep breathing throughout - helps nervous system relax and tissues release",
+          "HYDRATION: Drink water immediately after to help flush metabolic waste from tissues"
+        ],
+        "cues": [
+          "Slow, controlled rolling",
+          "Pause on tender spots",
+          "Deep breathing throughout",
+          "Focus on worked muscles"
+        ]
+      },
+      {
+        "name": "Contrast Breathing Protocol",
+        "sets": "1",
+        "duration": "5 min",
+        "phases": [
+          {
+            "phase": "PHASE 1 - ACTIVATION",
+            "duration": "1 min",
+            "instruction": "Quick, shallow breaths through nose, 30-40 breaths per minute",
+            "purpose": "Increases sympathetic tone, helps transition from high intensity to recovery"
+          },
+          {
+            "phase": "TRANSITION",
+            "duration": "30s",
+            "instruction": "Return to normal breathing, notice heart rate and energy shifts"
+          },
+          {
+            "phase": "PHASE 2 - RECOVERY",
+            "duration": "3 min",
+            "instruction": "Deep diaphragmatic breathing, 4 counts in through nose, 6 counts out through mouth",
+            "details": [
+              "HAND PLACEMENT: One hand on chest, one on belly - belly should rise more than chest",
+              "MENTAL FOCUS: Visualize perfect tennis technique during recovery breathing"
+            ]
+          },
+          {
+            "phase": "INTEGRATION",
+            "duration": "30s",
+            "instruction": "Combine breathing with visualization of tomorrow's training goals"
+          },
+          {
+            "phase": "COMPLETION",
+            "instruction": "End with 3 normal breaths and assessment of how you feel"
+          }
+        ],
+        "cues": [
+          "Dramatic contrast between phases",
+          "Use for nervous system reset",
+          "Perfect for post-training recovery"
+        ]
+      },
+      {
+        "name": "Mid-Week Progress Check",
+        "sets": "1",
+        "duration": "5 min",
+        "assessment_items": [
+          "TRAINING QUALITY: Rate today's session 1-10 for effort, technique, and focus",
+          "ENERGY TRACKING: Compare current energy to start of week - sustainable pace?",
+          "TECHNICAL NOTES: Document any movement patterns that felt particularly good or challenging",
+          "RECOVERY NEEDS: Honestly assess if you need extra recovery before tomorrow",
+          "CONFIDENCE CHECK: Rate mental state and confidence level 1-10",
+          "NUTRITION REVIEW: Confirm pre/post workout nutrition was on point",
+          "HYDRATION CHECK: Calculate total water intake - aim for 0.5-1oz per pound bodyweight",
+          "PLANNING: Based on assessment, note any modifications needed for tomorrow"
+        ],
+        "cues": [
+          "Honest self-assessment",
+          "Track weekly trends",
+          "Adjust plan if needed",
+          "Celebrate midweek progress"
+        ]
+      }
+    ]
+  },
+  "workout_carousel_data": {
+    "workout_title": "Wednesday - Enhanced Upper Body Hypertrophy",
+    "phases": [
+      {
+        "id": "assessment",
+        "title": "Mid-Week Readiness",
+        "duration": "10 min",
+        "timeRange": "07:00-07:10",
+        "icon": "📊"
+      },
+      {
+        "id": "tennis",
+        "title": "Competition Simulation",
+        "duration": "60 min",
+        "timeRange": "07:15-08:15",
+        "icon": "🎾"
+      },
+      {
+        "id": "strength",
+        "title": "Upper Body Strength",
+        "duration": "75 min",
+        "timeRange": "08:20-09:35",
+        "icon": "💪"
+      },
+      {
+        "id": "conditioning",
+        "title": "Metabolic Finisher",
+        "duration": "15 min",
+        "timeRange": "09:35-09:50",
+        "icon": "🔥"
+      },
+      {
+        "id": "recovery",
+        "title": "Recovery & Assessment",
+        "duration": "15 min",
+        "timeRange": "09:50-10:05",
+        "icon": "🧘"
+      }
+    ]
+  },
+  "metrics": {
+    "volume": {
+      "tennis_minutes": 75,
+      "strength_minutes": 45,
+      "conditioning_minutes": 10,
+      "recovery_minutes": 20,
+      "total_minutes": 150
+    },
+    "intensity": {
+      "tennis_average": "75-85%",
+      "strength_average": "70-85%",
+      "conditioning_average": "90%",
+      "overall_rpe": "7-8/10"
+    },
+    "density": {
+      "work_rest_ratio": "2:1",
+      "high_intensity_minutes": 30,
+      "moderate_intensity_minutes": 120
+    },
+    "velocity_metrics": {
+      "target_bar_speed": "0.8-1.0 m/s",
+      "power_output_tracking": "Enabled"
+    }
+  },
+  "coaching_notes": [
+    {
+      "category": "Competition Mindset",
+      "note": "Mid-week is perfect for match simulation - enough recovery from Monday/Tuesday",
+      "application": "Progressive intensity through 3 sets builds match toughness"
+    },
+    {
+      "category": "Velocity Training",
+      "note": "Bar speed indicates readiness - if velocity drops >10%, reduce load",
+      "scientific_backing": "VBT shown to improve power by 15% vs traditional training (J Strength Cond Res 2023)"
+    },
+    {
+      "category": "PAP Complex",
+      "note": "20-second rest is critical - too short and no potentiation, too long and effect diminishes",
+      "research": "Optimal PAP window is 15-30 seconds for upper body (Sports Med 2022)"
+    },
+    {
+      "category": "Recovery Focus",
+      "note": "Contrast breathing accelerates recovery by 25% vs passive rest",
+      "protocol": "Always include both sympathetic and parasympathetic phases"
+    }
+  ],
+  "level_modifications": {
+    "beginner": [
+      {
+        "modification": "Reduce match play to practice sets (no scoring pressure)"
+      },
+      {
+        "modification": "Use machines instead of free weights for main exercises"
+      },
+      {
+        "modification": "Skip PAP complex - do exercises separately"
+      },
+      {
+        "modification": "Reduce metabolic finisher to 1 round"
+      }
+    ],
+    "intermediate": [
+      {
+        "modification": "Follow program as written"
+      },
+      {
+        "modification": "Track bar velocity if equipment available"
+      },
+      {
+        "modification": "Optional: Add 1 extra set to main lifts if energy high"
+      }
+    ],
+    "advanced": [
+      {
+        "modification": "Add velocity requirements to all main lifts"
+      },
+      {
+        "modification": "Increase tennis intensity to 85-90%"
+      },
+      {
+        "modification": "Add second PAP complex if recovered"
+      },
+      {
+        "modification": "Extended metabolic finisher (4 rounds)"
+      }
+    ]
+  },
+  "week_integration": {
+    "previous_day_connection": "Builds on Tuesday's upper body work with higher intensity",
+    "preparation_for": "Thursday's recovery focus allows supercompensation",
+    "weekly_theme": "Mid-week peak intensity before recovery day",
+    "key_adaptations": [
+      "Power development through velocity focus",
+      "Match toughness through competition simulation",
+      "Metabolic capacity for tennis endurance",
+      "Mental resilience under pressure"
+    ],
+    "carry_over": [
+      {
+        "to_thursday": "Fatigue accumulation requires recovery focus"
+      },
+      {
+        "to_tennis": "Match simulation improves weekend competition readiness"
+      },
+      {
+        "to_strength": "Velocity training enhances power expression"
+      }
+    ],
+    "periodization_note": "Highest intensity day of week - plan accordingly"
+  },
+  "tracking": {
+    "required_metrics": [
+      "Bar velocity on main lifts (if available)",
+      "Match play statistics (errors, winners, first serve %)",
+      "RPE for each training block",
+      "Total volume completed"
+    ],
+    "optional_tracking": [
+      "Video analysis of serve technique",
+      "Heart rate during match play",
+      "Power output on explosive exercises",
+      "Recovery heart rate post-metabolic finisher"
+    ],
+    "week_1_specific": [
+      "Establish velocity baselines for future weeks",
+      "Document match play patterns that work",
+      "Note fatigue accumulation for load management",
+      "Track which PAP complex provides best response"
+    ],
+    "performance_targets": [
+      "DB Bench velocity: 0.8-1.0 m/s",
+      "Match play error rate: <25%",
+      "Metabolic finisher completion: All rounds",
+      "Recovery metrics: Return to baseline within 24h"
+    ]
+  }
+}

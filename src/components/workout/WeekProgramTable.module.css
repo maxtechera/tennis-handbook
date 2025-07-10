@@ -1,0 +1,208 @@
+/* Controls */
+.controlsContainer {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: flex-end;
+}
+
+.controlButton {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.controlButton:hover {
+  background-color: #2980b9;
+}
+
+.controlButton:active {
+  transform: translateY(1px);
+}
+
+/* Section Container */
+.sectionContainer {
+  margin-bottom: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Header */
+.sectionHeader {
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.sectionHeader:hover {
+  background-color: #34495e;
+}
+
+.sectionHeaderContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.expandIcon {
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.sectionTime {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.sectionContent {
+  padding: 1rem;
+}
+
+/* Subsection */
+.subsectionContainer {
+  padding: 0;
+}
+
+.subsectionTitle {
+  margin: 1rem 0 0.5rem;
+  font-style: italic;
+  color: #555;
+  font-size: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.25rem;
+}
+
+.subsectionContainer:first-child .subsectionTitle {
+  margin-top: 0;
+}
+
+/* Table Styles */
+.workoutTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.workoutTable th {
+  background-color: #f8f9fa;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+  color: #2c3e50;
+}
+
+.workoutTable th:nth-child(1) {
+  width: 30%;
+}
+
+.workoutTable th:nth-child(2),
+.workoutTable th:nth-child(3),
+.workoutTable th:nth-child(4) {
+  width: 10%;
+  text-align: center;
+}
+
+.workoutTable th:nth-child(5) {
+  width: 40%;
+}
+
+.workoutTable td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: top;
+}
+
+.exerciseRow:hover {
+  background-color: #f8f9fa;
+}
+
+.exerciseCell {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.centerCell {
+  text-align: center;
+  font-weight: 500;
+}
+
+.instructionsCell {
+  font-size: 0.9em;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+/* Dark mode support */
+[data-theme='dark'] .sectionContainer {
+  border-color: #3a3a3a;
+  background-color: #1a1a1a;
+}
+
+[data-theme='dark'] .sectionHeader {
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+[data-theme='dark'] .workoutTable th {
+  background-color: #252525;
+  color: #e0e0e0;
+  border-bottom-color: #3a3a3a;
+}
+
+[data-theme='dark'] .workoutTable td {
+  border-bottom-color: #2a2a2a;
+  color: #d0d0d0;
+}
+
+[data-theme='dark'] .exerciseRow:hover {
+  background-color: #252525;
+}
+
+[data-theme='dark'] .exerciseCell {
+  color: #e0e0e0;
+}
+
+[data-theme='dark'] .instructionsCell {
+  color: #a0a0a0;
+}
+
+[data-theme='dark'] .subsectionTitle {
+  color: #b0b0b0;
+  border-bottom-color: #3a3a3a;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .workoutTable {
+    font-size: 0.85rem;
+  }
+  
+  .workoutTable th,
+  .workoutTable td {
+    padding: 0.5rem;
+  }
+  
+  .instructionsCell {
+    font-size: 0.8em;
+  }
+}

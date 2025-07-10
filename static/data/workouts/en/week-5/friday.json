@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "period": 5,
+    "period_name": "Power Integration Phase",
+    "day_id": "week_5_friday",
+    "day_name": "Friday",
+    "title": "Integrated Power Application & Performance Testing",
+    "subtitle": "Complete Power Integration Assessment",
+    "phase": "Phase 2: Power Integration (Week 2)",
+    "focus_areas": [
+      "Integrated Power Application",
+      "Performance Testing",
+      "Tennis Power Transfer"
+    ],
+    "training_parameters": {
+      "volume": "100% (testing focus)",
+      "intensity": "90-100% (maximum effort)",
+      "density": "moderate",
+      "duration": "4 hours 45 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Tsitsipas Power Integration Protocol",
+        "type": "integrated_power",
+        "attribution": {
+          "athlete": "Stefanos Tsitsipas",
+          "coach": "Apostolos Tsitsipas",
+          "source": "Integrated power development",
+          "verification": "Training documentation",
+          "context": "Complete power integration",
+          "results": "Enhanced all-court power"
+        }
+      }
+    ]
+  },
+  "assessments": [
+    {
+      "id": "integrated_power_testing",
+      "type": "performance",
+      "title": "Integrated Power Performance Testing",
+      "timing": "mid-session",
+      "duration": "45 minutes",
+      "components": [
+        {
+          "id": "power_transfer_test",
+          "name": "Power Transfer Assessment",
+          "type": "integrated_power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Gym power → court power transfer test",
+            "repetitions": "Multiple trials",
+            "equipment": "Various testing equipment"
+          },
+          "standards": {
+            "elite_benchmark": "Strong correlation between gym and court power",
+            "good_standard": "Moderate correlation",
+            "needs_work": "Weak correlation or poor transfer"
+          },
+          "context": {
+            "description": "Evaluates power transfer to tennis performance",
+            "application": "Determines training effectiveness"
+          }
+        },
+        {
+          "id": "comprehensive_power_battery",
+          "name": "Comprehensive Power Battery",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Multi-modal power assessment",
+            "repetitions": "Full battery",
+            "equipment": "Complete testing setup"
+          },
+          "standards": {
+            "elite_benchmark": "Top 10% in all power measures",
+            "good_standard": "Above average in most measures",
+            "needs_work": "Below average in key measures"
+          },
+          "context": {
+            "description": "Complete power profile assessment",
+            "application": "Phase 2 progress evaluation"
+          }
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Integrated Power Tennis Training",
+    "sessions": [
+      {
+        "id": "integrated_power_session",
+        "type": "integrated_power",
+        "title": "Integrated Power Tennis Development",
+        "duration": "100 minutes",
+        "intensity": "90-100%",
+        "components": [
+          {
+            "id": "maximum_power_serves",
+            "name": "Maximum Power Serve Training",
+            "type": "power_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "45 minutes",
+              "rest": "60 seconds between serves"
+            },
+            "implementation": {
+              "method": "Maximum power serve development",
+              "focus": "Peak serve velocity",
+              "key_points": "Complete kinetic chain integration"
+            },
+            "instructions": [
+              {
+                "phase": "PREPARATION",
+                "text": "15 minutes progressive serve preparation"
+              },
+              {
+                "phase": "MAXIMUM_VELOCITY",
+                "text": "20 minutes maximum velocity serves"
+              },
+              {
+                "phase": "INTEGRATION",
+                "text": "10 minutes integrated serve power"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Peak serve velocity",
+                "target": "Personal best attempt",
+                "tracking": "Radar gun measurements"
+              }
+            ]
+          },
+          {
+            "id": "integrated_power_rallies",
+            "name": "Integrated Power Rally Training",
+            "type": "power_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "45 minutes",
+              "rest": "45 seconds between rallies"
+            },
+            "implementation": {
+              "method": "Integrated power rally development",
+              "focus": "Maximum shot power in rally context",
+              "key_points": "Power with control and consistency"
+            },
+            "instructions": [
+              {
+                "phase": "POWER_GROUNDSTROKES",
+                "text": "20 minutes maximum power groundstrokes"
+              },
+              {
+                "phase": "POWER_COMBINATIONS",
+                "text": "15 minutes power shot combinations"
+              },
+              {
+                "phase": "MATCH_SIMULATION",
+                "text": "10 minutes match-like power application"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Shot power",
+                "target": "Maximum sustainable power",
+                "tracking": "Velocity and placement measurements"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "integrated_power_block",
+      "type": "integrated",
+      "title": "Integrated Power Training Block",
+      "description": "Complete power integration",
+      "duration": "100 minutes",
+      "exercises": [
+        {
+          "id": "power_complex_integration",
+          "name": "Power Complex Integration",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "5",
+            "reps": "Complex format",
+            "intensity": "85-95% strength + maximum power",
+            "rest": "4 minutes between complexes"
+          },
+          "execution": {
+            "setup": [
+              "Multiple stations",
+              "All equipment available",
+              "Testing equipment ready"
+            ],
+            "technique": [
+              "Heavy strength exercise",
+              "Explosive power exercise",
+              "Tennis-specific movement",
+              "Integration testing"
+            ]
+          },
+          "cues": [
+            "Complete power integration",
+            "Strength to power to sport",
+            "Maximum effort",
+            "Feel the transfer"
+          ],
+          "benefits": {
+            "primary": "Integrated power development",
+            "secondary": "Complete system integration",
+            "sport_specific": "Tennis power transfer"
+          }
+        },
+        {
+          "id": "power_endurance_integration",
+          "name": "Power Endurance Integration",
+          "category": "auxiliary",
+          "order": 2,
+          "loading": {
+            "sets": "3",
+            "reps": "Extended format",
+            "intensity": "80-90% power maintained",
+            "rest": "3 minutes between sets"
+          },
+          "execution": {
+            "setup": [
+              "Circuit stations",
+              "Timer available",
+              "Monitoring equipment"
+            ],
+            "technique": [
+              "Sustained power output",
+              "Multiple movement patterns",
+              "Tennis-specific integration"
+            ]
+          },
+          "cues": [
+            "Maintain power output",
+            "Integrate all systems",
+            "Sustain through fatigue",
+            "Quality maintenance"
+          ],
+          "benefits": {
+            "primary": "Power endurance",
+            "secondary": "System integration",
+            "sport_specific": "Match power maintenance"
+          }
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 100,
+      "strength_minutes": 100,
+      "testing_minutes": 45,
+      "warmup_minutes": 35,
+      "recovery_minutes": 30,
+      "total_minutes": 310
+    },
+    "intensity": {
+      "tennis_average": "90-100%",
+      "strength_average": "85-95%",
+      "overall_rpe": 9
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Integrated power application",
+      "Performance testing",
+      "Tennis power transfer"
+    ],
+    "load_management": [
+      "High intensity testing focus",
+      "Adequate recovery for testing",
+      "Maximum effort protocols"
+    ],
+    "progression_markers": [
+      "Integrated power improvements",
+      "Tennis power transfer",
+      "Performance test results"
+    ]
+  }
+}

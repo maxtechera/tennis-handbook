@@ -1,0 +1,436 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Strength Accumulation",
+    "day_id": "week_2_sunday",
+    "day_name": "Sunday",
+    "title": "Elite Recovery & Adaptation",
+    "subtitle": "Complete Rest with Recovery Optimization",
+    "phase": "Phase 2: Strength Accumulation",
+    "focus_areas": [
+      "Complete Recovery",
+      "Stress Reduction",
+      "Mobility Maintenance",
+      "Adaptation Support"
+    ],
+    "training_parameters": {
+      "volume": "20%",
+      "intensity": "30-40%",
+      "density": "minimal",
+      "duration": "1-1.5 hours"
+    },
+    "elite_methods": [
+      {
+        "name": "Recovery Optimization Protocol",
+        "type": "recovery",
+        "attribution": {
+          "source": "Jeff Nippard - Recovery Science",
+          "verification": "Video documentation",
+          "context": "Evidence-based recovery methods"
+        }
+      },
+      {
+        "name": "Mobility Maintenance System",
+        "type": "mobility",
+        "attribution": {
+          "source": "Jeff Nippard - Mobility",
+          "verification": "Video reference",
+          "context": "Flexibility and joint health"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Yoga mat",
+        "Foam roller"
+      ],
+      "optional": [
+        "Tennis ball for self-massage",
+        "Resistance bands",
+        "Massage tools"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Week 3 Monday ➡️](../week-3/monday)",
+      "overview_link": "./",
+      "next_link": "../week-3/monday",
+      "previous_link": "saturday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Weekly Review",
+        "recovery": "Recovery Protocols",
+        "planning": "Week 3 Preparation"
+      }
+    },
+    "day_features": {
+      "has_weekly_review": true
+    }
+  },
+  "weekly_review": {
+    "performance_analysis": {
+      "achievements": [
+        "Completed all scheduled training sessions",
+        "Increased loads on major lifts by 5-10%",
+        "Maintained tennis skill quality under fatigue",
+        "Successfully integrated Week 2 progressions"
+      ],
+      "challenges": [
+        "Managing fatigue from increased volume",
+        "Balancing tennis intensity with strength work",
+        "Recovery between high-intensity sessions"
+      ],
+      "metrics_summary": {
+        "total_training_time": "~20 hours",
+        "average_rpe": "7.5/10",
+        "strength_progression": "+5-10% on major lifts",
+        "tennis_quality": "Maintained at 85%+"
+      }
+    },
+    "planning": {
+      "next_week_focus": [
+        "Continue progressive overload",
+        "Monitor fatigue accumulation",
+        "Maintain movement quality",
+        "Prepare for Week 3 intensification"
+      ],
+      "adjustments": [
+        "Add extra mobility if feeling tight",
+        "Consider additional recovery day if needed",
+        "Track sleep quality more closely"
+      ],
+      "goals": [
+        "Complete all Week 3 sessions",
+        "Progress loads by another 2.5-5%",
+        "Improve power output metrics"
+      ]
+    }
+  },
+  "active_recovery_options": [
+    {
+      "id": "gentle_yoga",
+      "name": "Gentle Yoga",
+      "type": "flexibility",
+      "duration": "30 minutes",
+      "implementation": {
+        "method": "Restorative yoga practice",
+        "intensity": "Very light",
+        "equipment": "Yoga mat"
+      },
+      "focus_areas": [
+        "Flexibility enhancement",
+        "Relaxation and stress relief",
+        "Deep breathing integration",
+        "Mind-body connection"
+      ],
+      "sequence": [
+        {
+          "pose": "Child's Pose",
+          "duration": "2 minutes",
+          "focus": "Spine and hip relaxation"
+        },
+        {
+          "pose": "Cat-Cow",
+          "duration": "10 cycles",
+          "focus": "Spinal mobility"
+        },
+        {
+          "pose": "Downward Dog",
+          "duration": "60 seconds",
+          "focus": "Full body stretch"
+        },
+        {
+          "pose": "Pigeon Pose",
+          "duration": "90 seconds each side",
+          "focus": "Hip opening"
+        },
+        {
+          "pose": "Seated Twist",
+          "duration": "60 seconds each side",
+          "focus": "Spinal rotation"
+        },
+        {
+          "pose": "Legs Up Wall",
+          "duration": "5 minutes",
+          "focus": "Recovery position"
+        },
+        {
+          "pose": "Savasana",
+          "duration": "5 minutes",
+          "focus": "Complete relaxation"
+        }
+      ],
+      "instructions": [
+        "Hold poses 30-60 seconds minimum",
+        "Emphasize deep breathing throughout",
+        "Include hip openers and spinal twists",
+        "End with 5 minutes of relaxation"
+      ],
+      "attribution": {
+        "source": "Jeff Nippard - Mobility",
+        "verification": "https://www.youtube.com/watch?v=8wPpK6xW9s8"
+      }
+    },
+    {
+      "id": "leisurely_walk",
+      "name": "Leisurely Walk",
+      "type": "aerobic",
+      "duration": "30 minutes",
+      "implementation": {
+        "method": "Easy-pace walking",
+        "intensity": "30-40% effort",
+        "equipment": "Comfortable shoes"
+      },
+      "guidelines": [
+        "Easy pace outdoors if possible",
+        "No intensity or time pressure",
+        "Focus on fresh air and mental relaxation",
+        "Promote gentle blood circulation",
+        "Mindful walking and enjoyment"
+      ],
+      "benefits": [
+        "Active recovery",
+        "Mental refreshment",
+        "Light cardiovascular activity",
+        "Stress reduction"
+      ]
+    }
+  ],
+  "recovery_techniques": [
+    {
+      "id": "foam_rolling",
+      "name": "Extensive Foam Rolling",
+      "type": "self-myofascial release",
+      "duration": "15-20 minutes",
+      "protocol": [
+        {
+          "area": "Calves",
+          "duration": "60 seconds each",
+          "technique": "Slow rolls, pause on tight spots"
+        },
+        {
+          "area": "Hamstrings",
+          "duration": "90 seconds each",
+          "technique": "Full length, include IT band junction"
+        },
+        {
+          "area": "Quadriceps",
+          "duration": "90 seconds each",
+          "technique": "Focus on vastus lateralis"
+        },
+        {
+          "area": "Glutes",
+          "duration": "2 minutes total",
+          "technique": "Include piriformis"
+        },
+        {
+          "area": "Lats",
+          "duration": "60 seconds each",
+          "technique": "Side-lying position"
+        },
+        {
+          "area": "Upper Back",
+          "duration": "2 minutes",
+          "technique": "Thoracic extension focus"
+        }
+      ],
+      "instructions": [
+        "Target all muscle groups from the week",
+        "Spend extra time on tight areas",
+        "Gentle pressure, avoid pain",
+        "Breathe deeply during rolling"
+      ],
+      "attribution": {
+        "source": "Jeff Nippard - Recovery",
+        "verification": "https://www.youtube.com/watch?v=8wPpK6xW9s8"
+      }
+    },
+    {
+      "id": "breathwork",
+      "name": "Breathwork Exercises",
+      "type": "parasympathetic activation",
+      "duration": "10-15 minutes",
+      "techniques": [
+        {
+          "name": "Diaphragmatic Breathing",
+          "duration": "5 minutes",
+          "pattern": "Natural deep breaths",
+          "position": "Lying or seated"
+        },
+        {
+          "name": "4-7-8 Breathing",
+          "duration": "5 minutes",
+          "pattern": "Inhale 4, hold 7, exhale 8",
+          "repetitions": "4-8 cycles"
+        },
+        {
+          "name": "Box Breathing",
+          "duration": "5 minutes",
+          "pattern": "4-4-4-4 count",
+          "focus": "Equal phases"
+        }
+      ],
+      "benefits": [
+        "Parasympathetic activation",
+        "Stress reduction",
+        "Recovery enhancement",
+        "Mental clarity"
+      ]
+    },
+    {
+      "id": "self_massage",
+      "name": "Self-Massage",
+      "type": "soft tissue work",
+      "duration": "10-15 minutes",
+      "target_areas": [
+        {
+          "area": "Shoulders",
+          "technique": "Cross-friction and pressure",
+          "duration": "3 minutes each"
+        },
+        {
+          "area": "Neck",
+          "technique": "Gentle circular motions",
+          "duration": "2 minutes"
+        },
+        {
+          "area": "Feet",
+          "technique": "Tennis ball rolling",
+          "duration": "2 minutes each"
+        },
+        {
+          "area": "Forearms",
+          "technique": "Compression and stripping",
+          "duration": "2 minutes each"
+        }
+      ],
+      "instructions": [
+        "Use hands, tennis ball, or massage tools",
+        "Gentle pressure and circular motions",
+        "Focus on areas of tension",
+        "Combine with deep breathing"
+      ]
+    }
+  ],
+  "nutrition_recovery_summary": {
+    "week_2_targets": {
+      "daily_protein": {
+        "amount": "1.8–2.2 g/kg",
+        "timing": "Distributed throughout day",
+        "sources": "Complete proteins preferred"
+      },
+      "hydration": {
+        "daily_target": "2–3 liters",
+        "additions": "Electrolytes as needed",
+        "monitoring": "Urine color check"
+      },
+      "sleep": {
+        "duration": "7.5–9 hours",
+        "quality_factors": "Dark, cool room",
+        "consistency": "Same sleep/wake times"
+      },
+      "monitoring": {
+        "metrics": [
+          "Fatigue levels",
+          "Muscle soreness",
+          "HRV",
+          "Morning readiness"
+        ],
+        "adjustments": "Modify training based on recovery status"
+      }
+    }
+  },
+  "key_focus_points": [
+    {
+      "category": "Complete Rest",
+      "focus": "No structured training, focus on recovery"
+    },
+    {
+      "category": "Gentle Movement",
+      "focus": "Light activity to promote blood flow"
+    },
+    {
+      "category": "Stress Reduction",
+      "focus": "Relaxation techniques and breathing exercises"
+    },
+    {
+      "category": "Nutrition Focus",
+      "focus": "Adequate protein and hydration for recovery"
+    },
+    {
+      "category": "Sleep Optimization",
+      "focus": "Prioritize quality sleep for adaptation"
+    }
+  ],
+  "weekly_notes": {
+    "week": 2,
+    "content": "Document daily progress, noting performance metrics, perceived exertion, and recovery status for informed adaptations in Week 3."
+  },
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 0,
+      "strength_minutes": 0,
+      "warmup_minutes": 0,
+      "recovery_minutes": 60,
+      "total_minutes": 60
+    },
+    "intensity": {
+      "tennis_average": "N/A",
+      "strength_average": "N/A",
+      "overall_rpe": 2
+    },
+    "distances": {
+      "court_coverage": "0 km",
+      "conditioning_distance": "2-3 km walk"
+    }
+  },
+  "monitoring": {
+    "performance_metrics": [
+      {
+        "id": "weekly_recovery",
+        "name": "Weekly Recovery Status",
+        "type": "qualitative",
+        "category": "recovery",
+        "measurement": {
+          "method": "Subjective assessment",
+          "frequency": "Weekly"
+        },
+        "tracking": {
+          "baseline": "Start of week",
+          "current": "End of week",
+          "target": "Fully recovered",
+          "trend": "stable"
+        }
+      },
+      {
+        "id": "readiness_week3",
+        "name": "Week 3 Readiness",
+        "type": "qualitative",
+        "category": "preparation",
+        "measurement": {
+          "method": "Overall assessment",
+          "frequency": "Weekly"
+        },
+        "standards": {
+          "physical": "No lingering fatigue",
+          "mental": "Motivated and focused",
+          "technical": "Movement patterns solid"
+        }
+      }
+    ],
+    "quality_indicators": [
+      {
+        "name": "Recovery Quality",
+        "scale": "1-10",
+        "target": "8+",
+        "description": "Overall recovery feeling"
+      },
+      {
+        "name": "Motivation Level",
+        "scale": "1-10",
+        "target": "8+",
+        "description": "Mental readiness for Week 3"
+      }
+    ]
+  }
+}

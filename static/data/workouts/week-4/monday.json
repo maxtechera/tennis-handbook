@@ -1,0 +1,1042 @@
+{
+  "metadata": {
+    "period": 4,
+    "period_name": "Power Integration Phase",
+    "day_id": "week_4_monday",
+    "day_name": "Monday",
+    "title": "Power Integration Foundation & Velocity-Based Training",
+    "subtitle": "Phase 2 Launch - Velocity-Based Training Introduction",
+    "phase": "Phase 2: Power Integration (Week 1)",
+    "focus_areas": [
+      "Velocity-Based Training Introduction",
+      "Power Integration Foundation",
+      "Advanced Tennis Power Development"
+    ],
+    "training_parameters": {
+      "volume": "90% (phase transition deload)",
+      "intensity": "85-95% (velocity-based)",
+      "density": "moderate to high",
+      "duration": "4 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Velocity-Based Training Protocol",
+        "type": "power",
+        "attribution": {
+          "methodology": "Velocity-based training principles",
+          "source": "Elite power development research",
+          "verification": "Sports science literature",
+          "context": "Phase 2 power development",
+          "results": "Enhanced power output and rate of force development"
+        }
+      },
+      {
+        "name": "Alcaraz Power Integration Method",
+        "type": "tennis_power",
+        "attribution": {
+          "athlete": "Carlos Alcaraz",
+          "coach": "Juan Carlos Ferrero",
+          "academy": "Ferrero Tennis Academy",
+          "source": "Phase 2 power development protocols",
+          "verification": "Academy training documentation",
+          "context": "Transition to power-focused training",
+          "results": "Improved serve speed and court movement power"
+        }
+      },
+      {
+        "name": "ATP Power Development Standards",
+        "type": "integrated",
+        "attribution": {
+          "source": "ATP fitness standards",
+          "methodology": "Professional power development",
+          "verification": "Tour-level training protocols",
+          "context": "Phase 2 power integration",
+          "elite_use": "Used by top 50 ATP players"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Barbell and weights",
+        "Velocity tracking device (preferred) or smartphone app",
+        "Tennis court access",
+        "Heart rate monitor/HRV device",
+        "Dumbbells (5-45 lbs)",
+        "Medicine balls (3-6kg)",
+        "Plyo boxes (12-24 inches)",
+        "Resistance bands"
+      ],
+      "optional": [
+        "Force plates",
+        "Radar gun for serve speed",
+        "Agility ladder",
+        "Cones for markers",
+        "Foam roller"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Tuesday ➡️](tuesday)",
+      "overview_link": "./",
+      "next_link": "tuesday",
+      "previous_link": null
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Phase 2 Power Assessment",
+        "preparation": "Power Integration Preparation",
+        "skill_training": "Advanced Tennis Power Development",
+        "conditioning": "Velocity-Based Strength Training",
+        "recovery": "Power Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "success",
+          "title": "Phase 2: Power Integration Launch",
+          "content": "Welcome to Phase 2! This phase focuses on velocity-based training and power development",
+          "icon": "⚡"
+        },
+        {
+          "type": "info",
+          "title": "Velocity-Based Training Introduction",
+          "content": "Today introduces velocity tracking for optimal power development",
+          "icon": "🚀"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "phase_2_power_baseline",
+      "type": "baseline",
+      "title": "Phase 2 Power Baseline Assessment",
+      "timing": "pre-session",
+      "duration": "35 minutes",
+      "description": "Comprehensive power assessment for Phase 2 training",
+      "attribution": {
+        "source": "Elite power assessment protocols",
+        "methodology": "Phase 2 power evaluation",
+        "validation": "Sports science research",
+        "elite_use": "Used by professional power athletes"
+      },
+      "components": [
+        {
+          "id": "velocity_profiling",
+          "name": "Velocity Profiling Assessment",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Squat velocity profiling at multiple loads",
+            "repetitions": "3 reps at 60%, 70%, 80%, 90% 1RM",
+            "equipment": "Velocity tracking device or smartphone app"
+          },
+          "standards": {
+            "elite_benchmark": "Optimal velocity at each load percentage",
+            "velocity_targets": "60%: 0.8-1.0 m/s, 70%: 0.65-0.8 m/s, 80%: 0.5-0.65 m/s",
+            "power_zone": "Maximum power typically at 30-60% 1RM"
+          },
+          "scoring": {
+            "method": "Velocity measurements at each load",
+            "scale": "meters per second",
+            "recording": "Create individual velocity profile"
+          },
+          "context": {
+            "description": "Establishes individual velocity profile for optimal loading",
+            "application": "Determines optimal loads for power development"
+          }
+        },
+        {
+          "id": "reactive_strength_index",
+          "name": "Reactive Strength Index (RSI)",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Drop jump from 30cm box with contact time measurement",
+            "repetitions": "5 attempts",
+            "equipment": "30cm box and contact mat or smartphone app"
+          },
+          "standards": {
+            "elite_benchmark": "RSI > 2.0 for elite athletes",
+            "good_standard": "RSI 1.5-2.0",
+            "needs_work": "RSI < 1.5"
+          },
+          "scoring": {
+            "method": "Jump height ÷ contact time",
+            "scale": "RSI units",
+            "recording": "Best RSI value from 5 attempts"
+          },
+          "context": {
+            "description": "Measures reactive strength and stretch-shortening cycle",
+            "application": "Indicates readiness for plyometric training"
+          }
+        },
+        {
+          "id": "power_endurance_test",
+          "name": "Power Endurance Assessment",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "10 consecutive vertical jumps with 3-second intervals",
+            "repetitions": "10 jumps",
+            "equipment": "Jump mat or smartphone app"
+          },
+          "standards": {
+            "elite_benchmark": "<10% power drop from jump 1 to jump 10",
+            "good_standard": "10-15% power drop",
+            "needs_work": ">15% power drop"
+          },
+          "scoring": {
+            "method": "Percentage power maintenance",
+            "scale": "Percentage",
+            "recording": "Power maintenance across 10 jumps"
+          },
+          "context": {
+            "description": "Assesses power endurance capacity",
+            "application": "Determines training volume for power work"
+          }
+        },
+        {
+          "id": "serve_velocity_baseline",
+          "name": "Serve Velocity Baseline",
+          "type": "skill",
+          "category": "primary",
+          "measurement": {
+            "protocol": "10 maximum effort serves with velocity tracking",
+            "repetitions": "10 serves",
+            "equipment": "Radar gun or smartphone app"
+          },
+          "standards": {
+            "elite_benchmark": "Velocity improvement target: 3-5% from Phase 1",
+            "consistency_target": "Standard deviation < 5% of mean",
+            "accuracy_requirement": "80% in service box"
+          },
+          "scoring": {
+            "method": "Average velocity of best 5 serves",
+            "scale": "mph or km/h",
+            "recording": "Velocity and accuracy data"
+          },
+          "context": {
+            "description": "Establishes Phase 2 serve power baseline",
+            "application": "Tracks power transfer to tennis-specific skills"
+          }
+        }
+      ]
+    },
+    {
+      "id": "power_readiness_assessment",
+      "type": "daily",
+      "title": "Power Training Readiness",
+      "timing": "pre-session",
+      "duration": "15 minutes",
+      "description": "Daily readiness assessment for power training",
+      "components": [
+        {
+          "id": "cns_readiness",
+          "name": "Central Nervous System Readiness",
+          "type": "neural",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Countermovement jump with eyes closed",
+            "repetitions": "3 attempts",
+            "equipment": "Jump mat or smartphone app"
+          },
+          "standards": {
+            "optimal": "Within 5% of personal best",
+            "acceptable": "5-10% below personal best",
+            "needs_modification": ">10% below personal best"
+          },
+          "context": {
+            "description": "Assesses CNS readiness for high-intensity power training",
+            "application": "Determines if full power training is appropriate"
+          }
+        },
+        {
+          "id": "movement_velocity_check",
+          "name": "Movement Velocity Check",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "3 bodyweight squats with velocity measurement",
+            "repetitions": "3 reps",
+            "equipment": "Velocity tracking device"
+          },
+          "standards": {
+            "optimal": "Velocity within 5% of baseline",
+            "acceptable": "Velocity 5-10% below baseline",
+            "needs_modification": "Velocity >10% below baseline"
+          },
+          "context": {
+            "description": "Quick movement quality and power check",
+            "application": "Adjust training loads based on daily readiness"
+          }
+        }
+      ]
+    }
+  ],
+  "schedule": {
+    "type": "time-based",
+    "total_duration": "4 hours 30 minutes",
+    "blocks": [
+      {
+        "id": "morning_block",
+        "time": "6:00-7:30",
+        "title": "Power Integration Morning Protocol",
+        "type": "preparation",
+        "activities": [
+          {
+            "name": "Power Integration Morning Protocol",
+            "duration": "90 minutes",
+            "type": "preparation",
+            "description": "Enhanced preparation for power training"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "morning",
+          "phase_title": "Power Morning",
+          "phase_icon": "🌅",
+          "location": "home/hotel"
+        }
+      },
+      {
+        "id": "tennis_block",
+        "time": "7:30-8:45",
+        "title": "Advanced Tennis Power Development",
+        "type": "main",
+        "activities": [
+          {
+            "name": "Advanced Tennis Power Development",
+            "duration": "75 minutes",
+            "type": "main",
+            "description": "Power-focused tennis training"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "tennis",
+          "phase_title": "Tennis Power",
+          "phase_icon": "🎾",
+          "location": "tennis_court"
+        }
+      },
+      {
+        "id": "movement_block",
+        "time": "8:50-9:10",
+        "title": "Power Movement Preparation",
+        "type": "preparation",
+        "activities": [
+          {
+            "name": "Power Movement Preparation",
+            "duration": "20 minutes",
+            "type": "warm-up",
+            "description": "Power-specific movement preparation"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "movement",
+          "phase_title": "Power Movement",
+          "phase_icon": "🏃",
+          "location": "gym/court"
+        }
+      },
+      {
+        "id": "strength_block",
+        "time": "9:10-10:30",
+        "title": "Velocity-Based Strength Training",
+        "type": "main",
+        "activities": [
+          {
+            "name": "Velocity-Based Strength Training Block",
+            "duration": "80 minutes",
+            "type": "main",
+            "description": "Velocity-based power development"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "strength",
+          "phase_title": "VBT Strength",
+          "phase_icon": "💪",
+          "location": "gym"
+        }
+      },
+      {
+        "id": "recovery_block",
+        "time": "10:35-10:55",
+        "title": "Power Recovery Protocol",
+        "type": "recovery",
+        "activities": [
+          {
+            "name": "Power Recovery Protocol",
+            "duration": "20 minutes",
+            "type": "recovery",
+            "description": "Power training recovery"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "recovery",
+          "phase_title": "Power Recovery",
+          "phase_icon": "🧊",
+          "location": "recovery_area"
+        }
+      }
+    ]
+  },
+  "preparation_phases": [
+    {
+      "id": "power_morning_protocol",
+      "type": "morning",
+      "title": "Power Integration Morning Protocol",
+      "duration": "90 minutes",
+      "timing": "6:00-7:30",
+      "attribution": {
+        "source": "Elite power athlete morning protocols",
+        "elite_use": "Professional power development routines",
+        "verification": "Power training literature"
+      },
+      "activities": [
+        {
+          "id": "neural_activation",
+          "name": "Neural Activation Protocol",
+          "type": "activation",
+          "duration": "25 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Progressive neural activation",
+            "setup": "Movement space",
+            "execution": "CNS activation sequence",
+            "focus": "Neural system priming for power"
+          },
+          "instructions": [
+            {
+              "phase": "LIGHT_MOVEMENT",
+              "text": "5 minutes light movement - arm circles, leg swings, gentle jumping"
+            },
+            {
+              "phase": "REACTIVE_DRILLS",
+              "text": "10 minutes reactive drills - quick feet, direction changes, reaction jumps"
+            },
+            {
+              "phase": "POWER_PREP",
+              "text": "10 minutes power preparation - explosive movements, dynamic stretching"
+            }
+          ],
+          "cues": [
+            "Wake up the nervous system",
+            "Progressive intensity build",
+            "Focus on movement quality",
+            "Prepare for power training"
+          ]
+        },
+        {
+          "id": "velocity_preparation",
+          "name": "Velocity-Based Movement Preparation",
+          "type": "preparation",
+          "duration": "30 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Velocity-specific preparation",
+            "setup": "Movement area with equipment",
+            "execution": "Progressive velocity building",
+            "focus": "Movement velocity optimization"
+          },
+          "instructions": [
+            {
+              "phase": "SLOW_MOVEMENTS",
+              "text": "10 minutes slow, controlled movements - feel the positions"
+            },
+            {
+              "phase": "MODERATE_VELOCITY",
+              "text": "10 minutes moderate velocity - build speed gradually"
+            },
+            {
+              "phase": "FAST_MOVEMENTS",
+              "text": "10 minutes fast movements - approach training velocities"
+            }
+          ],
+          "cues": [
+            "Build velocity progressively",
+            "Feel the speed difference",
+            "Prepare for velocity tracking",
+            "Quality over maximum speed"
+          ]
+        },
+        {
+          "id": "power_assessment",
+          "name": "Power Assessment Protocol",
+          "type": "assessment",
+          "duration": "35 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Comprehensive power assessment",
+            "setup": "Assessment stations",
+            "execution": "Systematic power evaluation",
+            "focus": "Power capabilities and readiness"
+          },
+          "instructions": [
+            {
+              "phase": "VELOCITY_PROFILING",
+              "text": "15 minutes velocity profiling - establish individual profile"
+            },
+            {
+              "phase": "REACTIVE_STRENGTH",
+              "text": "10 minutes reactive strength testing - RSI assessment"
+            },
+            {
+              "phase": "POWER_ENDURANCE",
+              "text": "10 minutes power endurance - sustained power capability"
+            }
+          ],
+          "cues": [
+            "Honest assessment of current power",
+            "Establish baseline for progression",
+            "Quality over maximum effort",
+            "Data for training optimization"
+          ]
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Advanced Tennis Power Development",
+    "section_description": "Power-focused tennis training with velocity integration",
+    "sessions": [
+      {
+        "id": "power_tennis_session",
+        "type": "power_integrated",
+        "title": "Advanced Tennis Power Development Session",
+        "duration": "75 minutes",
+        "intensity": "85-95%",
+        "attribution": {
+          "methodology": "Power-focused tennis training",
+          "source": "Elite tennis power development",
+          "elite_use": "Used by ATP power players",
+          "verification": "Professional training protocols"
+        },
+        "structure": {
+          "warm_up": "15 minutes",
+          "main_work": "50 minutes",
+          "cool_down": "10 minutes"
+        },
+        "components": [
+          {
+            "id": "power_serve_development",
+            "name": "Power Serve Development",
+            "type": "power_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "25 minutes",
+              "rest": "30 seconds between serves"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Radar gun, targets, medicine balls",
+              "players": "Individual training"
+            },
+            "implementation": {
+              "method": "Progressive power serve development",
+              "focus": "Maximum velocity with accuracy",
+              "key_points": "Explosive hip drive, sequential energy transfer"
+            },
+            "instructions": [
+              {
+                "phase": "PREPARATION",
+                "text": "5 minutes medicine ball overhead throws - prime the serve pattern"
+              },
+              {
+                "phase": "TECHNICAL_SERVES",
+                "text": "10 minutes technical serves at 80% - perfect mechanics"
+              },
+              {
+                "phase": "POWER_SERVES",
+                "text": "10 minutes maximum velocity serves - track speed and accuracy"
+              }
+            ],
+            "cues": [
+              "Explosive hip drive",
+              "Sequential energy transfer",
+              "Maximum velocity with control",
+              "Track velocity improvements"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Serve velocity",
+                "target": "3-5% improvement from baseline",
+                "tracking": "Radar gun measurements"
+              },
+              {
+                "metric": "Accuracy",
+                "target": "70% in service box",
+                "tracking": "Successful serves count"
+              }
+            ]
+          },
+          {
+            "id": "explosive_groundstrokes",
+            "name": "Explosive Groundstroke Development",
+            "type": "power_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "25 minutes",
+              "rest": "Between drill sets"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Balls, cones, targets",
+              "players": "Practice partner or coach"
+            },
+            "implementation": {
+              "method": "Explosive groundstroke training",
+              "focus": "Power generation and transfer",
+              "key_points": "Hip rotation, explosive extension, recovery"
+            },
+            "instructions": [
+              {
+                "phase": "POWER_FOREHANDS",
+                "text": "10 minutes explosive forehands - maximum velocity with control"
+              },
+              {
+                "phase": "POWER_BACKHANDS",
+                "text": "10 minutes explosive backhands - drive through the ball"
+              },
+              {
+                "phase": "POWER_COMBINATIONS",
+                "text": "5 minutes power combinations - rapid fire explosive shots"
+              }
+            ],
+            "cues": [
+              "Drive through the ball",
+              "Explosive hip rotation",
+              "Maximum power with control",
+              "Quick recovery for next shot"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Shot velocity",
+                "target": "Maximum sustainable velocity",
+                "tracking": "Velocity measurements"
+              },
+              {
+                "metric": "Consistency",
+                "target": "80% success rate",
+                "tracking": "Successful shot count"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "velocity_based_strength",
+      "type": "power",
+      "title": "Velocity-Based Strength Training Block",
+      "description": "Velocity-based training for optimal power development",
+      "duration": "80 minutes",
+      "attribution": {
+        "methodology": "Velocity-based training protocols",
+        "source": "Sports science research",
+        "elite_use": "Professional power athletes",
+        "verification": "Evidence-based power development"
+      },
+      "exercises": [
+        {
+          "id": "vbt_squat",
+          "name": "Velocity-Based Squat Training",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "6",
+            "reps": "3",
+            "intensity": "Load based on velocity targets",
+            "rest": "3 minutes",
+            "velocity_targets": "0.75-0.85 m/s"
+          },
+          "execution": {
+            "setup": [
+              "Velocity tracking device attached to barbell",
+              "Optimal bar position on upper back",
+              "Feet shoulder-width apart"
+            ],
+            "technique": [
+              "Controlled descent (not timed)",
+              "Explosive concentric drive",
+              "Achieve target velocity on each rep",
+              "Stop set if velocity drops >10%"
+            ],
+            "safety": [
+              "Maintain spinal neutrality",
+              "Use safety bars",
+              "Monitor velocity closely"
+            ]
+          },
+          "cues": [
+            "Explosive intent every rep",
+            "Hit velocity targets",
+            "Quality over quantity",
+            "Stop if velocity drops"
+          ],
+          "progressions": {
+            "regression": "Reduce load to maintain velocity",
+            "standard": "6×3 @ target velocity",
+            "progression": "Increase load while maintaining velocity"
+          },
+          "tracking": {
+            "type": "velocity",
+            "format": "sets_reps_velocity",
+            "sets": [
+              {
+                "set": 1,
+                "target": "3 reps @ 0.75-0.85 m/s",
+                "actual": "",
+                "velocity": "",
+                "load": "",
+                "notes": "___"
+              },
+              {
+                "set": 2,
+                "target": "3 reps @ 0.75-0.85 m/s",
+                "actual": "",
+                "velocity": "",
+                "load": "",
+                "notes": "___"
+              },
+              {
+                "set": 3,
+                "target": "3 reps @ 0.75-0.85 m/s",
+                "actual": "",
+                "velocity": "",
+                "load": "",
+                "notes": "___"
+              },
+              {
+                "set": 4,
+                "target": "3 reps @ 0.75-0.85 m/s",
+                "actual": "",
+                "velocity": "",
+                "load": "",
+                "notes": "___"
+              },
+              {
+                "set": 5,
+                "target": "3 reps @ 0.75-0.85 m/s",
+                "actual": "",
+                "velocity": "",
+                "load": "",
+                "notes": "___"
+              },
+              {
+                "set": 6,
+                "target": "3 reps @ 0.75-0.85 m/s",
+                "actual": "",
+                "velocity": "",
+                "load": "",
+                "notes": "___"
+              }
+            ]
+          },
+          "benefits": {
+            "primary": "Optimal power development",
+            "secondary": "Velocity-based adaptation",
+            "sport_specific": "Tennis-specific power transfer"
+          },
+          "attribution": {
+            "source": "Velocity-based training research",
+            "methodology": "Optimal power development",
+            "elite_use": "Professional power athletes",
+            "verification": "Sports science literature",
+            "context": "Phase 2 power development",
+            "results": "Enhanced power output"
+          }
+        },
+        {
+          "id": "explosive_rdl",
+          "name": "Explosive Romanian Deadlift",
+          "category": "primary",
+          "order": 2,
+          "loading": {
+            "sets": "4",
+            "reps": "5",
+            "intensity": "60-70% 1RM",
+            "rest": "2.5 minutes",
+            "velocity_targets": "0.8-1.0 m/s concentric"
+          },
+          "execution": {
+            "setup": [
+              "Barbell at hip height",
+              "Feet hip-width apart",
+              "Neutral spine position"
+            ],
+            "technique": [
+              "Controlled eccentric (3 seconds)",
+              "Explosive concentric drive",
+              "Hip extension velocity focus",
+              "Maintain velocity targets"
+            ],
+            "safety": [
+              "Maintain flat back",
+              "Bar stays close to body",
+              "Don't compromise form for velocity"
+            ]
+          },
+          "cues": [
+            "Explosive hip drive",
+            "Feel the velocity",
+            "Power through the hips",
+            "Maintain velocity targets"
+          ],
+          "tracking": {
+            "type": "velocity",
+            "format": "sets_reps_velocity"
+          },
+          "benefits": {
+            "primary": "Hip power development",
+            "secondary": "Posterior chain strength",
+            "sport_specific": "Serve and movement power"
+          }
+        },
+        {
+          "id": "plyometric_integration",
+          "name": "Plyometric Integration Circuit",
+          "category": "power",
+          "order": 3,
+          "loading": {
+            "sets": "3",
+            "reps": "Circuit format",
+            "intensity": "Maximum effort",
+            "rest": "2 minutes between circuits"
+          },
+          "execution": {
+            "setup": [
+              "Plyometric boxes (12-24 inches)",
+              "Open space for jumps",
+              "Medicine balls (3-6kg)"
+            ],
+            "technique": [
+              "Box jumps: 8 reps",
+              "Lateral bounds: 6 per side",
+              "Medicine ball slams: 10 reps",
+              "Depth jumps: 5 reps"
+            ],
+            "safety": [
+              "Soft landings",
+              "Full recovery between reps",
+              "Stop if form degrades"
+            ]
+          },
+          "cues": [
+            "Explosive takeoff",
+            "Soft landings",
+            "Maximum effort each rep",
+            "Quality over speed"
+          ],
+          "tracking": {
+            "type": "circuit",
+            "format": "rounds"
+          },
+          "benefits": {
+            "primary": "Reactive strength development",
+            "secondary": "Power endurance",
+            "sport_specific": "Court movement power"
+          }
+        }
+      ]
+    }
+  ],
+  "recovery_protocols": [
+    {
+      "id": "power_recovery",
+      "type": "immediate",
+      "title": "Power Recovery Protocol",
+      "duration": "20 minutes",
+      "timing": "Post-training",
+      "attribution": {
+        "methodology": "Power training recovery",
+        "source": "Elite power athlete protocols",
+        "elite_use": "Professional power athletes",
+        "verification": "Recovery research"
+      },
+      "components": [
+        {
+          "id": "cns_recovery",
+          "name": "CNS Recovery Protocol",
+          "type": "neural",
+          "duration": "7 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Central nervous system recovery",
+            "intensity": "Relaxation focus",
+            "equipment": "Quiet space"
+          },
+          "instructions": [
+            "2 minutes deep breathing (4-7-8 pattern)",
+            "3 minutes progressive muscle relaxation",
+            "2 minutes visualization of power improvements"
+          ],
+          "cues": [
+            "Deep nervous system recovery",
+            "Release muscular tension",
+            "Visualize power gains",
+            "Prepare for next session"
+          ]
+        },
+        {
+          "id": "power_assessment_review",
+          "name": "Power Assessment Review",
+          "type": "assessment",
+          "duration": "8 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Training analysis and documentation",
+            "intensity": "Evaluation focus",
+            "equipment": "Training log"
+          },
+          "instructions": [
+            "Review velocity data from training",
+            "Document power improvements",
+            "Note any technical issues",
+            "Plan modifications for next session"
+          ],
+          "cues": [
+            "Analyze velocity data",
+            "Document power progress",
+            "Plan for improvement",
+            "Track Phase 2 adaptations"
+          ]
+        },
+        {
+          "id": "mobility_power_focus",
+          "name": "Power-Focused Mobility",
+          "type": "mobility",
+          "duration": "5 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Power-specific mobility work",
+            "intensity": "Light stretching",
+            "equipment": "Foam roller"
+          },
+          "instructions": [
+            "Hip flexor stretches (power positions)",
+            "Thoracic spine mobility (rotation)",
+            "Ankle mobility (power transfer)",
+            "Shoulder mobility (serve power)"
+          ],
+          "cues": [
+            "Focus on power positions",
+            "Maintain mobility for power",
+            "Quality over quantity",
+            "Prepare for next session"
+          ]
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 75,
+      "strength_minutes": 80,
+      "warmup_minutes": 20,
+      "recovery_minutes": 20,
+      "morning_protocol_minutes": 90,
+      "total_minutes": 285
+    },
+    "intensity": {
+      "tennis_average": "85-95%",
+      "strength_average": "Velocity-based",
+      "overall_rpe": 8
+    },
+    "load_calculations": {
+      "total_tonnage": "Velocity-optimized loading",
+      "volume_load": "Power-focused training"
+    },
+    "distances": {
+      "estimated_court_coverage": "4 km",
+      "total_movement": "Power-focused"
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Introduction to velocity-based training",
+      "Power development emphasis",
+      "Velocity tracking implementation"
+    ],
+    "load_management": [
+      "Phase 2 transition with reduced volume",
+      "Velocity-based load adjustment",
+      "Power quality over quantity"
+    ],
+    "progression_markers": [
+      "Velocity targets achieved",
+      "Power improvements documented",
+      "Tennis power transfer evident"
+    ],
+    "phase_2_introduction": [
+      "Velocity-based training established",
+      "Power development protocols initiated",
+      "Tennis power integration successful"
+    ]
+  },
+  "level_modifications": {
+    "beginner": {
+      "volume": "Reduce to 2 sets per exercise",
+      "intensity": "Focus on movement quality first",
+      "tennis": "Reduce to 60 minutes",
+      "velocity": "Learn velocity tracking basics"
+    },
+    "intermediate": {
+      "volume": "As prescribed",
+      "intensity": "As prescribed",
+      "tennis": "As prescribed",
+      "velocity": "Standard velocity targets"
+    },
+    "advanced": {
+      "volume": "Add 1 set to main lifts",
+      "intensity": "Higher velocity targets",
+      "tennis": "Increase to 90 minutes",
+      "velocity": "Advanced velocity profiling"
+    }
+  },
+  "week_integration": {
+    "weekly_theme": "Power Integration Launch",
+    "daily_priority": "Velocity-based training introduction",
+    "phase_focus": "Power development foundation",
+    "connects_to": {
+      "tuesday": "Upper body power integration",
+      "wednesday": "Power endurance development",
+      "friday": "Integrated power application"
+    },
+    "phase_2_objectives": {
+      "introduction": "Velocity-based training established",
+      "development": "Power capabilities enhanced",
+      "integration": "Tennis power transfer initiated"
+    }
+  },
+  "tracking": {
+    "required": [
+      "All velocity measurements",
+      "Actual loads used",
+      "Power development metrics",
+      "Tennis power improvements",
+      "Recovery indicators",
+      "Phase 2 adaptation markers"
+    ],
+    "optional": [
+      "Force plate data",
+      "Detailed velocity profiles",
+      "Video analysis",
+      "Serve speed tracking",
+      "Movement quality assessment"
+    ],
+    "phase_2_specific": [
+      "Velocity profile establishment",
+      "Power development tracking",
+      "Tennis power transfer",
+      "Phase 2 readiness indicators"
+    ]
+  },
+  "navigation": {
+    "week_overview": "./",
+    "next_day": "tuesday",
+    "previous_day": null,
+    "phase_status": "Phase 2 - Week 1"
+  }
+}

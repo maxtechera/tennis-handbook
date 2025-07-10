@@ -1,188 +1,337 @@
-# Living Schema Evolution Document
+# Final Schema Patterns Documentation
 
-This document tracks all schema patterns discovered during migration and decisions made.
+This document contains the final, standardized YAML schema patterns established from the comprehensive Week 1 and Week 2 migration. These patterns should be used for implementing Weeks 3-12.
 
-## Core Schema Structure
+## FINAL SCHEMA STRUCTURE
 
-### Version 1.0 (Based on Week 1 Monday)
-- `metadata`: Basic workout information
-- `pre_week_assessment`: Monday-only assessments
-- `morning_protocol`: Daily morning routine
-- `tennis_training`: Tennis-specific training
-- `movement_preparation`: Dynamic warm-up
-- `strength_training`: Main strength work
-- `recovery_protocol`: Recovery activities
+### Complete Standardized Schema (Version 3.0)
+Based on successful Week 1 and Week 2 implementation:
 
-## Migration Log
+- `metadata`: Complete workout metadata with training parameters and elite methods
+- `assessments`: Structured assessment protocols with full attribution
+- `preparation_phases`: Morning protocols and activation sequences
+- `tennis_training`: Court-based training with progressive development
+- `movement_preparation`: Dynamic preparation for strength training
+- `strength_training`: Progressive strength development with detailed instructions
+- `recovery_protocol`: Comprehensive recovery and regeneration protocols
 
-### Week 2 Monday - 2024-01-08
+## MASTER TEMPLATE EXAMPLES
 
-**New Patterns Discovered:**
-1. **Schedule Overview Table** - Time-based schedule with nested exercises
-2. **Technique Points** - Phase-based instruction breakdown (SETUP, DESCENT, etc.)
-3. **Drill Instructions** - Categorized tennis drill components
-4. **Core & Stability Block** - Separate section for core work with isometric exercises
-5. **Week Progression Notes** - Week-specific load/intensity adjustments
-6. **Key Focus Points** - Categorized daily focus areas
-7. **Weekly Notes** - Week-specific general notes
+### Week 1 Monday - Foundation Template
+**Complete structure**: 546 lines with comprehensive assessments, detailed exercise instructions, and full elite method attribution.
+**Key patterns**: Baseline assessments, foundation-level loads, detailed technique instruction.
 
-**Schema Additions:**
+### Week 2 Monday - Progression Template  
+**Enhanced structure**: 546 lines with progressive load increases, enhanced intensity protocols.
+**Key patterns**: Week-over-week progression, load increases, technique refinement.
+
+## FINAL PATTERNS FOR IMPLEMENTATION
+
+### METADATA PATTERN (Standardized)
 ```yaml
-# New top-level sections
-schedule_overview:
-  title: string
-  sessions:
-    - time: string
-      activity: string
-      sets_reps: string (optional)
-      instructions: string (optional)
-      exercises: array (optional)
-
-# Enhanced exercise structure
-technique_points:
-  - phase: string
-    instruction: string
-
-week_progression_notes:
-  title: string
-  load_increase: string
-
-# New exercise types
-core_stability_block:
-  exercises with type: "isometric" | "anti-rotation"
-  duration field for timed exercises
-
-# Tennis training enhancement
-drill_instructions:
-  - type: string
-  - instruction: string
-
-# Summary sections
-key_focus_points:
-  - category: string
-    focus: string
-
-weekly_notes:
-  week: number
-  content: string
+metadata:
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_X_dayname"
+  day_name: "DayName"
+  title: "Descriptive Workout Title"
+  subtitle: "Week X specific subtitle with progression focus"
+  phase: "Phase 1: Elite Foundation"
+  focus_areas:
+    - "Primary Focus Area"
+    - "Secondary Focus Area"
+    - "Tertiary Focus Area"
+  training_parameters:
+    volume: "X% (progression indicator)"
+    intensity: "X-Y%"
+    density: "descriptive level"
+    duration: "X hours Y minutes"
+  elite_methods:
+    - name: "Method Name"
+      type: "strength|tennis|recovery"
+      attribution:
+        method: "Specific method description"
+        source: "Source attribution"
+        verification: "Verification method"
+        context: "Usage context"
 ```
 
-**Decisions Made:**
-1. **Nested schedule structure** - Created `schedule_overview` for time-based daily schedules
-2. **Phase-based instructions** - Use `technique_points` array instead of flat instruction list
-3. **Exercise variations** - Support both rep-based and time-based exercises
-4. **Per-side tracking** - Added `per_side: true` flag for unilateral exercises
-5. **Exercise subtitles** - Added `detailed_title` field for section headers
-6. **Separate core work** - Core exercises go in `core_stability_block` not main exercises
-
-**Components Needed:**
-1. **ScheduleOverview** - Render time-based schedule tables
-2. **CoreStabilityBlock** - Handle isometric and anti-rotation exercises
-3. **KeyFocusPoints** - Display categorized focus areas
-4. **Enhanced StrengthTrainingSection** - Support technique_points structure
-
-### Week 2 Tuesday - 2024-01-08
-
-**New Patterns Discovered:**
-1. **Mobility Preparation Section** - Dedicated mobility work with components
-2. **Tennis Sessions Array** - Multiple tennis sessions with different focuses
-3. **Personal Coaching Session** - One-on-one technical work structure
-4. **Component-based Instructions** - Nested components within sections
-5. **Focus Areas** - Different from drills, more conceptual
-
-**Schema Additions:**
+### ASSESSMENT PATTERN (Final Standard)
 ```yaml
-# New mobility section
-mobility_preparation:
-  title: string
-  duration: string
-  detailed_title: string
-  components:
-    - name: string
-      instructions: array of phase/instruction
-      exercises: array (optional)
+assessments:
+  - id: "descriptive_assessment_name"
+    type: "baseline|progression|daily|weekly"
+    title: "Week X Assessment Title"
+    timing: "pre-session|during|post-session"
+    duration: "X minutes"
+    description: "Assessment purpose and scope"
+    attribution:
+      source: "Assessment methodology source"
+      methodology: "Development method"
+      validation: "Validation approach"
+      elite_use: "Elite athlete usage"
+    components:
+      - id: "component_identifier"
+        name: "Component Display Name"
+        type: "movement|strength|power|skill"
+        category: "primary|secondary|optional"
+        measurement:
+          protocol: "Measurement protocol"
+          repetitions: "Rep count or duration"
+          equipment: "Required equipment"
+        standards:
+          elite_benchmark: "Elite level standard"
+          good_standard: "Good level standard" 
+          needs_work: "Improvement threshold"
+        scoring:
+          method: "Scoring approach"
+          scale: "Scale type"
+          recording: "What to record"
+        context:
+          description: "Why this matters"
+          application: "Performance application"
+```
 
-# Enhanced tennis training
+### TENNIS TRAINING PATTERN (Final Standard)
+```yaml
 tennis_training:
-  sessions: array of session objects
-    - session_name: string
-      duration: string
-      title: string
-      components:
-        - name: string
-          drills: array of type/instruction
-          focus_areas: array (alternative to drills)
-
-# Instruction variations
-instructions: array of phase/instruction objects
-exercises: array of type/instruction objects
-drills: array of type/instruction objects
-focus_areas: array of type/instruction objects
+  title: "Tennis Training Title"
+  timing: "X:XX-X:XX"
+  duration: "X minutes"
+  description: "Training focus and intensity"
+  attribution:
+    source: "Tennis methodology source"
+    methodology: "Training approach"
+    validation: "Validation method"
+    elite_use: "Professional usage"
+  session_structure:
+    warm_up:
+      title: "Warm-up Title"
+      duration: "X minutes"
+      exercises:
+        - name: "Exercise Name"
+          duration: "X minutes"
+          sets: X
+          detailed_instructions:
+            - "Instruction 1"
+            - "Instruction 2"
+    main_session:
+      title: "Main Session Title"
+      duration: "X minutes"
+      drills:
+        - name: "Drill Name"
+          duration: "X minutes"
+          balls: XXX
+          intensity: "Intensity level"
+          implementation:
+            focus: "Primary focus"
+            target: "Target outcome"
+            progression: "Progression method"
+            technique_points:
+              - phase: "PHASE NAME"
+                instruction: "Phase-specific instruction"
 ```
 
-**Decisions Made:**
-1. **Multiple tennis sessions** - Use `sessions` array instead of single session
-2. **Component nesting** - Components can have instructions, exercises, drills, or focus_areas
-3. **Flexibility in instruction format** - Support both `drills` and `focus_areas` depending on content type
-4. **Mobility as top-level section** - Separate from warm-up or movement prep
-
-**Components Needed:**
-1. **MobilityPreparation** - Handle mobility-specific warm-ups
-2. **TennisSessionsRenderer** - Support multiple tennis sessions
-3. **PersonalCoachingSession** - Specialized component for 1-on-1 work
-
----
-
-### Week 1 Tuesday - 2024-01-08
-
-**New Patterns Discovered:**
-1. **Daily Assessment with Comparison** - Table comparing metrics between days
-2. **HSR Protocol** - Detailed tempo/eccentric protocols for exercises
-3. **Primary Movements vs Main Exercises** - Different categorization
-4. **Tennis Preparation Section** - Separate from tennis training
-5. **Serve Development Phases** - Progressive skill development
-6. **Volley Development Drills** - Structured progression
-7. **Personal Coaching Integration** - Movement corrections + technique refinement
-8. **Breathing Protocols** - Structured recovery breathing
-9. **Session Documentation** - End-of-session metrics tracking
-
-**Schema Additions:**
+### STRENGTH TRAINING PATTERN (Final Standard)
 ```yaml
-# Daily assessment
-daily_assessment:
-  title: string
-  time: string
-  comparison_table:
-    headers: array
-    rows: array of comparison objects
-
-# HSR Protocol in exercises
-hsr_protocol: array of protocol points
-specific_coaching_cues: array of cues
-
-# Tennis preparation (separate from training)
-tennis_preparation:
-  exercises: array with duration instead of sets/reps
-
-# Phased skill development
-serve_development:
-  phases: array with time, focus, success_metrics
-
-# Personal coaching
-personal_coaching:
-  movement_corrections: corrections from assessment
-  technique_refinement: skill-specific improvements
-
-# Session tracking
-session_documentation:
-  metrics: array of trackable metrics
+strength_training:
+  title: "Strength Training Title"
+  timing: "X:XX-X:XX"
+  duration: "X minutes"
+  description: "Training focus and progression"
+  attribution:
+    source: "Strength methodology source"
+    methodology: "Training approach"
+    validation: "Validation protocols"
+    elite_use: "Professional usage"
+  main_exercises:
+    - name: "Exercise Name"
+      sets: X
+      reps: X
+      rest_seconds: XXX
+      load: "Load specification"
+      tempo: "X-X-X-X"
+      protocol: "Exercise protocol"
+      tennis_application: "Tennis-specific application"
+      detailed_instructions:
+        title: "Instruction Title"
+        technique_points:
+          - phase: "PHASE NAME"
+            instruction: "Phase-specific detailed instruction"
+  stability_strength_block:
+    title: "Core & Stability Title"
+    timing: "X:XX-X:XX"
+    exercises:
+      - name: "Exercise Name"
+        sets: X
+        hold: "X seconds" # for isometric
+        rest: "X seconds"
+        protocol: "Exercise protocol"
+        tennis_application: "Tennis application"
+        detailed_instructions:
+          title: "Instruction Title"
+          technique_points:
+            - phase: "PHASE NAME"
+              instruction: "Detailed instruction"
 ```
 
-**Decisions Made:**
-1. **Duration-based exercises** - Some exercises use duration instead of sets/reps
-2. **Multi-phase progressions** - Skills broken into timed phases
-3. **Comparison tracking** - Compare metrics across days
-4. **Nested recovery protocols** - Breathing as subsection of recovery
+### RECOVERY PROTOCOL PATTERN (Final Standard)
+```yaml
+recovery_protocol:
+  title: "Recovery Protocol Title"
+  timing: "X:XX-X:XX"
+  duration: "X minutes"
+  description: "Recovery focus and methods"
+  attribution:
+    source: "Recovery methodology source"
+    methodology: "Recovery approach"
+    validation: "Validation protocols"
+    elite_use: "Professional usage"
+  components:
+    - name: "Recovery Component Name"
+      duration: "X minutes"
+      protocol: "Component protocol"
+      implementation:
+        method: "Implementation method"
+        focus: "Primary focus"
+        progression: "Progression approach"
+```
+
+## SPECIAL DAY PATTERNS
+
+### Saturday Pattern - Dual Options
+```yaml
+workout_options:
+  - option: "A"
+    title: "Competition Match Play"
+    description: "Full match intensity and competition focus"
+  - option: "B"
+    title: "Active Recovery Protocol"
+    description: "Low-intensity recovery and regeneration"
+
+option_a_match_play:
+  pre_match_preparation: # phases array
+  match_performance_tracking: # statistics
+  post_match_recovery: # phases
+
+option_b_active_recovery:
+  low_intensity_movement: # activities
+  recovery_monitoring: # metrics
+```
+
+### Sunday Pattern - Weekly Review
+```yaml
+weekly_review:
+  physical_performance: # metrics with targets
+  movement_quality: # component scores
+  tennis_performance: # elements with averages
+
+week_X_planning:
+  program_modifications: # areas with assessments
+  meal_preparation: # structured meal planning
+
+daily_metrics_system:
+  morning_assessment: # detailed protocols
+nutrition_targets:
+  nutrients: # calculations and distributions
+sleep_optimization:
+  environment_checklist: # factors
+  sleep_routine: # time-based protocol
+```
+
+## PROGRESSIVE PATTERNS ACROSS WEEKS
+
+### Week 1 Characteristics
+- **Volume**: 100% baseline
+- **Load Progression**: "Maintain perfect form priority" 
+- **Assessment Focus**: Baseline establishment
+- **Technique Points**: Foundation-level instruction
+- **Attribution**: "Base building" and "foundation" methods
+
+### Week 2 Characteristics  
+- **Volume**: 110% (increased from baseline)
+- **Load Progression**: "Add 5-10% more weight than Week 1"
+- **Assessment Focus**: "Progression from Week 1 baseline"
+- **Technique Points**: "Weight increase with maintained tempo control"
+- **Attribution**: "Progressive overload" and "intensity building" methods
+
+### Week 3+ Implementation Pattern
+- **Volume**: Progressive increases (120%, 130%, etc.)
+- **Load Progression**: "Add X% more than Week X-1" 
+- **Assessment Focus**: "Assess progression from Week X-1"
+- **Technique Points**: Week-specific progression focus
+- **Attribution**: Phase-appropriate methods (power, competition, etc.)
+
+## COMPONENT REQUIREMENTS FOR WEEKS 3-12
+
+All React components are already built and tested for the standardized patterns:
+
+### Existing Components (Ready for Weeks 3-12)
+1. **PreWeekAssessment** - Handles assessment structure
+2. **MorningProtocol** - Processes preparation_phases
+3. **TennisTrainingTable** - Renders tennis_training with all sub-patterns
+4. **StrengthTrainingSection** - Handles strength_training with technique_points
+5. **RecoveryChecklist** - Processes recovery_protocol
+6. **WorkoutCarouselFromData** - Timeline visualization
+7. **ProfessionalAssessmentSection** - Assessment display
+8. **MovementPrepSection** - Movement preparation
+
+### Special Components (For specific days)
+1. **WorkoutOptions** - Saturday dual pathways
+2. **WeeklyReview** - Sunday review sections
+3. **AMRAPTracking** - Max rep protocols
+4. **VideoReference** - External video integration
+
+## IMPLEMENTATION CHECKLIST FOR WEEKS 3-12
+
+### For Each Week (Copy from Week 1-2 templates):
+1. ✅ Copy YAML structure from appropriate Week 1 or Week 2 day
+2. ✅ Update metadata with week number and progression parameters
+3. ✅ Adjust elite_methods attribution for phase appropriateness  
+4. ✅ Update training_parameters with progressive volume/intensity
+5. ✅ Modify assessment titles and progression notes
+6. ✅ Update exercise loads with week-appropriate progressions
+7. ✅ Ensure MDX file imports workoutData correctly
+8. ✅ Verify all components render properly with new data
+
+### Quality Assurance:
+- **Metadata consistency**: All day_id follow "week_X_dayname" format
+- **Progressive loading**: Each week shows appropriate load increases
+- **Attribution accuracy**: Elite methods match training phase
+- **Component compatibility**: All YAML structures work with existing components
+
+## FINAL SCHEMA VALIDATION
+
+### Required Top-Level Sections (All weeks)
+```yaml
+metadata:          # ✅ Standardized across all weeks
+assessments:       # ✅ Week-appropriate assessment types
+preparation_phases: # ✅ Morning protocol standard
+tennis_training:   # ✅ Progressive tennis development 
+movement_preparation: # ✅ Pre-strength activation
+strength_training: # ✅ Progressive strength protocols
+recovery_protocol: # ✅ Session recovery protocols
+```
+
+### Optional Sections (Day-specific)
+```yaml
+workout_options:   # Saturday only - dual pathways
+weekly_review:     # Sunday only - week analysis
+mid_week_check:    # Wednesday only - readiness
+competition_simulation: # Match play days
+```
+
+### Data Validation Rules
+1. **day_id format**: Must be "week_X_dayname" (e.g., "week_3_monday")
+2. **Progressive volume**: Must show increase from previous week
+3. **Elite methods**: Must include 3-4 methods with full attribution
+4. **Exercise structure**: Must include detailed_instructions with technique_points
+5. **Component compatibility**: All structures must work with existing React components
+
+## CONCLUSION
+
+The schema is now fully standardized based on comprehensive Week 1 and Week 2 migration. All patterns, components, and validation rules are established for efficient implementation of Weeks 3-12.
+
 
 ### Week 1 Wednesday - 2024-01-08
 
@@ -442,6 +591,11 @@ sleep_optimization:
 | 2024-01-08 | week-1/friday | Addition | Contrast complexes, plyometrics, weekly assessments | Power patterns |
 | 2024-01-08 | week-1/saturday | Addition | Workout options, match protocols | Dual pathway structure |
 | 2024-01-08 | week-1/sunday | Addition | Weekly review, planning systems, monitoring protocols | Assessment patterns |
+| 2024-01-09 | week-2/wednesday | Addition | AMRAP tracking, nested schedule exercises | New tracking format |
+| 2024-01-09 | week-2/thursday | Enhancement | Video references, zone-2 protocols | External resources |
+| 2024-01-09 | week-2/friday | Addition | Explosive tempo (X), distance tracking | Power metrics |
+| 2024-01-09 | week-2/saturday | Enhancement | Refined dual options, match tracking | Competition focus |
+| 2024-01-09 | week-2/sunday | Enhancement | Weekly review, nutrition summary | Recovery protocols |
 
 ## Normalization Tasks
 
@@ -518,8 +672,71 @@ section_name:
 4. **Use type fields** - Instead of different property names
 5. **Standardize field names** - "name" not "exercise", "metric", "assessment", etc.
 
+### Week 2 Wednesday - 2024-01-09
+
+**New Patterns Discovered:**
+1. **Schedule Overview with Nested Exercises** - Time blocks containing multiple exercises
+2. **Quick Exercise Instructions** - Simplified instruction format in MDX
+3. **AMRAP (As Many Reps As Possible)** - New tracking format for max efforts
+4. **Week Progression Notes** - Embedded in individual exercises
+5. **Video References** - External video links for exercises
+
+**Schema Additions:**
+```yaml
+# Exercise variations
+loading:
+  sets: "3"
+  reps: "AMRAP"  # New format for max reps
+
+# Tracking variations
+tracking:
+  type: "amrap"
+  format: "sets_reps"
+  sets:
+    - set: 1
+      target: "Max reps"
+      actual: "___"
+
+# Attribution enhancements
+attribution:
+  source: "Jeff Nippard - Guide Name"
+  verification: "https://youtube.com/..."  # Direct links
+```
+
+### Week 2 Thursday - 2024-01-09
+
+**New Patterns Discovered:**
+1. **Week Progression in Individual Exercises** - Load increases noted per exercise
+2. **Video Reference Integration** - Systematic video links for form guidance
+3. **Zone-2 Training Structure** - Detailed aerobic training protocols
+4. **Cardiovascular Phases** - Structured cardio with warm-up/work/cool-down
+
+### Week 2 Friday - 2024-01-09
+
+**New Patterns Discovered:**
+1. **Explosive Tempo Notation** - "X" for explosive phase (1-1-X-1)
+2. **Distance-based Exercises** - Farmer's carry with distance tracking
+3. **Reactive Plyometric Structure** - Specific ground contact time metrics
+
+### Week 2 Saturday - 2024-01-09
+
+**New Patterns Discovered:**
+1. **Dual Workout Options** - Structured choice between match/recovery
+2. **Match Performance Tracking** - Competition-specific metrics
+3. **Option-based Structure** - workout_options array with detailed sub-structures
+
+### Week 2 Sunday - 2024-01-09
+
+**New Patterns Discovered:**
+1. **Weekly Review Structure** - Comprehensive performance analysis
+2. **Nutrition & Recovery Summary** - Detailed recovery protocols
+3. **Planning Section** - Forward-looking adjustments and goals
+
 ## Component Requirements
 
 New components identified during migration:
-1. (To be filled)
-2. (To be filled)
+1. **WorkoutOptions** - Handle dual pathway workouts (Saturday)
+2. **WeeklyReview** - Comprehensive week analysis (Sunday)
+3. **AMRAPTracking** - Handle max rep tracking format
+4. **VideoReference** - Integrate external video links
+5. **NutritionSummary** - Display recovery and nutrition guidelines

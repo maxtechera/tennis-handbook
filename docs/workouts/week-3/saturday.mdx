@@ -1,70 +1,63 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-3/saturday.yml';
 
 <WorkoutNav weekNumber={3} />
 
-# Saturday – Match or Active Recovery
+# {workoutData.metadata.title}
 
-## Saturday Options
+_{workoutData.metadata.subtitle}_
 
-### Option A: Match Day
-- **Dynamic warm-up**: Progressive activation protocol for competition
-- **Competitive focus**: Maximum intensity during match play
-- **Thorough post-match stretching**: Comprehensive recovery protocol
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-### Option B: No Match Day
-- **Zone-2 jog**: 30 minutes at conversational pace
-- **Dynamic stretching**: 15 minutes targeting all major muscle groups
-
-## Quick Exercise Instructions
-
-### Dynamic Warm-up (Match Day)
-- 5 minutes general movement preparation
-- 10 minutes progressive tennis-specific movements
-- Mental preparation and tactical review
-- Sport-specific activation patterns
-- Competition readiness protocols
-- **Video Reference**: [Jeff Nippard - Warm-up Guide](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-### Zone-2 Jog (No Match Day)
-- 30 minutes conversational pace
-- Maintain aerobic base development
-- Easy rhythm, no stress on body
-- Active recovery from week's training
-- Prepare for Week 4 deload
-- **Video Reference**: [Jeff Nippard - Cardio Guidelines](https://www.youtube.com/watch?v=Kl0ht3ow8TQ)
-
-### Dynamic Stretching (15 minutes)
-- Target all major muscle groups
-- Hold dynamic movements 10-15 seconds
-- Include tennis-specific patterns
-- Address areas of tightness from training
-- Prepare body for next week
-- **Video Reference**: [Jeff Nippard - Mobility](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-### Post-Match Stretching
-- Comprehensive recovery protocol
-- 15-20 minutes static stretching
-- Focus on maintaining flexibility
-- Deep breathing for relaxation
-- Promote next-day readiness
-- **Video Reference**: [Jeff Nippard - Stretching Guide](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-## Key Focus Points
-
-- **Competition Preparation**: Dynamic warm-up protocols for optimal performance
-- **Mental Focus**: Maintain competitive intensity throughout match
-- **Recovery Protocol**: Immediate post-match care for next-day readiness
-- **Active Recovery**: Maintain aerobic base with easy jogging
-- **Mobility Work**: Dynamic stretching addressing week's training stress
-
-## Notes
-
-Saturday provides competition experience or active recovery, both supporting the training cycle's progression toward Week 4 deload.
+<WorkoutCarouselFromData week={3} day="saturday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.preparation_phases?.filter(p => p.type === 'assessment')} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.preparation_phases?.filter(p => p.type === 'assessment')} 
+/>
+
+<TennisTrainingTable data={workoutData.skill_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.conditioning_blocks?.find(b => b.type === 'strength')} />
+
+<RecoveryChecklist data={workoutData.recovery_protocols?.find(r => r.type === 'comprehensive')} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

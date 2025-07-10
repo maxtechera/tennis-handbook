@@ -1,52 +1,63 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-4/monday.yml';
 
 <WorkoutNav weekNumber={4} />
 
-# Monday – Lower Body Maintenance & Tennis
+# {workoutData.metadata.title}
 
-## Monday Schedule (Deload Week)
+_{workoutData.metadata.subtitle}_
 
-| Time | Exercise/Drill | Sets×Reps | Instructions |
-|------|---------------|-----------|--------------|}
-| 07:15–08:15 | Tennis Easy Baseline Drills | - | Moderate intensity, focus on rhythm and consistency |
-| 08:25–09:25 | Barbell Squat | 3×6 | Reduced load, controlled movement |
-| | Bulgarian Split Squat | 2×8 per leg | Maintain controlled form |
-| | Romanian Deadlift | 2×8 | Moderate weight, proper hinge |
-| | Calf Raises | 2×12 | Gentle, full-range movement |
-| 09:25–09:45 | Spanish Squat (isometric) | 2×40 sec | Easy intensity, controlled breathing |
-| | Pallof Press | 2×10 per side | Light resistance |
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-## Quick Exercise Instructions (Deload Week)
-
-**Barbell Squat (3×6)**: Reduce load 20% from Week 3, focus on movement quality over intensity
-
-**Bulgarian Split Squat (2×8)**: Maintain form, reduced volume for recovery
-
-**Romanian Deadlift (2×8)**: Perfect hip hinge pattern, moderate weight
-
-**Spanish Squat (2×40 sec)**: Reduce hold time for recovery, maintain position quality
-
-**Tennis Easy Baseline**: 70% intensity, focus on technique refinement and consistency
-
-**Recovery Focus**: Prioritize movement quality, technique, and preparation for Week 5
-
-## Key Focus Points (Deload Week)
-
-- **Reduced Intensity**: Moderate tennis drills focusing on rhythm and consistency
-- **Lower Loads**: Significantly reduced weights across all exercises
-- **Volume Reduction**: Fewer sets compared to Week 3
-- **Form Focus**: Emphasis on controlled movement and proper technique
-- **Recovery**: Easy intensity with controlled breathing
-- **Movement Quality**: Prioritize quality over quantity
-
-## Notes
-
-Week 4 is a critical deload week designed for full recovery and adaptation, setting the stage for intensified training in upcoming phases.
+<WorkoutCarouselFromData week={4} day="monday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

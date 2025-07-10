@@ -79,25 +79,7 @@ metadata:
         content: "Peak power training with comprehensive week evaluation"
         icon: "⚡"
 
-# ASSESSMENT SECTIONS
-assessments:
-  - id: "weekly_performance_assessment"
-    type: "weekly"
-    title: "Week 1 Performance Assessment"
-    timing: "pre-session"
-    duration: "20 minutes"
-    description: "Comprehensive baseline vs current performance evaluation"
-
-    attribution:
-      source: "Weekly performance assessment methodology"
-      methodology: "Baseline comparison protocols"
-      validation: "Performance tracking standards"
-      elite_use: "Professional performance monitoring"
-    
-  - method: "Plyometric Progressions"
-    source: "USTA Player Development"
-    elite_use: "Used by American junior development programs"
-    verification: "USTA High Performance Coaching Guide"
+# ASSESSMENT SECTIONS - Combined with detailed assessments below
 
 # Schedule blocks for timeline/carousel compatibility
 schedule:

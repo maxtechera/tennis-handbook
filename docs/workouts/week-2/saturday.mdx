@@ -3,67 +3,61 @@ sidebar_position: 7
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-2/saturday.yml';
 
 <WorkoutNav weekNumber={2} />
 
-# Saturday – Match or Active Recovery
+# {workoutData.metadata.title}
 
-## Saturday Options
+_{workoutData.metadata.subtitle}_
 
-### Option A: Match Day
-- **Structured warm-up**: 15-20 minutes progressive activation
-- **High focus during play**: Maximum competitive intensity
-- **Thorough cool-down stretching**: 10-15 minutes comprehensive stretching
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-### Option B: No Match Day
-- **Zone-2 jog**: 30 minutes at conversational pace
-- **Dynamic mobility**: 20 minutes targeting all major joints
-
-## Quick Exercise Instructions
-
-### Structured Warm-up (Match Day)
-- 5 minutes light movement (jogging, dynamic stretching)
-- 5 minutes sport-specific movements (shadow tennis strokes)
-- 5-10 minutes progressive tennis hitting
-- Mental preparation and game plan review
-- **Video Reference**: [Jeff Nippard - Warm-up Guide](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-### Zone-2 Jog (No Match Day)
-- 30 minutes at conversational pace
-- Maintain 60-70% maximum heart rate
-- Able to hold conversation throughout
-- Focus on easy, sustainable rhythm
-- Active recovery for training adaptation
-- **Video Reference**: [Jeff Nippard - Cardio Guidelines](https://www.youtube.com/watch?v=Kl0ht3ow8TQ)
-
-### Dynamic Mobility (20 minutes)
-- Leg swings (10 each direction)
-- Hip circles (10 each direction)
-- Arm circles and shoulder rolls
-- Torso twists and side bends
-- Focus on major joints used in tennis
-- **Video Reference**: [Jeff Nippard - Mobility](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-### Cool-down Stretching (Match Day)
-- Hold each stretch 30-60 seconds
-- Focus on hip flexors, hamstrings, calves
-- Include shoulder and chest stretches
-- Deep breathing during holds
-- Promote recovery for next day
-- **Video Reference**: [Jeff Nippard - Stretching Guide](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-## Key Focus Points
-
-- **Match Preparation**: If competing, focus on proper warm-up protocols
-- **Competitive Mindset**: Maintain high focus and intensity during match play
-- **Recovery Protocol**: Thorough cool-down to aid next-day recovery
-- **Active Recovery**: If no match, maintain movement with easy aerobic work
-- **Mobility Work**: Dynamic mobility addressing any tight areas from the week
-
-## Notes
-
-Saturday provides match experience or active recovery depending on schedule. Both options support the training cycle appropriately.
+<WorkoutCarouselFromData week={2} day="saturday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

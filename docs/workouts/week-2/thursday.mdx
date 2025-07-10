@@ -3,84 +3,61 @@ sidebar_position: 5
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-2/thursday.yml';
 
 <WorkoutNav weekNumber={2} />
 
-# Thursday – Conditioning & Tennis Technical Work
+# {workoutData.metadata.title}
 
-## Thursday Schedule
+_{workoutData.metadata.subtitle}_
 
-| Time | Exercise/Drill | Sets×Reps | Instructions |
-|------|---------------|-----------|--------------|
-| 07:30–08:20 | Bike Intervals | 4×3 min | Slightly increased intensity, maintain steady breathing |
-| | Hanging Leg Raises | 3×12 | Controlled lifts, minimal swing |
-| | Side Plank | 3×30 sec per side | Maintain alignment |
-| 08:40–09:00 | Gentle Mobility | - | Yoga flows, hip and shoulder openers |
-| 09:00–10:00 | Tennis (Slice & Precision Drills) | - | Controlled execution, targeted practice |
-| 10:10–10:40 | Zone-2 Cardio (Bike) | 30 min | Maintain steady HR, conversational pace |
-| 10:40–11:00 | Extended Mobility & Tendon Care | - | Couch Stretch, Pigeon Pose, eccentric tibialis raises |
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-## Quick Exercise Instructions
-
-### Bike Intervals (4×3 min)
-- Increase intensity 10% from Week 1
-- 90 seconds recovery between intervals
-- Maintain steady cadence and form
-- Focus on controlled breathing throughout
-- **Video Reference**: [Jeff Nippard - Cardio Guidelines](https://www.youtube.com/watch?v=Kl0ht3ow8TQ)
-
-### Hanging Leg Raises (3×12)
-- Hang from pull-up bar with secure grip
-- Raise knees toward chest in controlled motion
-- Hold for 2 seconds at top position
-- Control descent slowly to starting position
-- Avoid swinging or using momentum
-- **Video Reference**: [Jeff Nippard - Abs Training](https://www.youtube.com/watch?v=_xdOuqokcm4)
-
-### Side Plank (3×30 sec)
-- Perfect alignment from hip to shoulder
-- Stack hips and shoulders vertically
-- Breathe normally throughout hold
-- Progress from Week 1 duration
-- Focus on core stability
-- **Video Reference**: [Jeff Nippard - Core Training](https://www.youtube.com/watch?v=_xdOuqokcm4)
-
-### Tennis Slice Drills
-- Use low-to-high swing path
-- Generate underspin with racquet angle
-- Focus on placement accuracy over power
-- Practice cross-court and down-the-line
-- Emphasize consistent ball contact
-
-### Zone-2 Cardio (30 min)
-- Maintain 60-70% maximum heart rate
-- Should be able to hold conversation
-- Comfortable, sustainable pace
-- Focus on nasal breathing if possible
-- **Video Reference**: [Jeff Nippard - Cardio Guidelines](https://www.youtube.com/watch?v=Kl0ht3ow8TQ)
-
-### Couch Stretch
-- Place rear foot elevated on couch/bench
-- Push hips forward to feel hip flexor stretch
-- Hold for 90 seconds each side
-- Keep torso upright throughout
-- Important for hip mobility
-- **Video Reference**: [Jeff Nippard - Mobility](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-## Key Focus Points
-
-- **Bike Intervals**: Slightly increased intensity from Week 1, maintain steady breathing
-- **Core Strength**: Controlled hanging leg raises with minimal swing
-- **Side Stability**: Maintain proper alignment during side planks
-- **Mobility Work**: Gentle yoga flows targeting hips and shoulders
-- **Tennis Precision**: Slice and precision drills with controlled execution
-- **Aerobic Base**: Zone-2 cardio maintaining conversational pace
-- **Tendon Care**: Extended mobility focusing on couch stretch and tibialis raises
-
-## Notes
-
-Thursday serves as a recovery day with moderate conditioning work and technical tennis development, emphasizing precision over power.
+<WorkoutCarouselFromData week={2} day="thursday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

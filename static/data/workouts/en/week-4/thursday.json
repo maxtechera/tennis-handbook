@@ -1,0 +1,1004 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Power Integration",
+    "day_id": "week_4_thursday",
+    "day_name": "Thursday",
+    "title": "Integrated Power Application & Tennis Precision",
+    "subtitle": "Phase 2 Power Application with Tennis Precision Training",
+    "phase": "Phase 2: Power Integration",
+    "focus_areas": [
+      "Power Integration",
+      "Velocity-Based Training",
+      "Integrated Power Application",
+      "Tennis Precision Training"
+    ],
+    "training_parameters": {
+      "volume": "90% (phase transition deload)",
+      "intensity": "85-95% (velocity-based focus)",
+      "density": "moderate-high",
+      "duration": "4 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Active Recovery Protocol",
+        "type": "recovery",
+        "attribution": {
+          "methodology": "Active recovery principles",
+          "source": "Elite recovery research",
+          "verification": "Recovery science literature",
+          "context": "Phase 2 recovery optimization",
+          "results": "Enhanced recovery and adaptation"
+        }
+      },
+      {
+        "name": "Power Technique Refinement",
+        "type": "technical",
+        "attribution": {
+          "methodology": "Power technique development",
+          "source": "Elite technical training",
+          "verification": "Technical training protocols",
+          "context": "Phase 2 technique optimization",
+          "elite_use": "Professional power athletes"
+        }
+      },
+      {
+        "name": "Movement Quality Enhancement",
+        "type": "movement",
+        "attribution": {
+          "source": "Elite movement quality protocols",
+          "methodology": "Movement refinement training",
+          "verification": "Movement science research",
+          "context": "Phase 2 movement optimization"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Tennis court access",
+        "Yoga mat",
+        "Foam roller",
+        "Resistance bands",
+        "Light dumbbells (2-10 lbs)",
+        "Medicine ball (light - 2-4kg)",
+        "Stability ball"
+      ],
+      "optional": [
+        "Massage tools",
+        "Stretching straps",
+        "Balance pads",
+        "Therabands",
+        "Hot/cold therapy tools"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [⬅️ Wednesday](wednesday) | [Friday ➡️](friday)",
+      "overview_link": "./",
+      "next_link": "friday",
+      "previous_link": "wednesday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Recovery Assessment",
+        "preparation": "Recovery Preparation",
+        "skill_training": "Technical Refinement",
+        "conditioning": "Active Recovery Training",
+        "recovery": "Enhanced Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "success",
+          "title": "Active Recovery Day",
+          "content": "Focus on recovery, technique refinement, and movement quality",
+          "icon": "🧘"
+        },
+        {
+          "type": "info",
+          "title": "Lower Intensity Focus",
+          "content": "Emphasis on quality over quantity for optimal recovery",
+          "icon": "💆"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "recovery_status_assessment",
+      "type": "recovery",
+      "title": "Recovery Status Assessment",
+      "timing": "pre-session",
+      "duration": "20 minutes",
+      "description": "Comprehensive recovery status evaluation",
+      "attribution": {
+        "source": "Elite recovery assessment protocols",
+        "methodology": "Recovery status evaluation",
+        "validation": "Recovery science research",
+        "elite_use": "Professional athletes"
+      },
+      "components": [
+        {
+          "id": "subjective_wellness",
+          "name": "Subjective Wellness Assessment",
+          "type": "subjective",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Wellness questionnaire (sleep, fatigue, mood, stress)",
+            "duration": "5 minutes",
+            "equipment": "Assessment form"
+          },
+          "standards": {
+            "excellent": "All categories 8-10/10",
+            "good": "Most categories 6-8/10",
+            "needs_attention": "Multiple categories <6/10"
+          },
+          "scoring": {
+            "method": "Composite wellness score",
+            "scale": "1-10 scale",
+            "recording": "Individual category scores"
+          },
+          "context": {
+            "description": "Subjective recovery indicators",
+            "application": "Training load adjustment"
+          }
+        },
+        {
+          "id": "hrv_recovery_analysis",
+          "name": "HRV Recovery Analysis",
+          "type": "physiological",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Morning HRV measurement with trend analysis",
+            "duration": "5 minutes",
+            "equipment": "HRV device"
+          },
+          "standards": {
+            "excellent": "HRV within 5% of baseline",
+            "good": "HRV within 10% of baseline",
+            "needs_attention": "HRV >10% below baseline"
+          },
+          "scoring": {
+            "method": "HRV percentage of baseline",
+            "scale": "Percentage",
+            "recording": "HRV value and trend"
+          },
+          "context": {
+            "description": "Autonomic nervous system recovery",
+            "application": "Training intensity adjustment"
+          }
+        },
+        {
+          "id": "movement_quality_recovery",
+          "name": "Movement Quality Recovery Check",
+          "type": "movement",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Simple movement assessment (squat, overhead reach)",
+            "duration": "10 minutes",
+            "equipment": "None"
+          },
+          "standards": {
+            "excellent": "Full range, no restrictions",
+            "good": "Minor restrictions",
+            "needs_attention": "Significant restrictions"
+          },
+          "scoring": {
+            "method": "Movement quality rating",
+            "scale": "1-10 scale",
+            "recording": "Movement quality and restrictions"
+          },
+          "context": {
+            "description": "Movement system recovery",
+            "application": "Movement preparation focus"
+          }
+        }
+      ]
+    },
+    {
+      "id": "technique_readiness_assessment",
+      "type": "technical",
+      "title": "Technique Readiness Assessment",
+      "timing": "pre-session",
+      "duration": "15 minutes",
+      "description": "Technical training readiness evaluation",
+      "components": [
+        {
+          "id": "coordination_check",
+          "name": "Coordination Check",
+          "type": "coordination",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Simple coordination tasks",
+            "duration": "5 minutes",
+            "equipment": "Tennis ball"
+          },
+          "standards": {
+            "excellent": "Smooth, coordinated movements",
+            "good": "Minor coordination issues",
+            "needs_attention": "Significant coordination problems"
+          },
+          "context": {
+            "description": "Neuromuscular coordination status",
+            "application": "Technical training intensity"
+          }
+        },
+        {
+          "id": "focus_attention_check",
+          "name": "Focus and Attention Check",
+          "type": "cognitive",
+          "category": "secondary",
+          "measurement": {
+            "protocol": "Attention and focus assessment",
+            "duration": "5 minutes",
+            "equipment": "Simple attention tasks"
+          },
+          "standards": {
+            "excellent": "Sharp focus and attention",
+            "good": "Good focus with minor lapses",
+            "needs_attention": "Poor focus or attention"
+          },
+          "context": {
+            "description": "Cognitive readiness for technical work",
+            "application": "Training complexity adjustment"
+          }
+        },
+        {
+          "id": "motivation_energy_check",
+          "name": "Motivation and Energy Check",
+          "type": "psychological",
+          "category": "secondary",
+          "measurement": {
+            "protocol": "Self-assessment of motivation and energy",
+            "duration": "5 minutes",
+            "equipment": "Assessment form"
+          },
+          "standards": {
+            "excellent": "High motivation and energy",
+            "good": "Good motivation and energy",
+            "needs_attention": "Low motivation or energy"
+          },
+          "context": {
+            "description": "Psychological readiness",
+            "application": "Training approach adjustment"
+          }
+        }
+      ]
+    }
+  ],
+  "schedule": {
+    "type": "time-based",
+    "total_duration": "3 hours 30 minutes",
+    "blocks": [
+      {
+        "id": "morning_block",
+        "time": "6:30-7:45",
+        "title": "Recovery Morning Protocol",
+        "type": "preparation",
+        "activities": [
+          {
+            "name": "Recovery Morning Protocol",
+            "duration": "75 minutes",
+            "type": "preparation",
+            "description": "Gentle morning recovery routine"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "morning",
+          "phase_title": "Recovery Morning",
+          "phase_icon": "🌅",
+          "location": "home/hotel"
+        }
+      },
+      {
+        "id": "tennis_block",
+        "time": "7:45-9:00",
+        "title": "Technical Refinement",
+        "type": "main",
+        "activities": [
+          {
+            "name": "Technical Refinement Session",
+            "duration": "75 minutes",
+            "type": "main",
+            "description": "Power technique refinement"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "tennis",
+          "phase_title": "Technical Refinement",
+          "phase_icon": "🎾",
+          "location": "tennis_court"
+        }
+      },
+      {
+        "id": "movement_block",
+        "time": "9:05-9:25",
+        "title": "Movement Quality Enhancement",
+        "type": "preparation",
+        "activities": [
+          {
+            "name": "Movement Quality Enhancement",
+            "duration": "20 minutes",
+            "type": "movement",
+            "description": "Movement quality focus"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "movement",
+          "phase_title": "Movement Quality",
+          "phase_icon": "🏃",
+          "location": "gym/studio"
+        }
+      },
+      {
+        "id": "conditioning_block",
+        "time": "9:25-10:10",
+        "title": "Active Recovery Training",
+        "type": "recovery",
+        "activities": [
+          {
+            "name": "Active Recovery Training",
+            "duration": "45 minutes",
+            "type": "recovery",
+            "description": "Active recovery conditioning"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "conditioning",
+          "phase_title": "Active Recovery",
+          "phase_icon": "💪",
+          "location": "gym/studio"
+        }
+      },
+      {
+        "id": "recovery_block",
+        "time": "10:15-10:30",
+        "title": "Enhanced Recovery Protocol",
+        "type": "recovery",
+        "activities": [
+          {
+            "name": "Enhanced Recovery Protocol",
+            "duration": "15 minutes",
+            "type": "recovery",
+            "description": "Comprehensive recovery protocol"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "recovery",
+          "phase_title": "Enhanced Recovery",
+          "phase_icon": "🧊",
+          "location": "recovery_area"
+        }
+      }
+    ]
+  },
+  "preparation_phases": [
+    {
+      "id": "recovery_morning_protocol",
+      "type": "morning",
+      "title": "Recovery Morning Protocol",
+      "duration": "75 minutes",
+      "timing": "6:30-7:45",
+      "attribution": {
+        "source": "Elite recovery morning protocols",
+        "elite_use": "Professional recovery practices",
+        "verification": "Recovery optimization research"
+      },
+      "activities": [
+        {
+          "id": "gentle_awakening",
+          "name": "Gentle Awakening Protocol",
+          "type": "awakening",
+          "duration": "20 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Gentle morning awakening",
+            "setup": "Comfortable space",
+            "execution": "Progressive awakening",
+            "focus": "Gentle nervous system activation"
+          },
+          "instructions": [
+            {
+              "phase": "BREATHING",
+              "text": "5 minutes gentle breathing - 4-7-8 pattern for relaxation"
+            },
+            {
+              "phase": "GENTLE_MOVEMENT",
+              "text": "10 minutes gentle movement - light stretching, joint mobility"
+            },
+            {
+              "phase": "MINDFULNESS",
+              "text": "5 minutes mindfulness - body awareness and mental preparation"
+            }
+          ],
+          "cues": [
+            "Gentle activation",
+            "Listen to your body",
+            "No forcing movements",
+            "Prepare for recovery day"
+          ]
+        },
+        {
+          "id": "recovery_assessment",
+          "name": "Recovery Assessment Protocol",
+          "type": "assessment",
+          "duration": "20 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Comprehensive recovery assessment",
+            "setup": "Assessment tools",
+            "execution": "Systematic evaluation",
+            "focus": "Recovery status evaluation"
+          },
+          "instructions": [
+            {
+              "phase": "WELLNESS_ASSESSMENT",
+              "text": "10 minutes wellness assessment - subjective indicators"
+            },
+            {
+              "phase": "PHYSIOLOGICAL_ASSESSMENT",
+              "text": "10 minutes physiological assessment - HRV, movement quality"
+            }
+          ],
+          "cues": [
+            "Honest self-assessment",
+            "Consider all factors",
+            "Adjust training accordingly",
+            "Recovery is priority"
+          ]
+        },
+        {
+          "id": "gentle_preparation",
+          "name": "Gentle Preparation Protocol",
+          "type": "preparation",
+          "duration": "35 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Gentle training preparation",
+            "setup": "Movement space",
+            "execution": "Progressive preparation",
+            "focus": "Gentle readiness building"
+          },
+          "instructions": [
+            {
+              "phase": "MOBILITY_WORK",
+              "text": "15 minutes mobility work - gentle stretching, joint mobility"
+            },
+            {
+              "phase": "LIGHT_ACTIVATION",
+              "text": "10 minutes light activation - minimal intensity movements"
+            },
+            {
+              "phase": "TECHNICAL_PREPARATION",
+              "text": "10 minutes technical preparation - movement pattern rehearsal"
+            }
+          ],
+          "cues": [
+            "Gentle preparation",
+            "Quality over intensity",
+            "Prepare for technical work",
+            "Maintain recovery focus"
+          ]
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Technical Refinement",
+    "section_description": "Power technique refinement with recovery emphasis",
+    "sessions": [
+      {
+        "id": "technical_refinement_session",
+        "type": "technical",
+        "title": "Technical Refinement Session",
+        "duration": "75 minutes",
+        "intensity": "50-70%",
+        "attribution": {
+          "methodology": "Technical refinement training",
+          "source": "Elite technical development",
+          "elite_use": "Professional technical training",
+          "verification": "Technical training research"
+        },
+        "structure": {
+          "warm_up": "15 minutes",
+          "main_work": "50 minutes",
+          "cool_down": "10 minutes"
+        },
+        "components": [
+          {
+            "id": "serve_technique_refinement",
+            "name": "Serve Technique Refinement",
+            "type": "technical",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "25 minutes",
+              "rest": "Liberal rest between reps"
+            },
+            "setup": {
+              "court_area": "Service area",
+              "equipment": "Light racquet, foam balls initially",
+              "players": "Individual with coach feedback"
+            },
+            "implementation": {
+              "method": "Progressive technique refinement",
+              "focus": "Perfect technique at slower speeds",
+              "key_points": "Kinetic chain sequencing, timing"
+            },
+            "instructions": [
+              {
+                "phase": "SHADOW_SERVES",
+                "text": "10 minutes shadow serves - perfect technique, no ball"
+              },
+              {
+                "phase": "FOAM_BALL_SERVES",
+                "text": "10 minutes foam ball serves - technique focus"
+              },
+              {
+                "phase": "LIGHT_BALL_SERVES",
+                "text": "5 minutes light ball serves - technique integration"
+              }
+            ],
+            "cues": [
+              "Perfect technique",
+              "Slow and controlled",
+              "Feel the kinetic chain",
+              "Quality over power"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Technique quality",
+                "target": "Perfect form at 60% speed",
+                "tracking": "Technique assessment"
+              },
+              {
+                "metric": "Consistency",
+                "target": "90% technique accuracy",
+                "tracking": "Technique consistency"
+              }
+            ]
+          },
+          {
+            "id": "groundstroke_refinement",
+            "name": "Groundstroke Technique Refinement",
+            "type": "technical",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "25 minutes",
+              "rest": "Liberal rest between reps"
+            },
+            "setup": {
+              "court_area": "Half court",
+              "equipment": "Racquet, low compression balls",
+              "players": "Individual or practice partner"
+            },
+            "implementation": {
+              "method": "Groundstroke technique refinement",
+              "focus": "Perfect mechanics at moderate speed",
+              "key_points": "Rotation, contact point, follow-through"
+            },
+            "instructions": [
+              {
+                "phase": "SHADOW_STROKES",
+                "text": "8 minutes shadow strokes - perfect technique without ball"
+              },
+              {
+                "phase": "FEED_DRILLS",
+                "text": "12 minutes feed drills - consistent feeds, technique focus"
+              },
+              {
+                "phase": "SLOW_RALLIES",
+                "text": "5 minutes slow rallies - technique maintenance"
+              }
+            ],
+            "cues": [
+              "Perfect mechanics",
+              "Slow and controlled",
+              "Feel the rotation",
+              "Quality contact"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Technique quality",
+                "target": "Perfect form at 70% speed",
+                "tracking": "Technique assessment"
+              },
+              {
+                "metric": "Consistency",
+                "target": "85% technique accuracy",
+                "tracking": "Technique consistency"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "active_recovery_training",
+      "type": "recovery",
+      "title": "Active Recovery Training",
+      "description": "Active recovery conditioning with movement quality focus",
+      "duration": "45 minutes",
+      "attribution": {
+        "methodology": "Active recovery training",
+        "source": "Elite recovery protocols",
+        "elite_use": "Professional recovery training",
+        "verification": "Recovery training research"
+      },
+      "exercises": [
+        {
+          "id": "mobility_flow",
+          "name": "Mobility Flow Sequence",
+          "category": "mobility",
+          "order": 1,
+          "loading": {
+            "sets": "2",
+            "reps": "Flow sequence",
+            "intensity": "Light",
+            "rest": "1 minute between sets",
+            "duration": "10 minutes per set"
+          },
+          "execution": {
+            "setup": [
+              "Yoga mat",
+              "Comfortable clothing",
+              "Quiet space"
+            ],
+            "technique": [
+              "Hip mobility sequence",
+              "Shoulder mobility sequence",
+              "Spinal mobility sequence",
+              "Ankle mobility sequence"
+            ],
+            "safety": [
+              "No forcing movements",
+              "Pain-free range",
+              "Gentle progression"
+            ]
+          },
+          "cues": [
+            "Gentle movements",
+            "Feel the stretch",
+            "Pain-free range",
+            "Quality over quantity"
+          ],
+          "tracking": {
+            "type": "mobility",
+            "format": "sets_quality",
+            "sets": [
+              {
+                "set": 1,
+                "quality_rating": "",
+                "mobility_improvements": "",
+                "notes": "___"
+              },
+              {
+                "set": 2,
+                "quality_rating": "",
+                "mobility_improvements": "",
+                "notes": "___"
+              }
+            ]
+          },
+          "benefits": {
+            "primary": "Improved mobility",
+            "secondary": "Enhanced recovery",
+            "sport_specific": "Tennis movement preparation"
+          }
+        },
+        {
+          "id": "core_stability_gentle",
+          "name": "Gentle Core Stability",
+          "category": "stability",
+          "order": 2,
+          "loading": {
+            "sets": "3",
+            "reps": "15-20",
+            "intensity": "Light to moderate",
+            "rest": "45 seconds",
+            "tempo": "Controlled"
+          },
+          "execution": {
+            "setup": [
+              "Yoga mat",
+              "Stability ball",
+              "Light resistance"
+            ],
+            "technique": [
+              "Dead bugs: 15 per side",
+              "Bird dogs: 12 per side",
+              "Modified planks: 30 seconds",
+              "Gentle twists: 20 total"
+            ],
+            "safety": [
+              "Maintain form",
+              "No straining",
+              "Quality focus"
+            ]
+          },
+          "cues": [
+            "Stable core",
+            "Controlled movement",
+            "Quality over quantity",
+            "Recovery focus"
+          ],
+          "tracking": {
+            "type": "stability",
+            "format": "sets_reps"
+          },
+          "benefits": {
+            "primary": "Core stability",
+            "secondary": "Movement quality",
+            "sport_specific": "Tennis stability"
+          }
+        },
+        {
+          "id": "light_resistance_training",
+          "name": "Light Resistance Training",
+          "category": "resistance",
+          "order": 3,
+          "loading": {
+            "sets": "2",
+            "reps": "15-20",
+            "intensity": "Light",
+            "rest": "60 seconds",
+            "resistance": "Bands or light weights"
+          },
+          "execution": {
+            "setup": [
+              "Resistance bands",
+              "Light dumbbells (2-5 lbs)",
+              "Comfortable space"
+            ],
+            "technique": [
+              "Band external rotations",
+              "Light shoulder raises",
+              "Gentle squats",
+              "Light arm exercises"
+            ],
+            "safety": [
+              "Very light resistance",
+              "Full range of motion",
+              "No straining"
+            ]
+          },
+          "cues": [
+            "Light resistance",
+            "Feel the muscles",
+            "Quality movement",
+            "Recovery emphasis"
+          ],
+          "tracking": {
+            "type": "resistance",
+            "format": "sets_reps"
+          },
+          "benefits": {
+            "primary": "Active recovery",
+            "secondary": "Blood flow enhancement",
+            "sport_specific": "Movement preparation"
+          }
+        },
+        {
+          "id": "breathing_integration",
+          "name": "Breathing Integration",
+          "category": "recovery",
+          "order": 4,
+          "loading": {
+            "sets": "1",
+            "reps": "Breathing sequence",
+            "intensity": "Relaxation",
+            "rest": "Continuous",
+            "duration": "10 minutes"
+          },
+          "execution": {
+            "setup": [
+              "Comfortable position",
+              "Quiet environment",
+              "Relaxed clothing"
+            ],
+            "technique": [
+              "4-7-8 breathing: 5 minutes",
+              "Box breathing: 3 minutes",
+              "Natural breathing: 2 minutes",
+              "Visualization integration"
+            ],
+            "safety": [
+              "No forcing breath",
+              "Comfortable patterns",
+              "Relaxation focus"
+            ]
+          },
+          "cues": [
+            "Relaxed breathing",
+            "Parasympathetic activation",
+            "Mental recovery",
+            "Stress reduction"
+          ],
+          "tracking": {
+            "type": "recovery",
+            "format": "quality_assessment"
+          },
+          "benefits": {
+            "primary": "Nervous system recovery",
+            "secondary": "Stress reduction",
+            "sport_specific": "Performance recovery"
+          }
+        }
+      ]
+    }
+  ],
+  "recovery_protocols": [
+    {
+      "id": "enhanced_recovery_protocol",
+      "type": "comprehensive",
+      "title": "Enhanced Recovery Protocol",
+      "duration": "15 minutes",
+      "timing": "Post-training",
+      "attribution": {
+        "methodology": "Comprehensive recovery",
+        "source": "Elite recovery protocols",
+        "elite_use": "Professional recovery practices",
+        "verification": "Recovery optimization research"
+      },
+      "components": [
+        {
+          "id": "self_massage",
+          "name": "Self-Massage Protocol",
+          "type": "therapy",
+          "duration": "8 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Self-massage techniques",
+            "intensity": "Light to moderate",
+            "equipment": "Foam roller, massage ball"
+          },
+          "instructions": [
+            "Feet and calves: 2 minutes",
+            "Thighs and hips: 3 minutes",
+            "Back and shoulders: 3 minutes"
+          ],
+          "cues": [
+            "Gentle pressure",
+            "Find tension areas",
+            "Promote circulation",
+            "Enhance recovery"
+          ]
+        },
+        {
+          "id": "recovery_stretching",
+          "name": "Recovery Stretching",
+          "type": "mobility",
+          "duration": "7 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Gentle stretching",
+            "intensity": "Light",
+            "equipment": "Stretching strap (optional)"
+          },
+          "instructions": [
+            "Hip flexor stretch: 2 minutes",
+            "Hamstring stretch: 2 minutes",
+            "Shoulder stretch: 2 minutes",
+            "Spinal twist: 1 minute"
+          ],
+          "cues": [
+            "Gentle stretching",
+            "Hold positions",
+            "Breathe deeply",
+            "Release tension"
+          ]
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 75,
+      "conditioning_minutes": 45,
+      "warmup_minutes": 20,
+      "recovery_minutes": 15,
+      "morning_protocol_minutes": 75,
+      "total_minutes": 230
+    },
+    "intensity": {
+      "tennis_average": "50-70%",
+      "conditioning_average": "Recovery focus",
+      "overall_rpe": 4
+    },
+    "load_calculations": {
+      "total_tonnage": "Minimal load",
+      "volume_load": "Recovery emphasis"
+    },
+    "distances": {
+      "estimated_court_coverage": "1.5 km",
+      "total_movement": "Recovery movement"
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Perfect technique at lower intensities",
+      "Movement quality enhancement",
+      "Recovery optimization"
+    ],
+    "load_management": [
+      "Significant load reduction",
+      "Recovery prioritization",
+      "Quality over quantity"
+    ],
+    "progression_markers": [
+      "Improved movement quality",
+      "Enhanced technique",
+      "Optimal recovery indicators"
+    ],
+    "recovery_emphasis": [
+      "Active recovery principles",
+      "Gentle training approach",
+      "Preparation for upcoming training"
+    ]
+  },
+  "level_modifications": {
+    "beginner": {
+      "volume": "Reduce by 20%",
+      "intensity": "Even lower intensity",
+      "tennis": "Reduce to 60 minutes",
+      "recovery": "Extended recovery protocols"
+    },
+    "intermediate": {
+      "volume": "As prescribed",
+      "intensity": "As prescribed",
+      "tennis": "As prescribed",
+      "recovery": "Standard recovery protocols"
+    },
+    "advanced": {
+      "volume": "May add light conditioning",
+      "intensity": "Slightly higher technical focus",
+      "tennis": "May increase to 90 minutes",
+      "recovery": "Advanced recovery techniques"
+    }
+  },
+  "week_integration": {
+    "weekly_theme": "Recovery and Refinement",
+    "daily_priority": "Recovery optimization",
+    "phase_focus": "Preparation for upcoming training",
+    "connects_to": {
+      "wednesday": "Recovery from power endurance",
+      "friday": "Preparation for integrated training",
+      "saturday": "Readiness for match play"
+    },
+    "recovery_purpose": {
+      "physiological": "Tissue recovery and adaptation",
+      "neurological": "Nervous system recovery",
+      "psychological": "Mental refreshment",
+      "technical": "Technique refinement"
+    }
+  },
+  "tracking": {
+    "required": [
+      "Recovery indicators",
+      "Technique quality assessments",
+      "Movement quality ratings",
+      "Wellness scores",
+      "Training readiness"
+    ],
+    "optional": [
+      "Detailed HRV analysis",
+      "Sleep quality metrics",
+      "Stress indicators",
+      "Motivation levels",
+      "Technical video analysis"
+    ],
+    "recovery_specific": [
+      "Recovery status indicators",
+      "Training readiness assessment",
+      "Technique improvement tracking",
+      "Movement quality progression"
+    ]
+  },
+  "navigation": {
+    "week_overview": "./",
+    "next_day": "friday",
+    "previous_day": "wednesday",
+    "phase_status": "Phase 2 - Week 1"
+  }
+}

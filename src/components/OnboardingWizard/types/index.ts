@@ -55,6 +55,10 @@ export interface WizardData {
   physicalProfile?: PhysicalProfileData;
   completedAt?: string;
   wizardVersion?: string;
+  sessionId?: string;
+  userId?: string;
+  userSegment?: UserSegment;
+  recommendations?: ContentRecommendation[];
 }
 
 // Personalization types

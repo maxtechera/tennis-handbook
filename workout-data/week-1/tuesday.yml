@@ -78,19 +78,6 @@ metadata:
         icon: "🎾"
 
 # ASSESSMENT SECTIONS
-assessments:
-  - id: "daily_assessment"
-    type: "daily"
-    title: "Week 1 Daily Assessment"
-    timing: "pre-session"
-    duration: "10 minutes"
-    description: "Daily readiness and comparison tracking"
-
-    attribution:
-      source: "Daily assessment methodology"
-      methodology: "Baseline comparison tracking"
-      validation: "Training readiness protocols"
-      elite_use: "Used in professional training programs"
 
 # Schedule blocks for timeline/carousel compatibility
 schedule:
@@ -105,7 +92,7 @@ schedule:
         phase_title: "Daily Check-in"
         phase_icon: "📊"
         location: "gym"
-        
+
     - id: "upper_strength"
       time: "07:15-08:00"
       title: "Enhanced Upper Body Strength"
@@ -116,7 +103,7 @@ schedule:
         phase_title: "Upper Body HSR"
         phase_icon: "💪"
         location: "gym"
-        
+
     - id: "tennis_prep"
       time: "08:05-08:25"
       title: "Tennis-Specific Upper Body Preparation"
@@ -127,7 +114,7 @@ schedule:
         phase_title: "Tennis Prep"
         phase_icon: "🎾"
         location: "court"
-        
+
     - id: "tennis_skill"
       time: "08:30-09:30"
       title: "Tennis Serve & Volley Development"
@@ -138,7 +125,7 @@ schedule:
         phase_title: "Serve & Volley"
         phase_icon: "🎾"
         location: "court"
-        
+
     - id: "coaching"
       time: "09:30-10:30"
       title: "Personal Coaching Integration"
@@ -149,7 +136,7 @@ schedule:
         phase_title: "Technical Work"
         phase_icon: "🎯"
         location: "court"
-        
+
     - id: "recovery"
       time: "10:30-10:45"
       title: "Enhanced Recovery Protocols"
@@ -210,7 +197,7 @@ daily_assessment:
 strength_training:
   title: "Enhanced Upper Body Strength"
   time: "07:15-08:00"
-  
+
   # NEW PATTERN: Primary movements with HSR protocol
   primary_movements:
     - exercise_id: "ub_1"
@@ -221,27 +208,27 @@ strength_training:
       rest_seconds: 150
       tempo: "3-1-X-0"
       load: "65-70% 1RM"
-      
+
       attribution:
         source: "Norwegian Tennis Federation"
         elite_use: "Casper Ruud's injury prevention protocol"
         coach: "Christian Ruud"
         verification: "NTF Performance Manual 2023"
         quote: "Slow eccentrics build the tendon resilience needed for serving"
-      
+
       # NEW PATTERN: HSR protocol details
       hsr_protocol:
         - "3-sec eccentric lowering"
         - "1-sec pause at bottom"
         - "Explosive concentric"
         - "65-70% estimated 1RM"
-      
+
       specific_coaching_cues:
         - "Lower bar to clavicle level"
         - "Drive bar straight up"
         - "Engage core, don't arch back"
         - "Feel shoulders stabilizing"
-      
+
       detailed_instructions:
         - phase: "SETUP"
           instruction: "Stand with feet hip-width apart, barbell at shoulder level, grip slightly wider than shoulders"
@@ -257,7 +244,7 @@ strength_training:
           instruction: "Inhale at top, hold breath during descent and press, exhale after completing rep"
         - phase: "WEIGHT"
           instruction: "Use 65-70% of estimated 1RM (weight you could press for 3-5 max reps)"
-      
+
       set_tracking:
         - set: 1
           target_reps: 8
@@ -267,25 +254,25 @@ strength_training:
           target_reps: 8
         - set: 4
           target_reps: 8
-    
+
     - exercise_id: "ub_2"
       name: "Cable/Band Row (HSR)"
       sets: "4"
       reps: "10"
       rest_seconds: 120
-      
+
       hsr_protocol:
         - "4-sec eccentric emphasis"
         - "Squeeze shoulder blades"
         - "Control the weight"
         - "Focus on posture"
-      
+
       specific_coaching_cues:
         - "Pull elbows back, not wide"
         - "Feel rhomboids and mid-traps"
         - "Don't let weight slam down"
         - "Chest up, shoulders down"
-      
+
       detailed_instructions:
         - phase: "SETUP"
           instruction: "Sit with knees slightly bent, grab cable handle or resistance band, arms extended"
@@ -301,7 +288,7 @@ strength_training:
           instruction: "Target rhomboids and middle trapezius, avoid using momentum or body rock"
         - phase: "COMMON ERRORS"
           instruction: "Don't round shoulders forward, don't pull with just arms, don't let weight slam down"
-      
+
       set_tracking:
         - set: 1
           target_reps: 10
@@ -311,7 +298,7 @@ strength_training:
           target_reps: 10
         - set: 4
           target_reps: 10
-  
+
   # NEW PATTERN: Shoulder health section
   shoulder_health_activation:
     title: "Shoulder Health & Activation"
@@ -324,7 +311,7 @@ strength_training:
         benefits:
           - "Rear deltoid strengthening"
           - "Postural improvement"
-        
+
         detailed_instructions:
           - phase: "SETUP"
             instruction: "Hold resistance band with arms extended in front, hands shoulder-width apart"
@@ -336,7 +323,7 @@ strength_training:
             instruction: "Slowly return to start position, maintain tension in band throughout"
           - phase: "FORM"
             instruction: "Keep shoulders down, don't shrug up, maintain good posture throughout movement"
-      
+
       - name: "External Rotations"
         sets: "3"
         reps: "15 each arm"
@@ -345,7 +332,7 @@ strength_training:
         benefits:
           - "Rotator cuff strengthening"
           - "Serve deceleration strength"
-        
+
         detailed_instructions:
           - phase: "POSITION"
             instruction: "Stand with elbow at 90 degrees, upper arm parallel to floor, forearm vertical"
@@ -362,13 +349,13 @@ strength_training:
 tennis_preparation:
   title: "Tennis-Specific Upper Body Preparation"
   time: "08:05-08:25"
-  
+
   exercises:
     - name: "Shoulder Dislocates (PVC/Band)"
       duration: "2 min"
       instructions: "Slow, controlled, increase ROM gradually"
       tennis_application: "Shoulder mobility for serves"
-      
+
       detailed_instructions:
         - phase: "SETUP"
           instruction: "Hold PVC pipe or resistance band with wide grip (wider than shoulder-width)"
@@ -380,12 +367,12 @@ tennis_preparation:
           instruction: "Never force the movement, stop if you feel pinching or pain"
         - phase: "REPETITIONS"
           instruction: "8-12 slow controlled repetitions, focus on smooth movement"
-    
+
     - name: "Arm Circles"
       duration: "1 min"
       instructions: "Forward/backward, small to large"
       tennis_application: "Dynamic shoulder warm-up"
-      
+
       detailed_instructions:
         - phase: "SMALL CIRCLES"
           instruction: "Start with 6-inch diameter circles, arms at shoulder height"
@@ -395,12 +382,12 @@ tennis_preparation:
           instruction: "15 seconds forward, 15 seconds backward for each size"
         - phase: "FOCUS"
           instruction: "Feel the shoulder joint warming up, increasing blood flow"
-    
+
     - name: "Wrist Circles + Flexor/Extensor Stretches"
       duration: "2 min"
       instructions: "Both directions, gentle stretch holds"
       tennis_application: "Wrist health for racquet control"
-      
+
       detailed_instructions:
         - phase: "CIRCLES"
           instruction: "10 each direction, both wrists simultaneously"
@@ -410,12 +397,12 @@ tennis_preparation:
           instruction: "Arm extended, palm down, gently push hand down for 15 seconds"
         - phase: "TENNIS FOCUS"
           instruction: "Prepares wrists for impact and racquet control"
-    
+
     - name: "Bands Rotator Cuff Activation"
       duration: "3 min"
       instructions: "External rotation, internal rotation"
       tennis_application: "Rotator cuff preparation"
-      
+
       detailed_instructions:
         - phase: "EXTERNAL ROTATION"
           instruction: "Light band, elbow at 90°, rotate out against resistance"
@@ -425,12 +412,12 @@ tennis_preparation:
           instruction: "12-15 each direction, focus on quality over speed"
         - phase: "PURPOSE"
           instruction: "Activates stabilizing muscles before serve practice"
-    
+
     - name: "Medicine Ball Chest Pass (Light)"
       duration: "2 min"
       instructions: "6-8 reps, focus on explosive release"
       tennis_application: "Neural activation for power"
-      
+
       detailed_instructions:
         - phase: "SETUP"
           instruction: "Stand with feet shoulder-width apart, ball at chest level"
@@ -447,7 +434,7 @@ tennis_preparation:
 tennis_training:
   title: "Tennis Serve & Volley Development"
   time: "08:30-09:30"
-  
+
   # NEW PATTERN: Serve development progression
   serve_development:
     title: "Serve Development Progression"
@@ -456,22 +443,22 @@ tennis_training:
         time: "15 min"
         focus: "Toss consistency, trophy position"
         success_metrics: "8/10 tosses same spot"
-      
+
       - phase: "Phase 2: Power Building"
         time: "20 min"
         focus: "Leg drive, hip rotation, arm speed"
         success_metrics: "Gradual speed increase"
-      
+
       - phase: "Phase 3: Accuracy"
         time: "15 min"
         focus: "Target practice, serve placement"
         success_metrics: "70% serves in target zones"
-      
+
       - phase: "Phase 4: Integration"
         time: "10 min"
         focus: "Serve + first shot patterns"
         success_metrics: "Fluid transition to first ball"
-  
+
   # NEW PATTERN: Volley development progression
   volley_development:
     title: "Volley Development Progression"
@@ -480,17 +467,17 @@ tennis_training:
         time: "8 min"
         technical_focus: "Compact swing, firm wrist"
         physical_focus: "Shoulder stability"
-      
+
       - drill: "Moving Volleys"
         time: "7 min"
         technical_focus: "Footwork, court positioning"
         physical_focus: "Balance and agility"
-      
+
       - drill: "Reaction Volleys"
         time: "5 min"
         technical_focus: "Quick hands, defensive positioning"
         physical_focus: "Reflexes and core stability"
-  
+
   daily_tracking:
     - metric: "Serve accuracy"
       unit: "%"
@@ -506,7 +493,7 @@ tennis_training:
 personal_coaching:
   title: "Personal Coaching Integration"
   time: "09:30-10:30"
-  
+
   # NEW PATTERN: Movement screen corrections
   movement_corrections:
     title: "Technical Issues from Movement Screen"
@@ -515,17 +502,17 @@ personal_coaching:
         tennis_impact: "Serve balance issues"
         corrective_exercise: "Thoracic spine mobility"
         coaching_cue: "Chest up during serve prep"
-      
+
       - movement_limitation: "Single-leg Glute Bridge Weakness"
         tennis_impact: "Serve leg drive"
         corrective_exercise: "Single-leg strengthening"
         coaching_cue: "Drive through back leg on serve"
-      
+
       - movement_limitation: "Shoulder Y-T-W Difficulty"
         tennis_impact: "Serve acceleration"
         corrective_exercise: "Shoulder stability work"
         coaching_cue: "Feel shoulders working together"
-  
+
   # NEW PATTERN: Technique refinement
   technique_refinement:
     title: "Technique Refinement Focus"
@@ -534,12 +521,12 @@ personal_coaching:
         assessment: "Consistency rating ___/10"
         improvement_focus: "Same spot every time"
         practice_method: "20 tosses without hitting"
-      
+
       - element: "Volley Footwork"
         assessment: "Balance rating ___/10"
         improvement_focus: "Quick, light steps"
         practice_method: "Shadow practice at net"
-      
+
       - element: "Court Movement"
         assessment: "Efficiency rating ___/10"
         improvement_focus: "Recovery step timing"
@@ -549,7 +536,7 @@ personal_coaching:
 recovery_protocol:
   title: "Enhanced Recovery Protocols"
   time: "10:30-10:45"
-  
+
   # NEW PATTERN: Upper body mobility sequence
   upper_body_mobility:
     title: "Upper Body Mobility Sequence"
@@ -558,22 +545,22 @@ recovery_protocol:
         duration: "30s each arm"
         instructions: "Gentle pull across chest"
         target: "Posterior deltoid, rhomboids"
-      
+
       - name: "Overhead Tricep Stretch"
         duration: "30s each arm"
         instructions: "Reach down spine, gentle pressure"
         target: "Triceps, latissimus dorsi"
-      
+
       - name: "Doorway Chest Stretch"
         duration: "45s"
         instructions: "Lean forward, feel chest opening"
         target: "Pectorals, anterior deltoids"
-      
+
       - name: "Neck Lateral Flexion"
         duration: "20s each side"
         instructions: "Gentle ear to shoulder"
         target: "Upper trapezius, levator scapulae"
-  
+
   # NEW PATTERN: Breathing protocols
   breathing_protocols:
     title: "Breathing & Nervous System Reset"
@@ -582,12 +569,12 @@ recovery_protocol:
         duration: "3 min"
         method: "4 count in, 4 hold, 4 out, 4 hold"
         purpose: "Parasympathetic activation"
-      
+
       - name: "Progressive Muscle Relaxation"
         duration: "5 min"
         method: "Tense and release each muscle group"
         purpose: "Tension release, recovery"
-      
+
       - name: "Visualization"
         duration: "2 min"
         method: "Perfect serve technique mental rehearsal"
@@ -600,15 +587,15 @@ session_documentation:
     - metric: "Upper Body RPE"
       value: "___/10"
       notes: "Energy level during strength work"
-    
+
     - metric: "Serve Accuracy %"
       value: "___%"
       notes: "Track improvement over time"
-    
+
     - metric: "Technical Focus"
       value: "___"
       notes: "Main coaching point of the day"
-    
+
     - metric: "Recovery Feel"
       value: "___/10"
       notes: "How recovered you feel post-session"
@@ -620,26 +607,26 @@ metrics:
     strength_minutes: 45
     recovery_minutes: 15
     total_minutes: 180
-    
+
   intensity:
     tennis_average: "65-70%"
     strength_average: "65-70%"
     overall_rpe: "6-7/10"
-    
+
   density:
     work_rest_ratio: "3:1"
     high_intensity_minutes: 20
-    
+
 # Professional coaching notes
 coaching_notes:
   - category: "Upper Body Focus"
     note: "HSR protocol emphasizes time under tension for tendon health"
     application: "3-second eccentrics on all pressing movements"
-    
+
   - category: "Serve Development"
     note: "Build consistency before adding power"
     progression: "Week 1: 65% effort, Week 2: 70%, Week 3: 75%"
-    
+
   - category: "Recovery Priority"
     note: "Upper body requires 48-72 hours between similar sessions"
     planning: "Next upper focus: Friday (power emphasis)"
@@ -650,11 +637,11 @@ level_modifications:
     - modification: "Reduce HSR tempo to 2-0-2"
     - modification: "Use bands instead of weights for rows"
     - modification: "30 minutes tennis skill work instead of 60"
-    
+
   intermediate:
     - modification: "Follow program as written"
     - modification: "Optional: Add 1 extra set to main lifts"
-    
+
   advanced:
     - modification: "Add velocity measurements to lifts"
     - modification: "Increase tennis intensity to 70-75%"
@@ -665,16 +652,16 @@ week_integration:
   previous_day_connection: "Builds on Monday's movement assessment findings"
   preparation_for: "Wednesday's explosive upper body work"
   weekly_theme: "Foundation building with proper movement patterns"
-  
+
   key_adaptations:
     - "Upper body strength endurance"
     - "Serve technique refinement"
     - "Shoulder stability and health"
-    
+
   carry_over:
     - to_wednesday: "Prepared shoulders for explosive work"
     - to_tennis: "Improved serve consistency and control"
-    
+
 # Session tracking requirements
 tracking:
   required_metrics:
@@ -682,12 +669,12 @@ tracking:
     - "Serve accuracy percentage"
     - "RPE for each training block"
     - "Recovery metrics (HRV, sleep, soreness)"
-    
+
   optional_tracking:
     - "Video analysis of serve technique"
     - "Velocity measurements on main lifts"
     - "Volley success rate at net"
-    
+
   week_1_specific:
     - "Establish baseline serve speed"
     - "Document any movement restrictions"

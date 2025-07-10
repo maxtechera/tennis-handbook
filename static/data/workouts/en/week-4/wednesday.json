@@ -1,0 +1,1036 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Power Integration",
+    "day_id": "week_4_wednesday",
+    "day_name": "Wednesday",
+    "title": "Total Body Power Integration & Tennis Explosiveness",
+    "subtitle": "Phase 2 Full Body Power with Explosive Tennis Integration",
+    "phase": "Phase 2: Power Integration",
+    "focus_areas": [
+      "Power Integration",
+      "Velocity-Based Training",
+      "Total Body Power Development",
+      "Tennis Explosiveness"
+    ],
+    "training_parameters": {
+      "volume": "90% (phase transition deload)",
+      "intensity": "85-95% (velocity-based focus)",
+      "density": "moderate-high",
+      "duration": "4 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Power Endurance Protocol",
+        "type": "power_endurance",
+        "attribution": {
+          "methodology": "Power endurance training principles",
+          "source": "Elite endurance power research",
+          "verification": "Sports science literature",
+          "context": "Phase 2 power sustainability",
+          "results": "Enhanced power maintenance over time"
+        }
+      },
+      {
+        "name": "Court Movement Integration",
+        "type": "movement",
+        "attribution": {
+          "methodology": "Tennis-specific movement patterns",
+          "source": "Elite tennis movement research",
+          "verification": "Professional movement protocols",
+          "context": "Phase 2 movement integration",
+          "elite_use": "Professional tennis players"
+        }
+      },
+      {
+        "name": "Mid-Week Assessment Protocol",
+        "type": "assessment",
+        "attribution": {
+          "source": "Elite training monitoring",
+          "methodology": "Mid-week progress evaluation",
+          "verification": "Training periodization research",
+          "context": "Phase 2 monitoring"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Tennis court access",
+        "Agility ladder",
+        "Cones for court markers",
+        "Resistance bands",
+        "Medicine balls (3-5kg)",
+        "Plyometric boxes (12-18 inches)",
+        "Heart rate monitor",
+        "Stopwatch"
+      ],
+      "optional": [
+        "Velocity tracking device",
+        "Radar gun",
+        "Force plates",
+        "Video camera",
+        "Foam roller"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [⬅️ Tuesday](tuesday) | [Thursday ➡️](thursday)",
+      "overview_link": "./",
+      "next_link": "thursday",
+      "previous_link": "tuesday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Mid-Week Power Assessment",
+        "preparation": "Power Endurance Preparation",
+        "skill_training": "Court Movement Integration",
+        "conditioning": "Power Endurance Training",
+        "recovery": "Power Endurance Recovery"
+      },
+      "ui_elements": [
+        {
+          "type": "warning",
+          "title": "Mid-Week Assessment Day",
+          "content": "Today includes comprehensive mid-week assessment and power endurance focus",
+          "icon": "📊"
+        },
+        {
+          "type": "info",
+          "title": "Power Endurance Focus",
+          "content": "Emphasis on maintaining power output over extended periods",
+          "icon": "⚡"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "mid_week_power_assessment",
+      "type": "progress",
+      "title": "Mid-Week Power Assessment",
+      "timing": "pre-session",
+      "duration": "30 minutes",
+      "description": "Comprehensive mid-week power and movement assessment",
+      "attribution": {
+        "source": "Elite mid-week assessment protocols",
+        "methodology": "Mid-week progress evaluation",
+        "validation": "Training monitoring research",
+        "elite_use": "Professional athletes"
+      },
+      "components": [
+        {
+          "id": "power_maintenance_test",
+          "name": "Power Maintenance Assessment",
+          "type": "power_endurance",
+          "category": "primary",
+          "measurement": {
+            "protocol": "5 sets of 3 vertical jumps with 30-second rest",
+            "repetitions": "15 total jumps",
+            "equipment": "Jump mat and stopwatch"
+          },
+          "standards": {
+            "elite_benchmark": "<5% power drop from set 1 to set 5",
+            "good_standard": "5-10% power drop",
+            "needs_work": ">10% power drop"
+          },
+          "scoring": {
+            "method": "Power maintenance percentage",
+            "scale": "Percentage of initial power",
+            "recording": "Power output each set"
+          },
+          "context": {
+            "description": "Measures power endurance capability",
+            "application": "Indicates power sustainability"
+          }
+        },
+        {
+          "id": "court_movement_efficiency",
+          "name": "Court Movement Efficiency Test",
+          "type": "movement",
+          "category": "primary",
+          "measurement": {
+            "protocol": "5-corner agility test with power output",
+            "repetitions": "3 attempts",
+            "equipment": "Cones, stopwatch, court"
+          },
+          "standards": {
+            "elite_benchmark": "Consistent times with power",
+            "good_standard": "Minor time variation",
+            "needs_work": "Significant time increase"
+          },
+          "scoring": {
+            "method": "Time consistency",
+            "scale": "Seconds",
+            "recording": "Time for each attempt"
+          },
+          "context": {
+            "description": "Court movement efficiency under fatigue",
+            "application": "Match movement sustainability"
+          }
+        },
+        {
+          "id": "serve_power_consistency",
+          "name": "Serve Power Consistency Test",
+          "type": "skill",
+          "category": "primary",
+          "measurement": {
+            "protocol": "3 sets of 10 serves with 2-minute rest",
+            "repetitions": "30 total serves",
+            "equipment": "Radar gun, court"
+          },
+          "standards": {
+            "elite_benchmark": "<3% velocity drop across sets",
+            "good_standard": "3-5% velocity drop",
+            "needs_work": ">5% velocity drop"
+          },
+          "scoring": {
+            "method": "Velocity consistency",
+            "scale": "Percentage of initial velocity",
+            "recording": "Average velocity per set"
+          },
+          "context": {
+            "description": "Serve power endurance",
+            "application": "Match serve sustainability"
+          }
+        },
+        {
+          "id": "recovery_indicators",
+          "name": "Recovery Indicators Assessment",
+          "type": "physiological",
+          "category": "secondary",
+          "measurement": {
+            "protocol": "HRV, subjective wellness, movement quality",
+            "duration": "10 minutes",
+            "equipment": "HRV device, assessment form"
+          },
+          "standards": {
+            "optimal": "All indicators positive",
+            "acceptable": "Most indicators positive",
+            "needs_attention": "Multiple indicators negative"
+          },
+          "scoring": {
+            "method": "Composite wellness score",
+            "scale": "1-10 scale",
+            "recording": "Individual and composite scores"
+          },
+          "context": {
+            "description": "Mid-week recovery status",
+            "application": "Training load adjustment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "movement_quality_check",
+      "type": "daily",
+      "title": "Movement Quality Assessment",
+      "timing": "pre-session",
+      "duration": "15 minutes",
+      "description": "Daily movement quality evaluation",
+      "components": [
+        {
+          "id": "overhead_squat_progression",
+          "name": "Overhead Squat Progression Check",
+          "type": "movement",
+          "category": "primary",
+          "measurement": {
+            "protocol": "5 overhead squats with video analysis",
+            "repetitions": "5 reps",
+            "equipment": "Dowel rod, video camera"
+          },
+          "standards": {
+            "excellent": "Perfect alignment, no compensations",
+            "good": "Minor compensations",
+            "needs_work": "Multiple compensations"
+          },
+          "context": {
+            "description": "Movement quality progression from Week 1",
+            "application": "Validates foundation work"
+          }
+        },
+        {
+          "id": "single_leg_stability",
+          "name": "Single-Leg Stability Check",
+          "type": "stability",
+          "category": "primary",
+          "measurement": {
+            "protocol": "30-second single-leg balance each leg",
+            "duration": "30 seconds per leg",
+            "equipment": "None"
+          },
+          "standards": {
+            "excellent": "Stable with minimal sway",
+            "good": "Stable with some sway",
+            "needs_work": "Unstable or excessive sway"
+          },
+          "context": {
+            "description": "Stability progression tracking",
+            "application": "Court movement foundation"
+          }
+        }
+      ]
+    }
+  ],
+  "schedule": {
+    "type": "time-based",
+    "total_duration": "4 hours 45 minutes",
+    "blocks": [
+      {
+        "id": "morning_block",
+        "time": "6:00-7:30",
+        "title": "Power Endurance Morning Protocol",
+        "type": "preparation",
+        "activities": [
+          {
+            "name": "Power Endurance Morning Protocol",
+            "duration": "90 minutes",
+            "type": "preparation",
+            "description": "Preparation for power endurance training"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "morning",
+          "phase_title": "Power Endurance Morning",
+          "phase_icon": "🌅",
+          "location": "home/hotel"
+        }
+      },
+      {
+        "id": "tennis_block",
+        "time": "7:30-9:00",
+        "title": "Court Movement Integration",
+        "type": "main",
+        "activities": [
+          {
+            "name": "Court Movement Integration",
+            "duration": "90 minutes",
+            "type": "main",
+            "description": "Integrated court movement training"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "tennis",
+          "phase_title": "Court Movement",
+          "phase_icon": "🎾",
+          "location": "tennis_court"
+        }
+      },
+      {
+        "id": "movement_block",
+        "time": "9:05-9:25",
+        "title": "Power Endurance Movement Preparation",
+        "type": "preparation",
+        "activities": [
+          {
+            "name": "Power Endurance Movement Preparation",
+            "duration": "20 minutes",
+            "type": "warm-up",
+            "description": "Movement prep for power endurance"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "movement",
+          "phase_title": "Power Endurance Movement",
+          "phase_icon": "🏃",
+          "location": "gym/court"
+        }
+      },
+      {
+        "id": "conditioning_block",
+        "time": "9:25-10:45",
+        "title": "Power Endurance Training",
+        "type": "main",
+        "activities": [
+          {
+            "name": "Power Endurance Training Block",
+            "duration": "80 minutes",
+            "type": "main",
+            "description": "Power endurance development"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "conditioning",
+          "phase_title": "Power Endurance",
+          "phase_icon": "💪",
+          "location": "gym/court"
+        }
+      },
+      {
+        "id": "recovery_block",
+        "time": "10:50-11:05",
+        "title": "Power Endurance Recovery",
+        "type": "recovery",
+        "activities": [
+          {
+            "name": "Power Endurance Recovery Protocol",
+            "duration": "15 minutes",
+            "type": "recovery",
+            "description": "Recovery from power endurance training"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "recovery",
+          "phase_title": "Power Endurance Recovery",
+          "phase_icon": "🧊",
+          "location": "recovery_area"
+        }
+      }
+    ]
+  },
+  "preparation_phases": [
+    {
+      "id": "power_endurance_morning_protocol",
+      "type": "morning",
+      "title": "Power Endurance Morning Protocol",
+      "duration": "90 minutes",
+      "timing": "6:00-7:30",
+      "attribution": {
+        "source": "Elite power endurance preparation",
+        "elite_use": "Professional endurance power athletes",
+        "verification": "Power endurance training literature"
+      },
+      "activities": [
+        {
+          "id": "extended_activation",
+          "name": "Extended Activation Protocol",
+          "type": "activation",
+          "duration": "30 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Extended activation for power endurance",
+            "setup": "Full movement space",
+            "execution": "Progressive activation sequence",
+            "focus": "Sustained activation capability"
+          },
+          "instructions": [
+            {
+              "phase": "GENERAL_ACTIVATION",
+              "text": "10 minutes general activation - light movement, joint mobility"
+            },
+            {
+              "phase": "SPECIFIC_ACTIVATION",
+              "text": "10 minutes specific activation - power movement patterns"
+            },
+            {
+              "phase": "ENDURANCE_PREPARATION",
+              "text": "10 minutes endurance preparation - sustained moderate intensity"
+            }
+          ],
+          "cues": [
+            "Sustained activation",
+            "Build endurance capacity",
+            "Prepare for extended training",
+            "Quality over intensity"
+          ]
+        },
+        {
+          "id": "power_endurance_assessment",
+          "name": "Power Endurance Assessment",
+          "type": "assessment",
+          "duration": "30 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Power endurance assessment",
+            "setup": "Assessment stations",
+            "execution": "Systematic evaluation",
+            "focus": "Power sustainability"
+          },
+          "instructions": [
+            {
+              "phase": "POWER_MAINTENANCE",
+              "text": "15 minutes power maintenance testing"
+            },
+            {
+              "phase": "MOVEMENT_EFFICIENCY",
+              "text": "10 minutes movement efficiency testing"
+            },
+            {
+              "phase": "SERVE_CONSISTENCY",
+              "text": "5 minutes serve consistency check"
+            }
+          ],
+          "cues": [
+            "Sustained power output",
+            "Maintain quality",
+            "Assess endurance capacity",
+            "Monitor power drop"
+          ]
+        },
+        {
+          "id": "endurance_preparation",
+          "name": "Endurance Preparation Protocol",
+          "type": "preparation",
+          "duration": "30 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Endurance-specific preparation",
+            "setup": "Training equipment",
+            "execution": "Progressive endurance building",
+            "focus": "Endurance training readiness"
+          },
+          "instructions": [
+            {
+              "phase": "AEROBIC_PREPARATION",
+              "text": "10 minutes aerobic preparation - build aerobic base"
+            },
+            {
+              "phase": "POWER_ENDURANCE_PREP",
+              "text": "10 minutes power endurance preparation - sustained power"
+            },
+            {
+              "phase": "INTEGRATION",
+              "text": "10 minutes integration - prepare for main training"
+            }
+          ],
+          "cues": [
+            "Build aerobic base",
+            "Prepare for sustained power",
+            "Quality over maximum effort",
+            "Ready for main training"
+          ]
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Court Movement Integration",
+    "section_description": "Integrated court movement training with power endurance focus",
+    "sessions": [
+      {
+        "id": "court_movement_session",
+        "type": "movement_integrated",
+        "title": "Court Movement Integration Session",
+        "duration": "90 minutes",
+        "intensity": "75-85%",
+        "attribution": {
+          "methodology": "Court movement integration training",
+          "source": "Elite tennis movement protocols",
+          "elite_use": "Professional tennis players",
+          "verification": "Tennis movement research"
+        },
+        "structure": {
+          "warm_up": "15 minutes",
+          "main_work": "65 minutes",
+          "cool_down": "10 minutes"
+        },
+        "components": [
+          {
+            "id": "agility_progression",
+            "name": "Agility Progression Training",
+            "type": "movement_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "25 minutes",
+              "rest": "45 seconds between sets"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Agility ladder, cones, stopwatch",
+              "players": "Individual or small group"
+            },
+            "implementation": {
+              "method": "Progressive agility development",
+              "focus": "Speed, coordination, and endurance",
+              "key_points": "Quality footwork, sustained speed"
+            },
+            "instructions": [
+              {
+                "phase": "LADDER_WORK",
+                "text": "10 minutes agility ladder - various patterns, increasing complexity"
+              },
+              {
+                "phase": "CONE_DRILLS",
+                "text": "10 minutes cone drills - 5-corner, T-drill, hexagon patterns"
+              },
+              {
+                "phase": "INTEGRATION",
+                "text": "5 minutes integration - combine patterns with tennis movements"
+              }
+            ],
+            "cues": [
+              "Quick feet",
+              "Maintain quality",
+              "Sustain speed",
+              "Tennis-specific patterns"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Movement speed",
+                "target": "Maintain 90% of initial speed",
+                "tracking": "Time each set"
+              },
+              {
+                "metric": "Movement quality",
+                "target": "Consistent technique",
+                "tracking": "Technique assessment"
+              }
+            ]
+          },
+          {
+            "id": "court_coverage_training",
+            "name": "Court Coverage Training",
+            "type": "movement_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "20 minutes",
+              "rest": "60 seconds between sets"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Balls, cones, targets",
+              "players": "Individual with coach/partner"
+            },
+            "implementation": {
+              "method": "Court coverage development",
+              "focus": "Efficient movement patterns",
+              "key_points": "Energy conservation, speed maintenance"
+            },
+            "instructions": [
+              {
+                "phase": "BASELINE_COVERAGE",
+                "text": "8 minutes baseline coverage - side to side movements"
+              },
+              {
+                "phase": "APPROACH_RECOVERY",
+                "text": "8 minutes approach and recovery - net to baseline"
+              },
+              {
+                "phase": "RANDOM_MOVEMENT",
+                "text": "4 minutes random movement - unpredictable patterns"
+              }
+            ],
+            "cues": [
+              "Efficient movement",
+              "Conserve energy",
+              "Quick recovery",
+              "Maintain intensity"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Movement efficiency",
+                "target": "Consistent movement times",
+                "tracking": "Time each movement"
+              },
+              {
+                "metric": "Recovery speed",
+                "target": "Quick return to ready position",
+                "tracking": "Recovery time assessment"
+              }
+            ]
+          },
+          {
+            "id": "power_endurance_rallying",
+            "name": "Power Endurance Rallying",
+            "type": "skill_endurance",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "20 minutes",
+              "rest": "2 minutes between sets"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Balls, court markers",
+              "players": "Practice partner required"
+            },
+            "implementation": {
+              "method": "Sustained power rallying",
+              "focus": "Power maintenance over time",
+              "key_points": "Consistent power, accuracy maintenance"
+            },
+            "instructions": [
+              {
+                "phase": "POWER_RALLIES",
+                "text": "4 sets of 3-minute power rallies - maintain 80% power"
+              },
+              {
+                "phase": "RECOVERY_RALLIES",
+                "text": "1 minute recovery rallies between power sets"
+              },
+              {
+                "phase": "ASSESSMENT",
+                "text": "Monitor power drop and accuracy maintenance"
+              }
+            ],
+            "cues": [
+              "Maintain power",
+              "Consistent accuracy",
+              "Sustain intensity",
+              "Quality over speed"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Power maintenance",
+                "target": "<10% power drop",
+                "tracking": "Power assessment each set"
+              },
+              {
+                "metric": "Accuracy maintenance",
+                "target": "80% accuracy throughout",
+                "tracking": "Shot accuracy count"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "power_endurance_training",
+      "type": "power_endurance",
+      "title": "Power Endurance Training Block",
+      "description": "Power endurance development with tennis integration",
+      "duration": "80 minutes",
+      "attribution": {
+        "methodology": "Power endurance training protocols",
+        "source": "Elite power endurance research",
+        "elite_use": "Professional endurance power athletes",
+        "verification": "Power endurance training literature"
+      },
+      "exercises": [
+        {
+          "id": "power_endurance_circuit",
+          "name": "Power Endurance Circuit",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "4",
+            "reps": "Circuit format",
+            "intensity": "75-85%",
+            "rest": "2 minutes between circuits",
+            "work_time": "45 seconds each station"
+          },
+          "execution": {
+            "setup": [
+              "6 stations prepared",
+              "Equipment ready",
+              "Timer set"
+            ],
+            "technique": [
+              "Station 1: Jump squats",
+              "Station 2: Medicine ball slams",
+              "Station 3: Lateral bounds",
+              "Station 4: Push-up variations",
+              "Station 5: Mountain climbers",
+              "Station 6: Plank variations"
+            ],
+            "safety": [
+              "Maintain form throughout",
+              "Monitor fatigue",
+              "Adjust intensity as needed"
+            ]
+          },
+          "cues": [
+            "Sustained power",
+            "Maintain quality",
+            "Fight fatigue",
+            "Consistent effort"
+          ],
+          "tracking": {
+            "type": "circuit",
+            "format": "rounds_time",
+            "circuits": [
+              {
+                "circuit": 1,
+                "completion_time": "",
+                "quality_rating": "",
+                "notes": "___"
+              },
+              {
+                "circuit": 2,
+                "completion_time": "",
+                "quality_rating": "",
+                "notes": "___"
+              },
+              {
+                "circuit": 3,
+                "completion_time": "",
+                "quality_rating": "",
+                "notes": "___"
+              },
+              {
+                "circuit": 4,
+                "completion_time": "",
+                "quality_rating": "",
+                "notes": "___"
+              }
+            ]
+          },
+          "benefits": {
+            "primary": "Power endurance development",
+            "secondary": "Metabolic conditioning",
+            "sport_specific": "Tennis match endurance"
+          }
+        },
+        {
+          "id": "plyometric_endurance",
+          "name": "Plyometric Endurance Training",
+          "category": "primary",
+          "order": 2,
+          "loading": {
+            "sets": "5",
+            "reps": "8-10",
+            "intensity": "Moderate to high",
+            "rest": "90 seconds",
+            "exercise_rotation": "3 exercises"
+          },
+          "execution": {
+            "setup": [
+              "Plyometric boxes",
+              "Open space",
+              "Soft landing surface"
+            ],
+            "technique": [
+              "Set 1-2: Box jumps",
+              "Set 3-4: Lateral bounds",
+              "Set 5: Depth jumps",
+              "Focus on landing quality"
+            ],
+            "safety": [
+              "Soft landings",
+              "Full recovery",
+              "Stop if form degrades"
+            ]
+          },
+          "cues": [
+            "Explosive takeoff",
+            "Soft landings",
+            "Maintain power",
+            "Quality over quantity"
+          ],
+          "tracking": {
+            "type": "plyometric",
+            "format": "sets_reps"
+          },
+          "benefits": {
+            "primary": "Reactive strength endurance",
+            "secondary": "Power maintenance",
+            "sport_specific": "Court movement power"
+          }
+        },
+        {
+          "id": "core_power_endurance",
+          "name": "Core Power Endurance",
+          "category": "auxiliary",
+          "order": 3,
+          "loading": {
+            "sets": "3",
+            "reps": "Time-based",
+            "intensity": "Moderate",
+            "rest": "60 seconds",
+            "work_time": "30-45 seconds"
+          },
+          "execution": {
+            "setup": [
+              "Medicine balls",
+              "Stability surface",
+              "Timer"
+            ],
+            "technique": [
+              "Russian twists: 45 seconds",
+              "Medicine ball slams: 30 seconds",
+              "Plank variations: 45 seconds",
+              "Anti-rotation holds: 30 seconds"
+            ],
+            "safety": [
+              "Maintain form",
+              "Control movements",
+              "Monitor fatigue"
+            ]
+          },
+          "cues": [
+            "Core stability",
+            "Maintain power",
+            "Quality movement",
+            "Fight fatigue"
+          ],
+          "tracking": {
+            "type": "time_based",
+            "format": "sets_time"
+          },
+          "benefits": {
+            "primary": "Core power endurance",
+            "secondary": "Stability maintenance",
+            "sport_specific": "Tennis core stability"
+          }
+        }
+      ]
+    }
+  ],
+  "recovery_protocols": [
+    {
+      "id": "power_endurance_recovery",
+      "type": "immediate",
+      "title": "Power Endurance Recovery Protocol",
+      "duration": "15 minutes",
+      "timing": "Post-training",
+      "attribution": {
+        "methodology": "Power endurance recovery",
+        "source": "Elite endurance recovery protocols",
+        "elite_use": "Professional endurance athletes",
+        "verification": "Recovery research"
+      },
+      "components": [
+        {
+          "id": "active_recovery",
+          "name": "Active Recovery Protocol",
+          "type": "active",
+          "duration": "8 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Light movement for recovery",
+            "intensity": "Low",
+            "equipment": "None"
+          },
+          "instructions": [
+            "3 minutes light walking",
+            "2 minutes gentle stretching",
+            "3 minutes breathing exercises"
+          ],
+          "cues": [
+            "Keep moving lightly",
+            "Promote circulation",
+            "Gentle movements",
+            "Prepare for next session"
+          ]
+        },
+        {
+          "id": "power_endurance_assessment",
+          "name": "Power Endurance Assessment",
+          "type": "assessment",
+          "duration": "7 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Training assessment",
+            "intensity": "Evaluation",
+            "equipment": "Training log"
+          },
+          "instructions": [
+            "Review power endurance data",
+            "Document fatigue levels",
+            "Note power maintenance",
+            "Plan next session adjustments"
+          ],
+          "cues": [
+            "Assess power endurance",
+            "Document improvements",
+            "Plan progression",
+            "Monitor fatigue"
+          ]
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 90,
+      "conditioning_minutes": 80,
+      "warmup_minutes": 20,
+      "recovery_minutes": 15,
+      "morning_protocol_minutes": 90,
+      "total_minutes": 295
+    },
+    "intensity": {
+      "tennis_average": "75-85%",
+      "conditioning_average": "Power endurance",
+      "overall_rpe": 8
+    },
+    "load_calculations": {
+      "total_tonnage": "Power endurance focus",
+      "volume_load": "Sustained power training"
+    },
+    "distances": {
+      "estimated_court_coverage": "5.5 km",
+      "total_movement": "Extended movement"
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Power endurance development",
+      "Movement efficiency",
+      "Sustained power output"
+    ],
+    "load_management": [
+      "High volume power endurance",
+      "Monitor fatigue accumulation",
+      "Maintain power quality"
+    ],
+    "progression_markers": [
+      "Power maintenance over time",
+      "Movement efficiency improvements",
+      "Reduced fatigue indicators"
+    ],
+    "mid_week_assessment": [
+      "Comprehensive progress evaluation",
+      "Adaptation assessment",
+      "Training load adjustment"
+    ]
+  },
+  "level_modifications": {
+    "beginner": {
+      "volume": "Reduce circuit time by 15 seconds",
+      "intensity": "Lower intensity targets",
+      "tennis": "Reduce to 75 minutes",
+      "endurance": "Shorter endurance sets"
+    },
+    "intermediate": {
+      "volume": "As prescribed",
+      "intensity": "As prescribed",
+      "tennis": "As prescribed",
+      "endurance": "Standard endurance targets"
+    },
+    "advanced": {
+      "volume": "Add 1 additional circuit",
+      "intensity": "Higher intensity targets",
+      "tennis": "Increase to 105 minutes",
+      "endurance": "Extended endurance sets"
+    }
+  },
+  "week_integration": {
+    "weekly_theme": "Power Integration & Assessment",
+    "daily_priority": "Power endurance development",
+    "phase_focus": "Sustained power capability",
+    "connects_to": {
+      "monday": "Power foundation",
+      "tuesday": "Upper body power",
+      "thursday": "Recovery and regeneration",
+      "friday": "Integrated application"
+    },
+    "mid_week_status": {
+      "assessment": "Comprehensive evaluation",
+      "adjustments": "Training load optimization",
+      "progression": "Power endurance development"
+    }
+  },
+  "tracking": {
+    "required": [
+      "Power endurance metrics",
+      "Movement efficiency data",
+      "Fatigue indicators",
+      "Recovery metrics",
+      "Assessment results",
+      "Training load data"
+    ],
+    "optional": [
+      "Heart rate variability",
+      "Power output measurements",
+      "Video analysis",
+      "Detailed movement analysis",
+      "Biochemical markers"
+    ],
+    "mid_week_specific": [
+      "Progress evaluation",
+      "Adaptation assessment",
+      "Training load adjustment",
+      "Recovery status"
+    ]
+  },
+  "navigation": {
+    "week_overview": "./",
+    "next_day": "thursday",
+    "previous_day": "tuesday",
+    "phase_status": "Phase 2 - Week 1"
+  }
+}

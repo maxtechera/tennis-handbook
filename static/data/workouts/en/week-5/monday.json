@@ -1,0 +1,916 @@
+{
+  "metadata": {
+    "period": 5,
+    "period_name": "Power Integration Phase",
+    "day_id": "week_5_monday",
+    "day_name": "Monday",
+    "title": "Advanced Power Integration & Complex Training",
+    "subtitle": "Phase 2 Intensification - Complex Training Methods",
+    "phase": "Phase 2: Power Integration (Week 2)",
+    "focus_areas": [
+      "Complex Training Methods",
+      "Advanced Power Integration",
+      "Tennis-Specific Power Transfer"
+    ],
+    "training_parameters": {
+      "volume": "95% (progressive loading)",
+      "intensity": "90-100% (complex training)",
+      "density": "high",
+      "duration": "4 hours 45 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Complex Training Protocol",
+        "type": "power",
+        "attribution": {
+          "methodology": "Complex training for power development",
+          "source": "Elite power training research",
+          "verification": "Sports science literature",
+          "context": "Phase 2 power intensification",
+          "results": "Enhanced power output and neural adaptation"
+        }
+      },
+      {
+        "name": "Nadal Power Integration Method",
+        "type": "tennis_power",
+        "attribution": {
+          "athlete": "Rafael Nadal",
+          "coach": "Carlos Moyá",
+          "academy": "Rafa Nadal Academy",
+          "source": "Advanced power development protocols",
+          "verification": "Academy training documentation",
+          "context": "Complex training for tennis power",
+          "results": "Improved court movement and shot power"
+        }
+      },
+      {
+        "name": "Spanish Power Development System",
+        "type": "integrated",
+        "attribution": {
+          "source": "Spanish Tennis Federation",
+          "methodology": "Complex training methodology",
+          "verification": "Federation training protocols",
+          "context": "Phase 2 power enhancement",
+          "elite_use": "Used by Spanish Davis Cup team"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Barbell and weights",
+        "Velocity tracking device",
+        "Tennis court access",
+        "Medicine balls (3-8kg)",
+        "Plyo boxes (various heights)",
+        "Dumbbells (5-50 lbs)",
+        "Resistance bands",
+        "Heart rate monitor"
+      ],
+      "optional": [
+        "Force plates",
+        "Radar gun",
+        "Agility ladder",
+        "Weighted vests",
+        "Pneumatic resistance"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Tuesday ➡️](tuesday)",
+      "overview_link": "./",
+      "next_link": "tuesday",
+      "previous_link": null
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Complex Training Assessment",
+        "preparation": "Advanced Power Preparation",
+        "skill_training": "Complex Tennis Power Training",
+        "conditioning": "Complex Training Methods",
+        "recovery": "Advanced Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "success",
+          "title": "Phase 2: Complex Training Introduction",
+          "content": "Advanced power development with complex training methods",
+          "icon": "⚡"
+        },
+        {
+          "type": "warning",
+          "title": "Complex Training Requirements",
+          "content": "High neural demands - ensure adequate recovery",
+          "icon": "🧠"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "complex_power_assessment",
+      "type": "baseline",
+      "title": "Complex Training Power Assessment",
+      "timing": "pre-session",
+      "duration": "40 minutes",
+      "description": "Advanced power assessment for complex training",
+      "attribution": {
+        "source": "Complex training assessment protocols",
+        "methodology": "Advanced power evaluation",
+        "validation": "Elite power training research",
+        "elite_use": "Professional power athletes"
+      },
+      "components": [
+        {
+          "id": "power_velocity_profile",
+          "name": "Advanced Power-Velocity Profile",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Comprehensive velocity profile at 40%, 60%, 80%, 100% 1RM",
+            "repetitions": "3 reps at each load",
+            "equipment": "Velocity tracking device"
+          },
+          "standards": {
+            "elite_benchmark": "Optimal power at 30-50% 1RM",
+            "velocity_maintenance": "Velocity drop <15% at 80% 1RM",
+            "power_output": "Peak power >40 W/kg"
+          },
+          "scoring": {
+            "method": "Power-velocity curve analysis",
+            "scale": "Watts per kilogram",
+            "recording": "Complete power profile"
+          },
+          "context": {
+            "description": "Establishes optimal loading for complex training",
+            "application": "Determines complex training parameters"
+          }
+        },
+        {
+          "id": "reactive_strength_progression",
+          "name": "Reactive Strength Progression Test",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Progressive drop jump heights: 20cm, 30cm, 40cm",
+            "repetitions": "5 attempts at each height",
+            "equipment": "Multiple boxes and contact mat"
+          },
+          "standards": {
+            "elite_benchmark": "RSI improvement with height increase",
+            "optimal_height": "Height with maximum RSI",
+            "power_maintenance": "RSI >85% at optimal height"
+          },
+          "scoring": {
+            "method": "RSI at each height",
+            "scale": "RSI units",
+            "recording": "Optimal drop height determination"
+          },
+          "context": {
+            "description": "Determines optimal plyometric training height",
+            "application": "Prescribes complex training parameters"
+          }
+        },
+        {
+          "id": "complex_training_readiness",
+          "name": "Complex Training Readiness Assessment",
+          "type": "neural",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Squat jump → pause → squat jump sequence",
+            "repetitions": "5 sequences",
+            "equipment": "Jump mat"
+          },
+          "standards": {
+            "elite_benchmark": "Second jump >95% of first jump",
+            "good_standard": "Second jump 90-95% of first jump",
+            "needs_modification": "Second jump <90% of first jump"
+          },
+          "scoring": {
+            "method": "Jump height maintenance",
+            "scale": "Percentage maintenance",
+            "recording": "Neural readiness for complex training"
+          },
+          "context": {
+            "description": "Assesses neural readiness for complex methods",
+            "application": "Determines training modifications needed"
+          }
+        }
+      ]
+    }
+  ],
+  "schedule": {
+    "type": "time-based",
+    "total_duration": "4 hours 45 minutes",
+    "blocks": [
+      {
+        "id": "morning_block",
+        "time": "6:00-7:45",
+        "title": "Complex Training Morning Protocol",
+        "type": "preparation",
+        "activities": [
+          {
+            "name": "Complex Training Preparation",
+            "duration": "105 minutes",
+            "type": "preparation",
+            "description": "Advanced preparation for complex training"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "morning",
+          "phase_title": "Complex Prep",
+          "phase_icon": "🌅",
+          "location": "home/hotel"
+        }
+      },
+      {
+        "id": "tennis_block",
+        "time": "7:45-9:15",
+        "title": "Complex Tennis Power Training",
+        "type": "main",
+        "activities": [
+          {
+            "name": "Complex Tennis Power Development",
+            "duration": "90 minutes",
+            "type": "main",
+            "description": "Complex training for tennis power"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "tennis",
+          "phase_title": "Complex Tennis",
+          "phase_icon": "🎾",
+          "location": "tennis_court"
+        }
+      },
+      {
+        "id": "movement_block",
+        "time": "9:20-9:45",
+        "title": "Complex Movement Preparation",
+        "type": "preparation",
+        "activities": [
+          {
+            "name": "Complex Movement Preparation",
+            "duration": "25 minutes",
+            "type": "warm-up",
+            "description": "Advanced movement preparation"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "movement",
+          "phase_title": "Complex Movement",
+          "phase_icon": "🏃",
+          "location": "gym/court"
+        }
+      },
+      {
+        "id": "strength_block",
+        "time": "9:45-11:20",
+        "title": "Complex Training Methods",
+        "type": "main",
+        "activities": [
+          {
+            "name": "Complex Training Block",
+            "duration": "95 minutes",
+            "type": "main",
+            "description": "Advanced complex training methods"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "strength",
+          "phase_title": "Complex Training",
+          "phase_icon": "💪",
+          "location": "gym"
+        }
+      },
+      {
+        "id": "recovery_block",
+        "time": "11:25-11:50",
+        "title": "Advanced Recovery Protocol",
+        "type": "recovery",
+        "activities": [
+          {
+            "name": "Advanced Recovery Protocol",
+            "duration": "25 minutes",
+            "type": "recovery",
+            "description": "Complex training recovery"
+          }
+        ],
+        "carousel_data": {
+          "phase_id": "recovery",
+          "phase_title": "Advanced Recovery",
+          "phase_icon": "🧊",
+          "location": "recovery_area"
+        }
+      }
+    ]
+  },
+  "preparation_phases": [
+    {
+      "id": "complex_morning_protocol",
+      "type": "morning",
+      "title": "Complex Training Morning Protocol",
+      "duration": "105 minutes",
+      "timing": "6:00-7:45",
+      "attribution": {
+        "source": "Elite complex training protocols",
+        "elite_use": "Professional power athletes",
+        "verification": "Complex training research"
+      },
+      "activities": [
+        {
+          "id": "neural_priming",
+          "name": "Neural Priming Protocol",
+          "type": "activation",
+          "duration": "30 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Advanced neural activation",
+            "setup": "Movement space with equipment",
+            "execution": "Progressive neural stimulation",
+            "focus": "CNS preparation for complex training"
+          },
+          "instructions": [
+            {
+              "phase": "ACTIVATION",
+              "text": "10 minutes progressive activation - light to moderate intensity"
+            },
+            {
+              "phase": "POTENTIATION",
+              "text": "10 minutes potentiation activities - explosive movements"
+            },
+            {
+              "phase": "PREPARATION",
+              "text": "10 minutes complex training preparation - simulate training patterns"
+            }
+          ],
+          "cues": [
+            "Progressive neural activation",
+            "Prepare for complex demands",
+            "Quality preparation",
+            "Neural system optimization"
+          ]
+        },
+        {
+          "id": "power_assessment",
+          "name": "Complex Power Assessment",
+          "type": "assessment",
+          "duration": "40 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Comprehensive power assessment",
+            "setup": "Assessment stations",
+            "execution": "Systematic power evaluation",
+            "focus": "Complex training readiness"
+          },
+          "instructions": [
+            {
+              "phase": "POWER_VELOCITY",
+              "text": "20 minutes power-velocity profiling"
+            },
+            {
+              "phase": "REACTIVE_STRENGTH",
+              "text": "15 minutes reactive strength progression"
+            },
+            {
+              "phase": "COMPLEX_READINESS",
+              "text": "5 minutes complex training readiness"
+            }
+          ],
+          "cues": [
+            "Comprehensive power assessment",
+            "Establish complex training parameters",
+            "Quality over maximum effort",
+            "Data-driven training"
+          ]
+        },
+        {
+          "id": "advanced_preparation",
+          "name": "Advanced Movement Preparation",
+          "type": "preparation",
+          "duration": "35 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Complex training-specific preparation",
+            "setup": "Full movement area",
+            "execution": "Advanced preparation sequence",
+            "focus": "Complex training readiness"
+          },
+          "instructions": [
+            {
+              "phase": "MOBILITY",
+              "text": "10 minutes advanced mobility - power positions"
+            },
+            {
+              "phase": "ACTIVATION",
+              "text": "10 minutes activation - complex patterns"
+            },
+            {
+              "phase": "POTENTIATION",
+              "text": "15 minutes potentiation - prepare for complex training"
+            }
+          ],
+          "cues": [
+            "Advanced movement preparation",
+            "Prepare for complex demands",
+            "Quality movement patterns",
+            "Readiness for high intensity"
+          ]
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Complex Tennis Power Training",
+    "section_description": "Advanced complex training methods for tennis power",
+    "sessions": [
+      {
+        "id": "complex_tennis_session",
+        "type": "complex_integrated",
+        "title": "Complex Tennis Power Development",
+        "duration": "90 minutes",
+        "intensity": "90-100%",
+        "attribution": {
+          "methodology": "Complex training for tennis power",
+          "source": "Elite tennis power development",
+          "elite_use": "Professional tennis players",
+          "verification": "Tennis-specific complex training"
+        },
+        "structure": {
+          "warm_up": "15 minutes",
+          "main_work": "65 minutes",
+          "cool_down": "10 minutes"
+        },
+        "components": [
+          {
+            "id": "complex_serve_power",
+            "name": "Complex Serve Power Development",
+            "type": "complex_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "30 minutes",
+              "rest": "60 seconds between sets"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Medicine balls, weights, radar gun",
+              "players": "Individual training"
+            },
+            "implementation": {
+              "method": "Complex training for serve power",
+              "focus": "Maximum power development",
+              "key_points": "Strength-power complex, neural activation"
+            },
+            "instructions": [
+              {
+                "phase": "COMPLEX_SET_1",
+                "text": "5 minutes weighted overhead press → explosive serves"
+              },
+              {
+                "phase": "COMPLEX_SET_2",
+                "text": "5 minutes medicine ball slams → power serves"
+              },
+              {
+                "phase": "COMPLEX_SET_3",
+                "text": "5 minutes isometric holds → maximum velocity serves"
+              },
+              {
+                "phase": "COMPLEX_SET_4",
+                "text": "5 minutes plyometric jumps → explosive serves"
+              },
+              {
+                "phase": "INTEGRATION",
+                "text": "10 minutes integrated serve power training"
+              }
+            ],
+            "cues": [
+              "Strength followed by power",
+              "Neural activation transfer",
+              "Maximum velocity focus",
+              "Complex training benefits"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Serve velocity improvement",
+                "target": "5-8% increase from baseline",
+                "tracking": "Radar gun measurements"
+              },
+              {
+                "metric": "Power maintenance",
+                "target": "Velocity maintained across sets",
+                "tracking": "Velocity consistency"
+              }
+            ]
+          },
+          {
+            "id": "complex_groundstroke_power",
+            "name": "Complex Groundstroke Power",
+            "type": "complex_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "35 minutes",
+              "rest": "Between complex sets"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Medicine balls, resistance bands",
+              "players": "Practice partner"
+            },
+            "implementation": {
+              "method": "Complex training for groundstroke power",
+              "focus": "Rotational power development",
+              "key_points": "Hip rotation, sequential power"
+            },
+            "instructions": [
+              {
+                "phase": "COMPLEX_FOREHANDS",
+                "text": "15 minutes complex forehand training - resistance → explosive shots"
+              },
+              {
+                "phase": "COMPLEX_BACKHANDS",
+                "text": "15 minutes complex backhand training - weighted → power shots"
+              },
+              {
+                "phase": "INTEGRATION",
+                "text": "5 minutes integrated groundstroke power"
+              }
+            ],
+            "cues": [
+              "Weighted resistance first",
+              "Explosive power second",
+              "Feel the power transfer",
+              "Maximum velocity focus"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Shot velocity",
+                "target": "Sustained high velocity",
+                "tracking": "Velocity measurements"
+              },
+              {
+                "metric": "Power endurance",
+                "target": "Power maintained across sets",
+                "tracking": "Velocity consistency"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "complex_training_block",
+      "type": "complex",
+      "title": "Complex Training Methods",
+      "description": "Advanced complex training for power development",
+      "duration": "95 minutes",
+      "attribution": {
+        "methodology": "Complex training protocols",
+        "source": "Elite power training research",
+        "elite_use": "Professional power athletes",
+        "verification": "Complex training literature"
+      },
+      "exercises": [
+        {
+          "id": "complex_squat_jump",
+          "name": "Complex Squat to Jump Training",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "5",
+            "reps": "Complex format",
+            "intensity": "85% 1RM squat + explosive jumps",
+            "rest": "3 minutes between complexes"
+          },
+          "execution": {
+            "setup": [
+              "Barbell loaded to 85% 1RM",
+              "Open space for jumps",
+              "Velocity tracking device"
+            ],
+            "technique": [
+              "3 back squats @ 85% 1RM",
+              "10 seconds rest",
+              "5 vertical jumps maximum effort",
+              "Focus on neural transfer"
+            ],
+            "safety": [
+              "Ensure proper squat form",
+              "Adequate rest between complexes",
+              "Monitor jump quality"
+            ]
+          },
+          "cues": [
+            "Heavy strength then explosive power",
+            "Feel the neural activation",
+            "Maximum jump height",
+            "Quality over quantity"
+          ],
+          "progressions": {
+            "regression": "Reduce squat load or jump number",
+            "standard": "5 complexes as prescribed",
+            "progression": "Add depth jumps after vertical jumps"
+          },
+          "tracking": {
+            "type": "complex",
+            "format": "strength_power",
+            "sets": [
+              {
+                "set": 1,
+                "target": "3 squats @ 85% → 5 jumps",
+                "squat_load": "",
+                "jump_height": "",
+                "neural_transfer": "",
+                "notes": "___"
+              },
+              {
+                "set": 2,
+                "target": "3 squats @ 85% → 5 jumps",
+                "squat_load": "",
+                "jump_height": "",
+                "neural_transfer": "",
+                "notes": "___"
+              },
+              {
+                "set": 3,
+                "target": "3 squats @ 85% → 5 jumps",
+                "squat_load": "",
+                "jump_height": "",
+                "neural_transfer": "",
+                "notes": "___"
+              },
+              {
+                "set": 4,
+                "target": "3 squats @ 85% → 5 jumps",
+                "squat_load": "",
+                "jump_height": "",
+                "neural_transfer": "",
+                "notes": "___"
+              },
+              {
+                "set": 5,
+                "target": "3 squats @ 85% → 5 jumps",
+                "squat_load": "",
+                "jump_height": "",
+                "neural_transfer": "",
+                "notes": "___"
+              }
+            ]
+          },
+          "benefits": {
+            "primary": "Neural activation and power transfer",
+            "secondary": "Strength-power complex development",
+            "sport_specific": "Tennis movement power"
+          },
+          "attribution": {
+            "source": "Complex training research",
+            "methodology": "Strength-power complex",
+            "elite_use": "Professional power athletes",
+            "verification": "Sports science literature",
+            "context": "Phase 2 power development",
+            "results": "Enhanced power output"
+          }
+        },
+        {
+          "id": "complex_deadlift_bound",
+          "name": "Complex Deadlift to Bound Training",
+          "category": "primary",
+          "order": 2,
+          "loading": {
+            "sets": "4",
+            "reps": "Complex format",
+            "intensity": "80% 1RM deadlift + explosive bounds",
+            "rest": "3.5 minutes between complexes"
+          },
+          "execution": {
+            "setup": [
+              "Barbell loaded to 80% 1RM",
+              "Open space for bounding",
+              "Markers for distance"
+            ],
+            "technique": [
+              "3 deadlifts @ 80% 1RM",
+              "15 seconds rest",
+              "5 alternating bounds maximum distance",
+              "Focus on hip power transfer"
+            ],
+            "safety": [
+              "Maintain deadlift form",
+              "Adequate space for bounds",
+              "Monitor landing quality"
+            ]
+          },
+          "cues": [
+            "Explosive hip extension",
+            "Transfer power to bounds",
+            "Maximum distance focus",
+            "Feel the power connection"
+          ],
+          "tracking": {
+            "type": "complex",
+            "format": "strength_power"
+          },
+          "benefits": {
+            "primary": "Hip power development",
+            "secondary": "Posterior chain strength",
+            "sport_specific": "Court movement power"
+          }
+        },
+        {
+          "id": "complex_rotational_power",
+          "name": "Complex Rotational Power Training",
+          "category": "primary",
+          "order": 3,
+          "loading": {
+            "sets": "4",
+            "reps": "Complex format",
+            "intensity": "Heavy rotation + explosive throws",
+            "rest": "3 minutes between complexes"
+          },
+          "execution": {
+            "setup": [
+              "Cable machine or resistance bands",
+              "Medicine balls (various weights)",
+              "Open space for throws"
+            ],
+            "technique": [
+              "5 heavy rotational pulls",
+              "10 seconds rest",
+              "5 explosive medicine ball throws",
+              "Focus on rotational power"
+            ],
+            "safety": [
+              "Controlled heavy resistance",
+              "Explosive throw technique",
+              "Adequate throwing space"
+            ]
+          },
+          "cues": [
+            "Heavy resistance first",
+            "Explosive rotation second",
+            "Maximum throwing velocity",
+            "Feel the power transfer"
+          ],
+          "tracking": {
+            "type": "complex",
+            "format": "strength_power"
+          },
+          "benefits": {
+            "primary": "Rotational power development",
+            "secondary": "Core strength integration",
+            "sport_specific": "Tennis stroke power"
+          }
+        }
+      ]
+    }
+  ],
+  "recovery_protocols": [
+    {
+      "id": "advanced_recovery",
+      "type": "immediate",
+      "title": "Advanced Recovery Protocol",
+      "duration": "25 minutes",
+      "timing": "Post-training",
+      "attribution": {
+        "methodology": "Advanced recovery methods",
+        "source": "Elite recovery protocols",
+        "elite_use": "Professional athletes",
+        "verification": "Recovery research"
+      },
+      "components": [
+        {
+          "id": "neural_recovery",
+          "name": "Neural System Recovery",
+          "type": "neural",
+          "duration": "10 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Advanced neural recovery",
+            "intensity": "Relaxation focus",
+            "equipment": "Quiet space"
+          },
+          "instructions": [
+            "3 minutes breathing exercises (box breathing)",
+            "4 minutes progressive muscle relaxation",
+            "3 minutes visualization of power improvements"
+          ],
+          "cues": [
+            "Deep neural system recovery",
+            "Release all tension",
+            "Visualize power gains",
+            "Prepare nervous system"
+          ]
+        },
+        {
+          "id": "complex_training_analysis",
+          "name": "Complex Training Analysis",
+          "type": "assessment",
+          "duration": "10 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Training analysis and documentation",
+            "intensity": "Evaluation focus",
+            "equipment": "Training log"
+          },
+          "instructions": [
+            "Review complex training data",
+            "Document power improvements",
+            "Analyze neural transfer",
+            "Plan next session modifications"
+          ],
+          "cues": [
+            "Analyze complex training effects",
+            "Document power progress",
+            "Track neural adaptations",
+            "Plan for improvement"
+          ]
+        },
+        {
+          "id": "advanced_mobility",
+          "name": "Advanced Mobility Protocol",
+          "type": "mobility",
+          "duration": "5 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Advanced mobility work",
+            "intensity": "Light to moderate",
+            "equipment": "Foam roller, bands"
+          },
+          "instructions": [
+            "Full body mobility sequence",
+            "Focus on power positions",
+            "Maintain range of motion",
+            "Prepare for next session"
+          ],
+          "cues": [
+            "Maintain power positions",
+            "Full range of motion",
+            "Quality mobility work",
+            "Prepare for next session"
+          ]
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 90,
+      "strength_minutes": 95,
+      "warmup_minutes": 25,
+      "recovery_minutes": 25,
+      "morning_protocol_minutes": 105,
+      "total_minutes": 340
+    },
+    "intensity": {
+      "tennis_average": "90-100%",
+      "strength_average": "Complex training",
+      "overall_rpe": 9
+    },
+    "load_calculations": {
+      "total_tonnage": "Complex training optimized",
+      "volume_load": "High-intensity power focused"
+    },
+    "distances": {
+      "estimated_court_coverage": "5 km",
+      "total_movement": "Complex training focused"
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Complex training method introduction",
+      "Neural activation and transfer",
+      "Advanced power development"
+    ],
+    "load_management": [
+      "High neural demands require adequate recovery",
+      "Complex training intensity monitoring",
+      "Quality over quantity emphasis"
+    ],
+    "progression_markers": [
+      "Complex training adaptation",
+      "Neural transfer evident",
+      "Power improvements sustained"
+    ],
+    "phase_2_development": [
+      "Complex training established",
+      "Advanced power methods integrated",
+      "Tennis power transfer enhanced"
+    ]
+  },
+  "week_integration": {
+    "weekly_theme": "Complex Training Integration",
+    "daily_priority": "Advanced complex training methods",
+    "phase_focus": "Power development intensification",
+    "connects_to": {
+      "tuesday": "Upper body complex training",
+      "wednesday": "Complex power endurance",
+      "friday": "Integrated complex application"
+    },
+    "phase_2_objectives": {
+      "development": "Complex training methods established",
+      "intensification": "Power capabilities enhanced",
+      "integration": "Tennis power transfer optimized"
+    }
+  }
+}

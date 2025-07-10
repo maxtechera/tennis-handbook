@@ -1,0 +1,1462 @@
+{
+  "meta": {
+    "sourceFile": "workout-data/week-1/monday.yml",
+    "targetFile": "workout-data/week-1/monday.es.yml",
+    "extractedAt": "2025-07-09T22:24:22.197Z",
+    "totalStrings": 205,
+    "highPriority": 105,
+    "mediumPriority": 94,
+    "lowPriority": 6
+  },
+  "metadata": {
+    "week": 1,
+    "day": "monday",
+    "title": "Elite Lower Body Foundation & Alcaraz Integration",
+    "subtitle": "Implementing Ferrero Academy Protocols with Djokovic Structure",
+    "phase": "Phase 1: Elite Foundation"
+  },
+  "strings": [
+    {
+      "key": "metadata.title",
+      "original": "Elite Lower Body Foundation & Alcaraz Integration",
+      "translation": "Elite Tren Inferior Fundación/Base & Alcaraz Integration",
+      "context": "Workout main title",
+      "priority": "HIGH"
+    },
+    {
+      "key": "metadata.subtitle",
+      "original": "Implementing Ferrero Academy Protocols with Djokovic Structure",
+      "translation": "Implementing Ferrero Academia Protocolos with Djokovic Structure",
+      "context": "Workout subtitle/description",
+      "priority": "HIGH"
+    },
+    {
+      "key": "metadata.focus_areas[0]",
+      "original": "Building the Base",
+      "translation": "Construyendo la Base",
+      "context": "Main training focus areas",
+      "priority": "LOW"
+    },
+    {
+      "key": "metadata.focus_areas[1]",
+      "original": "Lower Body Foundation",
+      "translation": "Tren Inferior Fundación/Base",
+      "context": "Main training focus areas",
+      "priority": "LOW"
+    },
+    {
+      "key": "metadata.elite_methods[0].name",
+      "original": "Alcaraz Base Building Integration",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "metadata.elite_methods[0].attribution.context",
+      "original": "Foundation phase training",
+      "translation": "Fundación/Base phase training",
+      "context": "General translation",
+      "priority": "LOW"
+    },
+    {
+      "key": "metadata.elite_methods[1].name",
+      "original": "Spanish Squat Protocol",
+      "translation": "Spanish Squat Protocolo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "metadata.elite_methods[2].name",
+      "original": "Djokovic Structure Integration",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "metadata.display_config.ui_elements[0].title",
+      "original": "Daily Assessment Checklist",
+      "translation": "Daily Evaluación Checklist",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[0].title",
+      "original": "Elite Pre-Week Assessment",
+      "translation": "Elite Pre-Semana Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[0].description",
+      "original": "Complete before Monday - Alcaraz Academy Method",
+      "translation": "Complete before Lunes - Alcaraz Academia Método",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[0].name",
+      "original": "Overhead Squat Assessment",
+      "translation": "Remate Squat Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[0].components[0].measurement.protocol",
+      "original": "Video analysis (front/side/posterior views)",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[0].scoring.method",
+      "original": "Movement quality assessment",
+      "translation": "Movimiento quality assessment",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[0].context.description",
+      "original": "Assesses overall movement quality and restrictions",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[1].name",
+      "original": "Single-leg Glute Bridge Test",
+      "translation": "Single-leg Glute Bridge Prueba",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[0].components[1].measurement.protocol",
+      "original": "Force assessment",
+      "translation": "Fuerza assessment",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[1].scoring.method",
+      "original": "Force measurement and comparison",
+      "translation": "Fuerza measurement and comparison",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[1].context.description",
+      "original": "Tests gluteal force capability",
+      "translation": "Pruebas gluteal force capability",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[2].name",
+      "original": "Shoulder Y-T-W Test",
+      "translation": "Shoulder Y-T-W Prueba",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[0].components[2].measurement.protocol",
+      "original": "Resistance assessment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[2].scoring.method",
+      "original": "Control and endurance assessment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[2].context.description",
+      "original": "Rotator cuff strength for serve deceleration",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[3].name",
+      "original": "Deep Squat Hold",
+      "translation": "Deep Squat Mantener Servicio",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[0].components[3].measurement.protocol",
+      "original": "Isometric hold assessment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[3].scoring.method",
+      "original": "Movement quality scoring",
+      "translation": "Movimiento quality scoring",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[0].components[3].context.description",
+      "original": "Assesses ankle, hip, and thoracic mobility",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[1].title",
+      "original": "Murray Precision Standards",
+      "translation": "Murray Precision Estándars",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[1].description",
+      "original": "Advanced movement quality assessment",
+      "translation": "Avanzado movement quality assessment",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[1].components[0].name",
+      "original": "Single-Leg Romanian Deadlift",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[1].components[0].measurement.protocol",
+      "original": "Balance and control assessment",
+      "translation": "Equilibrio and control assessment",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[1].components[0].context.description",
+      "original": "Stability and posterior chain assessment",
+      "translation": "Estabilidad and posterior chain assessment",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[1].components[1].name",
+      "original": "Push-up to T-Rotation",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[1].components[1].measurement.protocol",
+      "original": "Dynamic movement assessment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[1].components[1].context.description",
+      "original": "Thoracic mobility and core stability",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[1].components[2].name",
+      "original": "Wall Handstand Hold",
+      "translation": "Wall Handstand Mantener Servicio",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[1].components[2].measurement.protocol",
+      "original": "Maximum hold assessment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[1].components[2].context.description",
+      "original": "Shoulder stability and core strength",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].title",
+      "original": "Baseline Power Assessment",
+      "translation": "Línea de Fondo Potencia Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[2].description",
+      "original": "Comprehensive baseline power and strength testing",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[0].name",
+      "original": "Vertical Jump",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[2].components[0].measurement.protocol",
+      "original": "Maximum vertical jump height",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[0].scoring.method",
+      "original": "Best recorded height",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[0].context.description",
+      "original": "Baseline vertical power measurement",
+      "translation": "Línea de Fondo vertical power measurement",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[1].name",
+      "original": "Broad Jump",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[2].components[1].measurement.protocol",
+      "original": "Maximum horizontal jump distance",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[1].scoring.method",
+      "original": "Best recorded distance",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[1].context.description",
+      "original": "Horizontal power baseline measurement",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[2].name",
+      "original": "Medicine Ball Chest Pass",
+      "translation": "Medicine Pelota Pecho Pass",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[2].components[2].measurement.protocol",
+      "original": "Maximum velocity chest pass",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[2].scoring.method",
+      "original": "Velocity measurement",
+      "translation": "Velocidad measurement",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[2].context.description",
+      "original": "Upper body power measurement",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[3].name",
+      "original": "Medicine Ball Overhead Throw",
+      "translation": "Medicine Pelota Remate Throw",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[2].components[3].measurement.protocol",
+      "original": "Maximum overhead throw distance",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[3].scoring.method",
+      "original": "Distance measurement",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[2].components[3].context.description",
+      "original": "Serve power correlation measurement",
+      "translation": "Servicio/Saque power correlation measurement",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].title",
+      "original": "Strength & Stability Assessment",
+      "translation": "Fuerza & Estabilidad Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[3].description",
+      "original": "Baseline strength and stability measurements",
+      "translation": "Línea de Fondo strength and stability measurements",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[0].name",
+      "original": "Grip Strength",
+      "translation": "Grip Fuerza",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[3].components[0].measurement.protocol",
+      "original": "Maximum grip strength",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[0].scoring.method",
+      "original": "Best recorded strength",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[0].context.description",
+      "original": "Tennis-specific grip strength",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[1].name",
+      "original": "Single-Leg Balance",
+      "translation": "Single-Leg Equilibrio",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[3].components[1].measurement.protocol",
+      "original": "Balance hold assessment",
+      "translation": "Equilibrio hold assessment",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[1].scoring.method",
+      "original": "Time held with quality assessment",
+      "translation": "Tiempo held with quality assessment",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[1].context.description",
+      "original": "Single-leg stability with eyes closed",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[2].name",
+      "original": "Plank Hold",
+      "translation": "Plank Mantener Servicio",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[3].components[2].measurement.protocol",
+      "original": "Maximum isometric hold",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[2].scoring.method",
+      "original": "Maximum time with form assessment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[3].components[2].context.description",
+      "original": "Core strength and stability with perfect form",
+      "translation": "Núcleo strength and stability with perfect form",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].title",
+      "original": "Professional Monitoring Protocols",
+      "translation": "Profesional Monitoreo Protocolos",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[4].description",
+      "original": "Comprehensive monitoring for elite performance",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[0].name",
+      "original": "HRV Baseline",
+      "translation": "HRV Línea de Fondo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[4].components[0].measurement.protocol",
+      "original": "7-day establishment using HRV4Training",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[0].context.description",
+      "original": "Heart rate variability baseline establishment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[1].name",
+      "original": "Sleep Quality Assessment",
+      "translation": "Sueño Quality Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[4].components[1].measurement.protocol",
+      "original": "Professional sleep efficiency and quality tracking",
+      "translation": "Profesional sleep efficiency and quality tracking",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[1].context.description",
+      "original": "Sleep quality and recovery assessment",
+      "translation": "Sueño quality and recovery assessment",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[2].name",
+      "original": "Serve Speed Baseline",
+      "translation": "Servicio/Saque Velocidad Línea de Fondo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[4].components[2].measurement.protocol",
+      "original": "Radar measurement with 10 maximum effort serves",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[2].scoring.method",
+      "original": "Average of top 5 serves",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[2].context.description",
+      "original": "Baseline serve speed measurement",
+      "translation": "Línea de Fondo serve speed measurement",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[3].name",
+      "original": "Court Movement Assessment",
+      "translation": "Cancha Movimiento Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "assessments[4].components[3].measurement.protocol",
+      "original": "First-step quickness and direction change assessment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "assessments[4].components[3].context.description",
+      "original": "Court movement efficiency and agility",
+      "translation": "Cancha movement efficiency and agility",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "schedule.blocks[0].title",
+      "original": "Morning Protocol",
+      "translation": "Protocolo Matutino",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[0].activities[0].name",
+      "original": "Elite Morning Protocol",
+      "translation": "Elite Protocolo Matutinoo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[0].activities[0].description",
+      "original": "Djokovic Integration",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "schedule.blocks[1].title",
+      "original": "Tennis Foundation",
+      "translation": "Tennis Fundación/Base",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[1].activities[0].name",
+      "original": "Elite Tennis Foundation",
+      "translation": "Elite Tennis Fundación/Base",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[1].activities[0].description",
+      "original": "Alcaraz Academy Protocol",
+      "translation": "Alcaraz Academia Protocolo",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "schedule.blocks[2].title",
+      "original": "Movement Preparation",
+      "translation": "Preparación de Movimiento",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[2].activities[0].name",
+      "original": "Elite Movement Preparation",
+      "translation": "Elite Movimiento Preparación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[2].activities[0].description",
+      "original": "Professional Integration",
+      "translation": "Profesional Integration",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "schedule.blocks[3].title",
+      "original": "Strength Foundation",
+      "translation": "Fuerza Fundación/Base",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[3].activities[0].name",
+      "original": "Elite Strength Foundation Block",
+      "translation": "Elite Fuerza Fundación/Base Bloque",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[3].activities[0].description",
+      "original": "Murray Precision Integration",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "schedule.blocks[4].title",
+      "original": "Recovery & Assessment",
+      "translation": "Recuperación & Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[4].activities[0].name",
+      "original": "Elite Recovery & Professional Assessment",
+      "translation": "Elite Recuperación & Profesional Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "schedule.blocks[4].activities[0].description",
+      "original": "Nadal's Power Plate with Djokovic Protocols",
+      "translation": "Nadal's Potencia Plate with Djokovic Protocolos",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].title",
+      "original": "Elite Morning Protocol - Djokovic Integration",
+      "translation": "Elite Protocolo Matutinoo - Djokovic Integration",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].activities[0].name",
+      "original": "Yoga & Breathing Protocol",
+      "translation": "Yoga & Breathing Protocolo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].activities[0].implementation.method",
+      "original": "Djokovic's 20-minute routine",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].activities[0].implementation.execution",
+      "original": "Follow video sequence exactly",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].activities[0].implementation.focus",
+      "original": "Daily consistency for nervous system preparation",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].activities[1].name",
+      "original": "4-7-8 Breathing Protocol",
+      "translation": "4-7-8 Breathing Protocolo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].activities[1].implementation.method",
+      "original": "4-7-8 breathing cycle",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].activities[1].implementation.execution",
+      "original": "Inhale 4s, hold 7s, exhale 8s",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].activities[1].implementation.focus",
+      "original": "Parasympathetic nervous system activation",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].mindful_preparation.focus",
+      "original": "Mental readiness assessment",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.title",
+      "original": "Professional Assessment Protocol",
+      "translation": "Profesional Evaluación Protocolo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[0].name",
+      "original": "HRV Measurement",
+      "translation": "HRV Medición",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[0].protocol",
+      "original": "Elite HRV4Training method",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[0].notes",
+      "original": "Consistent timing, post-urination, supine position",
+      "translation": "",
+      "context": "General translation",
+      "priority": "LOW"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[1].name",
+      "original": "Sleep Analytics",
+      "translation": "Sueño Analytics",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[1].notes",
+      "original": "Track total time, efficiency, and subjective quality",
+      "translation": "",
+      "context": "General translation",
+      "priority": "LOW"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[2].name",
+      "original": "Neural Readiness",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[2].notes",
+      "original": "Establish individual baseline for comparison",
+      "translation": "",
+      "context": "General translation",
+      "priority": "LOW"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[3].name",
+      "original": "Movement Quality Screen",
+      "translation": "Movimiento Quality Screen",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[4].name",
+      "original": "Professional Hydration",
+      "translation": "Profesional Hidratación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "preparation_phases[0].professional_assessment.assessments[5].name",
+      "original": "Elite Preparation",
+      "translation": "Elite Preparación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.title",
+      "original": "Elite Tennis Foundation - Alcaraz Academy Protocol",
+      "translation": "Elite Tennis Fundación/Base - Alcaraz Academia Protocolo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.warm_up.title",
+      "original": "Court Movement Preparation",
+      "translation": "Cancha Movimiento Preparación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.warm_up.method",
+      "original": "Alcaraz 20-Minute Dynamic Warm-up",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.warm_up.exercises[0].name",
+      "original": "Dynamic Warm-up",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.rally_development.title",
+      "original": "Controlled Rally Development",
+      "translation": "Controlled Peloteo Desarrollo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.rally_development.method",
+      "original": "Precision hitting",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.rally_development.drills[0].name",
+      "original": "Controlled Rally Development",
+      "translation": "Controlled Peloteo Desarrollo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.directional_precision.title",
+      "original": "Directional Precision Training",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.directional_precision.method",
+      "original": "Ferrero Academy placement drills",
+      "translation": "Ferrero Academia placement drills",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.directional_precision.drills[0].name",
+      "original": "Directional Precision Training",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.power_accuracy_integration.title",
+      "original": "Power-Accuracy Integration",
+      "translation": "Potencia-Precisión Integration",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "tennis_training.alcaraz_integration.power_accuracy_integration.method",
+      "original": "Controlled pace building",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.title",
+      "original": "Elite Movement Preparation - Professional Integration",
+      "translation": "Elite Movimiento Preparación - Profesional Integration",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.method",
+      "original": "Sinner's Three-Dimensional Preparation (Panichi Method)",
+      "translation": "Sinner's Three-Dimensional Preparación (Panichi Método)",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.exercises[0].name",
+      "original": "World's Greatest Stretch",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[0].protocol",
+      "original": "Hold 5s, overhead reach",
+      "translation": "Mantener Servicio 5s, overhead reach",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.exercises[0].tennis_application",
+      "original": "Hip flexor/thoracic mobility for serves",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[1].name",
+      "original": "Leg Swings (Multi-Planar)",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[1].protocol",
+      "original": "Front/back, lateral, diagonal",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.exercises[1].tennis_application",
+      "original": "Dynamic hip preparation",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[2].name",
+      "original": "Glute Bridge Progression",
+      "translation": "Glute Bridge Progresoion",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[2].protocol",
+      "original": "Squeeze glutes, progress to single-leg",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.exercises[2].tennis_application",
+      "original": "Gluteal activation (targeting 505-640N force)",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[3].name",
+      "original": "Band External Rotations",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[3].protocol",
+      "original": "Towel under arm technique",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.exercises[3].tennis_application",
+      "original": "Rotator cuff activation for serves",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[4].name",
+      "original": "Ankle Mobility Complex",
+      "translation": "Ankle Movilidad Complex",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[4].protocol",
+      "original": "Wall ankle stretch + calf raises",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.exercises[4].tennis_application",
+      "original": "Court movement preparation",
+      "translation": "Cancha movement preparation",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[5].name",
+      "original": "Thoracic Spine Rotation",
+      "translation": "Thoracic Columna Rotation",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[5].protocol",
+      "original": "Quadruped position, full range",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.exercises[5].tennis_application",
+      "original": "Serve and groundstroke rotation",
+      "translation": "Servicio/Saque and groundstroke rotation",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[6].name",
+      "original": "Neural Activation Hops",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.exercises[6].protocol",
+      "original": "Light, reactive, quick ground contact",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.exercises[6].tennis_application",
+      "original": "Nervous system activation",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "movement_preparation.targeted_correctives[0].focus",
+      "original": "Open chest, reach tall",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.targeted_correctives[1].focus",
+      "original": "Drive knee over toe",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.targeted_correctives[2].focus",
+      "original": "Push hips forward",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "movement_preparation.targeted_correctives[3].focus",
+      "original": "Feel opening in front",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.title",
+      "original": "Elite Strength Foundation Block - Murray Precision Integration",
+      "translation": "Elite Fuerza Fundación/Base Bloque - Murray Precision Integration",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.main_exercises[0].name",
+      "original": "Barbell Back Squat (HSR)",
+      "translation": "Barbell Espalda Squat (HSR)",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.main_exercises[1].name",
+      "original": "Single-Leg Romanian Deadlift",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.main_exercises[2].name",
+      "original": "Bulgarian Split Squat (Loaded)",
+      "translation": "Bulgarian Split Squat (Cargaed)",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.phase_2_integration.title",
+      "original": "Professional Integration (Strength-Speed Bridge)",
+      "translation": "Profesional Integration (Fuerza-Velocidad Bridge)",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[0].name",
+      "original": "Box Jump (PAP Introduction)",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[0].protocol",
+      "original": "30s after squat complex",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[0].tennis_application",
+      "original": "Explosive leg extension for serves",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[1].name",
+      "original": "Medicine Ball Slam",
+      "translation": "Medicine Pelota Slam",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[1].protocol",
+      "original": "Alcaraz method - full overhead extension",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[1].tennis_application",
+      "original": "Serve power development",
+      "translation": "Servicio/Saque power development",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[2].name",
+      "original": "Lateral Bounds",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[2].protocol",
+      "original": "Tennis-specific lateral power",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.phase_2_integration.exercises[2].tennis_application",
+      "original": "Side-to-side court coverage",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.title",
+      "original": "Advanced Tendon Conditioning (Professional Tennis Standards)",
+      "translation": "Avanzado Tendon Acondicionamiento (Profesional Tennis Estándars)",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.protocol",
+      "original": "Elite HSR Protocol Integration",
+      "translation": "Elite HSR Protocolo Integration",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[0].name",
+      "original": "Spanish Squat (Alcaraz Method)",
+      "translation": "Spanish Squat (Alcaraz Método)",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[0].protocol",
+      "original": "Band around knees, isometric hold",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[0].tennis_application",
+      "original": "Patellar tendon loading for jumping shots",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[1].name",
+      "original": "Heavy Slow Calf Raises",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[1].protocol",
+      "original": "5-sec eccentric, 2-sec pause, explosive up",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[1].tennis_application",
+      "original": "Push-off power for court movement",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[2].name",
+      "original": "Single-Leg Calf Raises",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[2].protocol",
+      "original": "Identify and address imbalances",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.advanced_tendon_conditioning.exercises[2].tennis_application",
+      "original": "Unilateral ankle strength",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.title",
+      "original": "Elite Stability & Power Transfer Block (10:00-10:25)",
+      "translation": "Elite Estabilidad & Potencia Transfer Bloque (10:00-10:25)",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.subtitle",
+      "original": "Neural Adaptation & Core Integration (Professional Standards)",
+      "translation": "Neural Adaptación & Núcleo Integration (Profesional Estándars)",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[0].name",
+      "original": "Pallof Press (Anti-Rotation)",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[0].protocol",
+      "original": "Maximum resistance, control",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[0].tennis_application",
+      "original": "Core stability for groundstrokes",
+      "translation": "Núcleo stability for groundstrokes",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[1].name",
+      "original": "Single-Leg Glute Bridge",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[1].protocol",
+      "original": "Squeeze glutes",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[1].tennis_application",
+      "original": "Hip stability for movement",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[2].name",
+      "original": "Dead Bug + Reach",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[2].protocol",
+      "original": "Opposite arm/leg extension",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.stability_power_block.exercises[2].tennis_application",
+      "original": "Core coordination for tennis",
+      "translation": "Núcleo coordination for tennis",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.professional_integration[0].name",
+      "original": "Band External Rotations",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.professional_integration[0].method",
+      "original": "Towel under arm (research-backed technique)",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "strength_training.stability_power_block.professional_integration[1].name",
+      "original": "Farmer's Walks",
+      "translation": "",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "strength_training.stability_power_block.professional_integration[1].method",
+      "original": "Heavy load, maintain posture",
+      "translation": "",
+      "context": "General translation",
+      "priority": "MEDIUM"
+    },
+    {
+      "key": "recovery_protocol.title",
+      "original": "Elite Recovery & Professional Assessment",
+      "translation": "Elite Recuperación & Profesional Evaluación",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "recovery_protocol.subtitle",
+      "original": "Nadal's Power Plate Integration with Djokovic Recovery Protocols",
+      "translation": "Nadal's Potencia Plate Integration with Djokovic Recuperación Protocolos",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "recovery_protocol.contrast_shower.name",
+      "original": "Contrast Shower Protocol",
+      "translation": "Contrast Shower Protocolo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "recovery_protocol.hrv_breathing.name",
+      "original": "HRV Breathing Protocol",
+      "translation": "HRV Breathing Protocolo",
+      "context": "General translation",
+      "priority": "HIGH"
+    },
+    {
+      "key": "recovery_protocol.session_documentation.name",
+      "original": "Session Documentation",
+      "translation": "Sesión Documentation",
+      "context": "General translation",
+      "priority": "HIGH"
+    }
+  ],
+  "instructions": [
+    "1. Translate all strings marked as HIGH priority first",
+    "2. Use the glossary for consistent terminology",
+    "3. Keep all technical values unchanged",
+    "4. Maintain YAML structure",
+    "5. Test the translation after completion"
+  ]
+}

@@ -18,11 +18,8 @@ export function ProgressIndicator({
 
   return (
     <div className={`${styles.progressContainer} ${className}`}>
-      <div className={styles.progressText}>
-        <span className={styles.stepLabel}>Step</span>
-        <span className={styles.stepNumber}>{currentStep}</span>
-        <span className={styles.stepOf}>{stepText}</span>
-        <span className={styles.totalSteps}>{totalSteps}</span>
+      <div className={styles.stepCounter}>
+        {currentStep} {stepText} {totalSteps}
       </div>
       
       <div className={styles.progressBar}>
@@ -34,24 +31,6 @@ export function ProgressIndicator({
           aria-valuemin={1}
           aria-valuemax={totalSteps}
         />
-        
-        <div className={styles.progressDots}>
-          {Array.from({ length: totalSteps }, (_, index) => (
-            <div
-              key={index}
-              className={`${styles.progressDot} ${
-                index + 1 <= currentStep ? styles.completed : ''
-              } ${index + 1 === currentStep ? styles.current : ''}`}
-              aria-label={`Step ${index + 1} ${
-                index + 1 <= currentStep ? 'completed' : 'not completed'
-              }`}
-            >
-              {index + 1 === currentStep && (
-                <div className={styles.currentDotPulse} />
-              )}
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );

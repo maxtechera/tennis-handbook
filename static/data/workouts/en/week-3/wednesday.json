@@ -1,0 +1,914 @@
+{
+  "metadata": {
+    "period": 3,
+    "period_name": "Peak Foundation",
+    "day_id": "week_3_wednesday",
+    "day_name": "Wednesday",
+    "title": "Peak Power Integration & Competitive Tennis",
+    "subtitle": "Maximum Power Development with Competition Simulation",
+    "phase": "Phase 1: Elite Foundation (Final Week)",
+    "focus_areas": [
+      "Peak Power Integration",
+      "Competitive Tennis Mastery",
+      "Phase 1 Power Culmination"
+    ],
+    "training_parameters": {
+      "volume": "115% (power integration)",
+      "intensity": "85-95%",
+      "density": "very high",
+      "duration": "4 hours 15 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Peak Power Integration Protocol",
+        "type": "power",
+        "attribution": {
+          "methodology": "Advanced power development",
+          "source": "Elite power training research",
+          "verification": "Power development literature",
+          "context": "Week 3 power culmination",
+          "results": "Maximum power output"
+        }
+      },
+      {
+        "name": "Competition Simulation Mastery",
+        "type": "competition",
+        "attribution": {
+          "source": "Professional competition preparation",
+          "elite_use": "Tour-level competition simulation",
+          "verification": "ATP/WTA competition protocols",
+          "context": "Peak competitive readiness"
+        }
+      },
+      {
+        "name": "Complex Training Integration",
+        "type": "complex",
+        "attribution": {
+          "methodology": "Advanced complex training",
+          "source": "PAP and complex training research",
+          "verification": "Complex training literature",
+          "context": "Power transfer optimization"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Tennis court access",
+        "Barbell and plates",
+        "Dumbbells (10-50 lbs)",
+        "Plyometric boxes (12-24 inches)",
+        "Medicine balls (3-6kg)",
+        "Resistance bands",
+        "Agility ladder",
+        "Cones for drills"
+      ],
+      "optional": [
+        "Velocity tracking device",
+        "Heart rate monitor",
+        "Video analysis equipment",
+        "Serve speed radar"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [⬅️ Tuesday](tuesday) | [Thursday ➡️](thursday)",
+      "overview_link": "./",
+      "next_link": "thursday",
+      "previous_link": "tuesday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Peak Performance Assessment",
+        "preparation": "Power Preparation Protocol",
+        "skill_training": "Competitive Tennis Mastery",
+        "conditioning": "Peak Power Integration",
+        "recovery": "Elite Recovery & Analysis"
+      },
+      "ui_elements": [
+        {
+          "type": "warning",
+          "title": "Peak Power Day",
+          "content": "Highest intensity day of Phase 1 - maximum power output and competition simulation",
+          "icon": "⚡"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "peak_performance_assessment",
+      "type": "performance",
+      "title": "Peak Performance Assessment",
+      "timing": "pre-session",
+      "duration": "25 minutes",
+      "description": "Comprehensive assessment for peak power training",
+      "attribution": {
+        "source": "Elite performance assessment protocols",
+        "methodology": "Peak performance evaluation",
+        "validation": "Sports science research",
+        "elite_use": "Professional athletes"
+      },
+      "components": [
+        {
+          "id": "power_readiness_check",
+          "name": "Power Readiness Assessment",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Vertical jump + reactive strength index",
+            "repetitions": "5 jumps",
+            "equipment": "Jump mat or force plate"
+          },
+          "standards": {
+            "optimal": "Within 5% of personal best",
+            "acceptable": "5-10% below personal best",
+            "needs_modification": ">10% below personal best"
+          },
+          "scoring": {
+            "method": "Power output measurement",
+            "scale": "Watts or jump height",
+            "recording": "Peak power and reactive strength"
+          },
+          "context": {
+            "description": "Assess readiness for peak power training",
+            "application": "Optimize power training intensity"
+          }
+        },
+        {
+          "id": "competitive_readiness",
+          "name": "Competitive Readiness Assessment",
+          "type": "psychological",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Mental readiness questionnaire",
+            "duration": "5 minutes",
+            "equipment": "Assessment form"
+          },
+          "standards": {
+            "optimal": "Competition focus 9-10/10",
+            "acceptable": "Competition focus 7-8/10",
+            "needs_support": "Competition focus <7/10"
+          },
+          "scoring": {
+            "method": "Psychological readiness scale",
+            "scale": "1-10 rating",
+            "recording": "Competition readiness score"
+          },
+          "context": {
+            "description": "Assess mental readiness for competition simulation",
+            "application": "Optimize competitive training approach"
+          }
+        },
+        {
+          "id": "movement_power_integration",
+          "name": "Movement Power Integration Check",
+          "type": "movement",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Dynamic movement assessment",
+            "duration": "10 minutes",
+            "equipment": "Movement screen tools"
+          },
+          "standards": {
+            "optimal": "Perfect power movement patterns",
+            "acceptable": "Good power movement quality",
+            "needs_work": "Movement restrictions affecting power"
+          },
+          "scoring": {
+            "method": "Movement quality under power demands",
+            "scale": "Pass/fail with notes",
+            "recording": "Power movement quality assessment"
+          },
+          "context": {
+            "description": "Assess movement quality for power training",
+            "application": "Ensure safe and effective power development"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mid_week_power_check",
+      "type": "progress",
+      "title": "Mid-Week Power Progress Check",
+      "timing": "mid-session",
+      "duration": "10 minutes",
+      "description": "Assess power development progress",
+      "components": [
+        {
+          "id": "power_output_tracking",
+          "name": "Power Output Tracking",
+          "type": "performance",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Compare to Week 1 baseline",
+            "duration": "5 minutes",
+            "equipment": "Power measurement tools"
+          },
+          "standards": {
+            "excellent": "15%+ improvement from Week 1",
+            "good": "10-15% improvement",
+            "acceptable": "5-10% improvement",
+            "needs_work": "<5% improvement"
+          },
+          "context": {
+            "description": "Track power development progress",
+            "application": "Validate Phase 1 power gains"
+          }
+        }
+      ]
+    }
+  ],
+  "schedule_overview": {
+    "title": "Wednesday Schedule - Peak Power Integration",
+    "sessions": [
+      {
+        "time": "07:00–08:30",
+        "activity": "Competition Simulation Tennis",
+        "instructions": "Maximum competitive intensity with tactical mastery"
+      },
+      {
+        "time": "08:35–08:55",
+        "activity": "Power Preparation Protocol",
+        "instructions": "Advanced power preparation"
+      },
+      {
+        "time": "08:55–10:15",
+        "activity": "Peak Power Integration Training",
+        "exercises": [
+          {
+            "name": "Power Clean Complex",
+            "sets_reps": "4×3",
+            "instructions": "Maximum power development"
+          },
+          {
+            "name": "Plyometric Progressions",
+            "sets_reps": "3×5",
+            "instructions": "Explosive power transfer"
+          },
+          {
+            "name": "Medicine Ball Complex",
+            "sets_reps": "3×6",
+            "instructions": "Tennis-specific power"
+          },
+          {
+            "name": "Agility Power Circuit",
+            "sets_reps": "3 rounds",
+            "instructions": "Movement power integration"
+          }
+        ]
+      },
+      {
+        "time": "10:20–10:45",
+        "activity": "Elite Recovery & Analysis",
+        "instructions": "Comprehensive recovery with performance analysis"
+      }
+    ]
+  },
+  "skill_training": {
+    "section_title": "Competition Simulation Tennis",
+    "section_description": "Maximum competitive intensity with tactical mastery",
+    "sessions": [
+      {
+        "id": "competition_simulation",
+        "type": "competition",
+        "title": "Competition Simulation Session",
+        "duration": "90 minutes",
+        "intensity": "90-95%",
+        "attribution": {
+          "methodology": "Professional competition simulation",
+          "source": "Elite competition preparation",
+          "elite_use": "Tour-level competition protocols",
+          "verification": "ATP/WTA competition training"
+        },
+        "structure": {
+          "warm_up": "20 minutes",
+          "main_competition": "60 minutes",
+          "cool_down": "10 minutes"
+        },
+        "components": [
+          {
+            "id": "competition_warm_up",
+            "name": "Competition Warm-up Protocol",
+            "type": "preparation",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "20 minutes",
+              "rest": "Match warm-up format"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Match equipment",
+              "players": "Competitive partner"
+            },
+            "implementation": {
+              "method": "Match-style warm-up",
+              "focus": "Competition preparation",
+              "key_points": "Mental and physical preparation"
+            },
+            "instructions": [
+              {
+                "phase": "GENERAL",
+                "text": "5 minutes general movement and stretching"
+              },
+              {
+                "phase": "SPECIFIC",
+                "text": "10 minutes progressive hitting"
+              },
+              {
+                "phase": "COMPETITION",
+                "text": "5 minutes match-pace preparation"
+              }
+            ],
+            "cues": [
+              "Match-style preparation",
+              "Progressive intensity build",
+              "Mental competition focus",
+              "Prepare for peak performance"
+            ]
+          },
+          {
+            "id": "tactical_competition",
+            "name": "Tactical Competition Sets",
+            "type": "competition",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "35 minutes",
+              "rest": "Match format"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Competition setup",
+              "players": "Competitive partner"
+            },
+            "implementation": {
+              "method": "Competitive match play",
+              "focus": "Tactical execution under pressure",
+              "key_points": "Win patterns, pressure management"
+            },
+            "instructions": [
+              {
+                "phase": "SET_1",
+                "text": "Play competitive set with tactical focus"
+              },
+              {
+                "phase": "ANALYSIS",
+                "text": "Brief tactical analysis between sets"
+              },
+              {
+                "phase": "SET_2",
+                "text": "Adjust tactics and compete again"
+              }
+            ],
+            "cues": [
+              "Execute winning patterns",
+              "Compete on every point",
+              "Maintain tactical focus",
+              "Pressure point execution"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Tactical pattern execution",
+                "target": "80%+",
+                "tracking": "Successful pattern implementation"
+              },
+              {
+                "metric": "Pressure point performance",
+                "target": "70%+",
+                "tracking": "Big point conversion rate"
+              }
+            ]
+          },
+          {
+            "id": "high_pressure_situations",
+            "name": "High Pressure Situation Training",
+            "type": "pressure",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "25 minutes",
+              "rest": "Match format"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Pressure simulation",
+              "players": "Competitive partner"
+            },
+            "implementation": {
+              "method": "Pressure point simulation",
+              "focus": "Performance under maximum pressure",
+              "key_points": "Mental toughness, execution"
+            },
+            "instructions": [
+              {
+                "phase": "PRESSURE_POINTS",
+                "text": "Simulate match pressure points"
+              },
+              {
+                "phase": "TIEBREAKS",
+                "text": "Play multiple tiebreaks"
+              },
+              {
+                "phase": "CLUTCH_EXECUTION",
+                "text": "Focus on clutch performance"
+              }
+            ],
+            "cues": [
+              "Embrace pressure situations",
+              "Execute under pressure",
+              "Stay mentally tough",
+              "Perform when it matters"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Pressure point conversion",
+                "target": "75%+",
+                "tracking": "Success in pressure situations"
+              },
+              {
+                "metric": "Mental toughness",
+                "target": "Maintain composure",
+                "tracking": "Emotional control under pressure"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "peak_power_integration",
+      "type": "power",
+      "title": "Peak Power Integration Training",
+      "description": "Maximum power development with tennis transfer",
+      "duration": "80 minutes",
+      "attribution": {
+        "methodology": "Advanced power integration",
+        "source": "Elite power training protocols",
+        "elite_use": "Professional athletes",
+        "verification": "Power development research"
+      },
+      "exercises": [
+        {
+          "id": "power_clean_complex",
+          "name": "Power Clean + Jump Complex",
+          "category": "complex",
+          "order": 1,
+          "loading": {
+            "sets": "4",
+            "reps": "3 power cleans + 3 jumps",
+            "intensity": "85% 1RM power clean",
+            "rest": "3 minutes",
+            "transition_rest": "20 seconds"
+          },
+          "execution": {
+            "setup": [
+              "Olympic barbell setup",
+              "Plyometric box ready",
+              "Clear transition space"
+            ],
+            "technique": [
+              "3 power cleans at 85%",
+              "20-second transition",
+              "3 maximum box jumps",
+              "Focus on power transfer"
+            ],
+            "safety": [
+              "Perfect power clean form",
+              "Safe landing technique",
+              "Adequate rest between sets"
+            ]
+          },
+          "cues": [
+            "Maximum power output",
+            "Power transfer focus",
+            "Explosive intent",
+            "Quality over quantity"
+          ],
+          "complex_tracking": [
+            {
+              "set": 1,
+              "power_clean_reps": 3,
+              "transition_rest": "20s",
+              "jump_reps": 3
+            },
+            {
+              "set": 2,
+              "power_clean_reps": 3,
+              "transition_rest": "20s",
+              "jump_reps": 3
+            },
+            {
+              "set": 3,
+              "power_clean_reps": 3,
+              "transition_rest": "20s",
+              "jump_reps": 3
+            },
+            {
+              "set": 4,
+              "power_clean_reps": 3,
+              "transition_rest": "20s",
+              "jump_reps": 3
+            }
+          ],
+          "benefits": {
+            "primary": "Maximum power development",
+            "secondary": "Power transfer enhancement",
+            "sport_specific": "Serve power and explosive movement"
+          },
+          "attribution": {
+            "source": "Complex training research",
+            "methodology": "PAP power development",
+            "elite_use": "Professional power training",
+            "verification": "Power training literature",
+            "context": "Peak power integration",
+            "results": "Maximum power output"
+          }
+        },
+        {
+          "id": "plyometric_progression",
+          "name": "Advanced Plyometric Progression",
+          "category": "plyometric",
+          "order": 2,
+          "loading": {
+            "sets": "3",
+            "reps": "5 per exercise",
+            "intensity": "Maximum effort",
+            "rest": "2 minutes"
+          },
+          "execution": {
+            "setup": [
+              "Plyometric boxes arranged",
+              "Adequate landing space",
+              "Progressive heights"
+            ],
+            "technique": [
+              "Depth jumps to box jumps",
+              "Lateral bounds",
+              "Single-leg reactive hops",
+              "Multi-directional jumps"
+            ],
+            "safety": [
+              "Perfect landing mechanics",
+              "Adequate recovery",
+              "Progressive difficulty"
+            ]
+          },
+          "cues": [
+            "Explosive takeoff",
+            "Soft landing",
+            "Reactive power",
+            "Multi-directional"
+          ],
+          "tracking": {
+            "type": "plyometric",
+            "format": "sets_reps"
+          },
+          "benefits": {
+            "primary": "Explosive power development",
+            "secondary": "Reactive strength",
+            "sport_specific": "Court movement power"
+          }
+        },
+        {
+          "id": "medicine_ball_complex",
+          "name": "Tennis-Specific Medicine Ball Complex",
+          "category": "explosive",
+          "order": 3,
+          "loading": {
+            "sets": "3",
+            "reps": "6 per exercise",
+            "intensity": "Maximum velocity",
+            "rest": "90 seconds"
+          },
+          "execution": {
+            "setup": [
+              "Various weight medicine balls",
+              "Open training space",
+              "Wall for certain exercises"
+            ],
+            "technique": [
+              "Overhead slams",
+              "Rotational throws",
+              "Chest passes",
+              "Tennis-specific patterns"
+            ],
+            "safety": [
+              "Proper ball weight",
+              "Clear throwing area",
+              "Controlled movements"
+            ]
+          },
+          "cues": [
+            "Maximum velocity",
+            "Tennis-specific patterns",
+            "Explosive power",
+            "Full body integration"
+          ],
+          "tracking": {
+            "type": "explosive",
+            "format": "sets_reps"
+          },
+          "benefits": {
+            "primary": "Tennis-specific power",
+            "secondary": "Rotational power",
+            "sport_specific": "Serve and groundstroke power"
+          }
+        },
+        {
+          "id": "agility_power_circuit",
+          "name": "Agility Power Integration Circuit",
+          "category": "integrated",
+          "order": 4,
+          "loading": {
+            "sets": "3",
+            "reps": "Circuit format",
+            "intensity": "Maximum effort",
+            "rest": "2 minutes between circuits"
+          },
+          "execution": {
+            "setup": [
+              "Agility ladder",
+              "Cones for direction changes",
+              "Sprint distances marked"
+            ],
+            "technique": [
+              "Ladder speed work: 30 seconds",
+              "Cone agility: 30 seconds",
+              "Sprint intervals: 30 seconds",
+              "Rest: 30 seconds"
+            ],
+            "safety": [
+              "Proper warm-up",
+              "Surface appropriate",
+              "Hydration maintained"
+            ]
+          },
+          "cues": [
+            "Maximum speed",
+            "Quick feet",
+            "Explosive direction changes",
+            "Maintain form"
+          ],
+          "tracking": {
+            "type": "circuit",
+            "format": "rounds"
+          },
+          "benefits": {
+            "primary": "Movement power",
+            "secondary": "Agility and speed",
+            "sport_specific": "Court movement efficiency"
+          }
+        }
+      ]
+    },
+    {
+      "id": "power_finisher",
+      "type": "power",
+      "title": "Power Expression Finisher",
+      "description": "Maximum power expression",
+      "duration": "10 minutes",
+      "exercises": [
+        {
+          "id": "power_expression",
+          "name": "Power Expression Challenge",
+          "category": "test",
+          "order": 1,
+          "loading": {
+            "sets": "1",
+            "reps": "Maximum effort",
+            "intensity": "Peak power",
+            "rest": "Complete recovery"
+          },
+          "execution": {
+            "setup": [
+              "Optimal conditions",
+              "Maximum recovery",
+              "Measurement tools"
+            ],
+            "technique": [
+              "Vertical jump for height",
+              "Medicine ball throw for distance",
+              "Sprint for time"
+            ],
+            "safety": [
+              "Optimal conditions",
+              "Proper preparation",
+              "Measure safely"
+            ]
+          },
+          "cues": [
+            "Maximum power output",
+            "Peak performance",
+            "Give everything",
+            "Measure progress"
+          ],
+          "tracking": {
+            "type": "performance",
+            "format": "measurement"
+          },
+          "benefits": {
+            "primary": "Peak power expression",
+            "secondary": "Performance validation",
+            "sport_specific": "Power transfer assessment"
+          }
+        }
+      ]
+    }
+  ],
+  "recovery_protocols": [
+    {
+      "id": "elite_recovery_analysis",
+      "type": "comprehensive",
+      "title": "Elite Recovery & Performance Analysis",
+      "duration": "25 minutes",
+      "timing": "Post-training",
+      "attribution": {
+        "methodology": "Elite recovery protocols",
+        "source": "Professional recovery science",
+        "elite_use": "Tour-level recovery",
+        "verification": "Recovery research"
+      },
+      "components": [
+        {
+          "id": "immediate_recovery",
+          "name": "Immediate Recovery Protocol",
+          "type": "recovery",
+          "duration": "10 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Active recovery and cooling",
+            "intensity": "Light",
+            "equipment": "Recovery tools"
+          },
+          "instructions": [
+            "3 minutes active cool-down",
+            "4 minutes breathing protocol",
+            "3 minutes hydration and nutrition"
+          ],
+          "cues": [
+            "Active recovery",
+            "Controlled breathing",
+            "Immediate refueling",
+            "Begin adaptation process"
+          ]
+        },
+        {
+          "id": "performance_analysis",
+          "name": "Performance Analysis Session",
+          "type": "analysis",
+          "duration": "10 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Comprehensive performance review",
+            "intensity": "Evaluation focus",
+            "equipment": "Performance data"
+          },
+          "instructions": [
+            "Review all power metrics",
+            "Analyze competition performance",
+            "Identify improvement areas",
+            "Plan next session modifications"
+          ],
+          "cues": [
+            "Comprehensive analysis",
+            "Identify strengths",
+            "Note improvement areas",
+            "Plan progression"
+          ]
+        },
+        {
+          "id": "phase_1_assessment",
+          "name": "Phase 1 Completion Assessment",
+          "type": "assessment",
+          "duration": "5 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Phase completion evaluation",
+            "intensity": "Assessment focus",
+            "equipment": "Phase 1 data"
+          },
+          "instructions": [
+            "Compare to Phase 1 goals",
+            "Assess readiness for Phase 2",
+            "Document achievements",
+            "Plan transition"
+          ],
+          "cues": [
+            "Phase 1 completion",
+            "Assess achievements",
+            "Plan transition",
+            "Prepare for Phase 2"
+          ]
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 90,
+      "power_minutes": 80,
+      "warmup_minutes": 20,
+      "recovery_minutes": 25,
+      "total_minutes": 215
+    },
+    "intensity": {
+      "tennis_average": "90-95%",
+      "power_average": "85-95%",
+      "overall_rpe": 9.5
+    },
+    "load_calculations": {
+      "power_output": "Peak values",
+      "volume_load": "Maximum power"
+    },
+    "distances": {
+      "court_coverage": "5.0 km",
+      "sprint_distance": "400 m"
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Maximum power output with perfect technique",
+      "Competition performance under pressure",
+      "Power transfer to tennis skills"
+    ],
+    "load_management": [
+      "Highest intensity day of Phase 1",
+      "Monitor for overreaching",
+      "Ensure adequate recovery"
+    ],
+    "progression_markers": [
+      "Power output peaks achieved",
+      "Competition performance maintained",
+      "Phase 1 goals accomplished"
+    ],
+    "phase_1_completion": [
+      "Maximum power development",
+      "Competition readiness",
+      "Preparation for Phase 2"
+    ]
+  },
+  "level_modifications": {
+    "beginner": {
+      "volume": "Reduce to 2 sets power exercises",
+      "intensity": "75-80% on power exercises",
+      "tennis": "Reduce competition intensity",
+      "recovery": "Extend recovery periods"
+    },
+    "intermediate": {
+      "volume": "As prescribed",
+      "intensity": "As prescribed",
+      "tennis": "As prescribed",
+      "recovery": "As prescribed"
+    },
+    "advanced": {
+      "volume": "Add 1 set to power exercises",
+      "intensity": "95-100% on power exercises",
+      "tennis": "Maximum competition intensity",
+      "recovery": "Add performance analysis"
+    }
+  },
+  "week_integration": {
+    "weekly_theme": "Peak Power Integration",
+    "daily_priority": "Maximum power output",
+    "phase_completion": "Power foundation peak",
+    "connects_to": {
+      "tuesday": "Builds on upper body power",
+      "thursday": "Requires recovery focus",
+      "friday": "Final phase integration"
+    },
+    "phase_transition": {
+      "preparation": "Power foundation complete",
+      "adaptations": "Maximum power output",
+      "next_focus": "Phase 2 power application"
+    }
+  },
+  "tracking": {
+    "required": [
+      "All power output measurements",
+      "Competition performance metrics",
+      "Phase 1 completion data",
+      "Recovery indicators",
+      "Readiness for Phase 2"
+    ],
+    "optional": [
+      "Video analysis of power movements",
+      "Heart rate during competition",
+      "Serve speed tracking",
+      "Movement efficiency metrics"
+    ],
+    "phase_1_completion": [
+      "Power development progress",
+      "Competition performance",
+      "Phase 1 goal achievement",
+      "Phase 2 readiness"
+    ]
+  },
+  "navigation": {
+    "week_overview": "./",
+    "next_day": "thursday",
+    "previous_day": "tuesday",
+    "phase_status": "Phase 1 - Power Peak"
+  }
+}

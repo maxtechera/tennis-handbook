@@ -3,194 +3,61 @@ sidebar_position: 2
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-1/tuesday.yml';
 
 <WorkoutNav weekNumber={1} />
 
-# Tuesday - Enhanced Upper Body Foundation & Tennis
+# {workoutData.metadata.title}
 
-_"Building Strength and Precision for Elite Performance"_
+_{workoutData.metadata.subtitle}_
 
-**Daily Navigation:** [📋 Week Overview](./) | [⬅️ Monday](monday) | [Wednesday ➡️](wednesday)
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
----
-
-## Daily Assessment & Comparison (07:00-07:10)
-
-| Metric                  | Monday Baseline | Tuesday Reading | Notes                          |
-| ----------------------- | --------------- | --------------- | ------------------------------ |
-| **HRV**                 | \_\_\_ ms       | \_\_\_ ms       | &gt;5% change = adjust intensity  |
-| **Sleep Quality**       | \_\_\_/10       | \_\_\_/10       | &lt;7 = reduce volume by 20%      |
-| **Energy Level**        | \_\_\_/10       | \_\_\_/10       | &lt;7 = focus on movement quality |
-| **Muscle Soreness**     | \_\_\_/10       | \_\_\_/10       | &gt;6 = additional mobility work  |
-| **Training Motivation** | \_\_\_/10       | \_\_\_/10       | &lt;7 = reduce complexity         |
-
-## Enhanced Upper Body Strength (07:15-08:00)
-
-### Primary Upper Body Movements
-
-| Exercise                   | Sets×Reps | Rest    | HSR Protocol             | Specific Coaching Cues         |
-| -------------------------- | --------- | ------- | ------------------------ | ------------------------------ |
-| **Overhead Press (Tempo)** | 4×8       | 2.5 min | 3-sec eccentric lowering | "Lower bar to clavicle level"  |
-|                            |           |         | 1-sec pause at bottom    | "Drive bar straight up"        |
-|                            |           |         | Explosive concentric     | "Engage core, don't arch back" |
-|                            |           |         | 65-70% estimated 1RM     | "Feel shoulders stabilizing"   |
-
-**Overhead Press Detailed Instructions:**
-- **SETUP**: Stand with feet hip-width apart, barbell at shoulder level, grip slightly wider than shoulders
-- **CORE ENGAGEMENT**: Brace core like someone is about to punch your stomach, maintain throughout lift
-- **DESCENT**: Lower bar slowly over 3 seconds to just below chin level (clavicle), control the weight
-- **PAUSE**: Hold briefly at bottom position, maintain tension in shoulders and core
-- **DRIVE**: Press bar straight up explosively, drive through legs slightly, bar travels in straight line
-- **BREATHING**: Inhale at top, hold breath during descent and press, exhale after completing rep
-- **WEIGHT**: Use 65-70% of estimated 1RM (weight you could press for 3-5 max reps)
-| **Cable/Band Row (HSR)**   | 4×10      | 2 min   | 4-sec eccentric emphasis | "Pull elbows back, not wide"   |
-|                            |           |         | Squeeze shoulder blades  | "Feel rhomboids and mid-traps" |
-|                            |           |         | Control the weight       | "Don't let weight slam down"   |
-|                            |           |         | Focus on posture         | "Chest up, shoulders down"     |
-
-**Cable/Band Row Detailed Instructions:**
-- **SETUP**: Sit with knees slightly bent, grab cable handle or resistance band, arms extended
-- **POSTURE**: Sit tall with chest up, shoulders down and back, maintain neutral spine throughout
-- **PULL PHASE**: Pull elbows straight back (not wide), lead with elbows, squeeze shoulder blades together
-- **PEAK CONTRACTION**: Hold for 1 second at full contraction, feel the squeeze between shoulder blades
-- **RETURN PHASE**: Slowly return to start over 4 full seconds, maintain tension throughout
-- **MUSCLE FOCUS**: Target rhomboids and middle trapezius, avoid using momentum or body rock
-- **COMMON ERRORS**: Don't round shoulders forward, don't pull with just arms, don't let weight slam down
-
-### Shoulder Health & Activation
-
-| Exercise               | Sets×Reps     | Instructions                           | Benefits                    |
-| ---------------------- | ------------- | -------------------------------------- | --------------------------- |
-| **Band Pull-aparts**   | 3×15          | Arms straight, pull band apart         | Rear deltoid strengthening  |
-|                        |               | Focus on squeezing shoulder blades     | Postural improvement        |
-| **External Rotations** | 3×15 each arm | Elbow at 90°, slow controlled rotation | Rotator cuff strengthening  |
-|                        |               | Feel the back of shoulder working      | Serve deceleration strength |
-
-**Band Pull-aparts Detailed Instructions:**
-- **SETUP**: Hold resistance band with arms extended in front, hands shoulder-width apart
-- **EXECUTION**: Pull band apart by squeezing shoulder blades together, arms stay straight
-- **RANGE**: Pull until band touches chest, feel stretch across chest and work in rear delts
-- **CONTROL**: Slowly return to start position, maintain tension in band throughout
-- **FORM**: Keep shoulders down, don't shrug up, maintain good posture throughout movement
-
-**External Rotations Detailed Instructions:**
-- **POSITION**: Stand with elbow at 90 degrees, upper arm parallel to floor, forearm vertical
-- **MOVEMENT**: Rotate forearm backward while keeping elbow in same position
-- **RANGE**: Rotate as far as comfortable, feel work in back of shoulder (infraspinatus)
-- **CONTROL**: 2 seconds out, 2 seconds back, focus on smooth controlled movement
-- **TENNIS APPLICATION**: Strengthens muscles that slow down the arm during serve follow-through
-
-## Tennis-Specific Upper Body Preparation (08:05-08:25)
-
-| Exercise                                      | Duration | Instructions                             | Tennis Application               |
-| --------------------------------------------- | -------- | ---------------------------------------- | -------------------------------- |
-| **Shoulder Dislocates (PVC/Band)**            | 2 min    | Slow, controlled, increase ROM gradually | Shoulder mobility for serves     |
-| **Arm Circles**                               | 1 min    | Forward/backward, small to large         | Dynamic shoulder warm-up         |
-| **Wrist Circles + Flexor/Extensor Stretches** | 2 min    | Both directions, gentle stretch holds    | Wrist health for racquet control |
-| **Bands Rotator Cuff Activation**             | 3 min    | External rotation, internal rotation     | Rotator cuff preparation         |
-| **Medicine Ball Chest Pass (Light)**          | 2 min    | 6-8 reps, focus on explosive release     | Neural activation for power      |
-
-**Detailed Tennis Preparation Instructions:**
-
-**Shoulder Dislocates:**
-- **SETUP**: Hold PVC pipe or resistance band with wide grip (wider than shoulder-width)
-- **MOVEMENT**: Slowly rotate arms overhead and behind body, keeping arms straight
-- **PROGRESSION**: Start with very wide grip, gradually narrow as mobility improves
-- **CONTROL**: Never force the movement, stop if you feel pinching or pain
-- **REPETITIONS**: 8-12 slow controlled repetitions, focus on smooth movement
-
-**Arm Circles:**
-- **SMALL CIRCLES**: Start with 6-inch diameter circles, arms at shoulder height
-- **PROGRESSION**: Gradually increase to large circles (arm's length diameter)
-- **DIRECTION**: 15 seconds forward, 15 seconds backward for each size
-- **FOCUS**: Feel the shoulder joint warming up, increasing blood flow
-
-**Wrist Preparation:**
-- **CIRCLES**: 10 each direction, both wrists simultaneously
-- **FLEXOR STRETCH**: Arm extended, palm up, gently pull fingers back for 15 seconds
-- **EXTENSOR STRETCH**: Arm extended, palm down, gently push hand down for 15 seconds
-- **TENNIS FOCUS**: Prepares wrists for impact and racquet control
-
-**Rotator Cuff Activation:**
-- **EXTERNAL ROTATION**: Light band, elbow at 90°, rotate out against resistance
-- **INTERNAL ROTATION**: Rotate arm in against resistance
-- **REPS**: 12-15 each direction, focus on quality over speed
-- **PURPOSE**: Activates stabilizing muscles before serve practice
-
-**Medicine Ball Chest Pass:**
-- **SETUP**: Stand with feet shoulder-width apart, ball at chest level
-- **EXECUTION**: Explosively push ball forward, focusing on quick release
-- **CATCH**: Have partner throw ball back, or use wall if alone
-- **PROGRESSION**: Start with 4-6 lb ball, focus on speed not weight
-- **NEURAL FOCUS**: Prepares nervous system for explosive tennis movements
-
-## Tennis Serve & Volley Development (08:30-09:30)
-
-### Serve Development Progression
-
-| Phase                       | Time   | Focus                              | Success Metrics                |
-| --------------------------- | ------ | ---------------------------------- | ------------------------------ |
-| **Phase 1: Technique**      | 15 min | Toss consistency, trophy position  | 8/10 tosses same spot          |
-| **Phase 2: Power Building** | 20 min | Leg drive, hip rotation, arm speed | Gradual speed increase         |
-| **Phase 3: Accuracy**       | 15 min | Target practice, serve placement   | 70% serves in target zones     |
-| **Phase 4: Integration**    | 10 min | Serve + first shot patterns        | Fluid transition to first ball |
-
-### Volley Development Progression
-
-| Drill                  | Time  | Technical Focus                    | Physical Focus              |
-| ---------------------- | ----- | ---------------------------------- | --------------------------- |
-| **Stationary Volleys** | 8 min | Compact swing, firm wrist          | Shoulder stability          |
-| **Moving Volleys**     | 7 min | Footwork, court positioning        | Balance and agility         |
-| **Reaction Volleys**   | 5 min | Quick hands, defensive positioning | Reflexes and core stability |
-
-**Daily Tracking:** Serve accuracy ___%, Volley consistency ___%, Power progression ___mph
-
-## Personal Coaching Integration (09:30-10:30)
-
-### Technical Issues from Movement Screen
-
-| Movement Limitation                  | Tennis Impact        | Corrective Exercise      | Coaching Cue                      |
-| ------------------------------------ | -------------------- | ------------------------ | --------------------------------- |
-| **Overhead Squat Forward Lean**      | Serve balance issues | Thoracic spine mobility  | "Chest up during serve prep"      |
-| **Single-leg Glute Bridge Weakness** | Serve leg drive      | Single-leg strengthening | "Drive through back leg on serve" |
-| **Shoulder Y-T-W Difficulty**        | Serve acceleration   | Shoulder stability work  | "Feel shoulders working together" |
-
-### Technique Refinement Focus
-
-| Element             | Assessment                   | Improvement Focus    | Practice Method           |
-| ------------------- | ---------------------------- | -------------------- | ------------------------- |
-| **Serve Toss**      | Consistency rating \_\_\_/10 | Same spot every time | 20 tosses without hitting |
-| **Volley Footwork** | Balance rating \_\_\_/10     | Quick, light steps   | Shadow practice at net    |
-| **Court Movement**  | Efficiency rating \_\_\_/10  | Recovery step timing | Cone drills to targets    |
-
-## Enhanced Recovery Protocols (10:30-10:45)
-
-### Upper Body Mobility Sequence
-
-| Stretch                         | Duration      | Instructions                      | Target                            |
-| ------------------------------- | ------------- | --------------------------------- | --------------------------------- |
-| **Cross-Body Shoulder Stretch** | 30s each arm  | Gentle pull across chest          | Posterior deltoid, rhomboids      |
-| **Overhead Tricep Stretch**     | 30s each arm  | Reach down spine, gentle pressure | Triceps, latissimus dorsi         |
-| **Doorway Chest Stretch**       | 45s           | Lean forward, feel chest opening  | Pectorals, anterior deltoids      |
-| **Neck Lateral Flexion**        | 20s each side | Gentle ear to shoulder            | Upper trapezius, levator scapulae |
-
-### Breathing & Nervous System Reset
-
-| Protocol                          | Duration | Method                                   | Purpose                      |
-| --------------------------------- | -------- | ---------------------------------------- | ---------------------------- |
-| **Box Breathing**                 | 3 min    | 4 count in, 4 hold, 4 out, 4 hold        | Parasympathetic activation   |
-| **Progressive Muscle Relaxation** | 5 min    | Tense and release each muscle group      | Tension release, recovery    |
-| **Visualization**                 | 2 min    | Perfect serve technique mental rehearsal | Motor learning reinforcement |
-
-### Session Documentation
-
-| Metric               | Value     | Notes                               |
-| -------------------- | --------- | ----------------------------------- |
-| **Upper Body RPE**   | \_\_\_/10 | Energy level during strength work   |
-| **Serve Accuracy %** | \_\_\_%   | Track improvement over time         |
-| **Technical Focus**  | **\_**    | Main coaching point of the day      |
-| **Recovery Feel**    | \_\_\_/10 | How recovered you feel post-session |
+<WorkoutCarouselFromData week={1} day="tuesday" />
 
 ---
 
-**Daily Navigation:** [📋 Week Overview](./) | [⬅️ Monday](monday) | [Wednesday ➡️](wednesday)
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

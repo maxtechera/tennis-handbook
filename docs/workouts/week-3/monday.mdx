@@ -1,52 +1,63 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-3/monday.yml';
 
 <WorkoutNav weekNumber={3} />
 
-# Monday – Lower Body Strength & Explosive Tennis
+# {workoutData.metadata.title}
 
-## Monday Schedule
+_{workoutData.metadata.subtitle}_
 
-| Time | Exercise/Drill | Sets×Reps | Instructions |
-|------|---------------|-----------|--------------|}
-| 07:15–08:15 | Tennis Baseline Explosive Drills | - | Aggressive footwork, increased topspin, explosive movements |
-| 08:25–09:35 | Barbell Squat | 4×6 | Higher load, explosive ascent |
-| | Bulgarian Split Squat | 3×8 per leg | Controlled, stable movement |
-| | Romanian Deadlift | 3×8 | Strong hinge, neutral spine |
-| | Heavy Calf Raises | 3×12 | Full stretch, slow controlled reps |
-| 09:35–10:05 | Spanish Squat (isometric) | 3×50 sec | Strong form, deep breathing |
-| | Rotational Pallof Press | 3×10 per side | Controlled rotation, core stability |
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-## Quick Exercise Instructions
-
-**Barbell Squat (4×6)**: Week 3 load increase, 3-sec descent, explosive drive, 75-80% effort
-
-**Bulgarian Split Squat (3×8)**: Reduced reps for strength focus, add load, control descent
-
-**Romanian Deadlift (3×8)**: Hip hinge mastery, hamstring stretch focus, drive hips forward
-
-**Spanish Squat (3×50 sec)**: Week 3 progression to 50 seconds, band tension maintained
-
-**Rotational Pallof Press (3×10)**: Add rotation component to pallof press, control return
-
-**Tennis Explosive Drills**: Increase movement speed 15%, aggressive court coverage, power shots
-
-## Key Focus Points
-
-- **Explosive Tennis**: Aggressive footwork with increased topspin and explosive movements
-- **Higher Loads**: Increased squat loads with explosive ascent focus
-- **Stability**: Bulgarian split squats with improved control
-- **Hip Hinge**: Strong RDL technique with neutral spine
-- **Isometric Strength**: Extended Spanish squat holds (50 seconds)
-- **Rotational Core**: Advanced Pallof press with controlled rotation
-
-## Notes
-
-Week 3 continues the progression with higher loads and more explosive tennis movements, emphasizing controlled power development.
+<WorkoutCarouselFromData week={3} day="monday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

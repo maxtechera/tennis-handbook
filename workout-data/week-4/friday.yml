@@ -1,25 +1,26 @@
 # Week 4 - Friday: Integrated Power Application & Performance Testing
 metadata:
   # Basic identifiers
-  period: 4
-  period_name: "Power Integration Phase"
+  period: 2
+  period_name: "Power Integration"
   day_id: "week_4_friday"
   day_name: "Friday"
 
   # Workout details
-  title: "Integrated Power Application & Performance Testing"
-  subtitle: "Phase 2 Integrated Power Application"
-  phase: "Phase 2: Power Integration (Week 1)"
+  title: "Power Consolidation & Tennis Integration"
+  subtitle: "Phase 2 Power Consolidation with Tennis Integration"
+  phase: "Phase 2: Power Integration"
   focus_areas:
-    - "Integrated Power Application"
-    - "Performance Testing"
-    - "Tennis-Specific Power Transfer"
+    - "Power Integration"
+    - "Velocity-Based Training"
+    - "Power Consolidation"
+    - "Tennis Integration"
 
   # Training parameters
   training_parameters:
-    volume: "100% (integration focus)"
-    intensity: "80-95% (performance emphasis)"
-    density: "moderate to high"
+    volume: "90% (phase transition deload)"
+    intensity: "85-95% (velocity-based focus)"
+    density: "moderate-high"
     duration: "4 hours 30 minutes"
 
   # Elite Method Attribution

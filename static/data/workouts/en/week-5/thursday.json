@@ -1,0 +1,265 @@
+{
+  "metadata": {
+    "period": 5,
+    "period_name": "Power Integration Phase",
+    "day_id": "week_5_thursday",
+    "day_name": "Thursday",
+    "title": "Lower Body Power & Agility Integration",
+    "subtitle": "Advanced Lower Body Power Development",
+    "phase": "Phase 2: Power Integration (Week 2)",
+    "focus_areas": [
+      "Lower Body Power Development",
+      "Agility Integration",
+      "Movement Power Transfer"
+    ],
+    "training_parameters": {
+      "volume": "100% (full intensity)",
+      "intensity": "85-95% (lower body focus)",
+      "density": "high",
+      "duration": "4 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Thiem Lower Body Power Protocol",
+        "type": "lower_body_power",
+        "attribution": {
+          "athlete": "Dominic Thiem",
+          "coach": "Nicolas Massu",
+          "source": "Lower body power development",
+          "verification": "Training documentation",
+          "context": "Court movement and power generation",
+          "results": "Enhanced court coverage and shot power"
+        }
+      }
+    ]
+  },
+  "skill_training": {
+    "section_title": "Lower Body Power Tennis Training",
+    "sessions": [
+      {
+        "id": "lower_body_tennis_session",
+        "type": "lower_body_power",
+        "title": "Lower Body Power Tennis Development",
+        "duration": "85 minutes",
+        "intensity": "85-95%",
+        "components": [
+          {
+            "id": "movement_power_training",
+            "name": "Movement Power Training",
+            "type": "power_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "40 minutes",
+              "rest": "30 seconds between sets"
+            },
+            "implementation": {
+              "method": "Lower body power for tennis movement",
+              "focus": "Explosive court movement",
+              "key_points": "Hip power, change of direction"
+            },
+            "instructions": [
+              {
+                "phase": "EXPLOSIVE_STARTS",
+                "text": "15 minutes explosive start training"
+              },
+              {
+                "phase": "DIRECTION_CHANGES",
+                "text": "15 minutes direction change power"
+              },
+              {
+                "phase": "INTEGRATION",
+                "text": "10 minutes integrated movement power"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Movement speed",
+                "target": "Explosive first step",
+                "tracking": "Sprint time measurements"
+              }
+            ]
+          },
+          {
+            "id": "power_baseline_shots",
+            "name": "Power Baseline Training",
+            "type": "power_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "35 minutes",
+              "rest": "Between drill sets"
+            },
+            "implementation": {
+              "method": "Lower body power for groundstrokes",
+              "focus": "Hip drive and stability",
+              "key_points": "Ground force production"
+            },
+            "instructions": [
+              {
+                "phase": "POWER_STANCE",
+                "text": "15 minutes power stance training"
+              },
+              {
+                "phase": "EXPLOSIVE_SHOTS",
+                "text": "15 minutes explosive baseline shots"
+              },
+              {
+                "phase": "INTEGRATION",
+                "text": "5 minutes integrated power shots"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "lower_body_power_block",
+      "type": "power",
+      "title": "Lower Body Power Training Block",
+      "description": "Advanced lower body power development",
+      "duration": "95 minutes",
+      "exercises": [
+        {
+          "id": "power_squat_variations",
+          "name": "Power Squat Variations",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "6",
+            "reps": "3-5",
+            "intensity": "85-95% 1RM",
+            "rest": "3 minutes between sets"
+          },
+          "execution": {
+            "setup": [
+              "Barbell loaded appropriately",
+              "Velocity tracking device",
+              "Safety equipment"
+            ],
+            "technique": [
+              "Explosive concentric movement",
+              "Controlled eccentric",
+              "Focus on velocity targets"
+            ]
+          },
+          "cues": [
+            "Explosive drive up",
+            "Control the descent",
+            "Maximum velocity intent",
+            "Quality over quantity"
+          ],
+          "benefits": {
+            "primary": "Lower body power",
+            "secondary": "Strength development",
+            "sport_specific": "Tennis movement power"
+          }
+        },
+        {
+          "id": "plyometric_progression",
+          "name": "Advanced Plyometric Progression",
+          "category": "primary",
+          "order": 2,
+          "loading": {
+            "sets": "4",
+            "reps": "5-8",
+            "intensity": "Maximum effort",
+            "rest": "2.5 minutes between sets"
+          },
+          "execution": {
+            "setup": [
+              "Plyometric boxes (various heights)",
+              "Open space for jumps",
+              "Soft landing area"
+            ],
+            "technique": [
+              "Depth jumps from optimal height",
+              "Lateral bounds",
+              "Single-leg hops",
+              "Reactive jumps"
+            ]
+          },
+          "cues": [
+            "Explosive takeoff",
+            "Soft landings",
+            "Maximum effort",
+            "Quick ground contact"
+          ],
+          "benefits": {
+            "primary": "Reactive strength",
+            "secondary": "Power endurance",
+            "sport_specific": "Court agility"
+          }
+        },
+        {
+          "id": "agility_power_integration",
+          "name": "Agility Power Integration",
+          "category": "auxiliary",
+          "order": 3,
+          "loading": {
+            "sets": "5",
+            "reps": "8-12",
+            "intensity": "Maximum effort",
+            "rest": "2 minutes between sets"
+          },
+          "execution": {
+            "setup": [
+              "Agility ladder",
+              "Cones for markers",
+              "Open space"
+            ],
+            "technique": [
+              "Ladder drills with power focus",
+              "Cone agility with explosiveness",
+              "Change of direction power"
+            ]
+          },
+          "cues": [
+            "Explosive movements",
+            "Quick feet",
+            "Power through changes",
+            "Maintain quality"
+          ],
+          "benefits": {
+            "primary": "Agility power",
+            "secondary": "Coordination",
+            "sport_specific": "Court movement"
+          }
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 85,
+      "strength_minutes": 95,
+      "warmup_minutes": 30,
+      "recovery_minutes": 25,
+      "total_minutes": 235
+    },
+    "intensity": {
+      "tennis_average": "85-95%",
+      "strength_average": "85-95%",
+      "overall_rpe": 8
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Lower body power development",
+      "Agility integration",
+      "Movement power transfer"
+    ],
+    "load_management": [
+      "High intensity lower body focus",
+      "Adequate recovery between sets",
+      "Power quality maintenance"
+    ],
+    "progression_markers": [
+      "Lower body power improvements",
+      "Movement speed increases",
+      "Agility power development"
+    ]
+  }
+}

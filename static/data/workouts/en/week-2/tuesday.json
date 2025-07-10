@@ -1,0 +1,575 @@
+{
+  "metadata": {
+    "period": 1,
+    "period_name": "Elite Foundation",
+    "day_id": "week_2_tuesday",
+    "day_name": "Tuesday",
+    "title": "Upper Body & Tennis Skills Development",
+    "subtitle": "Week 2 Upper Body Strength with Advanced Tennis Technical Focus",
+    "phase": "Phase 1: Elite Foundation",
+    "focus_areas": [
+      "Upper Body Strength Development",
+      "Tennis Technical Precision",
+      "Serve and Volley Mastery"
+    ],
+    "training_parameters": {
+      "volume": "100% (maintained intensity)",
+      "intensity": "65-75%",
+      "density": "moderate",
+      "duration": "3 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Upper Body Power Development Protocol",
+        "type": "strength",
+        "attribution": {
+          "method": "Upper body power development",
+          "source": "Tennis-specific strength training",
+          "verification": "ATP/WTA strength protocols",
+          "context": "Upper body development for serve power"
+        }
+      },
+      {
+        "name": "Serve and Volley Technique Refinement",
+        "type": "tennis",
+        "attribution": {
+          "method": "Technical skills refinement",
+          "source": "Professional serve technique protocols",
+          "verification": "Serve coaching methodology",
+          "context": "Precision and explosive serve development"
+        }
+      },
+      {
+        "name": "Personal Coaching Integration",
+        "type": "holistic",
+        "attribution": {
+          "method": "Individualized technical coaching",
+          "source": "Professional coaching methodology",
+          "verification": "Elite coaching protocols",
+          "context": "Footwork agility and technical refinement"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Incline bench",
+        "Dumbbells (various weights)",
+        "Lat pulldown machine",
+        "Resistance bands",
+        "Tennis court access"
+      ],
+      "optional": [
+        "Cones for footwork drills",
+        "Video recording device",
+        "Medicine ball (3-4kg)",
+        "Agility ladder"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Wednesday ➡️](wednesday)",
+      "overview_link": "./",
+      "next_link": "wednesday",
+      "previous_link": "monday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Upper Body Readiness Assessment",
+        "preparation": "Tennis-Specific Movement Preparation",
+        "skill_training": "Advanced Tennis Skills Development",
+        "conditioning": "Upper Body Strength Training",
+        "recovery": "Technical Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "info",
+          "title": "Upper Body & Skills Focus",
+          "content": "Combining strength development with advanced tennis technical work",
+          "icon": "🎾"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "upper_body_readiness",
+      "type": "strength",
+      "title": "Upper Body Readiness Assessment",
+      "timing": "pre-session",
+      "duration": "10 minutes",
+      "description": "Assess upper body readiness for strength training and tennis skills",
+      "attribution": {
+        "source": "Upper body assessment protocols",
+        "methodology": "Pre-training readiness evaluation",
+        "validation": "Strength training preparation",
+        "elite_use": "Professional athlete preparation"
+      },
+      "components": [
+        {
+          "id": "shoulder_mobility_check",
+          "name": "Shoulder Mobility Assessment",
+          "type": "movement",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Active and passive shoulder range of motion",
+            "repetitions": "Multiple directions",
+            "equipment": "None"
+          },
+          "standards": {
+            "elite_benchmark": "Full overhead range without compensation",
+            "good_standard": "Good overhead range with minimal restriction",
+            "needs_work": "Limited overhead range or significant restrictions"
+          },
+          "scoring": {
+            "method": "Range of motion assessment",
+            "scale": "pass/fail with notes",
+            "recording": "Document any restrictions for targeted preparation"
+          },
+          "context": {
+            "description": "Evaluates shoulder readiness for pressing movements",
+            "application": "Determines warm-up needs for upper body training"
+          }
+        }
+      ]
+    }
+  ],
+  "preparation_phases": [
+    {
+      "id": "morning_protocol",
+      "title": "Week 2 Morning Protocol - Upper Body Focus",
+      "timing": "6:00-6:15",
+      "duration": "15 minutes",
+      "description": "Morning activation with upper body emphasis",
+      "attribution": {
+        "source": "Upper body activation methodology",
+        "methodology": "Tennis-specific morning preparation",
+        "validation": "Daily preparation for upper body training",
+        "elite_use": "Professional tennis players"
+      },
+      "activities": [
+        {
+          "name": "Respiratory Activation with Shoulder Focus",
+          "duration": "3 minutes",
+          "sets": 3,
+          "instructions": [
+            "Deep breathing with shoulder blade movement",
+            "Inhale with shoulder blade retraction",
+            "Exhale with shoulder blade protraction"
+          ],
+          "implementation": {
+            "execution": "Seated position, focus on scapular movement",
+            "focus": "Shoulder girdle activation and breathing coordination",
+            "tennis_application": "Prepares shoulders for serve mechanics"
+          }
+        },
+        {
+          "name": "Dynamic Shoulder Mobility",
+          "duration": "5 minutes",
+          "sets": 1,
+          "instructions": [
+            "Arm circles: 15 forward, 15 backward",
+            "Cross-body shoulder stretches: 10 each arm",
+            "Overhead reaching: 15 repetitions"
+          ],
+          "implementation": {
+            "execution": "Progressive range of motion",
+            "focus": "Shoulder joint preparation",
+            "tennis_application": "Prepares for overhead serve motions"
+          }
+        },
+        {
+          "name": "Upper Body Activation",
+          "duration": "7 minutes",
+          "sets": 2,
+          "instructions": [
+            "Scapular wall slides: 15 repetitions",
+            "Band pull-aparts: 15 repetitions",
+            "Arm elevation holds: 30 seconds each position"
+          ],
+          "implementation": {
+            "execution": "Progressive activation exercises",
+            "focus": "Upper body stabilizer activation",
+            "tennis_application": "Prepares for strength training and serve work"
+          }
+        }
+      ]
+    }
+  ],
+  "tennis_training": {
+    "title": "Advanced Tennis Skills Development",
+    "timing": "9:00-11:00",
+    "duration": "120 minutes",
+    "description": "Serve and volley mastery with personal coaching integration",
+    "attribution": {
+      "source": "Advanced tennis coaching methodology",
+      "methodology": "Serve and volley development with personal coaching",
+      "validation": "Professional tennis coaching protocols",
+      "elite_use": "ATP/WTA serve and volley training"
+    },
+    "session_structure": {
+      "serve_development": {
+        "title": "Serve Power and Precision Training",
+        "timing": "9:00-10:00",
+        "duration": "60 minutes",
+        "phases": [
+          {
+            "name": "Serve Mechanics Refinement",
+            "duration": "20 minutes",
+            "focus": "Technical precision",
+            "detailed_instructions": [
+              "Trophy position holds: 10 repetitions, 5 seconds each",
+              "Slow-motion serve practice: 15 repetitions",
+              "Racket drop emphasis: Focus on proper lag creation"
+            ]
+          },
+          {
+            "name": "Power Development Serves",
+            "duration": "25 minutes",
+            "focus": "Explosive power",
+            "detailed_instructions": [
+              "First serve targets: 40 serves to corners",
+              "Second serve consistency: 30 serves with spin focus",
+              "Progressive power increase: Start 70%, build to 90%"
+            ]
+          },
+          {
+            "name": "Serve Under Pressure",
+            "duration": "15 minutes",
+            "focus": "Match simulation",
+            "detailed_instructions": [
+              "Serve pressure points: 20 pressure serves",
+              "Consecutive serve targets: Must hit 3 in a row",
+              "Mental focus practice: Visualization between serves"
+            ]
+          }
+        ]
+      },
+      "volley_development": {
+        "title": "Volley Technique and Movement",
+        "timing": "10:00-11:00",
+        "duration": "60 minutes",
+        "phases": [
+          {
+            "name": "Volley Fundamentals",
+            "duration": "20 minutes",
+            "focus": "Technical foundation",
+            "detailed_instructions": [
+              "Forehand volley: 30 repetitions at net",
+              "Backhand volley: 30 repetitions at net",
+              "Focus on punch technique, minimal backswing"
+            ]
+          },
+          {
+            "name": "Movement and Positioning",
+            "duration": "25 minutes",
+            "focus": "Court positioning",
+            "detailed_instructions": [
+              "Approach shot + volley: 20 combinations",
+              "Split step timing: Practice with feed balls",
+              "Forward movement to net: Emphasis on balance"
+            ]
+          },
+          {
+            "name": "Footwork Integration",
+            "duration": "15 minutes",
+            "focus": "Agility and technical refinement",
+            "detailed_instructions": [
+              "Lateral volleys: 15 each direction",
+              "High volley technique: 20 repetitions",
+              "Quick feet drills: Between volley practice"
+            ]
+          }
+        ]
+      },
+      "personal_coaching": {
+        "title": "Individual Technical Coaching",
+        "timing": "Integrated throughout",
+        "duration": "Ongoing",
+        "focus_areas": [
+          {
+            "area": "Serve Mechanics Analysis",
+            "methods": [
+              "Video analysis of serve motion",
+              "Real-time technique corrections",
+              "Individual strength/weakness identification"
+            ]
+          },
+          {
+            "area": "Footwork Agility Enhancement",
+            "methods": [
+              "Customized footwork patterns",
+              "Movement efficiency optimization",
+              "Court positioning improvement"
+            ]
+          },
+          {
+            "area": "Mental Game Development",
+            "methods": [
+              "Concentration techniques during practice",
+              "Pressure situation simulation",
+              "Confidence building through success repetition"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "movement_preparation": {
+    "title": "Tennis-Specific Upper Body Preparation",
+    "timing": "8:30-8:50",
+    "duration": "20 minutes",
+    "description": "Preparation for upper body strength training and tennis skills",
+    "attribution": {
+      "source": "Tennis-specific movement preparation",
+      "methodology": "Upper body preparation for tennis and strength",
+      "validation": "Professional preparation protocols",
+      "elite_use": "ATP/WTA preparation methods"
+    },
+    "exercises": [
+      {
+        "name": "Shoulder Dynamic Warm-up",
+        "sets": 2,
+        "reps": 12,
+        "rest_seconds": 30,
+        "protocol": "Progressive shoulder circles and stretches",
+        "tennis_application": "Prepares shoulders for serve mechanics"
+      },
+      {
+        "name": "Scapular Activation",
+        "sets": 3,
+        "reps": 15,
+        "rest_seconds": 30,
+        "protocol": "Wall slides and band pull-aparts",
+        "tennis_application": "Activates stabilizers for upper body training"
+      },
+      {
+        "name": "Wrist and Forearm Mobility",
+        "sets": 2,
+        "reps": 10,
+        "rest_seconds": 20,
+        "protocol": "Wrist circles and stretches",
+        "tennis_application": "Prepares for racket grip and ball contact"
+      },
+      {
+        "name": "Core Rotation Preparation",
+        "sets": 2,
+        "reps": 8,
+        "rest_seconds": 30,
+        "protocol": "Gentle torso rotation and side bends",
+        "tennis_application": "Prepares core for rotational serve motion"
+      }
+    ]
+  },
+  "strength_training": {
+    "title": "Upper Body Strength Development",
+    "timing": "7:30-8:15",
+    "duration": "45 minutes",
+    "description": "Tennis-specific upper body strength training",
+    "attribution": {
+      "source": "Tennis-specific upper body training",
+      "methodology": "Upper body power development for tennis",
+      "validation": "Tennis strength training protocols",
+      "elite_use": "Professional tennis strength training"
+    },
+    "main_exercises": [
+      {
+        "name": "Incline Dumbbell Press",
+        "sets": 3,
+        "reps": 8,
+        "rest_seconds": 120,
+        "load": "Select weight for 8 rep max",
+        "tempo": "3-1-X-1",
+        "protocol": "Controlled full range of motion",
+        "tennis_application": "Builds upper body power for overhead serves and volleys",
+        "detailed_instructions": {
+          "title": "Controlled Full Range of Motion Instructions",
+          "technique_points": [
+            {
+              "phase": "SETUP",
+              "instruction": "Set incline bench to 30-45 degrees, sit with dumbbells resting on thighs"
+            },
+            {
+              "phase": "STARTING POSITION",
+              "instruction": "Lie back and position dumbbells at chest level, feet flat on floor"
+            },
+            {
+              "phase": "GRIP",
+              "instruction": "Hold dumbbells with palms facing forward, wrists straight and strong"
+            },
+            {
+              "phase": "DESCENT",
+              "instruction": "Lower weights slowly over 3 seconds, feel stretch in chest muscles"
+            },
+            {
+              "phase": "BOTTOM POSITION",
+              "instruction": "Lower until dumbbells are at chest level, elbows slightly below shoulders"
+            },
+            {
+              "phase": "PRESS",
+              "instruction": "Drive weights up and slightly together, focusing on chest muscle contraction"
+            },
+            {
+              "phase": "BREATHING",
+              "instruction": "Inhale during descent, exhale forcefully during pressing phase"
+            },
+            {
+              "phase": "PROGRESSION",
+              "instruction": "Increase weight when you can complete all reps with perfect form"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lat Pulldowns",
+        "sets": 3,
+        "reps": 10,
+        "rest_seconds": 90,
+        "load": "Focus on lat engagement over heavy weight",
+        "tempo": "2-1-3-1",
+        "protocol": "Lat engagement focus",
+        "tennis_application": "Strengthens pulling muscles for groundstroke power",
+        "detailed_instructions": {
+          "title": "Lat Engagement Focus Instructions",
+          "technique_points": [
+            {
+              "phase": "SETUP",
+              "instruction": "Sit at lat pulldown machine, adjust thigh pads to secure legs"
+            },
+            {
+              "phase": "GRIP",
+              "instruction": "Use wide overhand grip, hands wider than shoulders on bar"
+            },
+            {
+              "phase": "STARTING POSITION",
+              "instruction": "Sit tall with slight lean back, chest up, shoulders down"
+            },
+            {
+              "phase": "PULL PHASE",
+              "instruction": "Pull bar down to upper chest, leading with elbows not hands"
+            },
+            {
+              "phase": "LAT FOCUS",
+              "instruction": "Think 'pull elbows back and down' to target lats specifically"
+            },
+            {
+              "phase": "SQUEEZE",
+              "instruction": "Hold peak contraction for 1 second, feel lats working"
+            },
+            {
+              "phase": "RETURN",
+              "instruction": "Slowly return bar to start over 3 seconds, maintain tension"
+            },
+            {
+              "phase": "AVOID",
+              "instruction": "Don't lean back excessively or use momentum to move weight"
+            },
+            {
+              "phase": "PROGRESSION",
+              "instruction": "Increase weight when you can feel lats working throughout full range"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Band Pull-Aparts",
+        "sets": 3,
+        "reps": 15,
+        "rest_seconds": 60,
+        "load": "Medium resistance band",
+        "tempo": "1-1-2-1",
+        "protocol": "Consistent tension maintenance",
+        "tennis_application": "Posterior deltoid strength for racket control",
+        "detailed_instructions": {
+          "title": "Consistent Tension Instructions",
+          "technique_points": [
+            {
+              "phase": "SETUP",
+              "instruction": "Hold resistance band with arms extended at chest height"
+            },
+            {
+              "phase": "GRIP",
+              "instruction": "Hands shoulder-width apart, palms facing down"
+            },
+            {
+              "phase": "PULL APART",
+              "instruction": "Pull band apart by squeezing shoulder blades together"
+            },
+            {
+              "phase": "PEAK CONTRACTION",
+              "instruction": "Hold for 1 second, feel rear delts and rhomboids working"
+            },
+            {
+              "phase": "RETURN",
+              "instruction": "Slowly return to start position over 2 seconds"
+            },
+            {
+              "phase": "TENSION",
+              "instruction": "Maintain band tension throughout entire range of motion"
+            },
+            {
+              "phase": "FOCUS",
+              "instruction": "Quality over quantity - feel the muscles working"
+            },
+            {
+              "phase": "PROGRESSION",
+              "instruction": "Increase reps or use stronger band when current becomes easy"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "recovery_protocol": {
+    "title": "Technical Recovery Protocol",
+    "timing": "11:00-11:30",
+    "duration": "30 minutes",
+    "description": "Recovery focused on upper body and technical elements",
+    "attribution": {
+      "source": "Tennis-specific recovery methodology",
+      "methodology": "Upper body and technical recovery",
+      "validation": "Professional recovery protocols",
+      "elite_use": "ATP/WTA recovery methods"
+    },
+    "components": [
+      {
+        "name": "Upper Body Stretching Sequence",
+        "duration": "12 minutes",
+        "protocol": "Tennis-specific upper body stretches",
+        "implementation": {
+          "method": "Hold stretches 40 seconds each",
+          "focus": "Chest, shoulders, lats, and forearms",
+          "progression": "Deeper stretches for enhanced flexibility"
+        }
+      },
+      {
+        "name": "Shoulder and Wrist Mobility",
+        "duration": "8 minutes",
+        "protocol": "Tennis-specific mobility work",
+        "implementation": {
+          "method": "Gentle circles and range of motion exercises",
+          "focus": "Maintaining serve mechanics flexibility",
+          "progression": "Progressive range improvement"
+        }
+      },
+      {
+        "name": "Technical Visualization",
+        "duration": "7 minutes",
+        "protocol": "Mental rehearsal of serve and volley techniques",
+        "implementation": {
+          "method": "Relaxed position, mental practice of techniques worked on",
+          "focus": "Reinforcing technical improvements through visualization",
+          "progression": "Increased detail and precision in mental practice"
+        }
+      },
+      {
+        "name": "Breathing and Relaxation",
+        "duration": "3 minutes",
+        "protocol": "4-7-8 breathing with upper body focus",
+        "implementation": {
+          "method": "Deep breathing with shoulder relaxation emphasis",
+          "focus": "Upper body tension release and recovery",
+          "progression": "Enhanced relaxation response"
+        }
+      }
+    ]
+  }
+}

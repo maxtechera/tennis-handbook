@@ -35,15 +35,15 @@ _"{workoutData.metadata.subtitle}"_
 
 ---
 
-<PreWeekAssessment data={workoutData.pre_week_assessment} />
+<PreWeekAssessment assessments={workoutData.assessments} />
 
 ---
 
-<MorningProtocol data={workoutData.morning_protocol} />
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
 
 <ProfessionalAssessmentSection 
   data={workoutData.metadata}
-  assessments={workoutData.morning_protocol?.professional_assessment?.assessments} 
+  assessments={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')?.components} 
 />
 
 <TennisTrainingTable data={workoutData.tennis_training} />

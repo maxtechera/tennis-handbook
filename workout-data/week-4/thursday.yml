@@ -1,26 +1,27 @@
 # Week 4 - Thursday: Active Recovery & Power Technique Refinement
 metadata:
   # Basic identifiers
-  period: 4
-  period_name: "Power Integration Phase"
+  period: 2
+  period_name: "Power Integration"
   day_id: "week_4_thursday"
   day_name: "Thursday"
 
   # Workout details
-  title: "Active Recovery & Power Technique Refinement"
-  subtitle: "Phase 2 Recovery with Power Technique Focus"
-  phase: "Phase 2: Power Integration (Week 1)"
+  title: "Integrated Power Application & Tennis Precision"
+  subtitle: "Phase 2 Power Application with Tennis Precision Training"
+  phase: "Phase 2: Power Integration"
   focus_areas:
-    - "Active Recovery"
-    - "Power Technique Refinement"
-    - "Movement Quality Enhancement"
+    - "Power Integration"
+    - "Velocity-Based Training"
+    - "Integrated Power Application"
+    - "Tennis Precision Training"
 
   # Training parameters
   training_parameters:
-    volume: "60% (recovery focus)"
-    intensity: "50-70% (technical emphasis)"
-    density: "low to moderate"
-    duration: "3 hours 30 minutes"
+    volume: "90% (phase transition deload)"
+    intensity: "85-95% (velocity-based focus)"
+    density: "moderate-high"
+    duration: "4 hours 30 minutes"
 
   # Elite Method Attribution
   elite_methods:

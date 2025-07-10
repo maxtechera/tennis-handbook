@@ -3,87 +3,61 @@ sidebar_position: 6
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-2/friday.yml';
 
 <WorkoutNav weekNumber={2} />
 
-# Friday – Explosive Strength & Agility Tennis
+# {workoutData.metadata.title}
 
-## Friday Schedule
+_{workoutData.metadata.subtitle}_
 
-| Time | Exercise/Drill | Sets×Reps | Instructions |
-|------|---------------|-----------|--------------|
-| 07:15–08:15 | Tennis Transition & Agility Drills | - | Aggressive transitions, quick lateral movements |
-| 08:25–09:35 | Trap-bar Deadlift | 4×6 | Increased load, controlled execution |
-| | Hip Thrusts | 3×10 | Explosive drive, controlled eccentric |
-| | Push Press | 3×8 | Power from hips, full overhead extension |
-| | Med-Ball Slams | 3×10 | Explosive throws, full-body engagement |
-| | Farmer's Carry | 2×40m | Upright, stable grip |
-| 09:35–09:50 | Reactive Plyometrics | 3×5 | Depth jumps, lateral bounds, minimal ground contact |
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-## Quick Exercise Instructions
-
-### Trap-bar Deadlift (4×6)
-- Week 2 load increase from previous week
-- Hip hinge pattern with neutral spine
-- Explosive drive through heels and hips
-- Control descent slowly and deliberately
-- Focus on perfect form with heavier weight
-- **Video Reference**: [Jeff Nippard - Deadlift Guide](https://www.youtube.com/watch?v=op9kVnSso6Q)
-
-### Hip Thrusts (3×10)
-- Shoulders on bench, feet flat on floor
-- Explosive hip drive, squeeze glutes hard
-- Control descent slowly
-- Create straight line from knees to shoulders
-- Focus on posterior chain power
-- **Video Reference**: [Jeff Nippard - Hip Thrust Guide](https://www.youtube.com/watch?v=xDmFkJxPzeM)
-
-### Push Press (3×8)
-- Start with slight knee dip
-- Explosive leg drive to initiate movement
-- Press bar overhead in one fluid motion
-- Land stable with arms locked out
-- Generate power from lower body
-- **Video Reference**: [Jeff Nippard - Push Press Guide](https://www.youtube.com/watch?v=iaBVSJm78ko)
-
-### Med-Ball Slams (3×10)
-- Hold ball overhead with both hands
-- Slam down hard with maximum force
-- Full body engagement from core
-- Explosive intent on every rep
-- Quick retrieval for next rep
-- **Video Reference**: [Jeff Nippard - Power Training](https://www.youtube.com/watch?v=K8aGBKy3a1k)
-
-### Farmer's Carry (2×40m)
-- Heavy loads challenging your grip
-- Maintain upright posture throughout
-- Stable grip without over-squeezing
-- Take controlled steps forward
-- Core engaged to prevent leaning
-- **Video Reference**: [Jeff Nippard - Farmer's Walk](https://www.youtube.com/watch?v=p8FWv6bUJ7w)
-
-### Depth Jumps (3×5)
-- Step off box (12-18 inches high)
-- Land and immediately jump up maximally
-- Minimal ground contact time
-- Focus on reactive strength
-- Soft landing then explosive takeoff
-- **Video Reference**: [Jeff Nippard - Plyometric Training](https://www.youtube.com/watch?v=tcY1dI5-Teo)
-
-## Key Focus Points
-
-- **Tennis Agility**: Aggressive transitions with quick lateral movements
-- **Deadlift Power**: Increased load from Week 1 with controlled execution
-- **Hip Drive**: Explosive hip thrusts with controlled eccentric phase
-- **Overhead Power**: Push press generating power from hips with full extension
-- **Explosive Throws**: Med-ball slams with full-body engagement
-- **Grip Strength**: Farmer's carry maintaining upright posture
-- **Plyometric Power**: Reactive plyometrics with minimal ground contact time
-
-## Notes
-
-Friday caps off the week with explosive power development, combining tennis agility work with heavy lifting and reactive plyometrics.
+<WorkoutCarouselFromData week={2} day="friday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

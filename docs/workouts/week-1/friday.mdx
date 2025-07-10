@@ -3,243 +3,61 @@ sidebar_position: 5
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-1/friday.yml';
 
 <WorkoutNav weekNumber={1} />
 
-# Friday - Enhanced Full Body Power & Tennis
+# {workoutData.metadata.title}
 
-_"Explosive Power Development and Week 1 Assessment"_
+_{workoutData.metadata.subtitle}_
 
-**Daily Navigation:** [📋 Week Overview](./) | [⬅️ Thursday](thursday) | [Saturday ➡️](saturday)
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
----
-
-## Weekly Performance Assessment (07:00-07:10)
-
-| Assessment              | Monday Baseline            | Friday Reading         | Weekly Change       | Performance Indicator       |
-| ----------------------- | -------------------------- | ---------------------- | ------------------- | --------------------------- |
-| **HRV**                 | \_\_\_ ms                  | \_\_\_ ms              | \_\_\_% change      | Adaptation or overreaching? |
-| **Grip Strength**       | \_\_\_ kg (avg both hands) | \_\_\_ kg              | \_\_\_% change      | Neuromuscular readiness     |
-| **Subjective Energy**   | \_\_\_/10                  | \_\_\_/10              | \_\_\_ point change | Weekly fatigue accumulation |
-| **Movement Quality**    | Screen score: \_\_\_/15    | Quick check: \_\_\_/15 | Improvement noted   | Training effectiveness      |
-| **Training Motivation** | \_\_\_/10                  | \_\_\_/10              | \_\_\_ point change | Psychological readiness     |
-
-## Tennis Transition & Agility Training (07:15-08:15)
-
-### Court Movement Integration
-
-| Drill Sequence                  | Time   | Technical Focus             | Physical Development             |
-| ------------------------------- | ------ | --------------------------- | -------------------------------- |
-| **Baseline to Net Transitions** | 15 min | Approach shot technique     | Forward movement efficiency      |
-|                                 |        | Volley preparation          | Deceleration and balance         |
-|                                 |        | Recovery positioning        | Multi-directional agility        |
-| **Lateral Movement Patterns**   | 15 min | Wide ball recovery          | Lateral power and stability      |
-|                                 |        | Court coverage              | Hip abduction/adduction strength |
-|                                 |        | Balance and control         | Single-leg stability             |
-| **Reaction and Agility**        | 15 min | Split-step timing           | Reactive movement quality        |
-|                                 |        | First-step quickness        | Acceleration development         |
-|                                 |        | Direction change efficiency | Deceleration control             |
-| **Match Movement Simulation**   | 15 min | Point construction          | Sport-specific conditioning      |
-|                                 |        | Rally endurance             | Movement pattern integration     |
-|                                 |        | Tactical positioning        | Decision-making under fatigue    |
-
-**Tennis Success Metrics:** Smooth transitions, balanced landings, quick recovery steps
-
-## Power Development Training Block (08:20-09:35)
-
-### Contrast Training Complexes (Introduction to PAP)
-
-| Complex                         | Exercise                     | Sets×Reps | Rest  | Instructions                   | Power Development Benefits   |
-| ------------------------------- | ---------------------------- | --------- | ----- | ------------------------------ | ---------------------------- |
-| **Complex 1: Lower Body Power** |                              |           |       |                                |                              |
-|                                 | Trap-bar Deadlift (Strength) | 4×5       | -     | 80-85% effort, perfect form    | Heavy strength conditioning  |
-|                                 | → Box Jump (Power)           | 4×3       | 4 min | 20-30s after DL, max height    | Explosive power expression   |
-|                                 |                              |           |       | Land softly, step down         | Post-activation potentiation |
-| **Complex 2: Hip Drive Power**  |                              |           |       |                                |                              |
-|                                 | Hip Thrust (Velocity Focus)  | 4×8       | -     | 70% weight, maximum speed      | Posterior chain power        |
-|                                 | → Broad Jump                 | 4×3       | 3 min | 30s after thrust, max distance | Horizontal power transfer    |
-|                                 |                              |           |       | Focus on landing mechanics     | Sport-specific application   |
-
-**Contrast Training Complex Detailed Instructions:**
-
-**Complex 1 - Trap-bar Deadlift:**
-- **SETUP**: Stand inside trap bar with feet hip-width apart, shins close to bar
-- **GRIP**: Grab handles with neutral grip, maintain straight arms throughout
-- **POSITION**: Chest up, shoulders back, slight hip hinge with knees bent
-- **LIFT**: Drive through heels and extend hips and knees simultaneously
-- **LOCKOUT**: Stand tall with shoulders back, hips fully extended
-- **LOWERING**: Control weight down slowly, maintain flat back throughout
-- **INTENSITY**: Use 80-85% effort - challenging but perfect form maintained
-- **REST**: Immediately rest exactly 20-30 seconds before box jumps
-
-**Complex 1 - Box Jump:**
-- **TIMING**: Begin 20-30 seconds after completing deadlift set
-- **APPROACH**: Stand arm's length from box, feet hip-width apart
-- **PREPARATION**: Quick arm swing back, slight squat down to load legs
-- **JUMP**: Explosive triple extension (ankles, knees, hips), drive arms up
-- **LANDING**: Land softly on balls of feet, absorb impact with bent knees
-- **RESET**: Step down (don't jump down), prepare for next rep
-- **FOCUS**: Maximum height each rep, quality over speed
-
-**Complex 2 - Hip Thrust:**
-- **SETUP**: Shoulders on bench, feet flat on floor, barbell across hips
-- **STARTING**: Begin with hips low, knees bent 90 degrees
-- **DRIVE**: Explosively drive hips up by squeezing glutes hard
-- **TOP**: Create straight line from knees to shoulders, hold briefly
-- **SPEED**: Focus on maximum velocity upward movement
-- **WEIGHT**: Use 70% of max - allows for explosive movement
-- **REST**: Immediately rest 30 seconds before broad jumps
-
-**Complex 2 - Broad Jump:**
-- **TIMING**: Begin exactly 30 seconds after completing hip thrust set
-- **STARTING**: Stand with toes behind starting line, feet hip-width apart
-- **PREPARATION**: Swing arms back while loading into partial squat
-- **JUMP**: Explosive forward jump using arms and legs together
-- **FLIGHT**: Drive knees up during flight, prepare for landing
-- **LANDING**: Land on balls of feet, absorb impact by bending knees
-- **MEASUREMENT**: Distance from start line to back of heels at landing
-
-### Upper Body Power Development
-
-| Exercise                        | Sets×Reps    | Instructions                      | Tennis Application           |
-| ------------------------------- | ------------ | --------------------------------- | ---------------------------- |
-| **DB Overhead Press + MB Slam** | 3×(8+5)      | Heavy press, then explosive slams | Serve power development      |
-|                                 |              | 15-20s transition time            | Overhead strength to power   |
-|                                 |              | Focus on movement quality         | Neural drive enhancement     |
-| **Rotational Med-Ball Throws**  | 3×6 per side | Maximum velocity release          | Groundstroke power transfer  |
-|                                 |              | Stand 3 feet from wall            | Rotational power development |
-|                                 |              | Full body engagement              | Tennis-specific movement     |
-
-**Upper Body Power Development Detailed Instructions:**
-
-**DB Overhead Press + Medicine Ball Slam:**
-- **PRESS SETUP**: Stand with feet hip-width apart, dumbbells at shoulder level
-- **PRESS EXECUTION**: Press dumbbells overhead with maximum intended velocity
-- **PRESS FOCUS**: Use challenging weight but maintain explosive intent upward
-- **TRANSITION**: Complete all 8 press reps, then immediately grab medicine ball
-- **SLAM PREPARATION**: Hold med ball overhead with both hands, feet shoulder-width apart
-- **SLAM EXECUTION**: Explosively slam ball down using whole body, engage core
-- **SLAM POWER**: Each slam should be maximum effort - this expresses the primed power
-- **TIMING**: 15-20 second rest between press and slam sets allows neural readiness
-
-**Rotational Medicine Ball Throws:**
-- **SETUP**: Stand perpendicular to wall, 3 feet away, holding med ball at chest
-- **STARTING POSITION**: Rotate away from wall, loading up the core and hips
-- **ROTATION**: Explosively rotate toward wall, throwing ball as hard as possible
-- **RELEASE POINT**: Release ball when arms are parallel to ground for maximum power
-- **FOLLOW-THROUGH**: Allow body to naturally rotate through after release
-- **CATCH**: Catch ball on rebound and immediately set up for next throw
-- **SIDES**: Complete all reps on one side before switching to other side
-- **POWER FOCUS**: Think groundstroke power - this is sport-specific rotation
-
-### Functional Power Integration
-
-| Exercise                             | Sets×Distance | Instructions                | Tennis Benefits           |
-| ------------------------------------ | ------------- | --------------------------- | ------------------------- |
-| **Farmer Carry + Direction Changes** | 3×30m         | Heavy load, add 90° turns   | Grip strength + agility   |
-|                                      |               | Maintain posture throughout | Core stability under load |
-|                                      |               | Quick direction changes     | Sport-specific stability  |
-
-**Functional Power Integration Detailed Instructions:**
-
-**Farmer Carry + Direction Changes:**
-- **LOAD SELECTION**: Use heavy dumbbells or kettlebells (aim for challenging but manageable for 30m)
-- **STARTING POSITION**: Stand tall with weights at sides, shoulders back, core engaged
-- **WALKING PATTERN**: Walk 10m forward, make sharp 90-degree right turn, continue 10m
-- **DIRECTION CHANGE**: At 20m mark, make sharp 90-degree left turn, walk final 10m
-- **POSTURE**: Maintain upright torso throughout - don't let weights pull you forward
-- **GRIP**: Hold weights firmly but don't over-grip - train functional grip strength
-- **TURN TECHNIQUE**: Plant outside foot and pivot quickly, maintain balance throughout
-- **PROGRESSION**: Increase weight when you can complete all 3 sets with perfect posture
-
-## Explosive Power Endurance (09:35-09:50)
-
-### Plyometric Development Circuit
-
-| Exercise                      | Sets×Reps          | Focus                | Technical Cues                 | Recovery           |
-| ----------------------------- | ------------------ | -------------------- | ------------------------------ | ------------------ |
-| **Depth Jumps**               | 3×6                | Reactive strength    | Minimal ground contact         | 90s between sets   |
-|                               |                    | Landing mechanics    | Absorb and redirect force      | Focus on quality   |
-| **Lateral Bounds**            | 3×6 each direction | Lateral power        | Push off outside leg           | 90s between sets   |
-|                               |                    | Single-leg stability | Stick landing on opposite leg  | Control over speed |
-| **Medicine Ball Slam + Jump** | 3×6                | Full body power      | Explosive slam, immediate jump | 90s between sets   |
-|                               |                    | Movement integration | Continuous power output        | Maintain technique |
-
-**Plyometric Development Circuit Detailed Instructions:**
-
-**Depth Jumps:**
-- **SETUP**: Start on box 12-18 inches high (adjust based on ability)
-- **STEP OFF**: Step off box, don't jump off - land with both feet simultaneously
-- **LANDING**: Land on balls of feet with knees slightly bent, absorb impact quickly
-- **IMMEDIATE JUMP**: As soon as feet touch ground, explode up into maximum vertical jump
-- **GROUND CONTACT**: Minimize time on ground - aim for less than 0.2 seconds
-- **FOCUS**: This trains reactive strength and fast stretch-shortening cycle
-- **PROGRESSION**: Once mastered, can increase box height slightly
-
-**Lateral Bounds:**
-- **STARTING POSITION**: Stand on one leg with slight knee bend, arms ready
-- **BOUND**: Explosively push off laterally with outside leg, drive with arms
-- **FLIGHT**: Aim for maximum distance sideways, not just up
-- **LANDING**: Land on opposite leg, absorb impact, stick the landing
-- **CONTROL**: Hold landing position for 1-2 seconds before next rep
-- **ALTERNATION**: Bound right, land left, then bound left, land right
-- **TENNIS APPLICATION**: Trains lateral court coverage power
-
-**Medicine Ball Slam + Jump:**
-- **STARTING**: Hold med ball overhead with both hands, feet hip-width apart
-- **SLAM**: Explosively slam ball down with full body engagement
-- **IMMEDIATE JUMP**: As ball hits ground, immediately jump up vertically
-- **RETRIEVAL**: Land, quickly grab ball, and set up for next rep
-- **CONTINUOUS**: No rest between slam and jump - trains power endurance
-- **INTENSITY**: Maintain maximum effort throughout all 6 reps
-
-**Power Development Goals:**
-- Maximum effort on every rep
-- Perfect landing mechanics
-- Progressive improvement in distance/height
-- Maintain quality throughout all sets
-
-## Weekly Assessment & Recovery (09:50-10:05)
-
-### Power Output Assessment
-
-| Test                    | Result        | Comparison to Baseline | Notes                       |
-| ----------------------- | ------------- | ---------------------- | --------------------------- |
-| **Vertical Jump**       | \_\_\_ cm     | \_\_\_% change         | Power development indicator |
-| **Broad Jump**          | \_\_\_ cm     | \_\_\_% change         | Horizontal power assessment |
-| **Medicine Ball Throw** | \_\_\_ meters | \_\_\_% change         | Upper body power expression |
-
-### Weekly Training Quality Review
-
-| Training Day       | Energy Level (1-10) | Technical Quality (1-10) | Power Expression (1-10) | Recovery Quality (1-10) |
-| ------------------ | ------------------- | ------------------------ | ----------------------- | ----------------------- |
-| **Monday**         | \_\_\_/10           | \_\_\_/10                | \_\_\_/10               | \_\_\_/10               |
-| **Tuesday**        | \_\_\_/10           | \_\_\_/10                | \_\_\_/10               | \_\_\_/10               |
-| **Wednesday**      | \_\_\_/10           | \_\_\_/10                | \_\_\_/10               | \_\_\_/10               |
-| **Thursday**       | \_\_\_/10           | \_\_\_/10                | \_\_\_/10               | \_\_\_/10               |
-| **Friday**         | \_\_\_/10           | \_\_\_/10                | \_\_\_/10               | \_\_\_/10               |
-| **Weekly Average** | \_\_\_/10           | \_\_\_/10                | \_\_\_/10               | \_\_\_/10               |
-
-### Week 1 Completion Assessment
-
-| Objective               | Success Criteria                    | Achievement                             |
-| ----------------------- | ----------------------------------- | --------------------------------------- |
-| **Movement Assessment** | Complete screen, identify 2-3 areas | ✓ Complete / ✗ Incomplete               |
-| **HRV Tracking**        | 7/7 days consistent measurement     | \_\_\_/7 days                           |
-| **Auto-regulation**     | Understand and apply RPE system     | ✓ Mastered / ○ Learning / ✗ Struggling  |
-| **HSR Protocols**       | Complete all tendon work pain-free  | ✓ Achieved / ○ Some discomfort / ✗ Pain |
-| **Contrast Training**   | Demonstrate proper PAP form         | ✓ Excellent / ○ Good / ✗ Needs work     |
-| **Tennis Accuracy**     | Achieve 80%+ serve accuracy         | \_\_\_% average                         |
-
-### Immediate Recovery Protocol
-
-| Phase          | Duration | Activity                               | Purpose                  |
-| -------------- | -------- | -------------------------------------- | ------------------------ |
-| **Cool-down**  | 5 min    | Light walking, dynamic stretching      | Heart rate normalization |
-| **Hydration**  | 2 min    | 500ml water + electrolytes             | Rehydration initiation   |
-| **Reflection** | 3 min    | Note power feelings, technique quality | Learning consolidation   |
-| **Planning**   | 5 min    | Plan weekend recovery activities       | Preparation for Week 2   |
+<WorkoutCarouselFromData week={1} day="friday" />
 
 ---
 
-**Daily Navigation:** [📋 Week Overview](./) | [⬅️ Thursday](thursday) | [Saturday ➡️](saturday)
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

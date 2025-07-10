@@ -1,53 +1,63 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-3/tuesday.yml';
 
 <WorkoutNav weekNumber={3} />
 
-# Tuesday – Upper Body Strength & Tennis Precision
+# {workoutData.metadata.title}
 
-## Tuesday Schedule
+_{workoutData.metadata.subtitle}_
 
-| Time | Exercise/Drill | Sets×Reps | Instructions |
-|------|---------------|-----------|--------------|}
-| 07:30–08:15 | Incline Bench Press | 4×6 | Increased load, controlled descent |
-| | Weighted Pull-ups | 4×6 | Controlled reps, full extension |
-| | DB Shoulder Press | 3×8 | Stable core, full overhead extension |
-| | Band Pull-apart | 3×15 | Consistent tension throughout |
-| 08:30–08:50 | Mobility & Activation | - | Comprehensive shoulder and wrist prep |
-| 09:00–10:00 | Tennis Serve & Volley Precision | - | High serve accuracy, agile net play |
-| 10:00–11:00 | Coaching Session | - | Tactical improvement, specific corrections |
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-## Quick Exercise Instructions
-
-**Incline Bench Press (4×6)**: Week 3 load increase, 3-sec descent, explosive press
-
-**Weighted Pull-ups (4×6)**: Add weight or resistance, control full range of motion
-
-**DB Shoulder Press (3×8)**: Seated or standing, stable core, press to full extension
-
-**Band Pull-apart (3×15)**: Squeeze shoulder blades, consistent tension throughout
-
-**Tennis Serve Precision**: Focus on serve placement accuracy over power
-
-**Tactical Coaching**: Work on specific stroke corrections and court positioning
-
-## Key Focus Points
-
-- **Increased Load**: Higher loads on incline bench press with controlled descent
-- **Weighted Pull-ups**: Added resistance with full extension focus
-- **Shoulder Stability**: DB shoulder press with stable core engagement
-- **Consistent Tension**: Band pull-aparts with steady resistance
-- **Mobility Prep**: Comprehensive shoulder and wrist preparation
-- **Precision Training**: High serve accuracy and agile net play
-- **Tactical Development**: Coaching focus on specific corrections
-
-## Notes
-
-Tuesday emphasizes upper body strength progression with increased loads while maintaining precision in tennis technical work.
+<WorkoutCarouselFromData week={3} day="tuesday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.preparation_phases?.filter(p => p.type === 'assessment')} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.preparation_phases?.filter(p => p.type === 'assessment')} 
+/>
+
+<TennisTrainingTable data={workoutData.skill_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.conditioning_blocks?.find(b => b.type === 'strength')} />
+
+<RecoveryChecklist data={workoutData.recovery_protocols?.find(r => r.type === 'comprehensive')} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

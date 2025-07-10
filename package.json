@@ -16,26 +16,36 @@
     "check-translations": "node scripts/check-translations.js",
     "translation-status": "node scripts/quick-translation-check.js",
     "translation-quick": "node scripts/quick-translation-check.js",
+    "check-workout-translations": "node scripts/check-workout-translations.js",
+    "workout-translation-helper": "node scripts/workout-translation-helper.js",
     "build-check": "pnpm build && echo '✅ Build exitoso - traducciones válidas'",
     "generate-pdf": "node scripts/pdf-generation/simple-pdf-generator.js",
     "generate-lead-magnet": "node scripts/pdf-generation/generate-lead-magnet-pdf.js",
     "generate-html": "node scripts/pdf-generation/simple-html-generator.js",
     "deploy:convertkit": "./scripts/deploy-convertkit.sh",
     "deploy:staging": "node scripts/deploy.js staging",
-    "deploy:production": "node scripts/deploy.js production"
+    "deploy:production": "node scripts/deploy.js production",
+    "db:migrate": "node scripts/create-tables.js",
+    "db:seed": "node scripts/seed-data.js",
+    "test:wizard": "node scripts/test-wizard-flow.js",
+    "dev:setup": "curl http://localhost:3000/api/dev-setup | jq"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
     "@docusaurus/preset-classic": "3.8.1",
     "@mdx-js/react": "^3.0.0",
     "@types/js-yaml": "^4.0.9",
+    "@vercel/postgres": "^0.10.0",
     "clsx": "^2.0.0",
+    "drizzle-kit": "^0.31.4",
+    "drizzle-orm": "^0.44.2",
     "js-yaml": "^4.1.0",
     "marked": "^16.0.0",
     "prism-react-renderer": "^2.3.0",
     "puppeteer": "^24.11.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "use-debounce": "^10.0.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.8.1",

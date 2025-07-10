@@ -1,0 +1,1828 @@
+{
+  "timestamp": "2025-07-09T22:26:03.481Z",
+  "summary": {
+    "totalWorkouts": 84,
+    "englishWorkouts": 84,
+    "spanishWorkouts": 1,
+    "translationCoverage": 1,
+    "missingTranslations": 83
+  },
+  "weeks": {
+    "week-1": {
+      "weekNumber": 1,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 54195,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-1/monday.yml"
+          },
+          "spanish": {
+            "exists": true,
+            "size": 16589,
+            "lastModified": "2025-07-09T22:25:49.847Z",
+            "path": "workout-data/week-1/monday.es.yml"
+          },
+          "status": "UP_TO_DATE"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 22776,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-1/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-1/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 28104,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-1/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-1/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 21904,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-1/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-1/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 27919,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-1/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-1/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 12155,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-1/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-1/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 18272,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-1/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-1/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 1,
+        "translationCoverage": 14
+      }
+    },
+    "week-2": {
+      "weekNumber": 2,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 12289,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-2/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-2/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 12679,
+            "lastModified": "2025-07-09T01:08:43.000Z",
+            "path": "workout-data/week-2/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-2/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 16390,
+            "lastModified": "2025-07-09T18:30:15.446Z",
+            "path": "workout-data/week-2/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-2/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 14259,
+            "lastModified": "2025-07-09T18:32:02.846Z",
+            "path": "workout-data/week-2/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-2/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 15883,
+            "lastModified": "2025-07-09T18:32:10.707Z",
+            "path": "workout-data/week-2/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-2/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 10155,
+            "lastModified": "2025-07-09T18:32:31.490Z",
+            "path": "workout-data/week-2/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-2/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 10180,
+            "lastModified": "2025-07-09T18:32:38.807Z",
+            "path": "workout-data/week-2/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-2/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-3": {
+      "weekNumber": 3,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 32039,
+            "lastModified": "2025-07-09T19:25:01.585Z",
+            "path": "workout-data/week-3/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-3/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 24013,
+            "lastModified": "2025-07-09T19:27:17.068Z",
+            "path": "workout-data/week-3/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-3/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 23826,
+            "lastModified": "2025-07-09T19:29:23.949Z",
+            "path": "workout-data/week-3/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-3/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 22716,
+            "lastModified": "2025-07-09T19:31:23.077Z",
+            "path": "workout-data/week-3/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-3/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 25651,
+            "lastModified": "2025-07-09T19:33:32.504Z",
+            "path": "workout-data/week-3/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-3/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 20130,
+            "lastModified": "2025-07-09T19:35:18.927Z",
+            "path": "workout-data/week-3/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-3/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 23652,
+            "lastModified": "2025-07-09T19:37:22.130Z",
+            "path": "workout-data/week-3/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-3/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-4": {
+      "weekNumber": 4,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 28795,
+            "lastModified": "2025-07-09T19:41:12.757Z",
+            "path": "workout-data/week-4/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-4/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 24637,
+            "lastModified": "2025-07-09T19:43:09.627Z",
+            "path": "workout-data/week-4/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-4/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 27213,
+            "lastModified": "2025-07-09T19:45:22.231Z",
+            "path": "workout-data/week-4/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-4/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 25929,
+            "lastModified": "2025-07-09T19:47:23.112Z",
+            "path": "workout-data/week-4/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-4/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 28962,
+            "lastModified": "2025-07-09T19:49:40.957Z",
+            "path": "workout-data/week-4/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-4/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 20462,
+            "lastModified": "2025-07-09T19:51:19.398Z",
+            "path": "workout-data/week-4/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-4/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 23517,
+            "lastModified": "2025-07-09T19:53:16.294Z",
+            "path": "workout-data/week-4/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-4/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-5": {
+      "weekNumber": 5,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 24980,
+            "lastModified": "2025-07-09T19:56:21.687Z",
+            "path": "workout-data/week-5/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-5/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 7025,
+            "lastModified": "2025-07-09T19:56:56.297Z",
+            "path": "workout-data/week-5/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-5/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 7527,
+            "lastModified": "2025-07-09T19:57:35.081Z",
+            "path": "workout-data/week-5/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-5/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 6437,
+            "lastModified": "2025-07-09T19:58:03.852Z",
+            "path": "workout-data/week-5/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-5/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 7467,
+            "lastModified": "2025-07-09T19:58:34.394Z",
+            "path": "workout-data/week-5/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-5/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 3940,
+            "lastModified": "2025-07-09T19:58:55.107Z",
+            "path": "workout-data/week-5/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-5/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 5032,
+            "lastModified": "2025-07-09T19:59:24.087Z",
+            "path": "workout-data/week-5/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-5/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-6": {
+      "weekNumber": 6,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 5054,
+            "lastModified": "2025-07-09T19:59:51.417Z",
+            "path": "workout-data/week-6/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-6/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 6148,
+            "lastModified": "2025-07-09T20:33:54.508Z",
+            "path": "workout-data/week-6/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-6/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 6926,
+            "lastModified": "2025-07-09T20:33:54.508Z",
+            "path": "workout-data/week-6/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-6/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 6121,
+            "lastModified": "2025-07-09T20:33:54.509Z",
+            "path": "workout-data/week-6/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-6/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 6971,
+            "lastModified": "2025-07-09T20:33:54.509Z",
+            "path": "workout-data/week-6/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-6/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 7412,
+            "lastModified": "2025-07-09T20:33:54.509Z",
+            "path": "workout-data/week-6/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-6/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 7585,
+            "lastModified": "2025-07-09T20:33:54.509Z",
+            "path": "workout-data/week-6/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-6/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-7": {
+      "weekNumber": 7,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 5984,
+            "lastModified": "2025-07-09T20:00:15.289Z",
+            "path": "workout-data/week-7/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-7/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 6145,
+            "lastModified": "2025-07-09T20:33:54.509Z",
+            "path": "workout-data/week-7/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-7/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 6923,
+            "lastModified": "2025-07-09T20:33:54.509Z",
+            "path": "workout-data/week-7/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-7/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 6118,
+            "lastModified": "2025-07-09T20:33:54.509Z",
+            "path": "workout-data/week-7/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-7/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 6968,
+            "lastModified": "2025-07-09T20:33:54.510Z",
+            "path": "workout-data/week-7/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-7/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 7409,
+            "lastModified": "2025-07-09T20:33:54.510Z",
+            "path": "workout-data/week-7/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-7/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 7582,
+            "lastModified": "2025-07-09T20:33:54.510Z",
+            "path": "workout-data/week-7/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-7/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-8": {
+      "weekNumber": 8,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 5712,
+            "lastModified": "2025-07-09T20:47:37.951Z",
+            "path": "workout-data/week-8/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-8/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 6126,
+            "lastModified": "2025-07-09T20:33:54.510Z",
+            "path": "workout-data/week-8/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-8/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 6904,
+            "lastModified": "2025-07-09T20:33:54.510Z",
+            "path": "workout-data/week-8/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-8/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 6099,
+            "lastModified": "2025-07-09T20:33:54.510Z",
+            "path": "workout-data/week-8/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-8/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 6949,
+            "lastModified": "2025-07-09T20:33:54.511Z",
+            "path": "workout-data/week-8/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-8/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 7390,
+            "lastModified": "2025-07-09T20:33:54.511Z",
+            "path": "workout-data/week-8/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-8/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 7563,
+            "lastModified": "2025-07-09T20:33:54.511Z",
+            "path": "workout-data/week-8/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-8/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-9": {
+      "weekNumber": 9,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 5154,
+            "lastModified": "2025-07-09T20:00:35.009Z",
+            "path": "workout-data/week-9/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-9/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 6133,
+            "lastModified": "2025-07-09T20:33:54.511Z",
+            "path": "workout-data/week-9/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-9/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 6911,
+            "lastModified": "2025-07-09T20:33:54.511Z",
+            "path": "workout-data/week-9/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-9/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 6106,
+            "lastModified": "2025-07-09T20:33:54.512Z",
+            "path": "workout-data/week-9/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-9/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 6956,
+            "lastModified": "2025-07-09T20:33:54.512Z",
+            "path": "workout-data/week-9/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-9/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 7397,
+            "lastModified": "2025-07-09T20:33:54.512Z",
+            "path": "workout-data/week-9/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-9/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 7570,
+            "lastModified": "2025-07-09T20:33:54.512Z",
+            "path": "workout-data/week-9/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-9/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-10": {
+      "weekNumber": 10,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 5271,
+            "lastModified": "2025-07-09T20:00:55.404Z",
+            "path": "workout-data/week-10/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-10/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 6142,
+            "lastModified": "2025-07-09T20:33:54.512Z",
+            "path": "workout-data/week-10/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-10/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 6917,
+            "lastModified": "2025-07-09T20:33:54.512Z",
+            "path": "workout-data/week-10/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-10/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 6115,
+            "lastModified": "2025-07-09T20:33:54.512Z",
+            "path": "workout-data/week-10/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-10/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 6962,
+            "lastModified": "2025-07-09T20:33:54.512Z",
+            "path": "workout-data/week-10/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-10/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 7403,
+            "lastModified": "2025-07-09T20:33:54.513Z",
+            "path": "workout-data/week-10/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-10/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 7576,
+            "lastModified": "2025-07-09T20:33:54.513Z",
+            "path": "workout-data/week-10/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-10/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-11": {
+      "weekNumber": 11,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 5490,
+            "lastModified": "2025-07-09T20:48:00.040Z",
+            "path": "workout-data/week-11/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-11/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 6154,
+            "lastModified": "2025-07-09T20:33:54.513Z",
+            "path": "workout-data/week-11/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-11/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 6929,
+            "lastModified": "2025-07-09T20:33:54.513Z",
+            "path": "workout-data/week-11/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-11/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 6127,
+            "lastModified": "2025-07-09T20:33:54.513Z",
+            "path": "workout-data/week-11/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-11/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 6974,
+            "lastModified": "2025-07-09T20:33:54.513Z",
+            "path": "workout-data/week-11/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-11/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 7415,
+            "lastModified": "2025-07-09T20:33:54.514Z",
+            "path": "workout-data/week-11/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-11/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 7588,
+            "lastModified": "2025-07-09T20:33:54.514Z",
+            "path": "workout-data/week-11/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-11/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    },
+    "week-12": {
+      "weekNumber": 12,
+      "days": {
+        "monday": {
+          "english": {
+            "exists": true,
+            "size": 6277,
+            "lastModified": "2025-07-09T20:01:23.845Z",
+            "path": "workout-data/week-12/monday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-12/monday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "tuesday": {
+          "english": {
+            "exists": true,
+            "size": 6125,
+            "lastModified": "2025-07-09T20:33:54.514Z",
+            "path": "workout-data/week-12/tuesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-12/tuesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "wednesday": {
+          "english": {
+            "exists": true,
+            "size": 6900,
+            "lastModified": "2025-07-09T20:33:54.514Z",
+            "path": "workout-data/week-12/wednesday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-12/wednesday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "thursday": {
+          "english": {
+            "exists": true,
+            "size": 6098,
+            "lastModified": "2025-07-09T20:33:54.514Z",
+            "path": "workout-data/week-12/thursday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-12/thursday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "friday": {
+          "english": {
+            "exists": true,
+            "size": 6945,
+            "lastModified": "2025-07-09T20:33:54.514Z",
+            "path": "workout-data/week-12/friday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-12/friday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "saturday": {
+          "english": {
+            "exists": true,
+            "size": 7386,
+            "lastModified": "2025-07-09T20:33:54.514Z",
+            "path": "workout-data/week-12/saturday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-12/saturday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        },
+        "sunday": {
+          "english": {
+            "exists": true,
+            "size": 7559,
+            "lastModified": "2025-07-09T20:33:54.514Z",
+            "path": "workout-data/week-12/sunday.yml"
+          },
+          "spanish": {
+            "exists": false,
+            "size": 0,
+            "lastModified": null,
+            "path": "workout-data/week-12/sunday.es.yml"
+          },
+          "status": "MISSING_SPANISH"
+        }
+      },
+      "summary": {
+        "englishCount": 7,
+        "spanishCount": 0,
+        "translationCoverage": 0
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "week": 1,
+      "day": "tuesday",
+      "priority": "HIGH",
+      "reason": "High quality workout (84%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 1,
+      "day": "wednesday",
+      "priority": "HIGH",
+      "reason": "High quality workout (84%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 1,
+      "day": "thursday",
+      "priority": "HIGH",
+      "reason": "High quality workout (84%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 1,
+      "day": "friday",
+      "priority": "HIGH",
+      "reason": "High quality workout (84%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 1,
+      "day": "saturday",
+      "priority": "HIGH",
+      "reason": "High quality workout (84%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 1,
+      "day": "sunday",
+      "priority": "HIGH",
+      "reason": "High quality workout (84%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 3,
+      "day": "monday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 3,
+      "day": "tuesday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 3,
+      "day": "wednesday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 3,
+      "day": "thursday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 3,
+      "day": "friday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 3,
+      "day": "saturday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 3,
+      "day": "sunday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 4,
+      "day": "monday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 4,
+      "day": "tuesday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 4,
+      "day": "wednesday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 4,
+      "day": "thursday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 4,
+      "day": "friday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 4,
+      "day": "saturday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 4,
+      "day": "sunday",
+      "priority": "HIGH",
+      "reason": "High quality workout (81%) missing Spanish translation",
+      "action": "Translate immediately"
+    },
+    {
+      "week": 2,
+      "day": "monday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (79%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 2,
+      "day": "tuesday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (79%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 2,
+      "day": "wednesday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (79%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 2,
+      "day": "thursday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (79%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 2,
+      "day": "friday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (79%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 2,
+      "day": "saturday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (79%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 2,
+      "day": "sunday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (79%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 5,
+      "day": "monday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (71%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 5,
+      "day": "tuesday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (71%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 5,
+      "day": "wednesday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (71%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 5,
+      "day": "thursday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (71%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 5,
+      "day": "friday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (71%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 5,
+      "day": "saturday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (71%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 5,
+      "day": "sunday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (71%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 6,
+      "day": "monday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (72%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 6,
+      "day": "tuesday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (72%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 6,
+      "day": "wednesday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (72%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 6,
+      "day": "thursday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (72%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 6,
+      "day": "friday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (72%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 6,
+      "day": "saturday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (72%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 6,
+      "day": "sunday",
+      "priority": "MEDIUM",
+      "reason": "Good quality workout (72%) missing Spanish translation",
+      "action": "Translate when possible"
+    },
+    {
+      "week": 10,
+      "day": "monday",
+      "priority": "LOW",
+      "reason": "Low quality workout (56%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 10,
+      "day": "tuesday",
+      "priority": "LOW",
+      "reason": "Low quality workout (56%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 10,
+      "day": "wednesday",
+      "priority": "LOW",
+      "reason": "Low quality workout (56%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 10,
+      "day": "thursday",
+      "priority": "LOW",
+      "reason": "Low quality workout (56%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 10,
+      "day": "friday",
+      "priority": "LOW",
+      "reason": "Low quality workout (56%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 10,
+      "day": "saturday",
+      "priority": "LOW",
+      "reason": "Low quality workout (56%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 10,
+      "day": "sunday",
+      "priority": "LOW",
+      "reason": "Low quality workout (56%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 11,
+      "day": "monday",
+      "priority": "LOW",
+      "reason": "Low quality workout (49%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 11,
+      "day": "tuesday",
+      "priority": "LOW",
+      "reason": "Low quality workout (49%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 11,
+      "day": "wednesday",
+      "priority": "LOW",
+      "reason": "Low quality workout (49%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 11,
+      "day": "thursday",
+      "priority": "LOW",
+      "reason": "Low quality workout (49%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 11,
+      "day": "friday",
+      "priority": "LOW",
+      "reason": "Low quality workout (49%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 11,
+      "day": "saturday",
+      "priority": "LOW",
+      "reason": "Low quality workout (49%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 11,
+      "day": "sunday",
+      "priority": "LOW",
+      "reason": "Low quality workout (49%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 12,
+      "day": "monday",
+      "priority": "LOW",
+      "reason": "Low quality workout (50%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 12,
+      "day": "tuesday",
+      "priority": "LOW",
+      "reason": "Low quality workout (50%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 12,
+      "day": "wednesday",
+      "priority": "LOW",
+      "reason": "Low quality workout (50%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 12,
+      "day": "thursday",
+      "priority": "LOW",
+      "reason": "Low quality workout (50%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 12,
+      "day": "friday",
+      "priority": "LOW",
+      "reason": "Low quality workout (50%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 12,
+      "day": "saturday",
+      "priority": "LOW",
+      "reason": "Low quality workout (50%) - improve quality before translation",
+      "action": "Improve quality first"
+    },
+    {
+      "week": 12,
+      "day": "sunday",
+      "priority": "LOW",
+      "reason": "Low quality workout (50%) - improve quality before translation",
+      "action": "Improve quality first"
+    }
+  ]
+}

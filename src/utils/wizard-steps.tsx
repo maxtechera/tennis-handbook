@@ -6,6 +6,11 @@ import React from 'react';
 import { 
   WelcomeStep, 
   WelcomeSuccessStep,
+  MicroQuizStep,
+  GoalsQuizStep,
+  TimeQuizStep,
+  FocusQuizStep,
+  AnalyzingStep,
   PersonalizationStep, 
   BackgroundStep, 
   ChallengesStep, 
@@ -15,34 +20,100 @@ import type { OnboardingStep } from '../components/OnboardingWizard/OnboardingWi
 
 /**
  * Creates the wizard steps with proper configuration
+ * New optimized flow: Engagement → Value → Email → Full Quiz → Results
  */
 export function createWizardSteps(language: string = 'en'): OnboardingStep[] {
   const isSpanish = language === 'es';
   
   return [
+    // Phase 1: Multi-Question Engagement Hook
+    {
+      id: 'micro-quiz',
+      content: <MicroQuizStep />,
+    },
+    {
+      id: 'goals-quiz',
+      content: <GoalsQuizStep />,
+    },
+    {
+      id: 'time-quiz',
+      content: <TimeQuizStep />,
+    },
+    {
+      id: 'focus-quiz',
+      content: <FocusQuizStep />,
+    },
+    
+    // Phase 2: Analyzing + Value Preview (combined experience)
+    {
+      id: 'analyzing',
+      content: <AnalyzingStep />,
+    },
+    
+    // Phase 3: Email Capture (with established value)
     {
       id: 'welcome',
-      content: <WelcomeStep language={language} />,
+      content: <WelcomeStep />,
     },
+    
+    // Phase 4: Success & Upsell (Progressive Disclosure)
     {
-      id: 'welcome-success',
-      content: <WelcomeSuccessStep language={language} />,
+      id: 'welcome-success',  
+      content: <WelcomeSuccessStep />,
     },
+    
+    // Phase 5: Detailed Quiz
     {
       id: 'personalization',
-      content: <PersonalizationStep language={language} includeWhatsApp={isSpanish} />,
+      content: <PersonalizationStep includeWhatsApp={isSpanish} />,
     },
     {
       id: 'background',
-      content: <BackgroundStep language={language} />,
+      content: <BackgroundStep />,
     },
     {
-      id: 'challenges',
-      content: <ChallengesStep language={language} />,
+      id: 'challenges', 
+      content: <ChallengesStep />,
+    },
+    
+    // Phase 6: Results & Completion
+    {
+      id: 'completion',
+      content: <CompletionStep />,
+    },
+  ];
+}
+
+/**
+ * Creates the legacy wizard steps for A/B testing
+ */
+export function createLegacyWizardSteps(language: string = 'en'): OnboardingStep[] {
+  const isSpanish = language === 'es';
+  
+  return [
+    {
+      id: 'welcome',
+      content: <WelcomeStep />,
+    },
+    {
+      id: 'welcome-success',  
+      content: <WelcomeSuccessStep />,
+    },
+    {
+      id: 'personalization',
+      content: <PersonalizationStep includeWhatsApp={isSpanish} />,
+    },
+    {
+      id: 'background',
+      content: <BackgroundStep />,
+    },
+    {
+      id: 'challenges', 
+      content: <ChallengesStep />,
     },
     {
       id: 'completion',
-      content: <CompletionStep language={language} />,
+      content: <CompletionStep />,
     },
   ];
 }

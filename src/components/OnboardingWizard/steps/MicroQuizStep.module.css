@@ -1,0 +1,268 @@
+.microQuizStep {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  padding: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.questionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.questionTitle h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #1A1A1A;
+  line-height: 1.3;
+}
+
+.questionSubtitle {
+  font-size: 0.9rem;
+  color: #666666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.levelOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.levelOption {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  min-height: 60px;
+}
+
+.levelOption:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.15);
+}
+
+.levelOption.selected {
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 3px 12px rgba(76, 175, 80, 0.3);
+}
+
+.levelOption.selected .optionDescription {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.optionIcon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.optionContent {
+  flex: 1;
+}
+
+.optionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.2;
+}
+
+.optionDescription {
+  font-size: 0.85rem;
+  margin: 0;
+  color: #666666;
+  line-height: 1.3;
+}
+
+.selectedIndicator {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  animation: selectedPulse 0.5s ease-out;
+}
+
+@keyframes selectedPulse {
+  0% { transform: translateY(-50%) scale(0); }
+  50% { transform: translateY(-50%) scale(1.2); }
+  100% { transform: translateY(-50%) scale(1); }
+}
+
+.celebration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  animation: celebrationFadeIn 0.5s ease-out;
+}
+
+@keyframes celebrationFadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.celebrationIcon {
+  font-size: 1.5rem;
+}
+
+.celebrationText {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .content {
+    padding: 0.75rem;
+    max-width: 100%;
+  }
+  
+  .questionTitle {
+    margin-bottom: 1.5rem;
+  }
+  
+  .questionTitle h2 {
+    font-size: 1.25rem;
+  }
+  
+  .questionSubtitle {
+    font-size: 0.85rem;
+  }
+  
+  .levelOptions {
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .levelOption {
+    padding: 0.75rem;
+    gap: 0.5rem;
+    min-height: 50px;
+  }
+  
+  .optionIcon {
+    font-size: 1.25rem;
+  }
+  
+  .optionTitle {
+    font-size: 1rem;
+  }
+  
+  .optionDescription {
+    font-size: 0.8rem;
+  }
+  
+  .celebration {
+    padding: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  
+  .celebrationIcon {
+    font-size: 1.25rem;
+  }
+  
+  .celebrationText {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small screens optimization */
+@media (max-height: 700px) {
+  .microQuizStep {
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+  
+  .content {
+    padding-top: 1rem;
+  }
+  
+  .questionTitle {
+    margin-bottom: 1rem;
+  }
+  
+  .levelOptions {
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+  }
+  
+  .levelOption {
+    padding: 0.5rem;
+    min-height: 45px;
+  }
+}
+
+/* Touch optimization */
+@media (hover: none) {
+  .levelOption:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .levelOption:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Dark mode support */
+[data-theme='dark'] .questionTitle h2 {
+  color: #e3e3e3;
+}
+
+[data-theme='dark'] .questionSubtitle {
+  color: #b0b3b8;
+}
+
+[data-theme='dark'] .levelOption {
+  background: #242526;
+  border-color: #3a3b3c;
+}
+
+[data-theme='dark'] .levelOption:hover {
+  border-color: #4CAF50;
+}
+
+[data-theme='dark'] .optionTitle {
+  color: #e3e3e3;
+}
+
+[data-theme='dark'] .optionDescription {
+  color: #b0b3b8;
+}
+
+[data-theme='dark'] .levelOption.selected .optionDescription {
+  color: rgba(255, 255, 255, 0.9);
+}
+

@@ -3,134 +3,61 @@ sidebar_position: 7
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-1/sunday.yml';
 
 <WorkoutNav weekNumber={1} />
 
-# Sunday - Complete Recovery & Weekly Assessment
+# {workoutData.metadata.title}
 
-_"Comprehensive Recovery and Week 1 Evaluation"_
+_{workoutData.metadata.subtitle}_
 
-**Daily Navigation:** [📋 Week Overview](./) | [⬅️ Saturday](saturday) | [Week 2 ➡️](../week-2/)
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
----
-
-## Complete Recovery Protocol
-
-### Morning Recovery Routine
-
-| Activity                 | Duration | Method                                  | Benefits                    |
-| ------------------------ | -------- | --------------------------------------- | --------------------------- |
-| **Natural Wake-up**      | -        | No alarm, sleep until natural awakening | Full sleep cycle completion |
-| **Gentle Movement**      | 20 min   | Easy walk, light stretching             | Circulation activation      |
-| **Mindful Breakfast**    | 30 min   | Whole foods, adequate protein           | Nutritional restoration     |
-| **Hydration Assessment** | 5 min    | Urine color check, baseline hydration   | Fluid balance optimization  |
-
-## Comprehensive Weekly Review
-
-### Physical Performance Analysis
-
-| Metric                    | Week 1 Baseline | Week 1 Final | Change        | Week 2 Target          |
-| ------------------------- | --------------- | ------------ | ------------- | ---------------------- |
-| **HRV Average**           | \_\_\_ ms       | \_\_\_ ms    | \_\_\_%       | Maintain or improve 5% |
-| **Sleep Quality Average** | \_\_\_/10       | \_\_\_/10    | \_\_\_ points | Target &ge;7.5/10         |
-| **Training RPE Average**  | \_\_\_/10       | \_\_\_/10    | \_\_\_ points | Sustainable 6-7/10     |
-| **Vertical Jump**         | \_\_\_ cm       | \_\_\_ cm    | \_\_\_%       | +2-5% improvement      |
-| **Grip Strength**         | \_\_\_ kg       | \_\_\_ kg    | \_\_\_%       | Maintain or improve    |
-
-### Movement Quality Progression
-
-| Screen Component            | Week 1 Score   | Improvements Noted | Week 2 Focus |
-| --------------------------- | -------------- | ------------------ | ------------ |
-| **Overhead Squat**          | \_\_\_/5       | \_\_\_\_\_\_\_     | \_\_\_\_\_   |
-| **Single-leg Glute Bridge** | \_\_\_/5       | \_\_\_\_\_\_\_     | \_\_\_\_\_   |
-| **Shoulder Y-T-W**          | \_\_\_/5       | \_\_\_\_\_\_\_     | \_\_\_\_\_   |
-| **Deep Squat Hold**         | \_\_\_ seconds | \_\_\_\_\_\_\_     | \_\_\_\_\_   |
-
-### Tennis Performance Review
-
-| Element                      | Week 1 Average | Best Session | Areas for Improvement |
-| ---------------------------- | -------------- | ------------ | --------------------- |
-| **Serve Accuracy**           | \_\_\_%        | \_\_\_%      | \_\_\_\_\_\_\_\_      |
-| **Groundstroke Consistency** | \_\_\_%        | \_\_\_%      | \_\_\_\_\_\_\_\_      |
-| **Movement Efficiency**      | \_\_\_/10      | \_\_\_/10    | \_\_\_\_\_\_\_\_      |
-| **Match Performance**        | \_\_\_/10      | \_\_\_/10    | \_\_\_\_\_\_\_\_      |
-
-## Week 2 Planning & Preparation
-
-### Program Modifications Based on Week 1
-
-| Area                     | Week 1 Assessment                   | Week 2 Adjustment                           |
-| ------------------------ | ----------------------------------- | ------------------------------------------- |
-| **Training Intensity**   | Too easy / Appropriate / Too hard   | Increase 5% / Maintain / Reduce 10%         |
-| **Recovery Protocols**   | Insufficient / Adequate / Excessive | Add modalities / Continue / Simplify        |
-| **Movement Correctives** | Not addressing / Helping / Solved   | Change approach / Continue / Reduce         |
-| **Nutrition Timing**     | Poor / Good / Excellent             | Adjust timing / Maintain / Optimize further |
-
-### Meal Preparation for Week 2
-
-| Meal              | Prep Strategy | Protein Source | Carb Source | Healthy Fats |
-| ----------------- | ------------- | -------------- | ----------- | ------------ |
-| **Breakfast**     | \_\_\_\_\_\_  | \_\_\_\_\_    | \_\_\_\_\_  | \_\_\_\_\_   |
-| **Pre-training**  | \_\_\_\_\_\_  | \_\_\_\_\_    | \_\_\_\_\_  | \_\_\_\_\_   |
-| **Post-training** | \_\_\_\_\_\_  | \_\_\_\_\_    | \_\_\_\_\_  | \_\_\_\_\_   |
-| **Dinner**        | \_\_\_\_\_\_  | \_\_\_\_\_    | \_\_\_\_\_  | \_\_\_\_\_   |
-
-## Daily Metrics System
-
-### Morning Assessment Protocol (5-7 minutes)
-
-| Metric                     | Method                                    | Optimal Range                       | Week 1 Baseline       | Auto-Regulation Response          |
-| -------------------------- | ----------------------------------------- | ----------------------------------- | --------------------- | --------------------------------- |
-| **Heart Rate Variability** | Smartphone app (HRV4Training recommended) | Establish personal baseline         | Day 1: \_\_\_ ms      | &gt;-10% from baseline = proceed     |
-|                            |                                           | Post-urination, consistent position | Day 7: \_\_\_ ms      | -10-20% = reduce intensity 20%    |
-|                            |                                           | Same time daily (±30 min)           | Weekly Avg: \_\_\_ ms | &lt;-20% = active recovery only      |
-| **Resting Heart Rate**     | 60-second manual count or device          | Individual baseline ±5 bpm          | Day 1: \_\_\_ bpm     | &gt;10 bpm above baseline = caution  |
-|                            |                                           | Consistent position and timing      | Day 7: \_\_\_ bpm     | Focus on 7-day rolling average    |
-| **Sleep Assessment**       |                                           |                                     |                       |                                   |
-|                            | Sleep Duration                            | 7.5-9 hours nightly                 | Day 1: \_\_\_ hrs     | &lt;7 hours = reduce training 20%    |
-|                            | Sleep Quality (1-10)                      | &ge;7 for optimal training             | Day 7: \_\_\_/10      | &lt;6 = significant volume reduction |
-|                            | Sleep Efficiency                          | &gt;85% (time asleep/time in bed)      | Week avg: \_\_\_%     | &lt;80% = sleep hygiene review       |
-| **Body Weight**            | Digital scale, same conditions            | ±2% weekly variation                | Day 1: \_\_\_ kg      | &gt;3% change = hydration check      |
-|                            |                                           | Minimal clothing, post-urination    | Day 7: \_\_\_ kg      | Track 3-7 day trends              |
-
-### Strategic Nutrition Targets
-
-**Body Weight: \_\_\_ kg**
-
-| Nutrient          | Calculation                | Daily Target            | Meal Distribution                                         |
-| ----------------- | -------------------------- | ----------------------- | --------------------------------------------------------- |
-| **Protein**       | 2.0 g/kg (tennis athletes) | \_\_\_ g total          | Breakfast: \_\_\_g, Lunch: \_\_\_g, Dinner: \_\_\_g       |
-| **Carbohydrates** | Training days: 5-6 g/kg    | Training: \_\_\_ g      | Pre-training: \_\_\_g, Post-training: \_\_\_g             |
-|                   | Rest days: 3-4 g/kg        | Rest: \_\_\_ g          | Focus on whole grains, fruits, vegetables                 |
-| **Fats**          | 1.2-1.5 g/kg               | \_\_\_ g total          | Omega-3 priority: \_\_\_g EPA+DHA                         |
-| **Water**         | 35-40 ml/kg baseline       | \_\_\_ L baseline       | +500ml per hour of training                               |
-|                   | +Training losses           | Training days: \_\_\_ L | Monitor urine color (pale yellow target)                  |
-
-### Sleep Optimization System
-
-#### Sleep Environment Optimization Checklist
-
-| Factor              | Optimal Setting           | Current Status            | Week 1 Improvements Made |
-| ------------------- | ------------------------- | ------------------------- | ------------------------ |
-| **Temperature**     | 65-68°F (18-20°C)         | Current: \_\_\_°F         | \_\_\_\_\_\_\_\_\_\_     |
-| **Darkness**        | Complete blackout         | Blackout curtains: ✓/✗    | \_\_\_\_\_\_\_\_\_\_     |
-| **Noise**           | &lt;30 decibels              | White noise/earplugs: ✓/✗ | \_\_\_\_\_\_\_\_\_\_     |
-| **Air Quality**     | Fresh, circulating        | Air purifier/plants: ✓/✗  | \_\_\_\_\_\_\_\_\_\_     |
-| **Technology**      | No screens 1hr before bed | Phone charging location:   | \_\_\_\_\_\_\_\_\_\_     |
-| **Mattress/Pillow** | Personal comfort          | Comfort rating: \_\_\_/10 | \_\_\_\_\_\_\_\_\_\_     |
-
-#### Sleep Routine Protocol
-
-| Time Before Bed | Activity                      | Purpose                      | Week 1 Compliance       |
-| --------------- | ----------------------------- | ---------------------------- | ----------------------- |
-| **3 hours**     | Last large meal               | Avoid digestive interference | \_\_\_/7 nights         |
-| **2 hours**     | Last caffeine intake          | Prevent sleep disruption     | \_\_\_/7 nights         |
-| **1 hour**      | All screens off               | Melatonin production         | \_\_\_/7 nights         |
-| **45 minutes**  | Dim lights, prep room         | Circadian rhythm support     | \_\_\_/7 nights         |
-| **30 minutes**  | Reading/stretching/meditation | Relaxation response          | \_\_\_/7 nights         |
-| **15 minutes**  | Final room setup, bathroom    | Eliminate disruptions        | \_\_\_/7 nights         |
-| **Bedtime**     | Consistent time ±30 min       | Rhythm establishment         | Target time: \_\_:\_\_ PM |
+<WorkoutCarouselFromData week={1} day="sunday" />
 
 ---
 
-**Daily Navigation:** [📋 Week Overview](./) | [⬅️ Saturday](saturday) | [Week 2 ➡️](../week-2/)
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "period": 9,
+    "period_name": "Competition Power Phase",
+    "day_id": "week_9_monday",
+    "day_name": "Monday",
+    "title": "Phase 3 Mastery - Peak Competition Power",
+    "subtitle": "Phase 3 Mastery - Peak Competition Performance",
+    "phase": "Phase 3: Competition Power (Week 3 - Final)",
+    "focus_areas": [
+      "Peak Competition Power",
+      "Phase 3 Mastery",
+      "Elite Performance Preparation"
+    ],
+    "training_parameters": {
+      "volume": "115% (peak competition)",
+      "intensity": "95-100% (elite competition)",
+      "density": "elite competition",
+      "duration": "5 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Alcaraz Elite Competition Protocol",
+        "type": "elite_competition",
+        "attribution": {
+          "athlete": "Carlos Alcaraz",
+          "coach": "Juan Carlos Ferrero",
+          "source": "Elite competition power",
+          "verification": "Grand Slam preparation",
+          "context": "Phase 3 mastery and elite preparation",
+          "results": "Grand Slam level performance"
+        }
+      }
+    ]
+  },
+  "assessments": [
+    {
+      "id": "elite_competition_assessment",
+      "type": "elite_competition",
+      "title": "Elite Competition Assessment",
+      "timing": "pre-session",
+      "duration": "60 minutes",
+      "components": [
+        {
+          "id": "grand_slam_simulation",
+          "name": "Grand Slam Power Simulation",
+          "type": "elite_competition",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Grand Slam match simulation",
+            "repetitions": "Elite competition scenarios",
+            "equipment": "Championship-level setup"
+          },
+          "standards": {
+            "elite_level": "Grand Slam level power output",
+            "consistency": "Elite consistency under pressure",
+            "endurance": "5-set match power maintenance"
+          },
+          "context": {
+            "description": "Evaluates elite competition readiness",
+            "application": "Determines elite performance capability"
+          }
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Elite Competition Tennis Training",
+    "sessions": [
+      {
+        "id": "elite_competition_session",
+        "type": "elite_competition",
+        "title": "Elite Competition Tennis Development",
+        "duration": "180 minutes",
+        "intensity": "95-100%",
+        "components": [
+          {
+            "id": "championship_serve_training",
+            "name": "Championship Serve Training",
+            "type": "elite_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "75 minutes",
+              "rest": "Championship-like intervals"
+            },
+            "implementation": {
+              "method": "Championship serve development",
+              "focus": "Elite serve power under pressure",
+              "key_points": "Championship consistency, clutch serving"
+            },
+            "instructions": [
+              {
+                "phase": "CHAMPIONSHIP_PREPARATION",
+                "text": "25 minutes championship serve preparation"
+              },
+              {
+                "phase": "ELITE_SERVING",
+                "text": "35 minutes elite serve training"
+              },
+              {
+                "phase": "CLUTCH_MASTERY",
+                "text": "15 minutes clutch serve mastery"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Championship serve power",
+                "target": "Elite level serve velocity",
+                "tracking": "Championship-level performance"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "elite_competition_block",
+      "type": "elite_competition",
+      "title": "Elite Competition Training Block",
+      "description": "Elite competition power mastery",
+      "duration": "160 minutes",
+      "exercises": [
+        {
+          "id": "championship_power_complex",
+          "name": "Championship Power Complex",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "8",
+            "reps": "Championship format",
+            "intensity": "95-100% elite loads",
+            "rest": "Championship recovery"
+          },
+          "execution": {
+            "setup": [
+              "Championship simulation",
+              "Elite monitoring systems",
+              "Pressure environment"
+            ],
+            "technique": [
+              "Elite strength demands",
+              "Championship power output",
+              "Tennis mastery integration",
+              "Pressure performance mastery"
+            ]
+          },
+          "cues": [
+            "Championship power output",
+            "Elite performance standard",
+            "Mastery under pressure",
+            "Peak performance delivery"
+          ],
+          "benefits": {
+            "primary": "Elite competition power",
+            "secondary": "Championship performance",
+            "sport_specific": "Grand Slam preparation"
+          }
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 180,
+      "strength_minutes": 160,
+      "assessment_minutes": 60,
+      "warmup_minutes": 50,
+      "recovery_minutes": 45,
+      "total_minutes": 495
+    },
+    "intensity": {
+      "tennis_average": "95-100%",
+      "strength_average": "95-100%",
+      "overall_rpe": 10
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Elite competition mastery",
+      "Championship performance",
+      "Phase 4 preparation"
+    ],
+    "load_management": [
+      "Elite competition demands",
+      "Championship-level intensity",
+      "Peak performance focus"
+    ],
+    "progression_markers": [
+      "Elite competition mastery",
+      "Championship readiness",
+      "Phase 4 preparation"
+    ]
+  }
+}

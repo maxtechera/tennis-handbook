@@ -1,0 +1,599 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Strength Accumulation",
+    "day_id": "week_2_thursday",
+    "day_name": "Thursday",
+    "title": "Elite Conditioning & Technical Precision",
+    "subtitle": "Active Recovery with Technical Tennis Development",
+    "phase": "Phase 2: Strength Accumulation",
+    "focus_areas": [
+      "Aerobic Conditioning",
+      "Technical Tennis Skills",
+      "Mobility & Recovery",
+      "Tendon Health"
+    ],
+    "training_parameters": {
+      "volume": "70%",
+      "intensity": "60-70%",
+      "density": "low",
+      "duration": "3 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Zone-2 Cardio Protocol",
+        "type": "conditioning",
+        "attribution": {
+          "source": "Jeff Nippard - Cardio Guidelines",
+          "verification": "Video documentation",
+          "context": "Evidence-based cardiovascular training"
+        }
+      },
+      {
+        "name": "Core Stability Integration",
+        "type": "strength",
+        "attribution": {
+          "source": "Jeff Nippard - Core Training",
+          "verification": "Video reference",
+          "context": "Scientific approach to core development"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Stationary bike",
+        "Pull-up bar",
+        "Tennis court access",
+        "Yoga mat"
+      ],
+      "optional": [
+        "Heart rate monitor",
+        "Foam roller",
+        "Tennis ball for self-massage"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Friday ➡️](friday)",
+      "overview_link": "./",
+      "next_link": "friday",
+      "previous_link": "wednesday"
+    },
+    "display_config": {
+      "section_headers": {
+        "conditioning": "Aerobic Development",
+        "skill_training": "Tennis Technical Work",
+        "recovery": "Mobility & Tendon Care"
+      }
+    }
+  },
+  "schedule_overview": {
+    "title": "Thursday Schedule",
+    "sessions": [
+      {
+        "time": "07:30–08:20",
+        "activity": "Conditioning Block",
+        "exercises": [
+          {
+            "name": "Bike Intervals",
+            "sets_reps": "4×3 min",
+            "instructions": "Slightly increased intensity, maintain steady breathing"
+          },
+          {
+            "name": "Hanging Leg Raises",
+            "sets_reps": "3×12",
+            "instructions": "Controlled lifts, minimal swing"
+          },
+          {
+            "name": "Side Plank",
+            "sets_reps": "3×30 sec per side",
+            "instructions": "Maintain alignment"
+          }
+        ]
+      },
+      {
+        "time": "08:40–09:00",
+        "activity": "Gentle Mobility",
+        "instructions": "Yoga flows, hip and shoulder openers"
+      },
+      {
+        "time": "09:00–10:00",
+        "activity": "Tennis (Slice & Precision Drills)",
+        "instructions": "Controlled execution, targeted practice"
+      },
+      {
+        "time": "10:10–10:40",
+        "activity": "Zone-2 Cardio (Bike)",
+        "sets_reps": "30 min",
+        "instructions": "Maintain steady HR, conversational pace"
+      },
+      {
+        "time": "10:40–11:00",
+        "activity": "Extended Mobility & Tendon Care",
+        "instructions": "Couch Stretch, Pigeon Pose, eccentric tibialis raises"
+      }
+    ]
+  },
+  "aerobic_development": {
+    "cardiovascular_base": [
+      {
+        "id": "bike_intervals",
+        "name": "Bike Intervals",
+        "type": "intervals",
+        "duration": "20 minutes total",
+        "phases": [
+          {
+            "phase": "Warm-up",
+            "duration": "5 minutes",
+            "intensity": "50-60% HR",
+            "instructions": "Easy pace, prepare body"
+          },
+          {
+            "phase": "Work Intervals",
+            "sets": "4",
+            "work_duration": "3 minutes",
+            "rest_duration": "90 seconds",
+            "intensity": "70-75% HR",
+            "instructions": "10% increase from Week 1 intensity"
+          },
+          {
+            "phase": "Cool-down",
+            "duration": "5 minutes",
+            "intensity": "50% HR",
+            "instructions": "Easy recovery pace"
+          }
+        ],
+        "technique_points": [
+          {
+            "phase": "SETUP",
+            "instruction": "Adjust bike for proper biomechanics"
+          },
+          {
+            "phase": "EXECUTION",
+            "instruction": "Maintain steady cadence throughout intervals"
+          },
+          {
+            "phase": "BREATHING",
+            "instruction": "Focus on controlled breathing pattern"
+          },
+          {
+            "phase": "RECOVERY",
+            "instruction": "Active recovery between intervals"
+          }
+        ],
+        "week_progression_notes": {
+          "title": "Week 2 Progression",
+          "load_increase": "10% intensity increase from Week 1"
+        },
+        "attribution": {
+          "source": "Jeff Nippard - Cardio Guidelines",
+          "quote": "Interval training for cardiovascular adaptations",
+          "verification": "https://www.youtube.com/watch?v=Kl0ht3ow8TQ"
+        }
+      }
+    ],
+    "core_integration": [
+      {
+        "id": "hanging_leg_raises",
+        "name": "Hanging Leg Raises",
+        "sets": "3",
+        "reps": "12",
+        "rest": "60 seconds",
+        "execution": {
+          "setup": [
+            "Hang from pull-up bar with secure grip",
+            "Shoulders engaged, not passive hang",
+            "Core pre-tensioned"
+          ],
+          "technique": [
+            "Raise knees toward chest in controlled motion",
+            "Hold for 2 seconds at top position",
+            "Control descent slowly to starting position",
+            "Avoid swinging or using momentum"
+          ]
+        },
+        "cues": [
+          "Controlled lifts priority",
+          "Minimal swing throughout",
+          "Focus on ab contraction"
+        ],
+        "attribution": {
+          "source": "Jeff Nippard - Abs Training",
+          "verification": "https://www.youtube.com/watch?v=_xdOuqokcm4"
+        }
+      },
+      {
+        "id": "side_plank",
+        "name": "Side Plank",
+        "sets": "3",
+        "duration": "30 seconds per side",
+        "type": "isometric",
+        "rest": "30 seconds between sides",
+        "execution": {
+          "setup": [
+            "Side position on forearm",
+            "Stack hips and shoulders",
+            "Feet stacked or staggered"
+          ],
+          "technique": [
+            "Perfect alignment from hip to shoulder",
+            "Stack hips and shoulders vertically",
+            "Breathe normally throughout hold",
+            "Progress from Week 1 duration"
+          ]
+        },
+        "cues": [
+          "Maintain perfect alignment",
+          "No sagging hips",
+          "Focus on core stability"
+        ],
+        "week_progression_notes": {
+          "title": "Duration Progression",
+          "load_increase": "Progress from Week 1 hold time"
+        },
+        "attribution": {
+          "source": "Jeff Nippard - Core Training",
+          "verification": "https://www.youtube.com/watch?v=_xdOuqokcm4"
+        }
+      }
+    ]
+  },
+  "skill_training": {
+    "section_title": "Tennis Technical Work",
+    "sessions": [
+      {
+        "id": "slice_precision",
+        "type": "technical",
+        "title": "Slice & Precision Drills",
+        "duration": "60 minutes",
+        "intensity": "60-70%",
+        "structure": {
+          "warm_up": "10 minutes",
+          "main_work": "40 minutes",
+          "cool_down": "10 minutes"
+        },
+        "components": [
+          {
+            "id": "slice_development",
+            "name": "Slice Development",
+            "type": "drill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "20 minutes"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Basket of balls",
+              "players": "1-2 players"
+            },
+            "implementation": {
+              "method": "Progressive slice development",
+              "focus": "Technique and placement over power",
+              "key_points": "Low-to-high path, underspin generation"
+            },
+            "instructions": [
+              {
+                "phase": "TECHNIQUE",
+                "text": "Use low-to-high swing path"
+              },
+              {
+                "phase": "CONTACT",
+                "text": "Generate underspin with racquet angle"
+              },
+              {
+                "phase": "PLACEMENT",
+                "text": "Focus on placement accuracy over power"
+              },
+              {
+                "phase": "PATTERNS",
+                "text": "Practice cross-court and down-the-line"
+              },
+              {
+                "phase": "CONSISTENCY",
+                "text": "Emphasize consistent ball contact"
+              }
+            ],
+            "cues": [
+              "Controlled execution",
+              "Feel the slice grip",
+              "Target specific areas"
+            ],
+            "progressions": {
+              "level_1": "Static feeds, focus on technique",
+              "level_2": "Moving to slice, maintain control",
+              "level_3": "Slice under pressure situations"
+            },
+            "success_criteria": [
+              {
+                "metric": "Placement accuracy",
+                "target": "80% in target zones",
+                "tracking": "Count successful placements"
+              },
+              {
+                "metric": "Ball trajectory",
+                "target": "Consistent low bounce",
+                "tracking": "Visual assessment"
+              }
+            ]
+          },
+          {
+            "id": "precision_drills",
+            "name": "Precision Target Practice",
+            "type": "drill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "20 minutes"
+            },
+            "implementation": {
+              "method": "Target-based precision training",
+              "focus": "Accuracy and control",
+              "key_points": "Hit specific targets consistently"
+            },
+            "instructions": [
+              {
+                "phase": "SETUP",
+                "text": "Place targets in strategic court positions"
+              },
+              {
+                "phase": "EXECUTION",
+                "text": "Alternate between targets systematically"
+              },
+              {
+                "phase": "FOCUS",
+                "text": "Quality over quantity of shots"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Target hit rate",
+                "target": "70%+",
+                "tracking": "Count successful hits"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "zone_2_training": [
+    {
+      "id": "steady_state_cardio",
+      "name": "Zone-2 Bike Session",
+      "type": "aerobic",
+      "duration": "30 minutes",
+      "intensity": [
+        "60-70% maximum heart rate",
+        "Conversational pace",
+        "Nasal breathing if possible"
+      ],
+      "monitoring": [
+        "Heart rate stays in Zone 2",
+        "Can maintain conversation",
+        "No labored breathing"
+      ],
+      "benefits": [
+        "Aerobic base development",
+        "Mitochondrial adaptations",
+        "Active recovery"
+      ],
+      "instructions": [
+        {
+          "phase": "SETUP",
+          "text": "Set bike for comfortable position"
+        },
+        {
+          "phase": "EXECUTION",
+          "text": "Maintain steady, sustainable pace"
+        },
+        {
+          "phase": "BREATHING",
+          "text": "Focus on nasal breathing if possible"
+        },
+        {
+          "phase": "MONITORING",
+          "text": "Check HR stays in target zone"
+        }
+      ],
+      "attribution": {
+        "source": "Jeff Nippard - Cardio Guidelines",
+        "quote": "Zone 2 for aerobic base building",
+        "verification": "https://www.youtube.com/watch?v=Kl0ht3ow8TQ"
+      }
+    }
+  ],
+  "recovery_protocols": [
+    {
+      "id": "gentle_mobility",
+      "type": "immediate",
+      "title": "Gentle Mobility Flow",
+      "duration": "20 minutes",
+      "timing": "Mid-session",
+      "components": [
+        {
+          "id": "yoga_flows",
+          "name": "Yoga Flow Sequences",
+          "type": "mobility",
+          "duration": "20 minutes",
+          "implementation": {
+            "method": "Gentle flowing movements",
+            "intensity": "Light",
+            "equipment": "Yoga mat"
+          },
+          "focus_areas": [
+            "Hip openers",
+            "Shoulder mobility",
+            "Spinal mobility",
+            "Breathing coordination"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extended_mobility",
+      "type": "delayed",
+      "title": "Extended Mobility & Tendon Care",
+      "duration": "20 minutes",
+      "timing": "End of session",
+      "components": [
+        {
+          "id": "couch_stretch",
+          "name": "Couch Stretch",
+          "type": "mobility",
+          "duration": "3 minutes",
+          "implementation": {
+            "method": "Hip flexor stretch",
+            "intensity": "Moderate"
+          },
+          "instructions": [
+            "Place rear foot elevated on couch/bench",
+            "Push hips forward to feel hip flexor stretch",
+            "Hold for 90 seconds each side",
+            "Keep torso upright throughout"
+          ],
+          "attribution": {
+            "source": "Jeff Nippard - Mobility",
+            "quote": "Important for hip mobility",
+            "verification": "https://www.youtube.com/watch?v=8wPpK6xW9s8"
+          }
+        },
+        {
+          "id": "pigeon_pose",
+          "name": "Pigeon Pose",
+          "type": "mobility",
+          "duration": "3 minutes",
+          "implementation": {
+            "method": "Deep hip stretch",
+            "intensity": "Moderate"
+          },
+          "instructions": [
+            "90 seconds per side",
+            "Focus on hip external rotation",
+            "Breathe deeply throughout"
+          ]
+        },
+        {
+          "id": "tibialis_raises",
+          "name": "Eccentric Tibialis Raises",
+          "type": "therapy",
+          "duration": "5 minutes",
+          "implementation": {
+            "method": "Tendon strengthening",
+            "intensity": "Light"
+          },
+          "instructions": [
+            "Slow eccentric phase",
+            "Focus on control",
+            "3×15 each leg"
+          ],
+          "focus_areas": [
+            "Tibialis anterior",
+            "Ankle stability",
+            "Tendon health"
+          ]
+        }
+      ]
+    }
+  ],
+  "key_focus_points": [
+    {
+      "category": "Conditioning",
+      "focus": "Bike intervals with 10% intensity increase from Week 1"
+    },
+    {
+      "category": "Core Strength",
+      "focus": "Controlled hanging leg raises with minimal swing"
+    },
+    {
+      "category": "Stability",
+      "focus": "Side planks with proper alignment maintenance"
+    },
+    {
+      "category": "Mobility",
+      "focus": "Gentle yoga flows targeting hips and shoulders"
+    },
+    {
+      "category": "Tennis Precision",
+      "focus": "Slice and precision drills with controlled execution"
+    },
+    {
+      "category": "Aerobic Base",
+      "focus": "Zone-2 cardio maintaining conversational pace"
+    },
+    {
+      "category": "Tendon Care",
+      "focus": "Extended mobility with couch stretch and tibialis work"
+    }
+  ],
+  "weekly_notes": {
+    "week": 2,
+    "content": "Thursday serves as a recovery day with moderate conditioning work and technical tennis development, emphasizing precision over power."
+  },
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 60,
+      "strength_minutes": 30,
+      "warmup_minutes": 20,
+      "recovery_minutes": 40,
+      "total_minutes": 210
+    },
+    "intensity": {
+      "tennis_average": "60-70%",
+      "strength_average": "60%",
+      "overall_rpe": 5
+    },
+    "distances": {
+      "court_coverage": "2 km",
+      "conditioning_distance": "10 km bike"
+    }
+  },
+  "monitoring": {
+    "performance_metrics": [
+      {
+        "id": "interval_intensity",
+        "name": "Bike Interval Intensity",
+        "type": "quantitative",
+        "category": "endurance",
+        "measurement": {
+          "method": "Heart rate average during intervals",
+          "frequency": "Weekly"
+        },
+        "tracking": {
+          "baseline": "Week 1 HR",
+          "current": "+10% intensity",
+          "target": "70-75% max HR",
+          "trend": "improving"
+        }
+      },
+      {
+        "id": "slice_accuracy",
+        "name": "Slice Placement Accuracy",
+        "type": "quantitative",
+        "category": "skill",
+        "measurement": {
+          "method": "Percentage in target zones",
+          "frequency": "Weekly"
+        },
+        "tracking": {
+          "baseline": "___",
+          "current": "___",
+          "target": "80%+"
+        }
+      }
+    ],
+    "quality_indicators": [
+      {
+        "name": "Recovery Quality",
+        "scale": "1-10",
+        "target": "8+",
+        "description": "How recovered you feel"
+      },
+      {
+        "name": "Technical Execution",
+        "scale": "1-10",
+        "target": "8+",
+        "description": "Quality of tennis technique"
+      }
+    ]
+  }
+}

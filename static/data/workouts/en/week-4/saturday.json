@@ -1,0 +1,764 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Power Integration",
+    "day_id": "week_4_saturday",
+    "day_name": "Saturday",
+    "title": "Power Endurance & Tennis Competition",
+    "subtitle": "Phase 2 Power Endurance with Competition Application",
+    "phase": "Phase 2: Power Integration",
+    "focus_areas": [
+      "Power Integration",
+      "Velocity-Based Training",
+      "Power Endurance",
+      "Tennis Competition"
+    ],
+    "training_parameters": {
+      "volume": "90% (phase transition deload)",
+      "intensity": "85-95% (velocity-based focus)",
+      "density": "moderate-high",
+      "duration": "4 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Competition Simulation Protocol",
+        "type": "competition",
+        "attribution": {
+          "methodology": "Match simulation training",
+          "source": "Elite competition preparation",
+          "verification": "Competition training research",
+          "context": "Phase 2 competition application",
+          "results": "Enhanced competition performance"
+        }
+      },
+      {
+        "name": "Power Under Pressure Application",
+        "type": "power_competition",
+        "attribution": {
+          "methodology": "Competitive power application",
+          "source": "Elite competitive power research",
+          "verification": "Competition power protocols",
+          "context": "Phase 2 power under pressure",
+          "elite_use": "Professional competitive training"
+        }
+      },
+      {
+        "name": "Match Recovery Protocol",
+        "type": "match_recovery",
+        "attribution": {
+          "source": "Elite match recovery protocols",
+          "methodology": "Competition recovery standards",
+          "verification": "Match recovery research",
+          "context": "Phase 2 competition recovery"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Tennis court access",
+        "Tennis racquets",
+        "Tennis balls",
+        "Competition partner/opponent",
+        "Stopwatch",
+        "Scoreboard/scoring system",
+        "Water bottles",
+        "Towels"
+      ],
+      "optional": [
+        "Radar gun",
+        "Video recording equipment",
+        "Heart rate monitor",
+        "Match statistics tracking",
+        "Recovery tools"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [⬅️ Friday](friday) | [Sunday ➡️](sunday)",
+      "overview_link": "./",
+      "next_link": "sunday",
+      "previous_link": "friday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Match Preparation Assessment",
+        "preparation": "Competition Preparation",
+        "skill_training": "Match Play Sessions",
+        "conditioning": "Competition Conditioning",
+        "recovery": "Match Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "success",
+          "title": "Competition Day",
+          "content": "Apply Phase 2 power development in match conditions",
+          "icon": "🏆"
+        },
+        {
+          "type": "warning",
+          "title": "Match Intensity",
+          "content": "High intensity competition simulation - monitor fatigue",
+          "icon": "⚠️"
+        }
+      ]
+    },
+    "day_features": {
+      "has_dual_workout": true,
+      "has_competition_simulation": true,
+      "has_match_recovery": true
+    }
+  },
+  "competition_options": [
+    {
+      "option": "A",
+      "title": "Full Match Competition",
+      "description": "Complete match play with power application focus",
+      "duration": "2-3 hours",
+      "intensity": "Match intensity (90-100%)",
+      "components": [
+        {
+          "id": "match_preparation",
+          "name": "Match Preparation Protocol",
+          "type": "preparation",
+          "duration": "45 minutes",
+          "activities": [
+            "Competition warm-up: 20 minutes",
+            "Power activation: 15 minutes",
+            "Mental preparation: 10 minutes"
+          ],
+          "cues": [
+            "Competition mindset",
+            "Power readiness",
+            "Mental focus",
+            "Peak preparation"
+          ]
+        },
+        {
+          "id": "match_play",
+          "name": "Full Match Play",
+          "type": "competition",
+          "duration": "90-120 minutes",
+          "activities": [
+            "Best of 3 sets match",
+            "Power application focus",
+            "Tactical execution",
+            "Competition intensity"
+          ],
+          "cues": [
+            "Apply power training",
+            "Compete fully",
+            "Execute tactics",
+            "Maintain intensity"
+          ]
+        },
+        {
+          "id": "match_recovery",
+          "name": "Match Recovery Protocol",
+          "type": "recovery",
+          "duration": "30 minutes",
+          "activities": [
+            "Cool-down: 10 minutes",
+            "Recovery stretching: 10 minutes",
+            "Match analysis: 10 minutes"
+          ],
+          "cues": [
+            "Immediate recovery",
+            "Analyze performance",
+            "Plan improvements",
+            "Prepare for next training"
+          ]
+        }
+      ]
+    },
+    {
+      "option": "B",
+      "title": "Competition Simulation Training",
+      "description": "Structured competition simulation with power focus",
+      "duration": "2-2.5 hours",
+      "intensity": "Controlled competition (85-95%)",
+      "components": [
+        {
+          "id": "simulation_preparation",
+          "name": "Simulation Preparation",
+          "type": "preparation",
+          "duration": "30 minutes",
+          "activities": [
+            "Dynamic warm-up: 15 minutes",
+            "Power activation: 10 minutes",
+            "Simulation briefing: 5 minutes"
+          ],
+          "cues": [
+            "Simulation mindset",
+            "Power focus",
+            "Controlled intensity",
+            "Learning focus"
+          ]
+        },
+        {
+          "id": "competition_drills",
+          "name": "Competition Simulation Drills",
+          "type": "simulation",
+          "duration": "75 minutes",
+          "activities": [
+            "Serve under pressure: 20 minutes",
+            "Power groundstrokes: 25 minutes",
+            "Match scenarios: 30 minutes"
+          ],
+          "cues": [
+            "Competition pressure",
+            "Power application",
+            "Scenario execution",
+            "Pressure training"
+          ]
+        },
+        {
+          "id": "simulation_recovery",
+          "name": "Simulation Recovery",
+          "type": "recovery",
+          "duration": "25 minutes",
+          "activities": [
+            "Active recovery: 10 minutes",
+            "Skill review: 10 minutes",
+            "Planning: 5 minutes"
+          ],
+          "cues": [
+            "Recovery focus",
+            "Skill analysis",
+            "Improvement planning",
+            "Prepare for Sunday"
+          ]
+        }
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "id": "match_preparation_assessment",
+      "type": "competition",
+      "title": "Match Preparation Assessment",
+      "timing": "pre-competition",
+      "duration": "20 minutes",
+      "description": "Pre-competition readiness assessment",
+      "attribution": {
+        "source": "Elite competition preparation",
+        "methodology": "Competition readiness evaluation",
+        "validation": "Competition preparation research",
+        "elite_use": "Professional competition preparation"
+      },
+      "components": [
+        {
+          "id": "physical_readiness",
+          "name": "Physical Readiness Assessment",
+          "type": "physical",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Physical readiness evaluation",
+            "duration": "8 minutes",
+            "equipment": "Basic assessment tools"
+          },
+          "standards": {
+            "excellent": "Full physical readiness",
+            "good": "Good physical readiness",
+            "needs_attention": "Physical limitations present"
+          },
+          "scoring": {
+            "method": "Physical readiness rating",
+            "scale": "1-10 scale",
+            "recording": "Readiness score and limitations"
+          },
+          "context": {
+            "description": "Physical preparation for competition",
+            "application": "Competition intensity adjustment"
+          }
+        },
+        {
+          "id": "technical_readiness",
+          "name": "Technical Readiness Assessment",
+          "type": "technical",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Technical skill assessment",
+            "duration": "8 minutes",
+            "equipment": "Tennis equipment"
+          },
+          "standards": {
+            "excellent": "Technical skills sharp",
+            "good": "Technical skills good",
+            "needs_attention": "Technical issues present"
+          },
+          "scoring": {
+            "method": "Technical readiness rating",
+            "scale": "1-10 scale",
+            "recording": "Technical readiness and issues"
+          },
+          "context": {
+            "description": "Technical preparation for competition",
+            "application": "Competition strategy adjustment"
+          }
+        },
+        {
+          "id": "mental_readiness",
+          "name": "Mental Readiness Assessment",
+          "type": "mental",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Mental preparation evaluation",
+            "duration": "4 minutes",
+            "equipment": "Assessment form"
+          },
+          "standards": {
+            "excellent": "Optimal mental state",
+            "good": "Good mental preparation",
+            "needs_attention": "Mental preparation issues"
+          },
+          "scoring": {
+            "method": "Mental readiness rating",
+            "scale": "1-10 scale",
+            "recording": "Mental state and preparation"
+          },
+          "context": {
+            "description": "Mental preparation for competition",
+            "application": "Competition approach adjustment"
+          }
+        }
+      ]
+    }
+  ],
+  "preparation_phases": [
+    {
+      "id": "competition_preparation",
+      "type": "competition",
+      "title": "Competition Preparation Protocol",
+      "duration": "45 minutes",
+      "timing": "Pre-competition",
+      "attribution": {
+        "source": "Elite competition preparation",
+        "elite_use": "Professional competition preparation",
+        "verification": "Competition preparation research"
+      },
+      "activities": [
+        {
+          "id": "competition_warm_up",
+          "name": "Competition Warm-up",
+          "type": "warm_up",
+          "duration": "20 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Competition-specific warm-up",
+            "setup": "Court environment",
+            "execution": "Progressive warm-up",
+            "focus": "Competition readiness"
+          },
+          "instructions": [
+            {
+              "phase": "GENERAL_WARM_UP",
+              "text": "5 minutes general warm-up - light jogging, dynamic stretching"
+            },
+            {
+              "phase": "SPECIFIC_WARM_UP",
+              "text": "10 minutes specific warm-up - tennis movements, progressive intensity"
+            },
+            {
+              "phase": "COMPETITION_PREPARATION",
+              "text": "5 minutes competition preparation - match-specific movements"
+            }
+          ],
+          "cues": [
+            "Progressive warm-up",
+            "Competition readiness",
+            "Optimal preparation",
+            "Peak readiness"
+          ]
+        },
+        {
+          "id": "power_activation",
+          "name": "Power Activation Protocol",
+          "type": "activation",
+          "duration": "15 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Power system activation",
+            "setup": "Training area",
+            "execution": "Power activation sequence",
+            "focus": "Power system readiness"
+          },
+          "instructions": [
+            {
+              "phase": "NEURAL_ACTIVATION",
+              "text": "5 minutes neural activation - explosive movements, reactive drills"
+            },
+            {
+              "phase": "POWER_ACTIVATION",
+              "text": "10 minutes power activation - medicine ball throws, explosive serves"
+            }
+          ],
+          "cues": [
+            "Power system activation",
+            "Explosive readiness",
+            "Peak power preparation",
+            "Competition power"
+          ]
+        },
+        {
+          "id": "mental_preparation",
+          "name": "Mental Preparation Protocol",
+          "type": "mental",
+          "duration": "10 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Mental preparation techniques",
+            "setup": "Quiet space",
+            "execution": "Mental preparation routine",
+            "focus": "Optimal mental state"
+          },
+          "instructions": [
+            {
+              "phase": "BREATHING",
+              "text": "3 minutes breathing - 4-7-8 pattern for relaxation"
+            },
+            {
+              "phase": "VISUALIZATION",
+              "text": "5 minutes visualization - successful power application"
+            },
+            {
+              "phase": "FOCUS",
+              "text": "2 minutes focus - competition mindset activation"
+            }
+          ],
+          "cues": [
+            "Mental preparation",
+            "Optimal mindset",
+            "Competition focus",
+            "Peak mental state"
+          ]
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Match Play Sessions",
+    "section_description": "Competition-focused tennis training",
+    "sessions": [
+      {
+        "id": "match_play_session",
+        "type": "competition",
+        "title": "Match Play Session",
+        "duration": "90-120 minutes",
+        "intensity": "Match intensity (90-100%)",
+        "attribution": {
+          "methodology": "Match play training",
+          "source": "Elite competition training",
+          "elite_use": "Professional match preparation",
+          "verification": "Competition training research"
+        },
+        "structure": {
+          "warm_up": "Included in preparation",
+          "main_work": "Match play duration",
+          "cool_down": "Included in recovery"
+        },
+        "components": [
+          {
+            "id": "power_serve_application",
+            "name": "Power Serve Application",
+            "type": "competition_skill",
+            "category": "primary",
+            "implementation": {
+              "method": "Power serve under pressure",
+              "focus": "Serve power with accuracy",
+              "key_points": "Maintain power under pressure"
+            },
+            "instructions": [
+              "Apply power serve training",
+              "Maintain accuracy under pressure",
+              "Use serve as weapon",
+              "Monitor power consistency"
+            ],
+            "cues": [
+              "Power serve application",
+              "Accuracy under pressure",
+              "Serve as weapon",
+              "Consistent power"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Serve velocity",
+                "target": "Maintain training velocities",
+                "tracking": "Serve speed monitoring"
+              },
+              {
+                "metric": "Serve accuracy",
+                "target": "70% first serve percentage",
+                "tracking": "Serve statistics"
+              }
+            ]
+          },
+          {
+            "id": "power_groundstroke_application",
+            "name": "Power Groundstroke Application",
+            "type": "competition_skill",
+            "category": "primary",
+            "implementation": {
+              "method": "Power groundstrokes under pressure",
+              "focus": "Groundstroke power with control",
+              "key_points": "Power maintenance in rallies"
+            },
+            "instructions": [
+              "Apply power groundstroke training",
+              "Maintain power in long rallies",
+              "Use power tactically",
+              "Control power application"
+            ],
+            "cues": [
+              "Power groundstroke application",
+              "Power in rallies",
+              "Tactical power use",
+              "Controlled power"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Groundstroke velocity",
+                "target": "Maintain training velocities",
+                "tracking": "Shot velocity monitoring"
+              },
+              {
+                "metric": "Rally success",
+                "target": "80% rally success with power",
+                "tracking": "Rally statistics"
+              }
+            ]
+          },
+          {
+            "id": "court_movement_application",
+            "name": "Court Movement Application",
+            "type": "movement_skill",
+            "category": "primary",
+            "implementation": {
+              "method": "Power movement under pressure",
+              "focus": "Movement power in competition",
+              "key_points": "Efficient power movement"
+            },
+            "instructions": [
+              "Apply movement power training",
+              "Maintain movement efficiency",
+              "Use power for court coverage",
+              "Efficient movement patterns"
+            ],
+            "cues": [
+              "Power movement application",
+              "Efficient movement",
+              "Power for coverage",
+              "Movement efficiency"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Movement efficiency",
+                "target": "Maintain training standards",
+                "tracking": "Movement assessment"
+              },
+              {
+                "metric": "Court coverage",
+                "target": "Effective court coverage",
+                "tracking": "Coverage statistics"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "recovery_protocols": [
+    {
+      "id": "match_recovery_protocol",
+      "type": "match_recovery",
+      "title": "Match Recovery Protocol",
+      "duration": "30 minutes",
+      "timing": "Post-match",
+      "attribution": {
+        "methodology": "Match recovery protocols",
+        "source": "Elite match recovery",
+        "elite_use": "Professional match recovery",
+        "verification": "Match recovery research"
+      },
+      "components": [
+        {
+          "id": "immediate_cool_down",
+          "name": "Immediate Cool-down",
+          "type": "cool_down",
+          "duration": "10 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Immediate post-match cool-down",
+            "intensity": "Low",
+            "equipment": "None"
+          },
+          "instructions": [
+            "5 minutes active recovery walking",
+            "3 minutes deep breathing",
+            "2 minutes gentle stretching"
+          ],
+          "cues": [
+            "Immediate cool-down",
+            "Lower heart rate",
+            "Begin recovery",
+            "Prepare for analysis"
+          ]
+        },
+        {
+          "id": "recovery_stretching",
+          "name": "Recovery Stretching",
+          "type": "stretching",
+          "duration": "10 minutes",
+          "order": 2,
+          "implementation": {
+            "method": "Post-match stretching",
+            "intensity": "Light",
+            "equipment": "Stretching area"
+          },
+          "instructions": [
+            "Hip flexor stretches: 3 minutes",
+            "Hamstring stretches: 3 minutes",
+            "Shoulder stretches: 2 minutes",
+            "Full body stretches: 2 minutes"
+          ],
+          "cues": [
+            "Recovery stretching",
+            "Gentle stretching",
+            "Release tension",
+            "Promote recovery"
+          ]
+        },
+        {
+          "id": "match_analysis",
+          "name": "Match Analysis",
+          "type": "analysis",
+          "duration": "10 minutes",
+          "order": 3,
+          "implementation": {
+            "method": "Match performance analysis",
+            "intensity": "Mental",
+            "equipment": "Analysis tools"
+          },
+          "instructions": [
+            "Review power application",
+            "Analyze tactical execution",
+            "Identify improvements",
+            "Plan next training"
+          ],
+          "cues": [
+            "Performance analysis",
+            "Power application review",
+            "Tactical analysis",
+            "Improvement planning"
+          ]
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": "Variable (90-180)",
+      "competition_minutes": "Variable (90-120)",
+      "preparation_minutes": 45,
+      "recovery_minutes": 30,
+      "total_minutes": "Variable (255-375)"
+    },
+    "intensity": {
+      "competition_average": "90-100%",
+      "preparation_average": "70-80%",
+      "recovery_average": "30-50%",
+      "overall_rpe": "9-10"
+    },
+    "load_calculations": {
+      "total_load": "Match dependent",
+      "competition_load": "High intensity"
+    },
+    "distances": {
+      "estimated_court_coverage": "Variable (3-8 km)",
+      "match_coverage": "Match dependent"
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Power application under pressure",
+      "Competition skill execution",
+      "Tactical power use"
+    ],
+    "load_management": [
+      "Variable load based on option",
+      "Monitor competition fatigue",
+      "Adjust recovery needs"
+    ],
+    "progression_markers": [
+      "Successful power application",
+      "Competition skill transfer",
+      "Tactical execution"
+    ],
+    "competition_application": [
+      "Phase 2 power in competition",
+      "Pressure skill maintenance",
+      "Tactical power integration"
+    ]
+  },
+  "level_modifications": {
+    "beginner": {
+      "option": "Competition simulation preferred",
+      "intensity": "Controlled competition (80-90%)",
+      "duration": "Shorter sessions",
+      "recovery": "Extended recovery"
+    },
+    "intermediate": {
+      "option": "Either option suitable",
+      "intensity": "As prescribed",
+      "duration": "As prescribed",
+      "recovery": "Standard recovery"
+    },
+    "advanced": {
+      "option": "Full match preferred",
+      "intensity": "Peak competition (95-100%)",
+      "duration": "Extended if needed",
+      "recovery": "Optimized recovery"
+    }
+  },
+  "week_integration": {
+    "weekly_theme": "Competition Application",
+    "daily_priority": "Power under pressure",
+    "phase_focus": "Competition power transfer",
+    "connects_to": {
+      "friday": "Preparation for competition",
+      "sunday": "Recovery and planning"
+    },
+    "competition_application": {
+      "power_transfer": "Power training to competition",
+      "skill_application": "Skills under pressure",
+      "tactical_execution": "Tactical power use",
+      "performance_validation": "Competition performance"
+    }
+  },
+  "tracking": {
+    "required": [
+      "Competition performance metrics",
+      "Power application success",
+      "Match statistics",
+      "Recovery indicators",
+      "Performance analysis"
+    ],
+    "optional": [
+      "Serve velocity tracking",
+      "Heart rate monitoring",
+      "Video analysis",
+      "Detailed statistics",
+      "Physiological markers"
+    ],
+    "competition_specific": [
+      "Power under pressure",
+      "Skill transfer success",
+      "Tactical execution",
+      "Competition adaptations"
+    ]
+  },
+  "navigation": {
+    "week_overview": "./",
+    "next_day": "sunday",
+    "previous_day": "friday",
+    "phase_status": "Phase 2 - Week 1"
+  }
+}

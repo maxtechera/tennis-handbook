@@ -1,0 +1,264 @@
+/* Analyzing step with progressive reveal */
+.analyzingStep {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  padding: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+/* Analysis Section */
+.analysisSection {
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.loadingIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.loadingDots {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.loadingDots span {
+  width: 10px;
+  height: 10px;
+  background: #32CD32;
+  border-radius: 50%;
+  animation: dotPulse 1.5s ease-in-out infinite both;
+  box-shadow: 0 0 10px rgba(50, 205, 50, 0.4);
+}
+
+.loadingDots span:nth-child(1) { 
+  animation-delay: -0.4s; 
+  background: #ff5722;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.4);
+}
+.loadingDots span:nth-child(2) { 
+  animation-delay: -0.2s; 
+  background: #667eea;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.4);
+}
+.loadingDots span:nth-child(3) { 
+  animation-delay: 0s; 
+  background: #32CD32;
+  box-shadow: 0 0 10px rgba(50, 205, 50, 0.4);
+}
+
+@keyframes dotPulse {
+  0%, 80%, 100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.analyzingText {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  color: #1A1A1A;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Solution Section */
+.solutionSection {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.solutionCard {
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.8s ease;
+  animation: cardEnter 0.8s ease-out forwards;
+}
+
+/* Color variants for each phase */
+.solutionCard.blue {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.solutionCard.purple {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.solutionCard.orange {
+  background: linear-gradient(135deg, #ff8a80, #ff5722);
+  box-shadow: 0 8px 24px rgba(255, 87, 34, 0.3);
+}
+
+.solutionCard.green {
+  background: linear-gradient(135deg, #32CD32, #228B22);
+  box-shadow: 0 8px 24px rgba(50, 205, 50, 0.3);
+}
+
+@keyframes cardEnter {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.solutionTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: white;
+}
+
+.solutionDescription {
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem 0;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+.benefitBadge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.benefitText {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .content {
+    padding: 0.75rem;
+    max-width: 100%;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+  
+  .subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .loadingIcon {
+    font-size: 2.5rem;
+  }
+  
+  .solutionCard {
+    padding: 1rem;
+  }
+  
+  .solutionTitle {
+    font-size: 1.1rem;
+  }
+  
+  .solutionDescription {
+    font-size: 0.8rem;
+  }
+}
+
+/* Dark mode support */
+[data-theme='dark'] .title {
+  color: #e3e3e3;
+}
+
+[data-theme='dark'] .subtitle {
+  color: #b0b3b8;
+}
+
+[data-theme='dark'] .solutionCard {
+  background: linear-gradient(135deg, #32CD32, #228B22);
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .loadingIcon,
+  .loadingDots span,
+  .solutionSection {
+    animation: none;
+  }
+  
+  .loadingIcon {
+    opacity: 1;
+    transform: none;
+  }
+}

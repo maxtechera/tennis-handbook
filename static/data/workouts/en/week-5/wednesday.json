@@ -1,0 +1,291 @@
+{
+  "metadata": {
+    "period": 5,
+    "period_name": "Power Integration Phase",
+    "day_id": "week_5_wednesday",
+    "day_name": "Wednesday",
+    "title": "Power Endurance & Mid-Week Assessment",
+    "subtitle": "Power Endurance Development with Assessment",
+    "phase": "Phase 2: Power Integration (Week 2)",
+    "focus_areas": [
+      "Power Endurance Development",
+      "Mid-Week Assessment",
+      "Movement Quality Evaluation"
+    ],
+    "training_parameters": {
+      "volume": "95% (assessment focus)",
+      "intensity": "80-90% (endurance focus)",
+      "density": "moderate",
+      "duration": "4 hours"
+    },
+    "elite_methods": [
+      {
+        "name": "Medvedev Power Endurance Protocol",
+        "type": "power_endurance",
+        "attribution": {
+          "athlete": "Daniil Medvedev",
+          "coach": "Gilles Cervara",
+          "source": "Power endurance development",
+          "verification": "Training documentation",
+          "context": "Sustained power for long matches",
+          "results": "Enhanced match endurance"
+        }
+      }
+    ]
+  },
+  "assessments": [
+    {
+      "id": "mid_week_power_assessment",
+      "type": "progress",
+      "title": "Mid-Week Power Assessment",
+      "timing": "mid-session",
+      "duration": "30 minutes",
+      "components": [
+        {
+          "id": "power_maintenance_test",
+          "name": "Power Maintenance Assessment",
+          "type": "power_endurance",
+          "category": "primary",
+          "measurement": {
+            "protocol": "20 consecutive vertical jumps with 2-second intervals",
+            "repetitions": "20 jumps",
+            "equipment": "Jump mat"
+          },
+          "standards": {
+            "elite_benchmark": "<8% power drop from jump 1 to jump 20",
+            "good_standard": "8-12% power drop",
+            "needs_work": ">12% power drop"
+          },
+          "context": {
+            "description": "Assesses power endurance development",
+            "application": "Adjusts training parameters"
+          }
+        },
+        {
+          "id": "movement_quality_check",
+          "name": "Movement Quality Assessment",
+          "type": "movement",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Functional Movement Screen for athletes",
+            "repetitions": "7 movement patterns",
+            "equipment": "FMS kit"
+          },
+          "standards": {
+            "elite_benchmark": "Score 17+ with no asymmetries",
+            "good_standard": "Score 14-16",
+            "needs_work": "Score <14 or asymmetries present"
+          },
+          "context": {
+            "description": "Evaluates movement quality maintenance",
+            "application": "Identifies corrective needs"
+          }
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Power Endurance Tennis Training",
+    "sessions": [
+      {
+        "id": "power_endurance_session",
+        "type": "power_endurance",
+        "title": "Power Endurance Tennis Development",
+        "duration": "90 minutes",
+        "intensity": "80-90%",
+        "components": [
+          {
+            "id": "sustained_power_serves",
+            "name": "Sustained Power Serve Training",
+            "type": "power_endurance",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "35 minutes",
+              "rest": "20 seconds between serves"
+            },
+            "implementation": {
+              "method": "Sustained power serve development",
+              "focus": "Power maintenance over time",
+              "key_points": "Consistent velocity, technical maintenance"
+            },
+            "instructions": [
+              {
+                "phase": "POWER_BLOCKS",
+                "text": "5 blocks of 10 serves at 90% max velocity"
+              },
+              {
+                "phase": "ENDURANCE_BLOCKS",
+                "text": "3 blocks of 15 serves at 85% max velocity"
+              },
+              {
+                "phase": "INTEGRATION",
+                "text": "2 blocks of 20 serves at 80% max velocity"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Velocity maintenance",
+                "target": "Velocity drop <10% across blocks",
+                "tracking": "Radar gun measurements"
+              }
+            ]
+          },
+          {
+            "id": "power_endurance_rallies",
+            "name": "Power Endurance Rally Training",
+            "type": "power_endurance",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "45 minutes",
+              "rest": "30 seconds between rallies"
+            },
+            "implementation": {
+              "method": "Sustained power rally development",
+              "focus": "Power maintenance in rally play",
+              "key_points": "Consistent shot power, rally endurance"
+            },
+            "instructions": [
+              {
+                "phase": "SHORT_POWER_RALLIES",
+                "text": "15 minutes 10-shot power rallies"
+              },
+              {
+                "phase": "MEDIUM_POWER_RALLIES",
+                "text": "15 minutes 20-shot power rallies"
+              },
+              {
+                "phase": "LONG_POWER_RALLIES",
+                "text": "15 minutes 30+ shot power rallies"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Power consistency",
+                "target": "Shot power maintained throughout rally",
+                "tracking": "Shot quality assessment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "power_endurance_block",
+      "type": "power_endurance",
+      "title": "Power Endurance Training Block",
+      "description": "Sustained power development",
+      "duration": "75 minutes",
+      "exercises": [
+        {
+          "id": "power_endurance_circuit",
+          "name": "Power Endurance Circuit Training",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "4",
+            "reps": "Circuit format",
+            "intensity": "70-80% max power",
+            "rest": "90 seconds between circuits"
+          },
+          "execution": {
+            "setup": [
+              "Multiple stations set up",
+              "Timer for intervals",
+              "Various equipment"
+            ],
+            "technique": [
+              "Station 1: Jump squats (45 seconds)",
+              "Station 2: Medicine ball throws (45 seconds)",
+              "Station 3: Burpees (45 seconds)",
+              "Station 4: Lateral bounds (45 seconds)",
+              "Station 5: Mountain climbers (45 seconds)"
+            ]
+          },
+          "cues": [
+            "Maintain power output",
+            "Consistent effort",
+            "Quality over speed",
+            "Sustain through fatigue"
+          ],
+          "benefits": {
+            "primary": "Power endurance development",
+            "secondary": "Metabolic conditioning",
+            "sport_specific": "Match endurance"
+          }
+        },
+        {
+          "id": "strength_endurance",
+          "name": "Strength Endurance Training",
+          "category": "auxiliary",
+          "order": 2,
+          "loading": {
+            "sets": "3",
+            "reps": "High rep format",
+            "intensity": "60-70% 1RM",
+            "rest": "2 minutes between sets"
+          },
+          "execution": {
+            "setup": [
+              "Barbell and weights",
+              "Open space",
+              "Timer available"
+            ],
+            "technique": [
+              "Squats: 15 reps",
+              "Deadlifts: 12 reps",
+              "Bench press: 15 reps",
+              "Bent-over rows: 12 reps"
+            ]
+          },
+          "cues": [
+            "Maintain form under fatigue",
+            "Consistent tempo",
+            "Quality repetitions",
+            "Push through fatigue"
+          ],
+          "benefits": {
+            "primary": "Strength endurance",
+            "secondary": "Work capacity",
+            "sport_specific": "Match strength maintenance"
+          }
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 90,
+      "strength_minutes": 75,
+      "assessment_minutes": 30,
+      "warmup_minutes": 25,
+      "recovery_minutes": 20,
+      "total_minutes": 240
+    },
+    "intensity": {
+      "tennis_average": "80-90%",
+      "strength_average": "60-80%",
+      "overall_rpe": 7
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Power endurance development",
+      "Mid-week assessment integration",
+      "Movement quality maintenance"
+    ],
+    "load_management": [
+      "Moderate intensity focus",
+      "Endurance development priority",
+      "Assessment-based adjustments"
+    ],
+    "progression_markers": [
+      "Power endurance improvements",
+      "Movement quality maintenance",
+      "Fatigue resistance development"
+    ]
+  }
+}

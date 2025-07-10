@@ -353,3 +353,240 @@ export function StrengthTrainingSection({ data }: { data: any }) {
     </>
   );
 }
+
+// Component to render Daily Assessment section
+export function DailyAssessment({ data }: { data: any }) {
+  if (!data) return null;
+  
+  return (
+    <>
+      <h2>{data.title} ({data.time})</h2>
+      
+      {data.comparison_table && (
+        <table>
+          <thead>
+            <tr>
+              {data.comparison_table.headers.map((header: string, idx: number) => (
+                <th key={idx}>{header}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {data.comparison_table.rows.map((row: any, idx: number) => (
+              <tr key={idx}>
+                <td><strong>{row.metric}</strong></td>
+                <td>{row.monday_baseline || row.baseline}</td>
+                <td>{row.tuesday_reading || row.current_reading || row.thursday_reading || row.friday_reading}</td>
+                <td>{row.notes}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+    </>
+  );
+}
+
+// Component to render Recovery Protocol section
+export function RecoveryProtocol({ data }: { data: any }) {
+  if (!data) return null;
+  
+  return (
+    <>
+      <h2>{data.title} ({data.time})</h2>
+      
+      {/* Render different recovery sections based on what's available */}
+      {data.upper_body_mobility && (
+        <>
+          <h3>{data.upper_body_mobility.title}</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Stretch</th>
+                <th>Duration</th>
+                <th>Instructions</th>
+                <th>Target</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.upper_body_mobility.stretches.map((stretch: any, idx: number) => (
+                <tr key={idx}>
+                  <td><strong>{stretch.name}</strong></td>
+                  <td>{stretch.duration}</td>
+                  <td>{stretch.instructions}</td>
+                  <td>{stretch.target}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
+      
+      {data.breathing_protocols && (
+        <>
+          <h3>{data.breathing_protocols.title}</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Protocol</th>
+                <th>Duration</th>
+                <th>Method</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.breathing_protocols.protocols.map((protocol: any, idx: number) => (
+                <tr key={idx}>
+                  <td><strong>{protocol.name}</strong></td>
+                  <td>{protocol.duration}</td>
+                  <td>{protocol.method}</td>
+                  <td>{protocol.purpose}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
+      
+      {/* Morning recovery routine for Sunday */}
+      {data.morning_recovery && (
+        <>
+          <h3>{data.morning_recovery.title}</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Activity</th>
+                <th>Duration</th>
+                <th>Method</th>
+                <th>Benefits</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.morning_recovery.activities.map((activity: any, idx: number) => (
+                <tr key={idx}>
+                  <td><strong>{activity.name}</strong></td>
+                  <td>{activity.duration}</td>
+                  <td>{activity.method}</td>
+                  <td>{activity.benefits}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
+    </>
+  );
+}
+
+// Component to render Weekly Review section
+export function WeeklyReview({ data }: { data: any }) {
+  if (!data) return null;
+  
+  return (
+    <>
+      <h2>{data.title}</h2>
+      
+      {data.physical_performance && (
+        <>
+          <h3>{data.physical_performance.title}</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Week 1 Baseline</th>
+                <th>Week 1 Final</th>
+                <th>Change</th>
+                <th>Week 2 Target</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.physical_performance.metrics?.map((metric: any, idx: number) => (
+                <tr key={idx}>
+                  <td><strong>{metric.name}</strong></td>
+                  <td>{metric.baseline}</td>
+                  <td>{metric.final}</td>
+                  <td>{metric.change}</td>
+                  <td>{metric.target}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
+      
+      {data.movement_quality && (
+        <>
+          <h3>{data.movement_quality.title}</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Screen Component</th>
+                <th>Week 1 Score</th>
+                <th>Improvements Noted</th>
+                <th>Week 2 Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.movement_quality.components?.map((component: any, idx: number) => (
+                <tr key={idx}>
+                  <td><strong>{component.name}</strong></td>
+                  <td>{component.score}</td>
+                  <td>{component.improvements}</td>
+                  <td>{component.next_focus}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
+      
+      {data.tennis_performance && (
+        <>
+          <h3>{data.tennis_performance.title}</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Skill Area</th>
+                <th>Monday Level</th>
+                <th>Friday Level</th>
+                <th>Key Improvements</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.tennis_performance.skills?.map((skill: any, idx: number) => (
+                <tr key={idx}>
+                  <td><strong>{skill.area}</strong></td>
+                  <td>{skill.monday_level}</td>
+                  <td>{skill.friday_level}</td>
+                  <td>{skill.improvements}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      )}
+    </>
+  );
+}
+
+// Component to render Workout Options (for Saturday)
+export function WorkoutOptions({ options }: { options: any[] }) {
+  if (!options) return null;
+  
+  return (
+    <div style={{ display: 'flex', gap: '20px', marginTop: '20px', marginBottom: '20px' }}>
+      {options.map((option: any, idx: number) => (
+        <div key={idx} style={{ 
+          flex: 1, 
+          padding: '20px', 
+          border: '2px solid #ddd', 
+          borderRadius: '8px',
+          backgroundColor: option.option === 'A' ? '#f0f8ff' : '#f5f5f5'
+        }}>
+          <h3>Option {option.option}: {option.title}</h3>
+          <p>{option.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+}

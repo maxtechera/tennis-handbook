@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "period": 7,
+    "period_name": "Competition Power Phase",
+    "day_id": "week_7_monday",
+    "day_name": "Monday",
+    "title": "Phase 3 Launch - Competition Power Development",
+    "subtitle": "Phase 3 Launch - Competition Power Focus",
+    "phase": "Phase 3: Competition Power (Week 1)",
+    "focus_areas": [
+      "Competition Power Development",
+      "Match-Specific Power",
+      "Peak Performance Preparation"
+    ],
+    "training_parameters": {
+      "volume": "95% (competition focus)",
+      "intensity": "90-100% (competition level)",
+      "density": "competition-like",
+      "duration": "5 hours 15 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Djokovic Competition Power Protocol",
+        "type": "competition_power",
+        "attribution": {
+          "athlete": "Novak Djokovic",
+          "coach": "Goran Ivanišević",
+          "source": "Competition power development",
+          "verification": "Elite competition preparation",
+          "context": "Phase 3 competition power focus",
+          "results": "Enhanced competition performance"
+        }
+      }
+    ]
+  },
+  "assessments": [
+    {
+      "id": "competition_power_baseline",
+      "type": "competition",
+      "title": "Competition Power Baseline",
+      "timing": "pre-session",
+      "duration": "45 minutes",
+      "components": [
+        {
+          "id": "match_power_simulation",
+          "name": "Match Power Simulation Test",
+          "type": "competition_power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Simulated match power demands",
+            "repetitions": "Match-like scenarios",
+            "equipment": "Competition setup"
+          },
+          "standards": {
+            "competition_level": "Maintain power under match pressure",
+            "consistency": "Power output variation <8%",
+            "endurance": "Power maintenance across match duration"
+          },
+          "context": {
+            "description": "Evaluates competition power readiness",
+            "application": "Determines competition power training needs"
+          }
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Competition Power Tennis Training",
+    "sessions": [
+      {
+        "id": "competition_power_session",
+        "type": "competition_power",
+        "title": "Competition Power Tennis Development",
+        "duration": "150 minutes",
+        "intensity": "90-100%",
+        "components": [
+          {
+            "id": "match_power_serves",
+            "name": "Match Power Serve Training",
+            "type": "competition_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "60 minutes",
+              "rest": "Match-like intervals"
+            },
+            "implementation": {
+              "method": "Competition serve power development",
+              "focus": "Match-pressure serve power",
+              "key_points": "Pressure performance, power consistency"
+            },
+            "instructions": [
+              {
+                "phase": "PRESSURE_SERVES",
+                "text": "25 minutes pressure serve training"
+              },
+              {
+                "phase": "MATCH_SIMULATION",
+                "text": "25 minutes match-like serve scenarios"
+              },
+              {
+                "phase": "CLUTCH_SERVING",
+                "text": "10 minutes clutch serve training"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Pressure serve power",
+                "target": "Maintain power under pressure",
+                "tracking": "Performance under pressure"
+              }
+            ]
+          },
+          {
+            "id": "competition_power_rallies",
+            "name": "Competition Power Rally Training",
+            "type": "competition_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "75 minutes",
+              "rest": "Match-like recovery"
+            },
+            "implementation": {
+              "method": "Competition rally power development",
+              "focus": "Match-pressure rally power",
+              "key_points": "Sustained power under pressure"
+            },
+            "instructions": [
+              {
+                "phase": "PRESSURE_RALLIES",
+                "text": "30 minutes pressure rally training"
+              },
+              {
+                "phase": "MATCH_SCENARIOS",
+                "text": "30 minutes match scenario training"
+              },
+              {
+                "phase": "CLUTCH_POINTS",
+                "text": "15 minutes clutch point training"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "competition_power_block",
+      "type": "competition",
+      "title": "Competition Power Training Block",
+      "description": "Competition-specific power development",
+      "duration": "135 minutes",
+      "exercises": [
+        {
+          "id": "competition_power_complex",
+          "name": "Competition Power Complex",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "6",
+            "reps": "Competition format",
+            "intensity": "90-100% competition loads",
+            "rest": "Competition-like recovery"
+          },
+          "execution": {
+            "setup": [
+              "Competition simulation setup",
+              "Advanced monitoring",
+              "Pressure environment"
+            ],
+            "technique": [
+              "Competition-specific strength",
+              "Match-pressure power",
+              "Tennis integration",
+              "Performance under pressure"
+            ]
+          },
+          "cues": [
+            "Competition power focus",
+            "Perform under pressure",
+            "Match-like intensity",
+            "Sustain through pressure"
+          ],
+          "benefits": {
+            "primary": "Competition power development",
+            "secondary": "Pressure performance",
+            "sport_specific": "Match power application"
+          }
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 150,
+      "strength_minutes": 135,
+      "assessment_minutes": 45,
+      "warmup_minutes": 45,
+      "recovery_minutes": 40,
+      "total_minutes": 415
+    },
+    "intensity": {
+      "tennis_average": "90-100%",
+      "strength_average": "90-100%",
+      "overall_rpe": 9
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Competition power development",
+      "Match-pressure performance",
+      "Phase 3 establishment"
+    ],
+    "load_management": [
+      "Competition-level demands",
+      "Pressure performance focus",
+      "Match-like recovery"
+    ],
+    "progression_markers": [
+      "Competition power development",
+      "Pressure performance improvement",
+      "Match readiness enhancement"
+    ]
+  }
+}

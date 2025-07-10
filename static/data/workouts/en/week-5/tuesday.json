@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "period": 5,
+    "period_name": "Power Integration Phase",
+    "day_id": "week_5_tuesday",
+    "day_name": "Tuesday",
+    "title": "Upper Body Complex Training & Power Endurance",
+    "subtitle": "Advanced Upper Body Power Development",
+    "phase": "Phase 2: Power Integration (Week 2)",
+    "focus_areas": [
+      "Upper Body Complex Training",
+      "Power Endurance Development",
+      "Tennis-Specific Upper Body Power"
+    ],
+    "training_parameters": {
+      "volume": "100% (full intensity)",
+      "intensity": "85-95% (upper body focus)",
+      "density": "moderate to high",
+      "duration": "4 hours 15 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Djokovic Upper Body Power Protocol",
+        "type": "upper_body_power",
+        "attribution": {
+          "athlete": "Novak Djokovic",
+          "coach": "Goran Ivanišević",
+          "source": "Upper body power development",
+          "verification": "Training documentation",
+          "context": "Complex training for serving power",
+          "results": "Enhanced serve speed and shoulder stability"
+        }
+      }
+    ]
+  },
+  "skill_training": {
+    "section_title": "Upper Body Tennis Power Training",
+    "sessions": [
+      {
+        "id": "upper_body_tennis_session",
+        "type": "upper_body_power",
+        "title": "Upper Body Tennis Power Development",
+        "duration": "85 minutes",
+        "intensity": "85-95%",
+        "components": [
+          {
+            "id": "complex_serve_training",
+            "name": "Complex Serve Power Training",
+            "type": "complex_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "40 minutes",
+              "rest": "45 seconds between sets"
+            },
+            "implementation": {
+              "method": "Complex training for serve power",
+              "focus": "Maximum serve velocity",
+              "key_points": "Shoulder stability, explosive extension"
+            },
+            "instructions": [
+              {
+                "phase": "STRENGTH_PHASE",
+                "text": "15 minutes weighted overhead work → explosive serves"
+              },
+              {
+                "phase": "POWER_PHASE",
+                "text": "15 minutes plyometric upper body → power serves"
+              },
+              {
+                "phase": "INTEGRATION",
+                "text": "10 minutes integrated serve power training"
+              }
+            ],
+            "success_criteria": [
+              {
+                "metric": "Serve velocity",
+                "target": "Sustained high velocity",
+                "tracking": "Radar gun measurements"
+              }
+            ]
+          },
+          {
+            "id": "upper_body_power_strokes",
+            "name": "Upper Body Power Strokes",
+            "type": "power_skill",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "35 minutes",
+              "rest": "Between drill sets"
+            },
+            "implementation": {
+              "method": "Upper body power development",
+              "focus": "Stroke power and endurance",
+              "key_points": "Shoulder rotation, arm speed"
+            },
+            "instructions": [
+              {
+                "phase": "POWER_FOREHANDS",
+                "text": "15 minutes explosive forehand training"
+              },
+              {
+                "phase": "POWER_BACKHANDS",
+                "text": "15 minutes explosive backhand training"
+              },
+              {
+                "phase": "POWER_COMBINATIONS",
+                "text": "5 minutes rapid power combinations"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "upper_body_complex",
+      "type": "complex",
+      "title": "Upper Body Complex Training",
+      "description": "Complex training for upper body power",
+      "duration": "90 minutes",
+      "exercises": [
+        {
+          "id": "complex_bench_press",
+          "name": "Complex Bench Press to Explosive Push",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "5",
+            "reps": "Complex format",
+            "intensity": "80% 1RM bench + explosive push-ups",
+            "rest": "3 minutes between complexes"
+          },
+          "execution": {
+            "setup": [
+              "Barbell loaded to 80% 1RM",
+              "Open space for push-ups",
+              "Velocity tracking if available"
+            ],
+            "technique": [
+              "4 bench press @ 80% 1RM",
+              "10 seconds rest",
+              "6 explosive push-ups",
+              "Focus on explosive extension"
+            ]
+          },
+          "cues": [
+            "Heavy press then explosive push",
+            "Feel the neural activation",
+            "Maximum push-up speed",
+            "Quality over quantity"
+          ],
+          "tracking": {
+            "type": "complex",
+            "format": "strength_power"
+          },
+          "benefits": {
+            "primary": "Upper body power development",
+            "secondary": "Chest and shoulder strength",
+            "sport_specific": "Serve and stroke power"
+          }
+        },
+        {
+          "id": "complex_pull_ups",
+          "name": "Complex Pull-up to Explosive Pull",
+          "category": "primary",
+          "order": 2,
+          "loading": {
+            "sets": "4",
+            "reps": "Complex format",
+            "intensity": "Weighted pull-ups + explosive pulls",
+            "rest": "3 minutes between complexes"
+          },
+          "execution": {
+            "setup": [
+              "Pull-up bar with weight belt",
+              "Resistance bands for explosive pulls",
+              "Open space for movement"
+            ],
+            "technique": [
+              "4 weighted pull-ups",
+              "10 seconds rest",
+              "6 explosive band pulls",
+              "Focus on pulling power"
+            ]
+          },
+          "cues": [
+            "Heavy pull then explosive pull",
+            "Maximum pulling speed",
+            "Feel the power transfer",
+            "Quality movement patterns"
+          ],
+          "benefits": {
+            "primary": "Pulling power development",
+            "secondary": "Back and arm strength",
+            "sport_specific": "Groundstroke power"
+          }
+        },
+        {
+          "id": "rotational_power_complex",
+          "name": "Rotational Power Complex",
+          "category": "primary",
+          "order": 3,
+          "loading": {
+            "sets": "4",
+            "reps": "Complex format",
+            "intensity": "Heavy rotation + explosive throws",
+            "rest": "3 minutes between complexes"
+          },
+          "execution": {
+            "setup": [
+              "Cable machine or heavy resistance",
+              "Medicine balls (4-6kg)",
+              "Open throwing space"
+            ],
+            "technique": [
+              "6 heavy rotational pulls",
+              "10 seconds rest",
+              "6 explosive rotational throws",
+              "Focus on rotational power"
+            ]
+          },
+          "cues": [
+            "Heavy resistance first",
+            "Explosive rotation second",
+            "Maximum throwing velocity",
+            "Feel the power connection"
+          ],
+          "benefits": {
+            "primary": "Rotational power development",
+            "secondary": "Core integration",
+            "sport_specific": "Tennis stroke power"
+          }
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 85,
+      "strength_minutes": 90,
+      "warmup_minutes": 30,
+      "recovery_minutes": 30,
+      "total_minutes": 235
+    },
+    "intensity": {
+      "tennis_average": "85-95%",
+      "strength_average": "Complex training",
+      "overall_rpe": 8
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Upper body complex training focus",
+      "Serve power development",
+      "Power endurance integration"
+    ],
+    "load_management": [
+      "Upper body loading progression",
+      "Complex training recovery",
+      "Power quality maintenance"
+    ],
+    "progression_markers": [
+      "Upper body power improvements",
+      "Serve velocity gains",
+      "Power endurance development"
+    ]
+  }
+}

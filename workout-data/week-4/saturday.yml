@@ -1,26 +1,27 @@
 # Week 4 - Saturday: Match Play Application & Competition Simulation
 metadata:
   # Basic identifiers
-  period: 4
-  period_name: "Power Integration Phase"
+  period: 2
+  period_name: "Power Integration"
   day_id: "week_4_saturday"
   day_name: "Saturday"
 
   # Workout details
-  title: "Match Play Application & Competition Simulation"
-  subtitle: "Phase 2 Competition Application"
-  phase: "Phase 2: Power Integration (Week 1)"
+  title: "Power Endurance & Tennis Competition"
+  subtitle: "Phase 2 Power Endurance with Competition Application"
+  phase: "Phase 2: Power Integration"
   focus_areas:
-    - "Match Play Application"
-    - "Competition Simulation"
-    - "Power Under Pressure"
+    - "Power Integration"
+    - "Velocity-Based Training"
+    - "Power Endurance"
+    - "Tennis Competition"
 
   # Training parameters
   training_parameters:
-    volume: "Variable (match dependent)"
-    intensity: "Match intensity (90-100%)"
-    density: "Match density"
-    duration: "2-4 hours (flexible)"
+    volume: "90% (phase transition deload)"
+    intensity: "85-95% (velocity-based focus)"
+    density: "moderate-high"
+    duration: "4 hours 30 minutes"
 
   # Elite Method Attribution
   elite_methods:

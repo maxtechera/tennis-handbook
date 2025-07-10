@@ -1,0 +1,301 @@
+/* Tennis Ball Animation */
+.tennisBall {
+  position: relative;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #FFD700, #FFA000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.tennisBall.sm {
+  width: 24px;
+  height: 24px;
+}
+
+.tennisBall.md {
+  width: 32px;
+  height: 32px;
+}
+
+.tennisBall.lg {
+  width: 48px;
+  height: 48px;
+}
+
+.ballSurface {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ballCurve {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 1px;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.ballCurve::before,
+.ballCurve::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 1px;
+}
+
+.ballCurve::before {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: right center;
+}
+
+.ballCurve::after {
+  right: 0;
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}
+
+/* Tennis Ball Animations */
+.tennisBall.bounce {
+  animation: tennisBounce 2s infinite ease-in-out;
+}
+
+.tennisBall.spin {
+  animation: tennisSpin 1s infinite linear;
+}
+
+.tennisBall.float {
+  animation: tennisFloat 3s infinite ease-in-out;
+}
+
+.tennisBall.pulse {
+  animation: tennisPulse 2s infinite ease-in-out;
+}
+
+@keyframes tennisBounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(90deg); }
+  50% { transform: translateY(-5px) rotate(180deg); }
+  75% { transform: translateY(-15px) rotate(270deg); }
+}
+
+@keyframes tennisSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes tennisFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes tennisPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Tennis Court */
+.tennisCourt {
+  position: relative;
+  background: linear-gradient(135deg, #4CAF50, #8BC34A);
+  border-radius: 12px;
+  padding: 2rem;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.courtLines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+}
+
+.baseline,
+.serviceLine,
+.centerLine {
+  position: absolute;
+  background: #FFFFFF;
+  opacity: 0.6;
+}
+
+.baseline {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+}
+
+.serviceLine {
+  top: 40%;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+}
+
+.centerLine {
+  top: 10px;
+  bottom: 10px;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+}
+
+/* Tennis Racket */
+.tennisRacket {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.tennisRacket.racket-sm {
+  width: 20px;
+  height: 40px;
+}
+
+.tennisRacket.racket-md {
+  width: 24px;
+  height: 48px;
+}
+
+.tennisRacket.racket-lg {
+  width: 32px;
+  height: 64px;
+}
+
+.racketHead {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  background: #8B4513;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #654321;
+}
+
+.strings {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.string {
+  width: 100%;
+  height: 1px;
+  background: #FFFFFF;
+  opacity: 0.8;
+}
+
+.racketHandle {
+  width: 20%;
+  height: 30%;
+  background: linear-gradient(135deg, #654321, #8B4513);
+  border-radius: 2px;
+  margin-top: -2px;
+}
+
+.tennisRacket.racket-swing {
+  animation: racketSwing 2s infinite ease-in-out;
+}
+
+@keyframes racketSwing {
+  0%, 100% { transform: rotate(-15deg); }
+  50% { transform: rotate(15deg); }
+}
+
+/* Tennis Scene */
+.tennisScene {
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sceneBall {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.sceneRacket {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .tennisCourt {
+    padding: 1rem;
+    min-height: 80px;
+  }
+  
+  .tennisBall.lg {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .tennisRacket.racket-lg {
+    width: 24px;
+    height: 48px;
+  }
+  
+  .ballCurve {
+    height: 1px;
+  }
+  
+  .ballCurve::before,
+  .ballCurve::after {
+    height: 1px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .tennisBall.bounce,
+  .tennisBall.spin,
+  .tennisBall.float,
+  .tennisBall.pulse,
+  .tennisRacket.racket-swing {
+    animation: none;
+  }
+}
+
+/* Performance optimizations */
+.tennisBall,
+.tennisRacket {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}

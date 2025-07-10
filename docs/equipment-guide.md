@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Equipment & Setup Guide
 
-_Everything you need to implement the complete tennis training handbook_
+_Everything you need to implement the complete tennis handbook_
 
 :::info **Essential for Success**
 This guide covers all equipment needed for the [12-Week Elite Program](/docs/workouts/overview) and explains alternatives for different training environments.

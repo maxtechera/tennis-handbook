@@ -6,12 +6,12 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #2e8b57;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-light: #359962;
+  --ifm-color-primary-lighter: #37a066;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
@@ -27,6 +27,46 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Hide navbar on homepage - Direct approach */
+html[data-current-path="/"] .navbar,
+html[data-current-path="/es"] .navbar,
+html[data-current-path="/es/"] .navbar,
+body[data-pathname="/"] .navbar,
+body[data-pathname="/es"] .navbar,
+body[data-pathname="/es/"] .navbar {
+  display: none !important;
+}
+
+/* Alternative - target by page class */
+.theme-doc-sidebar-container,
+[class*="docPage"] .navbar {
+  /* Keep navbar on doc pages */
+}
+
+/* Homepage specific navbar hiding */
+body:not([class*="docs"]):not([class*="blog"]) .navbar {
+  display: none !important;
+}
+
+/* Ensure main content takes full height on homepage */
+body:not([class*="docs"]):not([class*="blog"]) main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Hide navbar when homepage class is present */
+.homepage-layout .navbar,
+.homepage-no-navbar .navbar {
+  display: none !important;
+}
+
+/* Remove any top padding/margin when navbar is hidden */
+.homepage-layout main,
+.homepage-no-navbar main {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 /* Ensure proper Unicode character rendering */
@@ -87,7 +127,7 @@ td:contains("—") {
     appearance: none;
     touch-action: manipulation;
   }
-  
+
   /* Ensure all interactive elements are touch-friendly */
   button,
   a.button,
@@ -99,12 +139,12 @@ td:contains("—") {
     min-width: 44px;
     touch-action: manipulation;
   }
-  
+
   /* Prevent double-tap zoom on all elements */
   * {
     touch-action: manipulation;
   }
-  
+
   /* Fix for modal scroll issues */
   body.modal-open {
     position: fixed;
@@ -121,13 +161,13 @@ td:contains("—") {
   select {
     font-size: 16px !important;
   }
-  
+
   /* Prevent elastic scrolling on iOS */
   .wizardModal {
     position: fixed;
     overflow: hidden;
   }
-  
+
   .wizardContainer {
     -webkit-overflow-scrolling: touch;
   }

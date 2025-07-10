@@ -1,0 +1,656 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Power Integration",
+    "day_id": "week_4_monday",
+    "day_name": "Monday",
+    "title": "Lower Body Power & Tennis Integration",
+    "subtitle": "Week 4 Phase 2 Launch - Velocity-Based Training Introduction",
+    "phase": "Phase 2: Power Integration",
+    "focus_areas": [
+      "Velocity-Based Training Introduction",
+      "Lower Body Power Development",
+      "Tennis Power Integration"
+    ],
+    "training_parameters": {
+      "volume": "90% (phase transition deload)",
+      "intensity": "85-95% (velocity-based)",
+      "density": "moderate-high",
+      "duration": "4 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Velocity-Based Training Protocol",
+        "type": "power",
+        "attribution": {
+          "method": "Velocity-based training principles",
+          "source": "Elite power development research",
+          "verification": "Sports science literature",
+          "context": "Phase 2 power development introduction"
+        }
+      },
+      {
+        "name": "Alcaraz Power Integration Method",
+        "type": "tennis_power",
+        "attribution": {
+          "athlete": "Carlos Alcaraz",
+          "coach": "Juan Carlos Ferrero",
+          "academy": "Ferrero Tennis Academy",
+          "source": "Phase 2 power development protocols",
+          "verification": "Academy training documentation",
+          "context": "Transition to power-focused training"
+        }
+      },
+      {
+        "name": "ATP Power Development Standards",
+        "type": "integrated",
+        "attribution": {
+          "source": "ATP fitness standards",
+          "methodology": "Professional power development",
+          "verification": "Tour-level training protocols",
+          "context": "Phase 2 power integration"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Tennis court access",
+        "Barbell and weight plates",
+        "Bench or elevated platform",
+        "Velocity tracking device (if available)"
+      ],
+      "optional": [
+        "Cable machine or resistance bands",
+        "Dumbbells (5-25 lbs)",
+        "Medicine ball (3-4kg)",
+        "Box for plyometric jumps"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Tuesday ➡️](tuesday)",
+      "overview_link": "./",
+      "next_link": "tuesday",
+      "previous_link": null
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Phase 2 Transition Assessment",
+        "preparation": "Elite Movement Preparation",
+        "skill_training": "Tennis Power Integration",
+        "conditioning": "Velocity-Based Strength Training",
+        "recovery": "Active Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "info",
+          "title": "Week 4 Phase 2 Launch",
+          "content": "Transitioning to power-focused training with velocity-based protocols",
+          "icon": "🚀"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "phase_transition_assessment",
+      "type": "phase_transition",
+      "title": "Week 4 Phase 2 Transition Assessment",
+      "timing": "pre-session",
+      "duration": "20 minutes",
+      "description": "Assess readiness for power-focused training phase",
+      "attribution": {
+        "source": "Phase transition methodology",
+        "methodology": "Power phase readiness tracking",
+        "validation": "Strength to power transition protocols",
+        "elite_use": "Used in professional periodization programs"
+      },
+      "components": [
+        {
+          "id": "power_readiness_check",
+          "name": "Power Development Readiness Assessment",
+          "type": "power",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Assess movement quality and strength baseline",
+            "repetitions": "Test movements",
+            "equipment": "Bodyweight and light loads"
+          },
+          "standards": {
+            "elite_benchmark": "Perfect movement quality with strength foundation",
+            "good_standard": "Good movement quality with adequate strength",
+            "needs_work": "Movement restrictions or strength deficits"
+          },
+          "scoring": {
+            "method": "Movement and strength assessment",
+            "scale": "ready/developing/needs_work",
+            "recording": "Document readiness for power training"
+          },
+          "context": {
+            "description": "Evaluates readiness for velocity-based training",
+            "application": "Determines appropriate power training progression"
+          }
+        }
+      ]
+    }
+  ],
+  "preparation_phases": [
+    {
+      "id": "morning_protocol",
+      "title": "Week 4 Morning Protocol",
+      "timing": "6:00-6:15",
+      "duration": "15 minutes",
+      "description": "Phase 2 morning activation with power focus",
+      "attribution": {
+        "source": "Power phase activation methodology",
+        "methodology": "Week 4 enhanced morning protocol",
+        "validation": "Daily preparation routines",
+        "elite_use": "Used by professional athletes"
+      },
+      "activities": [
+        {
+          "name": "Power Phase Breathing Activation",
+          "duration": "3 minutes",
+          "sets": 3,
+          "instructions": [
+            "Deep diaphragmatic breathing with power focus",
+            "Inhalar 4 segundos, mantener 4, exhalar 6",
+            "Mental preparation for velocity-based training"
+          ],
+          "implementation": {
+            "execution": "Supine position, hands on chest and abdomen",
+            "focus": "Nervous system preparation for power training",
+            "tennis_application": "Prepares for explosive training demands"
+          }
+        },
+        {
+          "name": "Dynamic Joint Mobility Power Prep",
+          "duration": "5 minutes",
+          "sets": 1,
+          "instructions": [
+            "Power shoulder circles: 15 each direction",
+            "Dynamic hip circles: 15 each direction",
+            "Active leg swings: 15 each leg, each plane"
+          ],
+          "implementation": {
+            "execution": "Controlled dynamic movements with power intent",
+            "focus": "Joint preparation for explosive movements",
+            "tennis_application": "Prepares joints for power tennis movements"
+          }
+        },
+        {
+          "name": "Power Muscle Activation",
+          "duration": "7 minutes",
+          "sets": 2,
+          "instructions": [
+            "Glute activation: 20 repetitions (power focus)",
+            "Scapular activation: 20 repetitions",
+            "Core activation: 45 seconds (power stabilization)"
+          ],
+          "implementation": {
+            "execution": "Explosive muscle contractions",
+            "focus": "Power activation for velocity-based training",
+            "tennis_application": "Prepares stabilizers for power training"
+          }
+        }
+      ]
+    }
+  ],
+  "tennis_training": {
+    "title": "Tennis Power Integration Development",
+    "timing": "7:15-8:15",
+    "duration": "60 minutes",
+    "description": "Phase 2 tennis training with power integration focus",
+    "attribution": {
+      "source": "Tennis power integration methodology",
+      "methodology": "Phase 2 tennis training",
+      "validation": "Court-based power protocols",
+      "elite_use": "Professional tennis power development"
+    },
+    "session_structure": {
+      "warm_up": {
+        "title": "Power Integration Tennis Warm-up",
+        "duration": "10 minutes",
+        "exercises": [
+          {
+            "name": "Power Footwork Preparation",
+            "duration": "3 minutes",
+            "sets": 3,
+            "detailed_instructions": [
+              "Explosive side shuffles with racket: 20 steps each direction",
+              "Power split steps on service line: 15 repetitions",
+              "Explosive forward/backward movement: 12 steps each direction"
+            ]
+          },
+          {
+            "name": "Power Shadow Strokes",
+            "duration": "4 minutes",
+            "sets": 2,
+            "detailed_instructions": [
+              "Explosive forehand shadows: 20 repetitions",
+              "Explosive backhand shadows: 20 repetitions",
+              "Explosive serve motion shadows: 15 repetitions"
+            ]
+          },
+          {
+            "name": "Power Ball Contact Preparation",
+            "duration": "3 minutes",
+            "sets": 1,
+            "detailed_instructions": [
+              "Progressive rally cross-court: 20 balls",
+              "Power buildup: 15 balls",
+              "Explosive power preparation"
+            ]
+          }
+        ]
+      },
+      "main_session": {
+        "title": "Power Integration Cross-Court Development",
+        "duration": "45 minutes",
+        "drills": [
+          {
+            "name": "Power Integration Cross-Court Forehands",
+            "duration": "15 minutes",
+            "balls": 100,
+            "intensity": "High (Power focus)",
+            "implementation": {
+              "focus": "Power integration with maintained accuracy",
+              "target": "Deep cross-court with 85% accuracy",
+              "progression": "Explosive power development",
+              "technique_points": [
+                {
+                  "phase": "POWER SETUP",
+                  "instruction": "Ready position, explosive preparation"
+                },
+                {
+                  "phase": "CROSS-COURT POWER",
+                  "instruction": "Target opposite diagonal with explosive intent"
+                },
+                {
+                  "phase": "VELOCITY FOCUS",
+                  "instruction": "Maximum racket head speed at contact"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Power Integration Cross-Court Backhands",
+            "duration": "15 minutes",
+            "balls": 100,
+            "intensity": "High",
+            "implementation": {
+              "focus": "Backhand power integration",
+              "target": "Cross-court consistency with power",
+              "progression": "Explosive power development",
+              "technique_points": [
+                {
+                  "phase": "SETUP",
+                  "instruction": "Early preparation, explosive turn"
+                },
+                {
+                  "phase": "CONTACT",
+                  "instruction": "Explosive brush contact for power"
+                },
+                {
+                  "phase": "FOLLOW-THROUGH",
+                  "instruction": "Explosive finish across body"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Alternating Power Cross-Court",
+            "duration": "15 minutes",
+            "balls": 80,
+            "intensity": "Very High",
+            "implementation": {
+              "focus": "Direction change with explosive power",
+              "target": "Alternating cross-court shots with power",
+              "progression": "Explosive transition speed",
+              "movement_emphasis": [
+                "Explosive shots with rapid recovery",
+                "Maximum hip rotation through contact",
+                "Explosive recovery steps between shots",
+                "Athletic stance maintenance with power focus"
+              ]
+            }
+          }
+        ]
+      },
+      "success_metrics": [
+        {
+          "metric": "Shot Power",
+          "target": "Maximum velocity with 85% accuracy",
+          "measurement": "Subjective power assessment"
+        },
+        {
+          "metric": "Movement Explosiveness",
+          "target": "Explosive recovery between shots",
+          "measurement": "Movement quality assessment"
+        },
+        {
+          "metric": "Consistency",
+          "target": "Maintain rally length with power focus",
+          "measurement": "Average rally duration"
+        }
+      ]
+    }
+  },
+  "movement_preparation": {
+    "title": "Pre-Strength Power Preparation",
+    "timing": "8:25-8:35",
+    "duration": "10 minutes",
+    "description": "Power-specific preparation for velocity-based training",
+    "attribution": {
+      "source": "Power movement preparation",
+      "methodology": "Velocity-based preparation protocols",
+      "validation": "Power training preparation standards",
+      "elite_use": "Professional athlete preparation"
+    },
+    "exercises": [
+      {
+        "name": "Power Glute Activation",
+        "sets": 3,
+        "reps": 15,
+        "rest_seconds": 30,
+        "protocol": "Explosive glute activation",
+        "tennis_application": "Prepares glutes for explosive movements"
+      },
+      {
+        "name": "Dynamic Power Hip Mobility",
+        "sets": 2,
+        "reps": 12,
+        "rest_seconds": 30,
+        "protocol": "Explosive hip circles and leg swings",
+        "tennis_application": "Prepares hips for explosive movements"
+      },
+      {
+        "name": "Power Spinal Mobility",
+        "sets": 2,
+        "reps": 10,
+        "rest_seconds": 30,
+        "protocol": "Explosive cat-cow and thoracic rotation",
+        "tennis_application": "Prepares spine for explosive movements"
+      },
+      {
+        "name": "Core Power Activation",
+        "sets": 2,
+        "reps": 15,
+        "rest_seconds": 30,
+        "protocol": "Explosive core engagement",
+        "tennis_application": "Stabilization for explosive movements"
+      }
+    ]
+  },
+  "strength_training": {
+    "title": "Velocity-Based Lower Body Power Development",
+    "timing": "8:35-10:05",
+    "duration": "90 minutes",
+    "description": "Week 4 velocity-based training introduction",
+    "attribution": {
+      "source": "Velocity-based training methodology",
+      "methodology": "Power development training",
+      "validation": "Velocity-based training protocols",
+      "elite_use": "Professional power development"
+    },
+    "main_exercises": [
+      {
+        "name": "Barbell Back Squat (Velocity-Based)",
+        "sets": 5,
+        "reps": 3,
+        "rest_seconds": 180,
+        "load": "70-80% 1RM (velocity-based)",
+        "tempo": "X-1-X-1 (explosive intent)",
+        "protocol": "Velocity-based power development",
+        "tennis_application": "Explosive lower body power",
+        "detailed_instructions": {
+          "title": "Week 4 Velocity-Based Instructions",
+          "technique_points": [
+            {
+              "phase": "VELOCITY-BASED LOADING",
+              "instruction": "Use 70-80% 1RM with explosive intent (measure bar speed if possible)"
+            },
+            {
+              "phase": "SETUP",
+              "instruction": "Bar positioned on upper trapezius, feet hip-width apart, toes slightly out"
+            },
+            {
+              "phase": "DESCENT",
+              "instruction": "Controlled lowering, prepare for explosive ascent"
+            },
+            {
+              "phase": "BOTTOM POSITION",
+              "instruction": "Brief pause, prepare for maximum velocity ascent"
+            },
+            {
+              "phase": "EXPLOSIVE ASCENT",
+              "instruction": "Drive through heels with MAXIMUM SPEED and intent"
+            },
+            {
+              "phase": "BREATHING",
+              "instruction": "Inhale at top, hold during descent, explosive exhale during ascent"
+            },
+            {
+              "phase": "VELOCITY FOCUS",
+              "instruction": "Focus on bar speed and explosive intent, not just weight"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Jump Squat",
+        "sets": 4,
+        "reps": 5,
+        "rest_seconds": 120,
+        "load": "Bodyweight or 20-30% 1RM",
+        "tempo": "X-0-X-0 (explosive)",
+        "protocol": "Explosive jump training",
+        "tennis_application": "Tennis-specific explosive power",
+        "detailed_instructions": {
+          "title": "Explosive Jump Instructions",
+          "technique_points": [
+            {
+              "phase": "SETUP",
+              "instruction": "Feet hip-width apart, hands on hips or holding light weight"
+            },
+            {
+              "phase": "DESCENT",
+              "instruction": "Quarter squat depth, prepare for explosive jump"
+            },
+            {
+              "phase": "EXPLOSIVE JUMP",
+              "instruction": "Jump as high as possible with maximum intent"
+            },
+            {
+              "phase": "LANDING",
+              "instruction": "Soft landing, absorb impact, prepare for next rep"
+            },
+            {
+              "phase": "POWER FOCUS",
+              "instruction": "Maximum height and explosive intent every rep"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Romanian Deadlift (Power)",
+        "sets": 4,
+        "reps": 4,
+        "rest_seconds": 150,
+        "load": "65-75% 1RM",
+        "tempo": "3-1-X-1 (explosive concentric)",
+        "protocol": "Power-focused hip hinge",
+        "tennis_application": "Posterior chain explosive power",
+        "detailed_instructions": {
+          "title": "Power Hip Hinge Instructions",
+          "technique_points": [
+            {
+              "phase": "STARTING POSITION",
+              "instruction": "Feet hip-width apart, barbell at hip level, slight knee bend"
+            },
+            {
+              "phase": "CONTROLLED DESCENT",
+              "instruction": "Controlled hip hinge, feel stretch in hamstrings"
+            },
+            {
+              "phase": "EXPLOSIVE ASCENT",
+              "instruction": "Drive hips forward explosively, maximum speed"
+            },
+            {
+              "phase": "POWER FOCUS",
+              "instruction": "Explosive hip extension with maximum intent"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Calf Raise Jumps",
+        "sets": 4,
+        "reps": 8,
+        "rest_seconds": 90,
+        "load": "Bodyweight",
+        "tempo": "X-0-X-0 (explosive)",
+        "protocol": "Explosive calf power development",
+        "tennis_application": "Tennis movement explosive power",
+        "detailed_instructions": {
+          "title": "Explosive Calf Jump Instructions",
+          "technique_points": [
+            {
+              "phase": "SETUP",
+              "instruction": "Stand tall, feet hip-width apart"
+            },
+            {
+              "phase": "EXPLOSIVE JUMP",
+              "instruction": "Jump using only calves and ankles, keep legs straight"
+            },
+            {
+              "phase": "LANDING",
+              "instruction": "Soft landing on balls of feet"
+            },
+            {
+              "phase": "POWER FOCUS",
+              "instruction": "Maximum height using only calf muscles"
+            }
+          ]
+        }
+      }
+    ],
+    "power_integration_block": {
+      "title": "Power Integration Complex",
+      "timing": "9:35-10:05",
+      "exercises": [
+        {
+          "name": "Squat to Jump Complex",
+          "sets": 3,
+          "reps": "5+5",
+          "rest": "120 seconds",
+          "protocol": "Heavy squat + explosive jump combination",
+          "tennis_application": "Power transfer for tennis movements",
+          "detailed_instructions": {
+            "title": "Power Complex Instructions",
+            "technique_points": [
+              {
+                "phase": "HEAVY SQUAT",
+                "instruction": "5 reps at 80% 1RM with explosive intent"
+              },
+              {
+                "phase": "TRANSITION",
+                "instruction": "Rest 10 seconds, prepare for jumps"
+              },
+              {
+                "phase": "EXPLOSIVE JUMPS",
+                "instruction": "5 maximum height jump squats"
+              },
+              {
+                "phase": "POWER TRANSFER",
+                "instruction": "Feel the power transfer from heavy to explosive"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Medicine Ball Slam",
+          "sets": 3,
+          "reps": 8,
+          "rest": "90 seconds",
+          "protocol": "Explosive full-body power development",
+          "tennis_application": "Overhead explosive power for serves",
+          "detailed_instructions": {
+            "title": "Explosive Slam Instructions",
+            "technique_points": [
+              {
+                "phase": "SETUP",
+                "instruction": "Hold medicine ball overhead, feet hip-width apart"
+              },
+              {
+                "phase": "EXPLOSIVE SLAM",
+                "instruction": "Slam ball down with maximum force and speed"
+              },
+              {
+                "phase": "RETRIEVAL",
+                "instruction": "Pick up ball and repeat with explosive intent"
+              },
+              {
+                "phase": "POWER FOCUS",
+                "instruction": "Maximum force and speed every rep"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "recovery_protocol": {
+    "title": "Power Recovery Protocol",
+    "timing": "10:05-10:30",
+    "duration": "25 minutes",
+    "description": "Recovery for velocity-based training",
+    "attribution": {
+      "source": "Power training recovery methodology",
+      "methodology": "Velocity-based training recovery protocols",
+      "validation": "Post-power training recovery standards",
+      "elite_use": "Professional athlete recovery"
+    },
+    "components": [
+      {
+        "name": "Power Phase Stretching Sequence",
+        "duration": "10 minutes",
+        "protocol": "Power training static stretching",
+        "implementation": {
+          "method": "Hold stretches 30 seconds (focused on power muscles)",
+          "focus": "Major power muscles worked in session",
+          "progression": "Stretches specific to power training"
+        }
+      },
+      {
+        "name": "Power Recovery Foam Rolling",
+        "duration": "8 minutes",
+        "protocol": "Targeted myofascial release for power training",
+        "implementation": {
+          "method": "Focused rolling on explosive muscle groups",
+          "focus": "Power muscles emphasis, tension release",
+          "progression": "Power-specific pressure"
+        }
+      },
+      {
+        "name": "Power Phase Breathing Recovery",
+        "duration": "5 minutes",
+        "protocol": "4-7-8 breathing for power recovery",
+        "implementation": {
+          "method": "Inhale 4, hold 7, exhale 8 (6 cycles)",
+          "focus": "Parasympathetic activation for power recovery",
+          "progression": "Power training relaxation response"
+        }
+      },
+      {
+        "name": "Power Phase Nutrition Protocol",
+        "duration": "2 minutes",
+        "protocol": "Power training nutrition",
+        "implementation": {
+          "method": "Water + electrolytes + protein consideration",
+          "focus": "Recovery optimization for power training",
+          "progression": "Power phase nutrient timing"
+        }
+      }
+    ]
+  }
+}

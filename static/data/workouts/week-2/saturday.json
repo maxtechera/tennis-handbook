@@ -1,0 +1,444 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Strength Accumulation",
+    "day_id": "week_2_saturday",
+    "day_name": "Saturday",
+    "title": "Elite Competition or Active Recovery",
+    "subtitle": "Match Performance or Strategic Recovery",
+    "phase": "Phase 2: Strength Accumulation",
+    "focus_areas": [
+      "Competition Performance",
+      "Active Recovery",
+      "Mobility Maintenance"
+    ],
+    "training_parameters": {
+      "volume": "Variable",
+      "intensity": "90% (match) or 50% (recovery)",
+      "density": "low",
+      "duration": "1-3 hours"
+    },
+    "elite_methods": [
+      {
+        "name": "Competition Preparation Protocol",
+        "type": "preparation",
+        "attribution": {
+          "source": "Jeff Nippard - Warm-up Guide",
+          "verification": "Video documentation",
+          "context": "Evidence-based warm-up protocols"
+        }
+      },
+      {
+        "name": "Active Recovery System",
+        "type": "recovery",
+        "attribution": {
+          "source": "Jeff Nippard - Cardio Guidelines",
+          "verification": "Video reference",
+          "context": "Zone 2 for recovery adaptation"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Tennis court access (Option A)",
+        "Running shoes (Option B)",
+        "Yoga mat (Option B)"
+      ],
+      "optional": [
+        "Heart rate monitor",
+        "Foam roller",
+        "Match equipment (Option A)"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Sunday ➡️](sunday)",
+      "overview_link": "./",
+      "next_link": "sunday",
+      "previous_link": "friday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Pre-Activity Assessment",
+        "preparation": "Warm-up Protocol",
+        "skill_training": "Match Play",
+        "recovery": "Recovery Protocol"
+      }
+    },
+    "day_features": {
+      "has_dual_workout": true,
+      "has_competition_simulation": true
+    }
+  },
+  "workout_options": [
+    {
+      "option": "A",
+      "title": "Match Day",
+      "description": "Competition with full preparation and recovery protocols"
+    },
+    {
+      "option": "B",
+      "title": "No Match Day",
+      "description": "Active recovery with Zone-2 cardio and mobility work"
+    }
+  ],
+  "option_a_match_play": {
+    "pre_match_preparation": [
+      {
+        "id": "structured_warmup",
+        "name": "Structured Warm-up",
+        "type": "preparation",
+        "duration": "15-20 minutes",
+        "phases": [
+          {
+            "phase": "General Movement",
+            "duration": "5 minutes",
+            "activities": [
+              "Light jogging",
+              "Dynamic stretching",
+              "Joint mobility"
+            ],
+            "intensity": "40-50%"
+          },
+          {
+            "phase": "Sport-Specific Movement",
+            "duration": "5 minutes",
+            "activities": [
+              "Shadow tennis strokes",
+              "Footwork patterns",
+              "Rotation movements"
+            ],
+            "intensity": "60-70%"
+          },
+          {
+            "phase": "Progressive Tennis",
+            "duration": "5-10 minutes",
+            "activities": [
+              "Mini tennis",
+              "Baseline rallies",
+              "Serving practice"
+            ],
+            "intensity": "70-85%"
+          },
+          {
+            "phase": "Mental Preparation",
+            "duration": "2-3 minutes",
+            "activities": [
+              "Game plan review",
+              "Visualization",
+              "Focus setting"
+            ]
+          }
+        ],
+        "attribution": {
+          "source": "Jeff Nippard - Warm-up Guide",
+          "verification": "https://www.youtube.com/watch?v=8wPpK6xW9s8"
+        }
+      }
+    ],
+    "match_performance": {
+      "focus_points": [
+        "Maximum competitive intensity",
+        "Tactical execution",
+        "Mental toughness",
+        "Energy management"
+      ],
+      "tracking": [
+        {
+          "metric": "First serve percentage",
+          "target": "60%+",
+          "record": "___"
+        },
+        {
+          "metric": "Winners to errors ratio",
+          "target": "Positive",
+          "record": "___"
+        },
+        {
+          "metric": "Break points won",
+          "target": "50%+",
+          "record": "___"
+        }
+      ]
+    },
+    "post_match_recovery": [
+      {
+        "id": "cooldown_stretching",
+        "name": "Thorough Cool-down Stretching",
+        "type": "recovery",
+        "duration": "10-15 minutes",
+        "components": [
+          {
+            "area": "Lower Body",
+            "stretches": [
+              "Hip flexor stretch - 60s each side",
+              "Hamstring stretch - 60s each side",
+              "Calf stretch - 60s each side",
+              "Quad stretch - 60s each side"
+            ]
+          },
+          {
+            "area": "Upper Body",
+            "stretches": [
+              "Shoulder stretch - 60s each side",
+              "Chest doorway stretch - 60s",
+              "Tricep stretch - 30s each side",
+              "Wrist stretches - 30s each direction"
+            ]
+          },
+          {
+            "area": "Core/Back",
+            "stretches": [
+              "Cat-cow stretch - 10 reps",
+              "Child's pose - 90s",
+              "Seated twist - 60s each side"
+            ]
+          }
+        ],
+        "instructions": [
+          "Hold each stretch 30-60 seconds",
+          "Focus on deep breathing during holds",
+          "No bouncing or forcing",
+          "Promote recovery for next day"
+        ],
+        "attribution": {
+          "source": "Jeff Nippard - Stretching Guide",
+          "verification": "https://www.youtube.com/watch?v=8wPpK6xW9s8"
+        }
+      }
+    ]
+  },
+  "option_b_active_recovery": {
+    "low_intensity_movement": [
+      {
+        "id": "zone2_jog",
+        "name": "Zone-2 Jog",
+        "type": "aerobic",
+        "duration": "30 minutes",
+        "implementation": {
+          "method": "Easy aerobic jog",
+          "intensity": "60-70% max HR",
+          "equipment": "Running shoes, HR monitor optional"
+        },
+        "instructions": [
+          "Maintain conversational pace throughout",
+          "Focus on easy, sustainable rhythm",
+          "Nasal breathing if possible",
+          "Active recovery for training adaptation"
+        ],
+        "monitoring": [
+          "Heart rate stays in Zone 2",
+          "Can maintain conversation",
+          "No labored breathing",
+          "Feel refreshed, not fatigued"
+        ],
+        "attribution": {
+          "source": "Jeff Nippard - Cardio Guidelines",
+          "quote": "Zone 2 for recovery and adaptation",
+          "verification": "https://www.youtube.com/watch?v=Kl0ht3ow8TQ"
+        }
+      },
+      {
+        "id": "dynamic_mobility",
+        "name": "Dynamic Mobility",
+        "type": "mobility",
+        "duration": "20 minutes",
+        "components": [
+          {
+            "category": "Lower Body",
+            "exercises": [
+              {
+                "name": "Leg swings",
+                "reps": "10 each direction",
+                "focus": "Hip mobility"
+              },
+              {
+                "name": "Hip circles",
+                "reps": "10 each direction",
+                "focus": "Hip joint mobility"
+              },
+              {
+                "name": "Walking lunges",
+                "reps": "10 each leg",
+                "focus": "Hip flexor stretch"
+              }
+            ]
+          },
+          {
+            "category": "Upper Body",
+            "exercises": [
+              {
+                "name": "Arm circles",
+                "reps": "10 forward, 10 backward",
+                "focus": "Shoulder mobility"
+              },
+              {
+                "name": "Shoulder rolls",
+                "reps": "10 forward, 10 backward",
+                "focus": "Shoulder tension release"
+              },
+              {
+                "name": "Cross-body arm swings",
+                "reps": "10 each arm",
+                "focus": "Shoulder flexibility"
+              }
+            ]
+          },
+          {
+            "category": "Core/Spine",
+            "exercises": [
+              {
+                "name": "Torso twists",
+                "reps": "10 each direction",
+                "focus": "Spinal rotation"
+              },
+              {
+                "name": "Side bends",
+                "reps": "10 each side",
+                "focus": "Lateral flexibility"
+              },
+              {
+                "name": "Cat-cow",
+                "reps": "10 cycles",
+                "focus": "Spinal mobility"
+              }
+            ]
+          }
+        ],
+        "instructions": [
+          "Focus on major joints used in tennis",
+          "Smooth, controlled movements",
+          "Progress range of motion gradually",
+          "Target any tight areas from the week"
+        ],
+        "attribution": {
+          "source": "Jeff Nippard - Mobility",
+          "verification": "https://www.youtube.com/watch?v=8wPpK6xW9s8"
+        }
+      }
+    ],
+    "recovery_monitoring": {
+      "metrics": [
+        {
+          "name": "Muscle Soreness",
+          "scale": "1-10",
+          "target": "< 5",
+          "areas": [
+            "Legs",
+            "Back",
+            "Shoulders"
+          ]
+        },
+        {
+          "name": "Energy Level",
+          "scale": "1-10",
+          "target": "> 6",
+          "description": "Overall energy feeling"
+        },
+        {
+          "name": "Joint Stiffness",
+          "scale": "1-10",
+          "target": "< 4",
+          "areas": [
+            "Knees",
+            "Hips",
+            "Shoulders"
+          ]
+        }
+      ]
+    }
+  },
+  "key_focus_points": [
+    {
+      "category": "Match Preparation",
+      "focus": "If competing, focus on proper warm-up protocols"
+    },
+    {
+      "category": "Competitive Mindset",
+      "focus": "Maintain high focus and intensity during match play"
+    },
+    {
+      "category": "Recovery Protocol",
+      "focus": "Thorough cool-down to aid next-day recovery"
+    },
+    {
+      "category": "Active Recovery",
+      "focus": "If no match, maintain movement with easy aerobic work"
+    },
+    {
+      "category": "Mobility Work",
+      "focus": "Dynamic mobility addressing any tight areas from the week"
+    }
+  ],
+  "weekly_notes": {
+    "week": 2,
+    "content": "Saturday provides match experience or active recovery depending on schedule. Both options support the training cycle appropriately."
+  },
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": "90-180 (match) or 0",
+      "strength_minutes": 0,
+      "warmup_minutes": "20 (match) or 10",
+      "recovery_minutes": "15 (match) or 50",
+      "total_minutes": "125-215 (match) or 60"
+    },
+    "intensity": {
+      "tennis_average": "90% (match) or N/A",
+      "strength_average": "N/A",
+      "overall_rpe": "8-9 (match) or 3-4 (recovery)"
+    },
+    "distances": {
+      "court_coverage": "4-6 km (match) or 0",
+      "conditioning_distance": "0 or 5 km jog"
+    }
+  },
+  "monitoring": {
+    "performance_metrics": [
+      {
+        "id": "match_performance",
+        "name": "Match Performance Indicators",
+        "type": "qualitative",
+        "category": "skill",
+        "measurement": {
+          "method": "Match statistics",
+          "frequency": "Weekly"
+        },
+        "tracking": {
+          "areas": [
+            "Serve %",
+            "Winners/Errors",
+            "Break Points"
+          ]
+        }
+      },
+      {
+        "id": "recovery_quality",
+        "name": "Recovery Quality",
+        "type": "qualitative",
+        "category": "recovery",
+        "measurement": {
+          "method": "Subjective assessment",
+          "frequency": "Daily"
+        },
+        "tracking": {
+          "baseline": "Morning assessment",
+          "current": "Post-activity",
+          "target": "Improved or maintained"
+        }
+      }
+    ],
+    "quality_indicators": [
+      {
+        "name": "Competition Readiness",
+        "scale": "1-10",
+        "target": "8+",
+        "description": "Physical and mental match readiness"
+      },
+      {
+        "name": "Recovery Effectiveness",
+        "scale": "1-10",
+        "target": "7+",
+        "description": "How recovered you feel after session"
+      }
+    ]
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "period": 8,
+    "period_name": "Competition Power Phase",
+    "day_id": "week_8_monday",
+    "day_name": "Monday",
+    "title": "Competition Power Development - Advanced Integration",
+    "subtitle": "Phase 3 Intensification - Advanced Competition Power",
+    "phase": "Phase 3: Competition Power (Week 2)",
+    "focus_areas": [
+      "Advanced Competition Power",
+      "Match-Specific Integration",
+      "Performance Under Pressure"
+    ],
+    "training_parameters": {
+      "volume": "105% (competition intensification)",
+      "intensity": "90-100% (competition level)",
+      "density": "competition-like",
+      "duration": "5 hours 15 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Nadal Advanced Competition Protocol",
+        "type": "advanced_competition",
+        "attribution": {
+          "athlete": "Rafael Nadal",
+          "coach": "Carlos Moyá",
+          "source": "Advanced competition power development",
+          "verification": "Professional competition preparation",
+          "context": "Phase 3 advanced competition power",
+          "results": "Enhanced competition consistency"
+        }
+      }
+    ]
+  },
+  "assessments": [
+    {
+      "id": "advanced_competition_assessment",
+      "type": "advanced_competition",
+      "title": "Advanced Competition Assessment",
+      "timing": "pre-session",
+      "duration": "50 minutes",
+      "components": [
+        {
+          "id": "advanced_match_simulation",
+          "name": "Advanced Match Simulation Test",
+          "type": "advanced_competition",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Advanced match pressure simulation",
+            "repetitions": "Extended match scenarios",
+            "equipment": "Advanced competition setup"
+          },
+          "standards": {
+            "advanced_level": "Sustained power under extended pressure",
+            "consistency": "Advanced consistency under pressure",
+            "adaptability": "Tactical adaptation under pressure"
+          },
+          "context": {
+            "description": "Evaluates advanced competition readiness",
+            "application": "Determines competition power advancement"
+          }
+        }
+      ]
+    }
+  ],
+  "skill_training": {
+    "section_title": "Advanced Competition Tennis Training",
+    "sessions": [
+      {
+        "id": "advanced_competition_session",
+        "type": "advanced_competition",
+        "title": "Advanced Competition Tennis Development",
+        "duration": "160 minutes",
+        "intensity": "90-100%",
+        "components": [
+          {
+            "id": "advanced_pressure_training",
+            "name": "Advanced Pressure Training",
+            "type": "advanced_competition",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "70 minutes",
+              "rest": "Competition-like intervals"
+            },
+            "implementation": {
+              "method": "Advanced pressure training",
+              "focus": "Performance under extended pressure",
+              "key_points": "Sustained performance, pressure adaptation"
+            },
+            "success_criteria": [
+              {
+                "metric": "Advanced pressure performance",
+                "target": "Sustained high-level performance",
+                "tracking": "Extended pressure assessment"
+              }
+            ]
+          },
+          {
+            "id": "tactical_power_integration",
+            "name": "Tactical Power Integration",
+            "type": "tactical_power",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "75 minutes",
+              "rest": "Tactical recovery"
+            },
+            "implementation": {
+              "method": "Tactical power integration",
+              "focus": "Power application in tactical contexts",
+              "key_points": "Tactical power, strategic application"
+            },
+            "success_criteria": [
+              {
+                "metric": "Tactical power application",
+                "target": "Effective tactical power use",
+                "tracking": "Tactical performance assessment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "advanced_competition_block",
+      "type": "advanced_competition",
+      "title": "Advanced Competition Training Block",
+      "description": "Advanced competition power development",
+      "duration": "140 minutes",
+      "exercises": [
+        {
+          "id": "advanced_competition_complex",
+          "name": "Advanced Competition Complex",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "7",
+            "reps": "Advanced competition format",
+            "intensity": "90-100% advanced loads",
+            "rest": "Competition-like recovery"
+          },
+          "execution": {
+            "setup": [
+              "Advanced competition setup",
+              "Competition monitoring",
+              "Pressure environment"
+            ],
+            "technique": [
+              "Advanced strength demands",
+              "Competition power output",
+              "Tactical integration",
+              "Pressure performance"
+            ]
+          },
+          "cues": [
+            "Advanced competition power",
+            "Perform under pressure",
+            "Sustain through challenges",
+            "Tactical power application"
+          ],
+          "benefits": {
+            "primary": "Advanced competition power",
+            "secondary": "Pressure adaptation",
+            "sport_specific": "Competition advancement"
+          }
+        }
+      ]
+    }
+  ],
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 160,
+      "strength_minutes": 140,
+      "assessment_minutes": 50,
+      "warmup_minutes": 50,
+      "recovery_minutes": 45,
+      "total_minutes": 445
+    },
+    "intensity": {
+      "tennis_average": "90-100%",
+      "strength_average": "90-100%",
+      "overall_rpe": 9
+    }
+  },
+  "coaching_notes": {
+    "technical_focus": [
+      "Advanced competition power",
+      "Tactical power integration",
+      "Pressure performance"
+    ],
+    "load_management": [
+      "Advanced competition demands",
+      "Pressure adaptation",
+      "Competition intensification"
+    ],
+    "progression_markers": [
+      "Advanced competition power",
+      "Tactical integration",
+      "Pressure performance improvement"
+    ]
+  }
+}

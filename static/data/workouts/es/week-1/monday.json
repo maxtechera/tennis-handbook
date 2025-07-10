@@ -1,0 +1,576 @@
+{
+  "metadata": {
+    "period": 1,
+    "period_name": "Fundación Elite",
+    "day_id": "week_1_monday",
+    "day_name": "Lunes",
+    "title": "Fundación Elite de Tren Inferior e Integración Alcaraz",
+    "subtitle": "Implementando Protocolos de la Academia Ferrero con Estructura Djokovic",
+    "phase": "Fase 1: Fundación Elite",
+    "focus_areas": [
+      "Construyendo la Base",
+      "Fundación de Tren Inferior"
+    ],
+    "training_parameters": {
+      "volume": "100% (línea base)",
+      "intensity": "60-70%",
+      "density": "moderada",
+      "duration": "4 horas 45 minutos"
+    },
+    "elite_methods": [
+      {
+        "name": "Integración de Construcción de Base Alcaraz",
+        "type": "fuerza",
+        "attribution": {
+          "athlete": "Carlos Alcaraz",
+          "coach": "Juan Carlos Ferrero",
+          "academy": "Academia de Tenis Ferrero",
+          "source": "Protocolos de entrenamiento Academia Ferrero",
+          "verification": "Observación directa y documentación",
+          "context": "Entrenamiento de fase de fundación"
+        }
+      },
+      {
+        "name": "Protocolo de Sentadilla Española",
+        "type": "fuerza",
+        "attribution": {
+          "source": "Federación Española de Tenis",
+          "athletes": [
+            "Nadal",
+            "Alcaraz",
+            "Muguruza"
+          ],
+          "verification": "Documentación federación española"
+        }
+      },
+      {
+        "name": "Integración de Estructura Djokovic",
+        "type": "holística",
+        "attribution": {
+          "athlete": "Novak Djokovic",
+          "source": "Metodología de entrenamiento Djokovic",
+          "verification": "Protocolos de entrenamiento publicados"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Barra y pesas",
+        "Acceso a cancha de tenis",
+        "Monitor de frecuencia cardíaca/dispositivo HRV"
+      ],
+      "optional": [
+        "Bandas de resistencia",
+        "Pelota medicinal (3-4kg)",
+        "Escalera de agilidad",
+        "Banco o caja (18 pulgadas)",
+        "Mancuernas (5-25 lbs)",
+        "Vara o palo de escoba"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Resumen Semanal](./) | [Martes ➡️](tuesday)",
+      "overview_link": "./",
+      "next_link": "tuesday",
+      "previous_link": null
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Protocolo de Evaluación Profesional",
+        "preparation": "Preparación Elite de Movimiento",
+        "skill_training": "Fundación Elite de Tenis",
+        "conditioning": "Fundación Elite de Fuerza",
+        "recovery": "Protocolo Elite de Recuperación"
+      },
+      "ui_elements": [
+        {
+          "type": "info",
+          "title": "Lista de Verificación de Evaluación Diaria",
+          "content": "Complete cada evaluación y registre sus resultados:",
+          "icon": "⏰"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "pre_week_assessment",
+      "type": "línea base",
+      "title": "Evaluación Elite Pre-Semana",
+      "timing": "pre-sesión",
+      "duration": "20 minutos",
+      "description": "Completar antes del lunes - Método Academia Alcaraz",
+      "attribution": {
+        "source": "Metodología Academia Alcaraz",
+        "methodology": "Evaluación elite previa al entrenamiento",
+        "validation": "Protocolos de entrenamiento de academia",
+        "elite_use": "Usado por Alcaraz y jugadores de academia"
+      },
+      "components": [
+        {
+          "id": "overhead_squat",
+          "name": "Evaluación de Sentadilla Overhead",
+          "type": "movimiento",
+          "category": "primario",
+          "measurement": {
+            "protocol": "Análisis de video (vistas frontal/lateral/posterior)",
+            "repetitions": "5 repeticiones",
+            "equipment": "Vara o palo de escoba"
+          },
+          "standards": {
+            "elite_benchmark": "Alineación perfecta, sin compensaciones, profundidad completa",
+            "good_standard": "Compensaciones menores, buena profundidad",
+            "needs_work": "Múltiples compensaciones o profundidad limitada"
+          },
+          "scoring": {
+            "method": "Evaluación de calidad de movimiento",
+            "scale": "pasa/falla con notas",
+            "recording": "Documentar todas las desviaciones de movimiento para corrección dirigida"
+          },
+          "context": {
+            "description": "Evalúa calidad general de movimiento y restricciones",
+            "application": "Identifica áreas que necesitan corrección dirigida"
+          }
+        },
+        {
+          "id": "glute_bridge_test",
+          "name": "Prueba de Puente de Glúteo una Pierna",
+          "type": "fuerza",
+          "category": "primario",
+          "measurement": {
+            "protocol": "Evaluación de fuerza",
+            "repetitions": "15 repeticiones cada pierna",
+            "equipment": "Ninguno"
+          },
+          "standards": {
+            "elite_benchmark": "505-640N fuerza para glúteo mayor",
+            "good_standard": "Producción de fuerza consistente",
+            "needs_work": ">20% diferencia entre piernas"
+          },
+          "scoring": {
+            "method": "Medición de fuerza y comparación",
+            "scale": "Fuerza en Newtons",
+            "recording": "Valores de fuerza y detección de desequilibrio"
+          },
+          "context": {
+            "description": "Prueba capacidad de fuerza glútea",
+            "research": "Implementación de investigación glútea 2024",
+            "application": "Identifica desequilibrios de fuerza que requieren intervención"
+          }
+        },
+        {
+          "id": "shoulder_ytw_test",
+          "name": "Prueba Y-T-W de Hombros",
+          "type": "fuerza",
+          "category": "primario",
+          "measurement": {
+            "protocol": "Evaluación de resistencia de hombros",
+            "repetitions": "15 repeticiones cada posición",
+            "equipment": "Pesas ligeras (2-5 lbs)"
+          },
+          "standards": {
+            "elite_benchmark": "Control perfecto en todas las posiciones",
+            "good_standard": "Buena forma con fatiga mínima",
+            "needs_work": "Compensaciones o fatiga temprana"
+          },
+          "scoring": {
+            "method": "Evaluación de calidad de movimiento",
+            "scale": "pasa/falla con notas",
+            "recording": "Documentar compensaciones y puntos de falla"
+          },
+          "context": {
+            "description": "Evalúa estabilidad y fuerza de hombros",
+            "application": "Identifica debilidades en estabilizadores de hombros"
+          }
+        }
+      ]
+    }
+  ],
+  "preparation_phases": [
+    {
+      "id": "morning_protocol",
+      "title": "Protocolo Matutino Elite",
+      "timing": "6:00-6:20",
+      "duration": "20 minutos",
+      "description": "Protocolo de activación matutina basado en métodos Alcaraz",
+      "attribution": {
+        "source": "Academia Ferrero",
+        "methodology": "Protocolo matutino Alcaraz",
+        "validation": "Rutinas matutinas de jugadores elite",
+        "elite_use": "Usado por jugadores top 10 ATP"
+      },
+      "activities": [
+        {
+          "name": "Activación Respiratoria",
+          "duration": "3 minutos",
+          "sets": 3,
+          "instructions": [
+            "Respiración diafragmática profunda",
+            "Inhalar 4 segundos, mantener 4, exhalar 6",
+            "Enfocarse en activación del núcleo"
+          ],
+          "implementation": {
+            "execution": "Posición supina, manos en pecho y abdomen",
+            "focus": "Activación del sistema nervioso parasimpático",
+            "tennis_application": "Prepara para estado de calma concentrada"
+          }
+        },
+        {
+          "name": "Movilidad Articular",
+          "duration": "5 minutos",
+          "sets": 1,
+          "instructions": [
+            "Círculos de hombros: 10 hacia adelante, 10 hacia atrás",
+            "Rotación de caderas: 10 cada dirección",
+            "Balanceo de piernas: 10 cada pierna"
+          ],
+          "implementation": {
+            "execution": "Movimientos lentos y controlados",
+            "focus": "Rango de movimiento articular",
+            "tennis_application": "Prepara articulaciones para movimientos de tenis"
+          }
+        },
+        {
+          "name": "Activación Muscular",
+          "duration": "7 minutos",
+          "sets": 2,
+          "instructions": [
+            "Activación glútea: 15 repeticiones",
+            "Activación escapular: 15 repeticiones",
+            "Activación del núcleo: 30 segundos"
+          ],
+          "implementation": {
+            "execution": "Contracciones musculares específicas",
+            "focus": "Activación de músculos estabilizadores",
+            "tennis_application": "Prepara músculos clave para entrenamiento"
+          }
+        },
+        {
+          "name": "Visualización Mental",
+          "duration": "5 minutos",
+          "sets": 1,
+          "instructions": [
+            "Visualización de objetivos del día",
+            "Repaso mental de técnicas clave",
+            "Establecimiento de intención positiva"
+          ],
+          "implementation": {
+            "execution": "Posición sentada cómoda, ojos cerrados",
+            "focus": "Preparación mental para entrenamiento",
+            "tennis_application": "Mejora enfoque y confianza"
+          }
+        }
+      ]
+    }
+  ],
+  "tennis_training": {
+    "title": "Fundación Elite de Tenis",
+    "timing": "7:15-8:15",
+    "duration": "60 minutos",
+    "description": "Entrenamiento de tenis usando métodos Alcaraz-Ferrero",
+    "attribution": {
+      "source": "Academia Ferrero",
+      "methodology": "Método Alcaraz de construcción de base",
+      "validation": "Protocolos de entrenamiento de academia",
+      "elite_use": "Usado por Alcaraz durante desarrollo inicial"
+    },
+    "alcaraz_integration": {
+      "warm_up": {
+        "title": "Calentamiento Alcaraz",
+        "duration": "15 minutos",
+        "exercises": [
+          {
+            "name": "Trabajo de Pies Básico",
+            "duration": "5 minutos",
+            "sets": 3,
+            "detailed_instructions": [
+              "Pasos laterales con raqueta",
+              "Paso dividido en línea de servicio",
+              "Avanzar y retroceder con postura baja"
+            ]
+          },
+          {
+            "name": "Golpes de Sombra",
+            "duration": "5 minutos",
+            "sets": 2,
+            "detailed_instructions": [
+              "Derechas de sombra: 20 repeticiones",
+              "Revés de sombra: 20 repeticiones",
+              "Servicio de sombra: 10 repeticiones"
+            ]
+          },
+          {
+            "name": "Peloteo Suave",
+            "duration": "5 minutos",
+            "sets": 1,
+            "detailed_instructions": [
+              "Peloteo cruzado derecha",
+              "Peloteo cruzado revés",
+              "Alternancia derecha-revés"
+            ]
+          }
+        ]
+      },
+      "rally_development": {
+        "title": "Desarrollo de Peloteo",
+        "duration": "30 minutos",
+        "drills": [
+          {
+            "name": "Peloteo Cruzado de Derecha",
+            "duration": "10 minutos",
+            "balls": 100,
+            "intensity": "Moderada",
+            "implementation": {
+              "focus": "Consistencia y profundidad",
+              "target": "Esquinas del cuadro de servicio",
+              "progression": "Aumentar velocidad gradualmente"
+            }
+          },
+          {
+            "name": "Peloteo Cruzado de Revés",
+            "duration": "10 minutos",
+            "balls": 100,
+            "intensity": "Moderada",
+            "implementation": {
+              "focus": "Control y rotación",
+              "target": "Línea de fondo profunda",
+              "progression": "Mantener altura consistente"
+            }
+          },
+          {
+            "name": "Alternancia Derecha-Revés",
+            "duration": "10 minutos",
+            "balls": 80,
+            "intensity": "Moderada-Alta",
+            "implementation": {
+              "focus": "Transición entre golpes",
+              "target": "Cambio de dirección controlado",
+              "progression": "Acelerar ritmo de cambio"
+            }
+          }
+        ]
+      },
+      "serve_development": {
+        "title": "Desarrollo de Servicio",
+        "duration": "15 minutos",
+        "drills": [
+          {
+            "name": "Servicio a Objetivos",
+            "duration": "15 minutos",
+            "serves": 60,
+            "implementation": {
+              "focus": "Precisión y consistencia",
+              "target": "Esquinas del cuadro de servicio",
+              "progression": "Primera: precisión, segunda: potencia"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "movement_preparation": {
+    "title": "Preparación Elite de Movimiento",
+    "timing": "8:30-9:00",
+    "duration": "30 minutos",
+    "description": "Preparación específica para entrenamiento de fuerza",
+    "attribution": {
+      "source": "Metodología integrada",
+      "methodology": "Preparación pre-entrenamiento elite",
+      "validation": "Protocolos de calentamiento de rendimiento",
+      "elite_use": "Usado por atletas profesionales"
+    },
+    "exercises": [
+      {
+        "name": "Activación Glútea",
+        "sets": 3,
+        "reps": 15,
+        "rest_seconds": 45,
+        "protocol": "Contracción máxima de glúteos",
+        "tennis_application": "Mejora potencia de piernas para movimientos explosivos"
+      },
+      {
+        "name": "Activación Escapular",
+        "sets": 3,
+        "reps": 15,
+        "rest_seconds": 45,
+        "protocol": "Retracción y depresión escapular",
+        "tennis_application": "Estabilidad de hombros para golpes potentes"
+      },
+      {
+        "name": "Movilidad de Cadera",
+        "sets": 2,
+        "reps": 10,
+        "rest_seconds": 30,
+        "protocol": "Círculos de cadera dinámicos",
+        "tennis_application": "Rango de movimiento para posiciones bajas"
+      },
+      {
+        "name": "Activación del Núcleo",
+        "sets": 3,
+        "reps": 20,
+        "rest_seconds": 45,
+        "protocol": "Contracción isométrica del núcleo",
+        "tennis_application": "Estabilidad para transferencia de potencia"
+      }
+    ]
+  },
+  "strength_training": {
+    "title": "Fundación Elite de Fuerza",
+    "timing": "9:00-10:30",
+    "duration": "90 minutos",
+    "description": "Entrenamiento de fuerza enfocado en tren inferior",
+    "attribution": {
+      "source": "Metodología combinada",
+      "methodology": "Entrenamiento de fuerza funcional",
+      "validation": "Protocolos de entrenamiento de atletas elite",
+      "elite_use": "Adaptado de programas ATP/WTA"
+    },
+    "main_exercises": [
+      {
+        "name": "Sentadilla Trasera",
+        "sets": 4,
+        "reps": 8,
+        "rest_seconds": 180,
+        "load": "75% 1RM",
+        "tempo": "3-1-1-1",
+        "protocol": "Sentadilla completa con control",
+        "tennis_application": "Fuerza base para movimientos explosivos"
+      },
+      {
+        "name": "Peso Muerto Rumano",
+        "sets": 4,
+        "reps": 8,
+        "rest_seconds": 180,
+        "load": "70% 1RM",
+        "tempo": "3-1-1-1",
+        "protocol": "Enfoque en bisagra de cadera",
+        "tennis_application": "Fuerza posterior para estabilidad"
+      },
+      {
+        "name": "Estocadas Búlgaras",
+        "sets": 3,
+        "reps": 10,
+        "rest_seconds": 120,
+        "load": "Peso corporal + 20%",
+        "tempo": "2-1-1-1",
+        "protocol": "Estocadas unilaterales controladas",
+        "tennis_application": "Fuerza unilateral para movimientos de tenis"
+      }
+    ],
+    "phase_2_integration": {
+      "title": "Integración Fase 2",
+      "exercises": [
+        {
+          "name": "Saltos de Caja",
+          "sets": 3,
+          "reps": 5,
+          "rest": "2 minutos",
+          "protocol": "Saltos explosivos con aterrizaje suave",
+          "target": "Desarrollo de potencia"
+        },
+        {
+          "name": "Saltos Laterales",
+          "sets": 3,
+          "reps": 8,
+          "rest": "90 segundos",
+          "protocol": "Saltos laterales explosivos",
+          "target": "Potencia lateral específica para tenis"
+        }
+      ]
+    },
+    "advanced_tendon_conditioning": {
+      "title": "Acondicionamiento Avanzado de Tendones",
+      "exercises": [
+        {
+          "name": "Saltos Reactivos",
+          "sets": 4,
+          "reps": 6,
+          "rest": "2 minutos",
+          "protocol": "Saltos con tiempo de contacto mínimo"
+        },
+        {
+          "name": "Saltos Pliométricos",
+          "sets": 3,
+          "duration": "30 segundos",
+          "rest": "90 segundos",
+          "protocol": "Saltos continuos de baja intensidad"
+        }
+      ]
+    },
+    "stability_power_block": {
+      "title": "Bloque de Estabilidad/Potencia",
+      "exercises": [
+        {
+          "name": "Plancha Lateral",
+          "sets": 3,
+          "hold": "45 segundos",
+          "rest": "60 segundos",
+          "protocol": "Mantener alineación perfecta",
+          "details": "Enfoque en estabilidad del núcleo"
+        },
+        {
+          "name": "Sentadilla una Pierna",
+          "sets": 3,
+          "reps": 8,
+          "rest": "90 segundos",
+          "protocol": "Sentadilla unilateral controlada",
+          "details": "Desarrollo de estabilidad y fuerza"
+        }
+      ]
+    }
+  },
+  "recovery_protocol": {
+    "title": "Protocolo Elite de Recuperación",
+    "timing": "10:30-11:00",
+    "duration": "30 minutos",
+    "description": "Protocolo de recuperación post-entrenamiento",
+    "attribution": {
+      "source": "Métodos integrados de recuperación",
+      "methodology": "Protocolo de recuperación profesional",
+      "validation": "Protocolos de recuperación de atletas elite",
+      "elite_use": "Usado por jugadores profesionales"
+    },
+    "components": [
+      {
+        "name": "Estiramiento Estático",
+        "duration": "10 minutos",
+        "protocol": "Estiramiento de músculos principales",
+        "implementation": {
+          "method": "Mantener estiramientos 30 segundos",
+          "focus": "Músculos trabajados en sesión",
+          "progression": "Aumentar rango gradualmente"
+        }
+      },
+      {
+        "name": "Rodillo de Espuma",
+        "duration": "10 minutos",
+        "protocol": "Liberación miofascial",
+        "implementation": {
+          "method": "Rodillo lento y controlado",
+          "focus": "Puntos de tensión",
+          "progression": "Aumentar presión gradualmente"
+        }
+      },
+      {
+        "name": "Respiración de Recuperación",
+        "duration": "5 minutos",
+        "protocol": "Respiración 4-7-8",
+        "implementation": {
+          "method": "Inhalar 4, mantener 7, exhalar 8",
+          "focus": "Activación parasimpática",
+          "progression": "Profundizar respiración"
+        }
+      },
+      {
+        "name": "Hidratación y Nutrición",
+        "duration": "5 minutos",
+        "protocol": "Reposición post-entrenamiento",
+        "implementation": {
+          "method": "Agua + electrolitos",
+          "focus": "Recuperación de fluidos",
+          "progression": "Monitorear color de orina"
+        }
+      }
+    ]
+  }
+}

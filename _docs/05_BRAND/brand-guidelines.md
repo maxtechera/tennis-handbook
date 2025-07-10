@@ -3,19 +3,22 @@
 **Document Status**: 🟢 Active  
 **Lifecycle**: Annual Review  
 **Last Updated**: January 2025  
-**Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)  
+**Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)
 
 ---
 
 ## Brand Identity
 
 ### Core Positioning
-**"The Tennis Training Handbook"** - A practical, behind-the-scenes guide to how professional tennis players and coaches actually train.
+
+**"The Tennis Handbook"** - A practical, behind-the-scenes guide to how professional tennis players and coaches actually train.
 
 ### Brand Promise
+
 We provide real insights into professional tennis training methods without claiming to make you a pro. We're your guide to understanding what the top players and coaches actually do.
 
 ### Brand Personality
+
 - **Curious**: We dig into what really happens behind the scenes
 - **Honest**: We don't oversell or make unrealistic promises
 - **Practical**: Everything we share has real-world application
@@ -27,6 +30,7 @@ We provide real insights into professional tennis training methods without claim
 ### Core Voice Principles
 
 #### 1. "Actually" - Focus on Reality
+
 - ✅ "How pros actually train"
 - ✅ "What they really do"
 - ✅ "The real methods"
@@ -35,6 +39,7 @@ We provide real insights into professional tennis training methods without claim
 - ❌ "Train like a champion"
 
 #### 2. Behind-the-Scenes Approach
+
 - ✅ "Go behind the scenes"
 - ✅ "See what happens"
 - ✅ "Learn what they do"
@@ -43,6 +48,7 @@ We provide real insights into professional tennis training methods without claim
 - ❌ "Hidden knowledge"
 
 #### 3. Educational, Not Promotional
+
 - ✅ "Learn about..."
 - ✅ "Discover how..."
 - ✅ "Understand why..."
@@ -51,6 +57,7 @@ We provide real insights into professional tennis training methods without claim
 - ❌ "Transform into..."
 
 #### 4. Humble Confidence
+
 - ✅ "Real insights from top coaches"
 - ✅ "Methods used by professionals"
 - ✅ "What works for them"
@@ -61,18 +68,21 @@ We provide real insights into professional tennis training methods without claim
 ### Tone Variations by Context
 
 #### Homepage/Marketing
+
 - **Confident but not boastful**
 - **Curious and inviting**
 - **Direct and clear**
 - Example: "Go behind the scenes with the world's top players and learn what they actually do"
 
 #### Educational Content
+
 - **Informative and factual**
 - **Respectful of sources**
 - **Clear about limitations**
 - Example: "Based on observations from Ferrero's training sessions with Alcaraz..."
 
 #### Instructions/How-To
+
 - **Practical and actionable**
 - **Clear about context**
 - **Honest about difficulty**
@@ -81,6 +91,7 @@ We provide real insights into professional tennis training methods without claim
 ## Language Guidelines
 
 ### Preferred Terms
+
 - **"Methods"** instead of "secrets"
 - **"Insights"** instead of "revelations"
 - **"Behind-the-scenes"** instead of "insider"
@@ -89,6 +100,7 @@ We provide real insights into professional tennis training methods without claim
 - **"Learn/discover"** instead of "master/unlock"
 
 ### Avoid These Terms
+
 - ❌ "Secrets" - sounds clickbait
 - ❌ "Elite" - too presumptuous
 - ❌ "Ultimate" - overpromising
@@ -101,29 +113,37 @@ We provide real insights into professional tennis training methods without claim
 **Important**: See [naming-guidelines.md](./naming-guidelines.md) for specific player/coach name replacements.
 
 ### Tier 1: Direct Professional Sources
+
 **When**: Direct quotes, interviews, documented sessions
-**How**: 
+**How**:
+
 - "According to Olympic gold medalist coaches..."
 - "As documented in elite fitness training..."
 - "Championship coaches' approach with world #1 players..."
 
 ### Tier 2: Verified Practices
+
 **When**: Methods confirmed through multiple sources
 **How**:
+
 - "Professional coaches commonly use..."
 - "This approach is utilized by..."
 - "Top-level training typically includes..."
 
 ### Tier 3: Research-Backed
+
 **When**: Scientific studies, sports science
 **How**:
+
 - "Research shows that..."
 - "Studies indicate..."
 - "Sports science supports..."
 
 ### Tier 4: Observed Patterns
+
 **When**: General trends without specific attribution
 **How**:
+
 - "Many professional players..."
 - "It's common to see..."
 - "Professional training often includes..."
@@ -131,18 +151,21 @@ We provide real insights into professional tennis training methods without claim
 ## Spanish Market Adaptations
 
 ### Cultural References
+
 - Use Spanish tennis excellence examples (world #1 players, legendary champions)
 - Reference Spanish tournaments
 - Include Spanish coaching methodologies
 - Respect cultural training preferences
 
 ### Language Style
+
 - Maintain directness with warmth
 - Community-focused messaging
 - Emphasize tradition and expertise
 - Use "nosotros" (we) for inclusivity
 
 ### Spanish Voice Examples
+
 **Hero**: "Descubre cómo entrenan realmente los mejores tenistas del mundo"
 **Feature**: "Los métodos reales de entrenadores medallistas olímpicos con jugadores #1"
 **CTA**: "Únete a miles de tenistas que ya conocen estos métodos"
@@ -150,18 +173,21 @@ We provide real insights into professional tennis training methods without claim
 ## Quality Standards
 
 ### Factual Requirements
+
 - Every claim traceable to source
 - Distinguish proven vs observed
 - Include context about applicability
 - Acknowledge incomplete information
 
-### Readability Requirements  
+### Readability Requirements
+
 - Write for intelligent non-experts
 - Explain technical terms on first use
 - Use concrete examples
 - Break complex ideas into parts
 
 ### Authenticity Requirements
+
 - Don't claim unearned expertise
 - Clear about observer/researcher role
 - Acknowledge difficulty appropriately
@@ -194,6 +220,7 @@ We provide real insights into professional tennis training methods without claim
 ## Quick Reference
 
 **When in doubt, ask:**
+
 1. Are we being honest about what this is?
 2. Are we respecting sources and readers?
 3. Does this help understand what pros actually do?

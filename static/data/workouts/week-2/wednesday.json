@@ -1,0 +1,696 @@
+{
+  "metadata": {
+    "period": 2,
+    "period_name": "Strength Accumulation",
+    "day_id": "week_2_wednesday",
+    "day_name": "Wednesday",
+    "title": "Elite Upper Strength & Anaerobic Power",
+    "subtitle": "Heavy Upper Body Development with Competitive Tennis Integration",
+    "phase": "Phase 2: Strength Accumulation",
+    "focus_areas": [
+      "Upper Body Power Development",
+      "Competitive Match Intensity",
+      "Anaerobic System Development"
+    ],
+    "training_parameters": {
+      "volume": "100%",
+      "intensity": "80-85%",
+      "density": "high",
+      "duration": "2 hours 30 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Professional Upper Body Protocol",
+        "type": "strength",
+        "attribution": {
+          "source": "Jeff Nippard - Science-Based Training",
+          "verification": "Video documentation and research",
+          "context": "Evidence-based strength development",
+          "year": "2024"
+        }
+      },
+      {
+        "name": "Competitive Practice Integration",
+        "type": "tactical",
+        "attribution": {
+          "methodology": "ATP Tour training structure",
+          "elite_use": "Common among top 100 players",
+          "context": "Mid-week competitive intensity"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Barbell and plates",
+        "T-bar row setup",
+        "Pull-up bar",
+        "Dumbbells",
+        "Cable machine",
+        "Kettlebell",
+        "Tennis court access"
+      ],
+      "optional": [
+        "Bench with safeties",
+        "Resistance bands"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Thursday ➡️](thursday)",
+      "overview_link": "./",
+      "next_link": "thursday",
+      "previous_link": "tuesday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Pre-Training Assessment",
+        "preparation": "Movement Preparation",
+        "skill_training": "Competitive Tennis Practice",
+        "conditioning": "Elite Upper Body Strength",
+        "recovery": "Post-Training Recovery"
+      }
+    }
+  },
+  "preparation_phases": [
+    {
+      "id": "morning_activation",
+      "type": "activation",
+      "title": "Pre-Training Activation",
+      "duration": "15 minutes",
+      "timing": "07:00-07:15 AM",
+      "attribution": {
+        "source": "Professional tennis warm-up protocols",
+        "elite_use": "Standard among ATP/WTA players"
+      },
+      "activities": [
+        {
+          "id": "dynamic_warmup",
+          "name": "Dynamic Movement Preparation",
+          "type": "mobility",
+          "duration": "10 minutes",
+          "order": 1,
+          "implementation": {
+            "method": "Progressive movement patterns",
+            "setup": "Open space for movement",
+            "execution": "Gradual intensity increase",
+            "focus": "Joint mobility and muscle activation"
+          },
+          "instructions": [
+            {
+              "phase": "GENERAL",
+              "text": "5 minutes light movement, arm circles, leg swings"
+            },
+            {
+              "phase": "SPECIFIC",
+              "text": "5 minutes tennis-specific patterns"
+            }
+          ],
+          "success_criteria": [
+            {
+              "metric": "Heart rate elevation",
+              "target": "60-70% max HR",
+              "tracking": "HR monitor or perceived effort"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "schedule_overview": {
+    "title": "Wednesday Schedule",
+    "sessions": [
+      {
+        "time": "07:15–08:15",
+        "activity": "Tennis Practice Sets",
+        "instructions": "Competitive intensity, tactical play"
+      },
+      {
+        "time": "08:25–09:35",
+        "activity": "Upper Body Strength Training",
+        "exercises": [
+          {
+            "name": "Barbell Bench Press",
+            "sets_reps": "4×6",
+            "instructions": "Heavier load, maintain controlled motion"
+          },
+          {
+            "name": "T-Bar Row",
+            "sets_reps": "4×8",
+            "instructions": "Flat back, controlled pulls"
+          },
+          {
+            "name": "DB Shoulder Press",
+            "sets_reps": "3×8",
+            "instructions": "Strict form, core stability"
+          },
+          {
+            "name": "Chin-ups",
+            "sets_reps": "3×AMRAP",
+            "instructions": "Full ROM, controlled"
+          },
+          {
+            "name": "Face Pulls",
+            "sets_reps": "3×12",
+            "instructions": "High elbows, consistent tension"
+          }
+        ]
+      },
+      {
+        "time": "09:35–09:50",
+        "activity": "HIIT Finisher",
+        "sets_reps": "3 rounds",
+        "instructions": "Sprint intervals, KB swings, maximal intensity, short rest"
+      }
+    ]
+  },
+  "skill_training": {
+    "section_title": "Tennis Practice Sets",
+    "sessions": [
+      {
+        "id": "competitive_practice",
+        "type": "tactical",
+        "title": "Competitive Practice Sets",
+        "duration": "60 minutes",
+        "intensity": "85-90%",
+        "structure": {
+          "warm_up": "10 minutes",
+          "main_work": "45 minutes",
+          "cool_down": "5 minutes"
+        },
+        "components": [
+          {
+            "id": "practice_sets",
+            "name": "Competitive Practice Sets",
+            "type": "game",
+            "category": "primary",
+            "time_structure": {
+              "type": "duration",
+              "value": "45 minutes",
+              "rest": "Between points as match play"
+            },
+            "setup": {
+              "court_area": "Full court",
+              "equipment": "Regular match equipment",
+              "players": "2 players"
+            },
+            "implementation": {
+              "method": "Play practice sets with competitive intensity",
+              "focus": "Tactical execution under pressure",
+              "key_points": "Implement strategies, manage points, compete fully"
+            },
+            "instructions": [
+              {
+                "phase": "SETUP",
+                "text": "Full warm-up, clear match goals"
+              },
+              {
+                "phase": "EXECUTION",
+                "text": "Play sets with full competitive intensity"
+              },
+              {
+                "phase": "FOCUS",
+                "text": "Work on specific tactical patterns"
+              }
+            ],
+            "cues": [
+              "Compete with match intensity",
+              "Execute tactical patterns",
+              "Manage energy for later training"
+            ],
+            "success_criteria": [
+              {
+                "metric": "Win percentage on key patterns",
+                "target": "70%+",
+                "tracking": "Pattern success rate"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "conditioning_blocks": [
+    {
+      "id": "upper_strength",
+      "type": "strength",
+      "title": "Upper Body Strength Training",
+      "description": "Heavy upper body work with Week 2 load increases",
+      "duration": "70 minutes",
+      "exercises": [
+        {
+          "id": "bench_press",
+          "name": "Barbell Bench Press",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "4",
+            "reps": "6",
+            "intensity": "80-85% 1RM",
+            "rest": "3 minutes",
+            "tempo": "3-1-1-0"
+          },
+          "execution": {
+            "setup": [
+              "Setup flat bench with secure rack position",
+              "Grip wider than shoulders",
+              "Create arch and leg drive position"
+            ],
+            "technique": [
+              "Lower to chest slowly (3 seconds)",
+              "Brief pause at chest",
+              "Press explosively while maintaining control",
+              "Full lockout at top"
+            ],
+            "safety": [
+              "Use spotter for heavy sets",
+              "Maintain tight core throughout"
+            ]
+          },
+          "cues": [
+            "Week 2 load increase from last week",
+            "Maintain controlled motion despite heavier weight",
+            "Focus on explosive concentric"
+          ],
+          "progressions": {
+            "regression": "Reduce load to 75%",
+            "standard": "4×6 @ 80-85%",
+            "progression": "Add pause at chest"
+          },
+          "tracking": {
+            "type": "standard",
+            "format": "sets_reps",
+            "sets": [
+              {
+                "set": 1,
+                "target": "6 reps @ 80%",
+                "actual": "",
+                "rpe": "",
+                "notes": "___"
+              },
+              {
+                "set": 2,
+                "target": "6 reps @ 82.5%",
+                "actual": "",
+                "rpe": "",
+                "notes": "___"
+              },
+              {
+                "set": 3,
+                "target": "6 reps @ 85%",
+                "actual": "",
+                "rpe": "",
+                "notes": "___"
+              },
+              {
+                "set": 4,
+                "target": "6 reps @ 85%",
+                "actual": "",
+                "rpe": "",
+                "notes": "___"
+              }
+            ]
+          },
+          "benefits": {
+            "primary": "Upper body pressing power",
+            "secondary": "Core stability under load",
+            "sport_specific": "Serving power generation"
+          },
+          "attribution": {
+            "source": "Jeff Nippard - Bench Press Science",
+            "quote": "Control the eccentric for maximum strength gains",
+            "verification": "https://www.youtube.com/watch?v=vcBig73ojpE",
+            "context": "Week 2 progressive overload",
+            "results": "Expected 5-10% strength increase"
+          }
+        },
+        {
+          "id": "t_bar_row",
+          "name": "T-Bar Row",
+          "category": "primary",
+          "order": 2,
+          "loading": {
+            "sets": "4",
+            "reps": "8",
+            "intensity": "75-80% 1RM",
+            "rest": "2 minutes",
+            "tempo": "2-1-2-1"
+          },
+          "execution": {
+            "setup": [
+              "Load T-bar with appropriate weight",
+              "Stand with feet hip-width apart",
+              "Hinge at hips, flat back position"
+            ],
+            "technique": [
+              "Pull handle to lower ribs",
+              "Squeeze shoulder blades together",
+              "Control negative for 2 seconds",
+              "Maintain flat back throughout"
+            ]
+          },
+          "cues": [
+            "Flat back position essential",
+            "Pull with elbows, not hands",
+            "Controlled pulls, no momentum"
+          ],
+          "tracking": {
+            "type": "standard",
+            "format": "sets_reps"
+          }
+        },
+        {
+          "id": "db_shoulder_press",
+          "name": "DB Shoulder Press",
+          "category": "auxiliary",
+          "order": 3,
+          "loading": {
+            "sets": "3",
+            "reps": "8",
+            "intensity": "70-75%",
+            "rest": "90 seconds",
+            "tempo": "2-1-1-1"
+          },
+          "execution": {
+            "setup": [
+              "Can be seated or standing",
+              "Dumbbells at shoulder height",
+              "Core engaged, neutral spine"
+            ],
+            "technique": [
+              "Press dumbbells overhead",
+              "Full ROM without hyperextension",
+              "Control descent to shoulders",
+              "Keep core tight throughout"
+            ]
+          },
+          "cues": [
+            "Strict form priority",
+            "Core stability throughout",
+            "No arching back"
+          ]
+        },
+        {
+          "id": "chinups",
+          "name": "Chin-ups",
+          "category": "auxiliary",
+          "order": 4,
+          "loading": {
+            "sets": "3",
+            "reps": "AMRAP",
+            "intensity": "Bodyweight",
+            "rest": "2 minutes"
+          },
+          "execution": {
+            "setup": [
+              "Underhand grip on pull-up bar",
+              "Hands shoulder-width apart",
+              "Full hang position"
+            ],
+            "technique": [
+              "Pull chest to bar",
+              "Control descent fully",
+              "Full ROM each rep",
+              "Max reps each set"
+            ]
+          },
+          "cues": [
+            "Full ROM priority",
+            "Control the negative",
+            "Push to muscular failure"
+          ],
+          "tracking": {
+            "type": "amrap",
+            "format": "sets_reps",
+            "sets": [
+              {
+                "set": 1,
+                "target": "Max reps",
+                "actual": "___",
+                "notes": "___"
+              },
+              {
+                "set": 2,
+                "target": "Max reps",
+                "actual": "___",
+                "notes": "___"
+              },
+              {
+                "set": 3,
+                "target": "Max reps",
+                "actual": "___",
+                "notes": "___"
+              }
+            ]
+          }
+        },
+        {
+          "id": "face_pulls",
+          "name": "Face Pulls",
+          "category": "corrective",
+          "order": 5,
+          "loading": {
+            "sets": "3",
+            "reps": "12",
+            "intensity": "Light",
+            "rest": "60 seconds"
+          },
+          "execution": {
+            "setup": [
+              "Cable at face height",
+              "Rope attachment",
+              "Step back for tension"
+            ],
+            "technique": [
+              "Pull to face with elbows high",
+              "Squeeze rear delts at end",
+              "Consistent tension throughout",
+              "Control return"
+            ]
+          },
+          "cues": [
+            "High elbows essential",
+            "Feel in rear delts",
+            "Consistent tension"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metabolic_finisher",
+      "type": "power",
+      "title": "HIIT Finisher",
+      "description": "High-intensity metabolic conditioning",
+      "duration": "15 minutes",
+      "exercises": [
+        {
+          "id": "hiit_circuit",
+          "name": "Sprint & KB Swing Circuit",
+          "category": "primary",
+          "order": 1,
+          "loading": {
+            "sets": "3",
+            "work_time": "30 seconds sprint + 30 seconds KB swings",
+            "rest_time": "90 seconds between rounds",
+            "intensity": "Maximal"
+          },
+          "execution": {
+            "setup": [
+              "Mark sprint distance or use treadmill",
+              "Have kettlebell ready",
+              "Clear transition space"
+            ],
+            "technique": [
+              "30s all-out sprint",
+              "Immediate transition to KB swings",
+              "30s explosive KB swings",
+              "90s complete rest"
+            ]
+          },
+          "cues": [
+            "Maximal intensity required",
+            "Short rest maintains intensity",
+            "Push through fatigue"
+          ],
+          "tracking": {
+            "type": "rounds",
+            "format": "time",
+            "sets": [
+              {
+                "set": 1,
+                "target": "30s sprint + 30s swings",
+                "actual": "Complete: ___",
+                "notes": "___"
+              },
+              {
+                "set": 2,
+                "target": "30s sprint + 30s swings",
+                "actual": "Complete: ___",
+                "notes": "___"
+              },
+              {
+                "set": 3,
+                "target": "30s sprint + 30s swings",
+                "actual": "Complete: ___",
+                "notes": "___"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "key_focus_points": [
+    {
+      "category": "Tennis",
+      "focus": "Competitive practice sets with tactical intensity"
+    },
+    {
+      "category": "Upper Strength",
+      "focus": "Heavy barbell bench press with Week 2 load increase"
+    },
+    {
+      "category": "Posterior Chain",
+      "focus": "T-Bar rows with flat back and controlled pulls"
+    },
+    {
+      "category": "Shoulder Stability",
+      "focus": "Strict form on DB shoulder press with core engagement"
+    },
+    {
+      "category": "Pull-up Strength",
+      "focus": "Full ROM chin-ups to muscular failure (AMRAP)"
+    },
+    {
+      "category": "Metabolic",
+      "focus": "High-intensity finisher with sprint intervals and kettlebell swings"
+    }
+  ],
+  "weekly_notes": {
+    "week": 2,
+    "content": "Wednesday is the most demanding upper body session with competitive tennis followed by heavy lifting and high-intensity metabolic work."
+  },
+  "session_metrics": {
+    "volume": {
+      "tennis_minutes": 60,
+      "strength_minutes": 70,
+      "warmup_minutes": 10,
+      "recovery_minutes": 10,
+      "total_minutes": 150
+    },
+    "intensity": {
+      "tennis_average": "85-90%",
+      "strength_average": "80-85%",
+      "overall_rpe": 8.5
+    },
+    "distances": {
+      "court_coverage": "3.5 km",
+      "conditioning_distance": "400 m sprints"
+    }
+  },
+  "recovery_protocols": [
+    {
+      "id": "post_training_recovery",
+      "type": "immediate",
+      "title": "Post-Training Recovery",
+      "duration": "20 minutes",
+      "timing": "Immediately post-training",
+      "components": [
+        {
+          "id": "cool_down",
+          "name": "Active Cool-down",
+          "type": "mobility",
+          "duration": "10 minutes",
+          "implementation": {
+            "method": "Light movement and stretching",
+            "intensity": "Very light"
+          },
+          "instructions": [
+            "5 minutes easy walking",
+            "5 minutes static stretching"
+          ],
+          "focus_areas": [
+            "Upper body focus",
+            "Shoulders and chest",
+            "Back and arms"
+          ]
+        },
+        {
+          "id": "breathing",
+          "name": "Recovery Breathing",
+          "type": "therapy",
+          "duration": "5 minutes",
+          "implementation": {
+            "method": "Box breathing protocol",
+            "intensity": "Relaxation focus"
+          },
+          "instructions": [
+            "4-4-4-4 breathing pattern",
+            "Focus on parasympathetic activation"
+          ]
+        },
+        {
+          "id": "nutrition",
+          "name": "Post-Workout Nutrition",
+          "type": "nutrition",
+          "duration": "5 minutes",
+          "implementation": {
+            "method": "Immediate refueling"
+          },
+          "instructions": [
+            "Protein shake within 30 minutes",
+            "20-30g protein + carbohydrates",
+            "Hydration with electrolytes"
+          ]
+        }
+      ]
+    }
+  ],
+  "monitoring": {
+    "performance_metrics": [
+      {
+        "id": "bench_press_load",
+        "name": "Bench Press Load",
+        "type": "quantitative",
+        "category": "strength",
+        "measurement": {
+          "method": "Track working weight",
+          "frequency": "Weekly"
+        },
+        "tracking": {
+          "baseline": "Week 1 load",
+          "current": "Week 2 increase",
+          "target": "+5-10% from Week 1",
+          "trend": "improving"
+        }
+      },
+      {
+        "id": "chinup_reps",
+        "name": "Chin-up Max Reps",
+        "type": "quantitative",
+        "category": "strength",
+        "measurement": {
+          "method": "Count max reps per set",
+          "frequency": "Weekly"
+        },
+        "tracking": {
+          "baseline": "Set 1 reps",
+          "current": "___",
+          "target": "Maintain across sets"
+        }
+      }
+    ],
+    "quality_indicators": [
+      {
+        "name": "Technical Execution",
+        "scale": "1-10",
+        "target": "8+",
+        "description": "Form quality under heavy load"
+      },
+      {
+        "name": "Energy Management",
+        "scale": "1-10",
+        "target": "7+",
+        "description": "Maintaining intensity through session"
+      }
+    ]
+  }
+}

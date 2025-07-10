@@ -1,26 +1,27 @@
 # Week 4 - Tuesday: Upper Body Power Integration & Advanced Tennis
 metadata:
   # Basic identifiers
-  period: 4
-  period_name: "Power Integration Phase"
+  period: 2
+  period_name: "Power Integration"
   day_id: "week_4_tuesday"
   day_name: "Tuesday"
 
   # Workout details
-  title: "Upper Body Power Integration & Advanced Tennis"
-  subtitle: "Phase 2 Upper Body Power Development"
-  phase: "Phase 2: Power Integration (Week 1)"
+  title: "Upper Body Power Integration & Tennis Velocity"
+  subtitle: "Phase 2 Upper Body Power with Velocity-Based Training"
+  phase: "Phase 2: Power Integration"
   focus_areas:
+    - "Power Integration"
+    - "Velocity-Based Training"
     - "Upper Body Power Development"
-    - "Tennis Power Integration"
-    - "Advanced Movement Quality"
+    - "Tennis Velocity Training"
 
   # Training parameters
   training_parameters:
-    volume: "95% (upper body focus)"
-    intensity: "80-90% (power emphasis)"
-    density: "moderate to high"
-    duration: "4 hours 15 minutes"
+    volume: "90% (phase transition deload)"
+    intensity: "85-95% (velocity-based focus)"
+    density: "moderate-high"
+    duration: "4 hours 30 minutes"
 
   # Elite Method Attribution
   elite_methods:

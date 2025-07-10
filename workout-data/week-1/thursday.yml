@@ -80,24 +80,6 @@ metadata:
         icon: "😌"
 
 # ASSESSMENT SECTIONS
-assessments:
-  - id: "recovery_assessment"
-    type: "daily"
-    title: "Week 1 Recovery Assessment"
-    timing: "pre-session"
-    duration: "10 minutes"
-    description: "Recovery status and readiness for low-intensity training"
-
-    attribution:
-      source: "Recovery assessment methodology"
-      methodology: "HRV and subjective wellness tracking"
-      validation: "Recovery monitoring protocols"
-      elite_use: "Professional recovery management"
-    
-  - method: "Technical Refinement Under Fatigue"
-    source: "Darren Cahill coaching method"
-    elite_use: "Simone Halep's technical development program"
-    verification: "Cahill Tennis Academy curriculum"
 
 # Schedule blocks for timeline/carousel compatibility
 schedule:
@@ -112,7 +94,7 @@ schedule:
         phase_title: "Recovery Check"
         phase_icon: "📊"
         location: "gym"
-        
+
     - id: "aerobic_base"
       time: "07:15-07:45"
       title: "Enhanced Aerobic Development"
@@ -123,7 +105,7 @@ schedule:
         phase_title: "Zone-2 Cardio"
         phase_icon: "🏃"
         location: "gym"
-        
+
     - id: "movement_quality"
       time: "07:50-08:20"
       title: "Movement Quality Enhancement"
@@ -134,7 +116,7 @@ schedule:
         phase_title: "Movement Work"
         phase_icon: "🤸"
         location: "gym"
-        
+
     - id: "tennis_technical"
       time: "08:25-09:25"
       title: "Technical Tennis Development"
@@ -145,7 +127,7 @@ schedule:
         phase_title: "Technical Skills"
         phase_icon: "🎾"
         location: "court"
-        
+
     - id: "aerobic_consolidation"
       time: "09:30-10:00"
       title: "Aerobic Consolidation"
@@ -156,7 +138,7 @@ schedule:
         phase_title: "Steady State"
         phase_icon: "🚴"
         location: "gym"
-        
+
     - id: "recovery"
       time: "10:05-10:20"
       title: "Enhanced Mobility & Recovery"
@@ -174,7 +156,7 @@ assessments:
     type: "recovery"
     title: "Recovery Status Assessment"
     time: "07:00-07:10"
-    
+
     components:
       - id: "fatigue_monitoring"
         name: "Cumulative Fatigue Check"
@@ -182,17 +164,17 @@ assessments:
         measurement:
           protocol: "Compare to Tuesday baseline values"
           equipment: "HRV device, subjective scales"
-        
+
         standards:
           green_light: "HRV within 10% of baseline"
           yellow_light: "HRV 10-15% below baseline"
           red_light: "HRV >15% below baseline"
-          
+
         auto_regulation:
           green: "Proceed as planned"
           yellow: "Reduce volume by 20%"
           red: "Recovery day only"
-          
+
         context:
           description: "Thursday recovery focus allows supercompensation"
           application: "Lower intensity promotes adaptation without additional stress"
@@ -201,30 +183,36 @@ assessments:
 recovery_assessment:
   title: "Recovery Status Assessment"
   time: "07:00-07:10"
-  
+
   comparison_table:
-    headers: ["Recovery Indicator", "Tuesday Baseline", "Thursday Reading", "Adaptation Response"]
+    headers:
+      [
+        "Recovery Indicator",
+        "Tuesday Baseline",
+        "Thursday Reading",
+        "Adaptation Response",
+      ]
     rows:
       - indicator: "HRV Trend"
         tuesday_baseline: "__% from baseline"
         thursday_reading: "__% from baseline"
         response: "Accumulating fatigue if >-15%"
-      
+
       - indicator: "Sleep Debt"
         tuesday_baseline: "___/10 quality"
         thursday_reading: "___/10 quality"
         response: "<7 = lighter intensity today"
-      
+
       - indicator: "Muscle Soreness"
         tuesday_baseline: "___/10 overall"
         thursday_reading: "___/10 overall"
         response: ">7 = extra mobility work"
-      
+
       - indicator: "Energy Levels"
         tuesday_baseline: "___/10 morning"
         thursday_reading: "___/10 morning"
         response: "<6 = technique focus only"
-      
+
       - indicator: "Training Eagerness"
         tuesday_baseline: "___/10 motivation"
         thursday_reading: "___/10 motivation"
@@ -234,7 +222,7 @@ recovery_assessment:
 aerobic_development:
   title: "Enhanced Aerobic Development"
   time: "07:30-08:20"
-  
+
   # NEW PATTERN: Cardiovascular phases
   cardiovascular_base:
     title: "Cardiovascular Base Building"
@@ -245,7 +233,7 @@ aerobic_development:
         heart_rate_target: "65-75% HRmax"
         purpose: "Aerobic base development"
         instructions: "Nasal breathing only"
-      
+
       - phase: "Active Recovery"
         duration: "90s between"
         heart_rate_target: "50-60% HRmax"
@@ -253,7 +241,7 @@ aerobic_development:
         instructions: "Easy spinning/walking"
         additional: "Track HRV during"
         monitoring: "Use HR strap if available"
-  
+
   # Core integration within aerobic section
   core_integration:
     title: "Core Integration Training"
@@ -268,7 +256,7 @@ aerobic_development:
           - "Core strength for serves"
           - "Improved serve power"
           - "Enhanced court movement"
-        
+
         detailed_instructions:
           - phase: "SETUP"
             instruction: "Hang from pull-up bar with overhand grip, arms fully extended, body straight"
@@ -286,7 +274,7 @@ aerobic_development:
             instruction: "If too difficult, start with bent knee raises; if easy, progress to straight leg raises"
           - phase: "BREATHING"
             instruction: "Exhale during lift phase, inhale during lowering"
-      
+
       - name: "Dead Bug + Reach"
         sets: "3"
         reps: "8 per side"
@@ -297,7 +285,7 @@ aerobic_development:
           - "Core stability coordination"
           - "Reduced back injury risk"
           - "Better movement efficiency"
-        
+
         detailed_instructions:
           - phase: "SETUP"
             instruction: "Lie on back, arms extended toward ceiling, knees bent at 90 degrees"
@@ -315,7 +303,7 @@ aerobic_development:
             instruction: "Complete all reps on one side, then switch to other arm/leg combination"
           - phase: "CORE FOCUS"
             instruction: "Never let lower back arch off the floor - this is the key challenge"
-  
+
   # NEW PATTERN: Tendon health protocols
   tendon_health:
     title: "Tennis-Specific Tendon Health"
@@ -331,7 +319,7 @@ aerobic_development:
           - "Hip stability for wide shots"
           - "Lateral movement strength"
           - "Injury prevention"
-        
+
         detailed_instructions:
           - phase: "SIDE PLANK SETUP"
             instruction: "Lie on side, forearm on ground perpendicular to body, body in straight line"
@@ -349,7 +337,7 @@ aerobic_development:
             instruction: "Once easy, add single-arm reach during plank hold"
           - phase: "TENNIS APPLICATION"
             instruction: "Builds hip stability for wide defensive shots and lateral movement"
-      
+
       - name: "Calf Raise + Tibialis"
         type: "superset"
         sets: "3"
@@ -361,7 +349,7 @@ aerobic_development:
           - "Push-off power improvement"
           - "Ankle stability enhancement"
           - "Balanced lower leg strength"
-        
+
         detailed_instructions:
           - phase: "CALF RAISE SETUP"
             instruction: "Stand on edge of step with balls of feet on step, heels hanging off"
@@ -384,7 +372,7 @@ aerobic_development:
 movement_quality:
   title: "Movement Quality Enhancement"
   time: "08:25-08:45"
-  
+
   targeted_correctives:
     title: "Targeted Correctives from Monday Screen"
     exercises:
@@ -392,17 +380,17 @@ movement_quality:
         corrective_exercise: "Thoracic Extension + Lat Stretch"
         duration: "5 min"
         coaching_focus: "Open chest, reach tall"
-      
+
       - movement_issue: "Ankle Dorsiflexion Limitation"
         corrective_exercise: "Wall Ankle Stretch + Calf Stretch"
         duration: "5 min"
         coaching_focus: "Drive knee over toe"
-      
+
       - movement_issue: "Hip Flexor Tightness"
         corrective_exercise: "Couch Stretch + Hip Flexor Stretch"
         duration: "5 min"
         coaching_focus: "Push hips forward"
-      
+
       - movement_issue: "Shoulder Internal Rotation"
         corrective_exercise: "Doorway Stretch + Band ER"
         duration: "5 min"
@@ -412,7 +400,7 @@ movement_quality:
 tennis_training:
   title: "Technical Tennis Development"
   time: "08:45-09:45"
-  
+
   # NEW PATTERN: Skill development blocks
   skill_development:
     title: "Skill Development Progression"
@@ -427,7 +415,7 @@ tennis_training:
           - "80% balls land short"
           - "Consistent bounce height"
           - "Good court coverage"
-      
+
       - skill: "Drop Shot Precision"
         time: "15 min"
         technical_focus:
@@ -438,7 +426,7 @@ tennis_training:
           - "70% balls land in service box"
           - "Opponent doesn't reach ball"
           - "Ready for passing shot"
-      
+
       - skill: "Controlled Serving"
         time: "20 min"
         technical_focus:
@@ -449,7 +437,7 @@ tennis_training:
           - "80% first serves in"
           - "Hit all service box areas"
           - "Smooth, repeatable motion"
-  
+
   # Movement patterns
   movement_patterns:
     title: "Tennis-Specific Movement Patterns"
@@ -458,12 +446,12 @@ tennis_training:
         time: "5 min"
         focus: "Return to ready position"
         physical_development: "Efficient movement patterns"
-      
+
       - pattern: "Split Step Timing"
         time: "5 min"
         focus: "Landing as opponent strikes"
         physical_development: "Improved reaction time"
-      
+
       - pattern: "Court Coverage Drills"
         time: "5 min"
         focus: "Lateral and linear movement"
@@ -473,7 +461,7 @@ tennis_training:
 aerobic_consolidation:
   title: "Aerobic Base Consolidation"
   time: "09:50-10:20"
-  
+
   zone_2_training:
     title: "Zone-2 Sustained Training"
     component: "Steady State Cycling"
@@ -486,7 +474,7 @@ aerobic_consolidation:
       - "HR 60-70% max"
       - "Rate of Perceived Exertion 5-6/10"
       - "Should feel 'easy' throughout"
-    
+
     benefits:
       - "Enhanced fat oxidation capacity"
       - "Improved cardiac output"
@@ -497,7 +485,7 @@ aerobic_consolidation:
 recovery_protocol:
   title: "Enhanced Mobility & Recovery"
   time: "10:20-10:40"
-  
+
   # NEW PATTERN: Targeted mobility by area
   targeted_mobility:
     title: "Targeted Mobility Based on Movement Screen"
@@ -506,27 +494,27 @@ recovery_protocol:
         exercise: "Couch Stretch"
         duration: "90s each side"
         purpose: "Improved hip extension"
-      
+
       - area: "Thoracic Spine"
         exercise: "Quadruped T-Spine Rotation"
         duration: "60s"
         purpose: "Better serve rotation"
-      
+
       - area: "Shoulders"
         exercise: "Doorway Chest Stretch"
         duration: "60s"
         purpose: "Improved overhead mobility"
-      
+
       - area: "Ankles"
         exercise: "Wall Ankle Mobilization"
         duration: "60s each side"
         purpose: "Enhanced court movement"
-      
+
       - area: "Wrists"
         exercise: "Flexor/Extensor Stretches"
         duration: "30s each direction"
         purpose: "Racquet control improvement"
-  
+
   # End of session protocol
   end_session_protocol:
     title: "End-of-Session Recovery Protocol"
@@ -535,17 +523,17 @@ recovery_protocol:
         duration: "5 min"
         method: "Light walking/easy cycling"
         purpose: "Gradual return to resting state"
-      
+
       - protocol: "Gentle Breathing"
         duration: "3 min"
         method: "Diaphragmatic breathing"
         purpose: "Parasympathetic activation"
-      
+
       - protocol: "Hydration Check"
         duration: "2 min"
         method: "Assess urine color, weigh-in"
         purpose: "Monitor hydration status"
-      
+
       - protocol: "Session Notes"
         duration: "5 min"
         method: "Document energy, technique, feel"
@@ -558,19 +546,19 @@ thursday_assessment:
     - metric: "Aerobic Session Quality"
       value: "___/10"
       notes: "Sustainable effort?"
-    
+
     - metric: "Technical Skill Progress"
       value: "___/10"
       notes: "Improvement areas noted"
-    
+
     - metric: "Movement Quality"
       value: "___/10"
       notes: "Screen limitations addressed"
-    
+
     - metric: "Energy After Session"
       value: "___/10"
       notes: "Recovery need for tomorrow"
-    
+
     - metric: "Overall Training Feel"
       value: "___/10"
       notes: "Weekly fatigue accumulation"
@@ -583,17 +571,17 @@ metrics:
     movement_minutes: 30
     recovery_minutes: 15
     total_minutes: 165
-    
+
   intensity:
     tennis_average: "60-65%"
     conditioning_average: "65-75%"
     overall_rpe: "5-6/10"
-    
+
   zone_2_metrics:
     time_in_zone: "45 minutes"
     average_heart_rate: "130-140 bpm"
     nasal_breathing_compliance: "____%"
-    
+
   recovery_focus:
     lower_intensity_than_wednesday: true
     active_recovery_emphasis: true
@@ -604,16 +592,16 @@ coaching_notes:
     note: "Nasal breathing only ensures proper zone - if you must mouth breathe, reduce intensity"
     scientific_backing: "Zone 2 increases mitochondrial density by 35% over 12 weeks (San Millán 2023)"
     application: "Build base for higher intensity work"
-    
+
   - category: "Tendon Health"
     note: "3-second eccentrics with HSR protocol proven to increase tendon stiffness"
     research: "Cook protocol shows 70% reduction in tendinopathy risk"
     key_point: "Consistency more important than load"
-    
+
   - category: "Technical Under Fatigue"
     note: "Skills practiced under mild fatigue transfer better to match play"
     elite_example: "Nadal practices technique after fitness work"
-    
+
   - category: "Recovery Day Design"
     note: "Thursday's lower intensity allows Friday's power work to be more effective"
     periodization: "Classic high-low-high-low pattern through week"
@@ -625,11 +613,11 @@ level_modifications:
     - modification: "Skip plyometric components in movement work"
     - modification: "30 minutes tennis practice instead of 60"
     - modification: "Use regression for all exercises"
-    
+
   intermediate:
     - modification: "Follow program as written"
     - modification: "Can add 5-10 minutes to Zone-2 work if feeling good"
-    
+
   advanced:
     - modification: "Add 1-2 more Zone-2 intervals"
     - modification: "Include advanced plyometric variations"
@@ -640,18 +628,18 @@ week_integration:
   previous_day_connection: "Recovery from Wednesday's high intensity"
   preparation_for: "Friday's power and assessment day"
   weekly_theme: "Strategic recovery to maximize adaptation"
-  
+
   key_adaptations:
     - "Aerobic base development"
     - "Technical skill refinement"
     - "Movement quality improvement"
     - "Tendon conditioning"
-    
+
   carry_over:
     - to_friday: "Fresh nervous system for power work"
     - to_weekend: "Aerobic base supports match endurance"
     - long_term: "Zone-2 work pays dividends in weeks 4-8"
-    
+
   recovery_focus: "Lower intensity allows supercompensation from Mon-Wed work"
 
 # Session tracking requirements
@@ -661,19 +649,19 @@ tracking:
     - "Technical skill success rates"
     - "RPE for each block"
     - "Recovery indicators"
-    
+
   optional_tracking:
     - "HRV during Zone-2 work"
     - "Video analysis of technical skills"
     - "Movement screen improvements"
     - "Tendon response to loading"
-    
+
   week_1_specific:
     - "Establish Zone-2 heart rate ranges"
     - "Document technical focus areas"
     - "Note which movements need work"
     - "Track recovery from mid-week peak"
-    
+
   zone_2_guidelines:
     - "Calculate as 180 - age = upper limit"
     - "Or use 65-75% of HRmax"

@@ -1,76 +1,63 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-3/wednesday.yml';
 
 <WorkoutNav weekNumber={3} />
 
-# Wednesday – Upper Body Power & Conditioning
+# {workoutData.metadata.title}
 
-## Wednesday Schedule
+_{workoutData.metadata.subtitle}_
 
-| Time | Exercise/Drill | Sets×Reps | Instructions |
-|------|---------------|-----------|--------------|}
-| 07:15–08:15 | Tennis Competitive Sets | - | High intensity, tactical strategy |
-| 08:25–09:35 | Push Press | 4×6 | Explosive drive from hips, stable landing |
-| | Bent-over Row | 4×6 | Controlled, engaged lats |
-| | Neutral Grip DB Press | 3×8 | Full range, controlled tempo |
-| | Chin-ups | 3×AMRAP | Controlled, full extension |
-| | Face Pulls | 3×12 | Elbows high, smooth reps |
-| 09:35–09:50 | Conditioning Circuit (Sprint, KB swings) | 3 rounds | High intensity, controlled form |
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-## Quick Exercise Instructions
-
-### Push Press (4×6)
-- Start with barbell at shoulder level
-- Drive explosively with hips and legs
-- Press bar overhead as legs extend
-- Land stable with arms locked
-- Focus on hip-to-shoulder power transfer
-
-### Bent-over Row (4×6)
-- Hinge at hips, flat back
-- Pull bar to lower ribcage
-- Squeeze shoulder blades together
-- Control the negative descent
-- Feel lats working, not just arms
-
-### Neutral Grip DB Press (3×8)
-- Hold dumbbells with palms facing each other
-- Press straight up from shoulders
-- Full range of motion
-- Control both up and down phases
-- Maintain core stability throughout
-
-### Chin-ups (3×AMRAP)
-- Underhand grip, hands shoulder-width apart
-- Pull chest toward bar
-- Control descent to full extension
-- Stop when form breaks down
-- Track total reps for progression
-
-### Face Pulls (3×12)
-- Cable at face height
-- Pull to face with elbows high
-- External rotation at end position
-- Squeeze rear delts and rhomboids
-- Smooth controlled movement
-
-## Key Focus Points
-
-- **Competitive Tennis**: High intensity sets with tactical strategy focus
-- **Explosive Power**: Push press with explosive hip drive and stable landing
-- **Lat Engagement**: Bent-over rows with controlled movement and lat focus
-- **Neutral Grip**: DB press with full range and controlled tempo
-- **Maximum Reps**: Chin-ups to failure with controlled full extension
-- **Posterior Deltoids**: Face pulls with high elbows and smooth execution
-- **High-Intensity Conditioning**: Sprint and kettlebell circuit
-
-## Notes
-
-Wednesday combines competitive tennis with explosive upper body power development and high-intensity conditioning work.
+<WorkoutCarouselFromData week={3} day="wednesday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.preparation_phases?.filter(p => p.type === 'assessment')} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.preparation_phases?.filter(p => p.type === 'assessment')} 
+/>
+
+<TennisTrainingTable data={workoutData.skill_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.conditioning_blocks?.find(b => b.type === 'strength')} />
+
+<RecoveryChecklist data={workoutData.recovery_protocols?.find(r => r.type === 'comprehensive')} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

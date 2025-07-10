@@ -1,0 +1,867 @@
+{
+  "metadata": {
+    "week": 1,
+    "week_name": "Elite Foundation",
+    "day": "tuesday",
+    "day_number": 2,
+    "title": "Enhanced Upper Body Foundation & Tennis",
+    "subtitle": "Building Strength and Precision for Elite Performance",
+    "phase": "Phase 1: Elite Foundation",
+    "phase_week": 1,
+    "focus": "Upper Body Strength & Serve Development",
+    "volume_target": "100% (baseline)",
+    "intensity_target": "65-70%",
+    "athlete_methods": [
+      "HSR Protocol",
+      "Tempo training",
+      "Serve development progression",
+      "Volley refinement"
+    ],
+    "equipment_needed": [
+      "Barbell and weights",
+      "Cable machine or resistance bands",
+      "PVC pipe or resistance band (for dislocates)",
+      "Medicine ball (4-6 lb)",
+      "Tennis court access",
+      "Video recording device (optional)"
+    ],
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [⬅️ Monday](monday) | [Wednesday ➡️](wednesday)",
+      "week_overview_link": "./",
+      "prev_day": "monday",
+      "prev_day_link": "monday",
+      "next_day": "wednesday",
+      "next_day_link": "wednesday"
+    }
+  },
+  "elite_methods": [
+    {
+      "method": "HSR (Heavy Slow Resistance) Protocol",
+      "source": "Norwegian Tennis Federation",
+      "elite_use": "Used by Casper Ruud for injury prevention",
+      "verification": "Published in NSCA journal 2022"
+    },
+    {
+      "method": "Tempo Training",
+      "source": "Patrick Mouratoglou Academy",
+      "elite_use": "Foundation strength phase for all academy players",
+      "verification": "Academy training manual 2023"
+    },
+    {
+      "method": "Serve Development Progression",
+      "source": "Andy Roddick & coaching team",
+      "elite_use": "Progressive serve building protocol",
+      "verification": "Roddick Tennis Academy curriculum"
+    }
+  ],
+  "schedule": {
+    "blocks": [
+      {
+        "id": "assessment",
+        "time": "07:00-07:10",
+        "title": "Daily Assessment",
+        "type": "assessment",
+        "duration": 10,
+        "carousel_data": {
+          "phase_id": "assessment",
+          "phase_title": "Daily Check-in",
+          "phase_icon": "📊",
+          "location": "gym"
+        }
+      },
+      {
+        "id": "upper_strength",
+        "time": "07:15-08:00",
+        "title": "Enhanced Upper Body Strength",
+        "type": "strength",
+        "duration": 45,
+        "carousel_data": {
+          "phase_id": "strength",
+          "phase_title": "Upper Body HSR",
+          "phase_icon": "💪",
+          "location": "gym"
+        }
+      },
+      {
+        "id": "tennis_prep",
+        "time": "08:05-08:25",
+        "title": "Tennis-Specific Upper Body Preparation",
+        "type": "preparation",
+        "duration": 20,
+        "carousel_data": {
+          "phase_id": "preparation",
+          "phase_title": "Tennis Prep",
+          "phase_icon": "🎾",
+          "location": "court"
+        }
+      },
+      {
+        "id": "tennis_skill",
+        "time": "08:30-09:30",
+        "title": "Tennis Serve & Volley Development",
+        "type": "skill",
+        "duration": 60,
+        "carousel_data": {
+          "phase_id": "tennis",
+          "phase_title": "Serve & Volley",
+          "phase_icon": "🎾",
+          "location": "court"
+        }
+      },
+      {
+        "id": "coaching",
+        "time": "09:30-10:30",
+        "title": "Personal Coaching Integration",
+        "type": "coaching",
+        "duration": 60,
+        "carousel_data": {
+          "phase_id": "coaching",
+          "phase_title": "Technical Work",
+          "phase_icon": "🎯",
+          "location": "court"
+        }
+      },
+      {
+        "id": "recovery",
+        "time": "10:30-10:45",
+        "title": "Enhanced Recovery Protocols",
+        "type": "recovery",
+        "duration": 15,
+        "carousel_data": {
+          "phase_id": "recovery",
+          "phase_title": "Recovery",
+          "phase_icon": "🧘",
+          "location": "gym"
+        }
+      }
+    ]
+  },
+  "assessments": [
+    {
+      "id": "daily_assessment",
+      "type": "daily",
+      "title": "Daily Readiness Assessment",
+      "time": "07:00-07:10",
+      "components": [
+        {
+          "id": "comparison_metrics",
+          "name": "Daily Comparison to Baseline",
+          "category": "monitoring",
+          "measurement": {
+            "protocol": "Compare to Monday baseline values",
+            "equipment": "HRV device, subjective scales"
+          },
+          "context": {
+            "description": "Track daily variations to optimize training load",
+            "application": "Adjust intensity based on readiness markers"
+          }
+        }
+      ]
+    }
+  ],
+  "daily_assessment": {
+    "title": "Daily Assessment & Comparison",
+    "time": "07:00-07:10",
+    "comparison_table": {
+      "headers": [
+        "Metric",
+        "Monday Baseline",
+        "Tuesday Reading",
+        "Notes"
+      ],
+      "rows": [
+        {
+          "metric": "HRV",
+          "monday_baseline": "___ ms",
+          "tuesday_reading": "___ ms",
+          "notes": ">5% change = adjust intensity"
+        },
+        {
+          "metric": "Sleep Quality",
+          "monday_baseline": "___/10",
+          "tuesday_reading": "___/10",
+          "notes": "<7 = reduce volume by 20%"
+        },
+        {
+          "metric": "Energy Level",
+          "monday_baseline": "___/10",
+          "tuesday_reading": "___/10",
+          "notes": "<7 = focus on movement quality"
+        },
+        {
+          "metric": "Muscle Soreness",
+          "monday_baseline": "___/10",
+          "tuesday_reading": "___/10",
+          "notes": ">6 = additional mobility work"
+        },
+        {
+          "metric": "Training Motivation",
+          "monday_baseline": "___/10",
+          "tuesday_reading": "___/10",
+          "notes": "<7 = reduce complexity"
+        }
+      ]
+    }
+  },
+  "strength_training": {
+    "title": "Enhanced Upper Body Strength",
+    "time": "07:15-08:00",
+    "primary_movements": [
+      {
+        "exercise_id": "ub_1",
+        "name": "Overhead Press (Tempo)",
+        "category": "upper_power",
+        "sets": "4",
+        "reps": "8",
+        "rest_seconds": 150,
+        "tempo": "3-1-X-0",
+        "load": "65-70% 1RM",
+        "attribution": {
+          "source": "Norwegian Tennis Federation",
+          "elite_use": "Casper Ruud's injury prevention protocol",
+          "coach": "Christian Ruud",
+          "verification": "NTF Performance Manual 2023",
+          "quote": "Slow eccentrics build the tendon resilience needed for serving"
+        },
+        "hsr_protocol": [
+          "3-sec eccentric lowering",
+          "1-sec pause at bottom",
+          "Explosive concentric",
+          "65-70% estimated 1RM"
+        ],
+        "specific_coaching_cues": [
+          "Lower bar to clavicle level",
+          "Drive bar straight up",
+          "Engage core, don't arch back",
+          "Feel shoulders stabilizing"
+        ],
+        "detailed_instructions": [
+          {
+            "phase": "SETUP",
+            "instruction": "Stand with feet hip-width apart, barbell at shoulder level, grip slightly wider than shoulders"
+          },
+          {
+            "phase": "CORE ENGAGEMENT",
+            "instruction": "Brace core like someone is about to punch your stomach, maintain throughout lift"
+          },
+          {
+            "phase": "DESCENT",
+            "instruction": "Lower bar slowly over 3 seconds to just below chin level (clavicle), control the weight"
+          },
+          {
+            "phase": "PAUSE",
+            "instruction": "Hold briefly at bottom position, maintain tension in shoulders and core"
+          },
+          {
+            "phase": "DRIVE",
+            "instruction": "Press bar straight up explosively, drive through legs slightly, bar travels in straight line"
+          },
+          {
+            "phase": "BREATHING",
+            "instruction": "Inhale at top, hold breath during descent and press, exhale after completing rep"
+          },
+          {
+            "phase": "WEIGHT",
+            "instruction": "Use 65-70% of estimated 1RM (weight you could press for 3-5 max reps)"
+          }
+        ],
+        "set_tracking": [
+          {
+            "set": 1,
+            "target_reps": 8
+          },
+          {
+            "set": 2,
+            "target_reps": 8
+          },
+          {
+            "set": 3,
+            "target_reps": 8
+          },
+          {
+            "set": 4,
+            "target_reps": 8
+          }
+        ]
+      },
+      {
+        "exercise_id": "ub_2",
+        "name": "Cable/Band Row (HSR)",
+        "sets": "4",
+        "reps": "10",
+        "rest_seconds": 120,
+        "hsr_protocol": [
+          "4-sec eccentric emphasis",
+          "Squeeze shoulder blades",
+          "Control the weight",
+          "Focus on posture"
+        ],
+        "specific_coaching_cues": [
+          "Pull elbows back, not wide",
+          "Feel rhomboids and mid-traps",
+          "Don't let weight slam down",
+          "Chest up, shoulders down"
+        ],
+        "detailed_instructions": [
+          {
+            "phase": "SETUP",
+            "instruction": "Sit with knees slightly bent, grab cable handle or resistance band, arms extended"
+          },
+          {
+            "phase": "POSTURE",
+            "instruction": "Sit tall with chest up, shoulders down and back, maintain neutral spine throughout"
+          },
+          {
+            "phase": "PULL PHASE",
+            "instruction": "Pull elbows straight back (not wide), lead with elbows, squeeze shoulder blades together"
+          },
+          {
+            "phase": "PEAK CONTRACTION",
+            "instruction": "Hold for 1 second at full contraction, feel the squeeze between shoulder blades"
+          },
+          {
+            "phase": "RETURN PHASE",
+            "instruction": "Slowly return to start over 4 full seconds, maintain tension throughout"
+          },
+          {
+            "phase": "MUSCLE FOCUS",
+            "instruction": "Target rhomboids and middle trapezius, avoid using momentum or body rock"
+          },
+          {
+            "phase": "COMMON ERRORS",
+            "instruction": "Don't round shoulders forward, don't pull with just arms, don't let weight slam down"
+          }
+        ],
+        "set_tracking": [
+          {
+            "set": 1,
+            "target_reps": 10
+          },
+          {
+            "set": 2,
+            "target_reps": 10
+          },
+          {
+            "set": 3,
+            "target_reps": 10
+          },
+          {
+            "set": 4,
+            "target_reps": 10
+          }
+        ]
+      }
+    ],
+    "shoulder_health_activation": {
+      "title": "Shoulder Health & Activation",
+      "exercises": [
+        {
+          "name": "Band Pull-aparts",
+          "sets": "3",
+          "reps": "15",
+          "instructions": "Arms straight, pull band apart",
+          "focus": "Focus on squeezing shoulder blades",
+          "benefits": [
+            "Rear deltoid strengthening",
+            "Postural improvement"
+          ],
+          "detailed_instructions": [
+            {
+              "phase": "SETUP",
+              "instruction": "Hold resistance band with arms extended in front, hands shoulder-width apart"
+            },
+            {
+              "phase": "EXECUTION",
+              "instruction": "Pull band apart by squeezing shoulder blades together, arms stay straight"
+            },
+            {
+              "phase": "RANGE",
+              "instruction": "Pull until band touches chest, feel stretch across chest and work in rear delts"
+            },
+            {
+              "phase": "CONTROL",
+              "instruction": "Slowly return to start position, maintain tension in band throughout"
+            },
+            {
+              "phase": "FORM",
+              "instruction": "Keep shoulders down, don't shrug up, maintain good posture throughout movement"
+            }
+          ]
+        },
+        {
+          "name": "External Rotations",
+          "sets": "3",
+          "reps": "15 each arm",
+          "instructions": "Elbow at 90°, slow controlled rotation",
+          "focus": "Feel the back of shoulder working",
+          "benefits": [
+            "Rotator cuff strengthening",
+            "Serve deceleration strength"
+          ],
+          "detailed_instructions": [
+            {
+              "phase": "POSITION",
+              "instruction": "Stand with elbow at 90 degrees, upper arm parallel to floor, forearm vertical"
+            },
+            {
+              "phase": "MOVEMENT",
+              "instruction": "Rotate forearm backward while keeping elbow in same position"
+            },
+            {
+              "phase": "RANGE",
+              "instruction": "Rotate as far as comfortable, feel work in back of shoulder (infraspinatus)"
+            },
+            {
+              "phase": "CONTROL",
+              "instruction": "2 seconds out, 2 seconds back, focus on smooth controlled movement"
+            },
+            {
+              "phase": "TENNIS APPLICATION",
+              "instruction": "Strengthens muscles that slow down the arm during serve follow-through"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tennis_preparation": {
+    "title": "Tennis-Specific Upper Body Preparation",
+    "time": "08:05-08:25",
+    "exercises": [
+      {
+        "name": "Shoulder Dislocates (PVC/Band)",
+        "duration": "2 min",
+        "instructions": "Slow, controlled, increase ROM gradually",
+        "tennis_application": "Shoulder mobility for serves",
+        "detailed_instructions": [
+          {
+            "phase": "SETUP",
+            "instruction": "Hold PVC pipe or resistance band with wide grip (wider than shoulder-width)"
+          },
+          {
+            "phase": "MOVEMENT",
+            "instruction": "Slowly rotate arms overhead and behind body, keeping arms straight"
+          },
+          {
+            "phase": "PROGRESSION",
+            "instruction": "Start with very wide grip, gradually narrow as mobility improves"
+          },
+          {
+            "phase": "CONTROL",
+            "instruction": "Never force the movement, stop if you feel pinching or pain"
+          },
+          {
+            "phase": "REPETITIONS",
+            "instruction": "8-12 slow controlled repetitions, focus on smooth movement"
+          }
+        ]
+      },
+      {
+        "name": "Arm Circles",
+        "duration": "1 min",
+        "instructions": "Forward/backward, small to large",
+        "tennis_application": "Dynamic shoulder warm-up",
+        "detailed_instructions": [
+          {
+            "phase": "SMALL CIRCLES",
+            "instruction": "Start with 6-inch diameter circles, arms at shoulder height"
+          },
+          {
+            "phase": "PROGRESSION",
+            "instruction": "Gradually increase to large circles (arm's length diameter)"
+          },
+          {
+            "phase": "DIRECTION",
+            "instruction": "15 seconds forward, 15 seconds backward for each size"
+          },
+          {
+            "phase": "FOCUS",
+            "instruction": "Feel the shoulder joint warming up, increasing blood flow"
+          }
+        ]
+      },
+      {
+        "name": "Wrist Circles + Flexor/Extensor Stretches",
+        "duration": "2 min",
+        "instructions": "Both directions, gentle stretch holds",
+        "tennis_application": "Wrist health for racquet control",
+        "detailed_instructions": [
+          {
+            "phase": "CIRCLES",
+            "instruction": "10 each direction, both wrists simultaneously"
+          },
+          {
+            "phase": "FLEXOR STRETCH",
+            "instruction": "Arm extended, palm up, gently pull fingers back for 15 seconds"
+          },
+          {
+            "phase": "EXTENSOR STRETCH",
+            "instruction": "Arm extended, palm down, gently push hand down for 15 seconds"
+          },
+          {
+            "phase": "TENNIS FOCUS",
+            "instruction": "Prepares wrists for impact and racquet control"
+          }
+        ]
+      },
+      {
+        "name": "Bands Rotator Cuff Activation",
+        "duration": "3 min",
+        "instructions": "External rotation, internal rotation",
+        "tennis_application": "Rotator cuff preparation",
+        "detailed_instructions": [
+          {
+            "phase": "EXTERNAL ROTATION",
+            "instruction": "Light band, elbow at 90°, rotate out against resistance"
+          },
+          {
+            "phase": "INTERNAL ROTATION",
+            "instruction": "Rotate arm in against resistance"
+          },
+          {
+            "phase": "REPS",
+            "instruction": "12-15 each direction, focus on quality over speed"
+          },
+          {
+            "phase": "PURPOSE",
+            "instruction": "Activates stabilizing muscles before serve practice"
+          }
+        ]
+      },
+      {
+        "name": "Medicine Ball Chest Pass (Light)",
+        "duration": "2 min",
+        "instructions": "6-8 reps, focus on explosive release",
+        "tennis_application": "Neural activation for power",
+        "detailed_instructions": [
+          {
+            "phase": "SETUP",
+            "instruction": "Stand with feet shoulder-width apart, ball at chest level"
+          },
+          {
+            "phase": "EXECUTION",
+            "instruction": "Explosively push ball forward, focusing on quick release"
+          },
+          {
+            "phase": "CATCH",
+            "instruction": "Have partner throw ball back, or use wall if alone"
+          },
+          {
+            "phase": "PROGRESSION",
+            "instruction": "Start with 4-6 lb ball, focus on speed not weight"
+          },
+          {
+            "phase": "NEURAL FOCUS",
+            "instruction": "Prepares nervous system for explosive tennis movements"
+          }
+        ]
+      }
+    ]
+  },
+  "tennis_training": {
+    "title": "Tennis Serve & Volley Development",
+    "time": "08:30-09:30",
+    "serve_development": {
+      "title": "Serve Development Progression",
+      "phases": [
+        {
+          "phase": "Phase 1: Technique",
+          "time": "15 min",
+          "focus": "Toss consistency, trophy position",
+          "success_metrics": "8/10 tosses same spot"
+        },
+        {
+          "phase": "Phase 2: Power Building",
+          "time": "20 min",
+          "focus": "Leg drive, hip rotation, arm speed",
+          "success_metrics": "Gradual speed increase"
+        },
+        {
+          "phase": "Phase 3: Accuracy",
+          "time": "15 min",
+          "focus": "Target practice, serve placement",
+          "success_metrics": "70% serves in target zones"
+        },
+        {
+          "phase": "Phase 4: Integration",
+          "time": "10 min",
+          "focus": "Serve + first shot patterns",
+          "success_metrics": "Fluid transition to first ball"
+        }
+      ]
+    },
+    "volley_development": {
+      "title": "Volley Development Progression",
+      "drills": [
+        {
+          "drill": "Stationary Volleys",
+          "time": "8 min",
+          "technical_focus": "Compact swing, firm wrist",
+          "physical_focus": "Shoulder stability"
+        },
+        {
+          "drill": "Moving Volleys",
+          "time": "7 min",
+          "technical_focus": "Footwork, court positioning",
+          "physical_focus": "Balance and agility"
+        },
+        {
+          "drill": "Reaction Volleys",
+          "time": "5 min",
+          "technical_focus": "Quick hands, defensive positioning",
+          "physical_focus": "Reflexes and core stability"
+        }
+      ]
+    },
+    "daily_tracking": [
+      {
+        "metric": "Serve accuracy",
+        "unit": "%",
+        "target": "___"
+      },
+      {
+        "metric": "Volley consistency",
+        "unit": "%",
+        "target": "___"
+      },
+      {
+        "metric": "Power progression",
+        "unit": "mph",
+        "target": "___"
+      }
+    ]
+  },
+  "personal_coaching": {
+    "title": "Personal Coaching Integration",
+    "time": "09:30-10:30",
+    "movement_corrections": {
+      "title": "Technical Issues from Movement Screen",
+      "corrections": [
+        {
+          "movement_limitation": "Overhead Squat Forward Lean",
+          "tennis_impact": "Serve balance issues",
+          "corrective_exercise": "Thoracic spine mobility",
+          "coaching_cue": "Chest up during serve prep"
+        },
+        {
+          "movement_limitation": "Single-leg Glute Bridge Weakness",
+          "tennis_impact": "Serve leg drive",
+          "corrective_exercise": "Single-leg strengthening",
+          "coaching_cue": "Drive through back leg on serve"
+        },
+        {
+          "movement_limitation": "Shoulder Y-T-W Difficulty",
+          "tennis_impact": "Serve acceleration",
+          "corrective_exercise": "Shoulder stability work",
+          "coaching_cue": "Feel shoulders working together"
+        }
+      ]
+    },
+    "technique_refinement": {
+      "title": "Technique Refinement Focus",
+      "elements": [
+        {
+          "element": "Serve Toss",
+          "assessment": "Consistency rating ___/10",
+          "improvement_focus": "Same spot every time",
+          "practice_method": "20 tosses without hitting"
+        },
+        {
+          "element": "Volley Footwork",
+          "assessment": "Balance rating ___/10",
+          "improvement_focus": "Quick, light steps",
+          "practice_method": "Shadow practice at net"
+        },
+        {
+          "element": "Court Movement",
+          "assessment": "Efficiency rating ___/10",
+          "improvement_focus": "Recovery step timing",
+          "practice_method": "Cone drills to targets"
+        }
+      ]
+    }
+  },
+  "recovery_protocol": {
+    "title": "Enhanced Recovery Protocols",
+    "time": "10:30-10:45",
+    "upper_body_mobility": {
+      "title": "Upper Body Mobility Sequence",
+      "stretches": [
+        {
+          "name": "Cross-Body Shoulder Stretch",
+          "duration": "30s each arm",
+          "instructions": "Gentle pull across chest",
+          "target": "Posterior deltoid, rhomboids"
+        },
+        {
+          "name": "Overhead Tricep Stretch",
+          "duration": "30s each arm",
+          "instructions": "Reach down spine, gentle pressure",
+          "target": "Triceps, latissimus dorsi"
+        },
+        {
+          "name": "Doorway Chest Stretch",
+          "duration": "45s",
+          "instructions": "Lean forward, feel chest opening",
+          "target": "Pectorals, anterior deltoids"
+        },
+        {
+          "name": "Neck Lateral Flexion",
+          "duration": "20s each side",
+          "instructions": "Gentle ear to shoulder",
+          "target": "Upper trapezius, levator scapulae"
+        }
+      ]
+    },
+    "breathing_protocols": {
+      "title": "Breathing & Nervous System Reset",
+      "protocols": [
+        {
+          "name": "Box Breathing",
+          "duration": "3 min",
+          "method": "4 count in, 4 hold, 4 out, 4 hold",
+          "purpose": "Parasympathetic activation"
+        },
+        {
+          "name": "Progressive Muscle Relaxation",
+          "duration": "5 min",
+          "method": "Tense and release each muscle group",
+          "purpose": "Tension release, recovery"
+        },
+        {
+          "name": "Visualization",
+          "duration": "2 min",
+          "method": "Perfect serve technique mental rehearsal",
+          "purpose": "Motor learning reinforcement"
+        }
+      ]
+    }
+  },
+  "session_documentation": {
+    "title": "Session Documentation",
+    "metrics": [
+      {
+        "metric": "Upper Body RPE",
+        "value": "___/10",
+        "notes": "Energy level during strength work"
+      },
+      {
+        "metric": "Serve Accuracy %",
+        "value": "___%",
+        "notes": "Track improvement over time"
+      },
+      {
+        "metric": "Technical Focus",
+        "value": "___",
+        "notes": "Main coaching point of the day"
+      },
+      {
+        "metric": "Recovery Feel",
+        "value": "___/10",
+        "notes": "How recovered you feel post-session"
+      }
+    ]
+  },
+  "metrics": {
+    "volume": {
+      "tennis_minutes": 120,
+      "strength_minutes": 45,
+      "recovery_minutes": 15,
+      "total_minutes": 180
+    },
+    "intensity": {
+      "tennis_average": "65-70%",
+      "strength_average": "65-70%",
+      "overall_rpe": "6-7/10"
+    },
+    "density": {
+      "work_rest_ratio": "3:1",
+      "high_intensity_minutes": 20
+    }
+  },
+  "coaching_notes": [
+    {
+      "category": "Upper Body Focus",
+      "note": "HSR protocol emphasizes time under tension for tendon health",
+      "application": "3-second eccentrics on all pressing movements"
+    },
+    {
+      "category": "Serve Development",
+      "note": "Build consistency before adding power",
+      "progression": "Week 1: 65% effort, Week 2: 70%, Week 3: 75%"
+    },
+    {
+      "category": "Recovery Priority",
+      "note": "Upper body requires 48-72 hours between similar sessions",
+      "planning": "Next upper focus: Friday (power emphasis)"
+    }
+  ],
+  "level_modifications": {
+    "beginner": [
+      {
+        "modification": "Reduce HSR tempo to 2-0-2"
+      },
+      {
+        "modification": "Use bands instead of weights for rows"
+      },
+      {
+        "modification": "30 minutes tennis skill work instead of 60"
+      }
+    ],
+    "intermediate": [
+      {
+        "modification": "Follow program as written"
+      },
+      {
+        "modification": "Optional: Add 1 extra set to main lifts"
+      }
+    ],
+    "advanced": [
+      {
+        "modification": "Add velocity measurements to lifts"
+      },
+      {
+        "modification": "Increase tennis intensity to 70-75%"
+      },
+      {
+        "modification": "Add contrast sets on final exercise"
+      }
+    ]
+  },
+  "week_integration": {
+    "previous_day_connection": "Builds on Monday's movement assessment findings",
+    "preparation_for": "Wednesday's explosive upper body work",
+    "weekly_theme": "Foundation building with proper movement patterns",
+    "key_adaptations": [
+      "Upper body strength endurance",
+      "Serve technique refinement",
+      "Shoulder stability and health"
+    ],
+    "carry_over": [
+      {
+        "to_wednesday": "Prepared shoulders for explosive work"
+      },
+      {
+        "to_tennis": "Improved serve consistency and control"
+      }
+    ]
+  },
+  "tracking": {
+    "required_metrics": [
+      "All exercise loads and reps completed",
+      "Serve accuracy percentage",
+      "RPE for each training block",
+      "Recovery metrics (HRV, sleep, soreness)"
+    ],
+    "optional_tracking": [
+      "Video analysis of serve technique",
+      "Velocity measurements on main lifts",
+      "Volley success rate at net"
+    ],
+    "week_1_specific": [
+      "Establish baseline serve speed",
+      "Document any movement restrictions",
+      "Note fatigue patterns for load management"
+    ]
+  }
+}

@@ -5,15 +5,19 @@ import { createSubscriber } from '@site/src/config/api';
 import styles from './WelcomeStep.module.css';
 
 interface WelcomeStepProps {
-  onNext: (data: any) => void;
-  data: any;
+  onNext?: (data: any) => void;
+  data?: any;
+  captureEmail?: (email: string) => Promise<{ success: boolean; error?: any }>;
+  wizardData?: any;
+  sessionId?: string;
 }
 
-export function WelcomeStep({ onNext, data }: WelcomeStepProps) {
+export function WelcomeStep({ onNext, data = {}, captureEmail }: WelcomeStepProps) {
   const [email, setEmail] = useState(data.email || '');
   const [name, setName] = useState(data.name || '');
   const [errors, setErrors] = useState<{email?: string; name?: string; subscription?: string}>({});
   const [isLoading, setIsLoading] = useState(false);
+  const [isEmailValid, setIsEmailValid] = useState(false);
 
   const validateEmail = (email: string) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -50,7 +54,15 @@ export function WelcomeStep({ onNext, data }: WelcomeStepProps) {
       const browserLang = navigator.language.toLowerCase();
       const language = browserLang.startsWith('es') ? 'es' : 'en';
       
-      await createSubscriber(email, name, language);
+      // Use new database capture if available, fallback to old method
+      if (captureEmail) {
+        const result = await captureEmail(email);
+        if (!result.success) {
+          throw new Error('Database capture failed');
+        }
+      } else {
+        await createSubscriber(email, name, language);
+      }
       
       // Show brief success message and advance automatically
       setErrors({
@@ -62,7 +74,7 @@ export function WelcomeStep({ onNext, data }: WelcomeStepProps) {
       
       // Auto-advance to success step after brief delay
       setTimeout(() => {
-        onNext({ 
+        onNext?.({ 
           email, 
           name, 
           language,
@@ -91,102 +103,64 @@ export function WelcomeStep({ onNext, data }: WelcomeStepProps) {
 
   return (
     <div className={styles.welcomeStep}>
-      <div className={styles.hero}>
-        <div className={styles.pdfOffer}>
-          <div className={styles.pdfIcon}>📄</div>
-          <h1 className={styles.title}>
-            <Translate id="onboarding.welcome.pdf.title">
-              Descarga GRATIS tu rutina de 7 días
-            </Translate>
-          </h1>
-          <p className={styles.subtitle}>
-            <Translate id="onboarding.welcome.pdf.subtitle">
-              Métodos exactos de entrenadores de Alcaraz, Sinner y medallistas olímpicos
-            </Translate>
-          </p>
-        </div>
-
-        <div className={styles.urgency}>
-          <span className={styles.urgencyIcon}>⚡</span>
-          <span className={styles.urgencyText}>
-            <Translate id="onboarding.welcome.urgency">
-              Solo ingresa tu email y recíbelo instantáneamente
-            </Translate>
-          </span>
-        </div>
-      </div>
-
-      <div className={styles.quickForm}>
-        <form onSubmit={handleSubmit} className={styles.form}>
-          <div className={styles.emailSection}>
-            <h3 className={styles.formTitle}>
-              <Translate id="onboarding.welcome.form.simple.title">
-                ¡Consigue tu PDF ahora!
-              </Translate>
-            </h3>
-            
-            <div className={styles.inputGroup}>
-              <input
-                id="email"
-                type="email"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                  if (errors.email) setErrors({...errors, email: undefined});
-                }}
-                placeholder={translate({
-                  id: 'onboarding.welcome.email.placeholder.simple',
-                  message: 'Ingresa tu email para recibir el PDF'
-                })}
-                className={`${styles.emailInput} ${errors.email ? styles.error : ''}`}
-                required
-              />
-              {errors.email && (
-                <span className={styles.errorMessage}>{errors.email}</span>
-              )}
-            </div>
-
-            <div className={styles.optionalName}>
-              <input
-                id="name"
-                type="text"
-                value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                  if (errors.name) setErrors({...errors, name: undefined});
-                }}
-                placeholder={translate({
-                  id: 'onboarding.welcome.name.placeholder.optional',
-                  message: 'Tu nombre (opcional)'
-                })}
-                className={styles.nameInput}
-              />
-            </div>
-
-            {errors.subscription && (
-              <div className={styles.errorMessage} style={{ marginBottom: '1rem' }}>
-                {errors.subscription}
-              </div>
-            )}
-
-            <button type="submit" className={styles.submitButton} disabled={isLoading}>
-              {isLoading ? (
-                <Translate id="onboarding.welcome.loading.simple">
-                  Enviando PDF...
-                </Translate>
-              ) : (
-                <Translate id="onboarding.welcome.cta.simple">
-                  📧 DESCARGAR PDF GRATIS
-                </Translate>
-              )}
-            </button>
-
-            <p className={styles.instant}>
-              <Translate id="onboarding.welcome.instant">
-                📩 Lo recibirás en menos de 1 minuto
-              </Translate>
-            </p>
+      <div className={styles.content}>
+        <div className={styles.hero}>
+          <div className={styles.celebration}>
+            <div className={styles.sparkles}>✨</div>
+            <div className={styles.pdfIcon}>📄</div>
+            <div className={styles.sparkles}>✨</div>
           </div>
+          <h1 className={styles.title}>
+            ¡Tu rutina personalizada está lista!
+          </h1>
+          <h2 className={styles.subtitle}>
+            Rutina de 7 días GRATIS
+          </h2>
+          <p className={styles.description}>
+            Métodos exactos de entrenadores de Alcaraz, Sinner y medallistas olímpicos
+          </p>
+          <div className={styles.valueHighlight}>
+            🎯 Personalizada para tu nivel y objetivos
+          </div>
+        </div>
+
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <div className={styles.inputGroup}>
+            <input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                if (errors.email) setErrors({...errors, email: undefined});
+                setIsEmailValid(validateEmail(e.target.value));
+              }}
+              placeholder="Tu email para recibir el PDF"
+              className={`${styles.emailInput} ${errors.email ? styles.error : ''}`}
+              required
+            />
+            {errors.email && (
+              <span className={styles.errorMessage}>{errors.email}</span>
+            )}
+          </div>
+
+          {errors.subscription && (
+            <div className={styles.errorMessage}>
+              {errors.subscription}
+            </div>
+          )}
+
+          <button 
+            type="submit" 
+            className={`${styles.submitButton} ${isEmailValid ? styles.valid : ''}`} 
+            disabled={isLoading}
+          >
+            {isLoading ? 'Enviando...' : 'Descargar PDF Gratis'}
+          </button>
+
+          <p className={styles.guarantee}>
+            ✅ Entrega instantánea • Sin spam
+          </p>
         </form>
       </div>
     </div>

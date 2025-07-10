@@ -3,81 +3,61 @@ sidebar_position: 8
 ---
 
 import WorkoutNav from '@site/src/components/WorkoutNav';
+import EmailCapture from '@site/src/components/EmailCapture/EmailCapture.mdx';
+import { WorkoutCarouselFromData } from '@site/src/components/workout/WorkoutDataProvider';
+import { 
+  PreWeekAssessment, 
+  MorningProtocol, 
+  TennisTrainingTable, 
+  StrengthTrainingSection 
+} from '@site/src/components/workout/WorkoutSections';
+import {
+  RecoveryChecklist
+} from '@site/src/components/workout/DynamicWorkoutSections';
+import { 
+  ProfessionalAssessmentSection,
+  MovementPrepSection 
+} from '@site/src/components/workout/ProfessionalAssessment';
+import workoutData from '@site/workout-data/week-2/sunday.yml';
 
 <WorkoutNav weekNumber={2} />
 
-# Sunday – Rest & Recovery
+# {workoutData.metadata.title}
 
-## Sunday Recovery Protocol
+_{workoutData.metadata.subtitle}_
 
-### Active Recovery Options
-- **Gentle Yoga**: 30 minutes focusing on flexibility and relaxation
-- **Leisurely Walk**: 30 minutes at easy pace, preferably outdoors
+**Daily Navigation:** {workoutData.metadata.navigation?.daily}
 
-### Recovery Techniques
-- **Extensive foam rolling**: Target all muscle groups worked during the week
-- **Breathwork exercises**: 10-15 minutes of focused breathing techniques
-- **Self-massage**: Address any tight or sore areas
-
-## Weekly Nutrition & Recovery Summary
-
-### Recovery & Nutrition Week 2
-- **Daily protein**: 1.8–2.2 g/kg body weight
-- **Hydration**: 2–3 liters water daily, electrolytes as needed
-- **Sleep**: 7.5–9 hours per night
-- **Monitoring**: Track fatigue, soreness, and HRV for training adjustments
-
-## Quick Recovery Instructions
-
-### Gentle Yoga (30 minutes)
-- Focus on flexibility and relaxation
-- Hold poses 30-60 seconds
-- Emphasize deep breathing throughout
-- Include hip openers and spinal twists
-- End with 5 minutes of relaxation
-- **Video Reference**: [Jeff Nippard - Mobility](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-### Leisurely Walk (30 minutes)
-- Easy pace outdoors if possible
-- No intensity or time pressure
-- Focus on fresh air and mental relaxation
-- Promote gentle blood circulation
-- Mindful walking and enjoyment
-
-### Extensive Foam Rolling
-- Target all muscle groups from the week
-- Spend extra time on tight areas
-- Gentle pressure, avoid pain
-- Include calves, quads, glutes, lats
-- 15-20 minutes total session
-- **Video Reference**: [Jeff Nippard - Recovery](https://www.youtube.com/watch?v=8wPpK6xW9s8)
-
-### Breathwork Exercises (10-15 minutes)
-- Deep diaphragmatic breathing
-- 4-7-8 breathing pattern (inhale 4, hold 7, exhale 8)
-- Focus on parasympathetic activation
-- Reduce stress and promote recovery
-- Can be done lying down or seated
-
-### Self-Massage
-- Address tight or sore areas
-- Use hands, tennis ball, or massage tools
-- Gentle pressure and circular motions
-- Focus on shoulders, neck, feet
-- 10-15 minutes as needed
-
-## Key Focus Points
-
-- **Complete Rest**: No structured training, focus on recovery
-- **Gentle Movement**: Light activity to promote blood flow
-- **Stress Reduction**: Relaxation techniques and breathing exercises
-- **Nutrition Focus**: Adequate protein and hydration for recovery
-- **Sleep Optimization**: Prioritize quality sleep for adaptation
-
-## Notes
-
-Document daily progress, noting performance metrics, perceived exertion, and recovery status for informed adaptations in Week 3.
+<WorkoutCarouselFromData week={2} day="sunday" />
 
 ---
 
-**Use the navigation above to move between days and weeks.**
+<PreWeekAssessment assessments={workoutData.assessments} />
+
+---
+
+<MorningProtocol data={workoutData.preparation_phases?.find(p => p.id === 'morning_protocol')} />
+
+<ProfessionalAssessmentSection 
+  data={workoutData.metadata}
+  assessments={workoutData.assessments} 
+/>
+
+<TennisTrainingTable data={workoutData.tennis_training} />
+
+<MovementPrepSection 
+  data={workoutData.metadata}
+  exercises={workoutData.movement_preparation?.exercises}
+/>
+
+<StrengthTrainingSection data={workoutData.strength_training} />
+
+<RecoveryChecklist data={workoutData.recovery_protocol} />
+
+---
+
+<EmailCapture />
+
+---
+
+**Navigation:** {workoutData.metadata.navigation?.daily}

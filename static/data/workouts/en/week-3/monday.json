@@ -1,0 +1,714 @@
+{
+  "metadata": {
+    "period": 1,
+    "period_name": "Elite Foundation",
+    "day_id": "week_3_monday",
+    "day_name": "Monday",
+    "title": "Lower Body Strength & Tennis Intensification",
+    "subtitle": "Week 3 Peak Intensity - Advanced Progressive Overload Implementation",
+    "phase": "Phase 1: Elite Foundation",
+    "focus_areas": [
+      "Peak Load Progression & Intensity",
+      "Lower Body Strength Intensification",
+      "Tennis Power Advancement"
+    ],
+    "training_parameters": {
+      "volume": "120% (peak progression from baseline)",
+      "intensity": "75-85%",
+      "density": "high",
+      "duration": "4 hours 45 minutes"
+    },
+    "elite_methods": [
+      {
+        "name": "Advanced Progressive Overload Integration",
+        "type": "strength",
+        "attribution": {
+          "method": "Advanced progressive overload principle",
+          "source": "Strength training methodology",
+          "verification": "Evidence-based training protocols",
+          "context": "Week 3 peak load progression"
+        }
+      },
+      {
+        "name": "Spanish Squat Protocol Advanced",
+        "type": "strength",
+        "attribution": {
+          "source": "Spanish Tennis Federation",
+          "athletes": [
+            "Nadal",
+            "Alcaraz",
+            "Muguruza"
+          ],
+          "verification": "Spanish federation documentation",
+          "context": "Advanced isometric progression"
+        }
+      },
+      {
+        "name": "Tennis Power Intensification",
+        "type": "tennis",
+        "attribution": {
+          "method": "Advanced tempo training",
+          "source": "Tennis specific training",
+          "verification": "Court-based power development",
+          "context": "Peak tennis intensity progression"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Tennis court access",
+        "Barbell and weight plates",
+        "Bench or elevated platform",
+        "Resistance band for Spanish squat"
+      ],
+      "optional": [
+        "Cable machine or resistance bands",
+        "Dumbbells (5-25 lbs)",
+        "Calf raise platform",
+        "Medicine ball (3-4kg)"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [Tuesday ➡️](tuesday)",
+      "overview_link": "./",
+      "next_link": "tuesday",
+      "previous_link": null
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Weekly Progress Assessment",
+        "preparation": "Elite Movement Preparation",
+        "skill_training": "Tennis Power Development",
+        "conditioning": "Progressive Strength Training",
+        "recovery": "Active Recovery Protocol"
+      },
+      "ui_elements": [
+        {
+          "type": "info",
+          "title": "Week 3 Peak Progression Focus",
+          "content": "Building upon Week 2 foundation with peak loads and intensity",
+          "icon": "⚡"
+        }
+      ]
+    }
+  },
+  "assessments": [
+    {
+      "id": "weekly_progress_check",
+      "type": "progression",
+      "title": "Week 3 Progress Assessment",
+      "timing": "pre-session",
+      "duration": "15 minutes",
+      "description": "Assess progression from Week 2 baseline",
+      "attribution": {
+        "source": "Progressive training methodology",
+        "methodology": "Weekly progression tracking",
+        "validation": "Strength training protocols",
+        "elite_use": "Used in professional development programs"
+      },
+      "components": [
+        {
+          "id": "load_progression_check",
+          "name": "Load Progression Assessment",
+          "type": "strength",
+          "category": "primary",
+          "measurement": {
+            "protocol": "Compare Week 2 loads with current capacity",
+            "repetitions": "Test sets",
+            "equipment": "Previous week's loads"
+          },
+          "standards": {
+            "elite_benchmark": "10-15% load increase maintained with perfect form",
+            "good_standard": "8-10% load increase with good form",
+            "needs_work": "Unable to increase load or form degradation"
+          },
+          "scoring": {
+            "method": "Load comparison and form assessment",
+            "scale": "percentage increase from baseline",
+            "recording": "Document load increases and form quality"
+          },
+          "context": {
+            "description": "Evaluates strength progression readiness",
+            "application": "Determines appropriate load increases for Week 3"
+          }
+        }
+      ]
+    }
+  ],
+  "preparation_phases": [
+    {
+      "id": "morning_protocol",
+      "title": "Week 3 Morning Protocol",
+      "timing": "6:00-6:15",
+      "duration": "15 minutes",
+      "description": "Advanced morning activation with peak progression focus",
+      "attribution": {
+        "source": "Progressive activation methodology",
+        "methodology": "Week 3 enhanced morning protocol",
+        "validation": "Daily preparation routines",
+        "elite_use": "Used by professional athletes"
+      },
+      "activities": [
+        {
+          "name": "Advanced Breathing Activation",
+          "duration": "3 minutes",
+          "sets": 3,
+          "instructions": [
+            "Deep diaphragmatic breathing with peak progression focus",
+            "Inhalar 4 segundos, mantener 4, exhalar 6",
+            "Mental preparation for peak intensity"
+          ],
+          "implementation": {
+            "execution": "Supine position, hands on chest and abdomen",
+            "focus": "Nervous system preparation for peak intensity",
+            "tennis_application": "Prepares for peak training demands"
+          }
+        },
+        {
+          "name": "Dynamic Joint Mobility Advanced",
+          "duration": "5 minutes",
+          "sets": 1,
+          "instructions": [
+            "Advanced shoulder circles: 15 each direction",
+            "Dynamic hip circles: 15 each direction",
+            "Active leg swings: 15 each leg, each plane"
+          ],
+          "implementation": {
+            "execution": "Controlled dynamic movements",
+            "focus": "Joint preparation for peak loads",
+            "tennis_application": "Prepares joints for peak tennis power movements"
+          }
+        },
+        {
+          "name": "Peak Muscle Activation",
+          "duration": "7 minutes",
+          "sets": 2,
+          "instructions": [
+            "Glute activation: 25 repetitions (increased from Week 2)",
+            "Scapular activation: 25 repetitions",
+            "Core activation: 60 seconds (increased duration)"
+          ],
+          "implementation": {
+            "execution": "Progressive muscle contractions",
+            "focus": "Peak activation for maximum loads",
+            "tennis_application": "Prepares stabilizers for peak training"
+          }
+        }
+      ]
+    }
+  ],
+  "tennis_training": {
+    "title": "Tennis Power Intensification Development",
+    "timing": "7:15-8:15",
+    "duration": "60 minutes",
+    "description": "Peak tennis training with advanced power development",
+    "attribution": {
+      "source": "Tennis power development methodology",
+      "methodology": "Peak tennis intensity training",
+      "validation": "Court-based power protocols",
+      "elite_use": "Professional tennis power development"
+    },
+    "session_structure": {
+      "warm_up": {
+        "title": "Advanced Tennis Warm-up",
+        "duration": "10 minutes",
+        "exercises": [
+          {
+            "name": "Peak Footwork Preparation",
+            "duration": "3 minutes",
+            "sets": 3,
+            "detailed_instructions": [
+              "Side shuffles with racket: 25 steps each direction (increased from Week 2)",
+              "Split steps on service line: 20 repetitions",
+              "Forward/backward movement: 15 steps each direction"
+            ]
+          },
+          {
+            "name": "Advanced Shadow Strokes",
+            "duration": "4 minutes",
+            "sets": 2,
+            "detailed_instructions": [
+              "Forehand shadows: 30 repetitions (increased from Week 2)",
+              "Backhand shadows: 30 repetitions",
+              "Serve motion shadows: 20 repetitions"
+            ]
+          },
+          {
+            "name": "Peak Ball Contact Preparation",
+            "duration": "3 minutes",
+            "sets": 1,
+            "detailed_instructions": [
+              "Soft rally cross-court: 25 balls",
+              "Medium pace rally: 20 balls",
+              "Peak power buildup preparation"
+            ]
+          }
+        ]
+      },
+      "main_session": {
+        "title": "Peak Topspin and Cross-Court Development",
+        "duration": "45 minutes",
+        "drills": [
+          {
+            "name": "Peak Topspin Cross-Court Forehands",
+            "duration": "15 minutes",
+            "balls": 140,
+            "intensity": "High (15-20% increase from Week 2)",
+            "implementation": {
+              "focus": "Peak power progression with maintained accuracy",
+              "target": "Deep cross-court with 90% accuracy",
+              "progression": "Peak pace increase while maintaining 85% accuracy baseline",
+              "technique_points": [
+                {
+                  "phase": "TOPSPIN SETUP",
+                  "instruction": "Ready position, explosive low-to-high swing path preparation"
+                },
+                {
+                  "phase": "CROSS-COURT FOCUS",
+                  "instruction": "Target opposite diagonal court sections with consistent depth and power"
+                },
+                {
+                  "phase": "PEAK POWER PROGRESSION",
+                  "instruction": "Increase shot pace by 15-20% from Week 2 baseline"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Peak Topspin Cross-Court Backhands",
+            "duration": "15 minutes",
+            "balls": 140,
+            "intensity": "High",
+            "implementation": {
+              "focus": "Peak backhand power development with control",
+              "target": "Cross-court consistency with peak pace",
+              "progression": "Peak power increase",
+              "technique_points": [
+                {
+                  "phase": "SETUP",
+                  "instruction": "Early preparation, aggressive shoulder turn"
+                },
+                {
+                  "phase": "CONTACT",
+                  "instruction": "Explosive low-to-high brush contact for topspin"
+                },
+                {
+                  "phase": "FOLLOW-THROUGH",
+                  "instruction": "High finish across body with power"
+                }
+              ]
+            }
+          },
+          {
+            "name": "Peak Alternating Cross-Court Power",
+            "duration": "15 minutes",
+            "balls": 120,
+            "intensity": "Very High",
+            "implementation": {
+              "focus": "Direction change with peak power maintenance",
+              "target": "Controlled alternating cross-court shots at peak intensity",
+              "progression": "Peak transition speed",
+              "movement_emphasis": [
+                "Wide shots with explosive recovery",
+                "Maximum hip rotation through contact",
+                "Active recovery steps between shots",
+                "Athletic stance maintenance under peak loads"
+              ]
+            }
+          }
+        ]
+      },
+      "success_metrics": [
+        {
+          "metric": "Shot Accuracy",
+          "target": "90% shots in target zones",
+          "measurement": "Shots landing in designated court areas"
+        },
+        {
+          "metric": "Power Increase",
+          "target": "15-20% pace increase from Week 2",
+          "measurement": "Subjective pace assessment"
+        },
+        {
+          "metric": "Consistency",
+          "target": "Maintain rally length despite peak pace",
+          "measurement": "Average rally duration"
+        }
+      ]
+    }
+  },
+  "movement_preparation": {
+    "title": "Pre-Strength Movement Preparation",
+    "timing": "8:25-8:35",
+    "duration": "10 minutes",
+    "description": "Peak preparation for maximum training loads",
+    "attribution": {
+      "source": "Progressive movement preparation",
+      "methodology": "Peak load-specific preparation protocols",
+      "validation": "Strength training preparation standards",
+      "elite_use": "Professional athlete preparation"
+    },
+    "exercises": [
+      {
+        "name": "Peak Glute Activation",
+        "sets": 3,
+        "reps": 25,
+        "rest_seconds": 30,
+        "protocol": "Peak glute activation with band resistance",
+        "tennis_application": "Prepares glutes for maximum squat loads"
+      },
+      {
+        "name": "Advanced Hip Mobility",
+        "sets": 2,
+        "reps": 15,
+        "rest_seconds": 30,
+        "protocol": "Hip circles and leg swings",
+        "tennis_application": "Prepares hips for deep squat positions"
+      },
+      {
+        "name": "Peak Spinal Mobility",
+        "sets": 2,
+        "reps": 12,
+        "rest_seconds": 30,
+        "protocol": "Cat-cow and thoracic rotation",
+        "tennis_application": "Prepares spine for peak loaded movements"
+      },
+      {
+        "name": "Core Peak Activation",
+        "sets": 2,
+        "reps": 20,
+        "rest_seconds": 30,
+        "protocol": "Peak core engagement",
+        "tennis_application": "Stabilization for peak compound movements"
+      }
+    ]
+  },
+  "strength_training": {
+    "title": "Peak Lower Body Strength Development",
+    "timing": "8:35-10:05",
+    "duration": "90 minutes",
+    "description": "Week 3 peak progressive overload implementation",
+    "attribution": {
+      "source": "Progressive overload methodology",
+      "methodology": "Peak load progression training",
+      "validation": "Strength development protocols",
+      "elite_use": "Professional strength development"
+    },
+    "main_exercises": [
+      {
+        "name": "Barbell Back Squat",
+        "sets": 4,
+        "reps": 6,
+        "rest_seconds": 180,
+        "load": "Add 10-15% more weight than Week 2",
+        "tempo": "3-1-X-1",
+        "protocol": "Peak load with controlled tempo",
+        "tennis_application": "Foundation strength for explosive movements",
+        "detailed_instructions": {
+          "title": "Week 3 Peak Progression Instructions",
+          "technique_points": [
+            {
+              "phase": "PEAK LOAD INCREASE",
+              "instruction": "Add 10-15% more weight than Week 2 (maintain perfect form priority)"
+            },
+            {
+              "phase": "SETUP",
+              "instruction": "Bar positioned on upper trapezius, feet hip-width apart, toes slightly out"
+            },
+            {
+              "phase": "DESCENT",
+              "instruction": "3-second controlled lowering, feel the stretch in quadriceps and glutes"
+            },
+            {
+              "phase": "BOTTOM POSITION",
+              "instruction": "Thighs parallel or slightly below, pause for 1 second"
+            },
+            {
+              "phase": "EXPLOSIVE ASCENT",
+              "instruction": "Drive through heels explosively, extend hips and knees together"
+            },
+            {
+              "phase": "BREATHING",
+              "instruction": "Inhale at top, hold during descent, exhale forcefully during ascent"
+            },
+            {
+              "phase": "PEAK PROGRESSION FOCUS",
+              "instruction": "Peak weight increase with maintained tempo control"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Bulgarian Split Squat",
+        "sets": 3,
+        "reps": 8,
+        "rest_seconds": 120,
+        "load": "Moderate dumbbells (10-20 lbs)",
+        "tempo": "2-1-X-1",
+        "protocol": "Unilateral strength with peak control",
+        "tennis_application": "Single-leg stability for tennis movements",
+        "detailed_instructions": {
+          "title": "Peak Control Instructions",
+          "technique_points": [
+            {
+              "phase": "SETUP",
+              "instruction": "Rear foot elevated on bench 12-18 inches high, front foot 2-3 feet forward"
+            },
+            {
+              "phase": "WEIGHT DISTRIBUTION",
+              "instruction": "90% weight on front leg, rear leg for balance only"
+            },
+            {
+              "phase": "CONTROLLED DESCENT",
+              "instruction": "Lower straight down over 2-3 seconds, feel front leg working"
+            },
+            {
+              "phase": "GLUTE ENGAGEMENT",
+              "instruction": "Focus on glute activation in front leg, avoid knee-dominant movement"
+            },
+            {
+              "phase": "DRIVE PHASE",
+              "instruction": "Push through front heel explosively to return to start"
+            },
+            {
+              "phase": "BALANCE",
+              "instruction": "If unstable, move closer to bench or lower elevation slightly"
+            },
+            {
+              "phase": "PEAK PROGRESSION",
+              "instruction": "Use moderate dumbbells (10-20 lbs) for added resistance"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Romanian Deadlift",
+        "sets": 3,
+        "reps": 6,
+        "rest_seconds": 150,
+        "load": "Heavy load focusing on hip hinge pattern",
+        "tempo": "3-1-1-1",
+        "protocol": "Hip hinge pattern mastery with peak loads",
+        "tennis_application": "Posterior chain strength for court movement",
+        "detailed_instructions": {
+          "title": "Peak Hip Hinge Pattern Instructions",
+          "technique_points": [
+            {
+              "phase": "STARTING POSITION",
+              "instruction": "Feet hip-width apart, barbell at hip level, slight knee bend"
+            },
+            {
+              "phase": "NEUTRAL SPINE",
+              "instruction": "Maintain natural lumbar curve throughout, chest up"
+            },
+            {
+              "phase": "HIP HINGE",
+              "instruction": "Push hips back first, lower bar by hinging at hips (not squatting down)"
+            },
+            {
+              "phase": "DESCENT",
+              "instruction": "Feel deep stretch in hamstrings, bar stays close to legs"
+            },
+            {
+              "phase": "RANGE",
+              "instruction": "Lower until hamstring flexibility limit, maintain flat back"
+            },
+            {
+              "phase": "ASCENT",
+              "instruction": "Drive hips forward to return to standing, squeeze glutes at top"
+            },
+            {
+              "phase": "PEAK MUSCLE FOCUS",
+              "instruction": "Hamstrings and glutes should do the work, not lower back"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Heavy Calf Raises",
+        "sets": 3,
+        "reps": 10,
+        "rest_seconds": 90,
+        "load": "Heavy dumbbells or calf raise machine",
+        "tempo": "2-1-3-1",
+        "protocol": "Slow controlled motion with full range and peak load",
+        "tennis_application": "Calf strength for court movement and jumping",
+        "detailed_instructions": {
+          "title": "Peak Load Controlled Motion Instructions",
+          "technique_points": [
+            {
+              "phase": "SETUP",
+              "instruction": "Stand on edge of platform with balls of feet on edge, heels hanging"
+            },
+            {
+              "phase": "WEIGHT",
+              "instruction": "Hold heavy dumbbells or use calf raise machine for peak resistance"
+            },
+            {
+              "phase": "ASCENT",
+              "instruction": "Rise up on toes slowly over 2 seconds, maximum height contraction"
+            },
+            {
+              "phase": "TOP HOLD",
+              "instruction": "Pause for 1 second at peak contraction, feel calf muscles squeeze"
+            },
+            {
+              "phase": "DESCENT",
+              "instruction": "Lower heels slowly over 3-4 seconds, stretch below platform level"
+            },
+            {
+              "phase": "RANGE",
+              "instruction": "Full range of motion from maximum stretch to maximum contraction"
+            },
+            {
+              "phase": "PEAK PROGRESSION",
+              "instruction": "Use heavy weight when you can complete all reps with control"
+            }
+          ]
+        }
+      }
+    ],
+    "stability_strength_block": {
+      "title": "Core & Stability Peak Enhancement",
+      "timing": "9:35-10:05",
+      "exercises": [
+        {
+          "name": "Spanish Squat (Isometric)",
+          "sets": 3,
+          "hold": "60 seconds",
+          "rest": "60 seconds",
+          "protocol": "Isometric hold with band resistance - peak duration",
+          "tennis_application": "Knee stability for direction changes and jumping shots",
+          "detailed_instructions": {
+            "title": "Peak Isometric Hold Instructions",
+            "technique_points": [
+              {
+                "phase": "SETUP",
+                "instruction": "Resistance band around knees, back against wall, feet 12 inches from wall"
+              },
+              {
+                "phase": "POSITION",
+                "instruction": "Slide down wall until knees at 90 degrees, thighs parallel to floor"
+              },
+              {
+                "phase": "BAND TENSION",
+                "instruction": "Keep knees pushed out against band resistance throughout"
+              },
+              {
+                "phase": "MUSCLE ACTIVATION",
+                "instruction": "Contract quadriceps actively while maintaining position"
+              },
+              {
+                "phase": "BREATHING",
+                "instruction": "Deep, controlled breathing - never hold breath during isometric"
+              },
+              {
+                "phase": "PEAK PROGRESSION",
+                "instruction": "Week 3 increase from 45 seconds to 60 seconds hold time"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Pallof Press",
+          "sets": 3,
+          "reps": 15,
+          "rest": "60 seconds",
+          "protocol": "Anti-rotation core strengthening - peak resistance",
+          "tennis_application": "Core stability for rotational tennis movements",
+          "detailed_instructions": {
+            "title": "Peak Anti-Rotation Core Instructions",
+            "technique_points": [
+              {
+                "phase": "SETUP",
+                "instruction": "Cable set at chest height, stand perpendicular to machine"
+              },
+              {
+                "phase": "GRIP",
+                "instruction": "Hold handle with both hands at chest level, step away to create tension"
+              },
+              {
+                "phase": "STARTING POSITION",
+                "instruction": "Arms bent, handle at sternum, core engaged"
+              },
+              {
+                "phase": "PRESS OUT",
+                "instruction": "Extend arms straight out from chest, resist cable's pull to rotate you"
+              },
+              {
+                "phase": "HOLD",
+                "instruction": "Maintain straight arm position for 2 seconds, feel core working"
+              },
+              {
+                "phase": "RETURN",
+                "instruction": "Slowly bring handle back to chest with control"
+              },
+              {
+                "phase": "PEAK ANTI-ROTATION",
+                "instruction": "The challenge is preventing rotation - core must work to stay square"
+              },
+              {
+                "phase": "PEAK PROGRESSION",
+                "instruction": "Increase resistance and reps when movement becomes easy"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "recovery_protocol": {
+    "title": "Peak Recovery Protocol",
+    "timing": "10:05-10:30",
+    "duration": "25 minutes",
+    "description": "Peak recovery for maximum training loads",
+    "attribution": {
+      "source": "Enhanced recovery methodology",
+      "methodology": "Peak load recovery protocols",
+      "validation": "Post-training recovery standards",
+      "elite_use": "Professional athlete recovery"
+    },
+    "components": [
+      {
+        "name": "Peak Stretching Sequence",
+        "duration": "10 minutes",
+        "protocol": "Peak static stretching routine",
+        "implementation": {
+          "method": "Hold stretches 40 seconds (increased from Week 2)",
+          "focus": "Major muscle groups worked in session",
+          "progression": "Deeper stretches for peak recovery"
+        }
+      },
+      {
+        "name": "Advanced Foam Rolling Protocol",
+        "duration": "8 minutes",
+        "protocol": "Targeted myofascial release",
+        "implementation": {
+          "method": "Slow, controlled rolling with variable pressure",
+          "focus": "Lower body emphasis, peak tension release",
+          "progression": "Peak pressure tolerance"
+        }
+      },
+      {
+        "name": "Peak Breathing Recovery",
+        "duration": "5 minutes",
+        "protocol": "4-7-8 breathing with peak progression",
+        "implementation": {
+          "method": "Inhale 4, hold 7, exhale 8 (8 cycles)",
+          "focus": "Parasympathetic activation for peak recovery",
+          "progression": "Deepest relaxation response"
+        }
+      },
+      {
+        "name": "Peak Hydration and Nutrition Protocol",
+        "duration": "2 minutes",
+        "protocol": "Peak post-workout nutrition",
+        "implementation": {
+          "method": "Water + electrolytes + protein consideration",
+          "focus": "Recovery optimization for peak demands",
+          "progression": "Peak nutrient timing awareness"
+        }
+      }
+    ]
+  }
+}

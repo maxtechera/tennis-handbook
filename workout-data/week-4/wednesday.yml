@@ -1,26 +1,27 @@
 # Week 4 - Wednesday: Power Endurance & Court Movement Integration
 metadata:
   # Basic identifiers
-  period: 4
-  period_name: "Power Integration Phase"
+  period: 2
+  period_name: "Power Integration"
   day_id: "week_4_wednesday"
   day_name: "Wednesday"
 
   # Workout details
-  title: "Power Endurance & Court Movement Integration"
-  subtitle: "Phase 2 Power Endurance Development"
-  phase: "Phase 2: Power Integration (Week 1)"
+  title: "Total Body Power Integration & Tennis Explosiveness"
+  subtitle: "Phase 2 Full Body Power with Explosive Tennis Integration"
+  phase: "Phase 2: Power Integration"
   focus_areas:
-    - "Power Endurance Development"
-    - "Court Movement Integration"
-    - "Mid-Week Assessment"
+    - "Power Integration"
+    - "Velocity-Based Training"
+    - "Total Body Power Development"
+    - "Tennis Explosiveness"
 
   # Training parameters
   training_parameters:
-    volume: "105% (power endurance focus)"
-    intensity: "75-85% (sustained power)"
-    density: "high"
-    duration: "4 hours 45 minutes"
+    volume: "90% (phase transition deload)"
+    intensity: "85-95% (velocity-based focus)"
+    density: "moderate-high"
+    duration: "4 hours 30 minutes"
 
   # Elite Method Attribution
   elite_methods:

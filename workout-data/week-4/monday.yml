@@ -1,25 +1,25 @@
-# Week 4 - Monday: Power Integration Foundation & Velocity-Based Training
+# Week 4 - Monday: Lower Body Power & Tennis (COMPREHENSIVE VERSION)
 metadata:
   # Basic identifiers
-  period: 4
-  period_name: "Power Integration Phase"
+  period: 2
+  period_name: "Power Integration"
   day_id: "week_4_monday"
   day_name: "Monday"
 
   # Workout details
-  title: "Power Integration Foundation & Velocity-Based Training"
-  subtitle: "Phase 2 Launch - Velocity-Based Training Introduction"
-  phase: "Phase 2: Power Integration (Week 1)"
+  title: "Lower Body Power & Tennis Integration"
+  subtitle: "Week 4 Phase 2 Launch - Velocity-Based Training Introduction"
+  phase: "Phase 2: Power Integration"
   focus_areas:
     - "Velocity-Based Training Introduction"
-    - "Power Integration Foundation"
-    - "Advanced Tennis Power Development"
+    - "Lower Body Power Development"
+    - "Tennis Power Integration"
 
   # Training parameters
   training_parameters:
     volume: "90% (phase transition deload)"
     intensity: "85-95% (velocity-based)"
-    density: "moderate to high"
+    density: "moderate-high"
     duration: "4 hours 30 minutes"
 
   # Elite Method Attribution
@@ -27,11 +27,10 @@ metadata:
     - name: "Velocity-Based Training Protocol"
       type: "power"
       attribution:
-        methodology: "Velocity-based training principles"
+        method: "Velocity-based training principles"
         source: "Elite power development research"
         verification: "Sports science literature"
-        context: "Phase 2 power development"
-        results: "Enhanced power output and rate of force development"
+        context: "Phase 2 power development introduction"
     - name: "Alcaraz Power Integration Method"
       type: "tennis_power"
       attribution:
@@ -41,7 +40,6 @@ metadata:
         source: "Phase 2 power development protocols"
         verification: "Academy training documentation"
         context: "Transition to power-focused training"
-        results: "Improved serve speed and court movement power"
     - name: "ATP Power Development Standards"
       type: "integrated"
       attribution:
@@ -49,25 +47,19 @@ metadata:
         methodology: "Professional power development"
         verification: "Tour-level training protocols"
         context: "Phase 2 power integration"
-        elite_use: "Used by top 50 ATP players"
 
   # Equipment needed
   equipment_required:
     essential:
-      - "Barbell and weights"
-      - "Velocity tracking device (preferred) or smartphone app"
       - "Tennis court access"
-      - "Heart rate monitor/HRV device"
-      - "Dumbbells (5-45 lbs)"
-      - "Medicine balls (3-6kg)"
-      - "Plyo boxes (12-24 inches)"
-      - "Resistance bands"
+      - "Barbell and weight plates"
+      - "Bench or elevated platform"
+      - "Velocity tracking device (if available)"
     optional:
-      - "Force plates"
-      - "Radar gun for serve speed"
-      - "Agility ladder"
-      - "Cones for markers"
-      - "Foam roller"
+      - "Cable machine or resistance bands"
+      - "Dumbbells (5-25 lbs)"
+      - "Medicine ball (3-4kg)"
+      - "Box for plyometric jumps"
 
   # Navigation
   navigation:
@@ -79,851 +71,450 @@ metadata:
   # Display configuration
   display_config:
     section_headers:
-      assessment: "Phase 2 Power Assessment"
-      preparation: "Power Integration Preparation"
-      skill_training: "Advanced Tennis Power Development"
+      assessment: "Phase 2 Transition Assessment"
+      preparation: "Elite Movement Preparation"
+      skill_training: "Tennis Power Integration"
       conditioning: "Velocity-Based Strength Training"
-      recovery: "Power Recovery Protocol"
+      recovery: "Active Recovery Protocol"
 
     ui_elements:
-      - type: "success"
-        title: "Phase 2: Power Integration Launch"
-        content: "Welcome to Phase 2! This phase focuses on velocity-based training and power development"
-        icon: "⚡"
       - type: "info"
-        title: "Velocity-Based Training Introduction"
-        content: "Today introduces velocity tracking for optimal power development"
+        title: "Week 4 Phase 2 Launch"
+        content: "Transitioning to power-focused training with velocity-based protocols"
         icon: "🚀"
 
 # ASSESSMENT SECTIONS
 assessments:
-  - id: "phase_2_power_baseline"
-    type: "baseline"
-    title: "Phase 2 Power Baseline Assessment"
+  - id: "phase_transition_assessment"
+    type: "phase_transition"
+    title: "Week 4 Phase 2 Transition Assessment"
     timing: "pre-session"
-    duration: "35 minutes"
-    description: "Comprehensive power assessment for Phase 2 training"
+    duration: "20 minutes"
+    description: "Assess readiness for power-focused training phase"
 
     attribution:
-      source: "Elite power assessment protocols"
-      methodology: "Phase 2 power evaluation"
-      validation: "Sports science research"
-      elite_use: "Used by professional power athletes"
+      source: "Phase transition methodology"
+      methodology: "Power phase readiness tracking"
+      validation: "Strength to power transition protocols"
+      elite_use: "Used in professional periodization programs"
 
     components:
-      - id: "velocity_profiling"
-        name: "Velocity Profiling Assessment"
+      - id: "power_readiness_check"
+        name: "Power Development Readiness Assessment"
         type: "power"
         category: "primary"
 
         measurement:
-          protocol: "Squat velocity profiling at multiple loads"
-          repetitions: "3 reps at 60%, 70%, 80%, 90% 1RM"
-          equipment: "Velocity tracking device or smartphone app"
+          protocol: "Assess movement quality and strength baseline"
+          repetitions: "Test movements"
+          equipment: "Bodyweight and light loads"
 
         standards:
-          elite_benchmark: "Optimal velocity at each load percentage"
-          velocity_targets: "60%: 0.8-1.0 m/s, 70%: 0.65-0.8 m/s, 80%: 0.5-0.65 m/s"
-          power_zone: "Maximum power typically at 30-60% 1RM"
+          elite_benchmark: "Perfect movement quality with strength foundation"
+          good_standard: "Good movement quality with adequate strength"
+          needs_work: "Movement restrictions or strength deficits"
 
         scoring:
-          method: "Velocity measurements at each load"
-          scale: "meters per second"
-          recording: "Create individual velocity profile"
+          method: "Movement and strength assessment"
+          scale: "ready/developing/needs_work"
+          recording: "Document readiness for power training"
 
         context:
-          description: "Establishes individual velocity profile for optimal loading"
-          application: "Determines optimal loads for power development"
-
-      - id: "reactive_strength_index"
-        name: "Reactive Strength Index (RSI)"
-        type: "power"
-        category: "primary"
-
-        measurement:
-          protocol: "Drop jump from 30cm box with contact time measurement"
-          repetitions: "5 attempts"
-          equipment: "30cm box and contact mat or smartphone app"
-
-        standards:
-          elite_benchmark: "RSI > 2.0 for elite athletes"
-          good_standard: "RSI 1.5-2.0"
-          needs_work: "RSI < 1.5"
-
-        scoring:
-          method: "Jump height ÷ contact time"
-          scale: "RSI units"
-          recording: "Best RSI value from 5 attempts"
-
-        context:
-          description: "Measures reactive strength and stretch-shortening cycle"
-          application: "Indicates readiness for plyometric training"
-
-      - id: "power_endurance_test"
-        name: "Power Endurance Assessment"
-        type: "power"
-        category: "primary"
-
-        measurement:
-          protocol: "10 consecutive vertical jumps with 3-second intervals"
-          repetitions: "10 jumps"
-          equipment: "Jump mat or smartphone app"
-
-        standards:
-          elite_benchmark: "<10% power drop from jump 1 to jump 10"
-          good_standard: "10-15% power drop"
-          needs_work: ">15% power drop"
-
-        scoring:
-          method: "Percentage power maintenance"
-          scale: "Percentage"
-          recording: "Power maintenance across 10 jumps"
-
-        context:
-          description: "Assesses power endurance capacity"
-          application: "Determines training volume for power work"
-
-      - id: "serve_velocity_baseline"
-        name: "Serve Velocity Baseline"
-        type: "skill"
-        category: "primary"
-
-        measurement:
-          protocol: "10 maximum effort serves with velocity tracking"
-          repetitions: "10 serves"
-          equipment: "Radar gun or smartphone app"
-
-        standards:
-          elite_benchmark: "Velocity improvement target: 3-5% from Phase 1"
-          consistency_target: "Standard deviation < 5% of mean"
-          accuracy_requirement: "80% in service box"
-
-        scoring:
-          method: "Average velocity of best 5 serves"
-          scale: "mph or km/h"
-          recording: "Velocity and accuracy data"
-
-        context:
-          description: "Establishes Phase 2 serve power baseline"
-          application: "Tracks power transfer to tennis-specific skills"
-
-  - id: "power_readiness_assessment"
-    type: "daily"
-    title: "Power Training Readiness"
-    timing: "pre-session"
-    duration: "15 minutes"
-    description: "Daily readiness assessment for power training"
-
-    components:
-      - id: "cns_readiness"
-        name: "Central Nervous System Readiness"
-        type: "neural"
-        category: "primary"
-
-        measurement:
-          protocol: "Countermovement jump with eyes closed"
-          repetitions: "3 attempts"
-          equipment: "Jump mat or smartphone app"
-
-        standards:
-          optimal: "Within 5% of personal best"
-          acceptable: "5-10% below personal best"
-          needs_modification: ">10% below personal best"
-
-        context:
-          description: "Assesses CNS readiness for high-intensity power training"
-          application: "Determines if full power training is appropriate"
-
-      - id: "movement_velocity_check"
-        name: "Movement Velocity Check"
-        type: "power"
-        category: "primary"
-
-        measurement:
-          protocol: "3 bodyweight squats with velocity measurement"
-          repetitions: "3 reps"
-          equipment: "Velocity tracking device"
-
-        standards:
-          optimal: "Velocity within 5% of baseline"
-          acceptable: "Velocity 5-10% below baseline"
-          needs_modification: "Velocity >10% below baseline"
-
-        context:
-          description: "Quick movement quality and power check"
-          application: "Adjust training loads based on daily readiness"
-
-# TIMELINE/SCHEDULE
-schedule:
-  type: "time-based"
-  total_duration: "4 hours 30 minutes"
-
-  blocks:
-    - id: "morning_block"
-      time: "6:00-7:30"
-      title: "Power Integration Morning Protocol"
-      type: "preparation"
-
-      activities:
-        - name: "Power Integration Morning Protocol"
-          duration: "90 minutes"
-          type: "preparation"
-          description: "Enhanced preparation for power training"
-
-      carousel_data:
-        phase_id: "morning"
-        phase_title: "Power Morning"
-        phase_icon: "🌅"
-        location: "home/hotel"
-
-    - id: "tennis_block"
-      time: "7:30-8:45"
-      title: "Advanced Tennis Power Development"
-      type: "main"
-
-      activities:
-        - name: "Advanced Tennis Power Development"
-          duration: "75 minutes"
-          type: "main"
-          description: "Power-focused tennis training"
-
-      carousel_data:
-        phase_id: "tennis"
-        phase_title: "Tennis Power"
-        phase_icon: "🎾"
-        location: "tennis_court"
-
-    - id: "movement_block"
-      time: "8:50-9:10"
-      title: "Power Movement Preparation"
-      type: "preparation"
-
-      activities:
-        - name: "Power Movement Preparation"
-          duration: "20 minutes"
-          type: "warm-up"
-          description: "Power-specific movement preparation"
-
-      carousel_data:
-        phase_id: "movement"
-        phase_title: "Power Movement"
-        phase_icon: "🏃"
-        location: "gym/court"
-
-    - id: "strength_block"
-      time: "9:10-10:30"
-      title: "Velocity-Based Strength Training"
-      type: "main"
-
-      activities:
-        - name: "Velocity-Based Strength Training Block"
-          duration: "80 minutes"
-          type: "main"
-          description: "Velocity-based power development"
-
-      carousel_data:
-        phase_id: "strength"
-        phase_title: "VBT Strength"
-        phase_icon: "💪"
-        location: "gym"
-
-    - id: "recovery_block"
-      time: "10:35-10:55"
-      title: "Power Recovery Protocol"
-      type: "recovery"
-
-      activities:
-        - name: "Power Recovery Protocol"
-          duration: "20 minutes"
-          type: "recovery"
-          description: "Power training recovery"
-
-      carousel_data:
-        phase_id: "recovery"
-        phase_title: "Power Recovery"
-        phase_icon: "🧊"
-        location: "recovery_area"
+          description: "Evaluates readiness for velocity-based training"
+          application: "Determines appropriate power training progression"
 
 # PREPARATION PHASES
 preparation_phases:
-  - id: "power_morning_protocol"
-    type: "morning"
-    title: "Power Integration Morning Protocol"
-    duration: "90 minutes"
-    timing: "6:00-7:30"
+  - id: "morning_protocol"
+    title: "Week 4 Morning Protocol"
+    timing: "6:00-6:15"
+    duration: "15 minutes"
+    description: "Phase 2 morning activation with power focus"
 
     attribution:
-      source: "Elite power athlete morning protocols"
-      elite_use: "Professional power development routines"
-      verification: "Power training literature"
+      source: "Power phase activation methodology"
+      methodology: "Week 4 enhanced morning protocol"
+      validation: "Daily preparation routines"
+      elite_use: "Used by professional athletes"
 
     activities:
-      - id: "neural_activation"
-        name: "Neural Activation Protocol"
-        type: "activation"
-        duration: "25 minutes"
-        order: 1
+      - name: "Power Phase Breathing Activation"
+        duration: "3 minutes"
+        sets: 3
+        instructions:
+          - "Deep diaphragmatic breathing with power focus"
+          - "Inhalar 4 segundos, mantener 4, exhalar 6"
+          - "Mental preparation for velocity-based training"
 
         implementation:
-          method: "Progressive neural activation"
-          setup: "Movement space"
-          execution: "CNS activation sequence"
-          focus: "Neural system priming for power"
+          execution: "Supine position, hands on chest and abdomen"
+          focus: "Nervous system preparation for power training"
+          tennis_application: "Prepares for explosive training demands"
 
-        instructions:
-          - phase: "LIGHT_MOVEMENT"
-            text: "5 minutes light movement - arm circles, leg swings, gentle jumping"
-          - phase: "REACTIVE_DRILLS"
-            text: "10 minutes reactive drills - quick feet, direction changes, reaction jumps"
-          - phase: "POWER_PREP"
-            text: "10 minutes power preparation - explosive movements, dynamic stretching"
-
-        cues:
-          - "Wake up the nervous system"
-          - "Progressive intensity build"
-          - "Focus on movement quality"
-          - "Prepare for power training"
-
-      - id: "velocity_preparation"
-        name: "Velocity-Based Movement Preparation"
-        type: "preparation"
-        duration: "30 minutes"
-        order: 2
-
-        implementation:
-          method: "Velocity-specific preparation"
-          setup: "Movement area with equipment"
-          execution: "Progressive velocity building"
-          focus: "Movement velocity optimization"
-
-        instructions:
-          - phase: "SLOW_MOVEMENTS"
-            text: "10 minutes slow, controlled movements - feel the positions"
-          - phase: "MODERATE_VELOCITY"
-            text: "10 minutes moderate velocity - build speed gradually"
-          - phase: "FAST_MOVEMENTS"
-            text: "10 minutes fast movements - approach training velocities"
-
-        cues:
-          - "Build velocity progressively"
-          - "Feel the speed difference"
-          - "Prepare for velocity tracking"
-          - "Quality over maximum speed"
-
-      - id: "power_assessment"
-        name: "Power Assessment Protocol"
-        type: "assessment"
-        duration: "35 minutes"
-        order: 3
-
-        implementation:
-          method: "Comprehensive power assessment"
-          setup: "Assessment stations"
-          execution: "Systematic power evaluation"
-          focus: "Power capabilities and readiness"
-
-        instructions:
-          - phase: "VELOCITY_PROFILING"
-            text: "15 minutes velocity profiling - establish individual profile"
-          - phase: "REACTIVE_STRENGTH"
-            text: "10 minutes reactive strength testing - RSI assessment"
-          - phase: "POWER_ENDURANCE"
-            text: "10 minutes power endurance - sustained power capability"
-
-        cues:
-          - "Honest assessment of current power"
-          - "Establish baseline for progression"
-          - "Quality over maximum effort"
-          - "Data for training optimization"
-
-# SKILL TRAINING
-skill_training:
-  section_title: "Advanced Tennis Power Development"
-  section_description: "Power-focused tennis training with velocity integration"
-
-  sessions:
-    - id: "power_tennis_session"
-      type: "power_integrated"
-      title: "Advanced Tennis Power Development Session"
-      duration: "75 minutes"
-      intensity: "85-95%"
-
-      attribution:
-        methodology: "Power-focused tennis training"
-        source: "Elite tennis power development"
-        elite_use: "Used by ATP power players"
-        verification: "Professional training protocols"
-
-      structure:
-        warm_up: "15 minutes"
-        main_work: "50 minutes"
-        cool_down: "10 minutes"
-
-      components:
-        - id: "power_serve_development"
-          name: "Power Serve Development"
-          type: "power_skill"
-          category: "primary"
-
-          time_structure:
-            type: "duration"
-            value: "25 minutes"
-            rest: "30 seconds between serves"
-
-          setup:
-            court_area: "Full court"
-            equipment: "Radar gun, targets, medicine balls"
-            players: "Individual training"
-
-          implementation:
-            method: "Progressive power serve development"
-            focus: "Maximum velocity with accuracy"
-            key_points: "Explosive hip drive, sequential energy transfer"
-
-          instructions:
-            - phase: "PREPARATION"
-              text: "5 minutes medicine ball overhead throws - prime the serve pattern"
-            - phase: "TECHNICAL_SERVES"
-              text: "10 minutes technical serves at 80% - perfect mechanics"
-            - phase: "POWER_SERVES"
-              text: "10 minutes maximum velocity serves - track speed and accuracy"
-
-          cues:
-            - "Explosive hip drive"
-            - "Sequential energy transfer"
-            - "Maximum velocity with control"
-            - "Track velocity improvements"
-
-          success_criteria:
-            - metric: "Serve velocity"
-              target: "3-5% improvement from baseline"
-              tracking: "Radar gun measurements"
-            - metric: "Accuracy"
-              target: "70% in service box"
-              tracking: "Successful serves count"
-
-        - id: "explosive_groundstrokes"
-          name: "Explosive Groundstroke Development"
-          type: "power_skill"
-          category: "primary"
-
-          time_structure:
-            type: "duration"
-            value: "25 minutes"
-            rest: "Between drill sets"
-
-          setup:
-            court_area: "Full court"
-            equipment: "Balls, cones, targets"
-            players: "Practice partner or coach"
-
-          implementation:
-            method: "Explosive groundstroke training"
-            focus: "Power generation and transfer"
-            key_points: "Hip rotation, explosive extension, recovery"
-
-          instructions:
-            - phase: "POWER_FOREHANDS"
-              text: "10 minutes explosive forehands - maximum velocity with control"
-            - phase: "POWER_BACKHANDS"
-              text: "10 minutes explosive backhands - drive through the ball"
-            - phase: "POWER_COMBINATIONS"
-              text: "5 minutes power combinations - rapid fire explosive shots"
-
-          cues:
-            - "Drive through the ball"
-            - "Explosive hip rotation"
-            - "Maximum power with control"
-            - "Quick recovery for next shot"
-
-          success_criteria:
-            - metric: "Shot velocity"
-              target: "Maximum sustainable velocity"
-              tracking: "Velocity measurements"
-            - metric: "Consistency"
-              target: "80% success rate"
-              tracking: "Successful shot count"
-
-# CONDITIONING BLOCKS
-conditioning_blocks:
-  - id: "velocity_based_strength"
-    type: "power"
-    title: "Velocity-Based Strength Training Block"
-    description: "Velocity-based training for optimal power development"
-    duration: "80 minutes"
-
-    attribution:
-      methodology: "Velocity-based training protocols"
-      source: "Sports science research"
-      elite_use: "Professional power athletes"
-      verification: "Evidence-based power development"
-
-    exercises:
-      - id: "vbt_squat"
-        name: "Velocity-Based Squat Training"
-        category: "primary"
-        order: 1
-
-        loading:
-          sets: "6"
-          reps: "3"
-          intensity: "Load based on velocity targets"
-          rest: "3 minutes"
-          velocity_targets: "0.75-0.85 m/s"
-
-        execution:
-          setup:
-            - "Velocity tracking device attached to barbell"
-            - "Optimal bar position on upper back"
-            - "Feet shoulder-width apart"
-          technique:
-            - "Controlled descent (not timed)"
-            - "Explosive concentric drive"
-            - "Achieve target velocity on each rep"
-            - "Stop set if velocity drops >10%"
-          safety:
-            - "Maintain spinal neutrality"
-            - "Use safety bars"
-            - "Monitor velocity closely"
-
-        cues:
-          - "Explosive intent every rep"
-          - "Hit velocity targets"
-          - "Quality over quantity"
-          - "Stop if velocity drops"
-
-        progressions:
-          regression: "Reduce load to maintain velocity"
-          standard: "6×3 @ target velocity"
-          progression: "Increase load while maintaining velocity"
-
-        tracking:
-          type: "velocity"
-          format: "sets_reps_velocity"
-          sets:
-            - set: 1
-              target: "3 reps @ 0.75-0.85 m/s"
-              actual: ""
-              velocity: ""
-              load: ""
-              notes: "___"
-            - set: 2
-              target: "3 reps @ 0.75-0.85 m/s"
-              actual: ""
-              velocity: ""
-              load: ""
-              notes: "___"
-            - set: 3
-              target: "3 reps @ 0.75-0.85 m/s"
-              actual: ""
-              velocity: ""
-              load: ""
-              notes: "___"
-            - set: 4
-              target: "3 reps @ 0.75-0.85 m/s"
-              actual: ""
-              velocity: ""
-              load: ""
-              notes: "___"
-            - set: 5
-              target: "3 reps @ 0.75-0.85 m/s"
-              actual: ""
-              velocity: ""
-              load: ""
-              notes: "___"
-            - set: 6
-              target: "3 reps @ 0.75-0.85 m/s"
-              actual: ""
-              velocity: ""
-              load: ""
-              notes: "___"
-
-        benefits:
-          primary: "Optimal power development"
-          secondary: "Velocity-based adaptation"
-          sport_specific: "Tennis-specific power transfer"
-
-        attribution:
-          source: "Velocity-based training research"
-          methodology: "Optimal power development"
-          elite_use: "Professional power athletes"
-          verification: "Sports science literature"
-          context: "Phase 2 power development"
-          results: "Enhanced power output"
-
-      - id: "explosive_rdl"
-        name: "Explosive Romanian Deadlift"
-        category: "primary"
-        order: 2
-
-        loading:
-          sets: "4"
-          reps: "5"
-          intensity: "60-70% 1RM"
-          rest: "2.5 minutes"
-          velocity_targets: "0.8-1.0 m/s concentric"
-
-        execution:
-          setup:
-            - "Barbell at hip height"
-            - "Feet hip-width apart"
-            - "Neutral spine position"
-          technique:
-            - "Controlled eccentric (3 seconds)"
-            - "Explosive concentric drive"
-            - "Hip extension velocity focus"
-            - "Maintain velocity targets"
-          safety:
-            - "Maintain flat back"
-            - "Bar stays close to body"
-            - "Don't compromise form for velocity"
-
-        cues:
-          - "Explosive hip drive"
-          - "Feel the velocity"
-          - "Power through the hips"
-          - "Maintain velocity targets"
-
-        tracking:
-          type: "velocity"
-          format: "sets_reps_velocity"
-
-        benefits:
-          primary: "Hip power development"
-          secondary: "Posterior chain strength"
-          sport_specific: "Serve and movement power"
-
-      - id: "plyometric_integration"
-        name: "Plyometric Integration Circuit"
-        category: "power"
-        order: 3
-
-        loading:
-          sets: "3"
-          reps: "Circuit format"
-          intensity: "Maximum effort"
-          rest: "2 minutes between circuits"
-
-        execution:
-          setup:
-            - "Plyometric boxes (12-24 inches)"
-            - "Open space for jumps"
-            - "Medicine balls (3-6kg)"
-          technique:
-            - "Box jumps: 8 reps"
-            - "Lateral bounds: 6 per side"
-            - "Medicine ball slams: 10 reps"
-            - "Depth jumps: 5 reps"
-          safety:
-            - "Soft landings"
-            - "Full recovery between reps"
-            - "Stop if form degrades"
-
-        cues:
-          - "Explosive takeoff"
-          - "Soft landings"
-          - "Maximum effort each rep"
-          - "Quality over speed"
-
-        tracking:
-          type: "circuit"
-          format: "rounds"
-
-        benefits:
-          primary: "Reactive strength development"
-          secondary: "Power endurance"
-          sport_specific: "Court movement power"
-
-# RECOVERY PROTOCOLS
-recovery_protocols:
-  - id: "power_recovery"
-    type: "immediate"
-    title: "Power Recovery Protocol"
-    duration: "20 minutes"
-    timing: "Post-training"
-
-    attribution:
-      methodology: "Power training recovery"
-      source: "Elite power athlete protocols"
-      elite_use: "Professional power athletes"
-      verification: "Recovery research"
-
-    components:
-      - id: "cns_recovery"
-        name: "CNS Recovery Protocol"
-        type: "neural"
-        duration: "7 minutes"
-        order: 1
-
-        implementation:
-          method: "Central nervous system recovery"
-          intensity: "Relaxation focus"
-          equipment: "Quiet space"
-
-        instructions:
-          - "2 minutes deep breathing (4-7-8 pattern)"
-          - "3 minutes progressive muscle relaxation"
-          - "2 minutes visualization of power improvements"
-
-        cues:
-          - "Deep nervous system recovery"
-          - "Release muscular tension"
-          - "Visualize power gains"
-          - "Prepare for next session"
-
-      - id: "power_assessment_review"
-        name: "Power Assessment Review"
-        type: "assessment"
-        duration: "8 minutes"
-        order: 2
-
-        implementation:
-          method: "Training analysis and documentation"
-          intensity: "Evaluation focus"
-          equipment: "Training log"
-
-        instructions:
-          - "Review velocity data from training"
-          - "Document power improvements"
-          - "Note any technical issues"
-          - "Plan modifications for next session"
-
-        cues:
-          - "Analyze velocity data"
-          - "Document power progress"
-          - "Plan for improvement"
-          - "Track Phase 2 adaptations"
-
-      - id: "mobility_power_focus"
-        name: "Power-Focused Mobility"
-        type: "mobility"
+      - name: "Dynamic Joint Mobility Power Prep"
         duration: "5 minutes"
-        order: 3
+        sets: 1
+        instructions:
+          - "Power shoulder circles: 15 each direction"
+          - "Dynamic hip circles: 15 each direction"
+          - "Active leg swings: 15 each leg, each plane"
 
         implementation:
-          method: "Power-specific mobility work"
-          intensity: "Light stretching"
-          equipment: "Foam roller"
+          execution: "Controlled dynamic movements with power intent"
+          focus: "Joint preparation for explosive movements"
+          tennis_application: "Prepares joints for power tennis movements"
 
+      - name: "Power Muscle Activation"
+        duration: "7 minutes"
+        sets: 2
         instructions:
-          - "Hip flexor stretches (power positions)"
-          - "Thoracic spine mobility (rotation)"
-          - "Ankle mobility (power transfer)"
-          - "Shoulder mobility (serve power)"
+          - "Glute activation: 20 repetitions (power focus)"
+          - "Scapular activation: 20 repetitions"
+          - "Core activation: 45 seconds (power stabilization)"
 
-        cues:
-          - "Focus on power positions"
-          - "Maintain mobility for power"
-          - "Quality over quantity"
-          - "Prepare for next session"
+        implementation:
+          execution: "Explosive muscle contractions"
+          focus: "Power activation for velocity-based training"
+          tennis_application: "Prepares stabilizers for power training"
 
-# SESSION METRICS
-session_metrics:
-  volume:
-    tennis_minutes: 75
-    strength_minutes: 80
-    warmup_minutes: 20
-    recovery_minutes: 20
-    morning_protocol_minutes: 90
-    total_minutes: 285
+# TENNIS TRAINING
+tennis_training:
+  title: "Tennis Power Integration Development"
+  timing: "7:15-8:15"
+  duration: "60 minutes"
+  description: "Phase 2 tennis training with power integration focus"
 
-  intensity:
-    tennis_average: "85-95%"
-    strength_average: "Velocity-based"
-    overall_rpe: 8
+  attribution:
+    source: "Tennis power integration methodology"
+    methodology: "Phase 2 tennis training"
+    validation: "Court-based power protocols"
+    elite_use: "Professional tennis power development"
 
-  load_calculations:
-    total_tonnage: "Velocity-optimized loading"
-    volume_load: "Power-focused training"
+  session_structure:
+    warm_up:
+      title: "Power Integration Tennis Warm-up"
+      duration: "10 minutes"
+      
+      exercises:
+        - name: "Power Footwork Preparation"
+          duration: "3 minutes"
+          sets: 3
+          detailed_instructions:
+            - "Explosive side shuffles with racket: 20 steps each direction"
+            - "Power split steps on service line: 15 repetitions"
+            - "Explosive forward/backward movement: 12 steps each direction"
 
-  distances:
-    estimated_court_coverage: "4 km"
-    total_movement: "Power-focused"
+        - name: "Power Shadow Strokes"
+          duration: "4 minutes"
+          sets: 2
+          detailed_instructions:
+            - "Explosive forehand shadows: 20 repetitions"
+            - "Explosive backhand shadows: 20 repetitions"
+            - "Explosive serve motion shadows: 15 repetitions"
 
-# COACHING NOTES
-coaching_notes:
-  technical_focus:
-    - "Introduction to velocity-based training"
-    - "Power development emphasis"
-    - "Velocity tracking implementation"
+        - name: "Power Ball Contact Preparation"
+          duration: "3 minutes"
+          sets: 1
+          detailed_instructions:
+            - "Progressive rally cross-court: 20 balls"
+            - "Power buildup: 15 balls"
+            - "Explosive power preparation"
 
-  load_management:
-    - "Phase 2 transition with reduced volume"
-    - "Velocity-based load adjustment"
-    - "Power quality over quantity"
+    main_session:
+      title: "Power Integration Cross-Court Development"
+      duration: "45 minutes"
+      
+      drills:
+        - name: "Power Integration Cross-Court Forehands"
+          duration: "15 minutes"
+          balls: 100
+          intensity: "High (Power focus)"
+          implementation:
+            focus: "Power integration with maintained accuracy"
+            target: "Deep cross-court with 85% accuracy"
+            progression: "Explosive power development"
+            technique_points:
+              - phase: "POWER SETUP"
+                instruction: "Ready position, explosive preparation"
+              - phase: "CROSS-COURT POWER"
+                instruction: "Target opposite diagonal with explosive intent"
+              - phase: "VELOCITY FOCUS"
+                instruction: "Maximum racket head speed at contact"
 
-  progression_markers:
-    - "Velocity targets achieved"
-    - "Power improvements documented"
-    - "Tennis power transfer evident"
+        - name: "Power Integration Cross-Court Backhands"
+          duration: "15 minutes"
+          balls: 100
+          intensity: "High"
+          implementation:
+            focus: "Backhand power integration"
+            target: "Cross-court consistency with power"
+            progression: "Explosive power development"
+            technique_points:
+              - phase: "SETUP"
+                instruction: "Early preparation, explosive turn"
+              - phase: "CONTACT"
+                instruction: "Explosive brush contact for power"
+              - phase: "FOLLOW-THROUGH"
+                instruction: "Explosive finish across body"
 
-  phase_2_introduction:
-    - "Velocity-based training established"
-    - "Power development protocols initiated"
-    - "Tennis power integration successful"
+        - name: "Alternating Power Cross-Court"
+          duration: "15 minutes"
+          balls: 80
+          intensity: "Very High"
+          implementation:
+            focus: "Direction change with explosive power"
+            target: "Alternating cross-court shots with power"
+            progression: "Explosive transition speed"
+            movement_emphasis:
+              - "Explosive shots with rapid recovery"
+              - "Maximum hip rotation through contact"
+              - "Explosive recovery steps between shots"
+              - "Athletic stance maintenance with power focus"
 
-# LEVEL MODIFICATIONS
-level_modifications:
-  beginner:
-    volume: "Reduce to 2 sets per exercise"
-    intensity: "Focus on movement quality first"
-    tennis: "Reduce to 60 minutes"
-    velocity: "Learn velocity tracking basics"
+    success_metrics:
+      - metric: "Shot Power"
+        target: "Maximum velocity with 85% accuracy"
+        measurement: "Subjective power assessment"
+      - metric: "Movement Explosiveness"
+        target: "Explosive recovery between shots"
+        measurement: "Movement quality assessment"
+      - metric: "Consistency"
+        target: "Maintain rally length with power focus"
+        measurement: "Average rally duration"
 
-  intermediate:
-    volume: "As prescribed"
-    intensity: "As prescribed"
-    tennis: "As prescribed"
-    velocity: "Standard velocity targets"
+# MOVEMENT PREPARATION
+movement_preparation:
+  title: "Pre-Strength Power Preparation"
+  timing: "8:25-8:35"
+  duration: "10 minutes"
+  description: "Power-specific preparation for velocity-based training"
 
-  advanced:
-    volume: "Add 1 set to main lifts"
-    intensity: "Higher velocity targets"
-    tennis: "Increase to 90 minutes"
-    velocity: "Advanced velocity profiling"
+  attribution:
+    source: "Power movement preparation"
+    methodology: "Velocity-based preparation protocols"
+    validation: "Power training preparation standards"
+    elite_use: "Professional athlete preparation"
 
-# WEEK INTEGRATION
-week_integration:
-  weekly_theme: "Power Integration Launch"
-  daily_priority: "Velocity-based training introduction"
-  phase_focus: "Power development foundation"
-  
-  connects_to:
-    tuesday: "Upper body power integration"
-    wednesday: "Power endurance development"
-    friday: "Integrated power application"
+  exercises:
+    - name: "Power Glute Activation"
+      sets: 3
+      reps: 15
+      rest_seconds: 30
+      protocol: "Explosive glute activation"
+      tennis_application: "Prepares glutes for explosive movements"
+
+    - name: "Dynamic Power Hip Mobility"
+      sets: 2
+      reps: 12
+      rest_seconds: 30
+      protocol: "Explosive hip circles and leg swings"
+      tennis_application: "Prepares hips for explosive movements"
+
+    - name: "Power Spinal Mobility"
+      sets: 2
+      reps: 10
+      rest_seconds: 30
+      protocol: "Explosive cat-cow and thoracic rotation"
+      tennis_application: "Prepares spine for explosive movements"
+
+    - name: "Core Power Activation"
+      sets: 2
+      reps: 15
+      rest_seconds: 30
+      protocol: "Explosive core engagement"
+      tennis_application: "Stabilization for explosive movements"
+
+# STRENGTH TRAINING
+strength_training:
+  title: "Velocity-Based Lower Body Power Development"
+  timing: "8:35-10:05"
+  duration: "90 minutes"
+  description: "Week 4 velocity-based training introduction"
+
+  attribution:
+    source: "Velocity-based training methodology"
+    methodology: "Power development training"
+    validation: "Velocity-based training protocols"
+    elite_use: "Professional power development"
+
+  main_exercises:
+    - name: "Barbell Back Squat (Velocity-Based)"
+      sets: 5
+      reps: 3
+      rest_seconds: 180
+      load: "70-80% 1RM (velocity-based)"
+      tempo: "X-1-X-1 (explosive intent)"
+      protocol: "Velocity-based power development"
+      tennis_application: "Explosive lower body power"
+
+      detailed_instructions:
+        title: "Week 4 Velocity-Based Instructions"
+        technique_points:
+          - phase: "VELOCITY-BASED LOADING"
+            instruction: "Use 70-80% 1RM with explosive intent (measure bar speed if possible)"
+          - phase: "SETUP"
+            instruction: "Bar positioned on upper trapezius, feet hip-width apart, toes slightly out"
+          - phase: "DESCENT"
+            instruction: "Controlled lowering, prepare for explosive ascent"
+          - phase: "BOTTOM POSITION"
+            instruction: "Brief pause, prepare for maximum velocity ascent"
+          - phase: "EXPLOSIVE ASCENT"
+            instruction: "Drive through heels with MAXIMUM SPEED and intent"
+          - phase: "BREATHING"
+            instruction: "Inhale at top, hold during descent, explosive exhale during ascent"
+          - phase: "VELOCITY FOCUS"
+            instruction: "Focus on bar speed and explosive intent, not just weight"
+
+    - name: "Jump Squat"
+      sets: 4
+      reps: 5
+      rest_seconds: 120
+      load: "Bodyweight or 20-30% 1RM"
+      tempo: "X-0-X-0 (explosive)"
+      protocol: "Explosive jump training"
+      tennis_application: "Tennis-specific explosive power"
+
+      detailed_instructions:
+        title: "Explosive Jump Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Feet hip-width apart, hands on hips or holding light weight"
+          - phase: "DESCENT"
+            instruction: "Quarter squat depth, prepare for explosive jump"
+          - phase: "EXPLOSIVE JUMP"
+            instruction: "Jump as high as possible with maximum intent"
+          - phase: "LANDING"
+            instruction: "Soft landing, absorb impact, prepare for next rep"
+          - phase: "POWER FOCUS"
+            instruction: "Maximum height and explosive intent every rep"
+
+    - name: "Romanian Deadlift (Power)"
+      sets: 4
+      reps: 4
+      rest_seconds: 150
+      load: "65-75% 1RM"
+      tempo: "3-1-X-1 (explosive concentric)"
+      protocol: "Power-focused hip hinge"
+      tennis_application: "Posterior chain explosive power"
+
+      detailed_instructions:
+        title: "Power Hip Hinge Instructions"
+        technique_points:
+          - phase: "STARTING POSITION"
+            instruction: "Feet hip-width apart, barbell at hip level, slight knee bend"
+          - phase: "CONTROLLED DESCENT"
+            instruction: "Controlled hip hinge, feel stretch in hamstrings"
+          - phase: "EXPLOSIVE ASCENT"
+            instruction: "Drive hips forward explosively, maximum speed"
+          - phase: "POWER FOCUS"
+            instruction: "Explosive hip extension with maximum intent"
+
+    - name: "Calf Raise Jumps"
+      sets: 4
+      reps: 8
+      rest_seconds: 90
+      load: "Bodyweight"
+      tempo: "X-0-X-0 (explosive)"
+      protocol: "Explosive calf power development"
+      tennis_application: "Tennis movement explosive power"
+
+      detailed_instructions:
+        title: "Explosive Calf Jump Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Stand tall, feet hip-width apart"
+          - phase: "EXPLOSIVE JUMP"
+            instruction: "Jump using only calves and ankles, keep legs straight"
+          - phase: "LANDING"
+            instruction: "Soft landing on balls of feet"
+          - phase: "POWER FOCUS"
+            instruction: "Maximum height using only calf muscles"
+
+  power_integration_block:
+    title: "Power Integration Complex"
+    timing: "9:35-10:05"
     
-  phase_2_objectives:
-    introduction: "Velocity-based training established"
-    development: "Power capabilities enhanced"
-    integration: "Tennis power transfer initiated"
+    exercises:
+      - name: "Squat to Jump Complex"
+        sets: 3
+        reps: "5+5"
+        rest: "120 seconds"
+        protocol: "Heavy squat + explosive jump combination"
+        tennis_application: "Power transfer for tennis movements"
 
-# TRACKING REQUIREMENTS
-tracking:
-  required:
-    - "All velocity measurements"
-    - "Actual loads used"
-    - "Power development metrics"
-    - "Tennis power improvements"
-    - "Recovery indicators"
-    - "Phase 2 adaptation markers"
+        detailed_instructions:
+          title: "Power Complex Instructions"
+          technique_points:
+            - phase: "HEAVY SQUAT"
+              instruction: "5 reps at 80% 1RM with explosive intent"
+            - phase: "TRANSITION"
+              instruction: "Rest 10 seconds, prepare for jumps"
+            - phase: "EXPLOSIVE JUMPS"
+              instruction: "5 maximum height jump squats"
+            - phase: "POWER TRANSFER"
+              instruction: "Feel the power transfer from heavy to explosive"
 
-  optional:
-    - "Force plate data"
-    - "Detailed velocity profiles"
-    - "Video analysis"
-    - "Serve speed tracking"
-    - "Movement quality assessment"
+      - name: "Medicine Ball Slam"
+        sets: 3
+        reps: 8
+        rest: "90 seconds"
+        protocol: "Explosive full-body power development"
+        tennis_application: "Overhead explosive power for serves"
 
-  phase_2_specific:
-    - "Velocity profile establishment"
-    - "Power development tracking"
-    - "Tennis power transfer"
-    - "Phase 2 readiness indicators"
+        detailed_instructions:
+          title: "Explosive Slam Instructions"
+          technique_points:
+            - phase: "SETUP"
+              instruction: "Hold medicine ball overhead, feet hip-width apart"
+            - phase: "EXPLOSIVE SLAM"
+              instruction: "Slam ball down with maximum force and speed"
+            - phase: "RETRIEVAL"
+              instruction: "Pick up ball and repeat with explosive intent"
+            - phase: "POWER FOCUS"
+              instruction: "Maximum force and speed every rep"
 
-# NAVIGATION
-navigation:
-  week_overview: "./"
-  next_day: "tuesday"
-  previous_day: null
-  phase_status: "Phase 2 - Week 1"
+# RECOVERY PROTOCOL
+recovery_protocol:
+  title: "Power Recovery Protocol"
+  timing: "10:05-10:30"
+  duration: "25 minutes"
+  description: "Recovery for velocity-based training"
+
+  attribution:
+    source: "Power training recovery methodology"
+    methodology: "Velocity-based training recovery protocols"
+    validation: "Post-power training recovery standards"
+    elite_use: "Professional athlete recovery"
+
+  components:
+    - name: "Power Phase Stretching Sequence"
+      duration: "10 minutes"
+      protocol: "Power training static stretching"
+      implementation:
+        method: "Hold stretches 30 seconds (focused on power muscles)"
+        focus: "Major power muscles worked in session"
+        progression: "Stretches specific to power training"
+
+    - name: "Power Recovery Foam Rolling"
+      duration: "8 minutes"
+      protocol: "Targeted myofascial release for power training"
+      implementation:
+        method: "Focused rolling on explosive muscle groups"
+        focus: "Power muscles emphasis, tension release"
+        progression: "Power-specific pressure"
+
+    - name: "Power Phase Breathing Recovery"
+      duration: "5 minutes"
+      protocol: "4-7-8 breathing for power recovery"
+      implementation:
+        method: "Inhale 4, hold 7, exhale 8 (6 cycles)"
+        focus: "Parasympathetic activation for power recovery"
+        progression: "Power training relaxation response"
+
+    - name: "Power Phase Nutrition Protocol"
+      duration: "2 minutes"
+      protocol: "Power training nutrition"
+      implementation:
+        method: "Water + electrolytes + protein consideration"
+        focus: "Recovery optimization for power training"
+        progression: "Power phase nutrient timing"

@@ -94,7 +94,6 @@ assessments:
       methodology: "Readiness-based activity selection"
       validation: "Load management protocols"
       elite_use: "Professional training periodization"
-    elite_use: "Used by top 10 ATP players"
     verification: "Brain Game Tennis methodology"
 
 # Schedule blocks for both options
@@ -167,8 +166,6 @@ schedule:
         phase_icon: "🧘"
         location: "home"
 
-# Assessments section
-assessments:
   - id: "saturday_readiness"
     type: "competition_readiness"
     title: "Saturday Option Selection"

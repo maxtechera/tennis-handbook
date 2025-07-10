@@ -1,0 +1,527 @@
+{
+  "metadata": {
+    "period": 1,
+    "period_name": "Elite Foundation",
+    "day_id": "week_1_saturday",
+    "day_name": "Saturday",
+    "title": "Match Play or Enhanced Active Recovery",
+    "subtitle": "Competition Application or Restorative Recovery",
+    "phase": "Phase 1: Elite Foundation",
+    "focus_areas": [
+      "Competition Application",
+      "Active Recovery Option",
+      "Performance Monitoring"
+    ],
+    "training_parameters": {
+      "volume": "Variable based on option",
+      "intensity": "High (match) or Low (recovery)",
+      "density": "match-dependent",
+      "duration": "2-4 hours (option dependent)"
+    },
+    "elite_methods": [
+      {
+        "name": "Pre-Match Preparation Protocol",
+        "type": "competition",
+        "attribution": {
+          "source": "Rafael Nadal's pre-match routine",
+          "athlete": "Rafael Nadal",
+          "verification": "Documented in 'Rafa' autobiography",
+          "context": "Systematic preparation for peak performance"
+        }
+      },
+      {
+        "name": "Active Recovery Science",
+        "type": "recovery",
+        "attribution": {
+          "source": "Team Sky/INEOS recovery protocols",
+          "verification": "Published in cycling performance journals",
+          "context": "Optimal recovery between competition days"
+        }
+      },
+      {
+        "name": "Match Analysis System",
+        "type": "assessment",
+        "attribution": {
+          "source": "Craig O'Shannessy (Strategy Analyst)",
+          "verification": "Tennis analytics methodology",
+          "context": "Performance tracking during competition"
+        }
+      }
+    ],
+    "equipment_required": {
+      "essential": [
+        "Heart rate monitor",
+        "Hydration supplies"
+      ],
+      "optional": [
+        "Tennis court access (Option A)",
+        "Bike or walking path (Option B)",
+        "Yoga mat (Option B)"
+      ]
+    },
+    "navigation": {
+      "daily": "[📋 Week Overview](./) | [⬅️ Friday](friday) | [Sunday ➡️](sunday)",
+      "overview_link": "./",
+      "next_link": "sunday",
+      "previous_link": "friday"
+    },
+    "display_config": {
+      "section_headers": {
+        "assessment": "Pre-Activity Assessment",
+        "preparation": "Option-Specific Preparation",
+        "skill_training": "Match Play or Recovery Activity",
+        "conditioning": "Competition or Active Recovery",
+        "recovery": "Post-Activity Recovery"
+      },
+      "ui_elements": [
+        {
+          "type": "info",
+          "title": "Week 1 Dual Options",
+          "content": "Choose between competition application or active recovery",
+          "icon": "⚖️"
+        }
+      ]
+    },
+    "day_features": {
+      "has_dual_workout": true
+    }
+  },
+  "assessments": [
+    {
+      "id": "pre_activity_assessment",
+      "type": "daily",
+      "title": "Week 1 Pre-Activity Assessment",
+      "timing": "pre-session",
+      "duration": "10 minutes",
+      "description": "Readiness assessment for competition or recovery choice",
+      "attribution": {
+        "source": "Activity selection methodology",
+        "methodology": "Readiness-based activity selection",
+        "validation": "Load management protocols",
+        "elite_use": "Professional training periodization"
+      },
+      "verification": "Brain Game Tennis methodology"
+    },
+    {
+      "id": "saturday_readiness",
+      "type": "competition_readiness",
+      "title": "Saturday Option Selection",
+      "time": "07:30-07:45",
+      "components": [
+        {
+          "id": "readiness_check",
+          "name": "Competition Readiness Assessment",
+          "category": "decision_making",
+          "measurement": {
+            "protocol": "HRV, energy levels, motivation check",
+            "equipment": "HRV device, subjective scales"
+          },
+          "decision_criteria": {
+            "match_ready": "HRV >90% baseline, Energy >7/10, High motivation",
+            "recovery_needed": "HRV <90% baseline, Energy <7/10, Low motivation"
+          },
+          "context": {
+            "description": "Data-driven decision for Option A or B",
+            "application": "Choose based on objective and subjective markers"
+          }
+        }
+      ]
+    }
+  ],
+  "schedule": {
+    "option_a_blocks": [
+      {
+        "id": "pre_match",
+        "time": "08:00-10:00",
+        "title": "Pre-Match Preparation",
+        "type": "preparation",
+        "duration": 120,
+        "carousel_data": {
+          "phase_id": "preparation",
+          "phase_title": "Match Prep",
+          "phase_icon": "🎾",
+          "location": "court"
+        }
+      },
+      {
+        "id": "match_play",
+        "time": "10:00-12:00",
+        "title": "Competitive Match Play",
+        "type": "competition",
+        "duration": 120,
+        "carousel_data": {
+          "phase_id": "match",
+          "phase_title": "Match Play",
+          "phase_icon": "🏆",
+          "location": "court"
+        }
+      },
+      {
+        "id": "post_match",
+        "time": "12:00-12:30",
+        "title": "Post-Match Recovery",
+        "type": "recovery",
+        "duration": 30,
+        "carousel_data": {
+          "phase_id": "recovery",
+          "phase_title": "Recovery",
+          "phase_icon": "🧘",
+          "location": "court"
+        }
+      }
+    ],
+    "option_b_blocks": [
+      {
+        "id": "morning_assessment",
+        "time": "08:00-08:15",
+        "title": "Recovery Assessment",
+        "type": "assessment",
+        "duration": 15,
+        "carousel_data": {
+          "phase_id": "assessment",
+          "phase_title": "Recovery Check",
+          "phase_icon": "📊",
+          "location": "home"
+        }
+      },
+      {
+        "id": "active_recovery",
+        "time": "08:15-09:15",
+        "title": "Active Recovery Movement",
+        "type": "recovery",
+        "duration": 60,
+        "carousel_data": {
+          "phase_id": "recovery",
+          "phase_title": "Active Recovery",
+          "phase_icon": "🚴",
+          "location": "outdoor"
+        }
+      },
+      {
+        "id": "flexibility",
+        "time": "09:15-09:45",
+        "title": "Flexibility & Mobility",
+        "type": "recovery",
+        "duration": 30,
+        "carousel_data": {
+          "phase_id": "flexibility",
+          "phase_title": "Stretching",
+          "phase_icon": "🧘",
+          "location": "home"
+        }
+      }
+    ]
+  },
+  "workout_options": [
+    {
+      "option": "A",
+      "title": "Match Day Protocol",
+      "description": "Competition application of week's training"
+    },
+    {
+      "option": "B",
+      "title": "Active Recovery Protocol",
+      "description": "Restorative recovery for training adaptation"
+    }
+  ],
+  "option_a_match_play": {
+    "title": "Option A: Match Day Protocol",
+    "pre_match_preparation": {
+      "title": "Pre-Match Preparation (2 hours before)",
+      "phases": [
+        {
+          "phase": "Nutrition",
+          "duration": "30 min",
+          "activities": "Carb-rich meal (1-2g/kg) + hydration",
+          "purpose": "Energy optimization"
+        },
+        {
+          "phase": "Mental Prep",
+          "duration": "20 min",
+          "activities": "Visualization, game plan review",
+          "purpose": "Psychological readiness"
+        },
+        {
+          "phase": "Physical Prep",
+          "duration": "30 min",
+          "activities": "Dynamic warm-up from Tuesday protocol",
+          "purpose": "Neural activation"
+        },
+        {
+          "phase": "Court Prep",
+          "duration": "30 min",
+          "activities": "Progressive tennis warm-up",
+          "purpose": "Sport-specific preparation"
+        },
+        {
+          "phase": "Final Prep",
+          "duration": "10 min",
+          "activities": "Breathing, confidence affirmations",
+          "purpose": "Peak state achievement"
+        }
+      ]
+    },
+    "match_performance_tracking": {
+      "title": "Match Performance Tracking",
+      "statistics": [
+        {
+          "stat": "First Serve %",
+          "target": ">65%",
+          "actual_field": "___%",
+          "notes": "Power and accuracy balance"
+        },
+        {
+          "stat": "Winners/Unforced Errors",
+          "target": ">1.0 ratio",
+          "actual_field": "___ ratio",
+          "notes": "Aggressive but controlled"
+        },
+        {
+          "stat": "Break Points Saved",
+          "target": ">60%",
+          "actual_field": "___%",
+          "notes": "Pressure performance"
+        },
+        {
+          "stat": "Movement Efficiency",
+          "target": "Balanced recovery",
+          "actual_field": "___/10",
+          "notes": "Court coverage quality"
+        }
+      ]
+    },
+    "post_match_recovery": {
+      "title": "Post-Match Recovery",
+      "phases": [
+        {
+          "phase": "Immediate",
+          "duration": "15 min",
+          "activities": "Light walking, hydration, carb replacement",
+          "purpose": "Recovery initiation"
+        },
+        {
+          "phase": "Stretching",
+          "duration": "15 min",
+          "activities": "Full body static stretching",
+          "purpose": "Flexibility maintenance"
+        },
+        {
+          "phase": "Assessment",
+          "duration": "10 min",
+          "activities": "Performance review, lesson identification",
+          "purpose": "Learning optimization"
+        }
+      ]
+    }
+  },
+  "option_b_active_recovery": {
+    "title": "Option B: Active Recovery Protocol",
+    "low_intensity_movement": {
+      "title": "Low-Intensity Movement (60 minutes total)",
+      "activities": [
+        {
+          "activity": "Zone-1 Cycling/Walking",
+          "duration": "30 min",
+          "intensity": "Very easy (RPE 3-4/10)",
+          "focus": "Blood flow enhancement"
+        },
+        {
+          "activity": "Full Body Mobility Flow",
+          "duration": "20 min",
+          "intensity": "Yoga-based stretching",
+          "focus": "Flexibility restoration"
+        },
+        {
+          "activity": "Breathing & Relaxation",
+          "duration": "10 min",
+          "intensity": "Meditation, progressive relaxation",
+          "focus": "Stress reduction"
+        }
+      ]
+    },
+    "recovery_monitoring": {
+      "title": "Recovery Monitoring",
+      "metrics": [
+        {
+          "metric": "HRV",
+          "target": "Within 5% of baseline",
+          "actual_field": "___% change",
+          "adjustment": "Adjust Sunday activities if needed"
+        },
+        {
+          "metric": "Subjective Wellness",
+          "target": "≥7/10",
+          "actual_field": "___/10",
+          "adjustment": "Additional recovery if <7"
+        },
+        {
+          "metric": "Muscle Soreness",
+          "target": "≤5/10",
+          "actual_field": "___/10",
+          "adjustment": "Extra stretching if >5"
+        },
+        {
+          "metric": "Energy Levels",
+          "target": "≥7/10",
+          "actual_field": "___/10",
+          "adjustment": "Plan Monday intensity accordingly"
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "option_a_match": {
+      "volume": {
+        "warm_up_minutes": 30,
+        "match_minutes": 120,
+        "recovery_minutes": 30,
+        "total_minutes": 180
+      },
+      "intensity": {
+        "match_average": "85-95%",
+        "overall_rpe": "8-9/10"
+      },
+      "performance": {
+        "first_serve_percentage": "____%",
+        "points_won_percentage": "____%",
+        "unforced_errors": "____"
+      }
+    },
+    "option_b_recovery": {
+      "volume": {
+        "movement_minutes": 60,
+        "flexibility_minutes": 30,
+        "total_minutes": 90
+      },
+      "intensity": {
+        "movement_average": "30-40%",
+        "overall_rpe": "3-4/10"
+      },
+      "recovery_markers": {
+        "hrv_trend": "Improving/Stable/Declining",
+        "subjective_recovery": "___/10"
+      }
+    }
+  },
+  "coaching_notes": [
+    {
+      "category": "Option Selection Strategy",
+      "note": "Let data drive the decision - ego wants to compete, wisdom knows when to recover",
+      "elite_example": "Federer famous for strategic withdrawals to stay fresh",
+      "decision_framework": "When in doubt, choose recovery - one day won't make you, but can break you"
+    },
+    {
+      "category": "Match Day Excellence",
+      "note": "Apply week's training without overthinking - trust the preparation",
+      "mental_approach": "Process over outcome - focus on executing trained patterns",
+      "key_metrics": "First serve % and court positioning most important"
+    },
+    {
+      "category": "Active Recovery Science",
+      "note": "Light movement accelerates recovery vs complete rest",
+      "research": "Active recovery improves lactate clearance by 50% (Sports Med 2023)",
+      "optimal_intensity": "Zone 1 only - nasal breathing throughout"
+    },
+    {
+      "category": "Weekend Integration",
+      "note": "Saturday sets up Sunday - match play needs full Sunday recovery",
+      "planning": "If Option A chosen, Sunday must be complete rest"
+    }
+  ],
+  "level_modifications": {
+    "beginner": {
+      "option_a": [
+        {
+          "modification": "Play practice sets instead of full match"
+        },
+        {
+          "modification": "Focus on technique over winning"
+        },
+        {
+          "modification": "Limit to 90 minutes total"
+        }
+      ],
+      "option_b": [
+        {
+          "modification": "Follow as written - recovery always appropriate"
+        }
+      ]
+    },
+    "intermediate": {
+      "option_a": [
+        {
+          "modification": "Full match with performance tracking"
+        },
+        {
+          "modification": "Implement week's training focuses"
+        }
+      ],
+      "option_b": [
+        {
+          "modification": "Can add light technical work if feeling good"
+        }
+      ]
+    },
+    "advanced": {
+      "option_a": [
+        {
+          "modification": "Multiple matches if tournament"
+        },
+        {
+          "modification": "Full intensity competition"
+        }
+      ],
+      "option_b": [
+        {
+          "modification": "Include advanced recovery modalities"
+        }
+      ]
+    }
+  },
+  "week_integration": {
+    "previous_day_connection": "Friday's power work needs 24-48h recovery",
+    "preparation_for": "Sunday's complete recovery and planning",
+    "weekly_theme": "Application or restoration - both valuable",
+    "option_a_benefits": [
+      "Tests week's training under pressure",
+      "Competition experience",
+      "Mental toughness development",
+      "Real-world application"
+    ],
+    "option_b_benefits": [
+      "Ensures full adaptation from week",
+      "Prevents overtraining",
+      "Maintains long-term consistency",
+      "Optimizes Week 2 readiness"
+    ],
+    "decision_impact": {
+      "match_choice": "Sunday must be complete recovery",
+      "recovery_choice": "Sunday can include light activity"
+    }
+  },
+  "tracking": {
+    "option_a_required": [
+      "Full match statistics",
+      "Energy levels throughout",
+      "Technical execution quality",
+      "Mental/emotional state"
+    ],
+    "option_b_required": [
+      "HRV before and after",
+      "Subjective recovery scores",
+      "Movement quality assessment",
+      "Energy restoration tracking"
+    ],
+    "decision_documentation": [
+      "Record why you chose Option A or B",
+      "Note how the decision felt",
+      "Track outcomes for future reference",
+      "Learn your recovery patterns"
+    ],
+    "weekly_reflection": [
+      "5 training days completed",
+      "All systems trained",
+      "Ready for Week 2 based on choice"
+    ]
+  }
+}
