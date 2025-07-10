@@ -14,9 +14,11 @@
 .floatingBall2,
 .floatingBall3 {
   position: absolute;
-  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
   opacity: 0.1;
   animation: float 20s infinite ease-in-out;
+  object-fit: contain;
 }
 
 .floatingBall1 {
@@ -398,7 +400,10 @@
 }
 
 .buttonIcon {
-  font-size: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  object-fit: contain;
+  display: inline-block;
 }
 
 .buttonText {
@@ -518,7 +523,8 @@
   }
 
   .buttonIcon {
-    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
   }
 
   .trustBadges {
@@ -538,7 +544,8 @@
   .floatingBall1,
   .floatingBall2,
   .floatingBall3 {
-    font-size: 1rem;
+    width: 1rem;
+    height: 1rem;
   }
 }
 

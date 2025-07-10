@@ -679,7 +679,9 @@ export default function TennisHero({
         const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
         // Add curve factor: 3-8 units of horizontal velocity for curve
         const curveFactor = 3 + Math.random() * 5;
-        ball.vx = direction * (12 + Math.random() * 8) + curveFactor * (Math.random() < 0.5 ? -1 : 1); // Strong horizontal with curve
+        ball.vx =
+          direction * (12 + Math.random() * 8) +
+          curveFactor * (Math.random() < 0.5 ? -1 : 1); // Strong horizontal with curve
         ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
         ballsRef.current.push(ball); // Add newest ball
         setBallCount(ballsRef.current.length);
@@ -728,7 +730,9 @@ export default function TennisHero({
 
         // Add curve factor to celebration balls
         const curveFactor = 2 + Math.random() * 6; // 2-8 units of curve
-        ball.vx = Math.cos(angle) * speed + curveFactor * (Math.random() < 0.5 ? -1 : 1);
+        ball.vx =
+          Math.cos(angle) * speed +
+          curveFactor * (Math.random() < 0.5 ? -1 : 1);
         ball.vy = Math.sin(angle) * speed - 5; // Slight upward bias
 
         ballsRef.current.push(ball);
@@ -869,7 +873,9 @@ export default function TennisHero({
         const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
         // Add curve factor for initial balls
         const curveFactor = 3 + Math.random() * 5; // 3-8 units of curve
-        ball.vx = direction * (12 + Math.random() * 8) + curveFactor * (Math.random() < 0.5 ? -1 : 1); // Strong horizontal with curve
+        ball.vx =
+          direction * (12 + Math.random() * 8) +
+          curveFactor * (Math.random() < 0.5 ? -1 : 1); // Strong horizontal with curve
         ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
         ballsRef.current.push(ball);
       }
@@ -1127,7 +1133,7 @@ export default function TennisHero({
       {/* Content Container */}
       <div className={styles.contentContainer}>
         {/* Urgency Banner */}
-        <div
+        {/* <div
           className={clsx(
             styles.urgencyBanner,
             !showUrgency && styles.urgencyBannerHidden
@@ -1137,7 +1143,7 @@ export default function TennisHero({
           <Translate id="homepage.hero.urgency">
             87% menos raquetas rotas desde que entrenan con nosotros*
           </Translate>
-        </div>
+        </div> */}
 
         {/* Main Title with Animation */}
         <h1 className={styles.heroTitle}>
@@ -1161,9 +1167,9 @@ export default function TennisHero({
           <div className={styles.statItem}>
             <div className={styles.statIcon}>📊</div>
             <span className={styles.statText}>
-              <Translate id="homepage.hero.stat2">
-                Respaldo científico
-              </Translate>
+              Respaldo <br /> científico
+              {/* <Translate id="homepage.hero.stat2">
+              </Translate> */}
             </span>
           </div>
           <div className={styles.statItem}>
@@ -1174,13 +1180,6 @@ export default function TennisHero({
           </div>
         </div>
 
-        {/* Subtitle */}
-        <p className={styles.subtitle}>
-          <Translate id="homepage.hero.subtitle">
-            Arrastra las pelotas, agita el dispositivo e inclínalo para física
-            realista
-          </Translate>
-        </p>
         {/* CTA Button */}
         <button
           ref={ctaButtonRef}
@@ -1195,6 +1194,15 @@ export default function TennisHero({
           </span>
           <div className={styles.ctaIcon}>⚡</div>
         </button>
+
+        {/* Subtitle */}
+        <p className={styles.subtitle}>
+          <Translate id="homepage.hero.subtitle">
+            Arrastra las pelotas, agita el dispositivo e inclínalo para física
+            realista
+          </Translate>
+        </p>
+
         <button
           onClick={async () => {
             // Always request motion permission on iOS when not granted
@@ -1247,7 +1255,9 @@ export default function TennisHero({
                 const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
                 // Add curve factor for button-spawned balls
                 const curveFactor = 4 + Math.random() * 6; // 4-10 units of curve for more dramatic effect
-                ball.vx = direction * (15 + Math.random() * 5) + curveFactor * (Math.random() < 0.5 ? -1 : 1); // Extra strong horizontal with curve
+                ball.vx =
+                  direction * (15 + Math.random() * 5) +
+                  curveFactor * (Math.random() < 0.5 ? -1 : 1); // Extra strong horizontal with curve
                 ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
                 ballsRef.current.push(ball); // Add to end (newest)
               }
@@ -1274,7 +1284,6 @@ export default function TennisHero({
             ) : (
               <span>
                 🎾 {totalBallsThrown?.toLocaleString() || "0"} pelotas lanzadas
-                por la comunidad
               </span>
             )}{" "}
             {/* Trust Indicators */}

@@ -4,6 +4,7 @@ import { QuestionCard } from "../components/QuestionCard";
 import { createSubscriber } from "@site/src/config/api";
 import { tennisBallEvents } from "@site/src/utils/tennis-ball-events";
 import styles from "./WelcomeStep.module.css";
+import logoImg from "@site/static/img/logo.png";
 
 interface WelcomeStepProps {
   onNext?: (data: any) => void;
@@ -166,9 +167,9 @@ export function WelcomeStep({
     <div className={styles.welcomeStep}>
       {/* Animated background elements */}
       {/* <div className={styles.backgroundAnimation}>
-        <div className={styles.floatingBall1}>🎾</div>
-        <div className={styles.floatingBall2}>🎾</div>
-        <div className={styles.floatingBall3}>🎾</div>
+        <img src={logoImg} alt="" className={styles.floatingBall1} />
+        <img src={logoImg} alt="" className={styles.floatingBall2} />
+        <img src={logoImg} alt="" className={styles.floatingBall3} />
       </div> */}
 
       <div className={styles.content}>
@@ -246,7 +247,7 @@ export function WelcomeStep({
               <span className={styles.loadingText}>Preparando tu plan...</span>
             ) : (
               <>
-                <span className={styles.buttonIcon}>🎾</span>
+                <img src={logoImg} alt="Tennis" className={styles.buttonIcon} />
                 <span className={styles.buttonText}>
                   DESCARGAR MI PLAN GRATIS
                 </span>
