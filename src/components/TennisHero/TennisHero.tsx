@@ -26,8 +26,8 @@ class InteractiveTennisBall {
   constructor(x: number, y: number, radius: number = 15) {
     this.x = x;
     this.y = y;
-    this.vx = (Math.random() - 0.5) * 2;
-    this.vy = (Math.random() - 0.5) * 2;
+    this.vx = 0; // No initial velocity, will be set explicitly
+    this.vy = 0; // No initial velocity, will be set explicitly
     this.radius = 15; // Fixed size for all balls
     this.mass = Math.PI * this.radius * this.radius; // Mass based on area
     this.restitution = 0.75; // Tennis ball bounciness
@@ -517,12 +517,15 @@ export default function TennisHero({
       ballsRef.current = [];
       const initialBallCount = Math.min(20, Math.floor(canvas.width / 40)); // Responsive ball count
       for (let i = 0; i < initialBallCount; i++) {
-        ballsRef.current.push(
-          new InteractiveTennisBall(
-            Math.random() * (canvas.width - 60) + 30,
-            Math.random() * (canvas.height - 60) + 30
-          )
+        const ball = new InteractiveTennisBall(
+          canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
+          canvas.height * 0.8 // Start from bottom 20%
         );
+        // Throw toward the walls with strong horizontal velocity
+        const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
+        ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
+        ball.vy = -6 - Math.random() * 3; // Moderate upward velocity -6 to -9
+        ballsRef.current.push(ball);
       }
       setBallCount(ballsRef.current.length);
     };
@@ -600,12 +603,15 @@ export default function TennisHero({
         ballsRef.current.length < 35 &&
         Math.random() > 0.5
       ) {
-        ballsRef.current.push(
-          new InteractiveTennisBall(
-            Math.random() * (canvas.width - 60) + 30,
-            20
-          )
+        const ball = new InteractiveTennisBall(
+          canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
+          canvas.height * 0.8 // Start from bottom
         );
+        // Throw toward the walls with strong horizontal velocity
+        const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
+        ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
+        ball.vy = -6 - Math.random() * 3; // Moderate upward velocity -6 to -9
+        ballsRef.current.push(ball);
         setBallCount(ballsRef.current.length);
       }
 
@@ -785,9 +791,9 @@ export default function TennisHero({
         {/* Urgency Banner */}
         {showUrgency && (
           <div className={styles.urgencyBanner}>
-            <span className={styles.fireEmoji}>🔥</span>
+            <span className={styles.fireEmoji}>📊</span>
             <Translate id="homepage.hero.urgency">
-              Más de 500 descargas este mes
+              87% menos raquetas rotas desde que entrenan con nosotros*
             </Translate>
           </div>
         )}
@@ -809,28 +815,6 @@ export default function TennisHero({
             realista
           </Translate>
         </p>
-
-        {/* Add More Balls Button */}
-        <button
-          onClick={() => {
-            const canvas = canvasRef.current;
-            if (canvas && ballsRef.current.length < 50) {
-              // Add 3 balls at once
-              for (let i = 0; i < 3; i++) {
-                ballsRef.current.push(
-                  new InteractiveTennisBall(
-                    Math.random() * (canvas.width - 60) + 30,
-                    Math.random() * 100 + 50 // Start from top
-                  )
-                );
-              }
-              setBallCount(ballsRef.current.length);
-            }
-          }}
-          className={styles.addBallsButton}
-        >
-          🎾 Más Pelotas ({ballCount})
-        </button>
 
         {/* Visual Stats */}
         <div className={styles.visualStats}>
@@ -869,6 +853,31 @@ export default function TennisHero({
             </Translate>
           </span>
           <div className={styles.ctaIcon}>⚡</div>
+        </button>
+
+        {/* Add More Balls Button - Now below CTA */}
+        <button
+          onClick={() => {
+            const canvas = canvasRef.current;
+            if (canvas && ballsRef.current.length < 50) {
+              // Add 3 balls at once
+              for (let i = 0; i < 3; i++) {
+                const ball = new InteractiveTennisBall(
+                  canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
+                  canvas.height * 0.8 // Start from bottom
+                );
+                // Throw toward the walls with strong horizontal velocity
+                const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
+                ball.vx = direction * (15 + Math.random() * 5); // Extra strong horizontal -20 to -15 or 15 to 20
+                ball.vy = -8 - Math.random() * 4; // Good upward velocity -8 to -12
+                ballsRef.current.push(ball);
+              }
+              setBallCount(ballsRef.current.length);
+            }
+          }}
+          className={styles.addBallsButton}
+        >
+          🎾 Más Pelotas ({ballCount})
         </button>
 
         {/* Trust Indicators */}

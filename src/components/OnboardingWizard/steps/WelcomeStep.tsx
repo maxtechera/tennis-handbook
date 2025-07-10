@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Translate, { translate } from '@docusaurus/Translate';
 import { QuestionCard } from '../components/QuestionCard';
 import { createSubscriber } from '@site/src/config/api';
+import confetti from 'canvas-confetti';
 import styles from './WelcomeStep.module.css';
 
 interface WelcomeStepProps {
@@ -63,6 +64,14 @@ export function WelcomeStep({ onNext, data = {}, captureEmail }: WelcomeStepProp
       } else {
         await createSubscriber(email, name, language);
       }
+      
+      // Trigger confetti effect
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#4CAF50', '#FFC107', '#2196F3', '#FF5722', '#9C27B0']
+      });
       
       // Show brief success message and advance automatically
       setErrors({

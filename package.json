@@ -36,6 +36,7 @@
     "@mdx-js/react": "^3.0.0",
     "@types/js-yaml": "^4.0.9",
     "@vercel/postgres": "^0.10.0",
+    "canvas-confetti": "^1.9.3",
     "clsx": "^2.0.0",
     "drizzle-kit": "^0.31.4",
     "drizzle-orm": "^0.44.2",

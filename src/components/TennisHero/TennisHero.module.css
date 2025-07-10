@@ -239,29 +239,35 @@
 
 /* Add More Balls Button */
 .addBallsButton {
-  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 600;
+  background: transparent;
+  color: #757575;
+  border: 1px solid rgba(117, 117, 117, 0.3);
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: none;
   transition: all 0.3s ease;
-  animation: fadeInUp 0.8s ease-out 0.6s both;
-  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.8s ease-out 0.8s both;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .addBallsButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
-  background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 193, 7, 0.1);
+  border-color: rgba(255, 193, 7, 0.5);
+  color: #f57c00;
 }
 
 .addBallsButton:active {
   transform: translateY(0);
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: none;
 }
 
 /* Visual Stats */
@@ -371,20 +377,23 @@
 
 .activityBadge {
   display: inline-block;
-  background: linear-gradient(135deg, #ff5722, #f4511e);
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 600;
+  background: rgba(117, 117, 117, 0.1);
+  color: #757575;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.65rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
-  animation: urgencyPulse 2s ease-in-out infinite;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(117, 117, 117, 0.15);
 }
 
 .activityText {
-  color: #757575;
-  font-size: 0.9rem;
-  font-weight: 500;
+  color: #888888;
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* Floating Elements */
