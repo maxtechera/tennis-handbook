@@ -1,27 +1,30 @@
-# Pull Request: Add Email Capture to Tennis Handbook
+# Pull Request: Add Email Capture to Tenis Manual
 
-## Linear Issue: MAX-46 - Add Email Capture to Tennis Handbook
+## Linear Issue: MAX-46 - Add Email Capture to Tenis Manual
 
 ## Summary
 
-This PR implements a comprehensive email capture system for Tennis Handbook to start building an audience for future monetization. The implementation includes multiple touchpoints, GDPR compliance, and full Spanish language support.
+This PR implements a comprehensive email capture system for Tenis Manual to start building an audience for future monetization. The implementation includes multiple touchpoints, GDPR compliance, and full Spanish language support.
 
 ## What's Included
 
 ### 🎯 Components Created
 
 1. **EmailCaptureForm** - Main form component with 4 variants:
+
    - Hero (large format for homepage)
    - Inline (standard for content pages)
    - Popup (modal format)
    - Footer (compact sticky bar)
 
 2. **EmailCapturePopup** - Timed popup component:
+
    - Shows after 3 minutes on site
    - 24-hour cooldown between displays
    - Remembers subscriber status
 
 3. **EmailCaptureBar** - Sticky footer bar:
+
    - Appears 5 seconds after page load
    - Dismissible with memory
    - Mobile-optimized
@@ -39,6 +42,7 @@ This PR implements a comprehensive email capture system for Tennis Handbook to s
 ### 📊 Analytics Integration
 
 Automatic event tracking for:
+
 - Email captures by source
 - Popup interactions
 - Footer bar engagement
@@ -55,11 +59,13 @@ Automatic event tracking for:
 ## Implementation Locations
 
 1. **Homepage** (`src/pages/index.tsx`):
+
    - Hero section form
    - Timed popup
    - Sticky footer bar
 
 2. **Example MDX Integration** (`docs/workouts/week-1/monday.mdx`):
+
    - Shows how to add to content pages
 
 3. **API Endpoint** (`static/api/subscribe.js`):
@@ -68,11 +74,13 @@ Automatic event tracking for:
 ## Next Steps
 
 1. **Choose Email Service Provider**:
+
    - ConvertKit (recommended)
    - Mailchimp
    - Supabase (self-hosted)
 
 2. **Deploy API Endpoint**:
+
    - Add environment variables
    - Deploy to Vercel/Netlify
    - Test integration

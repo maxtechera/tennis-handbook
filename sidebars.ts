@@ -13,7 +13,7 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
  Create as many sidebars as you want.
  */
 const sidebars: SidebarsConfig = {
-  // Complete Tennis Handbook
+  // Complete Tenis Manual
   trainingSidebar: [
     "intro",
     "equipment-guide",

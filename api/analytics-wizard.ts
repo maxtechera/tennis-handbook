@@ -1,6 +1,40 @@
 import { sql } from '@vercel/postgres';
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-export default async function handler(req, res) {
+interface FunnelStats {
+  starts: number;
+  emails: number;
+  completes: number;
+  downloads: number;
+}
+
+interface ConversionRates {
+  emailCapture: string;
+  completion: string;
+  pdfDownload: string;
+}
+
+interface SegmentStat {
+  user_segment: string;
+  total: number;
+  completed: number;
+}
+
+interface EmailSource {
+  source: string;
+  count: number;
+}
+
+interface AnalyticsResponse {
+  period: string;
+  funnel: FunnelStats;
+  conversionRates: ConversionRates;
+  segmentStats: SegmentStat[];
+  emailSources: EmailSource[];
+  development?: boolean;
+}
+
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Enable CORS
   const allowedOrigins = [
     "http://localhost:3000",
@@ -12,7 +46,7 @@ export default async function handler(req, res) {
   ];
 
   const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin) || (origin && origin.startsWith("http://localhost:"))) {
+  if (allowedOrigins.includes(origin as string) || (origin && origin.startsWith("http://localhost:"))) {
     res.setHeader("Access-Control-Allow-Origin", origin);
   }
 
@@ -34,12 +68,12 @@ export default async function handler(req, res) {
 
   try {
     const { days = '7' } = req.query;
-    const daysInt = parseInt(days);
+    const daysInt = parseInt(days as string);
     
     // Check if database is available
     const isDatabaseAvailable = process.env.POSTGRES_URL;
     
-    let analyticsData;
+    let analyticsData: AnalyticsResponse;
     
     if (isDatabaseAvailable) {
       // Get funnel stats from database
@@ -78,7 +112,7 @@ export default async function handler(req, res) {
       
       // Calculate conversion rates
       const funnel = funnelStats.rows[0];
-      const conversionRates = {
+      const conversionRates: ConversionRates = {
         emailCapture: funnel.starts > 0 
           ? ((funnel.emails / funnel.starts) * 100).toFixed(1) 
           : '0',
@@ -99,8 +133,8 @@ export default async function handler(req, res) {
           downloads: funnel.downloads || 0,
         },
         conversionRates,
-        segmentStats: segmentStats.rows,
-        emailSources: emailSources.rows,
+        segmentStats: segmentStats.rows as SegmentStat[],
+        emailSources: emailSources.rows as EmailSource[],
       };
     } else {
       // Development mode - return empty analytics
@@ -120,7 +154,7 @@ export default async function handler(req, res) {
     
     return res.status(200).json(analyticsData);
     
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error fetching analytics:', error);
     
     // If database error in development, return empty data

@@ -10,9 +10,24 @@ import {
   generateConvertKitTags,
   generateCustomFields,
 } from "./utils/convertkit-tags.js";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
+
+interface WizardStartRequest {
+  email: string;
+  sessionId: string;
+  source?: string;
+  wizardData?: Record<string, any>;
+}
+
+interface ConvertKitResult {
+  success: boolean;
+  error?: string;
+  subscriberId?: string;
+  downloadLink?: string | null;
+}
 
 // Helper function to submit to Kit.com (ConvertKit)
-async function submitToKitCom(email, sessionId, wizardData = {}) {
+async function submitToKitCom(email: string, sessionId: string, wizardData: Record<string, any> = {}): Promise<ConvertKitResult> {
   const CONVERTKIT_API_SECRET = process.env.CONVERTKIT_API_SECRET;
   const CONVERTKIT_FORM_ID =
     process.env.CONVERTKIT_FORM_ID_ES || process.env.CONVERTKIT_FORM_ID;
@@ -82,13 +97,13 @@ async function submitToKitCom(email, sessionId, wizardData = {}) {
       // or if you have it configured in your environment
       downloadLink: process.env.PDF_DOWNLOAD_LINK || null,
     };
-  } catch (error) {
+  } catch (error: any) {
     console.error("Kit.com submission error:", error);
     return { success: false, error: error.message };
   }
 }
 
-export default async function handler(req, res) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Enable CORS
   const allowedOrigins = [
     "http://localhost:3000",
@@ -101,7 +116,7 @@ export default async function handler(req, res) {
 
   const origin = req.headers.origin;
   if (
-    allowedOrigins.includes(origin) ||
+    allowedOrigins.includes(origin as string) ||
     (origin && origin.startsWith("http://localhost:"))
   ) {
     res.setHeader("Access-Control-Allow-Origin", origin);
@@ -128,7 +143,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { email, sessionId, source = "wizard", wizardData = {} } = req.body;
+    const { email, sessionId, source = "wizard", wizardData = {} }: WizardStartRequest = req.body;
 
     // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -146,7 +161,9 @@ export default async function handler(req, res) {
     // Get metadata
     const userAgent = req.headers["user-agent"] || "";
     const ip =
-      req.headers["x-forwarded-for"] || req.headers["x-real-ip"] || "unknown";
+      (req.headers["x-forwarded-for"] as string) || 
+      (req.headers["x-real-ip"] as string) || 
+      "unknown";
 
     if (isDatabaseAvailable) {
       // Simple email capture using Drizzle upsert
@@ -297,7 +314,7 @@ export default async function handler(req, res) {
       downloadLink: kitResult.downloadLink,
       subscriberId: kitResult.subscriberId,
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error in wizard start:", error);
 
     // If database error in development, still succeed

@@ -13,7 +13,8 @@
     "query": "node db-query.js"
   },
   "dependencies": {
-    "@vercel/postgres": "^0.10.0"
+    "@vercel/postgres": "^0.10.0",
+    "@vercel/node": "^5.3.4"
   },
   "devDependencies": {
     "vercel": "^37.0.0"

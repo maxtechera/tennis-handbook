@@ -1,19 +1,40 @@
 import { sql } from "@vercel/postgres";
-import { db, wizardSubmissions, emailCaptures } from "./db/index.ts";
+import { db, wizardSubmissions, emailCaptures } from "./db/index.js";
 import { eq } from "drizzle-orm";
 import { flattenWizardData } from "./utils/flatten-wizard-data.js";
 import {
   generateConvertKitTags,
   generateCustomFields,
 } from "./utils/convertkit-tags.js";
+import type { VercelRequest, VercelResponse } from "@vercel/node";
+
+interface WizardSaveRequest {
+  sessionId: string;
+  step: number;
+  data: Record<string, any>;
+  metadata?: {
+    utmSource?: string;
+    utmMedium?: string;
+    utmCampaign?: string;
+    utmContent?: string;
+    utmTerm?: string;
+    referrer?: string;
+  };
+}
+
+interface ConvertKitSyncResult {
+  success: boolean;
+  error?: string;
+  subscriberId?: string;
+}
 
 // Helper function to sync wizard data to ConvertKit
 async function syncToConvertKit(
-  email,
-  sessionId,
-  wizardData = {},
-  stepName = "wizard-save"
-) {
+  email: string,
+  sessionId: string,
+  wizardData: Record<string, any> = {},
+  stepName: string = "wizard-save"
+): Promise<ConvertKitSyncResult> {
   const CONVERTKIT_API_SECRET = process.env.CONVERTKIT_API_SECRET;
   const CONVERTKIT_FORM_ID =
     process.env.CONVERTKIT_FORM_ID_ES || process.env.CONVERTKIT_FORM_ID;
@@ -77,13 +98,13 @@ async function syncToConvertKit(
       success: true,
       subscriberId: data.subscription?.subscriber?.id,
     };
-  } catch (error) {
+  } catch (error: any) {
     console.error("ConvertKit sync error:", error);
     return { success: false, error: error.message };
   }
 }
 
-export default async function handler(req, res) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Enable CORS
   const allowedOrigins = [
     "http://localhost:3000",
@@ -96,7 +117,7 @@ export default async function handler(req, res) {
 
   const origin = req.headers.origin;
   if (
-    allowedOrigins.includes(origin) ||
+    allowedOrigins.includes(origin as string) ||
     (origin && origin.startsWith("http://localhost:"))
   ) {
     res.setHeader("Access-Control-Allow-Origin", origin);
@@ -122,7 +143,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { sessionId, step, data, metadata = {} } = req.body;
+    const { sessionId, step, data, metadata = {} }: WizardSaveRequest = req.body;
 
     if (!sessionId) {
       return res.status(400).json({ error: "Session ID is required" });
@@ -131,7 +152,9 @@ export default async function handler(req, res) {
     // Get user agent and IP
     const userAgent = req.headers["user-agent"] || "";
     const ip =
-      req.headers["x-forwarded-for"] || req.headers["x-real-ip"] || "unknown";
+      (req.headers["x-forwarded-for"] as string) || 
+      (req.headers["x-real-ip"] as string) || 
+      "unknown";
 
     // Flatten the wizard data for easier storage and querying
     const flat = flattenWizardData(data);
@@ -143,7 +166,7 @@ export default async function handler(req, res) {
       // Use Drizzle upsert to handle progressive data accumulation
       try {
         // Prepare update data, only including non-null/undefined values
-        const updateData = {
+        const updateData: Record<string, any> = {
           currentStep: step,
           userAgent,
           ipAddress: ip,
@@ -240,7 +263,7 @@ export default async function handler(req, res) {
       development: !isDatabaseAvailable,
       convertkitSynced: isDatabaseAvailable, // Will be true if database is available and sync attempted
     });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error saving wizard progress:", error);
 
     // If database error in development, still succeed
@@ -260,7 +283,7 @@ export default async function handler(req, res) {
   }
 }
 
-function getCurrentStepName(stepIndex) {
+function getCurrentStepName(stepIndex: number): string {
   const stepNames = [
     "micro-quiz",
     "goals-quiz",

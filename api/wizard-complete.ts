@@ -1,6 +1,70 @@
 import { sql } from '@vercel/postgres';
+import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-export default async function handler(req, res) {
+interface WizardCompleteRequest {
+  sessionId: string;
+  wizardData: {
+    personalInfo?: {
+      email: string;
+      name?: string;
+      language?: string;
+      country?: string;
+      whatsapp?: string;
+    };
+    'personal-info'?: {
+      email: string;
+      name?: string;
+      language?: string;
+      country?: string;
+      whatsapp?: string;
+    };
+    'micro-quiz'?: Record<string, any>;
+    'goals-quiz'?: Record<string, any>;
+    'time-quiz'?: Record<string, any>;
+    'focus-quiz'?: Record<string, any>;
+    tennisExperience?: {
+      currentLevel?: string;
+      playsCompetitively?: boolean;
+      yearsPlaying?: string;
+    };
+    trainingGoals?: {
+      primaryGoal?: string;
+      injuryHistory?: boolean;
+    };
+    schedulePreferences?: {
+      commitmentLevel?: string;
+    };
+    physicalProfile?: {
+      fitnessLevel?: string;
+    };
+    welcome?: Record<string, any>;
+    'welcome-success'?: Record<string, any>;
+    personalization?: Record<string, any>;
+    background?: Record<string, any>;
+    challenges?: Record<string, any>;
+    analyzing?: Record<string, any>;
+    completion?: Record<string, any>;
+  };
+}
+
+interface ContentRecommendation {
+  path: string;
+  title: string;
+  reason: string;
+}
+
+interface WizardCompleteResponse {
+  success: boolean;
+  message: string;
+  userId: string | null;
+  recommendations: ContentRecommendation[];
+  segment: string;
+  development?: boolean;
+}
+
+type UserSegment = 'beginner' | 'intermediate' | 'advanced' | 'competitive';
+
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Enable CORS
   const allowedOrigins = [
     "http://localhost:3000",
@@ -12,7 +76,7 @@ export default async function handler(req, res) {
   ];
 
   const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin) || (origin && origin.startsWith("http://localhost:"))) {
+  if (allowedOrigins.includes(origin as string) || (origin && origin.startsWith("http://localhost:"))) {
     res.setHeader("Access-Control-Allow-Origin", origin);
   }
 
@@ -33,7 +97,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { sessionId, wizardData } = req.body;
+    const { sessionId, wizardData }: WizardCompleteRequest = req.body;
     
     if (!sessionId || !wizardData) {
       return res.status(400).json({ 
@@ -41,13 +105,13 @@ export default async function handler(req, res) {
       });
     }
     
-    const email = wizardData.personalInfo?.email;
+    const email = wizardData.personalInfo?.email || wizardData['personal-info']?.email;
     if (!email) {
       return res.status(400).json({ error: "Email is required" });
     }
     
     const userSegment = calculateUserSegment(wizardData);
-    let userId = null;
+    let userId: string | null = null;
     
     // Check if database is available
     const isDatabaseAvailable = process.env.POSTGRES_URL;
@@ -63,10 +127,10 @@ export default async function handler(req, res) {
         userId = existingUser.rows[0].id;
         await sql`
           UPDATE users SET 
-            name = COALESCE(${wizardData.personalInfo?.name}, name),
-            language = COALESCE(${wizardData.personalInfo?.language}, language),
-            country = COALESCE(${wizardData.personalInfo?.country}, country),
-            whatsapp = COALESCE(${wizardData.personalInfo?.whatsapp}, whatsapp),
+            name = COALESCE(${wizardData.personalInfo?.name || wizardData['personal-info']?.name}, name),
+            language = COALESCE(${wizardData.personalInfo?.language || wizardData['personal-info']?.language}, language),
+            country = COALESCE(${wizardData.personalInfo?.country || wizardData['personal-info']?.country}, country),
+            whatsapp = COALESCE(${wizardData.personalInfo?.whatsapp || wizardData['personal-info']?.whatsapp}, whatsapp),
             updated_at = NOW()
           WHERE id = ${userId}
         `;
@@ -76,10 +140,10 @@ export default async function handler(req, res) {
           INSERT INTO users (email, name, language, country, whatsapp)
           VALUES (
             ${email},
-            ${wizardData.personalInfo?.name || null},
-            ${wizardData.personalInfo?.language || 'en'},
-            ${wizardData.personalInfo?.country || null},
-            ${wizardData.personalInfo?.whatsapp || null}
+            ${wizardData.personalInfo?.name || wizardData['personal-info']?.name || null},
+            ${wizardData.personalInfo?.language || wizardData['personal-info']?.language || 'en'},
+            ${wizardData.personalInfo?.country || wizardData['personal-info']?.country || null},
+            ${wizardData.personalInfo?.whatsapp || wizardData['personal-info']?.whatsapp || null}
           )
           RETURNING id
         `;
@@ -121,8 +185,8 @@ export default async function handler(req, res) {
           'wizard_complete',
           ${JSON.stringify({
             segment: userSegment,
-            hasWhatsapp: !!wizardData.personalInfo?.whatsapp,
-            language: wizardData.personalInfo?.language || 'en'
+            hasWhatsapp: !!(wizardData.personalInfo?.whatsapp || wizardData['personal-info']?.whatsapp),
+            language: wizardData.personalInfo?.language || wizardData['personal-info']?.language || 'en'
           })},
           ${sessionId}
         )
@@ -135,13 +199,13 @@ export default async function handler(req, res) {
         email: email.split('@')[0] + '@***',
         sessionId,
         userSegment,
-        hasWhatsapp: !!wizardData.personalInfo?.whatsapp,
+        hasWhatsapp: !!(wizardData.personalInfo?.whatsapp || wizardData['personal-info']?.whatsapp),
         timestamp: new Date().toISOString()
       });
     }
     
     // Async ConvertKit sync
-    syncToConvertKit(wizardData).catch(error => {
+    syncToConvertKit(wizardData).catch((error: any) => {
       console.error('ConvertKit sync error:', error);
     });
     
@@ -156,14 +220,14 @@ export default async function handler(req, res) {
       segment: userSegment
     });
     
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error completing wizard:', error);
     
     // If database error in development, still succeed with local recommendations
     if (!process.env.POSTGRES_URL && error.code === 'missing_connection_string') {
       console.log('✅ Fallback: Wizard would be completed in production');
-      const recommendations = getContentRecommendations(wizardData);
-      const userSegment = calculateUserSegment(wizardData);
+      const recommendations = getContentRecommendations(req.body.wizardData);
+      const userSegment = calculateUserSegment(req.body.wizardData);
       
       return res.status(200).json({ 
         success: true,
@@ -178,7 +242,7 @@ export default async function handler(req, res) {
   }
 }
 
-function calculateUserSegment(data) {
+function calculateUserSegment(data: WizardCompleteRequest['wizardData']): UserSegment {
   const { tennisExperience, physicalProfile, schedulePreferences } = data;
   
   if (!tennisExperience) return 'beginner';
@@ -202,7 +266,7 @@ function calculateUserSegment(data) {
   
   if (
     tennisExperience.currentLevel === 'intermediate' ||
-    ['3-5', '1-3'].includes(tennisExperience.yearsPlaying)
+    ['3-5', '1-3'].includes(tennisExperience.yearsPlaying || '')
   ) {
     return 'intermediate';
   }
@@ -210,8 +274,8 @@ function calculateUserSegment(data) {
   return 'beginner';
 }
 
-function getContentRecommendations(wizardData) {
-  const recommendations = [];
+function getContentRecommendations(wizardData: WizardCompleteRequest['wizardData']): ContentRecommendation[] {
+  const recommendations: ContentRecommendation[] = [];
   const { tennisExperience, trainingGoals } = wizardData;
   
   if (tennisExperience?.currentLevel === 'beginner') {
@@ -262,7 +326,7 @@ function getContentRecommendations(wizardData) {
   return recommendations.slice(0, 3);
 }
 
-async function syncToConvertKit(wizardData) {
+async function syncToConvertKit(wizardData: WizardCompleteRequest['wizardData']): Promise<void> {
   const baseUrl = process.env.VERCEL_URL 
     ? `https://${process.env.VERCEL_URL}` 
     : 'http://localhost:3000';
@@ -271,10 +335,10 @@ async function syncToConvertKit(wizardData) {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      email: wizardData.personalInfo?.email,
-      name: wizardData.personalInfo?.name,
-      language: wizardData.personalInfo?.language || 'en',
-      whatsapp: wizardData.personalInfo?.whatsapp,
+      email: wizardData.personalInfo?.email || wizardData['personal-info']?.email,
+      name: wizardData.personalInfo?.name || wizardData['personal-info']?.name,
+      language: wizardData.personalInfo?.language || wizardData['personal-info']?.language || 'en',
+      whatsapp: wizardData.personalInfo?.whatsapp || wizardData['personal-info']?.whatsapp,
       source: 'wizard',
       consent: true,
       wizardData,

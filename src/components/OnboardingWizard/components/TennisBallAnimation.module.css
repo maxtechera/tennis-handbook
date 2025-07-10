@@ -292,10 +292,76 @@
   }
 }
 
+/* Draggable Ball Styles */
+.tennisBall.draggable {
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.tennisBall.dragging {
+  cursor: grabbing;
+  z-index: 20;
+  transform-origin: center;
+  animation: none !important;
+}
+
+.tennisBall.flying {
+  z-index: 15;
+  animation: none !important;
+}
+
+.tennisBall.draggable:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.tennisBall.dragging:hover {
+  transform: none;
+}
+
+/* Enhanced ball physics styling */
+.tennisBall.flying .ballSurface {
+  animation: flyingSpin 0.1s linear infinite;
+}
+
+@keyframes flyingSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Touch-friendly sizing */
+@media (max-width: 768px) {
+  .tennisBall.draggable {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tennisBall.draggable.lg {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 /* Performance optimizations */
 .tennisBall,
 .tennisRacket {
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+.tennisBall.draggable {
+  will-change: transform, opacity;
+}
+
+.tennisBall.flying {
+  will-change: transform;
 }

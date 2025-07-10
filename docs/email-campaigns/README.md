@@ -1,6 +1,6 @@
 # Email Campaigns Documentation
 
-This directory contains all email campaign templates, tracking structures, and analysis tools for Tennis Handbook subscriber communications.
+This directory contains all email campaign templates, tracking structures, and analysis tools for Tenis Manual subscriber communications.
 
 ## Directory Structure
 
@@ -18,22 +18,26 @@ email-campaigns/
 ## Survey Campaign Workflow
 
 ### 1. Pre-Launch (MAX-21)
+
 - [ ] Wait for 100+ email subscribers
 - [ ] Set up survey platform (Google Forms/Typeform)
 - [ ] Configure ConvertKit automation
 - [ ] Test email delivery
 
 ### 2. Launch
+
 - [ ] Send initial survey email
 - [ ] Track open rates and clicks
 - [ ] Monitor early responses
 
 ### 3. Follow-up
+
 - [ ] Send reminder after 3 days to non-responders
 - [ ] Close survey after 7-10 days
 - [ ] Analyze results using template
 
 ### 4. Post-Survey
+
 - [ ] Share results with subscribers
 - [ ] Create action plan based on insights
 - [ ] Update Linear ticket with findings
@@ -41,7 +45,9 @@ email-campaigns/
 ## Key Files
 
 ### platform-validation-survey.md
+
 Complete survey documentation including:
+
 - Email templates
 - 7 survey questions
 - Technical implementation details
@@ -49,14 +55,18 @@ Complete survey documentation including:
 - Follow-up sequence
 
 ### survey-tracking.json
+
 Automated tracking structure for:
+
 - Response rates
 - Results aggregation
 - Campaign metadata
 - Key insights capture
 
 ### analysis-template.md
+
 Structured template for:
+
 - Executive summary
 - Segmented analysis
 - Recommendations
@@ -65,16 +75,19 @@ Structured template for:
 ## Integration Points
 
 ### ConvertKit
+
 - Use tags: `survey_sent`, `survey_completed`, `survey_reminder`
 - Segment based on responses
 - Automate follow-up sequences
 
 ### Linear
+
 - Update ticket MAX-21 with progress
 - Create new tickets based on survey findings
 - Link user feedback to feature requests
 
 ### Google Analytics
+
 - Track survey landing page visits
 - Monitor completion funnel
 - Measure impact on site engagement

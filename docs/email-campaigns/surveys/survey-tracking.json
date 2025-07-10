@@ -9,9 +9,9 @@
   },
   "email_campaign": {
     "subject_lines": {
-      "primary": "Quick question - help shape Tennis Handbook's future 🎾",
+      "primary": "Quick question - help shape Tenis Manual's future 🎾",
       "variant_a": "2-minute survey: What features would help your training?",
-      "variant_b": "Your input needed: Tennis Handbook evolution 🎾"
+      "variant_b": "Your input needed: Tenis Manual evolution 🎾"
     },
     "send_schedule": {
       "initial_send": null,

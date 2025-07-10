@@ -184,6 +184,11 @@ export function ValuePreviewStep({
             showRacket={false}
             ballAnimation="float"
             className={styles.tennisScene}
+            draggableBall={true}
+            onBallFlick={(velocity) => {
+              console.log('Ball flicked with velocity:', velocity);
+              // You can add haptic feedback, sound effects, or other interactions here
+            }}
           />
         </CardLayout>
 

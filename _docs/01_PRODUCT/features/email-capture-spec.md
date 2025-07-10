@@ -4,7 +4,8 @@
 
 ## Problem Statement
 
-The Tennis Handbook website needs an effective email capture system to:
+The Tenis Manual website needs an effective email capture system to:
+
 - Build an engaged subscriber list for content distribution
 - Create a foundation for future monetization through premium courses
 - Track user engagement and optimize conversion paths
@@ -17,6 +18,7 @@ The Tennis Handbook website needs an effective email capture system to:
 A multi-touchpoint email capture system using ConvertKit that maximizes conversion opportunities while maintaining excellent user experience.
 
 ### Core Components
+
 1. **ConvertKit Integration** - Professional email marketing platform with automation
 2. **Multiple Capture Points** - Strategic placement across user journey
 3. **Lead Magnet Delivery** - Automated PDF delivery system
@@ -26,34 +28,44 @@ A multi-touchpoint email capture system using ConvertKit that maximizes conversi
 ## User Journey & Touchpoints
 
 ### 1. Homepage Hero Section (3-5% conversion)
+
 **Component**: `EmailCaptureForm` (variant="hero")
+
 - High-visibility placement above the fold
 - Clear value proposition: "Get Your Free 7-Day Elite Tennis Workout Plan"
 - Immediate reward for subscription
 
 ### 2. Timed Popup (2-3% conversion)
+
 **Component**: `EmailCapturePopup`
+
 - Triggers after 3 minutes (catches engaged readers)
 - Exit intent detection capability
 - 24-hour cooldown using localStorage
 - Mobile-optimized design
 
 ### 3. Sticky Footer Bar (1-2% conversion)
+
 **Component**: `EmailCaptureBar`
+
 - Appears after 5-second delay
 - Dismissible with memory
 - Persistent but non-intrusive
 - Mobile-responsive
 
 ### 4. Content Integration (5-8% conversion)
+
 **Component**: `ContentEmailCapture`
+
 - End of workout pages
 - Bottom of popular training guides
 - After high-value content
 - Context-specific messaging
 
 ### 5. Announcement Bar (Native Docusaurus)
+
 **Implementation**: docusaurus.config.js
+
 ```javascript
 announcementBar: {
   id: 'workout_plan',
@@ -67,7 +79,9 @@ announcementBar: {
 ## Technical Implementation
 
 ### Frontend Components (✅ Completed)
+
 All UI components are built and integrated:
+
 - React components with TypeScript
 - Internationalization (English/Spanish)
 - Form validation and error handling
@@ -77,6 +91,7 @@ All UI components are built and integrated:
 ### Backend Integration
 
 #### Environment Configuration
+
 ```bash
 # ConvertKit API Configuration
 NEXT_PUBLIC_CONVERTKIT_API_KEY=your_convertkit_api_key_here
@@ -85,30 +100,31 @@ CONVERTKIT_API_SECRET=your_convertkit_api_secret_here
 ```
 
 #### API Endpoint (Vercel Function)
+
 ```javascript
 // api/subscribe.js
 export default async function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', 'https://tennishandbook.com');
-  
+  res.setHeader("Access-Control-Allow-Origin", "https://tennishandbook.com");
+
   const { email, source, consent, language } = req.body;
-  
+
   // Validation
   if (!email || !consent) {
-    return res.status(400).json({ error: 'Invalid request' });
+    return res.status(400).json({ error: "Invalid request" });
   }
 
   // ConvertKit API call
   const response = await fetch(
     `https://api.convertkit.com/v3/forms/${process.env.CONVERTKIT_FORM_ID}/subscribe`,
     {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         api_secret: process.env.CONVERTKIT_API_SECRET,
         email,
         fields: { source, language },
-        tags: ['tennis-handbook', source, language]
-      })
+        tags: ["tennis-handbook", source, language],
+      }),
     }
   );
 
@@ -119,6 +135,7 @@ export default async function handler(req, res) {
 ### ConvertKit Configuration
 
 #### Tags Structure
+
 - `tennis-handbook` - All subscribers
 - `english` / `spanish` - Language preference
 - Source tags for analytics:
@@ -129,12 +146,14 @@ export default async function handler(req, res) {
   - `content-page`
 
 #### Custom Fields
+
 - `source` - Where user subscribed from
 - `language` - User's language preference
 - `signup_date` - Timestamp of subscription
 - `gdpr_consent` - Consent confirmation
 
 #### Automation Rules
+
 ```
 IF tag = "workout-completion" → Add tag "highly-engaged"
 IF tag = "homepage-popup" → Add tag "browser"
@@ -144,6 +163,7 @@ IF language = "spanish" → Trigger Spanish welcome series
 ### Lead Magnet: 7-Day Elite Tennis Workout Plan
 
 **Content Structure**:
+
 - Day 1: Power Foundation
 - Day 2: Court Movement
 - Day 3: Upper Body Strength
@@ -155,6 +175,7 @@ IF language = "spanish" → Trigger Spanish welcome series
 **Delivery**: Automated via ConvertKit welcome email with PDF attachment
 
 ### Welcome Email Sequence (5 emails)
+
 1. **Instant**: PDF delivery + welcome
 2. **Day 1**: Common training mistakes
 3. **Day 3**: Pro recovery secrets
@@ -164,12 +185,14 @@ IF language = "spanish" → Trigger Spanish welcome series
 ## Success Metrics & KPIs
 
 ### Primary Metrics
+
 - **Overall Conversion Rate**: Target 8-12%
 - **Email Open Rate**: Target 80%+ (welcome series)
 - **Click-through Rate**: Target 30%+
 - **Unsubscribe Rate**: Keep below 2%
 
 ### Tracking by Source
+
 - Homepage hero conversions
 - Popup engagement rate
 - Footer bar effectiveness
@@ -177,6 +200,7 @@ IF language = "spanish" → Trigger Spanish welcome series
 - Workout completion conversions
 
 ### Weekly Dashboard
+
 1. Total new subscribers
 2. Conversion rate by source
 3. Email engagement metrics
@@ -186,6 +210,7 @@ IF language = "spanish" → Trigger Spanish welcome series
 ## Current Status
 
 ### ✅ Completed
+
 - All frontend components built
 - Homepage integration live
 - Spanish translations
@@ -193,12 +218,14 @@ IF language = "spanish" → Trigger Spanish welcome series
 - Analytics tracking setup
 
 ### 🚧 In Progress
+
 - ConvertKit account setup
 - API endpoint deployment
 - Lead magnet PDF design
 - Welcome email sequence
 
 ### 📋 Next Steps
+
 1. Complete ConvertKit setup (30 min)
 2. Deploy API endpoint (1 hour)
 3. Create PDF lead magnet (2 hours)
@@ -208,18 +235,21 @@ IF language = "spanish" → Trigger Spanish welcome series
 ## Future Enhancements
 
 ### Phase 2 (Month 2)
+
 - A/B testing different headlines
 - Behavioral triggers (scroll depth)
 - Additional lead magnets
 - Advanced segmentation
 
 ### Phase 3 (Month 3)
+
 - Course pre-launch sequence
 - Paid program soft launch
 - Referral system
 - Advanced automation
 
 ### Phase 4 (Month 4+)
+
 - Multiple product funnels
 - Webinar integration
 - Community access tiers
@@ -228,17 +258,21 @@ IF language = "spanish" → Trigger Spanish welcome series
 ## Technical References
 
 ### Implementation Details
+
 See: `/docs/development/email-capture-integration.md`
 
 ### Testing Guide
+
 See: `/_docs/Implementation/testing-guide.md`
 
 ### API Deployment
+
 See: `/_docs/Implementation/api-deployment.md`
 
 ## Archived Documentation
 
 The following documentation has been consolidated into this spec:
+
 - `_docs/Archive/convertkit-multi-touchpoint-plan.md` - Original planning document
 - `_docs/Archive/convertkit-simple-implementation.md` - Simplified approach
 - `_docs/Implementation/implementation-guide.md` - Detailed implementation steps

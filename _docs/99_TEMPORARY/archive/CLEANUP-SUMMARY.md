@@ -62,7 +62,7 @@
 
 ### Content Quality Standards
 
-- Reinforce Tennis Handbook's three core advantages
+- Reinforce Tenis Manual's three core advantages
 - Use specific data, not generic statements
 - Include actionable next steps
 - Link to related documents
@@ -81,7 +81,7 @@
 2. Include complete metadata header
 3. Reference shared metrics instead of duplicating
 4. Link to related documents
-5. Focus on Tennis Handbook specifics, not generic content
+5. Focus on Tenis Manual specifics, not generic content
 
 ## 📊 Impact of Cleanup
 
@@ -109,4 +109,4 @@
 
 ---
 
-_This cleanup ensures Tennis Handbook documentation remains a strategic asset rather than technical debt. The improved organization makes it easier for agents and team members to find and leverage our unique advantages._
+_This cleanup ensures Tenis Manual documentation remains a strategic asset rather than technical debt. The improved organization makes it easier for agents and team members to find and leverage our unique advantages._

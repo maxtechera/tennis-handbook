@@ -4,7 +4,7 @@ feat: Complete bilingual tennis training platform with Spanish localization
 
 ## Summary
 
-Implement comprehensive bilingual (English/Spanish) tennis handbook platform with full content translation, documentation restructuring, and production-ready deployment configuration.
+Implement comprehensive bilingual (English/Spanish) Tenis Manual platform with full content translation, documentation restructuring, and production-ready deployment configuration.
 
 ## Major Changes
 

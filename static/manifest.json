@@ -1,7 +1,7 @@
 {
-  "name": "Elite Tennis Training",
-  "short_name": "Elite Tennis",
-  "description": "Entrena como los #1 del mundo",
+  "name": "Tenis Manual",
+  "short_name": "Tenis Manual",
+  "description": "Entrena como los mejores",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#1b5e20",

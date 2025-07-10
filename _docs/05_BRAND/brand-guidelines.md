@@ -1,9 +1,9 @@
-# Tennis Handbook Brand Guidelines
+# Tenis Manual Brand Guidelines
 
 **Document Status**: 🟢 Active  
 **Lifecycle**: Annual Review  
 **Last Updated**: January 2025  
-**Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)
+**Linear Project**: [Tenis Manual](https://linear.app/max-techera/project/tennis-handbook)
 
 ---
 
@@ -11,7 +11,7 @@
 
 ### Core Positioning
 
-**"The Tennis Handbook"** - A practical, behind-the-scenes guide to how professional tennis players and coaches actually train.
+**"The Tenis Manual"** - A practical, behind-the-scenes guide to how professional tennis players and coaches actually train.
 
 ### Brand Promise
 

@@ -1,15 +1,16 @@
-# Tennis Handbook User Research Methods
+# Tenis Manual User Research Methods
 
 **Document Status**: 🟢 Active  
 **Lifecycle**: Updated Per Research Cycle  
 **Last Updated**: January 2025  
-**Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)  
+**Linear Project**: [Tenis Manual](https://linear.app/max-techera/project/tennis-handbook)
 
 ---
 
 ## 🎯 Research Objectives
 
 ### Core Questions to Answer:
+
 1. Do users feel overwhelmed by current site?
 2. Would they use simplified "Today's Training" view?
 3. How often do they access during workouts?
@@ -20,25 +21,29 @@
 
 ### Google Form Setup
 
-**Title**: "Help Us Make Tennis Handbook Better for You! (3 mins)"
+**Title**: "Help Us Make Tenis Manual Better for You! (3 mins)"
 
 **Introduction**:
+
 ```
-Thanks for using Tennis Handbook! We're planning improvements 
-and need your input. Your answers will directly shape what we 
+Thanks for using Tenis Manual! We're planning improvements
+and need your input. Your answers will directly shape what we
 build next. Takes 3 minutes.
 ```
 
 ### Key Survey Questions
 
 #### Current Usage
+
 1. **Visit Frequency**: Daily/Weekly/Monthly
 2. **Primary Use**: Program/Exercises/Philosophy/Research
 3. **Access Location**: Home/Gym/Both
 4. **Device**: Phone/Tablet/Computer
 
 #### Pain Points
-5. **Biggest Frustration**: 
+
+5. **Biggest Frustration**:
+
    - Too much information
    - Hard to find content
    - Not mobile-friendly
@@ -50,12 +55,14 @@ build next. Takes 3 minutes.
 7. **Workout Usage Issues**: [Open text]
 
 #### Feature Validation
-8. **"Today's Training" Interest**: 
+
+8. **"Today's Training" Interest**:
+
    - Just today's workout
    - Simple exercise list
    - Quick timers
    - Easy check-off
-   
+
    Likelihood: Definitely → Definitely not
 
 9. **Feature Importance** (Critical/Important/Nice/Not):
@@ -67,6 +74,7 @@ build next. Takes 3 minutes.
    - Simple daily view
 
 #### Monetization
+
 10. **Payment Willingness** (Definitely/Maybe/No):
     - Videos ($5/month)
     - Personalization ($9/month)
@@ -77,11 +85,14 @@ build next. Takes 3 minutes.
 ## 🗣️ Interview Guide
 
 ### Opening (30 seconds)
-"Thanks for using Tennis Handbook! Working on improvements for 
+
+"Thanks for using Tenis Manual! Working on improvements for
 workout usage. Mind if I ask quick questions? 5-10 minutes."
 
 ### Current Experience (2 minutes)
+
 1. **"Tell me about last time you used the site"**
+
    - Context, device, frustrations
    - "What were you trying to do?"
 
@@ -90,7 +101,9 @@ workout usage. Mind if I ask quick questions? 5-10 minutes."
    - "What works/doesn't work?"
 
 ### Pain Points (3 minutes)
+
 3. **"Most annoying thing about the site?"**
+
    - Let them vent
    - "Tell me more..."
 
@@ -99,7 +112,9 @@ workout usage. Mind if I ask quick questions? 5-10 minutes."
    - "What would have helped?"
 
 ### Solution Testing (3 minutes)
+
 5. **Show "Today's Training" mockup**
+
    - Watch reaction
    - "Would you actually use this?"
 
@@ -108,6 +123,7 @@ workout usage. Mind if I ask quick questions? 5-10 minutes."
    - Note first reactions
 
 ### Closing (2 minutes)
+
 7. **"Magic wand - change ONE thing?"**
 
 8. **"Would you pay for [their request]?"**
@@ -117,18 +133,21 @@ workout usage. Mind if I ask quick questions? 5-10 minutes."
 ## 📊 Spanish Market Research
 
 ### Cultural Considerations
+
 - **Community focus**: Group features over individual
 - **WhatsApp preference**: Over email communication
 - **Video importance**: 82% prefer video demos
 - **PDF downloads**: Popular for offline gym use
 
 ### Spanish-Specific Questions
+
 - Preference for Spanish player examples?
 - WhatsApp group interest level?
 - Spanish coach methodology importance?
 - Local tournament integration value?
 
 ### Interview Adaptations
+
 - Use Spanish if comfortable
 - Reference Alcaraz/Nadal examples
 - Ask about training culture differences
@@ -137,6 +156,7 @@ workout usage. Mind if I ask quick questions? 5-10 minutes."
 ## 🎯 Mockups for Testing
 
 ### "Today's Training" View
+
 ```
 📅 Day 23 of 84
 Tuesday - Week 3
@@ -154,6 +174,7 @@ Lower Body Power
 ```
 
 ### Progress Dashboard
+
 ```
 📊 Your Progress
 Week 3 of 12 ██░░░
@@ -169,17 +190,19 @@ Recent PRs:
 ## 📧 Outreach Templates
 
 ### Email Subject Lines (A/B test):
-- A: "Quick favor? Help improve Tennis Handbook (3 mins)"
+
+- A: "Quick favor? Help improve Tenis Manual (3 mins)"
 - B: "You're invited: Shape the future 🎾"
 - C: "[Name], got 3 minutes?"
 
 ### Email Body:
+
 ```
 Hi [Name],
 
-You've been using Tennis Handbook, and I need your help!
+You've been using Tenis Manual, and I need your help!
 
-The site might be overwhelming with 300+ pages. I'm working 
+The site might be overwhelming with 300+ pages. I'm working
 on a simpler "daily training" view for workouts.
 
 Would you mind taking a 3-minute survey?
@@ -199,6 +222,7 @@ P.S. Early access to new features as thanks.
 ## 📊 Data Collection
 
 ### Interview Notes Template
+
 ```
 User: _________ Date: _____
 
@@ -226,6 +250,7 @@ Follow-up: Beta tester? Y/N
 ```
 
 ### Analysis Framework
+
 - Tag patterns: #overwhelm #mobile #progress
 - Revenue signals: #willpay #pricing
 - Feature priority: #musthave #nice
@@ -234,24 +259,28 @@ Follow-up: Beta tester? Y/N
 ## 🎯 Action Checklist
 
 ### Survey Setup
+
 - [ ] Create Google Form
 - [ ] Set up response sheet
 - [ ] Test mobile/desktop
 - [ ] Create short URL
 
 ### Interview Prep
+
 - [ ] Print guide
 - [ ] Load mockups
 - [ ] Practice 5-min version
 - [ ] Prepare notes method
 
 ### Outreach
+
 - [ ] Segment user list
 - [ ] Send survey blast
 - [ ] Schedule 5-10 chats
 - [ ] Set 1-week deadline
 
 ### Analysis
+
 - [ ] Daily response check
 - [ ] Tag patterns
 - [ ] Identify revenue ops

@@ -1,7 +1,34 @@
 // Vercel Serverless Function for Analytics
 // Simple analytics collection endpoint
 
-export default async function handler(req, res) {
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+
+interface AnalyticsRequest {
+  event: string;
+  category?: string;
+  label?: string;
+  value?: number;
+  properties?: Record<string, any>;
+}
+
+interface AnalyticsResponse {
+  success: boolean;
+  message: string;
+  error?: string;
+}
+
+interface AnalyticsLogEntry {
+  event: string;
+  category?: string;
+  label?: string;
+  value?: number;
+  properties: Record<string, any>;
+  timestamp: string;
+  ip: string;
+  userAgent: string;
+}
+
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   // Enable CORS
   const allowedOrigins = [
     "http://localhost:3000",
@@ -18,7 +45,7 @@ export default async function handler(req, res) {
   
   if (isDevelopment && origin && origin.startsWith("http://localhost:")) {
     res.setHeader("Access-Control-Allow-Origin", origin);
-  } else if (allowedOrigins.includes(origin)) {
+  } else if (allowedOrigins.includes(origin as string)) {
     res.setHeader("Access-Control-Allow-Origin", origin);
   } else if (isDevelopment) {
     // Fallback for development - allow any localhost
@@ -46,19 +73,27 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { event, category, label, value, properties = {} } = req.body;
+    const { event, category, label, value, properties = {} }: AnalyticsRequest = req.body;
+
+    // Get IP and user agent with proper typing
+    const ip = (req.headers["x-forwarded-for"] as string) || 
+              (req.connection?.remoteAddress as string) || 
+              "unknown";
+    const userAgent = req.headers["user-agent"] || "unknown";
 
     // Log analytics event (in production, send to analytics service)
-    console.log("Analytics Event:", {
+    const logEntry: AnalyticsLogEntry = {
       event,
       category,
       label,
       value,
       properties,
       timestamp: new Date().toISOString(),
-      ip: req.headers["x-forwarded-for"] || req.connection.remoteAddress,
-      userAgent: req.headers["user-agent"],
-    });
+      ip,
+      userAgent,
+    };
+
+    console.log("Analytics Event:", logEntry);
 
     // In production, you would:
     // 1. Send to Google Analytics Measurement Protocol
@@ -71,15 +106,21 @@ export default async function handler(req, res) {
       // This would use the ConvertKit API to add tags
     }
 
-    return res.status(200).json({
+    const response: AnalyticsResponse = {
       success: true,
       message: "Event tracked successfully",
-    });
-  } catch (error) {
+    };
+
+    return res.status(200).json(response);
+  } catch (error: any) {
     console.error("Analytics error:", error);
-    return res.status(500).json({
-      error: "Failed to track event",
+    
+    const errorResponse: AnalyticsResponse = {
       success: false,
-    });
+      message: "Failed to track event",
+      error: "Failed to track event",
+    };
+    
+    return res.status(500).json(errorResponse);
   }
 }

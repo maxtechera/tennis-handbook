@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the comprehensive conversion optimization implemented on the tennis handbook homepage to maximize onboarding wizard completion rates.
+This document outlines the comprehensive conversion optimization implemented on the Tenis Manual homepage to maximize onboarding wizard completion rates.
 
 ## Key Optimizations Implemented
 

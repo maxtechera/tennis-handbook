@@ -1,21 +1,21 @@
 > **Status: ACTIVE** | Last updated: 2025-07-10
 
-# Project Status: Tennis Handbook
+# Project Status: Tenis Manual
 
 **Last Updated**: July 10, 2025  
 **Current Phase**: Project Documentation & Cleanup  
-**Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)  
+**Linear Project**: [Tenis Manual](https://linear.app/max-techera/project/tennis-handbook)  
 **Quick Links**: [Strategy](./_docs/STRATEGY.md) | [Current Sprint](./_docs/06_OPERATIONS/current-sprint.md) | [Architecture](./_docs/02_TECH_ARCHITECTURE/architecture-overview.md) | [Project Tracking](./PROJECT_TRACKING.md)
 
 ## 📊 Quick Metrics
 
-| Metric | Current | Target | Status |
-|--------|---------|--------|--------|
-| Email Subscribers | 500+ | 5,000 | 🟡 Growing 15%/week |
-| Spanish Engagement | 3x baseline | Maintain 3x | ✅ Stable |
-| MRR | €0 | €25k (Month 6) | 🟡 Pre-launch |
-| Lighthouse Score | 95+ | 95+ | ✅ Maintained |
-| Content Complete | 100% | 100% | ✅ Done |
+| Metric             | Current     | Target         | Status              |
+| ------------------ | ----------- | -------------- | ------------------- |
+| Email Subscribers  | 500+        | 5,000          | 🟡 Growing 15%/week |
+| Spanish Engagement | 3x baseline | Maintain 3x    | ✅ Stable           |
+| MRR                | €0          | €25k (Month 6) | 🟡 Pre-launch       |
+| Lighthouse Score   | 95+         | 95+            | ✅ Maintained       |
+| Content Complete   | 100%        | 100%           | ✅ Done             |
 
 ## 🎯 Current Sprint Focus
 
@@ -28,6 +28,7 @@
 ## Recent Progress
 
 ### July 6, 2025
+
 - ✅ **MERGED PR #7**: Intelligent Onboarding Wizard
   - 48 files changed, 7,724 insertions
   - 30+ new React components
@@ -36,6 +37,7 @@
   - Mobile-optimized progressive flow
 
 ### Previous Sprint
+
 - ✅ Created comprehensive Spanish translation workflow documentation
 - ✅ Built translation tracking system with scripts
 - ✅ Translated ALL workout content (Weeks 1-12) to Spanish
@@ -45,12 +47,14 @@
 ## 🚨 Immediate Actions (Next 48 Hours)
 
 1. **Deploy API to Vercel** (1 hour)
+
    - Create Vercel project
    - Configure environment variables
    - Deploy api/subscribe.js endpoint
    - Update production URLs
 
 2. **ConvertKit Production Setup** (30 min)
+
    - Add API keys to Vercel
    - Create 50+ custom fields
    - Configure tag structure
@@ -139,11 +143,13 @@
 ## 🔑 Recent Key Decisions
 
 1. **Progressive Disclosure Strategy** (Jan 15)
+
    - Gate content to increase email signups
    - Rationale: <5% completion rate with open access
    - Status: Implementing
 
 2. **Spanish-First Monetization** (Jan 10)
+
    - Launch premium features in Spanish market first
    - Rationale: 3x engagement validated
    - Status: Preparing ConvertKit

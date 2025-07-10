@@ -8,18 +8,20 @@
 
 ## Overview
 
-This document summarizes the naming changes made across the Tennis Handbook project to ensure legal compliance while maintaining authority and trust.
+This document summarizes the naming changes made across the Tenis Manual project to ensure legal compliance while maintaining authority and trust.
 
 ## Key Changes Made
 
 ### Documentation Updates
 
 1. **Brand Guidelines** (`_docs/05_BRAND/brand-guidelines.md`)
+
    - Updated content attribution examples
    - Referenced new naming guidelines document
    - Updated Spanish voice examples
 
 2. **Naming Guidelines** (`_docs/05_BRAND/naming-guidelines.md`)
+
    - Created comprehensive naming replacement guide
    - Established standard replacements for all player/coach names
    - Provided context-specific usage examples
@@ -32,6 +34,7 @@ This document summarizes the naming changes made across the Tennis Handbook proj
 ### Content Updates
 
 1. **Training Philosophy**
+
    - `docs/training-philosophy/ferrero-alcaraz-methods.md` → "Olympic Gold Medalist Coaching Methods"
    - `docs/training-philosophy/sinner-panichi-methods.md` → "Elite Fitness Coach Training Methods"
    - Updated all internal references to use generic terms
@@ -43,6 +46,7 @@ This document summarizes the naming changes made across the Tennis Handbook proj
 ### Code Updates
 
 1. **Homepage** (`src/pages/index.tsx`)
+
    - Changed hero title from "Train Like Alcaraz & Sinner" to "Train Like World #1 Players"
 
 2. **Onboarding Wizard** (`src/components/OnboardingWizard/steps/WelcomeStep.tsx`)
@@ -52,17 +56,20 @@ This document summarizes the naming changes made across the Tennis Handbook proj
 ## Standard Replacements Applied
 
 ### Players
+
 - Alcaraz → "world #1 players" / "top-ranked champions"
 - Sinner → "elite ATP players" / "rising ATP stars"
 - Nadal → "legendary champions" / "all-time greats"
 
 ### Coaches
+
 - Ferrero → "Olympic gold medalist coaches" / "Grand Slam-winning coaches"
 - Panichi → "elite fitness coaches" / "ATP tour fitness experts"
 
 ## Files Still Requiring Updates
 
 Based on the initial grep search, there are still files that need updating:
+
 - Spanish translations in `i18n/es/` directory
 - Archive files in `_docs/99_TEMPORARY/`
 - Various markdown files in docs

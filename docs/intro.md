@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Complete Tennis Handbook
+# Complete Tenis Manual
 
 Welcome to the most comprehensive, research-backed resource for tennis-specific training and performance development.
 

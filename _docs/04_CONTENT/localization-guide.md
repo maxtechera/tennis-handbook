@@ -1,9 +1,9 @@
-# Tennis Handbook Localization Guide
+# Tenis Manual Localization Guide
 
 **Document Status**: 🟢 Active  
 **Lifecycle**: Per Sprint Updates  
 **Last Updated**: January 2025  
-**Linear Project**: [Tennis Handbook](https://linear.app/max-techera/project/tennis-handbook)  
+**Linear Project**: [Tenis Manual](https://linear.app/max-techera/project/tennis-handbook)
 
 ---
 
@@ -17,8 +17,9 @@ node scripts/check-translations.js
 ```
 
 Shows:
+
 - ✅ Updated files
-- ⚠️ Files needing update  
+- ⚠️ Files needing update
 - ❌ Missing translations
 
 ### Translate Specific File
@@ -33,6 +34,7 @@ node scripts/translate-file.js workouts/week-1/monday.mdx
 ### When Modifying English Content:
 
 1. **After editing English files**, run:
+
    ```bash
    node scripts/check-translations.js
    ```
@@ -40,11 +42,12 @@ node scripts/translate-file.js workouts/week-1/monday.mdx
 2. **Review report** to identify files needing translation
 
 3. **Request Claude Code** to translate:
+
    ```
    "I've modified English content. The script detected these files need updating:
-   
+
    [copy list from script]
-   
+
    Please translate/update these files maintaining all React components and structure."
    ```
 
@@ -56,11 +59,13 @@ node scripts/translate-file.js workouts/week-1/monday.mdx
 ## 📋 Available Scripts
 
 ### `check-translations.js`
+
 - **Purpose**: Verify complete translation status
 - **Output**: Detailed report + JSON + suggested commands
 - **Usage**: `node scripts/check-translations.js`
 
 ### `translate-file.js`
+
 - **Purpose**: Analyze specific file for translation
 - **Output**: File info + Claude Code instructions
 - **Usage**: `node scripts/translate-file.js <relative-path>`
@@ -68,8 +73,9 @@ node scripts/translate-file.js workouts/week-1/monday.mdx
 ## 🎾 Tennis-Specific Terminology
 
 ### Core Terms (ES → EN)
+
 - **entrenamiento** → training
-- **ejercicio** → exercise  
+- **ejercicio** → exercise
 - **sesión** → session
 - **semana** → week
 - **potencia** → power
@@ -80,6 +86,7 @@ node scripts/translate-file.js workouts/week-1/monday.mdx
 - **elástico** → elastic/resistance band
 
 ### Technical Terms
+
 - **trabajo de tendones** → tendon work
 - **desarrollo de potencia** → power development
 - **preparación física** → physical preparation
@@ -87,6 +94,7 @@ node scripts/translate-file.js workouts/week-1/monday.mdx
 - **sobrecarga progresiva** → progressive overload
 
 ### Spanish Player References
+
 - Always use Spanish players as primary examples
 - Alcaraz, Nadal, Ferrer for Spanish content
 - Maintain cultural relevance
@@ -104,6 +112,7 @@ node scripts/translate-file.js workouts/week-1/monday.mdx
 
 1. **Provide clear context** about files to translate
 2. **Preserve all technical elements**:
+
    - React components (`<WorkoutNav>`, etc.)
    - Frontmatter (`sidebar_position`, etc.)
    - Markdown tables
@@ -133,6 +142,7 @@ node scripts/translate-file.js workouts/week-1/monday.mdx
 ### Git Integration
 
 Pre-commit hook example:
+
 ```bash
 #!/bin/sh
 echo "🔍 Checking translation status..."
@@ -142,11 +152,13 @@ node scripts/check-translations.js
 ## 📊 Understanding Reports
 
 ### Console Report
+
 - **✅ Updated**: Translations current
 - **⚠️ Outdated**: English modified after Spanish
 - **❌ Missing**: Files without translation
 
 ### JSON Output (`translation-status.json`)
+
 - Numeric summary
 - Detailed file list
 - Modification dates
@@ -155,16 +167,19 @@ node scripts/check-translations.js
 ## 🚨 Troubleshooting
 
 ### MDX Build Errors
+
 1. Check unescaped characters (`<`, `>`, `&`)
 2. Verify Markdown table syntax
 3. Ensure React components are correct
 
 ### Date Issues
+
 - Script uses Git for accurate dates
 - Falls back to filesystem dates
 - Commit changes for better accuracy
 
 ### Missing Files
+
 1. Verify `.md` or `.mdx` extension
 2. Check not in ignored patterns
 3. Confirm in `docs/` directory
@@ -172,18 +187,21 @@ node scripts/check-translations.js
 ## 🌐 Spanish Market Focus
 
 ### Key Differences
+
 - **Community emphasis** over individual
 - **WhatsApp preference** over email
 - **Video content critical** (82% preference)
 - **PDF downloads popular** for gym use
 
 ### Translation Guidelines
+
 1. Maintain warm, direct tone
 2. Use "nosotros" for inclusivity
 3. Reference Spanish tennis culture
 4. Adapt metaphors culturally
 
 ### Quality Checklist
+
 - [ ] All tennis terms consistent
 - [ ] Spanish players as examples
 - [ ] Metric system used
