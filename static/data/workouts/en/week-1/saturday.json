@@ -86,48 +86,6 @@
       "has_dual_workout": true
     }
   },
-  "assessments": [
-    {
-      "id": "pre_activity_assessment",
-      "type": "daily",
-      "title": "Week 1 Pre-Activity Assessment",
-      "timing": "pre-session",
-      "duration": "10 minutes",
-      "description": "Readiness assessment for competition or recovery choice",
-      "attribution": {
-        "source": "Activity selection methodology",
-        "methodology": "Readiness-based activity selection",
-        "validation": "Load management protocols",
-        "elite_use": "Professional training periodization"
-      },
-      "verification": "Brain Game Tennis methodology"
-    },
-    {
-      "id": "saturday_readiness",
-      "type": "competition_readiness",
-      "title": "Saturday Option Selection",
-      "time": "07:30-07:45",
-      "components": [
-        {
-          "id": "readiness_check",
-          "name": "Competition Readiness Assessment",
-          "category": "decision_making",
-          "measurement": {
-            "protocol": "HRV, energy levels, motivation check",
-            "equipment": "HRV device, subjective scales"
-          },
-          "decision_criteria": {
-            "match_ready": "HRV >90% baseline, Energy >7/10, High motivation",
-            "recovery_needed": "HRV <90% baseline, Energy <7/10, Low motivation"
-          },
-          "context": {
-            "description": "Data-driven decision for Option A or B",
-            "application": "Choose based on objective and subjective markers"
-          }
-        }
-      ]
-    }
-  ],
   "schedule": {
     "option_a_blocks": [
       {
@@ -212,6 +170,33 @@
       }
     ]
   },
+  "assessments": [
+    {
+      "id": "saturday_readiness",
+      "type": "competition_readiness",
+      "title": "Saturday Option Selection",
+      "time": "07:30-07:45",
+      "components": [
+        {
+          "id": "readiness_check",
+          "name": "Competition Readiness Assessment",
+          "category": "decision_making",
+          "measurement": {
+            "protocol": "HRV, energy levels, motivation check",
+            "equipment": "HRV device, subjective scales"
+          },
+          "decision_criteria": {
+            "match_ready": "HRV >90% baseline, Energy >7/10, High motivation",
+            "recovery_needed": "HRV <90% baseline, Energy <7/10, Low motivation"
+          },
+          "context": {
+            "description": "Data-driven decision for Option A or B",
+            "application": "Choose based on objective and subjective markers"
+          }
+        }
+      ]
+    }
+  ],
   "workout_options": [
     {
       "option": "A",
