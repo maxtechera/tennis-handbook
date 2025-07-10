@@ -3,11 +3,6 @@
   "outputDirectory": "build",
   "installCommand": "pnpm install",
   "framework": null,
-  "functions": {
-    "api/*.js": {
-      "runtime": "vercel/nodejs20.x"
-    }
-  },
   "headers": [
     {
       "source": "/(.*)",
