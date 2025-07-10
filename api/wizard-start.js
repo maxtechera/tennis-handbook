@@ -1,5 +1,69 @@
 import { sql } from '@vercel/postgres';
 
+// Helper function to submit to Kit.com (ConvertKit)
+async function submitToKitCom(email, sessionId) {
+  const CONVERTKIT_API_SECRET = process.env.CONVERTKIT_API_SECRET;
+  const CONVERTKIT_FORM_ID = process.env.CONVERTKIT_FORM_ID_ES || process.env.CONVERTKIT_FORM_ID;
+  
+  if (!CONVERTKIT_API_SECRET || !CONVERTKIT_FORM_ID) {
+    console.error('Missing ConvertKit configuration');
+    return { success: false, error: 'Missing configuration' };
+  }
+  
+  try {
+    const payload = {
+      api_secret: CONVERTKIT_API_SECRET,
+      email: email,
+      fields: {
+        source: 'wizard-start',
+        wizard_started: 'yes',
+        wizard_started_at: new Date().toISOString(),
+        session_id: sessionId
+      },
+      tags: [
+        'tennis-handbook',
+        'onboarding-wizard-started',
+        'spanish' // Assuming Spanish users primarily
+      ]
+    };
+    
+    const response = await fetch(
+      `https://api.convertkit.com/v3/forms/${CONVERTKIT_FORM_ID}/subscribe`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      }
+    );
+    
+    const data = await response.json();
+    
+    if (!response.ok) {
+      console.error('ConvertKit error:', data);
+      return { success: false, error: data.message || 'Failed to subscribe' };
+    }
+    
+    console.log('✅ Kit.com submission successful for:', email.split('@')[0] + '@***');
+    
+    // Return the download link if available
+    // In Kit.com, you'd typically set up an automation to send the PDF
+    // Here we'll return a success indicator
+    return { 
+      success: true, 
+      subscriberId: data.subscription?.subscriber?.id,
+      // You can add the actual download link here if Kit.com returns it
+      // or if you have it configured in your environment
+      downloadLink: process.env.PDF_DOWNLOAD_LINK || null
+    };
+    
+  } catch (error) {
+    console.error('Kit.com submission error:', error);
+    return { success: false, error: error.message };
+  }
+}
+
 export default async function handler(req, res) {
   // Enable CORS
   const allowedOrigins = [
@@ -54,10 +118,20 @@ export default async function handler(req, res) {
     const ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || 'unknown';
     
     if (isDatabaseAvailable) {
-      // Quick email capture
+      // Quick email capture with kit_submitted status
       await sql`
-        INSERT INTO email_captures (email, source, metadata)
-        VALUES (${email}, ${source}, ${JSON.stringify({ sessionId })})
+        INSERT INTO email_captures (email, source, metadata, kit_submitted, kit_subscriber_id, kit_submitted_at)
+        VALUES (
+          ${email}, 
+          ${source}, 
+          ${JSON.stringify({ sessionId })},
+          FALSE,
+          NULL,
+          NULL
+        )
+        ON CONFLICT (email) DO UPDATE SET
+          source = EXCLUDED.source,
+          metadata = EXCLUDED.metadata
       `;
       
       // Create wizard submission entry
@@ -93,10 +167,37 @@ export default async function handler(req, res) {
       });
     }
     
+    // Submit to Kit.com (ConvertKit)
+    console.log('📤 Submitting to Kit.com...');
+    const kitResult = await submitToKitCom(email, sessionId);
+    
+    if (!kitResult.success) {
+      console.error('Kit.com submission failed:', kitResult.error);
+      // Continue anyway - we don't want to block the user
+    } else if (isDatabaseAvailable && kitResult.success) {
+      // Update the email_captures table to mark as synced
+      try {
+        await sql`
+          UPDATE email_captures
+          SET 
+            kit_submitted = TRUE,
+            kit_subscriber_id = ${kitResult.subscriberId || null},
+            kit_submitted_at = NOW()
+          WHERE email = ${email}
+        `;
+        console.log('✅ Marked email as synced in database');
+      } catch (updateError) {
+        console.error('Failed to update sync status:', updateError);
+      }
+    }
+    
     return res.status(200).json({ 
       success: true,
       message: 'Email captured successfully',
-      development: !isDatabaseAvailable
+      development: !isDatabaseAvailable,
+      kitSubmitted: kitResult.success,
+      downloadLink: kitResult.downloadLink,
+      subscriberId: kitResult.subscriberId
     });
     
   } catch (error) {

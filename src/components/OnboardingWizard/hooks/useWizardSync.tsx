@@ -48,8 +48,16 @@ export function useWizardSync({
         throw new Error('Failed to capture email');
       }
       
+      const data = await response.json();
       hasStartedRef.current = true;
-      return { success: true };
+      
+      // Return the full response including Kit.com submission status
+      return { 
+        success: true,
+        kitSubmitted: data.kitSubmitted,
+        downloadLink: data.downloadLink,
+        subscriberId: data.subscriberId
+      };
     } catch (error) {
       console.error('Email capture error:', error);
       return { success: false, error };

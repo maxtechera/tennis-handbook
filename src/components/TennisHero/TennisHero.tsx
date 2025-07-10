@@ -232,9 +232,11 @@ class InteractiveTennisBall {
     if (this.sleeping) {
       // Wake up from significant device tilt or shake
       // Calculate gravity magnitude to detect significant tilts
-      const gravityMagnitude = Math.sqrt(gravityX * gravityX + gravityY * gravityY);
+      const gravityMagnitude = Math.sqrt(
+        gravityX * gravityX + gravityY * gravityY
+      );
       const defaultGravityMagnitude = 0.4;
-      
+
       if (
         Math.abs(gravityX) > 0.2 || // Significant horizontal tilt
         Math.abs(gravityMagnitude - defaultGravityMagnitude) > 0.2 || // Significant tilt from default
@@ -986,25 +988,25 @@ export default function TennisHero({
       // Convert device orientation to realistic gravity
       // Beta: front-back tilt (-180 to 180, 0 = flat, 90 = vertical)
       // Gamma: left-right tilt (-90 to 90)
-      
+
       // Convert angles to radians
       const betaRad = ((beta || 0) * Math.PI) / 180;
       const gammaRad = ((gamma || 0) * Math.PI) / 180;
-      
+
       // Calculate gravity vector in world space
       // Gravity always points down in the real world
       const gravityMagnitude = 0.4; // Reduced from varying values to constant
-      
+
       // Transform world gravity to screen coordinates based on device orientation
       // When phone is flat (beta ≈ 0), gravity points down the screen (positive Y)
       // When phone is vertical (beta ≈ 90), gravity still points down in world
       let gravityX = 0;
       let gravityY = gravityMagnitude;
-      
+
       // Calculate gravity based on device orientation
       // The key insight: gravity always points "down" in the real world
       // We need to transform this to screen coordinates based on device rotation
-      
+
       if (Math.abs(beta) < 30) {
         // Phone is nearly flat (lying on table)
         // Gamma controls X-axis tilt, beta controls Y-axis tilt
@@ -1014,18 +1016,19 @@ export default function TennisHero({
         // Phone is tilted or vertical
         // Beta: 0° = flat, 90° = vertical portrait, ±180° = upside down
         // Gamma: side-to-side tilt
-        
+
         // When phone rotates from portrait to landscape:
         // - Portrait (beta ≈ 90°): gravity points down screen (positive Y)
         // - Landscape left (gamma ≈ -90°): gravity points right (positive X)
         // - Landscape right (gamma ≈ 90°): gravity points left (negative X)
-        
+
         // Calculate how vertical the phone is (0 = flat, 1 = vertical)
         const verticalness = Math.min(Math.abs(beta) / 90, 1);
-        
+
         // Base gravity direction from beta angle
-        const baseGravityY = Math.sign(90 - Math.abs(beta)) * Math.cos(betaRad) * gravityMagnitude;
-        
+        const baseGravityY =
+          Math.sign(90 - Math.abs(beta)) * Math.cos(betaRad) * gravityMagnitude;
+
         // When phone is vertical, gamma determines if we're in landscape
         if (verticalness > 0.7) {
           // Phone is mostly vertical
@@ -1045,13 +1048,17 @@ export default function TennisHero({
           gravityY = baseGravityY;
         }
       }
-      
+
       // Apply smoothing to prevent jittery movement
       // Smooth the gravity changes with exponential moving average
       const smoothingFactor = 0.15; // Lower = smoother, higher = more responsive
-      gravityX = prevGravityRef.current.x + (gravityX - prevGravityRef.current.x) * smoothingFactor;
-      gravityY = prevGravityRef.current.y + (gravityY - prevGravityRef.current.y) * smoothingFactor;
-      
+      gravityX =
+        prevGravityRef.current.x +
+        (gravityX - prevGravityRef.current.x) * smoothingFactor;
+      gravityY =
+        prevGravityRef.current.y +
+        (gravityY - prevGravityRef.current.y) * smoothingFactor;
+
       // Store for next frame
       prevGravityRef.current = { x: gravityX, y: gravityY };
 
@@ -1246,8 +1253,8 @@ export default function TennisHero({
         {/* Subtitle */}
         <p className={styles.subtitle}>
           <Translate id="homepage.hero.subtitle">
-            Arrastra las pelotas, agita el dispositivo e inclínalo para física
-            realista
+            Hace click en la pelota, agita el dispositivo e inclínalo para jugar
+            a la pelota
           </Translate>
         </p>
 

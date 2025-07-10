@@ -118,7 +118,10 @@ export function WelcomeStep({
         if (!result.success) {
           throw new Error("Database capture failed");
         }
+        // If wizard-start already submitted to Kit.com, we don't need to call createSubscriber
+        console.log("Wizard start result:", result);
       } else {
+        // Fallback to old method if captureEmail is not available
         await createSubscriber(email, name, language);
       }
 
