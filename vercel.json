@@ -29,6 +29,12 @@
       "maxDuration": 15
     }
   },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/dist/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
