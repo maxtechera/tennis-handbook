@@ -1,5 +1,4 @@
-import React from 'react';
-import Translate from '@docusaurus/Translate';
+import React, { useEffect, useState } from 'react';
 import Link from '@docusaurus/Link';
 import styles from './CompletionStep.module.css';
 
@@ -11,282 +10,108 @@ interface CompletionStepProps {
 }
 
 export function CompletionStep({ onNext, onBack, data, wizardData }: CompletionStepProps) {
+  const [showConfetti, setShowConfetti] = useState(false);
   const personalInfo = wizardData?.['personal-info'] || {};
-  const backgroundInfo = wizardData?.['background'] || {};
-  const challengesInfo = wizardData?.['challenges'] || {};
-  
-  const getPersonalizedRecommendations = () => {
-    const recommendations = [];
+  const userName = personalInfo.name;
 
-    // Based on experience level
-    if (backgroundInfo.experienceLevel === 'beginner') {
-      recommendations.push({
-        icon: '📚',
-        title: 'onboarding.completion.rec.beginner.title',
-        description: 'onboarding.completion.rec.beginner.desc',
-        link: '/docs/training-philosophy/overview',
-        linkText: 'onboarding.completion.rec.beginner.link'
-      });
-    } else if (backgroundInfo.experienceLevel === 'competitive') {
-      recommendations.push({
-        icon: '🏆',
-        title: 'onboarding.completion.rec.competitive.title',
-        description: 'onboarding.completion.rec.competitive.desc',
-        link: '/docs/training-philosophy/ferrero-alcaraz-methods',
-        linkText: 'onboarding.completion.rec.competitive.link'
-      });
-    }
+  useEffect(() => {
+    // Trigger confetti animation after component mounts
+    const timer = setTimeout(() => {
+      setShowConfetti(true);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
 
-    // Based on challenges
-    if (challengesInfo.challenges?.includes('strength')) {
-      recommendations.push({
-        icon: '💪',
-        title: 'onboarding.completion.rec.strength.title',
-        description: 'onboarding.completion.rec.strength.desc',
-        link: '/docs/specialized/explosive-power',
-        linkText: 'onboarding.completion.rec.strength.link'
-      });
-    }
-
-    if (challengesInfo.challenges?.includes('injury_prevention')) {
-      recommendations.push({
-        icon: '🏥',
-        title: 'onboarding.completion.rec.injury.title',
-        description: 'onboarding.completion.rec.injury.desc',
-        link: '/docs/specialized/tendon-health-science',
-        linkText: 'onboarding.completion.rec.injury.link'
-      });
-    }
-
-    // Default recommendations if none specific
-    if (recommendations.length === 0) {
-      recommendations.push(
-        {
-          icon: '📅',
-          title: 'onboarding.completion.rec.program.title',
-          description: 'onboarding.completion.rec.program.desc',
-          link: '/docs/workouts/overview',
-          linkText: 'onboarding.completion.rec.program.link'
-        },
-        {
-          icon: '🎾',
-          title: 'onboarding.completion.rec.methods.title',
-          description: 'onboarding.completion.rec.methods.desc',
-          link: '/docs/training-philosophy/overview',
-          linkText: 'onboarding.completion.rec.methods.link'
-        }
-      );
-    }
-
-    return recommendations.slice(0, 3); // Max 3 recommendations
+  const handleComplete = () => {
+    onNext({ completed: true });
   };
-
-  const recommendations = getPersonalizedRecommendations();
 
   return (
     <div className={styles.completionStep}>
+      {/* Confetti Animation */}
+      {showConfetti && (
+        <div className={styles.confetti}>
+          {[...Array(20)].map((_, i) => (
+            <div 
+              key={i} 
+              className={styles.confettiPiece}
+              style={{
+                '--delay': `${Math.random() * 0.5}s`,
+                '--duration': `${1 + Math.random() * 1}s`,
+                '--position': `${Math.random() * 100}%`,
+                '--rotation': `${Math.random() * 360}deg`
+              } as React.CSSProperties}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* Success Section */}
       <div className={styles.success}>
-        <div className={styles.successIcon}>✅</div>
+        <div className={styles.successIcon}>🎉</div>
         <h2 className={styles.title}>
-          <Translate id="onboarding.completion.title">
-            ¡Bienvenido al Elite Tennis Training!
-          </Translate>
+          {userName ? `¡Felicidades ${userName}!` : '¡Felicidades!'}
         </h2>
         <p className={styles.subtitle}>
-          {personalInfo.name ? (
-            `${personalInfo.name}, tu programa personalizado está listo`
-          ) : (
-            <Translate id="onboarding.completion.subtitle">
-              Tu programa personalizado está listo
-            </Translate>
-          )}
+          Tu programa personalizado está listo para transformar tu juego
         </p>
       </div>
 
+      {/* Next Steps Cards */}
       <div className={styles.nextSteps}>
-        <h3 className={styles.sectionTitle}>
-          <Translate id="onboarding.completion.nextsteps.title">
-            Tus próximos pasos
-          </Translate>
-        </h3>
-
-        <div className={styles.steps}>
-          <div className={styles.step}>
-            <span className={styles.stepNumber}>1</span>
-            <div className={styles.stepContent}>
-              <h4 className={styles.stepTitle}>
-                <Translate id="onboarding.completion.step1.title">
-                  Revisa tu email
-                </Translate>
-              </h4>
-              <p className={styles.stepDescription}>
-                <Translate id="onboarding.completion.step1.desc">
-                  Te hemos enviado tu guía de inicio rápido y acceso al programa
-                </Translate>
-              </p>
-            </div>
+        <div className={styles.stepCard}>
+          <div className={styles.stepIcon}>📧</div>
+          <div className={styles.stepContent}>
+            <h3>Revisa tu correo</h3>
+            <p>Te enviamos tu guía de inicio y acceso completo</p>
           </div>
+        </div>
 
-          <div className={styles.step}>
-            <span className={styles.stepNumber}>2</span>
-            <div className={styles.stepContent}>
-              <h4 className={styles.stepTitle}>
-                <Translate id="onboarding.completion.step2.title">
-                  Descarga los PDFs
-                </Translate>
-              </h4>
-              <p className={styles.stepDescription}>
-                <Translate id="onboarding.completion.step2.desc">
-                  Accede a todos los programas de entrenamiento en formato PDF
-                </Translate>
-              </p>
-            </div>
+        <div className={styles.stepCard}>
+          <div className={styles.stepIcon}>📱</div>
+          <div className={styles.stepContent}>
+            <h3>Descarga la app</h3>
+            <p>Accede a todos los entrenamientos desde tu móvil</p>
           </div>
+        </div>
 
-          {wizardData?.['personalization']?.communicationPreferences?.includes('whatsapp') && (
-            <div className={styles.step}>
-              <span className={styles.stepNumber}>3</span>
-              <div className={styles.stepContent}>
-                <h4 className={styles.stepTitle}>
-                  <Translate id="onboarding.completion.step3.title">
-                    Únete al grupo de WhatsApp
-                  </Translate>
-                </h4>
-                <p className={styles.stepDescription}>
-                  <Translate id="onboarding.completion.step3.desc">
-                    Recibirás una invitación en las próximas 24 horas
-                  </Translate>
-                </p>
-              </div>
-            </div>
-          )}
+        <div className={styles.stepCard}>
+          <div className={styles.stepIcon}>🏃‍♂️</div>
+          <div className={styles.stepContent}>
+            <h3>Comienza hoy</h3>
+            <p>Tu primera sesión te está esperando</p>
+          </div>
         </div>
       </div>
 
-      <div className={styles.recommendations}>
-        <h3 className={styles.sectionTitle}>
-          <Translate id="onboarding.completion.recommendations.title">
-            Recomendado para ti
-          </Translate>
-        </h3>
-
-        <div className={styles.recommendationGrid}>
-          {recommendations.map((rec, index) => (
-            <div key={index} className={styles.recommendationCard}>
-              <div className={styles.recIcon}>{rec.icon}</div>
-              <h4 className={styles.recTitle}>
-                {rec.title === 'onboarding.completion.rec.program.title' && (
-                  <Translate id="onboarding.completion.rec.program.title">
-                    Programa de 12 Semanas
-                  </Translate>
-                )}
-                {rec.title === 'onboarding.completion.rec.methods.title' && (
-                  <Translate id="onboarding.completion.rec.methods.title">
-                    Filosofías de Entrenamiento
-                  </Translate>
-                )}
-                {rec.title === 'onboarding.completion.rec.beginner.title' && (
-                  <Translate id="onboarding.completion.rec.beginner.title">
-                    Fundamentos del Entrenamiento
-                  </Translate>
-                )}
-                {rec.title === 'onboarding.completion.rec.competitive.title' && (
-                  <Translate id="onboarding.completion.rec.competitive.title">
-                    Métodos de Elite
-                  </Translate>
-                )}
-                {rec.title === 'onboarding.completion.rec.strength.title' && (
-                  <Translate id="onboarding.completion.rec.strength.title">
-                    Desarrollo de Fuerza
-                  </Translate>
-                )}
-                {rec.title === 'onboarding.completion.rec.injury.title' && (
-                  <Translate id="onboarding.completion.rec.injury.title">
-                    Prevención de Lesiones
-                  </Translate>
-                )}
-              </h4>
-              <p className={styles.recDescription}>
-                {rec.description === 'onboarding.completion.rec.program.desc' && (
-                  <Translate id="onboarding.completion.rec.program.desc">
-                    Tu plan completo de entrenamiento progresivo
-                  </Translate>
-                )}
-                {rec.description === 'onboarding.completion.rec.methods.desc' && (
-                  <Translate id="onboarding.completion.rec.methods.desc">
-                    Conoce las filosofías de los mejores entrenadores
-                  </Translate>
-                )}
-                {rec.description === 'onboarding.completion.rec.beginner.desc' && (
-                  <Translate id="onboarding.completion.rec.beginner.desc">
-                    Empieza con los conceptos básicos del entrenamiento profesional
-                  </Translate>
-                )}
-                {rec.description === 'onboarding.completion.rec.competitive.desc' && (
-                  <Translate id="onboarding.completion.rec.competitive.desc">
-                    Descubre los métodos de entrenadores medallistas olímpicos
-                  </Translate>
-                )}
-                {rec.description === 'onboarding.completion.rec.strength.desc' && (
-                  <Translate id="onboarding.completion.rec.strength.desc">
-                    Mejora tu potencia explosiva con métodos probados
-                  </Translate>
-                )}
-                {rec.description === 'onboarding.completion.rec.injury.desc' && (
-                  <Translate id="onboarding.completion.rec.injury.desc">
-                    Mantente saludable con protocolos científicos
-                  </Translate>
-                )}
-              </p>
-              <Link to={rec.link} className={styles.recLink}>
-                {rec.linkText === 'onboarding.completion.rec.program.link' && (
-                  <Translate id="onboarding.completion.rec.program.link">
-                    Comenzar programa
-                  </Translate>
-                )}
-                {rec.linkText === 'onboarding.completion.rec.methods.link' && (
-                  <Translate id="onboarding.completion.rec.methods.link">
-                    Explorar filosofías
-                  </Translate>
-                )}
-                {rec.linkText === 'onboarding.completion.rec.beginner.link' && (
-                  <Translate id="onboarding.completion.rec.beginner.link">
-                    Ver fundamentos
-                  </Translate>
-                )}
-                {rec.linkText === 'onboarding.completion.rec.competitive.link' && (
-                  <Translate id="onboarding.completion.rec.competitive.link">
-                    Explorar métodos
-                  </Translate>
-                )}
-                {rec.linkText === 'onboarding.completion.rec.strength.link' && (
-                  <Translate id="onboarding.completion.rec.strength.link">
-                    Ver ejercicios
-                  </Translate>
-                )}
-                {rec.linkText === 'onboarding.completion.rec.injury.link' && (
-                  <Translate id="onboarding.completion.rec.injury.link">
-                    Ver protocolos
-                  </Translate>
-                )}
-                <span className={styles.arrow}>→</span>
-              </Link>
-            </div>
-          ))}
+      {/* Quick Links */}
+      <div className={styles.quickLinks}>
+        <h3 className={styles.quickLinksTitle}>Acceso rápido a tu contenido</h3>
+        <div className={styles.linkGrid}>
+          <Link to="/docs/workouts/week-1/monday" className={styles.linkCard}>
+            <span className={styles.linkIcon}>🎾</span>
+            <span>Primera Sesión</span>
+          </Link>
+          <Link to="/docs/workouts/week-program-table" className={styles.linkCard}>
+            <span className={styles.linkIcon}>📅</span>
+            <span>Plan Completo</span>
+          </Link>
+          <Link to="/docs/training-philosophy/overview" className={styles.linkCard}>
+            <span className={styles.linkIcon}>🧠</span>
+            <span>Filosofías</span>
+          </Link>
+          <Link to="/docs/nutrition/overview" className={styles.linkCard}>
+            <span className={styles.linkIcon}>🥗</span>
+            <span>Nutrición</span>
+          </Link>
         </div>
       </div>
 
+      {/* Final CTA */}
       <div className={styles.finalActions}>
-        <Link to="/docs/workouts/overview" className={styles.primaryButton}>
-          <Translate id="onboarding.completion.cta.primary">
-            Comenzar mi programa
-          </Translate>
-        </Link>
-        <Link to="/" className={styles.secondaryButton}>
-          <Translate id="onboarding.completion.cta.secondary">
-            Explorar el contenido
-          </Translate>
-        </Link>
+        <button onClick={handleComplete} className={styles.primaryButton}>
+          Comenzar mi transformación →
+        </button>
       </div>
     </div>
   );

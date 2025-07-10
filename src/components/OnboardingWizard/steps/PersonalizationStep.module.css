@@ -1,518 +1,164 @@
+/* PersonalizationStep - Communication Preferences */
 .personalizationStep {
-  max-width: 700px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 1.5rem;
 }
 
-.header {
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Question Section */
+.questionSection {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: var(--ifm-heading-color);
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.6s ease-out;
 }
 
 .subtitle {
-  font-size: 1rem;
-  color: var(--ifm-color-secondary-darker);
-  margin: 0;
-  line-height: 1.5;
-}
-
-/* Form Header (after hero) */
-.formHeader {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding-top: 1rem;
-}
-
-.formTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--ifm-heading-color);
-  margin-bottom: 0.5rem;
-}
-
-.formSubtitle {
-  font-size: 0.938rem;
-  color: var(--ifm-color-secondary-darker);
-  margin: 0;
-  line-height: 1.5;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.phoneInput {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--ifm-color-emphasis-200);
-}
-
-.phoneLabel {
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--ifm-heading-color);
-  margin-bottom: 0.5rem;
-}
-
-.input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border: 2px solid var(--ifm-color-emphasis-300);
-  border-radius: 6px;
-  background: var(--ifm-background-surface-color);
-  transition: all 0.2s ease;
-}
-
-.input:focus {
-  outline: none;
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 0 0 3px rgba(var(--ifm-color-primary-rgb), 0.1);
-}
-
-.phoneHint {
-  display: block;
-  font-size: 0.813rem;
-  color: var(--ifm-color-secondary-darker);
-  margin-top: 0.25rem;
-}
-
-.skipNotice {
-  background: var(--ifm-color-info-lightest);
-  border: 1px solid var(--ifm-color-info-lighter);
-  border-radius: 6px;
-  padding: 1rem;
-  margin-top: 0.5rem;
-}
-
-.skipText {
-  font-size: 0.875rem;
-  color: var(--ifm-color-info-darker);
-  margin: 0;
-  text-align: center;
-}
-
-.actions {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.backButton,
-.skipButton,
-.nextButton {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  min-width: 100px;
-}
-
-.backButton {
-  background: var(--ifm-background-surface-color);
-  color: var(--ifm-color-secondary-darker);
-  border: 2px solid var(--ifm-color-emphasis-300);
-}
-
-.backButton:hover {
-  background: var(--ifm-color-emphasis-100);
-  border-color: var(--ifm-color-emphasis-400);
-}
-
-.skipButton {
-  background: transparent;
-  color: var(--ifm-color-secondary);
-  border: 2px solid transparent;
-  text-decoration: underline;
-}
-
-.skipButton:hover {
-  color: var(--ifm-color-secondary-darker);
-}
-
-.nextButton {
-  background: var(--ifm-color-primary);
-  color: white;
-  border: none;
-  flex: 1;
-  max-width: 200px;
-}
-
-.nextButton:hover {
-  background: var(--ifm-color-primary-dark);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Mobile-first responsive design */
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .subtitle {
-    font-size: 0.938rem;
-  }
-
-  .actions {
-    flex-wrap: wrap;
-  }
-
-  .backButton {
-    order: 2;
-    flex: 1;
-  }
-
-  .skipButton {
-    order: 3;
-    flex: 1;
-  }
-
-  .nextButton {
-    order: 1;
-    width: 100%;
-    max-width: none;
-    margin-bottom: 0.5rem;
-  }
-}
-
-/* Dark mode specific adjustments */
-[data-theme="dark"] .input {
-  background: var(--ifm-background-color);
-  border-color: var(--ifm-color-emphasis-300);
-  color: var(--ifm-font-color-base);
-}
-
-[data-theme="dark"] .input::placeholder {
-  color: var(--ifm-color-emphasis-500);
-}
-
-[data-theme="dark"] .input:focus {
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 0 0 3px var(--ifm-color-primary-darker);
-}
-
-[data-theme="dark"] .phoneInput {
-  border-top-color: var(--ifm-color-emphasis-200);
-}
-
-[data-theme="dark"] .backButton {
-  background: var(--ifm-background-surface-color);
-  border-color: var(--ifm-color-emphasis-300);
-}
-
-[data-theme="dark"] .backButton:hover {
-  background: var(--ifm-color-emphasis-200);
-}
-
-[data-theme="dark"] .nextButton {
-  background: var(--ifm-color-primary);
-  color: #ffffff;
-}
-
-[data-theme="dark"] .nextButton:hover {
-  background: var(--ifm-color-primary-light);
-  color: #ffffff;
-}
-
-/* Welcome Hero Section */
-.welcomeHero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 16px;
-  padding: 2.5rem 2rem;
-  margin-bottom: 3rem;
-  color: white;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
-}
-
-.welcomeHero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="heroPattern" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23heroPattern)"/></svg>');
-  pointer-events: none;
-}
-
-.heroIcon {
-  font-size: 4rem;
-  line-height: 1;
-  margin-bottom: 1rem;
-  animation: heroIconFloat 3s ease-in-out infinite;
-  z-index: 1;
-  position: relative;
-}
-
-@keyframes heroIconFloat {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-.heroTitle {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-  color: white;
-  z-index: 1;
-  position: relative;
-  line-height: 1.2;
-}
-
-.heroSubtitle {
   font-size: 1.125rem;
-  margin: 0 0 2rem 0;
   color: rgba(255, 255, 255, 0.9);
-  z-index: 1;
-  position: relative;
-  line-height: 1.5;
-}
-
-/* PDF Status Section */
-.pdfStatus {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-align: left;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  z-index: 1;
-  position: relative;
-}
-
-.pdfStatusIcon {
-  font-size: 2rem;
-  line-height: 1;
-  animation: emailPulse 2s ease-in-out infinite;
-}
-
-.pdfStatusContent {
-  flex: 1;
-}
-
-.pdfStatusTitle {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem 0;
-  color: white;
-}
-
-.pdfStatusMessage {
-  font-size: 0.938rem;
-  line-height: 1.5;
   margin: 0;
-  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  animation: fadeInUp 0.6s ease-out 0.1s both;
 }
 
-/* Next Steps Section */
-.heroNextSteps {
+/* Options Grid */
+.optionsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+/* Option Cards */
+.optionCard {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-align: left;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  z-index: 1;
-  position: relative;
-}
-
-.nextStepsIcon {
-  font-size: 2rem;
-  line-height: 1;
-  animation: sparkle 2s ease-in-out infinite;
-}
-
-@keyframes sparkle {
-  0%, 100% { transform: scale(1) rotate(0deg); }
-  25% { transform: scale(1.1) rotate(-5deg); }
-  75% { transform: scale(1.1) rotate(5deg); }
-}
-
-.nextStepsContent {
-  flex: 1;
-}
-
-.nextStepsTitle {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem 0;
-  color: white;
-}
-
-.nextStepsMessage {
-  font-size: 0.938rem;
-  line-height: 1.5;
-  margin: 0;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-/* Mobile responsive for hero */
-@media (max-width: 768px) {
-  .welcomeHero {
-    padding: 2rem 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .heroIcon {
-    font-size: 3rem;
-  }
-  
-  .heroTitle {
-    font-size: 2rem;
-  }
-  
-  .heroSubtitle {
-    font-size: 1rem;
-  }
-  
-  .pdfStatus,
-  .heroNextSteps {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.75rem;
-    padding: 1.25rem;
-  }
-  
-  .pdfStatusIcon,
-  .nextStepsIcon {
-    font-size: 1.75rem;
-  }
-  
-  .pdfStatusTitle,
-  .nextStepsTitle {
-    font-size: 1rem;
-  }
-  
-  .pdfStatusMessage,
-  .nextStepsMessage {
-    font-size: 0.875rem;
-  }
-}
-
-/* Email Check Notification (legacy - can be removed) */
-.emailCheckNotification {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  border-radius: 12px;
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
   padding: 1.5rem;
-  margin-bottom: 2rem;
-  color: white;
-  box-shadow: 0 4px 20px rgba(79, 172, 254, 0.3);
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-.emailCheckNotification::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.05"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  pointer-events: none;
+.optionCard:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-.emailCheckIcon {
-  font-size: 2.5rem;
-  line-height: 1;
-  margin-top: 0.25rem;
-  animation: emailPulse 2s ease-in-out infinite;
-  z-index: 1;
-  position: relative;
+.optionCard.selected {
+  background: rgba(76, 175, 80, 0.2);
+  border-color: rgba(76, 175, 80, 0.5);
+  transform: scale(1.02);
 }
 
-@keyframes emailPulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
+.optionCard.celebrate {
+  animation: celebrateCard 0.6s ease-out;
 }
 
-.emailCheckContent {
-  flex: 1;
-  z-index: 1;
-  position: relative;
+@keyframes celebrateCard {
+  0% { transform: scale(1.02); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1.02); }
 }
 
-.emailCheckTitle {
+.optionIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: iconFloat 3s ease-in-out infinite;
+  animation-delay: calc(var(--index) * 0.2s);
+}
+
+.optionCard:nth-child(1) .optionIcon { --index: 0; }
+.optionCard:nth-child(2) .optionIcon { --index: 1; }
+.optionCard:nth-child(3) .optionIcon { --index: 2; }
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.optionTitle {
   font-size: 1.25rem;
   font-weight: 600;
+  color: #ffffff;
   margin: 0 0 0.5rem 0;
-  color: white;
 }
 
-.emailCheckMessage {
-  font-size: 0.938rem;
-  line-height: 1.5;
-  margin: 0 0 1rem 0;
-  color: rgba(255, 255, 255, 0.95);
+.optionDescription {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  line-height: 1.4;
 }
 
-.emailCheckActions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+/* Disabled state */
+.optionCard:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
-.emailCheckHint {
-  font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.85);
-  font-weight: 500;
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-  .emailCheckNotification {
-    padding: 1.25rem;
-    flex-direction: column;
-    text-align: center;
-    gap: 0.75rem;
+  .personalizationStep {
+    padding: 1rem;
   }
-  
-  .emailCheckIcon {
-    font-size: 2rem;
-    margin-top: 0;
-    align-self: center;
+
+  .title {
+    font-size: 1.75rem;
   }
-  
-  .emailCheckTitle {
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .optionIcon {
+    font-size: 2.5rem;
+  }
+
+  .optionTitle {
     font-size: 1.125rem;
   }
-  
-  .emailCheckMessage {
+
+  .optionDescription {
     font-size: 0.875rem;
-  }
-  
-  .emailCheckHint {
-    font-size: 0.813rem;
   }
 }
 
-/* Dark mode adjustments */
-[data-theme="dark"] .emailCheckNotification {
-  box-shadow: 0 4px 20px rgba(79, 172, 254, 0.4);
+/* Desktop - show 3 columns */
+@media (min-width: 769px) {
+  .optionsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
