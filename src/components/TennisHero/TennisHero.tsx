@@ -409,7 +409,6 @@ export default function TennisHero({
   const grabbedBall = useRef<InteractiveTennisBall | null>(null);
   const mousePos = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
   const [ballCount, setBallCount] = useState(0);
-  const [ctaHitActive, setCTAHitActive] = useState(false);
 
   // Request device orientation permission
   const requestOrientationPermission = async () => {
@@ -707,11 +706,7 @@ export default function TennisHero({
         };
 
         ballsRef.current.forEach((ball) => {
-          if (ball.checkCTACollision(ctaRect)) {
-            // Ball hit the CTA button - trigger visual effect
-            setCTAHitActive(true);
-            setTimeout(() => setCTAHitActive(false), 200); // Quick flash effect
-          }
+          ball.checkCTACollision(ctaRect); // Just physics collision, no visual effect
         });
       }
 
@@ -865,11 +860,7 @@ export default function TennisHero({
         <button
           ref={ctaButtonRef}
           onClick={onCTAClick}
-          className={clsx(
-            styles.ctaButton,
-            styles.rippleEffect,
-            ctaHitActive && styles.ctaHit
-          )}
+          className={styles.ctaButton}
           aria-label="Descargar rutina gratis"
         >
           <span className={styles.ctaText}>

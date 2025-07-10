@@ -80,21 +80,7 @@ metadata:
   day_features:
     has_dual_workout: true
 
-# ASSESSMENT SECTIONS
-assessments:
-  - id: "pre_activity_assessment"
-    type: "daily"
-    title: "Week 1 Pre-Activity Assessment"
-    timing: "pre-session"
-    duration: "10 minutes"
-    description: "Readiness assessment for competition or recovery choice"
-
-    attribution:
-      source: "Activity selection methodology"
-      methodology: "Readiness-based activity selection"
-      validation: "Load management protocols"
-      elite_use: "Professional training periodization"
-    verification: "Brain Game Tennis methodology"
+# ASSESSMENT SECTIONS - Combined with detailed assessments below
 
 # Schedule blocks for both options
 schedule:
