@@ -1,7 +1,8 @@
 import { sql } from '@vercel/postgres';
+import { generateConvertKitTags, generateCustomFields } from './utils/convertkit-tags.js';
 
 // Helper function to submit a single email to Kit.com
-async function submitEmailToKit(email, metadata = {}) {
+async function submitEmailToKit(email, metadata = {}, wizardData = null) {
   const CONVERTKIT_API_SECRET = process.env.CONVERTKIT_API_SECRET;
   const CONVERTKIT_FORM_ID = process.env.CONVERTKIT_FORM_ID_ES || process.env.CONVERTKIT_FORM_ID;
   
@@ -10,20 +11,31 @@ async function submitEmailToKit(email, metadata = {}) {
   }
   
   try {
+    // Generate comprehensive tags and custom fields
+    const tagData = {
+      email,
+      source: metadata.source || 'database-sync',
+      language: metadata.language || 'es',
+      sessionId: metadata.sessionId || 'sync-process',
+      wizardData: wizardData || {},
+      metadata,
+      timestamp: new Date()
+    };
+    
+    const tags = generateConvertKitTags(tagData);
+    const customFields = generateCustomFields(tagData);
+    
     const payload = {
       api_secret: CONVERTKIT_API_SECRET,
       email: email,
       fields: {
+        ...customFields,
         source: metadata.source || 'database-sync',
         synced_at: new Date().toISOString(),
         session_id: metadata.sessionId || 'sync-process',
         ...metadata
       },
-      tags: [
-        'tennis-handbook',
-        'database-sync',
-        'spanish'
-      ]
+      tags: tags
     };
     
     const response = await fetch(
@@ -143,12 +155,45 @@ export default async function handler(req, res) {
       try {
         console.log(`Processing email: ${row.email.split('@')[0]}@***`);
         
-        // Submit to Kit.com
+        // Get wizard data if available
+        let wizardData = null;
+        if (row.metadata?.sessionId) {
+          try {
+            const wizardResult = await sql`
+              SELECT 
+                micro_quiz, goals_quiz, time_quiz, focus_quiz,
+                personal_info, tennis_experience, training_goals,
+                schedule_preferences, physical_profile
+              FROM wizard_submissions
+              WHERE session_id = ${row.metadata.sessionId}
+              LIMIT 1
+            `;
+            
+            if (wizardResult.rows.length > 0) {
+              const wd = wizardResult.rows[0];
+              wizardData = {
+                'micro-quiz': wd.micro_quiz,
+                'goals-quiz': wd.goals_quiz,
+                'time-quiz': wd.time_quiz,
+                'focus-quiz': wd.focus_quiz,
+                personalInfo: wd.personal_info,
+                tennisExperience: wd.tennis_experience,
+                trainingGoals: wd.training_goals,
+                schedulePreferences: wd.schedule_preferences,
+                physicalProfile: wd.physical_profile
+              };
+            }
+          } catch (err) {
+            console.log('Could not fetch wizard data:', err.message);
+          }
+        }
+        
+        // Submit to Kit.com with comprehensive tags
         const kitResult = await submitEmailToKit(row.email, {
           source: row.source,
           original_capture_date: row.created_at,
           ...row.metadata
-        });
+        }, wizardData);
         
         // Update database with success
         await sql`
@@ -220,11 +265,38 @@ export default async function handler(req, res) {
             ON CONFLICT (email) DO NOTHING
           `;
           
-          // Then submit to Kit
+          // Get full wizard data
+          const fullWizardResult = await sql`
+            SELECT 
+              micro_quiz, goals_quiz, time_quiz, focus_quiz,
+              personal_info, tennis_experience, training_goals,
+              schedule_preferences, physical_profile
+            FROM wizard_submissions
+            WHERE session_id = ${wizardRow.session_id}
+            LIMIT 1
+          `;
+          
+          let wizardData = null;
+          if (fullWizardResult.rows.length > 0) {
+            const wd = fullWizardResult.rows[0];
+            wizardData = {
+              'micro-quiz': wd.micro_quiz,
+              'goals-quiz': wd.goals_quiz,
+              'time-quiz': wd.time_quiz,
+              'focus-quiz': wd.focus_quiz,
+              personalInfo: wd.personal_info,
+              tennisExperience: wd.tennis_experience,
+              trainingGoals: wd.training_goals,
+              schedulePreferences: wd.schedule_preferences,
+              physicalProfile: wd.physical_profile
+            };
+          }
+          
+          // Then submit to Kit with comprehensive tags
           const kitResult = await submitEmailToKit(wizardRow.email, {
             source: 'wizard-sync',
             sessionId: wizardRow.session_id
-          });
+          }, wizardData);
           
           // Update as synced
           await sql`
