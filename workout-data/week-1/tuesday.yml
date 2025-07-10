@@ -1,38 +1,182 @@
 # Week 1 - Tuesday: Enhanced Upper Body Foundation & Tennis
 metadata:
-  week: 1
-  week_name: "Elite Foundation"
-  day: "tuesday"
-  day_number: 2
+  # Basic identifiers
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_1_tuesday"
+  day_name: "Tuesday"
+
+  # Workout details
   title: "Enhanced Upper Body Foundation & Tennis"
   subtitle: "Building Strength and Precision for Elite Performance"
   phase: "Phase 1: Elite Foundation"
-  phase_week: 1
-  focus: "Upper Body Strength & Serve Development"
-  volume_target: "100% (baseline)"
-  intensity_target: "65-70%"
-  
-  athlete_methods:
-    - "HSR Protocol"
-    - "Tempo training"
-    - "Serve development progression"
-    - "Volley refinement"
-  
-  equipment_needed:
-    - "Barbell and weights"
-    - "Cable machine or resistance bands"
-    - "PVC pipe or resistance band (for dislocates)"
-    - "Medicine ball (4-6 lb)"
-    - "Tennis court access"
-    - "Video recording device (optional)"
-  
+  focus_areas:
+    - "Upper Body Strength Development"
+    - "Serve & Volley Progression"
+
+  # Training parameters
+  training_parameters:
+    volume: "100% (baseline)"
+    intensity: "65-70%"
+    density: "moderate"
+    duration: "4 hours 15 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "HSR Protocol Integration"
+      type: "strength"
+      attribution:
+        source: "Norwegian Tennis Federation"
+        athlete: "Casper Ruud"
+        verification: "Published in NSCA journal 2022"
+        context: "Injury prevention and strength building"
+    - name: "Serve Development Progression"
+      type: "tennis"
+      attribution:
+        source: "Andy Roddick Academy"
+        coach: "Andy Roddick coaching team"
+        verification: "Academy curriculum documentation"
+        context: "Progressive serve building protocol"
+    - name: "Tempo Training Method"
+      type: "strength"
+      attribution:
+        source: "Patrick Mouratoglou Academy"
+        verification: "Academy training manual 2023"
+        context: "Foundation strength phase protocol"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Barbell and weights"
+      - "Tennis court access"
+      - "Cable machine or resistance bands"
+    optional:
+      - "PVC pipe or resistance band (for dislocates)"
+      - "Medicine ball (4-6 lb)"
+      - "Video recording device"
+
+  # Navigation
   navigation:
     daily: "[📋 Week Overview](./) | [⬅️ Monday](monday) | [Wednesday ➡️](wednesday)"
-    week_overview_link: "./"
-    prev_day: "monday"
-    prev_day_link: "monday"
-    next_day: "wednesday"
-    next_day_link: "wednesday"
+    overview_link: "./"
+    next_link: "wednesday"
+    previous_link: "monday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Daily Assessment Protocol"
+      preparation: "Elite Movement Preparation"
+      skill_training: "Serve & Volley Development"
+      conditioning: "HSR Upper Body Strength"
+      recovery: "Active Recovery Protocol"
+
+    ui_elements:
+      - type: "info"
+        title: "Week 1 Foundation Focus"
+        content: "Building baseline strength and serve technique foundation"
+        icon: "🎾"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "daily_assessment"
+    type: "daily"
+    title: "Week 1 Daily Assessment"
+    timing: "pre-session"
+    duration: "10 minutes"
+    description: "Daily readiness and comparison tracking"
+
+    attribution:
+      source: "Daily assessment methodology"
+      methodology: "Baseline comparison tracking"
+      validation: "Training readiness protocols"
+      elite_use: "Used in professional training programs"
+
+# Schedule blocks for timeline/carousel compatibility
+schedule:
+  blocks:
+    - id: "assessment"
+      time: "07:00-07:10"
+      title: "Daily Assessment"
+      type: "assessment"
+      duration: 10
+      carousel_data:
+        phase_id: "assessment"
+        phase_title: "Daily Check-in"
+        phase_icon: "📊"
+        location: "gym"
+        
+    - id: "upper_strength"
+      time: "07:15-08:00"
+      title: "Enhanced Upper Body Strength"
+      type: "strength"
+      duration: 45
+      carousel_data:
+        phase_id: "strength"
+        phase_title: "Upper Body HSR"
+        phase_icon: "💪"
+        location: "gym"
+        
+    - id: "tennis_prep"
+      time: "08:05-08:25"
+      title: "Tennis-Specific Upper Body Preparation"
+      type: "preparation"
+      duration: 20
+      carousel_data:
+        phase_id: "preparation"
+        phase_title: "Tennis Prep"
+        phase_icon: "🎾"
+        location: "court"
+        
+    - id: "tennis_skill"
+      time: "08:30-09:30"
+      title: "Tennis Serve & Volley Development"
+      type: "skill"
+      duration: 60
+      carousel_data:
+        phase_id: "tennis"
+        phase_title: "Serve & Volley"
+        phase_icon: "🎾"
+        location: "court"
+        
+    - id: "coaching"
+      time: "09:30-10:30"
+      title: "Personal Coaching Integration"
+      type: "coaching"
+      duration: 60
+      carousel_data:
+        phase_id: "coaching"
+        phase_title: "Technical Work"
+        phase_icon: "🎯"
+        location: "court"
+        
+    - id: "recovery"
+      time: "10:30-10:45"
+      title: "Enhanced Recovery Protocols"
+      type: "recovery"
+      duration: 15
+      carousel_data:
+        phase_id: "recovery"
+        phase_title: "Recovery"
+        phase_icon: "🧘"
+        location: "gym"
+
+# Assessments section following Monday's pattern
+assessments:
+  - id: "daily_assessment"
+    type: "daily"
+    title: "Daily Readiness Assessment"
+    time: "07:00-07:10"
+    components:
+      - id: "comparison_metrics"
+        name: "Daily Comparison to Baseline"
+        category: "monitoring"
+        measurement:
+          protocol: "Compare to Monday baseline values"
+          equipment: "HRV device, subjective scales"
+        context:
+          description: "Track daily variations to optimize training load"
+          application: "Adjust intensity based on readiness markers"
 
 # NEW PATTERN: Daily assessment with comparison table
 daily_assessment:
@@ -71,9 +215,19 @@ strength_training:
   primary_movements:
     - exercise_id: "ub_1"
       name: "Overhead Press (Tempo)"
+      category: "upper_power"
       sets: "4"
       reps: "8"
       rest_seconds: 150
+      tempo: "3-1-X-0"
+      load: "65-70% 1RM"
+      
+      attribution:
+        source: "Norwegian Tennis Federation"
+        elite_use: "Casper Ruud's injury prevention protocol"
+        coach: "Christian Ruud"
+        verification: "NTF Performance Manual 2023"
+        quote: "Slow eccentrics build the tendon resilience needed for serving"
       
       # NEW PATTERN: HSR protocol details
       hsr_protocol:
@@ -458,3 +612,83 @@ session_documentation:
     - metric: "Recovery Feel"
       value: "___/10"
       notes: "How recovered you feel post-session"
+
+# Metrics section for volume and intensity tracking
+metrics:
+  volume:
+    tennis_minutes: 120
+    strength_minutes: 45
+    recovery_minutes: 15
+    total_minutes: 180
+    
+  intensity:
+    tennis_average: "65-70%"
+    strength_average: "65-70%"
+    overall_rpe: "6-7/10"
+    
+  density:
+    work_rest_ratio: "3:1"
+    high_intensity_minutes: 20
+    
+# Professional coaching notes
+coaching_notes:
+  - category: "Upper Body Focus"
+    note: "HSR protocol emphasizes time under tension for tendon health"
+    application: "3-second eccentrics on all pressing movements"
+    
+  - category: "Serve Development"
+    note: "Build consistency before adding power"
+    progression: "Week 1: 65% effort, Week 2: 70%, Week 3: 75%"
+    
+  - category: "Recovery Priority"
+    note: "Upper body requires 48-72 hours between similar sessions"
+    planning: "Next upper focus: Friday (power emphasis)"
+
+# Level modifications for different training ages
+level_modifications:
+  beginner:
+    - modification: "Reduce HSR tempo to 2-0-2"
+    - modification: "Use bands instead of weights for rows"
+    - modification: "30 minutes tennis skill work instead of 60"
+    
+  intermediate:
+    - modification: "Follow program as written"
+    - modification: "Optional: Add 1 extra set to main lifts"
+    
+  advanced:
+    - modification: "Add velocity measurements to lifts"
+    - modification: "Increase tennis intensity to 70-75%"
+    - modification: "Add contrast sets on final exercise"
+
+# Integration with weekly program
+week_integration:
+  previous_day_connection: "Builds on Monday's movement assessment findings"
+  preparation_for: "Wednesday's explosive upper body work"
+  weekly_theme: "Foundation building with proper movement patterns"
+  
+  key_adaptations:
+    - "Upper body strength endurance"
+    - "Serve technique refinement"
+    - "Shoulder stability and health"
+    
+  carry_over:
+    - to_wednesday: "Prepared shoulders for explosive work"
+    - to_tennis: "Improved serve consistency and control"
+    
+# Session tracking requirements
+tracking:
+  required_metrics:
+    - "All exercise loads and reps completed"
+    - "Serve accuracy percentage"
+    - "RPE for each training block"
+    - "Recovery metrics (HRV, sleep, soreness)"
+    
+  optional_tracking:
+    - "Video analysis of serve technique"
+    - "Velocity measurements on main lifts"
+    - "Volley success rate at net"
+    
+  week_1_specific:
+    - "Establish baseline serve speed"
+    - "Document any movement restrictions"
+    - "Note fatigue patterns for load management"

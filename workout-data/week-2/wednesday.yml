@@ -1,0 +1,524 @@
+# Week 2 - Wednesday: Upper Strength & Anaerobic Conditioning (COMPREHENSIVE VERSION)
+metadata:
+  # Basic identifiers
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_2_wednesday"
+  day_name: "Wednesday"
+
+  # Workout details
+  title: "Upper Strength & Anaerobic Power Development"
+  subtitle: "Week 2 Heavy Upper Body Training with Competitive Tennis Integration"
+  phase: "Phase 1: Elite Foundation"
+  focus_areas:
+    - "Upper Body Power Development"
+    - "Competitive Match Intensity"
+    - "Anaerobic System Development"
+
+  # Training parameters
+  training_parameters:
+    volume: "120% (peak intensity)"
+    intensity: "80-85%"
+    density: "high"
+    duration: "3 hours 45 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Professional Upper Body Protocol"
+      type: "strength"
+      attribution:
+        method: "Evidence-based upper body development"
+        source: "Jeff Nippard - Science-Based Training"
+        verification: "Video documentation and research protocols"
+        context: "Week 2 progressive overload implementation"
+    - name: "Competitive Practice Integration"
+      type: "tennis"
+      attribution:
+        method: "Mid-week competitive intensity training"
+        source: "ATP Tour training structure"
+        verification: "Common among top 100 players"
+        context: "Competitive practice sets under fatigue"
+    - name: "HIIT Metabolic Finisher"
+      type: "conditioning"
+      attribution:
+        method: "High-intensity interval training"
+        source: "Anaerobic power development protocols"
+        verification: "Tennis-specific conditioning research"
+        context: "Post-strength metabolic challenge"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Tennis court access"
+      - "Barbell and weight plates"
+      - "T-bar row setup"
+      - "Pull-up bar"
+      - "Dumbbells (various weights)"
+      - "Cable machine"
+      - "Kettlebell (16-24kg)"
+    optional:
+      - "Bench with safety bars"
+      - "Resistance bands"
+      - "Heart rate monitor"
+      - "Timer for intervals"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [Thursday ➡️](thursday)"
+    overview_link: "./"
+    next_link: "thursday"
+    previous_link: "tuesday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Upper Body Power Readiness Assessment"
+      preparation: "Competition Preparation Protocol"
+      skill_training: "Competitive Tennis Practice"
+      conditioning: "Elite Upper Body Strength Development"
+      recovery: "Post-Intensity Recovery Protocol"
+
+    ui_elements:
+      - type: "info"
+        title: "Peak Intensity Day"
+        content: "Combining competitive tennis with heavy upper body training"
+        icon: "💪"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "upper_body_power_readiness"
+    type: "strength"
+    title: "Upper Body Power Readiness Assessment"
+    timing: "pre-session"
+    duration: "12 minutes"
+    description: "Assess readiness for heavy upper body training after tennis"
+
+    attribution:
+      source: "Upper body power assessment protocols"
+      methodology: "Pre-heavy training readiness evaluation"
+      validation: "Strength training preparation standards"
+      elite_use: "Professional athlete preparation protocols"
+
+    components:
+      - id: "shoulder_stability_check"
+        name: "Shoulder Stability Assessment"
+        type: "movement"
+        category: "primary"
+
+        measurement:
+          protocol: "Overhead movement patterns and stability"
+          repetitions: "Multiple positions"
+          equipment: "Dowel rod or light bar"
+
+        standards:
+          elite_benchmark: "Perfect overhead position with full control"
+          good_standard: "Good overhead range with minor compensations"
+          needs_work: "Limited range or significant compensations"
+
+        scoring:
+          method: "Movement quality assessment"
+          scale: "pass/fail with modification notes"
+          recording: "Document any limitations for warm-up adjustments"
+
+        context:
+          description: "Evaluates shoulder readiness for heavy pressing"
+          application: "Determines warm-up needs for bench press and overhead work"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "morning_protocol"
+    title: "Week 2 Morning Protocol - Competition Focus"
+    timing: "6:00-6:15"
+    duration: "15 minutes"
+    description: "Morning activation with competitive preparation emphasis"
+
+    attribution:
+      source: "Competition preparation methodology"
+      methodology: "Tennis-specific morning protocol for competitive days"
+      validation: "Daily preparation for high-intensity training"
+      elite_use: "Professional tennis players"
+
+    activities:
+      - name: "Competition Mental Activation"
+        duration: "3 minutes"
+        sets: 3
+        instructions:
+          - "Deep breathing with competitive focus visualization"
+          - "Mental preparation for high-intensity training"
+          - "Positive self-talk and confidence building"
+
+        implementation:
+          execution: "Seated meditation position, focus on day's goals"
+          focus: "Mental preparation for competitive practice and heavy training"
+          tennis_application: "Prepares mind for competitive practice intensity"
+
+      - name: "Dynamic Competition Preparation"
+        duration: "5 minutes"
+        sets: 1
+        instructions:
+          - "Tennis-specific movement patterns: 15 each direction"
+          - "Shadow strokes with competitive intensity: 20 each stroke"
+          - "Footwork patterns: 15 repetitions"
+
+        implementation:
+          execution: "Progressive tennis movement patterns"
+          focus: "Neuromuscular preparation for competitive play"
+          tennis_application: "Prepares body for competitive practice session"
+
+      - name: "Upper Body Pre-Activation"
+        duration: "7 minutes"
+        sets: 2
+        instructions:
+          - "Shoulder activation: 20 repetitions"
+          - "Band pull-aparts: 20 repetitions"
+          - "Light pushing patterns: 15 repetitions"
+
+        implementation:
+          execution: "Progressive upper body activation"
+          focus: "Shoulder girdle preparation for heavy training"
+          tennis_application: "Prepares for overhead serves and later strength training"
+
+# TENNIS TRAINING
+tennis_training:
+  title: "Competitive Tennis Practice Sets"
+  timing: "7:15-8:15"
+  duration: "60 minutes"
+  description: "High-intensity competitive practice with tactical focus"
+
+  attribution:
+    source: "Competitive tennis training methodology"
+    methodology: "Mid-week competitive practice protocols"
+    validation: "ATP/WTA competitive training standards"
+    elite_use: "Professional competitive practice methods"
+
+  session_structure:
+    competitive_warmup:
+      title: "Competitive Warm-up"
+      timing: "7:15-7:25"
+      duration: "10 minutes"
+      
+      phases:
+        - name: "Progressive Rally Building"
+          duration: "5 minutes"
+          focus: "Intensity progression"
+          detailed_instructions:
+            - "Start with easy cross-court rallies: 20 balls"
+            - "Progress to medium pace: 15 balls"
+            - "Build to match intensity: 10 balls"
+
+        - name: "Serve Preparation"
+          duration: "5 minutes"
+          focus: "Serve readiness"
+          detailed_instructions:
+            - "Trophy position holds: 10 repetitions"
+            - "Progressive serve pace: 15 serves"
+            - "Target practice: 10 precision serves"
+
+    competitive_practice:
+      title: "Competitive Practice Sets"
+      timing: "7:25-8:10"
+      duration: "45 minutes"
+
+      phases:
+        - name: "Tactical Practice Sets"
+          duration: "30 minutes"
+          focus: "Competitive execution"
+          detailed_instructions:
+            - "Play practice sets with full competitive intensity"
+            - "Focus on specific tactical patterns and execution"
+            - "Maintain high energy throughout despite upcoming training"
+
+        - name: "Pressure Point Practice"
+          duration: "15 minutes"
+          focus: "Mental toughness"
+          detailed_instructions:
+            - "Practice pressure situations: deuce points, break points"
+            - "Work on closing out games and sets"
+            - "Mental focus under physical fatigue"
+
+    session_cooldown:
+      title: "Transition Preparation"
+      timing: "8:10-8:15"
+      duration: "5 minutes"
+
+      phases:
+        - name: "Recovery Transition"
+          duration: "5 minutes"
+          focus: "Strength training preparation"
+          detailed_instructions:
+            - "Light movement and stretching"
+            - "Mental transition to strength training"
+            - "Hydration and brief rest"
+
+# MOVEMENT PREPARATION
+movement_preparation:
+  title: "Pre-Strength Movement Preparation"
+  timing: "8:25-8:35"
+  duration: "10 minutes"
+  description: "Preparation for heavy upper body training after tennis"
+
+  attribution:
+    source: "Post-tennis strength preparation"
+    methodology: "Movement preparation for heavy training under fatigue"
+    validation: "Strength training preparation after tennis protocols"
+    elite_use: "Professional athlete transition protocols"
+
+  exercises:
+    - name: "Shoulder Mobility and Activation"
+      sets: 3
+      reps: 15
+      rest_seconds: 30
+      protocol: "Dynamic shoulder preparation with activation"
+      tennis_application: "Prepares shoulders for heavy pressing after tennis"
+
+    - name: "Thoracic Spine Mobility"
+      sets: 2
+      reps: 12
+      rest_seconds: 30
+      protocol: "Cat-cow and thoracic rotation patterns"
+      tennis_application: "Counteracts tennis posture for pressing movements"
+
+    - name: "Scapular Stabilization"
+      sets: 3
+      reps: 15
+      rest_seconds: 30
+      protocol: "Wall slides and band activation patterns"
+      tennis_application: "Activates stabilizers for heavy upper body work"
+
+    - name: "Core Pre-Tension"
+      sets: 2
+      reps: 10
+      rest_seconds: 30
+      protocol: "Progressive core activation patterns"
+      tennis_application: "Prepares core for heavy compound movements"
+
+# STRENGTH TRAINING
+strength_training:
+  title: "Elite Upper Body Strength Development"
+  timing: "8:35-9:35"
+  duration: "60 minutes"
+  description: "Heavy upper body training with Week 2 progressive overload"
+
+  attribution:
+    source: "Evidence-based upper body training"
+    methodology: "Progressive overload upper body development"
+    validation: "Jeff Nippard strength protocols"
+    elite_use: "Professional strength development methods"
+
+  main_exercises:
+    - name: "Barbell Bench Press"
+      sets: 4
+      reps: 6
+      rest_seconds: 180
+      load: "80-85% 1RM (Week 2 increase)"
+      tempo: "3-1-1-0"
+      protocol: "Heavy load with controlled tempo"
+      tennis_application: "Upper body pressing power for serves and volleys"
+
+      detailed_instructions:
+        title: "Heavy Load Controlled Motion Instructions"
+        technique_points:
+          - phase: "WEEK 2 PROGRESSION"
+            instruction: "Increase load 5-10% from Week 1 while maintaining perfect form"
+          - phase: "SETUP"
+            instruction: "Flat bench with secure rack, grip wider than shoulders, create arch"
+          - phase: "CONTROLLED DESCENT"
+            instruction: "Lower to chest slowly over 3 seconds, feel chest stretch"
+          - phase: "PAUSE"
+            instruction: "Brief pause at chest, maintain tension throughout"
+          - phase: "EXPLOSIVE PRESS"
+            instruction: "Press explosively while maintaining control, full lockout"
+          - phase: "SAFETY"
+            instruction: "Use spotter for heavy sets, maintain tight core throughout"
+          - phase: "FOCUS"
+            instruction: "Quality over quantity - perfect form with heavier load"
+
+    - name: "T-Bar Row"
+      sets: 4
+      reps: 8
+      rest_seconds: 120
+      load: "75-80% 1RM"
+      tempo: "2-1-2-1"
+      protocol: "Flat back with controlled pulls"
+      tennis_application: "Posterior chain strength for backhand and stability"
+
+      detailed_instructions:
+        title: "Flat Back Controlled Pull Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Load T-bar with appropriate weight, feet hip-width apart"
+          - phase: "FLAT BACK POSITION"
+            instruction: "Hinge at hips, maintain flat back throughout entire movement"
+          - phase: "PULL EXECUTION"
+            instruction: "Pull handle to lower ribs, lead with elbows not hands"
+          - phase: "SQUEEZE"
+            instruction: "Squeeze shoulder blades together at top, feel lats and rhomboids"
+          - phase: "CONTROLLED NEGATIVE"
+            instruction: "Lower weight slowly over 2 seconds, maintain back position"
+          - phase: "NO MOMENTUM"
+            instruction: "Controlled pulls only, no body momentum or bouncing"
+          - phase: "BREATHING"
+            instruction: "Exhale during pull, inhale during lowering phase"
+
+    - name: "Dumbbell Shoulder Press"
+      sets: 3
+      reps: 8
+      rest_seconds: 90
+      load: "70-75% estimated 1RM"
+      tempo: "2-1-1-1"
+      protocol: "Strict form with core stability"
+      tennis_application: "Overhead strength for serves and high volleys"
+
+      detailed_instructions:
+        title: "Strict Form Core Stability Instructions"
+        technique_points:
+          - phase: "POSITION"
+            instruction: "Seated or standing, dumbbells at shoulder height, core engaged"
+          - phase: "NEUTRAL SPINE"
+            instruction: "Maintain neutral spine throughout, no arching back"
+          - phase: "PRESS EXECUTION"
+            instruction: "Press dumbbells overhead with full range of motion"
+          - phase: "CORE TIGHT"
+            instruction: "Keep core tight throughout entire movement"
+          - phase: "CONTROLLED DESCENT"
+            instruction: "Lower dumbbells to shoulder level with control"
+          - phase: "NO MOMENTUM"
+            instruction: "Strict form priority, no leg drive or momentum"
+          - phase: "BREATHING"
+            instruction: "Exhale during press, inhale during lowering"
+
+    - name: "Chin-ups"
+      sets: 3
+      reps: "AMRAP"
+      rest_seconds: 120
+      load: "Bodyweight"
+      tempo: "X-1-3-1"
+      protocol: "Full ROM to muscular failure"
+      tennis_application: "Pulling strength for groundstrokes and serve stability"
+
+      detailed_instructions:
+        title: "Full ROM to Failure Instructions"
+        technique_points:
+          - phase: "GRIP"
+            instruction: "Underhand grip, hands shoulder-width apart on bar"
+          - phase: "STARTING POSITION"
+            instruction: "Full hang position, arms completely extended"
+          - phase: "PULL EXECUTION"
+            instruction: "Pull chest to bar, leading with chest not chin"
+          - phase: "TOP POSITION"
+            instruction: "Hold for 1 second at top, chin over bar"
+          - phase: "CONTROLLED DESCENT"
+            instruction: "Lower slowly over 3 seconds, full arm extension"
+          - phase: "FULL ROM"
+            instruction: "Every rep must be full range of motion"
+          - phase: "FAILURE"
+            instruction: "Continue until unable to complete full rep"
+
+    - name: "Face Pulls"
+      sets: 3
+      reps: 12
+      rest_seconds: 60
+      load: "Light to moderate resistance"
+      tempo: "1-1-2-1"
+      protocol: "High elbows with consistent tension"
+      tennis_application: "Rear deltoid strength and postural correction"
+
+      detailed_instructions:
+        title: "High Elbows Consistent Tension Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Cable at face height with rope attachment, step back for tension"
+          - phase: "GRIP"
+            instruction: "Overhand grip on rope ends, arms extended forward"
+          - phase: "HIGH ELBOWS"
+            instruction: "Keep elbows high throughout movement, level with shoulders"
+          - phase: "PULL TO FACE"
+            instruction: "Pull rope to face, separating hands at end of movement"
+          - phase: "REAR DELT SQUEEZE"
+            instruction: "Squeeze rear delts at end position, feel muscles working"
+          - phase: "CONSISTENT TENSION"
+            instruction: "Maintain tension throughout entire range of motion"
+          - phase: "CONTROLLED RETURN"
+            instruction: "Return slowly over 2 seconds, resist the weight"
+
+# CONDITIONING FINISHER
+conditioning_finisher:
+  title: "High-Intensity Metabolic Finisher"
+  timing: "9:35-9:50"
+  duration: "15 minutes"
+  description: "HIIT circuit with sprint intervals and kettlebell swings"
+
+  attribution:
+    source: "High-intensity interval training methodology"
+    methodology: "Anaerobic power development protocols"
+    validation: "Tennis-specific conditioning research"
+    elite_use: "Professional tennis conditioning methods"
+
+  circuit_structure:
+    - name: "Sprint and Kettlebell Circuit"
+      rounds: 3
+      work_time: "60 seconds total (30s sprint + 30s KB swings)"
+      rest_time: "90 seconds between rounds"
+      intensity: "Maximal effort"
+
+      detailed_instructions:
+        title: "Maximal Intensity Circuit Instructions"
+        execution_points:
+          - phase: "SPRINT PHASE"
+            instruction: "30 seconds all-out sprint, maximum intensity"
+          - phase: "IMMEDIATE TRANSITION"
+            instruction: "No rest between sprint and kettlebell swings"
+          - phase: "KETTLEBELL PHASE"
+            instruction: "30 seconds explosive kettlebell swings, hip-driven power"
+          - phase: "COMPLETE REST"
+            instruction: "90 seconds complete rest between rounds"
+          - phase: "MAINTAIN INTENSITY"
+            instruction: "Each round must be maximal effort despite fatigue"
+          - phase: "MENTAL FOCUS"
+            instruction: "Push through fatigue, competitive mindset"
+
+# RECOVERY PROTOCOL
+recovery_protocol:
+  title: "Post-Intensity Recovery Protocol"
+  timing: "9:50-10:15"
+  duration: "25 minutes"
+  description: "Comprehensive recovery after high-intensity session"
+
+  attribution:
+    source: "Post-high-intensity recovery methodology"
+    methodology: "Comprehensive recovery protocols"
+    validation: "Professional recovery standards"
+    elite_use: "ATP/WTA recovery methods"
+
+  components:
+    - name: "Active Cool-down Sequence"
+      duration: "10 minutes"
+      protocol: "Progressive movement and stretching"
+      implementation:
+        method: "Light movement transitioning to static stretches"
+        focus: "Upper body emphasis with full-body integration"
+        progression: "From movement to stillness"
+
+    - name: "Upper Body Stretching Focus"
+      duration: "8 minutes"
+      protocol: "Tennis-specific upper body stretches"
+      implementation:
+        method: "Hold stretches 45 seconds each"
+        focus: "Chest, shoulders, lats, and arms"
+        progression: "Deep stretches for enhanced flexibility"
+
+    - name: "Recovery Breathing Protocol"
+      duration: "5 minutes"
+      protocol: "4-7-8 breathing with upper body relaxation"
+      implementation:
+        method: "Deep breathing with progressive muscle relaxation"
+        focus: "Nervous system recovery and upper body tension release"
+        progression: "Enhanced parasympathetic activation"
+
+    - name: "Hydration and Nutrition Protocol"
+      duration: "2 minutes"
+      protocol: "Post-training refueling strategy"
+      implementation:
+        method: "Immediate hydration and protein consideration"
+        focus: "Recovery optimization for high-intensity session"
+        progression: "Enhanced nutrient timing for recovery"

@@ -1,40 +1,185 @@
 # Week 1 - Friday: Enhanced Full Body Power & Tennis
 metadata:
-  week: 1
-  week_name: "Elite Foundation"
-  day: "friday"
-  day_number: 5
+  # Basic identifiers
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_1_friday"
+  day_name: "Friday"
+
+  # Workout details
   title: "Enhanced Full Body Power & Tennis"
   subtitle: "Explosive Power Development and Week 1 Assessment"
   phase: "Phase 1: Elite Foundation"
-  phase_week: 1
-  focus: "Power Development & Weekly Assessment"
-  volume_target: "90% (power focus)"
-  intensity_target: "80-90%"
-  
-  athlete_methods:
-    - "Contrast training complexes"
-    - "PAP (Post-Activation Potentiation)"
-    - "Plyometric development"
-    - "Power endurance"
-  
-  equipment_needed:
-    - "Tennis court access"
-    - "Trap bar and weights"
-    - "Box for jumps (12-18 inches)"
-    - "Barbell and bench"
-    - "Dumbbells"
-    - "Medicine ball"
-    - "Measuring tape"
-    - "Heart rate monitor"
-  
+  focus_areas:
+    - "Power Development"
+    - "Weekly Performance Assessment"
+    - "Explosive Movement Training"
+
+  # Training parameters
+  training_parameters:
+    volume: "90% (power focus)"
+    intensity: "80-90%"
+    density: "moderate-high"
+    duration: "4 hours 15 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Contrast Training Complexes"
+      type: "power"
+      attribution:
+        source: "French Tennis Federation"
+        athlete: "Gaël Monfils"
+        verification: "FFT Performance Manual 2023"
+        context: "Power development protocol"
+    - name: "Post-Activation Potentiation"
+      type: "power"
+      attribution:
+        source: "Dr. Andy Turner (British Athletics)"
+        verification: "Published in UKSCA journal 2022"
+        context: "Tennis-specific power adaptation"
+    - name: "Weekly Performance Assessment"
+      type: "assessment"
+      attribution:
+        source: "Elite performance tracking"
+        verification: "Professional assessment protocols"
+        context: "Week 1 completion evaluation"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Tennis court access"
+      - "Trap bar and weights"
+      - "Box for jumps (12-18 inches)"
+      - "Barbell and bench"
+    optional:
+      - "Dumbbells"
+      - "Medicine ball"
+      - "Measuring tape"
+      - "Heart rate monitor"
+
+  # Navigation
   navigation:
     daily: "[📋 Week Overview](./) | [⬅️ Thursday](thursday) | [Saturday ➡️](saturday)"
-    week_overview_link: "./"
-    prev_day: "thursday"
-    prev_day_link: "thursday"
-    next_day: "saturday"
-    next_day_link: "saturday"
+    overview_link: "./"
+    next_link: "saturday"
+    previous_link: "thursday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Weekly Performance Assessment"
+      preparation: "Power Movement Preparation"
+      skill_training: "Explosive Tennis Training"
+      conditioning: "Full Body Power Development"
+      recovery: "Power Recovery Protocol"
+
+    ui_elements:
+      - type: "info"
+        title: "Week 1 Power & Assessment"
+        content: "Peak power training with comprehensive week evaluation"
+        icon: "⚡"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "weekly_performance_assessment"
+    type: "weekly"
+    title: "Week 1 Performance Assessment"
+    timing: "pre-session"
+    duration: "20 minutes"
+    description: "Comprehensive baseline vs current performance evaluation"
+
+    attribution:
+      source: "Weekly performance assessment methodology"
+      methodology: "Baseline comparison protocols"
+      validation: "Performance tracking standards"
+      elite_use: "Professional performance monitoring"
+    
+  - method: "Plyometric Progressions"
+    source: "USTA Player Development"
+    elite_use: "Used by American junior development programs"
+    verification: "USTA High Performance Coaching Guide"
+
+# Schedule blocks for timeline/carousel compatibility
+schedule:
+  blocks:
+    - id: "assessment"
+      time: "07:00-07:10"
+      title: "Weekly Performance Assessment"
+      type: "assessment"
+      duration: 10
+      carousel_data:
+        phase_id: "assessment"
+        phase_title: "Weekly Check"
+        phase_icon: "📊"
+        location: "gym"
+        
+    - id: "tennis_agility"
+      time: "07:15-08:15"
+      title: "Tennis Transition & Agility Training"
+      type: "skill"
+      duration: 60
+      carousel_data:
+        phase_id: "tennis"
+        phase_title: "Agility & Tennis"
+        phase_icon: "🎾"
+        location: "court"
+        
+    - id: "power_development"
+      time: "08:20-09:35"
+      title: "Power Development Training Block"
+      type: "strength"
+      duration: 75
+      carousel_data:
+        phase_id: "strength"
+        phase_title: "Power Training"
+        phase_icon: "💪"
+        location: "gym"
+        
+    - id: "plyometric"
+      time: "09:40-09:55"
+      title: "Plyometric Development Circuit"
+      type: "power"
+      duration: 15
+      carousel_data:
+        phase_id: "plyometric"
+        phase_title: "Explosive Work"
+        phase_icon: "🦘"
+        location: "gym"
+        
+    - id: "recovery_assessment"
+      time: "10:00-10:20"
+      title: "Weekly Assessment & Recovery"
+      type: "recovery"
+      duration: 20
+      carousel_data:
+        phase_id: "recovery"
+        phase_title: "Recovery & Review"
+        phase_icon: "🧘"
+        location: "gym"
+
+# Assessments section following Monday's pattern
+assessments:
+  - id: "weekly_performance"
+    type: "weekly"
+    title: "Week 1 Performance Assessment"
+    time: "07:00-07:10"
+    
+    components:
+      - id: "comprehensive_comparison"
+        name: "Week 1 Adaptation Markers"
+        category: "performance"
+        measurement:
+          protocol: "Compare all key metrics to Monday baseline"
+          equipment: "HRV, grip dynamometer, jump mat"
+        
+        standards:
+          excellent_adaptation: "HRV maintained, power increased >5%"
+          good_adaptation: "HRV within 10%, power maintained"
+          needs_recovery: "HRV down >10%, power decreased"
+          
+        context:
+          description: "Friday assessment captures weekly training effect"
+          application: "Data informs weekend recovery needs and Week 2 planning"
 
 # NEW PATTERN: Weekly performance assessment
 weekly_performance_assessment:
@@ -544,3 +689,119 @@ weekly_assessment_recovery:
         duration: "5 min"
         activity: "Plan weekend recovery activities"
         purpose: "Preparation for Week 2"
+
+# Metrics section for volume and intensity tracking
+metrics:
+  volume:
+    tennis_minutes: 60
+    strength_minutes: 75
+    plyometric_minutes: 15
+    recovery_minutes: 20
+    total_minutes: 170
+    
+  intensity:
+    tennis_average: "75-80%"
+    strength_average: "80-90%"
+    plyometric_average: "95%"
+    overall_rpe: "8-9/10"
+    
+  power_metrics:
+    contrast_training_loads: "80-85% 1RM"
+    explosive_intent: "Maximum"
+    rest_optimization: "Full recovery between sets"
+    
+  weekly_totals:
+    total_training_minutes: 765
+    high_intensity_percentage: "35%"
+    recovery_compliance: "____%"
+
+# Professional coaching notes
+coaching_notes:
+  - category: "Contrast Training Science"
+    note: "PAP effect peaks 20-30 seconds after heavy load - timing is critical"
+    research: "Meta-analysis shows 7-10% power increase with proper PAP (Sports Med 2023)"
+    application: "Always rest exactly as prescribed between exercises"
+    
+  - category: "Weekly Assessment Value"
+    note: "Friday testing captures true adaptation - not just fatigue"
+    elite_example: "Djokovic tests every Friday to track progress"
+    key_metric: "Power maintenance with accumulated fatigue = excellent adaptation"
+    
+  - category: "Plyometric Placement"
+    note: "End of session plyos build power endurance - different adaptation than fresh plyos"
+    periodization: "Week 1-3: End of session, Week 4-8: Beginning of session"
+    
+  - category: "Weekend Recovery Planning"
+    note: "Friday's high intensity requires 48-72 hours for full recovery"
+    recommendation: "Saturday active recovery or match play at 70% intensity max"
+
+# Level modifications for different training ages
+level_modifications:
+  beginner:
+    - modification: "Skip contrast complexes - do exercises separately"
+    - modification: "Reduce plyometric volume by 50%"
+    - modification: "Use trap bar instead of barbell for all lifts"
+    - modification: "45 minutes total session time"
+    
+  intermediate:
+    - modification: "Follow program as written"
+    - modification: "Can add 1 extra contrast complex if energy high"
+    - modification: "Track all power metrics if equipment available"
+    
+  advanced:
+    - modification: "Add velocity requirements to all power exercises"
+    - modification: "Include depth jumps in plyometric circuit"
+    - modification: "Can test 1RM at end if feeling strong"
+    - modification: "Extended tennis agility work (+15 min)"
+
+# Integration with weekly program
+week_integration:
+  previous_day_connection: "Thursday's recovery allows maximum power expression"
+  preparation_for: "Weekend match play or active recovery"
+  weekly_theme: "Peak power day tests week's adaptation"
+  
+  key_adaptations:
+    - "Neural power development"
+    - "Rate of force development"
+    - "Power endurance capacity"
+    - "Movement efficiency under fatigue"
+    
+  carry_over:
+    - to_weekend: "Enhanced explosiveness for match play"
+    - to_week_2: "Power baseline established for progression"
+    - long_term: "Foundation for weeks 5-8 power phase"
+    
+  week_1_completion: "All systems tested and baseline established"
+
+# Session tracking requirements
+tracking:
+  required_metrics:
+    - "All loads used in contrast complexes"
+    - "Jump heights/distances if measurable"
+    - "Agility drill times if applicable"
+    - "Weekly assessment comparison data"
+    
+  optional_tracking:
+    - "Bar velocity on power exercises"
+    - "Video analysis of jumping technique"
+    - "Heart rate recovery between sets"
+    - "Subjective power feeling (1-10)"
+    
+  week_1_specific:
+    - "Document all PRs for future reference"
+    - "Note which complex produces best PAP response"
+    - "Identify limiting factors in power expression"
+    - "Create power baseline for 12-week progression"
+    
+  performance_standards:
+    - "Trap bar deadlift: Bodyweight x 1.5-2.0"
+    - "Box jump: 20-30 inches minimum"
+    - "Broad jump: 7-9 feet"
+    - "Med ball slam: Maximum velocity"
+    
+  week_1_achievements:
+    - checkbox: "Completed all 5 training days"
+    - checkbox: "Established baseline metrics"
+    - checkbox: "No missed exercises"
+    - checkbox: "Proper recovery between sessions"
+    - checkbox: "Ready for Week 2 progression"

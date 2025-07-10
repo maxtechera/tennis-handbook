@@ -1,0 +1,569 @@
+# Week 2 - Friday: Explosive Strength & Agility Tennis (COMPREHENSIVE VERSION)
+metadata:
+  # Basic identifiers
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_2_friday"
+  day_name: "Friday"
+
+  # Workout details
+  title: "Elite Power Development & Tennis Agility"
+  subtitle: "Week 2 Explosive Training with Reactive Plyometrics and Tennis Integration"
+  phase: "Phase 1: Elite Foundation"
+  focus_areas:
+    - "Explosive Power Development"
+    - "Tennis Agility & Transitions"
+    - "Reactive Strength Training"
+    - "Posterior Chain Power"
+
+  # Training parameters
+  training_parameters:
+    volume: "100% (explosive emphasis)"
+    intensity: "85-90%"
+    density: "high"
+    duration: "3 hours 45 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Power Development Protocol"
+      type: "strength"
+      attribution:
+        method: "Science-based explosive power development"
+        source: "Jeff Nippard - Power Training"
+        verification: "Video documentation and research protocols"
+        context: "Week 2 progressive power development"
+    - name: "Reactive Plyometric System"
+      type: "power"
+      attribution:
+        method: "Evidence-based plyometric progression"
+        source: "Jeff Nippard - Plyometric Training"
+        verification: "Video reference and research-based protocols"
+        context: "Reactive strength development for tennis"
+    - name: "Tennis Agility Integration"
+      type: "tennis"
+      attribution:
+        method: "High-intensity tennis agility training"
+        source: "Professional tennis agility protocols"
+        verification: "ATP/WTA agility training methods"
+        context: "Explosive movement patterns for tennis"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Tennis court access"
+      - "Trap bar and weight plates"
+      - "Barbell and bench"
+      - "Dumbbells (various weights)"
+      - "Medicine ball (4-6kg)"
+      - "Pull-up bar"
+      - "Plyometric box (12-18 inches)"
+    optional:
+      - "Agility ladder"
+      - "Cones for drills"
+      - "Kettlebell"
+      - "Timer for intervals"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [Saturday ➡️](saturday)"
+    overview_link: "./"
+    next_link: "saturday"
+    previous_link: "thursday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Power Readiness Assessment"
+      preparation: "Explosive Movement Preparation"
+      skill_training: "Tennis Agility & Transitions"
+      conditioning: "Explosive Strength Development"
+      recovery: "Power Recovery Protocol"
+
+    ui_elements:
+      - type: "info"
+        title: "Power Development Day"
+        content: "Explosive training combining strength, agility, and plyometrics"
+        icon: "⚡"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "power_readiness"
+    type: "power"
+    title: "Power Readiness Assessment"
+    timing: "pre-session"
+    duration: "10 minutes"
+    description: "Assess neuromuscular readiness for explosive training"
+
+    attribution:
+      source: "Power training assessment protocols"
+      methodology: "Neuromuscular readiness evaluation for explosive training"
+      validation: "Professional power training preparation standards"
+      elite_use: "Professional athlete explosive training assessment"
+
+    components:
+      - id: "explosive_movement_check"
+        name: "Explosive Movement Assessment"
+        type: "movement"
+        category: "primary"
+
+        measurement:
+          protocol: "Quick explosive movement patterns"
+          repetitions: "Multiple directions"
+          equipment: "None"
+
+        standards:
+          elite_benchmark: "Sharp, explosive movements with excellent control"
+          good_standard: "Good explosive ability with minor sluggishness"
+          needs_work: "Slow or sluggish movement patterns"
+
+        scoring:
+          method: "Movement quality and speed assessment"
+          scale: "pass/fail with notes on explosiveness"
+          recording: "Document any limitations for warm-up adjustments"
+
+        context:
+          description: "Evaluates neuromuscular readiness for explosive training"
+          application: "Determines appropriate intensity for power development session"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "morning_protocol"
+    title: "Week 2 Morning Protocol - Power Focus"
+    timing: "6:00-6:15"
+    duration: "15 minutes"
+    description: "Morning activation with explosive movement preparation"
+
+    attribution:
+      source: "Power training preparation methodology"
+      methodology: "Morning protocol for explosive training days"
+      validation: "Daily preparation for high-intensity power sessions"
+      elite_use: "Professional tennis player power training preparation"
+
+    activities:
+      - name: "Neuromuscular Activation"
+        duration: "3 minutes"
+        sets: 3
+        instructions:
+          - "Deep breathing with explosive movement visualization"
+          - "Mental preparation for high-intensity power training"
+          - "Focus on speed and explosiveness"
+
+        implementation:
+          execution: "Seated position with explosive movement imagery"
+          focus: "Nervous system preparation for power demands"
+          tennis_application: "Prepares mind for explosive tennis movements"
+
+      - name: "Dynamic Power Preparation"
+        duration: "5 minutes"
+        sets: 1
+        instructions:
+          - "Progressive movement speed: 15 each direction"
+          - "Light explosive patterns: 20 repetitions"
+          - "Speed emphasis throughout preparation"
+
+        implementation:
+          execution: "Progressive speed and power movements"
+          focus: "Neuromuscular preparation for explosive training"
+          tennis_application: "Prepares for high-speed tennis movements"
+
+      - name: "Explosive Pattern Activation"
+        duration: "7 minutes"
+        sets: 2
+        instructions:
+          - "Jump preparation patterns: 15 repetitions"
+          - "Speed activation exercises: 20 repetitions"
+          - "Power movement rehearsal"
+
+        implementation:
+          execution: "Explosive movement pattern preparation"
+          focus: "Power system activation"
+          tennis_application: "Prepares for explosive tennis and strength training"
+
+# TENNIS TRAINING
+tennis_training:
+  title: "Tennis Agility & Transition Training"
+  timing: "7:15-8:15"
+  duration: "60 minutes"
+  description: "High-intensity tennis agility with aggressive transitions"
+
+  attribution:
+    source: "Tennis agility training methodology"
+    methodology: "High-intensity tennis movement protocols"
+    validation: "Professional tennis agility standards"
+    elite_use: "ATP/WTA agility and transition training"
+
+  session_structure:
+    agility_warmup:
+      title: "Explosive Tennis Warm-up"
+      timing: "7:15-7:25"
+      duration: "10 minutes"
+      
+      phases:
+        - name: "Progressive Speed Building"
+          duration: "5 minutes"
+          focus: "Movement speed progression"
+          detailed_instructions:
+            - "Light court movement building speed: 20 steps each direction"
+            - "Progressive shadow strokes with speed: 20 each stroke"
+            - "Speed emphasis throughout warm-up"
+
+        - name: "Explosive Movement Preparation"
+          duration: "5 minutes"
+          focus: "Power movement readiness"
+          detailed_instructions:
+            - "Quick direction changes: 15 each direction"
+            - "Explosive first step practice: 20 repetitions"
+            - "Speed and agility preparation"
+
+    transition_training:
+      title: "Aggressive Transition Drills"
+      timing: "7:25-7:50"
+      duration: "25 minutes"
+
+      phases:
+        - name: "High-Intensity Transitions"
+          duration: "15 minutes"
+          focus: "Explosive direction changes"
+          detailed_instructions:
+            - "Aggressive transitions between shots: maximum effort"
+            - "Quick lateral movements with recovery: 30 repetitions"
+            - "Explosive first steps with balance maintenance"
+
+        - name: "Complex Transition Patterns"
+          duration: "10 minutes"
+          focus: "Advanced movement patterns"
+          detailed_instructions:
+            - "Multi-directional transition drills: 20 patterns"
+            - "Reactive transition practice with visual cues"
+            - "Competitive intensity movement patterns"
+
+    lateral_agility:
+      title: "Lateral Movement Mastery"
+      timing: "7:50-8:10"
+      duration: "20 minutes"
+
+      phases:
+        - name: "Lateral Speed Development"
+          duration: "12 minutes"
+          focus: "Change of direction speed"
+          detailed_instructions:
+            - "Lateral shuffles at maximum speed: 25 each direction"
+            - "Crossover steps with acceleration: 20 each direction"
+            - "Push off outside foot with power emphasis"
+
+        - name: "Agility Pattern Integration"
+          duration: "8 minutes"
+          focus: "Complex agility patterns"
+          detailed_instructions:
+            - "Agility ladder patterns at maximum speed"
+            - "Cone weaving with explosive changes"
+            - "Maintain low center of gravity throughout"
+
+    session_cooldown:
+      title: "Power Training Transition"
+      timing: "8:10-8:15"
+      duration: "5 minutes"
+
+      phases:
+        - name: "Strength Training Preparation"
+          duration: "5 minutes"
+          focus: "Power training readiness"
+          detailed_instructions:
+            - "Gentle movement with power focus"
+            - "Mental transition to explosive strength training"
+            - "Hydration and brief recovery"
+
+# MOVEMENT PREPARATION
+movement_preparation:
+  title: "Pre-Strength Explosive Preparation"
+  timing: "8:25-8:35"
+  duration: "10 minutes"
+  description: "Preparation for explosive strength training"
+
+  attribution:
+    source: "Explosive training movement preparation"
+    methodology: "Power training preparation protocols"
+    validation: "Explosive strength training preparation standards"
+    elite_use: "Professional athlete power training preparation"
+
+  exercises:
+    - name: "Dynamic Hip Activation"
+      sets: 3
+      reps: 15
+      rest_seconds: 30
+      protocol: "Explosive hip movement patterns"
+      tennis_application: "Prepares hips for deadlifts and hip thrusts"
+
+    - name: "Shoulder Power Preparation"
+      sets: 2
+      reps: 12
+      rest_seconds: 30
+      protocol: "Dynamic shoulder movements with speed"
+      tennis_application: "Prepares shoulders for push press and overhead work"
+
+    - name: "Core Power Activation"
+      sets: 3
+      reps: 10
+      rest_seconds: 30
+      protocol: "Explosive core engagement patterns"
+      tennis_application: "Prepares core for med ball slams and power movements"
+
+    - name: "Grip and Forearm Preparation"
+      sets: 2
+      reps: 15
+      rest_seconds: 30
+      protocol: "Dynamic grip activation exercises"
+      tennis_application: "Prepares for farmer's carries and grip demands"
+
+# STRENGTH TRAINING
+strength_training:
+  title: "Explosive Strength Development"
+  timing: "8:35-9:35"
+  duration: "60 minutes"
+  description: "Heavy explosive movements with Week 2 progressive overload"
+
+  attribution:
+    source: "Evidence-based power training"
+    methodology: "Explosive strength development protocols"
+    validation: "Jeff Nippard power training research"
+    elite_use: "Professional power development methods"
+
+  main_exercises:
+    - name: "Trap-bar Deadlift"
+      sets: 4
+      reps: 6
+      rest_seconds: 180
+      load: "85-90% 1RM (Week 2 increase)"
+      tempo: "1-1-X-1"
+      protocol: "Explosive concentric with controlled eccentric"
+      tennis_application: "Posterior chain power for court movement and jumping"
+
+      detailed_instructions:
+        title: "Explosive Power Development Instructions"
+        technique_points:
+          - phase: "WEEK 2 PROGRESSION"
+            instruction: "5-10% load increase from Week 1, maintain explosive intent"
+          - phase: "SETUP"
+            instruction: "Stand inside trap bar, feet hip-width apart, neutral spine"
+          - phase: "HIP HINGE PATTERN"
+            instruction: "Hip hinge with neutral spine, chest up, lats engaged"
+          - phase: "EXPLOSIVE DRIVE"
+            instruction: "Drive through heels and hips explosively, maximum power"
+          - phase: "CONTROLLED DESCENT"
+            instruction: "Control descent slowly for time under tension"
+          - phase: "RESET"
+            instruction: "Brief pause between reps to maintain quality"
+          - phase: "FOCUS"
+            instruction: "Power output with perfect form, no compromise"
+
+    - name: "Hip Thrusts"
+      sets: 3
+      reps: 10
+      rest_seconds: 120
+      load: "75-80% estimated 1RM"
+      tempo: "1-1-X-2"
+      protocol: "Explosive drive with controlled eccentric"
+      tennis_application: "Hip power for serve and groundstroke generation"
+
+      detailed_instructions:
+        title: "Explosive Hip Drive Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Shoulders on bench, feet flat, bar on hip crease"
+          - phase: "STARTING POSITION"
+            instruction: "Core engaged before lift, glutes pre-tensioned"
+          - phase: "EXPLOSIVE DRIVE"
+            instruction: "Explosive hip drive, squeeze glutes hard at top"
+          - phase: "PEAK CONTRACTION"
+            instruction: "Create straight line from knees to shoulders"
+          - phase: "CONTROLLED DESCENT"
+            instruction: "Lower slowly over 2 seconds, maintain tension"
+          - phase: "FOCUS"
+            instruction: "Maximum power on concentric, controlled eccentric"
+          - phase: "BREATHING"
+            instruction: "Exhale forcefully during drive phase"
+
+    - name: "Push Press"
+      sets: 3
+      reps: 8
+      rest_seconds: 90
+      load: "70-75% estimated 1RM"
+      tempo: "X-X-X-1"
+      protocol: "Explosive leg drive to overhead press"
+      tennis_application: "Overhead power for serves and high volleys"
+
+      detailed_instructions:
+        title: "Power Generation Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Bar in front rack position, feet shoulder-width apart"
+          - phase: "DIP PHASE"
+            instruction: "Slight knee dip, core braced, prepare for explosive drive"
+          - phase: "EXPLOSIVE DRIVE"
+            instruction: "Explosive leg drive to initiate bar movement"
+          - phase: "OVERHEAD PRESS"
+            instruction: "Press bar overhead in one fluid motion"
+          - phase: "LANDING"
+            instruction: "Land stable with arms locked out overhead"
+          - phase: "POWER SOURCE"
+            instruction: "Generate all power from lower body, not arms"
+          - phase: "SEQUENCE"
+            instruction: "Dip-drive-press must be fluid and explosive"
+
+    - name: "Medicine Ball Slams"
+      sets: 3
+      reps: 10
+      rest_seconds: 60
+      load: "4-6kg medicine ball"
+      tempo: "X-X-X-X"
+      protocol: "Maximum explosive force on every rep"
+      tennis_application: "Explosive core power for serves and overhead shots"
+
+      detailed_instructions:
+        title: "Maximum Force Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Athletic stance, medicine ball held overhead with both hands"
+          - phase: "PREPARATION"
+            instruction: "Full body tension, prepare for maximum effort"
+          - phase: "SLAM EXECUTION"
+            instruction: "Slam down with maximum force, full body engagement"
+          - phase: "CORE ENGAGEMENT"
+            instruction: "Explosive core contraction, entire body involved"
+          - phase: "QUICK RETRIEVAL"
+            instruction: "Quickly retrieve ball for next repetition"
+          - phase: "INTENSITY"
+            instruction: "Every rep must be maximum effort, no half measures"
+          - phase: "RESET"
+            instruction: "Brief reset between reps to maintain power output"
+
+    - name: "Farmer's Carry"
+      sets: 2
+      reps: "40 meters"
+      rest_seconds: 120
+      load: "Heavy (challenging grip)"
+      tempo: "Controlled walking pace"
+      protocol: "Heavy load with upright posture"
+      tennis_application: "Grip strength and core stability for racket control"
+
+      detailed_instructions:
+        title: "Heavy Load Posture Instructions"
+        technique_points:
+          - phase: "LOAD SELECTION"
+            instruction: "Heavy enough to challenge grip throughout 40 meters"
+          - phase: "GRIP"
+            instruction: "Neutral grip, stable without over-squeezing"
+          - phase: "POSTURE"
+            instruction: "Maintain upright posture throughout carry"
+          - phase: "CORE"
+            instruction: "Core engaged to prevent leaning or compensations"
+          - phase: "STEPS"
+            instruction: "Controlled steps forward, maintain steady pace"
+          - phase: "BREATHING"
+            instruction: "Controlled breathing, don't hold breath"
+          - phase: "COMPLETION"
+            instruction: "Complete full distance maintaining form"
+
+# CONDITIONING FINISHER
+conditioning_finisher:
+  title: "Reactive Plyometric Development"
+  timing: "9:35-9:50"
+  duration: "15 minutes"
+  description: "Reactive plyometrics for explosive power development"
+
+  attribution:
+    source: "Reactive plyometric training methodology"
+    methodology: "Evidence-based plyometric development protocols"
+    validation: "Jeff Nippard plyometric training research"
+    elite_use: "Professional reactive strength development methods"
+
+  circuit_structure:
+    - name: "Depth Jumps"
+      sets: 3
+      reps: 5
+      rest_seconds: 90
+      equipment: "12-18 inch box"
+
+      detailed_instructions:
+        title: "Reactive Strength Instructions"
+        execution_points:
+          - phase: "BOX SETUP"
+            instruction: "12-18 inch box with clear landing area"
+          - phase: "STEP OFF"
+            instruction: "Step off box (don't jump), maintain readiness"
+          - phase: "LANDING"
+            instruction: "Land and immediately jump up maximally"
+          - phase: "GROUND CONTACT"
+            instruction: "Minimal ground contact time, less than 0.25 seconds"
+          - phase: "EXPLOSIVE TAKEOFF"
+            instruction: "Maximum vertical jump immediately after landing"
+          - phase: "FOCUS"
+            instruction: "Reactive strength, not just jumping ability"
+
+    - name: "Lateral Bounds"
+      sets: 3
+      reps: "5 per side"
+      rest_seconds: 60
+      equipment: "Clear lateral space"
+
+      detailed_instructions:
+        title: "Lateral Power Instructions"
+        execution_points:
+          - phase: "STARTING POSITION"
+            instruction: "Start on one leg, athletic position"
+          - phase: "EXPLOSIVE LATERAL JUMP"
+            instruction: "Explosive lateral jump to opposite leg"
+          - phase: "LANDING"
+            instruction: "Land on opposite leg, stick the landing"
+          - phase: "IMMEDIATE REBOUND"
+            instruction: "Immediate rebound to other side if doing continuous"
+          - phase: "BALANCE"
+            instruction: "Maintain balance and control throughout"
+          - phase: "POWER FOCUS"
+            instruction: "Power off outside leg, explosive transitions"
+
+# RECOVERY PROTOCOL
+recovery_protocol:
+  title: "Power Recovery Protocol"
+  timing: "9:50-10:15"
+  duration: "25 minutes"
+  description: "Recovery focused on power training demands"
+
+  attribution:
+    source: "Power training recovery methodology"
+    methodology: "Post-explosive training recovery protocols"
+    validation: "Professional power training recovery standards"
+    elite_use: "ATP/WTA power training recovery methods"
+
+  components:
+    - name: "Active Power Cooldown"
+      duration: "10 minutes"
+      protocol: "Gentle movement transitioning from explosive training"
+      implementation:
+        method: "Light movement with decreasing intensity"
+        focus: "Neuromuscular system cooldown"
+        progression: "From light activity to stillness"
+
+    - name: "Power-Specific Stretching"
+      duration: "8 minutes"
+      protocol: "Stretches focused on power training muscle groups"
+      implementation:
+        method: "Hold stretches 40 seconds each"
+        focus: "Hips, posterior chain, shoulders, and core"
+        progression: "Progressive relaxation and length"
+
+    - name: "Nervous System Recovery"
+      duration: "5 minutes"
+      protocol: "Breathing and relaxation for neuromuscular recovery"
+      implementation:
+        method: "4-7-8 breathing with progressive muscle relaxation"
+        focus: "Central nervous system recovery from explosive demands"
+        progression: "Enhanced parasympathetic activation"
+
+    - name: "Power Training Nutrition"
+      duration: "2 minutes"
+      protocol: "Post-power training refueling"
+      implementation:
+        method: "Immediate protein and carbohydrate consideration"
+        focus: "Recovery optimization for explosive training demands"
+        progression: "Enhanced nutrient timing for power adaptation"

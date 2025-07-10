@@ -1,0 +1,130 @@
+# Week 5 - Saturday: Competition Simulation & Recovery Options
+metadata:
+  period: 5
+  period_name: "Power Integration Phase"
+  day_id: "week_5_saturday"
+  day_name: "Saturday"
+  title: "Competition Simulation & Recovery Options"
+  subtitle: "Apply Power in Competition Context"
+  phase: "Phase 2: Power Integration (Week 2)"
+  focus_areas:
+    - "Competition Simulation"
+    - "Power Application"
+    - "Recovery Options"
+
+  training_parameters:
+    volume: "Variable (competition or recovery)"
+    intensity: "90-100% (competition) or 40-60% (recovery)"
+    density: "match-like or low"
+    duration: "2-4 hours"
+
+  elite_methods:
+    - name: "Competition Simulation Protocol"
+      type: "competition"
+      attribution:
+        source: "Elite competition preparation"
+        methodology: "Match simulation training"
+        verification: "Professional training protocols"
+        context: "Competition power application"
+        results: "Enhanced competition performance"
+
+# COMPETITION OPTIONS
+competition_options:
+  - option: "A"
+    title: "Competition Power Application"
+    description: "Apply power development in match context"
+    
+    components:
+      - id: "power_match_simulation"
+        name: "Power Match Simulation"
+        type: "competition"
+        category: "primary"
+        
+        duration: "2-3 hours"
+        intensity: "90-100%"
+        
+        implementation:
+          method: "Match simulation with power focus"
+          focus: "Power application under pressure"
+          key_points: "Maintain power under fatigue"
+        
+        instructions:
+          - phase: "WARM_UP"
+            text: "30 minutes progressive warm-up"
+          - phase: "MATCH_SIMULATION"
+            text: "90-120 minutes match play simulation"
+          - phase: "POWER_FOCUS"
+            text: "Emphasis on power application"
+          - phase: "COOL_DOWN"
+            text: "20 minutes cool-down"
+        
+        success_criteria:
+          - metric: "Power maintenance"
+            target: "Sustain power throughout match"
+            tracking: "Performance monitoring"
+          - metric: "Competition readiness"
+            target: "Match-like performance"
+            tracking: "Skill execution"
+
+  - option: "B"
+    title: "Active Recovery Protocol"
+    description: "Low-intensity recovery with movement"
+    
+    components:
+      - id: "active_recovery_session"
+        name: "Active Recovery Session"
+        type: "recovery"
+        category: "primary"
+        
+        duration: "60-90 minutes"
+        intensity: "40-60%"
+        
+        implementation:
+          method: "Active recovery with movement"
+          focus: "Recovery enhancement"
+          key_points: "Light movement, mobility"
+        
+        instructions:
+          - phase: "LIGHT_MOVEMENT"
+            text: "30 minutes light movement activities"
+          - phase: "MOBILITY_WORK"
+            text: "30 minutes mobility and stretching"
+          - phase: "RELAXATION"
+            text: "30 minutes relaxation techniques"
+        
+        success_criteria:
+          - metric: "Recovery enhancement"
+            target: "Improved recovery markers"
+            tracking: "Subjective wellness"
+          - metric: "Readiness preparation"
+            target: "Prepare for next week"
+            tracking: "Recovery assessment"
+
+# SESSION METRICS
+session_metrics:
+  volume:
+    option_a_minutes: 180
+    option_b_minutes: 90
+    intensity_dependent: true
+
+  intensity:
+    option_a_average: "90-100%"
+    option_b_average: "40-60%"
+    choice_dependent: true
+
+# COACHING NOTES
+coaching_notes:
+  technical_focus:
+    - "Competition power application"
+    - "Recovery optimization"
+    - "Week preparation"
+
+  load_management:
+    - "Choice based on weekly load"
+    - "Recovery needs assessment"
+    - "Next week preparation"
+
+  progression_markers:
+    - "Competition power application"
+    - "Recovery effectiveness"
+    - "Week 6 readiness"

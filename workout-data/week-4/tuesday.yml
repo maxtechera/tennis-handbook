@@ -1,0 +1,843 @@
+# Week 4 - Tuesday: Upper Body Power Integration & Advanced Tennis
+metadata:
+  # Basic identifiers
+  period: 4
+  period_name: "Power Integration Phase"
+  day_id: "week_4_tuesday"
+  day_name: "Tuesday"
+
+  # Workout details
+  title: "Upper Body Power Integration & Advanced Tennis"
+  subtitle: "Phase 2 Upper Body Power Development"
+  phase: "Phase 2: Power Integration (Week 1)"
+  focus_areas:
+    - "Upper Body Power Development"
+    - "Tennis Power Integration"
+    - "Advanced Movement Quality"
+
+  # Training parameters
+  training_parameters:
+    volume: "95% (upper body focus)"
+    intensity: "80-90% (power emphasis)"
+    density: "moderate to high"
+    duration: "4 hours 15 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Serve Power Development Protocol"
+      type: "tennis_power"
+      attribution:
+        methodology: "Serve-specific power training"
+        source: "Elite tennis serve research"
+        verification: "Professional serve training protocols"
+        context: "Phase 2 serve power development"
+        results: "Enhanced serve velocity and accuracy"
+    - name: "Upper Body Power Integration"
+      type: "power"
+      attribution:
+        methodology: "Upper body power development"
+        source: "Elite strength and conditioning"
+        verification: "Power training research"
+        context: "Phase 2 upper body focus"
+        elite_use: "Professional power athletes"
+    - name: "Advanced Tennis Movement"
+      type: "movement"
+      attribution:
+        source: "Elite tennis movement protocols"
+        methodology: "Advanced court movement"
+        verification: "Professional training standards"
+        context: "Phase 2 movement integration"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Barbell and weights"
+      - "Dumbbells (5-50 lbs)"
+      - "Tennis court access"
+      - "Medicine balls (3-6kg)"
+      - "Resistance bands"
+      - "Pull-up bar or cable machine"
+      - "Bench"
+    optional:
+      - "Velocity tracking device"
+      - "Radar gun"
+      - "Plyometric boxes"
+      - "Agility ladder"
+      - "Foam roller"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Monday](monday) | [Wednesday ➡️](wednesday)"
+    overview_link: "./"
+    next_link: "wednesday"
+    previous_link: "monday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Upper Body Power Assessment"
+      preparation: "Upper Body Power Preparation"
+      skill_training: "Advanced Tennis Integration"
+      conditioning: "Upper Body Power Training"
+      recovery: "Upper Body Recovery Protocol"
+
+    ui_elements:
+      - type: "info"
+        title: "Upper Body Power Focus"
+        content: "Today focuses on upper body power development with tennis integration"
+        icon: "💪"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "upper_body_power_assessment"
+    type: "progress"
+    title: "Upper Body Power Assessment"
+    timing: "pre-session"
+    duration: "25 minutes"
+    description: "Comprehensive upper body power evaluation"
+
+    attribution:
+      source: "Elite upper body power assessment"
+      methodology: "Upper body power evaluation"
+      validation: "Power training research"
+      elite_use: "Professional power athletes"
+
+    components:
+      - id: "medicine_ball_chest_pass"
+        name: "Medicine Ball Chest Pass Power"
+        type: "power"
+        category: "primary"
+
+        measurement:
+          protocol: "Seated chest pass for maximum velocity"
+          repetitions: "5 attempts"
+          equipment: "4kg medicine ball, velocity tracking"
+
+        standards:
+          elite_benchmark: "Velocity > 8 m/s"
+          good_standard: "Velocity 6-8 m/s"
+          needs_work: "Velocity < 6 m/s"
+
+        scoring:
+          method: "Best velocity from 5 attempts"
+          scale: "meters per second"
+          recording: "Peak velocity and consistency"
+
+        context:
+          description: "Measures upper body power output"
+          application: "Correlates with serve power"
+
+      - id: "pull_up_power_assessment"
+        name: "Pull-up Power Assessment"
+        type: "power"
+        category: "primary"
+
+        measurement:
+          protocol: "3 explosive pull-ups with velocity tracking"
+          repetitions: "3 attempts"
+          equipment: "Pull-up bar, velocity tracking"
+
+        standards:
+          elite_benchmark: "Explosive concentric velocity"
+          good_standard: "Controlled explosive movement"
+          needs_work: "Slow or struggling movement"
+
+        scoring:
+          method: "Concentric velocity measurement"
+          scale: "meters per second"
+          recording: "Average velocity of 3 reps"
+
+        context:
+          description: "Upper body pulling power"
+          application: "Tennis movement and stability"
+
+      - id: "shoulder_stability_test"
+        name: "Shoulder Stability Assessment"
+        type: "stability"
+        category: "primary"
+
+        measurement:
+          protocol: "Single-arm plank with perturbation"
+          repetitions: "30 seconds each arm"
+          equipment: "None"
+
+        standards:
+          elite_benchmark: "Perfect stability with perturbation"
+          good_standard: "Good stability with minor compensation"
+          needs_work: "Poor stability or compensation"
+
+        scoring:
+          method: "Stability quality assessment"
+          scale: "pass/fail with quality notes"
+          recording: "Stability quality and compensations"
+
+        context:
+          description: "Shoulder stability under load"
+          application: "Serve stability and injury prevention"
+
+# TIMELINE/SCHEDULE
+schedule:
+  type: "time-based"
+  total_duration: "4 hours 15 minutes"
+
+  blocks:
+    - id: "morning_block"
+      time: "6:00-7:15"
+      title: "Upper Body Power Morning Protocol"
+      type: "preparation"
+
+      activities:
+        - name: "Upper Body Power Morning Protocol"
+          duration: "75 minutes"
+          type: "preparation"
+          description: "Upper body power preparation"
+
+      carousel_data:
+        phase_id: "morning"
+        phase_title: "Upper Body Morning"
+        phase_icon: "🌅"
+        location: "home/hotel"
+
+    - id: "tennis_block"
+      time: "7:15-8:30"
+      title: "Advanced Tennis Integration"
+      type: "main"
+
+      activities:
+        - name: "Advanced Tennis Integration"
+          duration: "75 minutes"
+          type: "main"
+          description: "Advanced tennis with power focus"
+
+      carousel_data:
+        phase_id: "tennis"
+        phase_title: "Advanced Tennis"
+        phase_icon: "🎾"
+        location: "tennis_court"
+
+    - id: "movement_block"
+      time: "8:35-8:55"
+      title: "Upper Body Movement Preparation"
+      type: "preparation"
+
+      activities:
+        - name: "Upper Body Movement Preparation"
+          duration: "20 minutes"
+          type: "warm-up"
+          description: "Upper body movement preparation"
+
+      carousel_data:
+        phase_id: "movement"
+        phase_title: "Upper Body Movement"
+        phase_icon: "🏃"
+        location: "gym"
+
+    - id: "strength_block"
+      time: "8:55-10:10"
+      title: "Upper Body Power Training"
+      type: "main"
+
+      activities:
+        - name: "Upper Body Power Training Block"
+          duration: "75 minutes"
+          type: "main"
+          description: "Upper body power development"
+
+      carousel_data:
+        phase_id: "strength"
+        phase_title: "Upper Body Power"
+        phase_icon: "💪"
+        location: "gym"
+
+    - id: "recovery_block"
+      time: "10:15-10:30"
+      title: "Upper Body Recovery Protocol"
+      type: "recovery"
+
+      activities:
+        - name: "Upper Body Recovery Protocol"
+          duration: "15 minutes"
+          type: "recovery"
+          description: "Upper body recovery focus"
+
+      carousel_data:
+        phase_id: "recovery"
+        phase_title: "Upper Body Recovery"
+        phase_icon: "🧊"
+        location: "recovery_area"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "upper_body_morning_protocol"
+    type: "morning"
+    title: "Upper Body Power Morning Protocol"
+    duration: "75 minutes"
+    timing: "6:00-7:15"
+
+    attribution:
+      source: "Elite upper body power preparation"
+      elite_use: "Professional upper body power athletes"
+      verification: "Upper body power training literature"
+
+    activities:
+      - id: "shoulder_activation"
+        name: "Shoulder Activation Protocol"
+        type: "activation"
+        duration: "20 minutes"
+        order: 1
+
+        implementation:
+          method: "Progressive shoulder activation"
+          setup: "Resistance bands and light weights"
+          execution: "Shoulder activation sequence"
+          focus: "Shoulder stability and mobility"
+
+        instructions:
+          - phase: "MOBILITY"
+            text: "5 minutes shoulder mobility - circles, cross-body stretches, overhead reaches"
+          - phase: "ACTIVATION"
+            text: "10 minutes activation - band external rotations, Y-T-W raises, wall slides"
+          - phase: "INTEGRATION"
+            text: "5 minutes integration - arm circles with resistance, dynamic movements"
+
+        cues:
+          - "Feel shoulders warming up"
+          - "Full range of motion"
+          - "Quality over speed"
+          - "Prepare for power training"
+
+      - id: "upper_body_power_prep"
+        name: "Upper Body Power Preparation"
+        type: "preparation"
+        duration: "30 minutes"
+        order: 2
+
+        implementation:
+          method: "Upper body power preparation"
+          setup: "Light weights and medicine balls"
+          execution: "Progressive power building"
+          focus: "Upper body power readiness"
+
+        instructions:
+          - phase: "LIGHT_RESISTANCE"
+            text: "10 minutes light resistance - band work, light weights, controlled movements"
+          - phase: "MODERATE_POWER"
+            text: "10 minutes moderate power - light medicine ball throws, explosive push-ups"
+          - phase: "POWER_PREP"
+            text: "10 minutes power preparation - approach training intensities"
+
+        cues:
+          - "Build power progressively"
+          - "Feel the explosive intent"
+          - "Quality over maximum effort"
+          - "Prepare for main training"
+
+      - id: "upper_body_assessment"
+        name: "Upper Body Assessment"
+        type: "assessment"
+        duration: "25 minutes"
+        order: 3
+
+        implementation:
+          method: "Upper body power assessment"
+          setup: "Assessment equipment"
+          execution: "Systematic evaluation"
+          focus: "Upper body power capabilities"
+
+        instructions:
+          - phase: "POWER_TESTING"
+            text: "15 minutes power testing - medicine ball throws, pull-up assessment"
+          - phase: "STABILITY_TESTING"
+            text: "10 minutes stability testing - shoulder stability assessment"
+
+        cues:
+          - "Honest assessment"
+          - "Quality over maximum effort"
+          - "Establish power baseline"
+          - "Data for training optimization"
+
+# SKILL TRAINING
+skill_training:
+  section_title: "Advanced Tennis Integration"
+  section_description: "Advanced tennis training with upper body power focus"
+
+  sessions:
+    - id: "advanced_tennis_session"
+      type: "power_integrated"
+      title: "Advanced Tennis Integration Session"
+      duration: "75 minutes"
+      intensity: "80-90%"
+
+      attribution:
+        methodology: "Advanced tennis power training"
+        source: "Elite tennis power protocols"
+        elite_use: "Professional tennis power training"
+        verification: "Tennis power training research"
+
+      structure:
+        warm_up: "15 minutes"
+        main_work: "50 minutes"
+        cool_down: "10 minutes"
+
+      components:
+        - id: "advanced_serve_training"
+          name: "Advanced Serve Training"
+          type: "power_skill"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "25 minutes"
+            rest: "45 seconds between serves"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Radar gun, targets, medicine balls"
+            players: "Individual training"
+
+          implementation:
+            method: "Advanced serve development"
+            focus: "Power, accuracy, and consistency"
+            key_points: "Hip-shoulder separation, explosive extension"
+
+          instructions:
+            - phase: "POWER_PRIMING"
+              text: "5 minutes medicine ball overhead throws - prime serve pattern"
+            - phase: "TECHNICAL_PROGRESSION"
+              text: "10 minutes progressive serve development - 60%, 80%, 95% effort"
+            - phase: "POWER_SERVES"
+              text: "10 minutes maximum power serves - track velocity and accuracy"
+
+          cues:
+            - "Hip-shoulder separation"
+            - "Explosive extension"
+            - "Power with accuracy"
+            - "Consistent technique"
+
+          success_criteria:
+            - metric: "Serve velocity"
+              target: "5% improvement from baseline"
+              tracking: "Radar gun measurements"
+            - metric: "Accuracy"
+              target: "75% in service box"
+              tracking: "Successful serves"
+
+        - id: "advanced_groundstroke_power"
+          name: "Advanced Groundstroke Power"
+          type: "power_skill"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "25 minutes"
+            rest: "Between drill sets"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Balls, targets, cones"
+            players: "Practice partner"
+
+          implementation:
+            method: "Advanced groundstroke power"
+            focus: "Power generation and control"
+            key_points: "Rotation, weight transfer, follow-through"
+
+          instructions:
+            - phase: "POWER_FOREHANDS"
+              text: "10 minutes power forehand development - maximum velocity drills"
+            - phase: "POWER_BACKHANDS"
+              text: "10 minutes power backhand development - drive through contact"
+            - phase: "POWER_PATTERNS"
+              text: "5 minutes power patterns - combine shots with maximum velocity"
+
+          cues:
+            - "Maximum rotation"
+            - "Drive through contact"
+            - "Power with control"
+            - "Consistent follow-through"
+
+          success_criteria:
+            - metric: "Shot velocity"
+              target: "Maximum sustainable velocity"
+              tracking: "Velocity measurements"
+            - metric: "Accuracy"
+              target: "80% success rate"
+              tracking: "Target accuracy"
+
+# CONDITIONING BLOCKS
+conditioning_blocks:
+  - id: "upper_body_power_training"
+    type: "power"
+    title: "Upper Body Power Training Block"
+    description: "Upper body power development with tennis integration"
+    duration: "75 minutes"
+
+    attribution:
+      methodology: "Upper body power training"
+      source: "Elite power development protocols"
+      elite_use: "Professional power athletes"
+      verification: "Power training research"
+
+    exercises:
+      - id: "explosive_bench_press"
+        name: "Explosive Bench Press"
+        category: "primary"
+        order: 1
+
+        loading:
+          sets: "5"
+          reps: "3"
+          intensity: "60-70% 1RM"
+          rest: "3 minutes"
+          tempo: "Explosive concentric"
+
+        execution:
+          setup:
+            - "Barbell bench press setup"
+            - "Feet planted firmly"
+            - "Arch maintained"
+          technique:
+            - "Controlled eccentric"
+            - "Explosive concentric drive"
+            - "Full range of motion"
+            - "Pause at chest"
+          safety:
+            - "Spotter required"
+            - "Maintain form"
+            - "Full control"
+
+        cues:
+          - "Explosive drive"
+          - "Full power every rep"
+          - "Control the negative"
+          - "Drive through the bar"
+
+        tracking:
+          type: "power"
+          format: "sets_reps_load"
+          sets:
+            - set: 1
+              target: "3 reps explosive"
+              actual: ""
+              load: ""
+              notes: "___"
+            - set: 2
+              target: "3 reps explosive"
+              actual: ""
+              load: ""
+              notes: "___"
+            - set: 3
+              target: "3 reps explosive"
+              actual: ""
+              load: ""
+              notes: "___"
+            - set: 4
+              target: "3 reps explosive"
+              actual: ""
+              load: ""
+              notes: "___"
+            - set: 5
+              target: "3 reps explosive"
+              actual: ""
+              load: ""
+              notes: "___"
+
+        benefits:
+          primary: "Upper body power development"
+          secondary: "Chest and tricep strength"
+          sport_specific: "Serve power development"
+
+      - id: "explosive_pull_ups"
+        name: "Explosive Pull-ups"
+        category: "primary"
+        order: 2
+
+        loading:
+          sets: "4"
+          reps: "5"
+          intensity: "Bodyweight + explosive intent"
+          rest: "2.5 minutes"
+          tempo: "Explosive concentric"
+
+        execution:
+          setup:
+            - "Pull-up bar grip"
+            - "Dead hang start"
+            - "Full body tension"
+          technique:
+            - "Explosive pull upward"
+            - "Chest to bar"
+            - "Controlled descent"
+            - "Full range of motion"
+          safety:
+            - "Secure grip"
+            - "Controlled descent"
+            - "Full extension"
+
+        cues:
+          - "Explosive pull"
+          - "Drive chest to bar"
+          - "Control the descent"
+          - "Full power every rep"
+
+        tracking:
+          type: "power"
+          format: "sets_reps"
+
+        benefits:
+          primary: "Upper body pulling power"
+          secondary: "Lat and bicep strength"
+          sport_specific: "Tennis movement power"
+
+      - id: "medicine_ball_power_circuit"
+        name: "Medicine Ball Power Circuit"
+        category: "power"
+        order: 3
+
+        loading:
+          sets: "3"
+          reps: "Circuit format"
+          intensity: "Maximum effort"
+          rest: "2 minutes between circuits"
+
+        execution:
+          setup:
+            - "Medicine balls (3-6kg)"
+            - "Open space"
+            - "Wall or partner"
+          technique:
+            - "Chest pass: 10 reps"
+            - "Overhead slam: 8 reps"
+            - "Rotational throw: 6 per side"
+            - "Single-arm throw: 5 per arm"
+          safety:
+            - "Secure grip"
+            - "Controlled movements"
+            - "Full recovery"
+
+        cues:
+          - "Maximum power"
+          - "Explosive intent"
+          - "Full range of motion"
+          - "Quality over speed"
+
+        tracking:
+          type: "circuit"
+          format: "rounds"
+
+        benefits:
+          primary: "Power endurance"
+          secondary: "Movement pattern"
+          sport_specific: "Tennis-specific power"
+
+      - id: "shoulder_stability_complex"
+        name: "Shoulder Stability Complex"
+        category: "stability"
+        order: 4
+
+        loading:
+          sets: "3"
+          reps: "Complex format"
+          intensity: "Moderate to high"
+          rest: "90 seconds"
+
+        execution:
+          setup:
+            - "Resistance bands"
+            - "Light weights"
+            - "Stability surface"
+          technique:
+            - "External rotations: 12 per arm"
+            - "Y-T-W raises: 10 each"
+            - "Single-arm plank: 30 seconds"
+            - "Band pull-aparts: 15 reps"
+          safety:
+            - "Controlled movements"
+            - "Full range of motion"
+            - "Quality over speed"
+
+        cues:
+          - "Stability focus"
+          - "Control every rep"
+          - "Feel the stabilizers"
+          - "Quality movement"
+
+        tracking:
+          type: "complex"
+          format: "rounds"
+
+        benefits:
+          primary: "Shoulder stability"
+          secondary: "Injury prevention"
+          sport_specific: "Serve stability"
+
+# RECOVERY PROTOCOLS
+recovery_protocols:
+  - id: "upper_body_recovery"
+    type: "immediate"
+    title: "Upper Body Recovery Protocol"
+    duration: "15 minutes"
+    timing: "Post-training"
+
+    attribution:
+      methodology: "Upper body recovery"
+      source: "Elite recovery protocols"
+      elite_use: "Professional athletes"
+      verification: "Recovery research"
+
+    components:
+      - id: "upper_body_stretching"
+        name: "Upper Body Stretching"
+        type: "mobility"
+        duration: "8 minutes"
+        order: 1
+
+        implementation:
+          method: "Upper body stretching"
+          intensity: "Light to moderate"
+          equipment: "None"
+
+        instructions:
+          - "Chest stretches (2 minutes)"
+          - "Shoulder stretches (2 minutes)"
+          - "Tricep stretches (2 minutes)"
+          - "Lat stretches (2 minutes)"
+
+        cues:
+          - "Feel the stretch"
+          - "Hold positions"
+          - "Breathe deeply"
+          - "Release tension"
+
+      - id: "upper_body_self_massage"
+        name: "Upper Body Self-Massage"
+        type: "therapy"
+        duration: "7 minutes"
+        order: 2
+
+        implementation:
+          method: "Self-massage techniques"
+          intensity: "Moderate pressure"
+          equipment: "Foam roller or massage ball"
+
+        instructions:
+          - "Chest and shoulder massage (3 minutes)"
+          - "Upper back massage (2 minutes)"
+          - "Arm massage (2 minutes)"
+
+        cues:
+          - "Moderate pressure"
+          - "Find tight spots"
+          - "Release muscle tension"
+          - "Improve circulation"
+
+# SESSION METRICS
+session_metrics:
+  volume:
+    tennis_minutes: 75
+    strength_minutes: 75
+    warmup_minutes: 20
+    recovery_minutes: 15
+    morning_protocol_minutes: 75
+    total_minutes: 260
+
+  intensity:
+    tennis_average: "80-90%"
+    strength_average: "Power-focused"
+    overall_rpe: 7.5
+
+  load_calculations:
+    total_tonnage: "Upper body power focus"
+    volume_load: "Power development"
+
+  distances:
+    estimated_court_coverage: "3.5 km"
+    total_movement: "Upper body power"
+
+# COACHING NOTES
+coaching_notes:
+  technical_focus:
+    - "Upper body power development"
+    - "Tennis power integration"
+    - "Serve power enhancement"
+
+  load_management:
+    - "Upper body power emphasis"
+    - "Power quality over quantity"
+    - "Recovery between power sets"
+
+  progression_markers:
+    - "Upper body power improvements"
+    - "Tennis power integration"
+    - "Serve velocity increases"
+
+  phase_2_development:
+    - "Upper body power established"
+    - "Tennis integration successful"
+    - "Power endurance development"
+
+# LEVEL MODIFICATIONS
+level_modifications:
+  beginner:
+    volume: "Reduce to 3 sets per exercise"
+    intensity: "Focus on movement quality"
+    tennis: "Reduce to 60 minutes"
+    power: "Learn power movement patterns"
+
+  intermediate:
+    volume: "As prescribed"
+    intensity: "As prescribed"
+    tennis: "As prescribed"
+    power: "Standard power development"
+
+  advanced:
+    volume: "Add 1 set to main exercises"
+    intensity: "Higher power targets"
+    tennis: "Increase to 90 minutes"
+    power: "Advanced power techniques"
+
+# WEEK INTEGRATION
+week_integration:
+  weekly_theme: "Power Integration Development"
+  daily_priority: "Upper body power development"
+  phase_focus: "Power integration progression"
+  
+  connects_to:
+    monday: "Lower body power foundation"
+    wednesday: "Power endurance development"
+    friday: "Integrated power application"
+    
+  phase_2_progression:
+    development: "Upper body power established"
+    integration: "Tennis power transfer"
+    advancement: "Power endurance preparation"
+
+# TRACKING REQUIREMENTS
+tracking:
+  required:
+    - "All power measurements"
+    - "Upper body strength gains"
+    - "Tennis power improvements"
+    - "Serve velocity tracking"
+    - "Recovery indicators"
+    - "Power development metrics"
+
+  optional:
+    - "Velocity tracking data"
+    - "Force measurements"
+    - "Video analysis"
+    - "Movement quality assessment"
+    - "Power endurance tracking"
+
+  phase_2_specific:
+    - "Upper body power development"
+    - "Tennis power integration"
+    - "Serve power improvements"
+    - "Power endurance establishment"
+
+# NAVIGATION
+navigation:
+  week_overview: "./"
+  next_day: "wednesday"
+  previous_day: "monday"
+  phase_status: "Phase 2 - Week 1"

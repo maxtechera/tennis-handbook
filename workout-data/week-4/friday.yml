@@ -1,0 +1,948 @@
+# Week 4 - Friday: Integrated Power Application & Performance Testing
+metadata:
+  # Basic identifiers
+  period: 4
+  period_name: "Power Integration Phase"
+  day_id: "week_4_friday"
+  day_name: "Friday"
+
+  # Workout details
+  title: "Integrated Power Application & Performance Testing"
+  subtitle: "Phase 2 Integrated Power Application"
+  phase: "Phase 2: Power Integration (Week 1)"
+  focus_areas:
+    - "Integrated Power Application"
+    - "Performance Testing"
+    - "Tennis-Specific Power Transfer"
+
+  # Training parameters
+  training_parameters:
+    volume: "100% (integration focus)"
+    intensity: "80-95% (performance emphasis)"
+    density: "moderate to high"
+    duration: "4 hours 30 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Integrated Power Application"
+      type: "power_integration"
+      attribution:
+        methodology: "Integrated power training principles"
+        source: "Elite power integration research"
+        verification: "Sports science literature"
+        context: "Phase 2 power integration"
+        results: "Enhanced power transfer to sport skills"
+    - name: "Performance Testing Protocol"
+      type: "testing"
+      attribution:
+        methodology: "Performance testing standards"
+        source: "Elite performance evaluation"
+        verification: "Testing protocol research"
+        context: "Phase 2 performance evaluation"
+        elite_use: "Professional performance testing"
+    - name: "Tennis-Specific Power Transfer"
+      type: "sport_specific"
+      attribution:
+        source: "Elite tennis power research"
+        methodology: "Tennis-specific power application"
+        verification: "Tennis power training protocols"
+        context: "Phase 2 tennis integration"
+        elite_use: "Professional tennis power training"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Barbell and weights"
+      - "Tennis court access"
+      - "Velocity tracking device"
+      - "Medicine balls (3-6kg)"
+      - "Plyometric boxes (12-24 inches)"
+      - "Radar gun"
+      - "Stopwatch"
+      - "Agility ladder"
+      - "Cones"
+    optional:
+      - "Force plates"
+      - "Video analysis equipment"
+      - "Heart rate monitors"
+      - "Jump mat"
+      - "Resistance bands"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Thursday](thursday) | [Saturday ➡️](saturday)"
+    overview_link: "./"
+    next_link: "saturday"
+    previous_link: "thursday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Performance Testing"
+      preparation: "Power Integration Preparation"
+      skill_training: "Tennis-Specific Power Application"
+      conditioning: "Integrated Power Training"
+      recovery: "Performance Recovery Protocol"
+
+    ui_elements:
+      - type: "success"
+        title: "Integration & Testing Day"
+        content: "Today focuses on integrating power training with tennis-specific application"
+        icon: "🚀"
+      - type: "warning"
+        title: "Performance Testing"
+        content: "Multiple performance tests to evaluate Phase 2 progress"
+        icon: "📊"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "performance_testing_battery"
+    type: "performance"
+    title: "Performance Testing Battery"
+    timing: "pre-session"
+    duration: "40 minutes"
+    description: "Comprehensive performance testing for Phase 2 evaluation"
+
+    attribution:
+      source: "Elite performance testing protocols"
+      methodology: "Performance evaluation standards"
+      validation: "Performance testing research"
+      elite_use: "Professional performance testing"
+
+    components:
+      - id: "power_output_testing"
+        name: "Power Output Testing"
+        type: "power"
+        category: "primary"
+
+        measurement:
+          protocol: "Vertical jump, broad jump, medicine ball throw"
+          repetitions: "3 attempts each"
+          equipment: "Jump mat, medicine ball, measuring tape"
+
+        standards:
+          elite_benchmark: "5-10% improvement from Week 1"
+          good_standard: "3-5% improvement"
+          needs_work: "<3% improvement"
+
+        scoring:
+          method: "Best result from 3 attempts"
+          scale: "Improvement percentage"
+          recording: "Peak performance and improvement"
+
+        context:
+          description: "Power output capability assessment"
+          application: "Validates power training effectiveness"
+
+      - id: "velocity_based_strength_test"
+        name: "Velocity-Based Strength Test"
+        type: "strength"
+        category: "primary"
+
+        measurement:
+          protocol: "Squat and bench press velocity at 80% 1RM"
+          repetitions: "3 reps each exercise"
+          equipment: "Velocity tracking device"
+
+        standards:
+          elite_benchmark: "Maintain target velocity zone"
+          good_standard: "Minor velocity decrease"
+          needs_work: "Significant velocity decrease"
+
+        scoring:
+          method: "Average velocity measurement"
+          scale: "Meters per second"
+          recording: "Velocity data and comparison"
+
+        context:
+          description: "Strength-speed relationship assessment"
+          application: "Validates velocity-based training"
+
+      - id: "reactive_strength_assessment"
+        name: "Reactive Strength Assessment"
+        type: "reactive"
+        category: "primary"
+
+        measurement:
+          protocol: "Drop jump from 30cm with RSI calculation"
+          repetitions: "5 attempts"
+          equipment: "30cm box, contact mat"
+
+        standards:
+          elite_benchmark: "RSI improvement from baseline"
+          good_standard: "Maintained RSI"
+          needs_work: "Decreased RSI"
+
+        scoring:
+          method: "Best RSI from 5 attempts"
+          scale: "RSI units"
+          recording: "RSI value and improvement"
+
+        context:
+          description: "Reactive strength capability"
+          application: "Stretch-shortening cycle effectiveness"
+
+      - id: "tennis_power_integration_test"
+        name: "Tennis Power Integration Test"
+        type: "sport_specific"
+        category: "primary"
+
+        measurement:
+          protocol: "Serve velocity, groundstroke velocity, court movement speed"
+          repetitions: "10 serves, 20 groundstrokes, 5 movement tests"
+          equipment: "Radar gun, court markers, stopwatch"
+
+        standards:
+          elite_benchmark: "Improved velocity and movement speed"
+          good_standard: "Maintained performance with improved power"
+          needs_work: "No improvement in tennis-specific power"
+
+        scoring:
+          method: "Average velocity and movement times"
+          scale: "Velocity (mph/kph) and time (seconds)"
+          recording: "Tennis-specific power improvements"
+
+        context:
+          description: "Power transfer to tennis skills"
+          application: "Validates integrated training approach"
+
+  - id: "integration_readiness_assessment"
+    type: "readiness"
+    title: "Integration Readiness Assessment"
+    timing: "pre-session"
+    duration: "15 minutes"
+    description: "Readiness assessment for integrated training"
+
+    components:
+      - id: "neuromuscular_readiness"
+        name: "Neuromuscular Readiness"
+        type: "neural"
+        category: "primary"
+
+        measurement:
+          protocol: "Countermovement jump with force-time analysis"
+          repetitions: "3 attempts"
+          equipment: "Force plate or jump mat"
+
+        standards:
+          optimal: "Peak force and velocity achieved"
+          acceptable: "Good force and velocity"
+          needs_modification: "Reduced force or velocity"
+
+        context:
+          description: "Neuromuscular system readiness"
+          application: "Training intensity adjustment"
+
+      - id: "coordination_assessment"
+        name: "Coordination Assessment"
+        type: "coordination"
+        category: "primary"
+
+        measurement:
+          protocol: "Complex movement patterns assessment"
+          duration: "5 minutes"
+          equipment: "Agility ladder, cones"
+
+        standards:
+          optimal: "Smooth, coordinated movements"
+          acceptable: "Good coordination with minor issues"
+          needs_modification: "Coordination difficulties"
+
+        context:
+          description: "Movement coordination readiness"
+          application: "Training complexity adjustment"
+
+      - id: "motivation_focus_check"
+        name: "Motivation and Focus Check"
+        type: "psychological"
+        category: "secondary"
+
+        measurement:
+          protocol: "Self-assessment of motivation and focus"
+          duration: "5 minutes"
+          equipment: "Assessment form"
+
+        standards:
+          optimal: "High motivation and focus"
+          acceptable: "Good motivation and focus"
+          needs_modification: "Low motivation or focus"
+
+        context:
+          description: "Psychological readiness"
+          application: "Training approach adjustment"
+
+# TIMELINE/SCHEDULE
+schedule:
+  type: "time-based"
+  total_duration: "4 hours 30 minutes"
+
+  blocks:
+    - id: "morning_block"
+      time: "6:00-7:30"
+      title: "Integration Morning Protocol"
+      type: "preparation"
+
+      activities:
+        - name: "Integration Morning Protocol"
+          duration: "90 minutes"
+          type: "preparation"
+          description: "Preparation for integrated training"
+
+      carousel_data:
+        phase_id: "morning"
+        phase_title: "Integration Morning"
+        phase_icon: "🌅"
+        location: "home/hotel"
+
+    - id: "tennis_block"
+      time: "7:30-9:00"
+      title: "Tennis-Specific Power Application"
+      type: "main"
+
+      activities:
+        - name: "Tennis-Specific Power Application"
+          duration: "90 minutes"
+          type: "main"
+          description: "Tennis-specific power training"
+
+      carousel_data:
+        phase_id: "tennis"
+        phase_title: "Tennis Power Application"
+        phase_icon: "🎾"
+        location: "tennis_court"
+
+    - id: "movement_block"
+      time: "9:05-9:25"
+      title: "Integration Movement Preparation"
+      type: "preparation"
+
+      activities:
+        - name: "Integration Movement Preparation"
+          duration: "20 minutes"
+          type: "warm-up"
+          description: "Movement prep for integrated training"
+
+      carousel_data:
+        phase_id: "movement"
+        phase_title: "Integration Movement"
+        phase_icon: "🏃"
+        location: "gym"
+
+    - id: "strength_block"
+      time: "9:25-10:30"
+      title: "Integrated Power Training"
+      type: "main"
+
+      activities:
+        - name: "Integrated Power Training Block"
+          duration: "65 minutes"
+          type: "main"
+          description: "Integrated power development"
+
+      carousel_data:
+        phase_id: "strength"
+        phase_title: "Integrated Power"
+        phase_icon: "💪"
+        location: "gym"
+
+    - id: "recovery_block"
+      time: "10:35-10:50"
+      title: "Performance Recovery Protocol"
+      type: "recovery"
+
+      activities:
+        - name: "Performance Recovery Protocol"
+          duration: "15 minutes"
+          type: "recovery"
+          description: "Recovery from performance training"
+
+      carousel_data:
+        phase_id: "recovery"
+        phase_title: "Performance Recovery"
+        phase_icon: "🧊"
+        location: "recovery_area"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "integration_morning_protocol"
+    type: "morning"
+    title: "Integration Morning Protocol"
+    duration: "90 minutes"
+    timing: "6:00-7:30"
+
+    attribution:
+      source: "Elite integration preparation"
+      elite_use: "Professional integration training"
+      verification: "Integration training literature"
+
+    activities:
+      - id: "comprehensive_activation"
+        name: "Comprehensive Activation Protocol"
+        type: "activation"
+        duration: "30 minutes"
+        order: 1
+
+        implementation:
+          method: "Comprehensive system activation"
+          setup: "Full training environment"
+          execution: "Progressive activation sequence"
+          focus: "All systems preparation"
+
+        instructions:
+          - phase: "NERVOUS_SYSTEM"
+            text: "10 minutes nervous system activation - reactive drills, coordination"
+          - phase: "MUSCULAR_SYSTEM"
+            text: "10 minutes muscular system activation - dynamic movements"
+          - phase: "ENERGY_SYSTEM"
+            text: "10 minutes energy system activation - progressive intensity"
+
+        cues:
+          - "Comprehensive preparation"
+          - "All systems ready"
+          - "Progressive activation"
+          - "Prepare for integration"
+
+      - id: "performance_testing"
+        name: "Performance Testing Protocol"
+        type: "testing"
+        duration: "40 minutes"
+        order: 2
+
+        implementation:
+          method: "Systematic performance testing"
+          setup: "Testing stations"
+          execution: "Standardized testing protocol"
+          focus: "Performance evaluation"
+
+        instructions:
+          - phase: "POWER_TESTING"
+            text: "20 minutes power testing - jumps, throws, strength"
+          - phase: "TENNIS_TESTING"
+            text: "20 minutes tennis testing - serve, groundstrokes, movement"
+
+        cues:
+          - "Maximum effort testing"
+          - "Accurate measurements"
+          - "Consistent protocol"
+          - "Evaluate improvements"
+
+      - id: "integration_preparation"
+        name: "Integration Preparation"
+        type: "preparation"
+        duration: "20 minutes"
+        order: 3
+
+        implementation:
+          method: "Integration-specific preparation"
+          setup: "Training equipment"
+          execution: "Integration preparation"
+          focus: "Integrated training readiness"
+
+        instructions:
+          - phase: "MOVEMENT_INTEGRATION"
+            text: "10 minutes movement integration - combine patterns"
+          - phase: "FINAL_PREPARATION"
+            text: "10 minutes final preparation - ready for main training"
+
+        cues:
+          - "Integrate movements"
+          - "Combine patterns"
+          - "Ready for main training"
+          - "Peak preparation"
+
+# SKILL TRAINING
+skill_training:
+  section_title: "Tennis-Specific Power Application"
+  section_description: "Tennis-specific power application with integration focus"
+
+  sessions:
+    - id: "tennis_power_application_session"
+      type: "power_application"
+      title: "Tennis-Specific Power Application Session"
+      duration: "90 minutes"
+      intensity: "80-95%"
+
+      attribution:
+        methodology: "Tennis-specific power application"
+        source: "Elite tennis power protocols"
+        elite_use: "Professional tennis power training"
+        verification: "Tennis power research"
+
+      structure:
+        warm_up: "15 minutes"
+        main_work: "65 minutes"
+        cool_down: "10 minutes"
+
+      components:
+        - id: "power_serve_integration"
+          name: "Power Serve Integration"
+          type: "power_skill"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "25 minutes"
+            rest: "60 seconds between sets"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Radar gun, medicine balls, targets"
+            players: "Individual training"
+
+          implementation:
+            method: "Integrated power serve training"
+            focus: "Power transfer to serve"
+            key_points: "Explosive power generation, accuracy maintenance"
+
+          instructions:
+            - phase: "POWER_PRIMING"
+              text: "5 minutes power priming - medicine ball throws, explosive movements"
+            - phase: "INTEGRATED_SERVES"
+              text: "15 minutes integrated serves - power focus with accuracy"
+            - phase: "PERFORMANCE_SERVES"
+              text: "5 minutes performance serves - maximum velocity tracking"
+
+          cues:
+            - "Transfer power to serve"
+            - "Explosive hip drive"
+            - "Maintain accuracy"
+            - "Peak velocity"
+
+          success_criteria:
+            - metric: "Serve velocity"
+              target: "Peak velocity with 75% accuracy"
+              tracking: "Radar gun and accuracy count"
+            - metric: "Power transfer"
+              target: "Consistent power application"
+              tracking: "Power assessment"
+
+        - id: "explosive_groundstroke_integration"
+          name: "Explosive Groundstroke Integration"
+          type: "power_skill"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "25 minutes"
+            rest: "45 seconds between sets"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Balls, targets, velocity tracking"
+            players: "Practice partner"
+
+          implementation:
+            method: "Explosive groundstroke integration"
+            focus: "Power transfer to groundstrokes"
+            key_points: "Explosive rotation, power maintenance"
+
+          instructions:
+            - phase: "POWER_FOREHANDS"
+              text: "10 minutes power forehands - explosive rotation focus"
+            - phase: "POWER_BACKHANDS"
+              text: "10 minutes power backhands - drive through contact"
+            - phase: "POWER_COMBINATIONS"
+              text: "5 minutes power combinations - sustained power"
+
+          cues:
+            - "Explosive rotation"
+            - "Drive through contact"
+            - "Sustain power"
+            - "Quality contact"
+
+          success_criteria:
+            - metric: "Groundstroke velocity"
+              target: "Peak velocity with 80% accuracy"
+              tracking: "Velocity and accuracy measurements"
+            - metric: "Power consistency"
+              target: "Consistent power across shots"
+              tracking: "Power maintenance assessment"
+
+        - id: "court_movement_power_integration"
+          name: "Court Movement Power Integration"
+          type: "movement_power"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "15 minutes"
+            rest: "90 seconds between sets"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Cones, stopwatch, agility ladder"
+            players: "Individual training"
+
+          implementation:
+            method: "Power-integrated court movement"
+            focus: "Power transfer to movement"
+            key_points: "Explosive starts, power maintenance"
+
+          instructions:
+            - phase: "EXPLOSIVE_STARTS"
+              text: "5 minutes explosive starts - maximum acceleration"
+            - phase: "POWER_DIRECTION_CHANGES"
+              text: "5 minutes power direction changes - maintain speed"
+            - phase: "INTEGRATED_MOVEMENT"
+              text: "5 minutes integrated movement - combine with shots"
+
+          cues:
+            - "Explosive starts"
+            - "Power direction changes"
+            - "Maintain speed"
+            - "Integrate with shots"
+
+          success_criteria:
+            - metric: "Movement speed"
+              target: "Peak movement speed"
+              tracking: "Movement time assessment"
+            - metric: "Power integration"
+              target: "Consistent power in movement"
+              tracking: "Power maintenance evaluation"
+
+# CONDITIONING BLOCKS
+conditioning_blocks:
+  - id: "integrated_power_training"
+    type: "integrated_power"
+    title: "Integrated Power Training Block"
+    description: "Integrated power development with tennis-specific application"
+    duration: "65 minutes"
+
+    attribution:
+      methodology: "Integrated power training"
+      source: "Elite integration protocols"
+      elite_use: "Professional integrated training"
+      verification: "Integration training research"
+
+    exercises:
+      - id: "complex_power_training"
+        name: "Complex Power Training"
+        category: "primary"
+        order: 1
+
+        loading:
+          sets: "4"
+          reps: "Complex format"
+          intensity: "80-95%"
+          rest: "3 minutes between complexes"
+
+        execution:
+          setup:
+            - "Barbell, plyometric box, medicine ball"
+            - "Tennis racquet and court access"
+            - "Velocity tracking device"
+          technique:
+            - "A1: Squat 5 reps @ 80%"
+            - "A2: Jump squat 5 reps"
+            - "A3: Broad jump 3 reps"
+            - "A4: Tennis movement pattern"
+          safety:
+            - "Full recovery between exercises"
+            - "Maintain form throughout"
+            - "Progress logically"
+
+        cues:
+          - "Complex power development"
+          - "Maintain quality"
+          - "Progressive intensity"
+          - "Transfer to tennis"
+
+        tracking:
+          type: "complex"
+          format: "sets_complex"
+          complexes:
+            - complex: 1
+              squat_weight: ""
+              jump_quality: ""
+              broad_jump_distance: ""
+              tennis_movement_quality: ""
+              notes: "___"
+            - complex: 2
+              squat_weight: ""
+              jump_quality: ""
+              broad_jump_distance: ""
+              tennis_movement_quality: ""
+              notes: "___"
+            - complex: 3
+              squat_weight: ""
+              jump_quality: ""
+              broad_jump_distance: ""
+              tennis_movement_quality: ""
+              notes: "___"
+            - complex: 4
+              squat_weight: ""
+              jump_quality: ""
+              broad_jump_distance: ""
+              tennis_movement_quality: ""
+              notes: "___"
+
+        benefits:
+          primary: "Integrated power development"
+          secondary: "Power transfer"
+          sport_specific: "Tennis-specific power"
+
+        attribution:
+          source: "Complex training research"
+          methodology: "Integrated power development"
+          elite_use: "Professional power training"
+          verification: "Complex training literature"
+          context: "Phase 2 integration"
+          results: "Enhanced power transfer"
+
+      - id: "upper_body_power_integration"
+        name: "Upper Body Power Integration"
+        category: "primary"
+        order: 2
+
+        loading:
+          sets: "3"
+          reps: "Complex format"
+          intensity: "70-85%"
+          rest: "2.5 minutes"
+
+        execution:
+          setup:
+            - "Bench press setup"
+            - "Medicine balls"
+            - "Tennis racquet"
+          technique:
+            - "B1: Bench press 6 reps @ 70%"
+            - "B2: Medicine ball chest pass 8 reps"
+            - "B3: Tennis serve motion 10 reps"
+          safety:
+            - "Spotter for bench press"
+            - "Explosive intent"
+            - "Quality focus"
+
+        cues:
+          - "Upper body power"
+          - "Explosive intent"
+          - "Transfer to serve"
+          - "Maintain quality"
+
+        tracking:
+          type: "complex"
+          format: "sets_complex"
+
+        benefits:
+          primary: "Upper body power"
+          secondary: "Power transfer"
+          sport_specific: "Serve power"
+
+      - id: "metabolic_power_finisher"
+        name: "Metabolic Power Finisher"
+        category: "finisher"
+        order: 3
+
+        loading:
+          sets: "2"
+          reps: "Circuit format"
+          intensity: "High"
+          rest: "3 minutes between circuits"
+          work_time: "30 seconds each station"
+
+        execution:
+          setup:
+            - "6 stations prepared"
+            - "All equipment ready"
+            - "Timer set"
+          technique:
+            - "Station 1: Burpees"
+            - "Station 2: Medicine ball slams"
+            - "Station 3: Jump squats"
+            - "Station 4: Mountain climbers"
+            - "Station 5: Lateral bounds"
+            - "Station 6: Plank to push-up"
+          safety:
+            - "High intensity"
+            - "Maintain form"
+            - "Stop if form breaks"
+
+        cues:
+          - "High intensity"
+          - "Maintain power"
+          - "Fight fatigue"
+          - "Quality over speed"
+
+        tracking:
+          type: "circuit"
+          format: "rounds_time"
+
+        benefits:
+          primary: "Metabolic power"
+          secondary: "Power endurance"
+          sport_specific: "Match conditioning"
+
+# RECOVERY PROTOCOLS
+recovery_protocols:
+  - id: "performance_recovery"
+    type: "performance"
+    title: "Performance Recovery Protocol"
+    duration: "15 minutes"
+    timing: "Post-training"
+
+    attribution:
+      methodology: "Performance recovery"
+      source: "Elite performance recovery"
+      elite_use: "Professional performance training"
+      verification: "Recovery research"
+
+    components:
+      - id: "immediate_recovery"
+        name: "Immediate Recovery Protocol"
+        type: "immediate"
+        duration: "8 minutes"
+        order: 1
+
+        implementation:
+          method: "Immediate recovery techniques"
+          intensity: "Low"
+          equipment: "None"
+
+        instructions:
+          - "3 minutes active recovery walking"
+          - "2 minutes deep breathing"
+          - "3 minutes gentle stretching"
+
+        cues:
+          - "Immediate recovery"
+          - "Lower heart rate"
+          - "Begin recovery process"
+          - "Prepare for assessment"
+
+      - id: "performance_assessment"
+        name: "Performance Assessment"
+        type: "assessment"
+        duration: "7 minutes"
+        order: 2
+
+        implementation:
+          method: "Performance evaluation"
+          intensity: "Assessment"
+          equipment: "Training log"
+
+        instructions:
+          - "Review performance testing results"
+          - "Document training improvements"
+          - "Assess integration effectiveness"
+          - "Plan weekend training"
+
+        cues:
+          - "Evaluate performance"
+          - "Document improvements"
+          - "Assess integration"
+          - "Plan progression"
+
+# SESSION METRICS
+session_metrics:
+  volume:
+    tennis_minutes: 90
+    strength_minutes: 65
+    warmup_minutes: 20
+    recovery_minutes: 15
+    morning_protocol_minutes: 90
+    total_minutes: 280
+
+  intensity:
+    tennis_average: "80-95%"
+    strength_average: "Integrated power"
+    overall_rpe: 8.5
+
+  load_calculations:
+    total_tonnage: "Integrated power focus"
+    volume_load: "Performance training"
+
+  distances:
+    estimated_court_coverage: "4.5 km"
+    total_movement: "Integrated power"
+
+# COACHING NOTES
+coaching_notes:
+  technical_focus:
+    - "Integrated power application"
+    - "Tennis-specific power transfer"
+    - "Performance optimization"
+
+  load_management:
+    - "High intensity integration"
+    - "Power quality maintenance"
+    - "Performance testing emphasis"
+
+  progression_markers:
+    - "Improved power testing results"
+    - "Enhanced tennis-specific power"
+    - "Successful integration"
+
+  phase_2_integration:
+    - "Power transfer achieved"
+    - "Tennis integration successful"
+    - "Performance improvements documented"
+
+# LEVEL MODIFICATIONS
+level_modifications:
+  beginner:
+    volume: "Reduce complex training sets"
+    intensity: "Lower intensity targets"
+    tennis: "Reduce to 75 minutes"
+    integration: "Simpler integration patterns"
+
+  intermediate:
+    volume: "As prescribed"
+    intensity: "As prescribed"
+    tennis: "As prescribed"
+    integration: "Standard integration"
+
+  advanced:
+    volume: "Add additional complex"
+    intensity: "Higher intensity targets"
+    tennis: "Increase to 105 minutes"
+    integration: "Advanced integration patterns"
+
+# WEEK INTEGRATION
+week_integration:
+  weekly_theme: "Integration and Performance"
+  daily_priority: "Integrated power application"
+  phase_focus: "Power transfer to tennis"
+  
+  connects_to:
+    monday: "Power foundation"
+    tuesday: "Upper body power"
+    wednesday: "Power endurance"
+    thursday: "Recovery and refinement"
+    saturday: "Match application"
+    
+  week_4_culmination:
+    power_development: "Phase 2 power established"
+    tennis_integration: "Power transfer achieved"
+    performance_validation: "Improvements documented"
+    weekend_preparation: "Ready for match application"
+
+# TRACKING REQUIREMENTS
+tracking:
+  required:
+    - "All performance testing results"
+    - "Integration effectiveness"
+    - "Tennis-specific power improvements"
+    - "Complex training data"
+    - "Recovery indicators"
+    - "Week 4 summary metrics"
+
+  optional:
+    - "Detailed velocity profiles"
+    - "Force-time analysis"
+    - "Video analysis"
+    - "Metabolic markers"
+    - "Psychological assessments"
+
+  phase_2_specific:
+    - "Power integration success"
+    - "Tennis transfer effectiveness"
+    - "Performance improvement validation"
+    - "Weekend preparation readiness"
+
+# NAVIGATION
+navigation:
+  week_overview: "./"
+  next_day: "saturday"
+  previous_day: "thursday"
+  phase_status: "Phase 2 - Week 1"

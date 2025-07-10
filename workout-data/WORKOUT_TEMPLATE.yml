@@ -1,82 +1,94 @@
-# ELITE WORKOUT TEMPLATE - Comprehensive Attribution System
-# This template preserves all elite athlete/coach attributions while maintaining flexible structure
+# ELITE WORKOUT TEMPLATE - Final State Schema
+# This template represents the final standardized structure established from Weeks 1-2 migration
+# Version 3.0 - Final patterns for Weeks 3-12 implementation
+#
+# FINAL STATE PATTERNS:
+# Based on comprehensive Week 1 and Week 2 migration, this template provides
+# the exact YAML structure and patterns to be used for all remaining weeks.
+# Each section below shows the final, tested patterns from our master templates.
 
 metadata:
+  # FINAL PATTERN: Complete metadata structure from Week 1-2
   # Basic identifiers
-  period: 1                                        # Training period
-  period_name: "Foundation Phase"                  # Phase name
-  day_id: "week_1_monday"                         # Unique identifier
-  day_name: "Monday"                              # Human-readable
+  period: 1                                        # Training period (1-4)
+  period_name: "Elite Foundation"                  # Phase name
+  day_id: "week_X_monday"                         # Format: week_X_dayname
+  day_name: "Monday"                              # Day name
 
   # Workout details
-  title: "Workout Title"                          # Main title
-  subtitle: "Workout Subtitle"                    # Descriptive subtitle
-  phase: "Training Phase"                         # Current phase
-  focus_areas:                                    # Multiple focus areas
-    - "Primary Focus"
-    - "Secondary Focus"
+  title: "Lower Body Strength & Tennis Progression" # Descriptive main title
+  subtitle: "Week X Intensity Building - Progressive Implementation" # Week-specific subtitle
+  phase: "Phase 1: Elite Foundation"              # Current phase with number
+  focus_areas:                                    # 2-3 focus areas max
+    - "Progressive Load & Intensity"
+    - "Lower Body Strength Development"
+    - "Tennis Power Integration"
 
-  # Training parameters
+  # Training parameters (from Week 2 pattern)
   training_parameters:
-    volume: "100%"                               # Volume indicator
+    volume: "110% (increased from baseline)"      # Progressive volume indication
     intensity: "70-80%"                          # Intensity range
-    density: "moderate"                          # Work:rest ratio
-    duration: "90-120 minutes"                   # Total session time
+    density: "moderate-high"                     # Descriptive density
+    duration: "4 hours 30 minutes"               # Specific total time
 
-  # Elite Method Attribution (preserves all specific references)
-  elite_methods:                                   # Specific athlete/coach methods
-    - name: "Alcaraz Base Building Integration"
+  # FINAL PATTERN: Elite method attribution (3-4 methods per workout)
+  elite_methods:
+    - name: "Progressive Overload Integration"
       type: "strength"
       attribution:
-        athlete: "Carlos Alcaraz"
-        coach: "Juan Carlos Ferrero"
-        academy: "Ferrero Tennis Academy"
-        quote: "Direct quote from coach/athlete"
-        source: "Specific source documentation"
-        verification: "How we verified this information"
-        year: "2023"
-        context: "When/where this was used"
-        results: "Performance outcomes"
+        method: "Progressive overload principle"
+        source: "Strength training methodology"
+        verification: "Evidence-based training protocols"
+        context: "Week progression implementation"
     - name: "Spanish Squat Protocol"
       type: "strength"
       attribution:
         source: "Spanish Tennis Federation"
-        coaches: ["Multiple Spanish coaches"]
         athletes: ["Nadal", "Alcaraz", "Muguruza"]
-        quote: "Direct methodology quote"
-        verification: "Documentation source"
+        verification: "Spanish federation documentation"
+        context: "Isometric hold progression"
+    - name: "Tennis Power Development"
+      type: "tennis"
+      attribution:
+        method: "Controlled tempo training"
+        source: "Tennis specific training"
+        verification: "Court-based power development"
+        context: "Progressive tennis intensity"
 
-  # Equipment needed
+  # FINAL PATTERN: Equipment specification
   equipment_required:
     essential:                                   # Must-have equipment
-      - "Equipment 1"
-    optional:                                    # Nice-to-have
-      - "Equipment 2"
-    alternatives:                                # Alternative equipment
-      - original: "Barbell"
-        alternative: "Resistance bands"
+      - "Tennis court access"
+      - "Barbell and weight plates"
+      - "Bench or elevated platform"
+      - "Resistance band for Spanish squat"
+    optional:                                    # Nice-to-have equipment
+      - "Cable machine or resistance bands"
+      - "Dumbbells (5-25 lbs)"
+      - "Calf raise platform"
+      - "Medicine ball (3-4kg)"
 
-  # Navigation
+  # FINAL PATTERN: Navigation structure
   navigation:
-    daily: "./ | tuesday"
+    daily: "[📋 Week Overview](./) | [Tuesday ➡️](tuesday)"
     overview_link: "./"
     next_link: "tuesday"
-    previous_link: "sunday"                      # For non-Monday days
+    previous_link: null                          # null for Monday, day name for others
 
-  # Display configuration
+  # FINAL PATTERN: Display configuration
   display_config:
-    section_headers:                             # Custom section headers
-      assessment: "Elite Assessment Protocol"
-      preparation: "Movement Preparation"
-      skill_training: "Court Training"
-      conditioning: "Strength Development"
-      recovery: "Recovery Protocol"
+    section_headers:                             # Section header overrides
+      assessment: "Weekly Progress Assessment"
+      preparation: "Elite Movement Preparation"
+      skill_training: "Tennis Power Development"
+      conditioning: "Progressive Strength Training"
+      recovery: "Active Recovery Protocol"
 
-    ui_elements:                                 # Admonitions and callouts
-      - type: "info|warning|tip|success"
-        title: "Element Title"
-        content: "Element content"
-        icon: "⚠️"                              # Optional icon
+    ui_elements:                                 # Info callouts
+      - type: "info"
+        title: "Week X Progression Focus"
+        content: "Building upon previous week with increased loads and intensity"
+        icon: "⚡"
 
     table_configs:                               # Table display settings
       exercise_table:
@@ -87,73 +99,72 @@ metadata:
         show_benchmarks: true
         show_research: true
 
+  # Day-specific features
+  day_features:
+    has_dual_workout: false                      # For Saturday match/recovery choice
+    has_weekly_review: false                     # For Sunday review
+    has_mid_week_assessment: false               # For Wednesday
+    has_competition_simulation: false            # For match play days
+
 # ASSESSMENT SECTIONS
-# Comprehensive assessment with full attribution
+# FINAL PATTERN: Assessment structure from Week 1-2
+# Assessment types: weekly_progress_check, baseline_testing, daily_readiness
 
 assessments:
-  - id: "baseline_assessment"
-    type: "baseline|daily|progress|weekly"       # Assessment type
-    title: "Assessment Title"
-    timing: "pre-session|during|post-session"   # When to perform
-    duration: "20 minutes"
-    description: "Assessment description"
+  - id: "weekly_progress_check"                  # Standard format: adjective_noun_check
+    type: "progression"                          # Types: baseline, progression, daily, weekly
+    title: "Week X Progress Assessment"          # Week-specific title
+    timing: "pre-session"                       # pre-session, during, post-session
+    duration: "15 minutes"                      # Specific duration
+    description: "Assess progression from Week X-1 baseline"
 
-    # Attribution for assessment methods
+    # FINAL PATTERN: Attribution for assessments
     attribution:
-      source: "Assessment source"
-      methodology: "Who developed this"
-      validation: "How it was validated"
-      elite_use: "Which elite athletes use this"
+      source: "Progressive training methodology"
+      methodology: "Weekly progression tracking"
+      validation: "Strength training protocols"
+      elite_use: "Used in professional development programs"
 
-    components:                                  # Assessment components
-      - id: "component_1"
-        name: "Component Name"
-        type: "movement|strength|power|skill"    # Component type
-        category: "primary|secondary|optional"   # Importance level
+    # FINAL PATTERN: Assessment components structure
+    components:
+      - id: "load_progression_check"             # Descriptive component ID
+        name: "Load Progression Assessment"      # Component display name
+        type: "strength"                        # movement, strength, power, skill
+        category: "primary"                     # primary, secondary, optional
 
-        # Measurement protocol
+        # FINAL PATTERN: Measurement protocol
         measurement:
-          protocol: "How to measure"
-          repetitions: "5 reps"
-          duration: "30 seconds"
-          equipment: "Equipment needed"
+          protocol: "Compare Week X-1 loads with current capacity"
+          repetitions: "Test sets"
+          equipment: "Previous week's loads"
 
-        # Performance standards
+        # FINAL PATTERN: Performance standards
         standards:
-          elite_benchmark: "Elite level standard"
-          good_standard: "Good level standard"
-          needs_work: "Needs improvement threshold"
+          elite_benchmark: "5-10% load increase maintained with perfect form"
+          good_standard: "5% load increase with good form"
+          needs_work: "Unable to increase load or form degradation"
 
-        # Scoring/tracking
+        # FINAL PATTERN: Scoring system
         scoring:
-          method: "How to score"
-          scale: "1-10 or pass/fail"
-          recording: "What to record"
+          method: "Load comparison and form assessment"
+          scale: "percentage increase from baseline"
+          recording: "Document load increases and form quality"
 
-        # Context and attribution
+        # FINAL PATTERN: Context and application
         context:
-          description: "Why this assessment matters"
-          research: "Supporting research"
-          application: "How it applies to performance"
-
-        attribution:
-          athlete: "Specific athlete"             # e.g., "Andy Murray"
-          coach: "Specific coach"                # e.g., "Matt Little"
-          academy: "Training facility"          # e.g., "LTA"
-          quote: "Direct quote about this test"
-          source: "Where this comes from"
-          verification: "How we verified this"
-          results: "What outcomes this produces"
+          description: "Evaluates strength progression readiness"
+          application: "Determines appropriate load increases for Week X"
 
 # PREPARATION PHASES
-# Morning protocols, warm-ups, activation
+# FINAL PATTERN: Preparation structure from Week 1-2
+# Standard phases: morning_protocol, pre_training_activation
 
 preparation_phases:
-  - id: "morning_protocol"
-    type: "morning|pre-training|activation"      # Phase type
-    title: "Morning Protocol"
-    duration: "30 minutes"
-    timing: "6:00-6:30 AM"
+  - id: "morning_protocol"                       # Standard ID across all weeks
+    title: "Week X Morning Protocol"             # Week-specific title
+    timing: "6:00-6:15"                         # Specific time window
+    duration: "15 minutes"                      # Exact duration
+    description: "Enhanced morning activation with progression focus"
 
     # Attribution for preparation methods
     attribution:
@@ -212,6 +223,10 @@ preparation_phases:
 # Sport-specific training with full attribution
 
 skill_training:
+  # Optional section title and description
+  section_title: "Elite Tennis Training"        # Optional override
+  section_description: "Professional protocol"   # Optional description
+  
   sessions:
     - id: "court_session_1"
       type: "technical|tactical|integrated"      # Session type
@@ -297,6 +312,12 @@ skill_training:
 # Strength, power, and conditioning work
 
 conditioning_blocks:
+  # Block types include:
+  # - strength_training (Monday, Tuesday, Friday)
+  # - power_development (Wednesday, Friday)
+  # - aerobic_development (Thursday)
+  # - metabolic_finisher (Wednesday)
+  # - plyometric_circuit (Friday)
   - id: "strength_block_1"
     type: "strength|power|endurance|mixed"       # Block type
     title: "Block Title"
@@ -396,6 +417,12 @@ conditioning_blocks:
 # Recovery, regeneration, and restoration
 
 recovery_protocols:
+  # Protocol types include:
+  # - immediate_recovery (post-training)
+  # - contrast_protocols (shower, breathing)
+  # - session_documentation
+  # - weekly_recovery (Sunday)
+  # - match_recovery (Saturday)
   - id: "post_training_recovery"
     type: "immediate|delayed|next_day"           # Recovery type
     title: "Recovery Protocol Title"
@@ -466,6 +493,39 @@ schedule:
         phase_icon: "🎾"
         location: "Court|Gym|Recovery"
 
+# SPECIALIZED SECTIONS
+# Day-specific sections that may not appear every day
+
+# Competition/Match sections (Saturday)
+competition_options:
+  - option: "A"                                  # Match play option
+    title: "Competition Match Play"
+    description: "Full match intensity"
+    components: []                               # Match-specific components
+    
+  - option: "B"                                  # Recovery option
+    title: "Active Recovery Protocol"
+    description: "Low-intensity recovery"
+    components: []                               # Recovery-specific components
+
+# Weekly Review (Sunday)
+weekly_review:
+  performance_analysis:
+    achievements: []                             # Week achievements
+    challenges: []                               # Week challenges
+    metrics_summary: {}                          # Week metrics
+    
+  planning:
+    next_week_focus: []                          # Next week priorities
+    adjustments: []                              # Program adjustments
+    goals: []                                    # Updated goals
+
+# Mid-week Assessment (Wednesday)
+mid_week_check:
+  movement_quality: {}                           # Movement reassessment
+  recovery_status: {}                            # Recovery metrics
+  performance_indicators: {}                     # Performance tracking
+
 # MONITORING & TRACKING
 # Performance monitoring and progress tracking
 
@@ -508,6 +568,19 @@ monitoring:
       target: "Target value"
       description: "What this measures"
 
+# WORKOUT CAROUSEL DATA
+# For UI component compatibility
+
+workout_carousel:
+  phases:                                        # Training phases for carousel
+    - phase_id: "phase_1"
+      phase_title: "Phase Title"
+      phase_icon: "🎾"
+      time_range: "07:00-08:00"
+      duration: 60
+      location: "court|gym|recovery"
+      activities: []                             # Phase activities
+
 # PLANNING & PROGRESSION
 # Session and period planning
 
@@ -535,6 +608,35 @@ planning:
     modifications:
       - "Modification 1"
       - "Modification 2"
+
+# SESSION METRICS
+# Comprehensive tracking data
+
+session_metrics:
+  volume:
+    tennis_minutes: 0
+    strength_minutes: 0
+    warmup_minutes: 0
+    recovery_minutes: 0
+    total_minutes: 0
+    
+  intensity:
+    tennis_average: "0%"
+    strength_average: "0%"
+    overall_rpe: 0
+    
+  distances:
+    court_coverage: "0 km"
+    conditioning_distance: "0 m"
+
+# COACHING INTEGRATION
+# Professional coaching notes and cues
+
+coaching_notes:
+  technical_focus: []                            # Technical priorities
+  load_management: []                            # Load considerations
+  progression_markers: []                        # Success indicators
+  individual_adaptations: []                     # Personal modifications
 
 # NORMALIZED PATTERNS
 # Reusable patterns for consistency
@@ -624,6 +726,20 @@ _equipment_patterns:
   optional: "Nice-to-have equipment"
   alternatives: "Alternative equipment options"
 
+# BACKWARD COMPATIBILITY
+# Legacy sections for component support
+
+# Timeline format (for WorkoutCarousel component)
+timeline: []                                     # Array of timeline entries
+
+# Legacy assessment formats
+pre_week_assessment: {}                          # Monday pre-week format
+morning_protocol: {}                             # Morning routine format
+tennis_training: {}                              # Tennis section format
+movement_preparation: {}                         # Movement prep format
+strength_training: {}                            # Strength section format
+recovery_protocol: {}                            # Recovery section format
+
 # Notes on Implementation:
 # 1. All sections are optional and composable
 # 2. Attribution is embedded throughout for credibility
@@ -632,3 +748,5 @@ _equipment_patterns:
 # 5. Preserves all specific athlete/coach references
 # 6. Supports beautiful layout rendering
 # 7. Maintains backward compatibility with existing data
+# 8. Day-specific sections can be added as needed
+# 9. Supports both structured data and rich media integration

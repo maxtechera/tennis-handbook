@@ -1,325 +1,546 @@
-# Week 2 - Monday: Lower Body Strength & Tennis
+# Week 2 - Monday: Lower Body Strength & Tennis (COMPREHENSIVE VERSION)
 metadata:
-  week: 2
-  week_name: "Building Intensity"
-  day: "monday"
-  day_number: 1
-  title: "Lower Body Strength & Tennis"
-  subtitle: "Week 2 Progression - Building Upon Foundation"
-  phase: "Phase 1: Foundation"
-  phase_week: 2
-  focus: "Load Progression & Intensity"
-  volume_target: "110% (increased from baseline)"
-  intensity_target: "70-80%"
-  
-  athlete_methods:
-    - "Progressive overload principle"
-    - "Controlled tempo training"
-    - "Anti-rotation core stability"
-  
-  equipment_needed:
-    - "Tennis court access"
-    - "Barbell and weights"
-    - "Bench or elevated platform"
-    - "Resistance band"
-    - "Cable machine or resistance bands"
-    - "Dumbbells (optional)"
-  
+  # Basic identifiers
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_2_monday"
+  day_name: "Monday"
+
+  # Workout details
+  title: "Lower Body Strength & Tennis Progression"
+  subtitle: "Week 2 Intensity Building - Progressive Overload Implementation"
+  phase: "Phase 1: Elite Foundation"
+  focus_areas:
+    - "Load Progression & Intensity"
+    - "Lower Body Strength Development"
+    - "Tennis Power Integration"
+
+  # Training parameters
+  training_parameters:
+    volume: "110% (increased from baseline)"
+    intensity: "70-80%"
+    density: "moderate-high"
+    duration: "4 hours 30 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Progressive Overload Integration"
+      type: "strength"
+      attribution:
+        method: "Progressive overload principle"
+        source: "Strength training methodology"
+        verification: "Evidence-based training protocols"
+        context: "Week 2 load progression"
+    - name: "Spanish Squat Protocol"
+      type: "strength"
+      attribution:
+        source: "Spanish Tennis Federation"
+        athletes: ["Nadal", "Alcaraz", "Muguruza"]
+        verification: "Spanish federation documentation"
+        context: "Isometric hold progression"
+    - name: "Tennis Power Baseline Development"
+      type: "tennis"
+      attribution:
+        method: "Controlled tempo training"
+        source: "Tennis specific training"
+        verification: "Court-based power development"
+        context: "Progressive tennis intensity"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Tennis court access"
+      - "Barbell and weight plates"
+      - "Bench or elevated platform"
+      - "Resistance band for Spanish squat"
+    optional:
+      - "Cable machine or resistance bands"
+      - "Dumbbells (5-25 lbs)"
+      - "Calf raise platform"
+      - "Medicine ball (3-4kg)"
+
+  # Navigation
   navigation:
     daily: "[📋 Week Overview](./) | [Tuesday ➡️](tuesday)"
-    week_overview_link: "./"
-    next_day: "tuesday"
-    next_day_link: "tuesday"
+    overview_link: "./"
+    next_link: "tuesday"
+    previous_link: null
 
-# NEW PATTERN: Schedule table as structured data
-schedule_overview:
-  title: "Monday Schedule"
-  sessions:
-    - time: "07:15–08:15"
-      activity: "Tennis Power Baseline"
-      sets_reps: "-"
-      instructions: "Intensify topspin and cross-court drills, maintain active footwork"
-    
-    - time: "08:25–09:35"
-      activity: "Strength Training Block"
-      exercises:
-        - name: "Barbell Squat"
-          sets_reps: "4×8"
-          instructions: "Increase load slightly, controlled descent and explosive ascent"
-        - name: "Bulgarian Split Squat"
-          sets_reps: "3×10 per leg"
-          instructions: "Controlled, engage glutes"
-        - name: "Romanian Deadlift"
-          sets_reps: "3×8"
-          instructions: "Keep neutral spine, hinge at hips"
-        - name: "Heavy Calf Raises"
-          sets_reps: "3×12"
-          instructions: "Slow controlled motion"
-    
-    - time: "09:35–10:05"
-      activity: "Core & Stability"
-      exercises:
-        - name: "Spanish Squat (isometric)"
-          sets_reps: "3×45 sec"
-          instructions: "Maintain form, deep breathing"
-        - name: "Pallof Press"
-          sets_reps: "3×12 per side"
-          instructions: "Slow, controlled, resist rotation"
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Weekly Progress Assessment"
+      preparation: "Elite Movement Preparation"
+      skill_training: "Tennis Power Development"
+      conditioning: "Progressive Strength Training"
+      recovery: "Active Recovery Protocol"
 
-# Tennis training - different structure from Week 1
+    ui_elements:
+      - type: "info"
+        title: "Week 2 Progression Focus"
+        content: "Building upon Week 1 foundation with increased loads and intensity"
+        icon: "⚡"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "weekly_progress_check"
+    type: "progression"
+    title: "Week 2 Progress Assessment"
+    timing: "pre-session"
+    duration: "15 minutes"
+    description: "Assess progression from Week 1 baseline"
+
+    attribution:
+      source: "Progressive training methodology"
+      methodology: "Weekly progression tracking"
+      validation: "Strength training protocols"
+      elite_use: "Used in professional development programs"
+
+    components:
+      - id: "load_progression_check"
+        name: "Load Progression Assessment"
+        type: "strength"
+        category: "primary"
+
+        measurement:
+          protocol: "Compare Week 1 loads with current capacity"
+          repetitions: "Test sets"
+          equipment: "Previous week's loads"
+
+        standards:
+          elite_benchmark: "5-10% load increase maintained with perfect form"
+          good_standard: "5% load increase with good form"
+          needs_work: "Unable to increase load or form degradation"
+
+        scoring:
+          method: "Load comparison and form assessment"
+          scale: "percentage increase from baseline"
+          recording: "Document load increases and form quality"
+
+        context:
+          description: "Evaluates strength progression readiness"
+          application: "Determines appropriate load increases for Week 2"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "morning_protocol"
+    title: "Week 2 Morning Protocol"
+    timing: "6:00-6:15"
+    duration: "15 minutes"
+    description: "Enhanced morning activation with progression focus"
+
+    attribution:
+      source: "Progressive activation methodology"
+      methodology: "Week 2 enhanced morning protocol"
+      validation: "Daily preparation routines"
+      elite_use: "Used by professional athletes"
+
+    activities:
+      - name: "Enhanced Breathing Activation"
+        duration: "3 minutes"
+        sets: 3
+        instructions:
+          - "Deep diaphragmatic breathing with progression focus"
+          - "Inhalar 4 segundos, mantener 4, exhalar 6"
+          - "Mental preparation for increased intensity"
+
+        implementation:
+          execution: "Supine position, hands on chest and abdomen"
+          focus: "Nervous system preparation for higher intensity"
+          tennis_application: "Prepares for increased training demands"
+
+      - name: "Dynamic Joint Mobility"
+        duration: "5 minutes"
+        sets: 1
+        instructions:
+          - "Enhanced shoulder circles: 12 each direction"
+          - "Dynamic hip circles: 12 each direction"
+          - "Active leg swings: 12 each leg, each plane"
+
+        implementation:
+          execution: "Controlled dynamic movements"
+          focus: "Joint preparation for increased loads"
+          tennis_application: "Prepares joints for tennis power movements"
+
+      - name: "Progressive Muscle Activation"
+        duration: "7 minutes"
+        sets: 2
+        instructions:
+          - "Glute activation: 20 repetitions (increased from Week 1)"
+          - "Scapular activation: 20 repetitions"
+          - "Core activation: 45 seconds (increased duration)"
+
+        implementation:
+          execution: "Progressive muscle contractions"
+          focus: "Enhanced activation for increased loads"
+          tennis_application: "Prepares stabilizers for progressive training"
+
+# TENNIS TRAINING
 tennis_training:
-  session_name: "Tennis Power Baseline"
-  duration: "07:15–08:15"
-  title: "Intensified Topspin and Cross-Court Drills"
-  
-  # NEW PATTERN: Detailed drill instructions
-  drill_instructions:
-    - type: "TOPSPIN SETUP"
-      instruction: "Stand in ready position, racquet preparation with low-to-high swing path"
-    - type: "CROSS-COURT FOCUS"
-      instruction: "Target opposite diagonal court sections with consistent depth"
-    - type: "FOOTWORK INTENSITY"
-      instruction: "Active recovery steps after each shot, maintain athletic stance"
-    - type: "POWER PROGRESSION"
-      instruction: "Increase shot pace by 10-15% from Week 1 while maintaining 80% accuracy"
-    - type: "DRILL PATTERN"
-      instruction: "20 forehands cross-court, 20 backhands cross-court, repeat for full hour"
-    - type: "MOVEMENT EMPHASIS"
-      instruction: "Wide shots with strong recovery, use proper hip rotation"
-    - type: "SUCCESS METRIC"
-      instruction: "85% shots land in target zones with increased pace from Week 1"
+  title: "Tennis Power Baseline Development"
+  timing: "7:15-8:15"
+  duration: "60 minutes"
+  description: "Intensified tennis training with progressive power development"
 
-# Strength training with more detailed instructions
+  attribution:
+    source: "Tennis power development methodology"
+    methodology: "Progressive tennis intensity training"
+    validation: "Court-based power protocols"
+    elite_use: "Professional tennis power development"
+
+  session_structure:
+    warm_up:
+      title: "Enhanced Tennis Warm-up"
+      duration: "10 minutes"
+      
+      exercises:
+        - name: "Progressive Footwork"
+          duration: "3 minutes"
+          sets: 3
+          detailed_instructions:
+            - "Side shuffles with racket: 20 steps each direction"
+            - "Split steps on service line: 15 repetitions"
+            - "Forward/backward movement: 10 steps each direction"
+
+        - name: "Dynamic Shadow Strokes"
+          duration: "4 minutes"
+          sets: 2
+          detailed_instructions:
+            - "Forehand shadows: 25 repetitions (increased from Week 1)"
+            - "Backhand shadows: 25 repetitions"
+            - "Serve motion shadows: 15 repetitions"
+
+        - name: "Progressive Ball Contact"
+          duration: "3 minutes"
+          sets: 1
+          detailed_instructions:
+            - "Soft rally cross-court: 20 balls"
+            - "Medium pace rally: 15 balls"
+            - "Progressive power buildup"
+
+    main_session:
+      title: "Intensified Topspin and Cross-Court Development"
+      duration: "45 minutes"
+      
+      drills:
+        - name: "Enhanced Topspin Cross-Court Forehands"
+          duration: "15 minutes"
+          balls: 120
+          intensity: "Moderate-High (10-15% increase from Week 1)"
+          implementation:
+            focus: "Power progression with maintained accuracy"
+            target: "Deep cross-court with 85% accuracy"
+            progression: "Increase pace while maintaining 80% accuracy baseline"
+            technique_points:
+              - phase: "TOPSPIN SETUP"
+                instruction: "Ready position, low-to-high swing path preparation"
+              - phase: "CROSS-COURT FOCUS"
+                instruction: "Target opposite diagonal court sections with consistent depth"
+              - phase: "POWER PROGRESSION"
+                instruction: "Increase shot pace by 10-15% from Week 1 baseline"
+
+        - name: "Enhanced Topspin Cross-Court Backhands"
+          duration: "15 minutes"
+          balls: 120
+          intensity: "Moderate-High"
+          implementation:
+            focus: "Backhand power development with control"
+            target: "Cross-court consistency with increased pace"
+            progression: "Progressive power increase"
+            technique_points:
+              - phase: "SETUP"
+                instruction: "Early preparation, shoulder turn"
+              - phase: "CONTACT"
+                instruction: "Low-to-high brush contact for topspin"
+              - phase: "FOLLOW-THROUGH"
+                instruction: "High finish across body"
+
+        - name: "Alternating Cross-Court Power"
+          duration: "15 minutes"
+          balls: 100
+          intensity: "High"
+          implementation:
+            focus: "Direction change with power maintenance"
+            target: "Controlled alternating cross-court shots"
+            progression: "Increase transition speed"
+            movement_emphasis:
+              - "Wide shots with strong recovery"
+              - "Proper hip rotation through contact"
+              - "Active recovery steps between shots"
+              - "Athletic stance maintenance"
+
+    success_metrics:
+      - metric: "Shot Accuracy"
+        target: "85% shots in target zones"
+        measurement: "Shots landing in designated court areas"
+      - metric: "Power Increase"
+        target: "10-15% pace increase from Week 1"
+        measurement: "Subjective pace assessment"
+      - metric: "Consistency"
+        target: "Maintain rally length despite increased pace"
+        measurement: "Average rally duration"
+
+# MOVEMENT PREPARATION
+movement_preparation:
+  title: "Pre-Strength Movement Preparation"
+  timing: "8:25-8:35"
+  duration: "10 minutes"
+  description: "Enhanced preparation for increased training loads"
+
+  attribution:
+    source: "Progressive movement preparation"
+    methodology: "Load-specific preparation protocols"
+    validation: "Strength training preparation standards"
+    elite_use: "Professional athlete preparation"
+
+  exercises:
+    - name: "Enhanced Glute Activation"
+      sets: 3
+      reps: 20
+      rest_seconds: 30
+      protocol: "Progressive glute activation with band resistance"
+      tennis_application: "Prepares glutes for increased squat loads"
+
+    - name: "Dynamic Hip Mobility"
+      sets: 2
+      reps: 12
+      rest_seconds: 30
+      protocol: "Hip circles and leg swings"
+      tennis_application: "Prepares hips for deep squat positions"
+
+    - name: "Spinal Mobility"
+      sets: 2
+      reps: 10
+      rest_seconds: 30
+      protocol: "Cat-cow and thoracic rotation"
+      tennis_application: "Prepares spine for loaded movements"
+
+    - name: "Core Pre-Activation"
+      sets: 2
+      reps: 15
+      rest_seconds: 30
+      protocol: "Progressive core engagement"
+      tennis_application: "Stabilization for compound movements"
+
+# STRENGTH TRAINING
 strength_training:
-  phase_description: "Week 2 progression focuses on building upon Week 1's foundation with slightly increased loads and intensity while maintaining proper form and technique."
-  
+  title: "Progressive Lower Body Strength Development"
+  timing: "8:35-10:05"
+  duration: "90 minutes"
+  description: "Week 2 progressive overload implementation"
+
+  attribution:
+    source: "Progressive overload methodology"
+    methodology: "Systematic load progression training"
+    validation: "Strength development protocols"
+    elite_use: "Professional strength development"
+
   main_exercises:
-    - exercise_id: "ex_1"
-      name: "Barbell Squat"
-      sets: "4"
-      reps: "8"
-      load: "Add 5-10% more weight than Week 1"
+    - name: "Barbell Back Squat"
+      sets: 4
+      reps: 8
       rest_seconds: 180
-      
-      # NEW PATTERN: Week-specific progression notes
-      week_progression_notes:
+      load: "Add 5-10% more weight than Week 1"
+      tempo: "3-1-X-1"
+      protocol: "Progressive load with controlled tempo"
+      tennis_application: "Foundation strength for explosive movements"
+
+      detailed_instructions:
         title: "Week 2 Progression Instructions"
-        load_increase: "Add 5-10% more weight than Week 1 (maintain perfect form priority)"
-      
-      # NEW PATTERN: More detailed technique breakdown
-      technique_points:
-        - phase: "SETUP"
-          instruction: "Bar positioned on upper trapezius, feet hip-width apart, toes slightly out"
-        - phase: "DESCENT"
-          instruction: "3-second controlled lowering, feel the stretch in quadriceps and glutes"
-        - phase: "BOTTOM POSITION"
-          instruction: "Thighs parallel or slightly below, pause for 1 second"
-        - phase: "EXPLOSIVE ASCENT"
-          instruction: "Drive through heels explosively, extend hips and knees together"
-        - phase: "BREATHING"
-          instruction: "Inhale at top, hold during descent, exhale forcefully during ascent"
-        - phase: "PROGRESSION FOCUS"
-          instruction: "Weight increase with maintained tempo control"
-      
-      set_tracking:
-        - set: 1
-          target_reps: 8
-        - set: 2
-          target_reps: 8
-        - set: 3
-          target_reps: 8
-        - set: 4
-          target_reps: 8
-    
-    - exercise_id: "ex_2"
-      name: "Bulgarian Split Squat"
-      sets: "3"
-      reps: "10 per leg"
-      load: "Bodyweight or light dumbbells"
-      rest_seconds: 120
-      
-      detailed_title: "Enhanced Control Instructions"
-      
-      technique_points:
-        - phase: "SETUP"
-          instruction: "Rear foot elevated on bench 12-18 inches high, front foot 2-3 feet forward"
-        - phase: "WEIGHT DISTRIBUTION"
-          instruction: "90% weight on front leg, rear leg for balance only"
-        - phase: "CONTROLLED DESCENT"
-          instruction: "Lower straight down over 2-3 seconds, feel front leg working"
-        - phase: "GLUTE ENGAGEMENT"
-          instruction: "Focus on glute activation in front leg, avoid knee-dominant movement"
-        - phase: "DRIVE PHASE"
-          instruction: "Push through front heel explosively to return to start"
-        - phase: "BALANCE"
-          instruction: "If unstable, move closer to bench or lower elevation slightly"
-        - phase: "PROGRESSION"
-          instruction: "Add light dumbbells (5-15 lbs) when bodyweight becomes easy"
-      
-      set_tracking:
-        - set: 1
-          target_reps: 10
-          per_side: true
-        - set: 2
-          target_reps: 10
-          per_side: true
-        - set: 3
-          target_reps: 10
-          per_side: true
-    
-    - exercise_id: "ex_3"
-      name: "Romanian Deadlift"
-      sets: "3"
-      reps: "8"
-      load: "Moderate weight"
-      rest_seconds: 120
-      
-      detailed_title: "Hip Hinge Pattern Instructions"
-      
-      technique_points:
-        - phase: "STARTING POSITION"
-          instruction: "Feet hip-width apart, barbell at hip level, slight knee bend"
-        - phase: "NEUTRAL SPINE"
-          instruction: "Maintain natural lumbar curve throughout, chest up"
-        - phase: "HIP HINGE"
-          instruction: "Push hips back first, lower bar by hinging at hips (not squatting down)"
-        - phase: "DESCENT"
-          instruction: "Feel deep stretch in hamstrings, bar stays close to legs"
-        - phase: "RANGE"
-          instruction: "Lower until hamstring flexibility limit, maintain flat back"
-        - phase: "ASCENT"
-          instruction: "Drive hips forward to return to standing, squeeze glutes at top"
-        - phase: "MUSCLE FOCUS"
-          instruction: "Hamstrings and glutes should do the work, not lower back"
-      
-      set_tracking:
-        - set: 1
-          target_reps: 8
-        - set: 2
-          target_reps: 8
-        - set: 3
-          target_reps: 8
-    
-    - exercise_id: "ex_4"
-      name: "Heavy Calf Raises"
-      sets: "3"
-      reps: "12"
-      load: "Add weight via dumbbells or machine"
-      rest_seconds: 90
-      
-      detailed_title: "Slow Controlled Motion Instructions"
-      
-      technique_points:
-        - phase: "SETUP"
-          instruction: "Stand on edge of platform with balls of feet on edge, heels hanging"
-        - phase: "WEIGHT"
-          instruction: "Hold dumbbells or use calf raise machine for added resistance"
-        - phase: "ASCENT"
-          instruction: "Rise up on toes slowly over 2 seconds, maximum height contraction"
-        - phase: "TOP HOLD"
-          instruction: "Pause for 1 second at peak contraction, feel calf muscles squeeze"
-        - phase: "DESCENT"
-          instruction: "Lower heels slowly over 3-4 seconds, stretch below platform level"
-        - phase: "RANGE"
-          instruction: "Full range of motion from maximum stretch to maximum contraction"
-        - phase: "PROGRESSION"
-          instruction: "Increase weight when you can complete all reps with control"
-      
-      set_tracking:
-        - set: 1
-          target_reps: 12
-        - set: 2
-          target_reps: 12
-        - set: 3
-          target_reps: 12
-
-  # NEW PATTERN: Core & Stability as separate section
-  core_stability_block:
-    title: "Core & Stability Work"
-    exercises:
-      - exercise_id: "cs_1"
-        name: "Spanish Squat"
-        type: "isometric"
-        sets: "3"
-        duration: "45 seconds"
-        rest_seconds: 60
-        
-        detailed_title: "Isometric Hold Instructions"
-        
         technique_points:
+          - phase: "LOAD INCREASE"
+            instruction: "Add 5-10% more weight than Week 1 (maintain perfect form priority)"
           - phase: "SETUP"
-            instruction: "Resistance band around knees, back against wall, feet 12 inches from wall"
-          - phase: "POSITION"
-            instruction: "Slide down wall until knees at 90 degrees, thighs parallel to floor"
-          - phase: "BAND TENSION"
-            instruction: "Keep knees pushed out against band resistance throughout"
-          - phase: "MUSCLE ACTIVATION"
-            instruction: "Contract quadriceps actively while maintaining position"
+            instruction: "Bar positioned on upper trapezius, feet hip-width apart, toes slightly out"
+          - phase: "DESCENT"
+            instruction: "3-second controlled lowering, feel the stretch in quadriceps and glutes"
+          - phase: "BOTTOM POSITION"
+            instruction: "Thighs parallel or slightly below, pause for 1 second"
+          - phase: "EXPLOSIVE ASCENT"
+            instruction: "Drive through heels explosively, extend hips and knees together"
           - phase: "BREATHING"
-            instruction: "Deep, controlled breathing - never hold breath during isometric"
-          - phase: "PROGRESSION"
-            instruction: "Week 2 increase from 30 seconds to 45 seconds hold time"
-          - phase: "TENNIS APPLICATION"
-            instruction: "Builds knee stability for direction changes and jumping shots"
-        
-        set_tracking:
-          - set: 1
-            target_duration: "45 seconds"
-          - set: 2
-            target_duration: "45 seconds"
-          - set: 3
-            target_duration: "45 seconds"
-      
-      - exercise_id: "cs_2"
-        name: "Pallof Press"
-        type: "anti-rotation"
-        sets: "3"
-        reps: "12 per side"
-        rest_seconds: 60
-        
-        detailed_title: "Anti-Rotation Core Instructions"
-        
+            instruction: "Inhale at top, hold during descent, exhale forcefully during ascent"
+          - phase: "PROGRESSION FOCUS"
+            instruction: "Weight increase with maintained tempo control"
+
+    - name: "Bulgarian Split Squat"
+      sets: 3
+      reps: 10
+      rest_seconds: 120
+      load: "Bodyweight or light dumbbells (5-15 lbs)"
+      tempo: "2-1-X-1"
+      protocol: "Unilateral strength with enhanced control"
+      tennis_application: "Single-leg stability for tennis movements"
+
+      detailed_instructions:
+        title: "Enhanced Control Instructions"
         technique_points:
           - phase: "SETUP"
-            instruction: "Cable set at chest height, stand perpendicular to machine"
-          - phase: "GRIP"
-            instruction: "Hold handle with both hands at chest level, step away to create tension"
-          - phase: "STARTING POSITION"
-            instruction: "Arms bent, handle at sternum, core engaged"
-          - phase: "PRESS OUT"
-            instruction: "Extend arms straight out from chest, resist cable's pull to rotate you"
-          - phase: "HOLD"
-            instruction: "Maintain straight arm position for 2 seconds, feel core working"
-          - phase: "RETURN"
-            instruction: "Slowly bring handle back to chest with control"
-          - phase: "ANTI-ROTATION"
-            instruction: "The challenge is preventing rotation - core must work to stay square"
+            instruction: "Rear foot elevated on bench 12-18 inches high, front foot 2-3 feet forward"
+          - phase: "WEIGHT DISTRIBUTION"
+            instruction: "90% weight on front leg, rear leg for balance only"
+          - phase: "CONTROLLED DESCENT"
+            instruction: "Lower straight down over 2-3 seconds, feel front leg working"
+          - phase: "GLUTE ENGAGEMENT"
+            instruction: "Focus on glute activation in front leg, avoid knee-dominant movement"
+          - phase: "DRIVE PHASE"
+            instruction: "Push through front heel explosively to return to start"
+          - phase: "BALANCE"
+            instruction: "If unstable, move closer to bench or lower elevation slightly"
           - phase: "PROGRESSION"
-            instruction: "Increase resistance or hold time when movement becomes easy"
-        
-        set_tracking:
-          - set: 1
-            target_reps: 12
-            per_side: true
-          - set: 2
-            target_reps: 12
-            per_side: true
-          - set: 3
-            target_reps: 12
-            per_side: true
+            instruction: "Add light dumbbells (5-15 lbs) when bodyweight becomes easy"
 
-# NEW PATTERN: Key focus points section
-key_focus_points:
-  - category: "Tennis"
-    focus: "Intensify topspin and cross-court drills with active footwork"
-  - category: "Strength"
-    focus: "Increase load slightly from Week 1, focus on controlled descents and explosive ascents"
-  - category: "Core Stability"
-    focus: "Maintain proper form during Spanish Squat isometric holds"
-  - category: "Anti-Rotation"
-    focus: "Resist rotation during Pallof Press for core strength"
+    - name: "Romanian Deadlift"
+      sets: 3
+      reps: 8
+      rest_seconds: 150
+      load: "Moderate load focusing on hip hinge pattern"
+      tempo: "3-1-1-1"
+      protocol: "Hip hinge pattern mastery"
+      tennis_application: "Posterior chain strength for court movement"
 
-# NEW PATTERN: Weekly notes
-weekly_notes:
-  week: 2
-  content: "Week 2 progression focuses on building upon Week 1's foundation with slightly increased loads and intensity while maintaining proper form and technique."
+      detailed_instructions:
+        title: "Hip Hinge Pattern Instructions"
+        technique_points:
+          - phase: "STARTING POSITION"
+            instruction: "Feet hip-width apart, barbell at hip level, slight knee bend"
+          - phase: "NEUTRAL SPINE"
+            instruction: "Maintain natural lumbar curve throughout, chest up"
+          - phase: "HIP HINGE"
+            instruction: "Push hips back first, lower bar by hinging at hips (not squatting down)"
+          - phase: "DESCENT"
+            instruction: "Feel deep stretch in hamstrings, bar stays close to legs"
+          - phase: "RANGE"
+            instruction: "Lower until hamstring flexibility limit, maintain flat back"
+          - phase: "ASCENT"
+            instruction: "Drive hips forward to return to standing, squeeze glutes at top"
+          - phase: "MUSCLE FOCUS"
+            instruction: "Hamstrings and glutes should do the work, not lower back"
+
+    - name: "Heavy Calf Raises"
+      sets: 3
+      reps: 12
+      rest_seconds: 90
+      load: "Dumbbells or calf raise machine"
+      tempo: "2-1-3-1"
+      protocol: "Slow controlled motion with full range"
+      tennis_application: "Calf strength for court movement and jumping"
+
+      detailed_instructions:
+        title: "Slow Controlled Motion Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Stand on edge of platform with balls of feet on edge, heels hanging"
+          - phase: "WEIGHT"
+            instruction: "Hold dumbbells or use calf raise machine for added resistance"
+          - phase: "ASCENT"
+            instruction: "Rise up on toes slowly over 2 seconds, maximum height contraction"
+          - phase: "TOP HOLD"
+            instruction: "Pause for 1 second at peak contraction, feel calf muscles squeeze"
+          - phase: "DESCENT"
+            instruction: "Lower heels slowly over 3-4 seconds, stretch below platform level"
+          - phase: "RANGE"
+            instruction: "Full range of motion from maximum stretch to maximum contraction"
+          - phase: "PROGRESSION"
+            instruction: "Increase weight when you can complete all reps with control"
+
+  stability_strength_block:
+    title: "Core & Stability Enhancement"
+    timing: "9:35-10:05"
+    
+    exercises:
+      - name: "Spanish Squat (Isometric)"
+        sets: 3
+        hold: "45 seconds"
+        rest: "60 seconds"
+        protocol: "Isometric hold with band resistance"
+        tennis_application: "Knee stability for direction changes and jumping shots"
+
+        detailed_instructions:
+          title: "Isometric Hold Instructions"
+          technique_points:
+            - phase: "SETUP"
+              instruction: "Resistance band around knees, back against wall, feet 12 inches from wall"
+            - phase: "POSITION"
+              instruction: "Slide down wall until knees at 90 degrees, thighs parallel to floor"
+            - phase: "BAND TENSION"
+              instruction: "Keep knees pushed out against band resistance throughout"
+            - phase: "MUSCLE ACTIVATION"
+              instruction: "Contract quadriceps actively while maintaining position"
+            - phase: "BREATHING"
+              instruction: "Deep, controlled breathing - never hold breath during isometric"
+            - phase: "PROGRESSION"
+              instruction: "Week 2 increase from 30 seconds to 45 seconds hold time"
+
+      - name: "Pallof Press"
+        sets: 3
+        reps: 12
+        rest: "60 seconds"
+        protocol: "Anti-rotation core strengthening"
+        tennis_application: "Core stability for rotational tennis movements"
+
+        detailed_instructions:
+          title: "Anti-Rotation Core Instructions"
+          technique_points:
+            - phase: "SETUP"
+              instruction: "Cable set at chest height, stand perpendicular to machine"
+            - phase: "GRIP"
+              instruction: "Hold handle with both hands at chest level, step away to create tension"
+            - phase: "STARTING POSITION"
+              instruction: "Arms bent, handle at sternum, core engaged"
+            - phase: "PRESS OUT"
+              instruction: "Extend arms straight out from chest, resist cable's pull to rotate you"
+            - phase: "HOLD"
+              instruction: "Maintain straight arm position for 2 seconds, feel core working"
+            - phase: "RETURN"
+              instruction: "Slowly bring handle back to chest with control"
+            - phase: "ANTI-ROTATION"
+              instruction: "The challenge is preventing rotation - core must work to stay square"
+            - phase: "PROGRESSION"
+              instruction: "Increase resistance or hold time when movement becomes easy"
+
+# RECOVERY PROTOCOL
+recovery_protocol:
+  title: "Enhanced Recovery Protocol"
+  timing: "10:05-10:30"
+  duration: "25 minutes"
+  description: "Progressive recovery for increased training loads"
+
+  attribution:
+    source: "Enhanced recovery methodology"
+    methodology: "Progressive load recovery protocols"
+    validation: "Post-training recovery standards"
+    elite_use: "Professional athlete recovery"
+
+  components:
+    - name: "Progressive Stretching Sequence"
+      duration: "10 minutes"
+      protocol: "Enhanced static stretching routine"
+      implementation:
+        method: "Hold stretches 35 seconds (increased from Week 1)"
+        focus: "Major muscle groups worked in session"
+        progression: "Deeper stretches for enhanced recovery"
+
+    - name: "Foam Rolling Protocol"
+      duration: "8 minutes"
+      protocol: "Targeted myofascial release"
+      implementation:
+        method: "Slow, controlled rolling with pressure variation"
+        focus: "Lower body emphasis, tension release"
+        progression: "Increased pressure tolerance"
+
+    - name: "Enhanced Breathing Recovery"
+      duration: "5 minutes"
+      protocol: "4-7-8 breathing with progression"
+      implementation:
+        method: "Inhale 4, hold 7, exhale 8 (6 cycles)"
+        focus: "Parasympathetic activation for enhanced recovery"
+        progression: "Deeper relaxation response"
+
+    - name: "Hydration and Nutrition Protocol"
+      duration: "2 minutes"
+      protocol: "Enhanced post-workout nutrition"
+      implementation:
+        method: "Water + electrolytes + protein consideration"
+        focus: "Recovery optimization for increased demands"
+        progression: "Enhanced nutrient timing awareness"

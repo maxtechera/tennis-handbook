@@ -1,0 +1,827 @@
+# Week 4 - Sunday: Weekly Review & Phase 2 Transition Assessment
+metadata:
+  # Basic identifiers
+  period: 4
+  period_name: "Power Integration Phase"
+  day_id: "week_4_sunday"
+  day_name: "Sunday"
+
+  # Workout details
+  title: "Weekly Review & Phase 2 Transition Assessment"
+  subtitle: "Phase 2 Week 1 Review and Planning"
+  phase: "Phase 2: Power Integration (Week 1)"
+  focus_areas:
+    - "Weekly Performance Review"
+    - "Phase 2 Assessment"
+    - "Week 5 Planning"
+
+  # Training parameters
+  training_parameters:
+    volume: "50% (recovery and review)"
+    intensity: "40-60% (active recovery)"
+    density: "low"
+    duration: "2 hours 30 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Weekly Review Protocol"
+      type: "review"
+      attribution:
+        methodology: "Weekly performance review"
+        source: "Elite training periodization"
+        verification: "Training monitoring research"
+        context: "Phase 2 weekly review"
+        results: "Optimized training progression"
+    - name: "Phase Transition Assessment"
+      type: "assessment"
+      attribution:
+        methodology: "Phase transition evaluation"
+        source: "Elite periodization protocols"
+        verification: "Periodization research"
+        context: "Phase 2 progression assessment"
+        elite_use: "Professional periodization"
+    - name: "Active Recovery Integration"
+      type: "recovery"
+      attribution:
+        source: "Elite active recovery protocols"
+        methodology: "Active recovery optimization"
+        verification: "Recovery science research"
+        context: "Phase 2 recovery integration"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Tennis court access (optional)"
+      - "Yoga mat"
+      - "Foam roller"
+      - "Light resistance bands"
+      - "Assessment forms"
+      - "Training log"
+    optional:
+      - "Massage tools"
+      - "Stretching aids"
+      - "Recovery tracking devices"
+      - "Video analysis equipment"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Saturday](saturday)"
+    overview_link: "./"
+    next_link: "../week-5/monday"
+    previous_link: "saturday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Week 4 Review Assessment"
+      preparation: "Recovery Preparation"
+      skill_training: "Light Tennis Activity"
+      conditioning: "Active Recovery"
+      recovery: "Comprehensive Recovery"
+
+    ui_elements:
+      - type: "info"
+        title: "Weekly Review Day"
+        content: "Comprehensive review of Week 4 progress and Phase 2 transition"
+        icon: "📋"
+      - type: "success"
+        title: "Phase 2 Week 1 Complete"
+        content: "Celebrate the successful completion of Phase 2 Week 1"
+        icon: "🎉"
+
+  # Day-specific features
+  day_features:
+    has_weekly_review: true
+    has_phase_assessment: true
+    has_planning_session: true
+
+# WEEKLY REVIEW
+weekly_review:
+  performance_analysis:
+    achievements:
+      - "Velocity-based training implementation"
+      - "Power integration development"
+      - "Tennis-specific power transfer"
+      - "Phase 2 transition success"
+      - "Improved power metrics"
+      - "Enhanced tennis performance"
+      - "Successful competition application"
+    
+    challenges:
+      - "Velocity tracking learning curve"
+      - "Power endurance development"
+      - "Technical integration complexity"
+      - "Recovery management"
+      - "Competition application nerves"
+    
+    metrics_summary:
+      power_improvements: "Document power gains"
+      velocity_achievements: "Record velocity targets met"
+      tennis_integration: "Assess tennis power transfer"
+      competition_performance: "Evaluate match application"
+      recovery_effectiveness: "Review recovery protocols"
+  
+  planning:
+    next_week_focus:
+      - "Power endurance enhancement"
+      - "Advanced velocity training"
+      - "Tennis integration refinement"
+      - "Competition consistency"
+      - "Recovery optimization"
+    
+    adjustments:
+      - "Velocity training refinements"
+      - "Power integration modifications"
+      - "Recovery protocol adjustments"
+      - "Competition preparation improvements"
+    
+    goals:
+      - "Enhance power endurance"
+      - "Improve velocity consistency"
+      - "Refine tennis integration"
+      - "Optimize competition performance"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "week_4_comprehensive_review"
+    type: "weekly"
+    title: "Week 4 Comprehensive Review"
+    timing: "morning"
+    duration: "45 minutes"
+    description: "Complete review of Week 4 progress and achievements"
+
+    attribution:
+      source: "Elite weekly review protocols"
+      methodology: "Weekly performance evaluation"
+      validation: "Training monitoring research"
+      elite_use: "Professional training reviews"
+
+    components:
+      - id: "power_development_review"
+        name: "Power Development Review"
+        type: "performance"
+        category: "primary"
+
+        measurement:
+          protocol: "Power development assessment"
+          duration: "15 minutes"
+          equipment: "Training logs, assessment data"
+
+        assessment_areas:
+          - "Velocity-based training progress"
+          - "Power output improvements"
+          - "Tennis-specific power gains"
+          - "Competition power application"
+
+        standards:
+          excellent: "Significant power improvements"
+          good: "Moderate power improvements"
+          needs_attention: "Limited power improvements"
+
+        scoring:
+          method: "Power development rating"
+          scale: "1-10 scale"
+          recording: "Power improvements and areas for focus"
+
+        context:
+          description: "Power development progress evaluation"
+          application: "Phase 2 power training optimization"
+
+      - id: "tennis_integration_review"
+        name: "Tennis Integration Review"
+        type: "skill"
+        category: "primary"
+
+        measurement:
+          protocol: "Tennis integration assessment"
+          duration: "15 minutes"
+          equipment: "Performance data, video analysis"
+
+        assessment_areas:
+          - "Serve power integration"
+          - "Groundstroke power application"
+          - "Movement power transfer"
+          - "Competition skill execution"
+
+        standards:
+          excellent: "Excellent tennis integration"
+          good: "Good tennis integration"
+          needs_attention: "Poor tennis integration"
+
+        scoring:
+          method: "Integration effectiveness rating"
+          scale: "1-10 scale"
+          recording: "Integration success and improvement areas"
+
+        context:
+          description: "Tennis-specific integration evaluation"
+          application: "Tennis training optimization"
+
+      - id: "recovery_adaptation_review"
+        name: "Recovery and Adaptation Review"
+        type: "recovery"
+        category: "primary"
+
+        measurement:
+          protocol: "Recovery and adaptation assessment"
+          duration: "15 minutes"
+          equipment: "Recovery data, wellness scores"
+
+        assessment_areas:
+          - "Recovery protocol effectiveness"
+          - "Adaptation to Phase 2 training"
+          - "Fatigue management"
+          - "Readiness maintenance"
+
+        standards:
+          excellent: "Excellent recovery and adaptation"
+          good: "Good recovery and adaptation"
+          needs_attention: "Poor recovery or adaptation"
+
+        scoring:
+          method: "Recovery effectiveness rating"
+          scale: "1-10 scale"
+          recording: "Recovery status and optimization needs"
+
+        context:
+          description: "Recovery and adaptation evaluation"
+          application: "Recovery protocol optimization"
+
+  - id: "phase_2_progression_assessment"
+    type: "phase"
+    title: "Phase 2 Progression Assessment"
+    timing: "morning"
+    duration: "30 minutes"
+    description: "Assessment of Phase 2 progression and readiness"
+
+    components:
+      - id: "power_development_trajectory"
+        name: "Power Development Trajectory"
+        type: "progression"
+        category: "primary"
+
+        measurement:
+          protocol: "Power development trajectory analysis"
+          duration: "10 minutes"
+          equipment: "Training data, performance metrics"
+
+        assessment_areas:
+          - "Power development rate"
+          - "Velocity training adaptation"
+          - "Tennis power transfer"
+          - "Competition application"
+
+        standards:
+          on_track: "Excellent progression"
+          adequate: "Good progression"
+          needs_adjustment: "Slow progression"
+
+        context:
+          description: "Power development trajectory"
+          application: "Phase 2 training adjustments"
+
+      - id: "integration_effectiveness"
+        name: "Integration Effectiveness"
+        type: "integration"
+        category: "primary"
+
+        measurement:
+          protocol: "Integration effectiveness evaluation"
+          duration: "10 minutes"
+          equipment: "Performance data, skill assessments"
+
+        assessment_areas:
+          - "Power-to-tennis transfer"
+          - "Skill integration success"
+          - "Competition application"
+          - "Movement integration"
+
+        standards:
+          excellent: "Highly effective integration"
+          good: "Good integration"
+          needs_work: "Poor integration"
+
+        context:
+          description: "Integration effectiveness evaluation"
+          application: "Integration strategy refinement"
+
+      - id: "readiness_for_progression"
+        name: "Readiness for Progression"
+        type: "readiness"
+        category: "primary"
+
+        measurement:
+          protocol: "Progression readiness assessment"
+          duration: "10 minutes"
+          equipment: "Comprehensive assessment data"
+
+        assessment_areas:
+          - "Physical readiness"
+          - "Technical readiness"
+          - "Mental readiness"
+          - "Recovery status"
+
+        standards:
+          ready: "Ready for progression"
+          mostly_ready: "Mostly ready with minor adjustments"
+          needs_work: "Needs improvement before progression"
+
+        context:
+          description: "Readiness for Phase 2 progression"
+          application: "Week 5 training planning"
+
+# TIMELINE/SCHEDULE
+schedule:
+  type: "flexible"
+  total_duration: "2 hours 30 minutes"
+
+  blocks:
+    - id: "morning_block"
+      time: "8:00-9:30"
+      title: "Weekly Review & Assessment"
+      type: "assessment"
+
+      activities:
+        - name: "Weekly Review & Assessment"
+          duration: "90 minutes"
+          type: "assessment"
+          description: "Comprehensive weekly review"
+
+      carousel_data:
+        phase_id: "review"
+        phase_title: "Weekly Review"
+        phase_icon: "📋"
+        location: "quiet_space"
+
+    - id: "activity_block"
+      time: "9:45-10:30"
+      title: "Light Tennis Activity"
+      type: "active_recovery"
+
+      activities:
+        - name: "Light Tennis Activity"
+          duration: "45 minutes"
+          type: "active_recovery"
+          description: "Light tennis for active recovery"
+
+      carousel_data:
+        phase_id: "tennis"
+        phase_title: "Light Tennis"
+        phase_icon: "🎾"
+        location: "tennis_court"
+
+    - id: "recovery_block"
+      time: "10:45-11:00"
+      title: "Comprehensive Recovery"
+      type: "recovery"
+
+      activities:
+        - name: "Comprehensive Recovery"
+          duration: "15 minutes"
+          type: "recovery"
+          description: "Complete recovery protocol"
+
+      carousel_data:
+        phase_id: "recovery"
+        phase_title: "Comprehensive Recovery"
+        phase_icon: "🧊"
+        location: "recovery_area"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "recovery_preparation"
+    type: "recovery"
+    title: "Recovery Preparation Protocol"
+    duration: "30 minutes"
+    timing: "8:00-8:30"
+
+    attribution:
+      source: "Elite recovery preparation"
+      elite_use: "Professional recovery practices"
+      verification: "Recovery optimization research"
+
+    activities:
+      - id: "gentle_awakening"
+        name: "Gentle Awakening"
+        type: "awakening"
+        duration: "15 minutes"
+        order: 1
+
+        implementation:
+          method: "Gentle morning awakening"
+          setup: "Comfortable environment"
+          execution: "Slow awakening process"
+          focus: "Gentle preparation"
+
+        instructions:
+          - phase: "BREATHING"
+            text: "5 minutes gentle breathing - natural rhythm"
+          - phase: "MOVEMENT"
+            text: "10 minutes gentle movement - light stretching"
+
+        cues:
+          - "Gentle awakening"
+          - "Natural rhythm"
+          - "Slow preparation"
+          - "Recovery focus"
+
+      - id: "review_preparation"
+        name: "Review Preparation"
+        type: "preparation"
+        duration: "15 minutes"
+        order: 2
+
+        implementation:
+          method: "Review preparation"
+          setup: "Quiet space with materials"
+          execution: "Systematic preparation"
+          focus: "Review readiness"
+
+        instructions:
+          - phase: "MATERIALS"
+            text: "5 minutes gather materials - logs, data, assessments"
+          - phase: "MENTAL_PREPARATION"
+            text: "10 minutes mental preparation - review mindset"
+
+        cues:
+          - "Review preparation"
+          - "Gather materials"
+          - "Mental readiness"
+          - "Assessment focus"
+
+# SKILL TRAINING
+skill_training:
+  section_title: "Light Tennis Activity"
+  section_description: "Light tennis activity for active recovery"
+
+  sessions:
+    - id: "light_tennis_session"
+      type: "active_recovery"
+      title: "Light Tennis Activity"
+      duration: "45 minutes"
+      intensity: "40-60%"
+
+      attribution:
+        methodology: "Active recovery tennis"
+        source: "Elite recovery protocols"
+        elite_use: "Professional active recovery"
+        verification: "Active recovery research"
+
+      structure:
+        warm_up: "10 minutes"
+        main_work: "25 minutes"
+        cool_down: "10 minutes"
+
+      components:
+        - id: "light_hitting"
+          name: "Light Hitting Session"
+          type: "recovery_skill"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "25 minutes"
+            rest: "Liberal rest"
+
+          setup:
+            court_area: "Half court"
+            equipment: "Light balls, comfortable racquet"
+            players: "Relaxed partner"
+
+          implementation:
+            method: "Light hitting for recovery"
+            focus: "Movement and feel"
+            key_points: "Gentle, relaxed hitting"
+
+          instructions:
+            - phase: "GENTLE_RALLYING"
+              text: "15 minutes gentle rallying - easy pace, focus on feel"
+            - phase: "LIGHT_SERVES"
+              text: "5 minutes light serves - gentle technique focus"
+            - phase: "FUN_ACTIVITIES"
+              text: "5 minutes fun activities - relaxed games or challenges"
+
+          cues:
+            - "Gentle hitting"
+            - "Focus on feel"
+            - "Relaxed pace"
+            - "Enjoyment focus"
+
+          success_criteria:
+            - metric: "Enjoyment"
+              target: "High enjoyment rating"
+              tracking: "Subjective enjoyment"
+            - metric: "Recovery feel"
+              target: "Feels restorative"
+              tracking: "Recovery sensation"
+
+# CONDITIONING BLOCKS
+conditioning_blocks:
+  - id: "active_recovery_conditioning"
+    type: "active_recovery"
+    title: "Active Recovery Conditioning"
+    description: "Light conditioning for active recovery"
+    duration: "30 minutes"
+
+    attribution:
+      methodology: "Active recovery conditioning"
+      source: "Elite recovery protocols"
+      elite_use: "Professional active recovery"
+      verification: "Active recovery research"
+
+    exercises:
+      - id: "gentle_yoga_flow"
+        name: "Gentle Yoga Flow"
+        category: "mobility"
+        order: 1
+
+        loading:
+          sets: "1"
+          reps: "Flow sequence"
+          intensity: "Light"
+          rest: "Continuous flow"
+          duration: "15 minutes"
+
+        execution:
+          setup:
+            - "Yoga mat"
+            - "Comfortable space"
+            - "Relaxed environment"
+          technique:
+            - "Gentle sun salutations"
+            - "Hip opening sequence"
+            - "Spinal mobility flow"
+            - "Relaxation poses"
+          safety:
+            - "Pain-free movement"
+            - "Gentle stretching"
+            - "Listen to body"
+
+        cues:
+          - "Gentle movements"
+          - "Flowing sequence"
+          - "Listen to body"
+          - "Relaxation focus"
+
+        tracking:
+          type: "recovery"
+          format: "quality_rating"
+
+        benefits:
+          primary: "Improved mobility"
+          secondary: "Stress reduction"
+          sport_specific: "Movement quality"
+
+      - id: "light_walking"
+        name: "Light Walking"
+        category: "aerobic"
+        order: 2
+
+        loading:
+          sets: "1"
+          reps: "Continuous"
+          intensity: "Light"
+          rest: "None"
+          duration: "15 minutes"
+
+        execution:
+          setup:
+            - "Walking area"
+            - "Comfortable shoes"
+            - "Pleasant environment"
+          technique:
+            - "Relaxed walking pace"
+            - "Natural breathing"
+            - "Mindful walking"
+            - "Enjoy environment"
+          safety:
+            - "Comfortable pace"
+            - "No forcing"
+            - "Enjoy the walk"
+
+        cues:
+          - "Relaxed pace"
+          - "Natural breathing"
+          - "Mindful walking"
+          - "Enjoy the experience"
+
+        tracking:
+          type: "recovery"
+          format: "quality_rating"
+
+        benefits:
+          primary: "Active recovery"
+          secondary: "Mental relaxation"
+          sport_specific: "General fitness"
+
+# RECOVERY PROTOCOLS
+recovery_protocols:
+  - id: "comprehensive_recovery"
+    type: "comprehensive"
+    title: "Comprehensive Recovery Protocol"
+    duration: "15 minutes"
+    timing: "End of day"
+
+    attribution:
+      methodology: "Comprehensive recovery"
+      source: "Elite recovery protocols"
+      elite_use: "Professional recovery practices"
+      verification: "Recovery optimization research"
+
+    components:
+      - id: "self_massage"
+        name: "Self-Massage Protocol"
+        type: "therapy"
+        duration: "7 minutes"
+        order: 1
+
+        implementation:
+          method: "Self-massage techniques"
+          intensity: "Light to moderate"
+          equipment: "Foam roller, massage tools"
+
+        instructions:
+          - "Feet and calves: 2 minutes"
+          - "Thighs and glutes: 3 minutes"
+          - "Back and shoulders: 2 minutes"
+
+        cues:
+          - "Gentle pressure"
+          - "Find tension areas"
+          - "Promote circulation"
+          - "Relaxation focus"
+
+      - id: "relaxation_breathing"
+        name: "Relaxation Breathing"
+        type: "breathing"
+        duration: "8 minutes"
+        order: 2
+
+        implementation:
+          method: "Relaxation breathing"
+          intensity: "Relaxation"
+          equipment: "Comfortable position"
+
+        instructions:
+          - "4-7-8 breathing: 4 minutes"
+          - "Natural breathing: 2 minutes"
+          - "Gratitude reflection: 2 minutes"
+
+        cues:
+          - "Deep relaxation"
+          - "Release tension"
+          - "Peaceful breathing"
+          - "Gratitude focus"
+
+# PLANNING SESSION
+planning_session:
+  week_5_preparation:
+    focus_areas:
+      - "Power endurance advancement"
+      - "Velocity training progression"
+      - "Tennis integration refinement"
+      - "Competition consistency"
+    
+    training_adjustments:
+      - "Velocity training refinements"
+      - "Power endurance protocols"
+      - "Recovery optimizations"
+      - "Competition preparation"
+    
+    goals_setting:
+      - "Enhanced power endurance"
+      - "Improved velocity consistency"
+      - "Refined tennis integration"
+      - "Optimized competition performance"
+
+# SESSION METRICS
+session_metrics:
+  volume:
+    review_minutes: 90
+    tennis_minutes: 45
+    conditioning_minutes: 30
+    recovery_minutes: 15
+    total_minutes: 180
+
+  intensity:
+    review_average: "Mental effort"
+    tennis_average: "40-60%"
+    conditioning_average: "Light"
+    recovery_average: "Relaxation"
+    overall_rpe: 3
+
+  load_calculations:
+    total_load: "Recovery focus"
+    mental_load: "Review and planning"
+
+  distances:
+    estimated_walking: "2 km"
+    light_tennis: "1 km"
+
+# COACHING NOTES
+coaching_notes:
+  review_focus:
+    - "Honest assessment of progress"
+    - "Identify areas for improvement"
+    - "Celebrate achievements"
+    - "Plan for progression"
+
+  recovery_emphasis:
+    - "Complete recovery focus"
+    - "Gentle activities only"
+    - "Stress reduction"
+    - "Preparation for Week 5"
+
+  planning_priorities:
+    - "Week 5 preparation"
+    - "Phase 2 progression"
+    - "Training optimizations"
+    - "Performance goals"
+
+# WEEK 4 SUMMARY
+week_4_summary:
+  achievements:
+    - "Successful Phase 2 transition"
+    - "Velocity-based training implementation"
+    - "Power integration development"
+    - "Tennis-specific power transfer"
+    - "Competition application success"
+  
+  challenges_overcome:
+    - "Velocity tracking learning"
+    - "Power endurance development"
+    - "Integration complexity"
+    - "Recovery management"
+  
+  areas_for_improvement:
+    - "Power endurance enhancement"
+    - "Velocity consistency"
+    - "Tennis integration refinement"
+    - "Competition consistency"
+  
+  week_5_preparation:
+    - "Power endurance focus"
+    - "Advanced velocity training"
+    - "Integration refinement"
+    - "Competition optimization"
+
+# LEVEL MODIFICATIONS
+level_modifications:
+  beginner:
+    review_duration: "Extended review time"
+    tennis_activity: "Very light hitting"
+    recovery: "Extended recovery"
+    planning: "Simplified planning"
+
+  intermediate:
+    review_duration: "As prescribed"
+    tennis_activity: "Light hitting"
+    recovery: "Standard recovery"
+    planning: "Detailed planning"
+
+  advanced:
+    review_duration: "Efficient review"
+    tennis_activity: "Light technical work"
+    recovery: "Advanced recovery"
+    planning: "Advanced planning"
+
+# PHASE INTEGRATION
+phase_integration:
+  phase_2_status: "Week 1 complete"
+  progression_readiness: "Evaluate readiness"
+  training_adaptations: "Document adaptations"
+  performance_improvements: "Track improvements"
+  
+  week_5_preparation:
+    focus_shift: "Power endurance emphasis"
+    training_progression: "Advanced protocols"
+    integration_refinement: "Enhanced integration"
+    competition_optimization: "Performance consistency"
+
+# TRACKING REQUIREMENTS
+tracking:
+  required:
+    - "Weekly review completion"
+    - "Phase 2 assessment results"
+    - "Recovery effectiveness"
+    - "Planning outcomes"
+    - "Week 5 preparation"
+
+  optional:
+    - "Detailed performance analysis"
+    - "Recovery biomarkers"
+    - "Psychological assessments"
+    - "Long-term trend analysis"
+
+  weekly_specific:
+    - "Week 4 achievements"
+    - "Progress toward goals"
+    - "Areas for improvement"
+    - "Week 5 planning"
+
+# NAVIGATION
+navigation:
+  week_overview: "./"
+  next_week: "../week-5/monday"
+  previous_day: "saturday"
+  phase_status: "Phase 2 - Week 1 Complete"

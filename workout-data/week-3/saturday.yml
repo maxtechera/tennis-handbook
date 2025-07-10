@@ -1,0 +1,634 @@
+# Week 3 - Saturday: Competition Application & Recovery Choice
+metadata:
+  # Basic identifiers
+  period: 3
+  period_name: "Peak Foundation"
+  day_id: "week_3_saturday"
+  day_name: "Saturday"
+
+  # Workout details
+  title: "Competition Application & Recovery Choice"
+  subtitle: "Apply Phase 1 Skills in Competition or Focus on Recovery"
+  phase: "Phase 1: Elite Foundation (Final Week)"
+  focus_areas:
+    - "Competition Application"
+    - "Recovery Optimization"
+    - "Individual Choice"
+
+  # Training parameters
+  training_parameters:
+    volume: "Variable (depends on choice)"
+    intensity: "Variable (50-95%)"
+    density: "Variable"
+    duration: "3-6 hours"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Competition Application Protocol"
+      type: "competition"
+      attribution:
+        methodology: "Elite competition preparation"
+        source: "Professional competition protocols"
+        verification: "ATP/WTA competition standards"
+        context: "Phase 1 application"
+        results: "Competition readiness"
+    - name: "Advanced Recovery Protocol"
+      type: "recovery"
+      attribution:
+        source: "Elite recovery science"
+        elite_use: "Professional recovery methods"
+        verification: "Recovery research"
+        context: "Phase transition recovery"
+    - name: "Individual Choice Methodology"
+      type: "individualization"
+      attribution:
+        methodology: "Individualized training approach"
+        source: "Elite individualization protocols"
+        verification: "Individualization research"
+        context: "Personal optimization"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Tennis court access"
+      - "Competition equipment"
+      - "Recovery tools"
+      - "Choice A and B equipment"
+    optional:
+      - "Tournament setup"
+      - "Advanced recovery tools"
+      - "Performance tracking"
+      - "Video analysis"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Friday](friday) | [Sunday ➡️](sunday)"
+    overview_link: "./"
+    next_link: "sunday"
+    previous_link: "friday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Choice Assessment"
+      preparation: "Choice Preparation"
+      skill_training: "Competition Application OR Recovery Tennis"
+      conditioning: "Competition Support OR Recovery Conditioning"
+      recovery: "Post-Competition OR Enhanced Recovery"
+
+    ui_elements:
+      - type: "warning"
+        title: "Individual Choice Day"
+        content: "Choose based on your goals, recovery status, and competition opportunities"
+        icon: "🎯"
+
+  # Day features
+  day_features:
+    has_dual_workout: true
+    has_competition_simulation: true
+    has_recovery_focus: true
+    has_individual_choice: true
+
+# CHOICE ASSESSMENT
+choice_assessment:
+  title: "Saturday Choice Assessment"
+  duration: "20 minutes"
+  description: "Determine optimal choice based on individual factors"
+  
+  assessment_factors:
+    - factor: "Recovery Status"
+      weight: "High"
+      assessment: "HRV, subjective wellness, fatigue levels"
+      optimal_choice_a: "Good recovery, high energy"
+      optimal_choice_b: "Poor recovery, high fatigue"
+    
+    - factor: "Competition Opportunities"
+      weight: "High"
+      assessment: "Upcoming tournaments, match opportunities"
+      optimal_choice_a: "Competition available or soon"
+      optimal_choice_b: "No immediate competition"
+    
+    - factor: "Phase 1 Mastery"
+      weight: "Medium"
+      assessment: "Confidence in Phase 1 skills"
+      optimal_choice_a: "High confidence, ready to apply"
+      optimal_choice_b: "Need more consolidation"
+    
+    - factor: "Individual Goals"
+      weight: "Medium"
+      assessment: "Personal training priorities"
+      optimal_choice_a: "Competition focus"
+      optimal_choice_b: "Recovery and preparation focus"
+
+  decision_matrix:
+    choice_a_indicators:
+      - "HRV within 5% of baseline"
+      - "Subjective wellness >7/10"
+      - "Competition opportunity available"
+      - "High confidence in Phase 1 skills"
+      - "Motivation for competition high"
+    
+    choice_b_indicators:
+      - "HRV >10% below baseline"
+      - "Subjective wellness <6/10"
+      - "No immediate competition"
+      - "Prefer skill consolidation"
+      - "High training fatigue"
+
+# COMPETITION OPTIONS
+competition_options:
+  - option: "A"
+    title: "Competition Application & Match Play"
+    subtitle: "Apply Phase 1 skills in competitive environment"
+    description: "Full competition focus with match play and competitive training"
+    
+    recommended_for:
+      - "Good recovery status"
+      - "Competition opportunities available"
+      - "High confidence in Phase 1 skills"
+      - "Motivated for competition"
+    
+    components:
+      - component: "Competition Preparation"
+        duration: "45 minutes"
+        intensity: "70-80%"
+        description: "Comprehensive preparation for competition"
+        
+        activities:
+          - name: "Match Preparation Protocol"
+            duration: "20 minutes"
+            instructions: "Physical and mental preparation for competition"
+          - name: "Tactical Review"
+            duration: "15 minutes"
+            instructions: "Review and rehearse key tactical patterns"
+          - name: "Competition Mindset"
+            duration: "10 minutes"
+            instructions: "Mental preparation for competitive performance"
+      
+      - component: "Match Play Session"
+        duration: "120-180 minutes"
+        intensity: "85-95%"
+        description: "Competitive match play or tournament participation"
+        
+        activities:
+          - name: "Competitive Warm-up"
+            duration: "30 minutes"
+            instructions: "Match-standard warm-up protocol"
+          - name: "Match Play"
+            duration: "90-150 minutes"
+            instructions: "Full competitive match play"
+          - name: "Competition Cool-down"
+            duration: "15 minutes"
+            instructions: "Post-match recovery protocol"
+      
+      - component: "Competition Support Training"
+        duration: "60 minutes"
+        intensity: "60-75%"
+        description: "Supporting physical training for competition"
+        
+        activities:
+          - name: "Competition Movement"
+            duration: "30 minutes"
+            instructions: "Movement patterns for competition"
+          - name: "Recovery Between Matches"
+            duration: "20 minutes"
+            instructions: "Quick recovery protocols"
+          - name: "Competition Nutrition"
+            duration: "10 minutes"
+            instructions: "Competition nutrition strategy"
+      
+      - component: "Post-Competition Recovery"
+        duration: "45 minutes"
+        intensity: "40-60%"
+        description: "Recovery and analysis after competition"
+        
+        activities:
+          - name: "Immediate Recovery"
+            duration: "20 minutes"
+            instructions: "Post-competition recovery protocol"
+          - name: "Performance Analysis"
+            duration: "15 minutes"
+            instructions: "Analyze competitive performance"
+          - name: "Recovery Planning"
+            duration: "10 minutes"
+            instructions: "Plan recovery for next training"
+
+  - option: "B"
+    title: "Active Recovery & Skill Consolidation"
+    subtitle: "Focus on recovery and Phase 1 skill consolidation"
+    description: "Recovery-focused training with skill consolidation"
+    
+    recommended_for:
+      - "High fatigue or poor recovery"
+      - "No immediate competition"
+      - "Prefer skill consolidation"
+      - "Need mental/physical recovery"
+    
+    components:
+      - component: "Recovery Assessment"
+        duration: "30 minutes"
+        intensity: "40-50%"
+        description: "Comprehensive recovery evaluation"
+        
+        activities:
+          - name: "Recovery Status Check"
+            duration: "15 minutes"
+            instructions: "Evaluate all recovery indicators"
+          - name: "Movement Quality Assessment"
+            duration: "10 minutes"
+            instructions: "Assess movement quality"
+          - name: "Recovery Planning"
+            duration: "5 minutes"
+            instructions: "Plan recovery approach"
+      
+      - component: "Active Recovery Tennis"
+        duration: "75 minutes"
+        intensity: "50-65%"
+        description: "Light tennis work focused on skill consolidation"
+        
+        activities:
+          - name: "Gentle Tennis Movement"
+            duration: "20 minutes"
+            instructions: "Light court movement and preparation"
+          - name: "Skill Consolidation"
+            duration: "45 minutes"
+            instructions: "Perfect technique at low intensity"
+          - name: "Flow State Tennis"
+            duration: "10 minutes"
+            instructions: "Enjoyable, flowing tennis"
+      
+      - component: "Recovery Conditioning"
+        duration: "60 minutes"
+        intensity: "40-60%"
+        description: "Low-intensity conditioning for recovery"
+        
+        activities:
+          - name: "Pool Work or Light Cardio"
+            duration: "30 minutes"
+            instructions: "Low-impact cardiovascular work"
+          - name: "Mobility and Flexibility"
+            duration: "20 minutes"
+            instructions: "Comprehensive mobility work"
+          - name: "Light Activation"
+            duration: "10 minutes"
+            instructions: "Gentle muscle activation"
+      
+      - component: "Enhanced Recovery Protocol"
+        duration: "90 minutes"
+        intensity: "30-50%"
+        description: "Comprehensive recovery and preparation"
+        
+        activities:
+          - name: "Soft Tissue Work"
+            duration: "30 minutes"
+            instructions: "Massage, foam rolling, trigger point"
+          - name: "Recovery Breathing"
+            duration: "20 minutes"
+            instructions: "Advanced breathing protocols"
+          - name: "Mental Recovery"
+            duration: "20 minutes"
+            instructions: "Meditation, visualization, relaxation"
+          - name: "Recovery Nutrition"
+            duration: "10 minutes"
+            instructions: "Optimal recovery nutrition"
+          - name: "Recovery Planning"
+            duration: "10 minutes"
+            instructions: "Plan upcoming training"
+
+# DETAILED OPTION A: COMPETITION APPLICATION
+option_a_detailed:
+  title: "Competition Application - Full Competition Focus"
+  total_duration: "4.5-6 hours"
+  intensity_range: "70-95%"
+  
+  schedule:
+    - time: "08:00-08:45"
+      activity: "Competition Preparation"
+      intensity: "70-80%"
+    - time: "09:00-12:00"
+      activity: "Match Play Session"
+      intensity: "85-95%"
+    - time: "12:15-13:15"
+      activity: "Competition Support Training"
+      intensity: "60-75%"
+    - time: "13:30-14:15"
+      activity: "Post-Competition Recovery"
+      intensity: "40-60%"
+  
+  competition_preparation:
+    physical_preparation:
+      - name: "Dynamic Competition Warm-up"
+        duration: "15 minutes"
+        instructions: "Progressive warm-up to match intensity"
+      - name: "Match Movement Rehearsal"
+        duration: "5 minutes"
+        instructions: "Practice match movement patterns"
+    
+    tactical_preparation:
+      - name: "Tactical Pattern Review"
+        duration: "10 minutes"
+        instructions: "Review and rehearse key patterns"
+      - name: "Game Plan Rehearsal"
+        duration: "5 minutes"
+        instructions: "Mental rehearsal of game plan"
+    
+    mental_preparation:
+      - name: "Competition Mindset"
+        duration: "5 minutes"
+        instructions: "Mental preparation for competition"
+      - name: "Confidence Building"
+        duration: "5 minutes"
+        instructions: "Build confidence for competition"
+  
+  match_play_session:
+    pre_match:
+      - name: "Match Warm-up"
+        duration: "20 minutes"
+        instructions: "Standard pre-match warm-up"
+      - name: "Final Preparation"
+        duration: "10 minutes"
+        instructions: "Final mental and physical preparation"
+    
+    match_play:
+      - name: "Competitive Match"
+        duration: "90-150 minutes"
+        instructions: "Full competitive match play"
+        notes: "Apply all Phase 1 skills and tactics"
+    
+    post_match:
+      - name: "Immediate Cool-down"
+        duration: "15 minutes"
+        instructions: "Post-match recovery protocol"
+  
+  competition_support:
+    movement_support:
+      - name: "Competition Movement Patterns"
+        duration: "20 minutes"
+        instructions: "Reinforce competition movement"
+      - name: "Recovery Movement"
+        duration: "10 minutes"
+        instructions: "Movement for recovery"
+    
+    physical_support:
+      - name: "Competition Conditioning"
+        duration: "15 minutes"
+        instructions: "Support conditioning for competition"
+      - name: "Recovery Preparation"
+        duration: "15 minutes"
+        instructions: "Prepare for recovery"
+  
+  post_competition:
+    immediate_recovery:
+      - name: "Post-Competition Protocol"
+        duration: "20 minutes"
+        instructions: "Immediate post-competition recovery"
+    
+    performance_analysis:
+      - name: "Match Analysis"
+        duration: "15 minutes"
+        instructions: "Analyze competitive performance"
+    
+    recovery_planning:
+      - name: "Recovery Strategy"
+        duration: "10 minutes"
+        instructions: "Plan recovery approach"
+
+# DETAILED OPTION B: ACTIVE RECOVERY
+option_b_detailed:
+  title: "Active Recovery & Skill Consolidation"
+  total_duration: "3.5-4.5 hours"
+  intensity_range: "40-65%"
+  
+  schedule:
+    - time: "08:00-08:30"
+      activity: "Recovery Assessment"
+      intensity: "40-50%"
+    - time: "08:45-10:00"
+      activity: "Active Recovery Tennis"
+      intensity: "50-65%"
+    - time: "10:15-11:15"
+      activity: "Recovery Conditioning"
+      intensity: "40-60%"
+    - time: "11:30-13:00"
+      activity: "Enhanced Recovery Protocol"
+      intensity: "30-50%"
+  
+  recovery_assessment:
+    physiological_assessment:
+      - name: "HRV and Wellness Check"
+        duration: "10 minutes"
+        instructions: "Comprehensive wellness assessment"
+      - name: "Movement Quality Check"
+        duration: "10 minutes"
+        instructions: "Assess movement quality"
+      - name: "Recovery Status Evaluation"
+        duration: "10 minutes"
+        instructions: "Evaluate overall recovery status"
+  
+  active_recovery_tennis:
+    gentle_preparation:
+      - name: "Light Court Movement"
+        duration: "15 minutes"
+        instructions: "Gentle movement preparation"
+      - name: "Technical Preparation"
+        duration: "5 minutes"
+        instructions: "Light technical preparation"
+    
+    skill_consolidation:
+      - name: "Perfect Technique Focus"
+        duration: "25 minutes"
+        instructions: "Focus on perfect technique"
+      - name: "Flow State Practice"
+        duration: "20 minutes"
+        instructions: "Enjoyable, flowing tennis"
+    
+    recovery_tennis:
+      - name: "Light Rally Play"
+        duration: "10 minutes"
+        instructions: "Light, enjoyable rally play"
+  
+  recovery_conditioning:
+    cardiovascular_recovery:
+      - name: "Pool Work or Light Cardio"
+        duration: "30 minutes"
+        instructions: "Low-impact cardiovascular work"
+    
+    mobility_work:
+      - name: "Comprehensive Mobility"
+        duration: "20 minutes"
+        instructions: "Full-body mobility work"
+    
+    activation_work:
+      - name: "Light Activation"
+        duration: "10 minutes"
+        instructions: "Gentle muscle activation"
+  
+  enhanced_recovery:
+    soft_tissue_work:
+      - name: "Massage and Foam Rolling"
+        duration: "30 minutes"
+        instructions: "Comprehensive soft tissue work"
+    
+    breathing_recovery:
+      - name: "Recovery Breathing"
+        duration: "20 minutes"
+        instructions: "Advanced breathing protocols"
+    
+    mental_recovery:
+      - name: "Mental Recovery Session"
+        duration: "20 minutes"
+        instructions: "Meditation and mental recovery"
+    
+    nutrition_recovery:
+      - name: "Recovery Nutrition"
+        duration: "10 minutes"
+        instructions: "Optimal recovery nutrition"
+    
+    planning:
+      - name: "Recovery Planning"
+        duration: "10 minutes"
+        instructions: "Plan upcoming training"
+
+# CHOICE GUIDANCE
+choice_guidance:
+  decision_process:
+    step_1: "Complete choice assessment"
+    step_2: "Evaluate personal factors"
+    step_3: "Consider recovery status"
+    step_4: "Review competition opportunities"
+    step_5: "Make informed choice"
+  
+  general_guidelines:
+    - "When in doubt, choose recovery"
+    - "Competition requires good recovery status"
+    - "Recovery is never wasted time"
+    - "Listen to your body"
+    - "Consider long-term goals"
+  
+  red_flags_for_competition:
+    - "HRV >15% below baseline"
+    - "Subjective wellness <5/10"
+    - "Persistent fatigue or soreness"
+    - "Low motivation for competition"
+    - "Recent injury or illness"
+  
+  green_lights_for_competition:
+    - "HRV within normal range"
+    - "High subjective wellness"
+    - "Good energy levels"
+    - "High motivation"
+    - "Competition opportunity available"
+
+# SESSION METRICS
+session_metrics:
+  option_a_metrics:
+    volume:
+      tennis_minutes: 180-240
+      support_minutes: 60
+      recovery_minutes: 45
+      total_minutes: 285-345
+    
+    intensity:
+      competition_average: "85-95%"
+      support_average: "60-75%"
+      recovery_average: "40-60%"
+      overall_rpe: 8.5-9.5
+  
+  option_b_metrics:
+    volume:
+      tennis_minutes: 75
+      conditioning_minutes: 60
+      recovery_minutes: 90
+      total_minutes: 225
+    
+    intensity:
+      tennis_average: "50-65%"
+      conditioning_average: "40-60%"
+      recovery_average: "30-50%"
+      overall_rpe: 4.5-5.5
+
+# COACHING NOTES
+coaching_notes:
+  choice_factors:
+    - "Recovery status is primary factor"
+    - "Competition opportunities matter"
+    - "Individual goals guide choice"
+    - "Phase 1 mastery confidence"
+  
+  option_a_focus:
+    - "Apply Phase 1 skills in competition"
+    - "Test abilities under pressure"
+    - "Build competitive confidence"
+    - "Validate training progress"
+  
+  option_b_focus:
+    - "Optimize recovery for Phase 2"
+    - "Consolidate Phase 1 skills"
+    - "Prepare for progression"
+    - "Maintain health and motivation"
+  
+  key_considerations:
+    - "Both options are valuable"
+    - "Choice depends on individual factors"
+    - "No wrong choice if well-reasoned"
+    - "Recovery is never wasted"
+
+# LEVEL MODIFICATIONS
+level_modifications:
+  beginner:
+    option_a: "Shorter match play, more support"
+    option_b: "Extended recovery focus"
+    choice: "Lean toward Option B"
+  
+  intermediate:
+    option_a: "Standard competition format"
+    option_b: "Balanced recovery approach"
+    choice: "Choose based on assessment"
+  
+  advanced:
+    option_a: "Extended competition focus"
+    option_b: "Advanced recovery techniques"
+    choice: "Aggressive choice based on goals"
+
+# WEEK INTEGRATION
+week_integration:
+  weekly_theme: "Application or Recovery"
+  daily_priority: "Individual optimization"
+  phase_completion: "Phase 1 application or preparation"
+  
+  connects_to:
+    friday: "Builds on mastery demonstration"
+    sunday: "Leads to weekly review"
+    phase_2: "Prepares for transition"
+  
+  choice_impact:
+    option_a: "Competition application focus"
+    option_b: "Recovery optimization focus"
+    both: "Prepare for Phase 2"
+
+# TRACKING REQUIREMENTS
+tracking:
+  required:
+    - "Choice made and reasoning"
+    - "Recovery status indicators"
+    - "Session completion"
+    - "Performance metrics"
+  
+  option_a_specific:
+    - "Competition performance"
+    - "Skill application success"
+    - "Competitive confidence"
+    - "Recovery from competition"
+  
+  option_b_specific:
+    - "Recovery improvements"
+    - "Skill consolidation"
+    - "Wellness indicators"
+    - "Phase 2 preparation"
+
+# NAVIGATION
+navigation:
+  week_overview: "./"
+  next_day: "sunday"
+  previous_day: "friday"
+  phase_status: "Phase 1 - Application or Recovery"

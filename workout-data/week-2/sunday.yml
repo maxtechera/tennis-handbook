@@ -1,0 +1,468 @@
+# Week 2 - Sunday: Rest & Recovery (COMPREHENSIVE VERSION)
+metadata:
+  # Basic identifiers
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_2_sunday"
+  day_name: "Sunday"
+
+  # Workout details
+  title: "Elite Recovery & Adaptation"
+  subtitle: "Week 2 Complete Rest with Recovery Optimization and Next Week Preparation"
+  phase: "Phase 1: Elite Foundation"
+  focus_areas:
+    - "Complete Recovery Implementation"
+    - "Stress Reduction & Relaxation"
+    - "Mobility Maintenance"
+    - "Adaptation Support & Integration"
+
+  # Training parameters
+  training_parameters:
+    volume: "20% (recovery focus)"
+    intensity: "30-40%"
+    density: "minimal"
+    duration: "1-1.5 hours (optional activities)"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Recovery Optimization Protocol"
+      type: "recovery"
+      attribution:
+        method: "Evidence-based recovery methods for training adaptation"
+        source: "Jeff Nippard - Recovery Science"
+        verification: "Video documentation and research protocols"
+        context: "Complete recovery for training adaptation and next week preparation"
+    - name: "Mobility Maintenance System"
+      type: "mobility"
+      attribution:
+        method: "Flexibility and joint health maintenance protocols"
+        source: "Jeff Nippard - Mobility"
+        verification: "Video reference and research-based protocols"
+        context: "Movement quality maintenance during recovery periods"
+    - name: "Week Transition Planning"
+      type: "holistic"
+      attribution:
+        method: "Systematic training progression and periodization"
+        source: "Professional tennis training progression methods"
+        verification: "ATP/WTA training periodization protocols"
+        context: "Effective transition between training weeks"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Yoga mat for mobility work"
+      - "Foam roller for self-massage"
+    optional:
+      - "Tennis ball for self-massage"
+      - "Resistance bands for gentle stretching"
+      - "Massage tools for recovery"
+      - "Journal for weekly reflection"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [Week 3 Monday ➡️](../week-3/monday)"
+    overview_link: "./"
+    next_link: "../week-3/monday"
+    previous_link: "saturday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Weekly Review & Assessment"
+      preparation: "Recovery Preparation"
+      skill_training: "Optional Recovery Activities"
+      conditioning: "Recovery Techniques Implementation"
+      recovery: "Complete Recovery Protocol"
+
+    ui_elements:
+      - type: "info"
+        title: "Complete Recovery Day"
+        content: "Focus on rest, recovery, and preparation for next week"
+        icon: "🛌"
+
+  # Day-specific features
+  day_features:
+    has_weekly_review: true
+    is_rest_day: true
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "weekly_review_assessment"
+    type: "review"
+    title: "Week 2 Comprehensive Review"
+    timing: "morning reflection"
+    duration: "15 minutes"
+    description: "Complete assessment of Week 2 training and preparation for Week 3"
+
+    attribution:
+      source: "Weekly review and progression assessment protocols"
+      methodology: "Systematic training review for continuous improvement"
+      validation: "Professional training evaluation standards"
+      elite_use: "ATP/WTA weekly assessment and planning methods"
+
+    components:
+      - id: "week_2_performance_review"
+        name: "Week 2 Performance Assessment"
+        type: "reflection"
+        category: "primary"
+
+        measurement:
+          protocol: "Comprehensive review of all training sessions and outcomes"
+          repetitions: "Single weekly assessment"
+          equipment: "Training log or journal"
+
+        standards:
+          elite_benchmark: "All sessions completed with progression achieved"
+          good_standard: "Most sessions completed with some progression"
+          needs_work: "Incomplete sessions or lack of progression"
+
+        scoring:
+          method: "Achievement and progression assessment"
+          scale: "Comprehensive review with action items"
+          recording: "Document achievements, challenges, and week 3 planning"
+
+        context:
+          description: "Evaluates Week 2 training completion and effectiveness"
+          application: "Informs Week 3 planning and training adjustments"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "morning_protocol"
+    title: "Week 2 Recovery Morning Protocol"
+    timing: "6:00-6:15"
+    duration: "15 minutes"
+    description: "Gentle morning routine focused on recovery and reflection"
+
+    attribution:
+      source: "Recovery-focused morning protocol methodology"
+      methodology: "Gentle morning routine for complete rest days"
+      validation: "Daily preparation for recovery and reflection"
+      elite_use: "Professional tennis player recovery protocols"
+
+    activities:
+      - name: "Gentle Recovery Awakening"
+        duration: "3 minutes"
+        sets: 3
+        instructions:
+          - "Slow, deep breathing with gratitude focus"
+          - "Gentle body scan and assessment"
+          - "Mental preparation for recovery day"
+
+        implementation:
+          execution: "Comfortable position with focus on relaxation"
+          focus: "Gentle awakening and recovery assessment"
+          tennis_application: "Prepares mind and body for rest and recovery"
+
+      - name: "Light Joint Mobility"
+        duration: "5 minutes"
+        sets: 1
+        instructions:
+          - "Gentle joint circles: 5 each direction"
+          - "Light stretching movements: hold 15 seconds"
+          - "Very gentle range of motion without effort"
+
+        implementation:
+          execution: "Minimal effort movement for circulation"
+          focus: "Gentle circulation promotion"
+          tennis_application: "Maintains basic movement without training stress"
+
+      - name: "Recovery Intention Setting"
+        duration: "7 minutes"
+        sets: 2
+        instructions:
+          - "Week 2 reflection and gratitude: 3 minutes"
+          - "Week 3 intention setting: 3 minutes"
+          - "Recovery goal setting for the day"
+
+        implementation:
+          execution: "Quiet reflection and planning"
+          focus: "Mental preparation for recovery and future training"
+          tennis_application: "Prepares mindset for effective recovery and next week"
+
+# TENNIS TRAINING
+tennis_training:
+  title: "Optional Recovery Activities"
+  timing: "Flexible throughout day"
+  duration: "30-60 minutes (optional)"
+  description: "Gentle optional activities supporting recovery and well-being"
+
+  attribution:
+    source: "Recovery activity methodology"
+    methodology: "Optional gentle activities for active recovery"
+    validation: "Professional recovery activity standards"
+    elite_use: "ATP/WTA optional recovery protocols"
+
+  session_structure:
+    gentle_yoga_option:
+      title: "Gentle Yoga Practice"
+      timing: "Flexible"
+      duration: "30 minutes"
+      
+      phases:
+        - name: "Restorative Yoga Sequence"
+          duration: "25 minutes"
+          focus: "Flexibility and relaxation"
+          detailed_instructions:
+            - "Child's Pose: 2 minutes for spine and hip relaxation"
+            - "Cat-Cow: 10 cycles for spinal mobility"
+            - "Downward Dog: 60 seconds for full body stretch"
+            - "Pigeon Pose: 90 seconds each side for hip opening"
+            - "Seated Twist: 60 seconds each side for spinal rotation"
+            - "Legs Up Wall: 5 minutes for recovery position"
+
+        - name: "Final Relaxation"
+          duration: "5 minutes"
+          focus: "Complete relaxation"
+          detailed_instructions:
+            - "Savasana: 5 minutes of complete relaxation"
+            - "Focus on deep breathing and body awareness"
+            - "Release all tension and stress from the week"
+
+    leisurely_walk_option:
+      title: "Leisurely Walk"
+      timing: "Flexible"
+      duration: "30 minutes"
+
+      phases:
+        - name: "Mindful Walking"
+          duration: "30 minutes"
+          focus: "Mental refreshment"
+          detailed_instructions:
+            - "Easy pace outdoors if possible"
+            - "No intensity or time pressure"
+            - "Focus on fresh air and mental relaxation"
+            - "Promote gentle blood circulation"
+            - "Mindful walking and enjoyment of surroundings"
+
+# MOVEMENT PREPARATION
+movement_preparation:
+  title: "Recovery Activity Preparation"
+  timing: "Before optional activities"
+  duration: "5 minutes"
+  description: "Minimal preparation for optional recovery activities"
+
+  attribution:
+    source: "Recovery activity preparation"
+    methodology: "Gentle preparation for optional recovery activities"
+    validation: "Recovery activity preparation standards"
+    elite_use: "Professional athlete recovery preparation"
+
+  exercises:
+    - name: "Gentle Joint Circulation"
+      sets: 1
+      reps: 5
+      rest_seconds: 30
+      protocol: "Very light joint mobility"
+      tennis_application: "Prepares joints for gentle movement"
+
+    - name: "Breathing Preparation"
+      sets: 1
+      reps: 5
+      rest_seconds: 30
+      protocol: "Deep breathing for relaxation"
+      tennis_application: "Prepares mind for recovery activities"
+
+    - name: "Body Awareness"
+      sets: 1
+      reps: 3
+      rest_seconds: 30
+      protocol: "Gentle body scan and assessment"
+      tennis_application: "Awareness of recovery needs"
+
+    - name: "Intention Setting"
+      sets: 1
+      reps: 1
+      rest_seconds: 60
+      protocol: "Set intention for recovery activities"
+      tennis_application: "Mental preparation for effective recovery"
+
+# STRENGTH TRAINING
+strength_training:
+  title: "Recovery Techniques Implementation"
+  timing: "Flexible throughout day"
+  duration: "45-60 minutes"
+  description: "Comprehensive recovery techniques for training adaptation"
+
+  attribution:
+    source: "Evidence-based recovery implementation"
+    methodology: "Comprehensive recovery technique protocols"
+    validation: "Professional recovery standards"
+    elite_use: "ATP/WTA recovery implementation methods"
+
+  main_exercises:
+    - name: "Extensive Foam Rolling"
+      sets: 1
+      reps: "15-20 minutes"
+      rest_seconds: "N/A"
+      load: "Bodyweight pressure"
+      tempo: "Slow controlled movements"
+      protocol: "Comprehensive self-myofascial release"
+      tennis_application: "Muscle tension release and recovery promotion"
+
+      detailed_instructions:
+        title: "Self-Myofascial Release Instructions"
+        technique_points:
+          - phase: "CALVES"
+            instruction: "60 seconds each leg, slow rolls with pauses on tight spots"
+          - phase: "HAMSTRINGS"
+            instruction: "90 seconds each leg, full length including IT band junction"
+          - phase: "QUADRICEPS"
+            instruction: "90 seconds each leg, focus on vastus lateralis"
+          - phase: "GLUTES"
+            instruction: "2 minutes total, include piriformis area"
+          - phase: "LATS"
+            instruction: "60 seconds each side in side-lying position"
+          - phase: "UPPER BACK"
+            instruction: "2 minutes with thoracic extension focus"
+          - phase: "PRESSURE"
+            instruction: "Gentle pressure, avoid pain, breathe deeply throughout"
+
+    - name: "Breathwork Exercises"
+      sets: 3
+      reps: "Various patterns"
+      rest_seconds: 60
+      load: "N/A"
+      tempo: "Controlled breathing patterns"
+      protocol: "Parasympathetic activation breathing"
+      tennis_application: "Nervous system recovery and stress reduction"
+
+      detailed_instructions:
+        title: "Parasympathetic Activation Instructions"
+        technique_points:
+          - phase: "DIAPHRAGMATIC BREATHING"
+            instruction: "5 minutes natural deep breaths, lying or seated position"
+          - phase: "4-7-8 BREATHING"
+            instruction: "5 minutes: inhale 4, hold 7, exhale 8, repeat 4-8 cycles"
+          - phase: "BOX BREATHING"
+            instruction: "5 minutes: 4-4-4-4 count with equal phases"
+          - phase: "RELAXATION FOCUS"
+            instruction: "Promote parasympathetic activation and stress reduction"
+          - phase: "BENEFITS"
+            instruction: "Enhance recovery and mental clarity"
+          - phase: "CONSISTENCY"
+            instruction: "Maintain steady rhythm and deep focus"
+
+    - name: "Self-Massage"
+      sets: 1
+      reps: "10-15 minutes"
+      rest_seconds: "N/A"
+      load: "Light pressure"
+      tempo: "Gentle circular motions"
+      protocol: "Targeted soft tissue work"
+      tennis_application: "Tension release and circulation promotion"
+
+      detailed_instructions:
+        title: "Self-Massage Technique Instructions"
+        technique_points:
+          - phase: "SHOULDERS"
+            instruction: "3 minutes each with cross-friction and pressure techniques"
+          - phase: "NECK"
+            instruction: "2 minutes with gentle circular motions"
+          - phase: "FEET"
+            instruction: "2 minutes each with tennis ball rolling"
+          - phase: "FOREARMS"
+            instruction: "2 minutes each with compression and stripping"
+          - phase: "PRESSURE"
+            instruction: "Gentle pressure with hands, tennis ball, or massage tools"
+          - phase: "BREATHING"
+            instruction: "Combine with deep breathing for enhanced relaxation"
+          - phase: "FOCUS AREAS"
+            instruction: "Spend extra time on areas of tension from training week"
+
+# CONDITIONING FINISHER
+conditioning_finisher:
+  title: "Weekly Integration and Planning"
+  timing: "Evening reflection"
+  duration: "20 minutes"
+  description: "Week 2 integration and Week 3 preparation"
+
+  attribution:
+    source: "Training integration and planning methodology"
+    methodology: "Systematic weekly review and forward planning"
+    validation: "Professional training progression standards"
+    elite_use: "ATP/WTA training periodization methods"
+
+  circuit_structure:
+    - name: "Week 2 Integration Reflection"
+      duration: "10 minutes"
+      intensity: "Mental reflection"
+      protocol: "Comprehensive week review and learning integration"
+
+      detailed_instructions:
+        title: "Training Integration Instructions"
+        execution_points:
+          - phase: "ACHIEVEMENTS REVIEW"
+            instruction: "Document all completed sessions and progression achieved"
+          - phase: "CHALLENGES IDENTIFICATION"
+            instruction: "Identify areas of difficulty and fatigue management needs"
+          - phase: "LEARNING CAPTURE"
+            instruction: "Record key insights about training response and adaptation"
+          - phase: "STRENGTH PROGRESSION"
+            instruction: "Document all load increases and movement quality improvements"
+          - phase: "TENNIS DEVELOPMENT"
+            instruction: "Assess tennis skill maintenance and integration under fatigue"
+
+    - name: "Week 3 Preparation Planning"
+      duration: "10 minutes"
+      intensity: "Planning focus"
+      protocol: "Strategic planning for continued progression"
+
+      detailed_instructions:
+        title: "Forward Planning Instructions"
+        execution_points:
+          - phase: "GOAL SETTING"
+            instruction: "Set specific goals for Week 3 progression"
+          - phase: "LOAD PLANNING"
+            instruction: "Plan appropriate load increases based on Week 2 response"
+          - phase: "RECOVERY MONITORING"
+            instruction: "Establish recovery monitoring for Week 3"
+          - phase: "ADJUSTMENT PLANNING"
+            instruction: "Plan for potential adjustments based on fatigue response"
+          - phase: "MOTIVATION PREPARATION"
+            instruction: "Set mental preparation for continued training progression"
+
+# RECOVERY PROTOCOL
+recovery_protocol:
+  title: "Complete Recovery Protocol"
+  timing: "Throughout day"
+  duration: "Ongoing"
+  description: "Comprehensive recovery implementation for training adaptation"
+
+  attribution:
+    source: "Complete recovery protocol methodology"
+    methodology: "Comprehensive recovery for training adaptation"
+    validation: "Professional complete recovery standards"
+    elite_use: "ATP/WTA complete recovery methods"
+
+  components:
+    - name: "Nutrition and Hydration Focus"
+      duration: "Throughout day"
+      protocol: "Recovery-optimized nutrition and hydration"
+      implementation:
+        method: "Adequate protein (1.8-2.2g/kg), optimal hydration (2-3L)"
+        focus: "Support training adaptation and recovery"
+        progression: "Continued nutrition optimization"
+
+    - name: "Sleep Optimization"
+      duration: "7.5-9 hours"
+      protocol: "Quality sleep for recovery and adaptation"
+      implementation:
+        method: "Dark, cool room with consistent sleep/wake times"
+        focus: "Maximum recovery through quality sleep"
+        progression: "Enhanced sleep quality and recovery monitoring"
+
+    - name: "Stress Management"
+      duration: "Throughout day"
+      protocol: "Stress reduction and relaxation techniques"
+      implementation:
+        method: "Breathing exercises, gentle activities, relaxation focus"
+        focus: "Minimize stress to optimize recovery"
+        progression: "Enhanced stress management and recovery"
+
+    - name: "Recovery Monitoring"
+      duration: "Throughout day"
+      protocol: "Assessment of recovery status and Week 3 readiness"
+      implementation:
+        method: "Monitor fatigue, soreness, HRV, and motivation levels"
+        focus: "Ensure optimal readiness for Week 3 training"
+        progression: "Data-driven training adjustments and planning"

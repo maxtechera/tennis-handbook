@@ -1,0 +1,800 @@
+# Week 3 - Thursday: Active Recovery & Phase Transition Preparation
+metadata:
+  # Basic identifiers
+  period: 3
+  period_name: "Peak Foundation"
+  day_id: "week_3_thursday"
+  day_name: "Thursday"
+
+  # Workout details
+  title: "Active Recovery & Phase Transition Preparation"
+  subtitle: "Intelligent Recovery with Phase 2 Preparation"
+  phase: "Phase 1: Elite Foundation (Final Week)"
+  focus_areas:
+    - "Intelligent Active Recovery"
+    - "Phase Transition Preparation"
+    - "Movement Quality Refinement"
+
+  # Training parameters
+  training_parameters:
+    volume: "40% (recovery focus)"
+    intensity: "50-65%"
+    density: "low"
+    duration: "3 hours"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Intelligent Active Recovery Protocol"
+      type: "recovery"
+      attribution:
+        methodology: "Evidence-based active recovery"
+        source: "Elite recovery science"
+        verification: "Active recovery research"
+        context: "Post-peak training recovery"
+        results: "Enhanced adaptation and preparation"
+    - name: "Phase Transition Preparation"
+      type: "periodization"
+      attribution:
+        source: "Professional periodization protocols"
+        elite_use: "Elite phase transition methods"
+        verification: "Periodization literature"
+        context: "Phase 1 to Phase 2 transition"
+    - name: "Movement Quality Refinement"
+      type: "movement"
+      attribution:
+        methodology: "Advanced movement training"
+        source: "Movement quality research"
+        verification: "Functional movement science"
+        context: "Movement pattern optimization"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Tennis court access"
+      - "Foam roller"
+      - "Lacrosse ball"
+      - "Resistance bands"
+      - "Yoga mat"
+      - "Pool access (if available)"
+      - "Light dumbbells (5-15 lbs)"
+    optional:
+      - "Massage tools"
+      - "Sauna access"
+      - "Heart rate monitor"
+      - "Recovery tracking devices"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Wednesday](wednesday) | [Friday ➡️](friday)"
+    overview_link: "./"
+    next_link: "friday"
+    previous_link: "wednesday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Recovery Assessment"
+      preparation: "Movement Quality Refinement"
+      skill_training: "Technical Tennis Recovery"
+      conditioning: "Active Recovery Conditioning"
+      recovery: "Phase Transition Preparation"
+
+    ui_elements:
+      - type: "success"
+        title: "Active Recovery Day"
+        content: "Intelligent recovery to prepare for Phase 2 transition"
+        icon: "🧘"
+
+# ASSESSMENTS
+assessments:
+  - id: "recovery_assessment"
+    type: "recovery"
+    title: "Comprehensive Recovery Assessment"
+    timing: "pre-session"
+    duration: "30 minutes"
+    description: "Evaluate recovery status and phase completion"
+
+    attribution:
+      source: "Elite recovery assessment protocols"
+      methodology: "Comprehensive recovery evaluation"
+      validation: "Recovery science research"
+      elite_use: "Professional athletes"
+
+    components:
+      - id: "physiological_recovery"
+        name: "Physiological Recovery Assessment"
+        type: "physiological"
+        category: "primary"
+
+        measurement:
+          protocol: "HRV, resting HR, sleep quality, subjective wellness"
+          duration: "15 minutes"
+          equipment: "HRV device, wellness questionnaire"
+
+        standards:
+          excellent: "All markers within optimal ranges"
+          good: "Most markers within acceptable ranges"
+          needs_attention: "Multiple markers below optimal"
+
+        scoring:
+          method: "Comprehensive wellness score"
+          scale: "1-10 composite score"
+          recording: "All physiological markers"
+
+        context:
+          description: "Assess physiological recovery from peak training"
+          application: "Optimize recovery strategies"
+
+      - id: "movement_quality_assessment"
+        name: "Movement Quality Recovery Assessment"
+        type: "movement"
+        category: "primary"
+
+        measurement:
+          protocol: "Movement screen with fatigue considerations"
+          duration: "10 minutes"
+          equipment: "Movement assessment tools"
+
+        standards:
+          optimal: "Movement quality maintained despite fatigue"
+          acceptable: "Minor movement quality changes"
+          needs_work: "Significant movement quality degradation"
+
+        scoring:
+          method: "Movement quality score"
+          scale: "Pass/fail with quality notes"
+          recording: "Movement pattern assessment"
+
+        context:
+          description: "Assess movement quality after peak training"
+          application: "Guide movement quality work"
+
+      - id: "phase_1_completion"
+        name: "Phase 1 Completion Assessment"
+        type: "progress"
+        category: "primary"
+
+        measurement:
+          protocol: "Compare to Phase 1 goals"
+          duration: "5 minutes"
+          equipment: "Phase 1 data"
+
+        standards:
+          excellent: "All Phase 1 goals achieved"
+          good: "Most Phase 1 goals achieved"
+          needs_extension: "Key goals not yet achieved"
+
+        scoring:
+          method: "Goal achievement percentage"
+          scale: "Percentage of goals completed"
+          recording: "Phase 1 goal achievement"
+
+        context:
+          description: "Assess Phase 1 completion status"
+          application: "Determine Phase 2 readiness"
+
+  - id: "phase_2_readiness"
+    type: "readiness"
+    title: "Phase 2 Readiness Assessment"
+    timing: "mid-session"
+    duration: "15 minutes"
+    description: "Evaluate readiness for Phase 2 transition"
+
+    components:
+      - id: "adaptation_consolidation"
+        name: "Adaptation Consolidation Check"
+        type: "adaptation"
+        category: "primary"
+
+        measurement:
+          protocol: "Assess adaptation consolidation"
+          duration: "8 minutes"
+          equipment: "Performance data"
+
+        standards:
+          ready: "Adaptations well-consolidated"
+          nearly_ready: "Most adaptations consolidated"
+          needs_time: "Adaptations still developing"
+
+        context:
+          description: "Assess adaptation consolidation"
+          application: "Determine Phase 2 timing"
+
+      - id: "motivation_assessment"
+        name: "Motivation & Mental Readiness"
+        type: "psychological"
+        category: "primary"
+
+        measurement:
+          protocol: "Psychological readiness evaluation"
+          duration: "7 minutes"
+          equipment: "Assessment questionnaire"
+
+        standards:
+          high: "High motivation for Phase 2"
+          moderate: "Moderate motivation"
+          low: "Low motivation or burnout signs"
+
+        context:
+          description: "Assess mental readiness for Phase 2"
+          application: "Guide Phase 2 approach"
+
+# SCHEDULE OVERVIEW
+schedule_overview:
+  title: "Thursday Schedule - Active Recovery & Phase Transition"
+  sessions:
+    - time: "08:00–09:00"
+      activity: "Technical Tennis Recovery"
+      instructions: "Light technical work with movement quality focus"
+    - time: "09:10–09:40"
+      activity: "Movement Quality Refinement"
+      instructions: "Address movement restrictions and optimize patterns"
+    - time: "09:40–10:40"
+      activity: "Active Recovery Conditioning"
+      exercises:
+        - name: "Pool Work (if available)"
+          sets_reps: "30 minutes"
+          instructions: "Low-impact cardiovascular work"
+        - name: "Yoga Flow"
+          sets_reps: "20 minutes"
+          instructions: "Flexibility and mobility focus"
+        - name: "Light Resistance Work"
+          sets_reps: "10 minutes"
+          instructions: "Movement activation"
+    - time: "10:45–11:15"
+      activity: "Phase Transition Preparation"
+      instructions: "Plan Phase 2 and consolidate learnings"
+
+# SKILL TRAINING
+skill_training:
+  section_title: "Technical Tennis Recovery"
+  section_description: "Light technical work with movement quality focus"
+
+  sessions:
+    - id: "technical_recovery"
+      type: "technical"
+      title: "Technical Tennis Recovery Session"
+      duration: "60 minutes"
+      intensity: "50-65%"
+
+      attribution:
+        methodology: "Technical recovery protocols"
+        source: "Elite tennis recovery methods"
+        elite_use: "Professional technical recovery"
+        verification: "Tennis recovery literature"
+
+      structure:
+        warm_up: "15 minutes"
+        main_technical: "35 minutes"
+        cool_down: "10 minutes"
+
+      components:
+        - id: "gentle_movement"
+          name: "Gentle Court Movement"
+          type: "movement"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "15 minutes"
+            rest: "Continuous flow"
+
+          setup:
+            court_area: "Half court"
+            equipment: "Light equipment"
+            players: "Individual or partner"
+
+          implementation:
+            method: "Gentle movement patterns"
+            focus: "Movement quality restoration"
+            key_points: "Smooth patterns, no intensity"
+
+          instructions:
+            - phase: "MOBILITY"
+              text: "5 minutes gentle court mobility"
+            - phase: "PATTERNS"
+              text: "10 minutes light movement patterns"
+
+          cues:
+            - "Gentle movement focus"
+            - "Quality over quantity"
+            - "Restore movement patterns"
+            - "No intensity pressure"
+
+        - id: "technical_refinement"
+          name: "Technical Refinement Practice"
+          type: "technical"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "25 minutes"
+            rest: "Plenty of rest"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Practice equipment"
+            players: "Practice partner"
+
+          implementation:
+            method: "Technical refinement focus"
+            focus: "Perfect technique at low intensity"
+            key_points: "Technique, timing, flow"
+
+          instructions:
+            - phase: "GROUNDSTROKES"
+              text: "15 minutes perfect groundstroke technique"
+            - phase: "SERVES"
+              text: "10 minutes serve technique refinement"
+
+          cues:
+            - "Perfect technique focus"
+            - "Timing and rhythm"
+            - "Smooth stroke production"
+            - "No power pressure"
+
+          success_criteria:
+            - metric: "Technical quality"
+              target: "95%+"
+              tracking: "Perfect technique percentage"
+
+        - id: "flow_practice"
+          name: "Flow and Rhythm Practice"
+          type: "flow"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "10 minutes"
+            rest: "Continuous flow"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Minimal equipment"
+            players: "Individual or partner"
+
+          implementation:
+            method: "Flow and rhythm focus"
+            focus: "Smooth, rhythmic tennis"
+            key_points: "Flow state, enjoyment"
+
+          instructions:
+            - phase: "FLOW"
+              text: "10 minutes continuous flow practice"
+
+          cues:
+            - "Find your flow"
+            - "Rhythm and timing"
+            - "Enjoy the movement"
+            - "Effortless tennis"
+
+          success_criteria:
+            - metric: "Flow state achievement"
+              target: "Sustained flow"
+              tracking: "Flow state maintenance"
+
+# CONDITIONING BLOCKS
+conditioning_blocks:
+  - id: "active_recovery_conditioning"
+    type: "recovery"
+    title: "Active Recovery Conditioning"
+    description: "Low-intensity conditioning to promote recovery"
+    duration: "60 minutes"
+
+    attribution:
+      methodology: "Active recovery protocols"
+      source: "Recovery science research"
+      elite_use: "Professional recovery methods"
+      verification: "Active recovery literature"
+
+    exercises:
+      - id: "pool_work"
+        name: "Pool Recovery Work (if available)"
+        category: "cardiovascular"
+        order: 1
+
+        loading:
+          sets: "1"
+          duration: "30 minutes"
+          intensity: "Light"
+          rest: "Continuous"
+
+        execution:
+          setup:
+            - "Pool access"
+            - "Water temperature comfortable"
+            - "Appropriate depth"
+          technique:
+            - "Water walking/jogging"
+            - "Light swimming"
+            - "Water mobility work"
+            - "Buoyancy-assisted movements"
+          safety:
+            - "Appropriate supervision"
+            - "Comfortable water temperature"
+            - "Hydration maintained"
+
+        cues:
+          - "Low-impact movement"
+          - "Buoyancy assistance"
+          - "Gentle cardiovascular work"
+          - "Joint decompression"
+
+        alternative:
+          exercise: "Light stationary bike"
+          duration: "30 minutes"
+          intensity: "60-65% max HR"
+          instructions: "If no pool access available"
+
+        tracking:
+          type: "duration"
+          format: "time"
+
+        benefits:
+          primary: "Active recovery"
+          secondary: "Joint decompression"
+          sport_specific: "Low-impact conditioning"
+
+      - id: "yoga_flow"
+        name: "Yoga Flow Sequence"
+        category: "mobility"
+        order: 2
+
+        loading:
+          sets: "1"
+          duration: "20 minutes"
+          intensity: "Light"
+          rest: "Flow format"
+
+        execution:
+          setup:
+            - "Yoga mat"
+            - "Quiet space"
+            - "Comfortable temperature"
+          technique:
+            - "Gentle vinyasa flow"
+            - "Focus on breath"
+            - "Hip and shoulder mobility"
+            - "Spinal mobility"
+          safety:
+            - "No forced stretches"
+            - "Listen to body"
+            - "Modify as needed"
+
+        cues:
+          - "Breath-movement connection"
+          - "Gentle stretching"
+          - "Mindful movement"
+          - "Relaxation focus"
+
+        tracking:
+          type: "duration"
+          format: "time"
+
+        benefits:
+          primary: "Flexibility and mobility"
+          secondary: "Mental relaxation"
+          sport_specific: "Movement quality"
+
+      - id: "light_resistance"
+        name: "Light Resistance Activation"
+        category: "activation"
+        order: 3
+
+        loading:
+          sets: "2"
+          reps: "15"
+          intensity: "Light"
+          rest: "60 seconds"
+
+        execution:
+          setup:
+            - "Light dumbbells (5-15 lbs)"
+            - "Resistance bands"
+            - "Open space"
+          technique:
+            - "Band external rotations"
+            - "Light dumbbell movements"
+            - "Glute activation"
+            - "Core activation"
+          safety:
+            - "Very light loads"
+            - "Perfect form"
+            - "No strain"
+
+        cues:
+          - "Activation focus"
+          - "Perfect form"
+          - "Light resistance"
+          - "Movement quality"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+        benefits:
+          primary: "Muscle activation"
+          secondary: "Movement preparation"
+          sport_specific: "Movement quality"
+
+  - id: "recovery_enhancement"
+    type: "recovery"
+    title: "Recovery Enhancement Protocol"
+    description: "Advanced recovery techniques"
+    duration: "20 minutes"
+
+    exercises:
+      - id: "soft_tissue_work"
+        name: "Comprehensive Soft Tissue Work"
+        category: "recovery"
+        order: 1
+
+        loading:
+          sets: "1"
+          duration: "15 minutes"
+          intensity: "Moderate pressure"
+          rest: "Continuous"
+
+        execution:
+          setup:
+            - "Foam roller"
+            - "Lacrosse ball"
+            - "Comfortable position"
+          technique:
+            - "Foam roll major muscle groups"
+            - "Target specific tight areas"
+            - "Trigger point work"
+            - "Gentle pressure"
+          safety:
+            - "Avoid painful pressure"
+            - "Breathe deeply"
+            - "Progress gradually"
+
+        cues:
+          - "Targeted pressure"
+          - "Deep breathing"
+          - "Release tension"
+          - "Promote recovery"
+
+        tracking:
+          type: "duration"
+          format: "time"
+
+        benefits:
+          primary: "Soft tissue recovery"
+          secondary: "Circulation enhancement"
+          sport_specific: "Movement quality"
+
+      - id: "breathing_recovery"
+        name: "Advanced Recovery Breathing"
+        category: "recovery"
+        order: 2
+
+        loading:
+          sets: "1"
+          duration: "5 minutes"
+          intensity: "Relaxation"
+          rest: "Continuous"
+
+        execution:
+          setup:
+            - "Quiet space"
+            - "Comfortable position"
+            - "Minimal distractions"
+          technique:
+            - "Box breathing protocol"
+            - "Coherent breathing"
+            - "Visualization"
+            - "Complete relaxation"
+          safety:
+            - "No forced breathing"
+            - "Comfortable pace"
+            - "Stop if dizzy"
+
+        cues:
+          - "Parasympathetic activation"
+          - "Complete relaxation"
+          - "Mental recovery"
+          - "Prepare for adaptation"
+
+        tracking:
+          type: "duration"
+          format: "time"
+
+        benefits:
+          primary: "Nervous system recovery"
+          secondary: "Mental relaxation"
+          sport_specific: "Recovery optimization"
+
+# RECOVERY PROTOCOLS
+recovery_protocols:
+  - id: "phase_transition_preparation"
+    type: "preparation"
+    title: "Phase Transition Preparation"
+    duration: "30 minutes"
+    timing: "End of session"
+
+    attribution:
+      methodology: "Phase transition protocols"
+      source: "Periodization science"
+      elite_use: "Professional phase transitions"
+      verification: "Periodization literature"
+
+    components:
+      - id: "phase_1_review"
+        name: "Phase 1 Achievement Review"
+        type: "analysis"
+        duration: "10 minutes"
+        order: 1
+
+        implementation:
+          method: "Comprehensive phase review"
+          intensity: "Evaluation focus"
+          equipment: "Phase 1 data"
+
+        instructions:
+          - "Review all Phase 1 goals"
+          - "Assess achievement levels"
+          - "Identify key learnings"
+          - "Document progress"
+
+        cues:
+          - "Comprehensive review"
+          - "Celebrate achievements"
+          - "Learn from challenges"
+          - "Document progress"
+
+      - id: "phase_2_planning"
+        name: "Phase 2 Planning Session"
+        type: "planning"
+        duration: "15 minutes"
+        order: 2
+
+        implementation:
+          method: "Phase 2 preparation"
+          intensity: "Planning focus"
+          equipment: "Phase 2 materials"
+
+        instructions:
+          - "Review Phase 2 objectives"
+          - "Plan training modifications"
+          - "Set Phase 2 targets"
+          - "Prepare mentally"
+
+        cues:
+          - "Phase 2 focus"
+          - "New challenges"
+          - "Progressive development"
+          - "Exciting progression"
+
+      - id: "transition_preparation"
+        name: "Transition Preparation"
+        type: "preparation"
+        duration: "5 minutes"
+        order: 3
+
+        implementation:
+          method: "Transition preparation"
+          intensity: "Preparation focus"
+          equipment: "Transition materials"
+
+        instructions:
+          - "Prepare for transition"
+          - "Mental preparation"
+          - "Physical preparation"
+          - "Confidence building"
+
+        cues:
+          - "Smooth transition"
+          - "Confidence in progress"
+          - "Ready for next phase"
+          - "Exciting development"
+
+# SESSION METRICS
+session_metrics:
+  volume:
+    tennis_minutes: 60
+    conditioning_minutes: 60
+    recovery_minutes: 50
+    total_minutes: 170
+
+  intensity:
+    tennis_average: "50-65%"
+    conditioning_average: "50-60%"
+    overall_rpe: 4.5
+
+  recovery_indicators:
+    hrv_status: "Monitor improvement"
+    sleep_quality: "Track enhancement"
+    subjective_wellness: "Assess improvement"
+
+  phase_transition:
+    phase_1_completion: "Document achievement"
+    phase_2_readiness: "Assess preparation"
+    transition_confidence: "Build readiness"
+
+# COACHING NOTES
+coaching_notes:
+  recovery_focus:
+    - "Prioritize intelligent recovery"
+    - "Movement quality refinement"
+    - "Phase transition preparation"
+
+  load_management:
+    - "Lowest volume and intensity of week"
+    - "Active recovery emphasis"
+    - "Prepare for Phase 2"
+
+  progression_markers:
+    - "Improved recovery indicators"
+    - "Movement quality refinement"
+    - "Phase 2 readiness"
+
+  phase_transition:
+    - "Phase 1 achievements celebrated"
+    - "Phase 2 preparation complete"
+    - "Confidence in progression"
+
+# LEVEL MODIFICATIONS
+level_modifications:
+  beginner:
+    volume: "Reduce all durations by 25%"
+    intensity: "Keep very light"
+    recovery: "Extend recovery periods"
+    transition: "Slower phase transition"
+
+  intermediate:
+    volume: "As prescribed"
+    intensity: "As prescribed"
+    recovery: "As prescribed"
+    transition: "As prescribed"
+
+  advanced:
+    volume: "May extend recovery work"
+    intensity: "May add light challenges"
+    recovery: "Add advanced techniques"
+    transition: "More aggressive Phase 2 prep"
+
+# WEEK INTEGRATION
+week_integration:
+  weekly_theme: "Active Recovery & Transition"
+  daily_priority: "Recovery and preparation"
+  phase_completion: "Phase 1 consolidation"
+  
+  connects_to:
+    wednesday: "Recovery from peak intensity"
+    friday: "Preparation for final consolidation"
+    phase_2: "Transition preparation"
+    
+  phase_transition:
+    preparation: "Phase 2 readiness"
+    consolidation: "Phase 1 achievements"
+    confidence: "Progression readiness"
+
+# TRACKING REQUIREMENTS
+tracking:
+  required:
+    - "Recovery indicators"
+    - "Movement quality scores"
+    - "Phase 1 completion status"
+    - "Phase 2 readiness"
+    - "Transition confidence"
+
+  optional:
+    - "HRV trends"
+    - "Sleep quality data"
+    - "Subjective wellness"
+    - "Mental readiness"
+
+  phase_transition:
+    - "Phase 1 achievements"
+    - "Phase 2 preparation"
+    - "Transition readiness"
+    - "Confidence levels"
+
+# NAVIGATION
+navigation:
+  week_overview: "./"
+  next_day: "friday"
+  previous_day: "wednesday"
+  phase_status: "Phase 1 - Recovery & Transition"

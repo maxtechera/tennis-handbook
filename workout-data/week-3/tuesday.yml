@@ -1,0 +1,837 @@
+# Week 3 - Tuesday: Advanced Upper Body Power & Tennis Precision
+metadata:
+  # Basic identifiers
+  period: 3
+  period_name: "Peak Foundation"
+  day_id: "week_3_tuesday"
+  day_name: "Tuesday"
+
+  # Workout details
+  title: "Advanced Upper Body Power & Tennis Precision"
+  subtitle: "Peak Upper Body Development with Technical Mastery"
+  phase: "Phase 1: Elite Foundation (Final Week)"
+  focus_areas:
+    - "Upper Body Power Peak"
+    - "Tennis Technical Precision"
+    - "Movement Quality Excellence"
+
+  # Training parameters
+  training_parameters:
+    volume: "110% (upper body focus)"
+    intensity: "80-85%"
+    density: "high"
+    duration: "4 hours 30 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Advanced Upper Body Power Protocol"
+      type: "strength"
+      attribution:
+        methodology: "Peak upper body development"
+        source: "Elite strength training protocols"
+        verification: "Evidence-based upper body training"
+        context: "Week 3 upper body culmination"
+        results: "Maximum upper body power gains"
+    - name: "Tennis Precision Training"
+      type: "skill"
+      attribution:
+        source: "Professional tennis precision methods"
+        elite_use: "Tour-level precision training"
+        verification: "ATP/WTA training standards"
+        context: "Technical mastery development"
+    - name: "Movement Quality Integration"
+      type: "movement"
+      attribution:
+        methodology: "Advanced movement training"
+        source: "Movement quality research"
+        verification: "Functional movement literature"
+        context: "Peak movement preparation"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Barbell and plates"
+      - "Dumbbells (5-50 lbs)"
+      - "Tennis court access"
+      - "Bench (adjustable)"
+      - "Pull-up bar"
+      - "Cable machine"
+      - "Medicine ball (3-5kg)"
+      - "Resistance bands"
+    optional:
+      - "Landmine attachment"
+      - "Velocity tracking device"
+      - "Heart rate monitor"
+      - "Foam roller"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [⬅️ Monday](monday) | [Wednesday ➡️](wednesday)"
+    overview_link: "./"
+    next_link: "wednesday"
+    previous_link: "monday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Advanced Readiness Assessment"
+      preparation: "Movement Quality Preparation"
+      skill_training: "Tennis Precision Training"
+      conditioning: "Peak Upper Body Power"
+      recovery: "Advanced Recovery Integration"
+
+    ui_elements:
+      - type: "info"
+        title: "Week 3 Upper Body Peak"
+        content: "Maximum upper body power development with technical precision"
+        icon: "💪"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "advanced_readiness"
+    type: "assessment"
+    title: "Advanced Readiness Assessment"
+    duration: "20 minutes"
+    timing: "07:00-07:20"
+
+    attribution:
+      source: "Elite readiness assessment protocols"
+      elite_use: "Professional athletes"
+      verification: "Sports science research"
+
+    activities:
+      - id: "comprehensive_check"
+        name: "Comprehensive Readiness Check"
+        type: "assessment"
+        duration: "15 minutes"
+        order: 1
+
+        implementation:
+          method: "Multi-modal assessment"
+          setup: "Assessment tools ready"
+          execution: "Systematic evaluation"
+          focus: "Optimize training readiness"
+
+        instructions:
+          - phase: "HRV_ADVANCED"
+            text: "HRV measurement with 3-week trend analysis"
+          - phase: "MOVEMENT_SCREEN"
+            text: "5-minute movement quality screen"
+          - phase: "NEURAL_TEST"
+            text: "CNS tap test and reactive strength"
+          - phase: "PSYCHOLOGICAL"
+            text: "Motivation and confidence assessment"
+          - phase: "INTEGRATION"
+            text: "Overall readiness score and modifications"
+
+        cues:
+          - "Comprehensive assessment approach"
+          - "Consider all readiness factors"
+          - "Adjust training based on results"
+          - "Optimize for peak performance"
+
+      - id: "movement_quality_prep"
+        name: "Movement Quality Preparation"
+        type: "preparation"
+        duration: "5 minutes"
+        order: 2
+
+        implementation:
+          method: "Targeted movement preparation"
+          setup: "Open space for movement"
+          execution: "Address specific needs"
+          focus: "Movement quality optimization"
+
+        instructions:
+          - phase: "CORRECTIONS"
+            text: "Address any movement screen findings"
+          - phase: "ACTIVATION"
+            text: "Activate key muscle groups"
+          - phase: "INTEGRATION"
+            text: "Rehearse movement patterns"
+
+        cues:
+          - "Target specific needs"
+          - "Quality over quantity"
+          - "Prepare for peak performance"
+          - "Address any restrictions"
+
+# SCHEDULE OVERVIEW
+schedule_overview:
+  title: "Tuesday Schedule - Advanced Upper Body Power"
+  sessions:
+    - time: "07:20–08:35"
+      activity: "Tennis Precision Training"
+      instructions: "Technical mastery with precision focus"
+    - time: "08:40–09:00"
+      activity: "Movement Quality Preparation"
+      instructions: "Advanced movement preparation"
+    - time: "09:00–10:30"
+      activity: "Peak Upper Body Power Training"
+      exercises:
+        - name: "Barbell Bench Press"
+          sets_reps: "5×5"
+          instructions: "Peak loading with perfect technique"
+        - name: "Bent-over Barbell Row"
+          sets_reps: "4×6"
+          instructions: "Heavy pulling with control"
+        - name: "Overhead Press"
+          sets_reps: "4×8"
+          instructions: "Vertical pressing power"
+        - name: "Weighted Pull-ups"
+          sets_reps: "3×8"
+          instructions: "Advanced pulling strength"
+        - name: "Landmine Press"
+          sets_reps: "3×10 per side"
+          instructions: "Unilateral pressing power"
+    - time: "10:35–10:55"
+      activity: "Advanced Recovery Integration"
+      instructions: "Comprehensive recovery protocol"
+
+# SKILL TRAINING
+skill_training:
+  section_title: "Tennis Precision Training"
+  section_description: "Technical mastery with precision focus"
+
+  sessions:
+    - id: "precision_training"
+      type: "technical"
+      title: "Tennis Precision Training Session"
+      duration: "75 minutes"
+      intensity: "75-85%"
+
+      attribution:
+        methodology: "Professional precision training"
+        source: "Elite tennis technical development"
+        elite_use: "Tour-level precision methods"
+        verification: "ATP/WTA training protocols"
+
+      structure:
+        warm_up: "15 minutes"
+        main_work: "50 minutes"
+        cool_down: "10 minutes"
+
+      components:
+        - id: "precision_warm_up"
+          name: "Precision Movement Warm-up"
+          type: "preparation"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "15 minutes"
+            rest: "Continuous flow"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Racquet, balls, targets"
+            players: "Individual focus"
+
+          implementation:
+            method: "Progressive precision warm-up"
+            focus: "Technical preparation"
+            key_points: "Perfect movement patterns"
+
+          instructions:
+            - phase: "MOVEMENT"
+              text: "10 minutes precise court movement patterns"
+            - phase: "STROKES"
+              text: "5 minutes perfect stroke mechanics"
+
+          cues:
+            - "Perfect movement patterns"
+            - "Technical precision focus"
+            - "Quality over quantity"
+            - "Prepare for precision training"
+
+        - id: "technical_mastery"
+          name: "Technical Mastery Drills"
+          type: "technical"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "30 minutes"
+            rest: "Between drill sets"
+
+          setup:
+            court_area: "Full court with targets"
+            equipment: "Precision targets, cones"
+            players: "Practice partner or coach"
+
+          implementation:
+            method: "Precision drilling with targets"
+            focus: "Technical excellence"
+            key_points: "Consistency, accuracy, technique"
+
+          instructions:
+            - phase: "GROUNDSTROKES"
+              text: "15 minutes precision groundstroke targeting"
+            - phase: "SERVES"
+              text: "10 minutes serve precision training"
+            - phase: "VOLLEYS"
+              text: "5 minutes volley precision work"
+
+          cues:
+            - "Target precision focus"
+            - "Perfect technique every shot"
+            - "Consistency over power"
+            - "Build technical confidence"
+
+          success_criteria:
+            - metric: "Target accuracy"
+              target: "85%+"
+              tracking: "Shots hitting target zones"
+
+        - id: "pressure_precision"
+          name: "Precision Under Pressure"
+          type: "competitive"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "20 minutes"
+            rest: "Match play format"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Scoring system"
+            players: "Competitive partner"
+
+          implementation:
+            method: "Competitive precision challenges"
+            focus: "Maintain technique under pressure"
+            key_points: "Technical consistency, mental toughness"
+
+          instructions:
+            - phase: "SETUP"
+              text: "Establish precision challenges"
+            - phase: "COMPETE"
+              text: "Maintain precision under competitive pressure"
+            - phase: "EVALUATE"
+              text: "Assess technical maintenance"
+
+          cues:
+            - "Maintain technique under pressure"
+            - "Precision over power"
+            - "Stay mentally focused"
+            - "Technical consistency goal"
+
+          success_criteria:
+            - metric: "Technical maintenance"
+              target: "90%+"
+              tracking: "Technique quality under pressure"
+
+# CONDITIONING BLOCKS
+conditioning_blocks:
+  - id: "peak_upper_power"
+    type: "strength"
+    title: "Peak Upper Body Power Training"
+    description: "Maximum upper body power development"
+    duration: "90 minutes"
+
+    attribution:
+      methodology: "Peak upper body power protocols"
+      source: "Elite strength training research"
+      elite_use: "Professional athletes"
+      verification: "Upper body power literature"
+
+    exercises:
+      - id: "bench_press_peak"
+        name: "Barbell Bench Press (Peak Power)"
+        category: "primary"
+        order: 1
+
+        loading:
+          sets: "5"
+          reps: "5"
+          intensity: "85-90% 1RM"
+          rest: "3 minutes"
+          tempo: "3-1-X-0"
+
+        execution:
+          setup:
+            - "Optimal bench position"
+            - "Feet firmly planted"
+            - "Shoulder blades retracted"
+            - "Slight arch maintained"
+          technique:
+            - "3-second controlled descent"
+            - "1-second pause at chest"
+            - "Explosive concentric drive"
+            - "Full lockout completion"
+          safety:
+            - "Spotter for all sets"
+            - "Maintain form under load"
+            - "Safety bars if available"
+
+        cues:
+          - "Peak power loading"
+          - "Explosive intent every rep"
+          - "Perfect technique priority"
+          - "Control the eccentric"
+
+        progressions:
+          regression: "Reduce to 80% if form breaks"
+          standard: "5×5 @ 85-90%"
+          progression: "Add pause or chains"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+          sets:
+            - set: 1
+              target: "5 reps @ 85%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+            - set: 2
+              target: "5 reps @ 87%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+            - set: 3
+              target: "5 reps @ 90%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+            - set: 4
+              target: "5 reps @ 90%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+            - set: 5
+              target: "5 reps @ 90%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+
+        benefits:
+          primary: "Maximum upper body pressing power"
+          secondary: "Core stability under heavy load"
+          sport_specific: "Serve power and overhead strength"
+
+        attribution:
+          source: "Elite bench press protocols"
+          methodology: "Peak power development"
+          elite_use: "Professional strength training"
+          verification: "Bench press research"
+          context: "Week 3 upper body peak"
+          results: "Maximum pressing power"
+
+      - id: "bent_over_row_heavy"
+        name: "Bent-over Barbell Row (Heavy)"
+        category: "primary"
+        order: 2
+
+        loading:
+          sets: "4"
+          reps: "6"
+          intensity: "80-85% 1RM"
+          rest: "2.5 minutes"
+          tempo: "2-1-2-1"
+
+        execution:
+          setup:
+            - "Barbell at hip height"
+            - "Hip-width stance"
+            - "Hip hinge position"
+            - "Neutral spine maintenance"
+          technique:
+            - "Pull to lower ribs"
+            - "Squeeze shoulder blades"
+            - "2-second eccentric control"
+            - "Maintain flat back"
+          safety:
+            - "Avoid excessive forward lean"
+            - "Keep bar close to body"
+            - "Maintain spinal neutrality"
+
+        cues:
+          - "Heavy rowing power"
+          - "Flat back essential"
+          - "Pull with elbows"
+          - "Control the negative"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+        benefits:
+          primary: "Posterior chain strength"
+          secondary: "Postural stability"
+          sport_specific: "Backhand power and balance"
+
+      - id: "overhead_press_peak"
+        name: "Overhead Press (Peak Power)"
+        category: "primary"
+        order: 3
+
+        loading:
+          sets: "4"
+          reps: "8"
+          intensity: "75-80% 1RM"
+          rest: "2 minutes"
+          tempo: "2-1-1-1"
+
+        execution:
+          setup:
+            - "Barbell at shoulder height"
+            - "Feet hip-width apart"
+            - "Core engaged"
+            - "Neutral spine"
+          technique:
+            - "Press straight overhead"
+            - "Full lockout achieved"
+            - "Control descent"
+            - "No back arch"
+          safety:
+            - "Maintain core stability"
+            - "Don't hyperextend back"
+            - "Control the weight"
+
+        cues:
+          - "Vertical pressing power"
+          - "Core stability priority"
+          - "Full lockout"
+          - "No back arch"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+        benefits:
+          primary: "Vertical pressing strength"
+          secondary: "Core stability"
+          sport_specific: "Serve power and overhead shots"
+
+      - id: "weighted_pullups"
+        name: "Weighted Pull-ups"
+        category: "primary"
+        order: 4
+
+        loading:
+          sets: "3"
+          reps: "8"
+          intensity: "Bodyweight + 15-25 lbs"
+          rest: "2 minutes"
+          tempo: "2-1-2-1"
+
+        execution:
+          setup:
+            - "Weight belt or dumbbell"
+            - "Overhand grip"
+            - "Full hang position"
+            - "Shoulder width grip"
+          technique:
+            - "Pull chest to bar"
+            - "Control descent"
+            - "Full range of motion"
+            - "No swinging"
+          safety:
+            - "Secure weight attachment"
+            - "Control all reps"
+            - "Full ROM priority"
+
+        cues:
+          - "Weighted pulling strength"
+          - "Chest to bar"
+          - "Control every rep"
+          - "Full range of motion"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+        benefits:
+          primary: "Pulling strength development"
+          secondary: "Grip strength"
+          sport_specific: "Backhand strength and stability"
+
+      - id: "landmine_press"
+        name: "Landmine Press (Unilateral)"
+        category: "auxiliary"
+        order: 5
+
+        loading:
+          sets: "3"
+          reps: "10 per side"
+          intensity: "Moderate to heavy"
+          rest: "90 seconds"
+          tempo: "2-1-1-1"
+
+        execution:
+          setup:
+            - "Landmine attachment"
+            - "Staggered stance"
+            - "Opposite foot forward"
+            - "Barbell at shoulder"
+          technique:
+            - "Press up and forward"
+            - "Control descent"
+            - "Maintain stance"
+            - "Core engaged"
+          safety:
+            - "Maintain balance"
+            - "Control the weight"
+            - "No excessive lean"
+
+        cues:
+          - "Unilateral pressing power"
+          - "Maintain balance"
+          - "Core stability"
+          - "Control movement"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+        benefits:
+          primary: "Unilateral pressing strength"
+          secondary: "Core stability"
+          sport_specific: "Tennis-specific pressing patterns"
+
+  - id: "upper_power_finisher"
+    type: "power"
+    title: "Upper Body Power Finisher"
+    description: "Explosive upper body power development"
+    duration: "15 minutes"
+
+    exercises:
+      - id: "med_ball_slams"
+        name: "Medicine Ball Overhead Slams"
+        category: "explosive"
+        order: 1
+
+        loading:
+          sets: "4"
+          reps: "8"
+          intensity: "Maximum effort"
+          rest: "90 seconds"
+
+        execution:
+          setup:
+            - "Medicine ball (4-5kg)"
+            - "Open floor space"
+            - "Feet shoulder-width"
+          technique:
+            - "Raise ball overhead"
+            - "Full body extension"
+            - "Maximum slam force"
+            - "Quick pick-up"
+          safety:
+            - "Clear landing area"
+            - "Control ball path"
+            - "Proper ball weight"
+
+        cues:
+          - "Maximum explosive power"
+          - "Full body extension"
+          - "Powerful slam"
+          - "Quick recovery"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+        benefits:
+          primary: "Explosive power development"
+          secondary: "Core integration"
+          sport_specific: "Serve power and overhead shots"
+
+# RECOVERY PROTOCOLS
+recovery_protocols:
+  - id: "advanced_recovery_integration"
+    type: "comprehensive"
+    title: "Advanced Recovery Integration"
+    duration: "20 minutes"
+    timing: "Post-training"
+
+    attribution:
+      methodology: "Comprehensive recovery protocols"
+      source: "Elite recovery science"
+      elite_use: "Professional athletes"
+      verification: "Recovery research"
+
+    components:
+      - id: "upper_body_mobility"
+        name: "Upper Body Mobility Focus"
+        type: "mobility"
+        duration: "8 minutes"
+        order: 1
+
+        implementation:
+          method: "Targeted upper body mobility"
+          intensity: "Light to moderate"
+          equipment: "Foam roller, bands"
+
+        instructions:
+          - "Thoracic spine mobility: 2 minutes"
+          - "Shoulder mobility: 2 minutes"
+          - "Chest stretching: 2 minutes"
+          - "Lat stretching: 2 minutes"
+
+        focus_areas:
+          - "Thoracic spine"
+          - "Shoulders"
+          - "Chest muscles"
+          - "Latissimus dorsi"
+
+        cues:
+          - "Target worked areas"
+          - "Slow, controlled movements"
+          - "Breathe deeply"
+          - "Feel the release"
+
+      - id: "parasympathetic_activation"
+        name: "Parasympathetic Activation"
+        type: "breathing"
+        duration: "7 minutes"
+        order: 2
+
+        implementation:
+          method: "Advanced breathing protocol"
+          intensity: "Relaxation focus"
+          equipment: "Quiet environment"
+
+        instructions:
+          - "2 minutes 4-7-8 breathing"
+          - "3 minutes coherent breathing (5-5-5-5)"
+          - "2 minutes meditation breathing"
+
+        cues:
+          - "Activate recovery systems"
+          - "Reduce nervous system activation"
+          - "Prepare for adaptation"
+          - "Mental relaxation"
+
+      - id: "session_evaluation"
+        name: "Session Evaluation & Planning"
+        type: "assessment"
+        duration: "5 minutes"
+        order: 3
+
+        implementation:
+          method: "Comprehensive session review"
+          intensity: "Evaluation focus"
+          equipment: "Training log"
+
+        instructions:
+          - "Document all training metrics"
+          - "Assess performance quality"
+          - "Note any concerns"
+          - "Plan next session modifications"
+
+        cues:
+          - "Honest evaluation"
+          - "Document everything"
+          - "Plan improvements"
+          - "Track progress"
+
+# SESSION METRICS
+session_metrics:
+  volume:
+    tennis_minutes: 75
+    strength_minutes: 90
+    warmup_minutes: 20
+    recovery_minutes: 20
+    total_minutes: 205
+
+  intensity:
+    tennis_average: "75-85%"
+    strength_average: "85-90%"
+    overall_rpe: 8.5
+
+  load_calculations:
+    upper_body_tonnage: "Peak loading"
+    volume_load: "Maximum upper body"
+
+  distances:
+    court_coverage: "3.5 km"
+    precision_work: "High accuracy focus"
+
+# COACHING NOTES
+coaching_notes:
+  technical_focus:
+    - "Peak upper body power with perfect technique"
+    - "Tennis precision under controlled conditions"
+    - "Movement quality maintenance"
+
+  load_management:
+    - "Highest upper body loads of Phase 1"
+    - "Monitor fatigue accumulation"
+    - "Maintain technique standards"
+
+  progression_markers:
+    - "All heavy sets completed"
+    - "Tennis precision maintained"
+    - "Movement quality sustained"
+
+  phase_1_integration:
+    - "Upper body power peak"
+    - "Technical precision mastery"
+    - "Preparation for Phase 2"
+
+# LEVEL MODIFICATIONS
+level_modifications:
+  beginner:
+    volume: "Reduce to 3 sets main exercises"
+    intensity: "75-80% 1RM"
+    tennis: "Focus on technique over precision"
+    recovery: "Extend recovery periods"
+
+  intermediate:
+    volume: "As prescribed"
+    intensity: "As prescribed"
+    tennis: "As prescribed"
+    recovery: "As prescribed"
+
+  advanced:
+    volume: "Add 1 set to main exercises"
+    intensity: "90-95% 1RM"
+    tennis: "Increase precision demands"
+    recovery: "Add advanced techniques"
+
+# WEEK INTEGRATION
+week_integration:
+  weekly_theme: "Peak Upper Body Power"
+  daily_priority: "Upper body power development"
+  phase_completion: "Upper body foundation peak"
+  
+  connects_to:
+    monday: "Balances lower body peak"
+    wednesday: "Prepares for power integration"
+    friday: "Builds toward total integration"
+    
+  phase_transition:
+    preparation: "Upper body power established"
+    adaptations: "Maximum pressing strength"
+    next_focus: "Power application and speed"
+
+# TRACKING REQUIREMENTS
+tracking:
+  required:
+    - "All upper body loads"
+    - "Tennis precision metrics"
+    - "Movement quality scores"
+    - "Recovery indicators"
+    - "Session RPE"
+
+  optional:
+    - "Bar velocity on main lifts"
+    - "Heart rate during tennis"
+    - "Video analysis"
+    - "Serve speed tracking"
+
+  week_3_specific:
+    - "Upper body strength peaks"
+    - "Tennis precision improvements"
+    - "Phase 1 upper body completion"
+    - "Readiness for power phase"
+
+# NAVIGATION
+navigation:
+  week_overview: "./"
+  next_day: "wednesday"
+  previous_day: "monday"
+  phase_status: "Phase 1 - Upper Body Peak"

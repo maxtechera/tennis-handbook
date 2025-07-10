@@ -1,0 +1,1057 @@
+# Week 3 - Monday: Peak Foundation Intensity & Tennis Integration
+metadata:
+  # Basic identifiers
+  period: 3
+  period_name: "Peak Foundation"
+  day_id: "week_3_monday"
+  day_name: "Monday"
+
+  # Workout details
+  title: "Peak Foundation Intensity & Elite Tennis Integration"
+  subtitle: "Final Week of Phase 1 - Maximum Foundation Loading"
+  phase: "Phase 1: Elite Foundation (Final Week)"
+  focus_areas:
+    - "Peak Foundation Loading"
+    - "Elite Tennis Integration"
+    - "Phase 1 Culmination"
+
+  # Training parameters
+  training_parameters:
+    volume: "120% (peak foundation)"
+    intensity: "75-85%"
+    density: "high"
+    duration: "5 hours"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Peak Foundation Protocol"
+      type: "periodization"
+      attribution:
+        methodology: "Block periodization principles"
+        source: "Elite sports science protocols"
+        verification: "Evidence-based training progression"
+        context: "Week 3 peak before phase transition"
+        results: "Maximizes foundation adaptations"
+    - name: "Advanced Tennis Integration"
+      type: "skill"
+      attribution:
+        source: "Professional tennis training protocols"
+        elite_use: "ATP/WTA week 3 intensity patterns"
+        verification: "Tour-level training documentation"
+        context: "Phase 1 skill consolidation"
+    - name: "Elite Load Management"
+      type: "strength"
+      attribution:
+        methodology: "Progressive overload culmination"
+        source: "Strength & Conditioning research"
+        verification: "Periodization literature"
+        context: "Peak foundation before transition"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Barbell and weights"
+      - "Tennis court access"
+      - "Heart rate monitor/HRV device"
+      - "Dumbbells (5-35 lbs)"
+      - "Bench or box (18 inches)"
+      - "Resistance bands"
+      - "Medicine ball (3-5kg)"
+      - "Foam roller"
+    optional:
+      - "Velocity tracking device"
+      - "Agility ladder"
+      - "Cones for markers"
+      - "Dowel rod or broomstick"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [Tuesday ➡️](tuesday)"
+    overview_link: "./"
+    next_link: "tuesday"
+    previous_link: null
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Phase 1 Peak Assessment"
+      preparation: "Advanced Movement Preparation"
+      skill_training: "Elite Tennis Consolidation"
+      conditioning: "Peak Foundation Strength"
+      recovery: "Advanced Recovery Protocol"
+
+    ui_elements:
+      - type: "success"
+        title: "Week 3 Peak Foundation"
+        content: "This is the culmination of Phase 1 - highest volume and intensity before Phase 2 transition"
+        icon: "🏆"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "phase_1_peak_assessment"
+    type: "progress"
+    title: "Phase 1 Peak Assessment"
+    timing: "pre-session"
+    duration: "30 minutes"
+    description: "Comprehensive assessment of Phase 1 adaptations"
+
+    attribution:
+      source: "Elite periodization protocols"
+      methodology: "Phase culmination assessment"
+      validation: "Evidence-based progress tracking"
+      elite_use: "Used by professional athletes"
+
+    components:
+      - id: "movement_quality_progression"
+        name: "Movement Quality Progression Check"
+        type: "movement"
+        category: "primary"
+
+        measurement:
+          protocol: "Compare to Week 1 baseline with video analysis"
+          repetitions: "5 reps overhead squat"
+          equipment: "Smartphone for video comparison"
+
+        standards:
+          elite_benchmark: "Perfect alignment with no compensations"
+          progression_target: "Significant improvement from Week 1"
+          phase_1_completion: "Movement restrictions resolved"
+
+        scoring:
+          method: "Comparative assessment"
+          scale: "Improved/Maintained/Declined"
+          recording: "Document all improvements and remaining limitations"
+
+        context:
+          description: "Tracks movement quality improvements over 3 weeks"
+          application: "Validates Phase 1 foundation work effectiveness"
+
+      - id: "strength_benchmark_retest"
+        name: "Strength Benchmark Retest"
+        type: "strength"
+        category: "primary"
+
+        measurement:
+          protocol: "Retest Week 1 baseline movements"
+          repetitions: "Max reps or 3RM test"
+          equipment: "Same as Week 1 baseline"
+
+        standards:
+          elite_benchmark: "15-25% improvement from Week 1"
+          good_standard: "10-15% improvement"
+          needs_work: "<10% improvement"
+
+        scoring:
+          method: "Percentage improvement calculation"
+          scale: "Percentage change from baseline"
+          recording: "Document exact improvements and comparison"
+
+        context:
+          description: "Validates strength gains from Phase 1"
+          application: "Confirms readiness for Phase 2 progression"
+
+      - id: "power_development_check"
+        name: "Power Development Assessment"
+        type: "power"
+        category: "primary"
+
+        measurement:
+          protocol: "Vertical jump and medicine ball throw retest"
+          repetitions: "5 attempts each"
+          equipment: "Jump mat and 4kg medicine ball"
+
+        standards:
+          elite_benchmark: "8-12% improvement in power output"
+          good_standard: "5-8% improvement"
+          needs_work: "<5% improvement"
+
+        scoring:
+          method: "Power output comparison"
+          scale: "Percentage improvement"
+          recording: "Document power gains and technique improvements"
+
+        context:
+          description: "Tracks explosive power development"
+          application: "Validates Phase 1 power foundation"
+
+      - id: "tennis_skill_integration"
+        name: "Tennis Skill Integration Assessment"
+        type: "skill"
+        category: "primary"
+
+        measurement:
+          protocol: "Serve speed and accuracy test"
+          repetitions: "10 maximum effort serves"
+          equipment: "Radar gun and target zones"
+
+        standards:
+          elite_benchmark: "5-8% serve speed increase + improved accuracy"
+          good_standard: "3-5% speed increase"
+          needs_work: "<3% improvement"
+
+        scoring:
+          method: "Speed and accuracy metrics"
+          scale: "Speed (mph) and accuracy percentage"
+          recording: "Document speed gains and consistency improvements"
+
+        context:
+          description: "Measures tennis-specific skill transfer"
+          application: "Validates strength-to-skill transfer"
+
+  - id: "readiness_optimization"
+    type: "daily"
+    title: "Peak Performance Readiness"
+    timing: "pre-session"
+    duration: "15 minutes"
+    description: "Advanced readiness assessment for peak training"
+
+    components:
+      - id: "advanced_hrv_analysis"
+        name: "Advanced HRV Analysis"
+        type: "physiological"
+        category: "primary"
+
+        measurement:
+          protocol: "HRV with trend analysis vs. Week 1-2 baseline"
+          duration: "5 minutes"
+          equipment: "HRV4Training app with chest strap"
+
+        standards:
+          optimal: "HRV within 5% of 3-week average"
+          acceptable: "HRV 5-10% below 3-week average"
+          needs_modification: "HRV >10% below average"
+
+        context:
+          description: "Advanced HRV interpretation for peak training"
+          application: "Optimize training load for Phase 1 culmination"
+
+      - id: "neural_readiness_advanced"
+        name: "Neural Readiness Assessment"
+        type: "neural"
+        category: "primary"
+
+        measurement:
+          protocol: "CNS tap test + reactive strength index"
+          duration: "5 minutes"
+          equipment: "Smartphone tap test app"
+
+        standards:
+          optimal: "Within 5% of personal best"
+          acceptable: "5-10% below personal best"
+          needs_modification: ">10% below personal best"
+
+        context:
+          description: "Advanced neural readiness for peak performance"
+          application: "Ensure nervous system readiness for high-intensity training"
+
+      - id: "motivation_confidence_check"
+        name: "Motivation & Confidence Assessment"
+        type: "psychological"
+        category: "secondary"
+
+        measurement:
+          protocol: "Self-assessment questionnaire"
+          duration: "3 minutes"
+          equipment: "Assessment form"
+
+        standards:
+          optimal: "Motivation 9-10/10, Confidence 8-10/10"
+          acceptable: "Motivation 7-8/10, Confidence 6-8/10"
+          needs_support: "Either metric <6/10"
+
+        context:
+          description: "Psychological readiness for peak training"
+          application: "Ensure mental preparation for Phase 1 culmination"
+
+# TIMELINE/SCHEDULE
+schedule:
+  type: "time-based"
+  total_duration: "5 hours"
+
+  blocks:
+    - id: "morning_block"
+      time: "6:00-7:30"
+      title: "Advanced Morning Protocol"
+      type: "preparation"
+
+      activities:
+        - name: "Advanced Morning Protocol"
+          duration: "90 minutes"
+          type: "preparation"
+          description: "Enhanced preparation for peak training"
+
+      carousel_data:
+        phase_id: "morning"
+        phase_title: "Advanced Morning"
+        phase_icon: "🌅"
+        location: "home/hotel"
+
+    - id: "tennis_block"
+      time: "7:30-8:45"
+      title: "Elite Tennis Integration"
+      type: "main"
+
+      activities:
+        - name: "Elite Tennis Integration"
+          duration: "75 minutes"
+          type: "main"
+          description: "Advanced tennis skills with tactical focus"
+
+      carousel_data:
+        phase_id: "tennis"
+        phase_title: "Elite Tennis"
+        phase_icon: "🎾"
+        location: "tennis_court"
+
+    - id: "movement_block"
+      time: "8:50-9:15"
+      title: "Advanced Movement Preparation"
+      type: "preparation"
+
+      activities:
+        - name: "Advanced Movement Preparation"
+          duration: "25 minutes"
+          type: "warm-up"
+          description: "Comprehensive movement preparation"
+
+      carousel_data:
+        phase_id: "movement"
+        phase_title: "Advanced Movement"
+        phase_icon: "🏃"
+        location: "gym/court"
+
+    - id: "strength_block"
+      time: "9:15-10:45"
+      title: "Peak Foundation Strength"
+      type: "main"
+
+      activities:
+        - name: "Peak Foundation Strength Block"
+          duration: "90 minutes"
+          type: "main"
+          description: "Maximum foundation loading"
+
+      carousel_data:
+        phase_id: "strength"
+        phase_title: "Peak Strength"
+        phase_icon: "💪"
+        location: "gym"
+
+    - id: "recovery_block"
+      time: "10:50-11:15"
+      title: "Advanced Recovery & Assessment"
+      type: "recovery"
+
+      activities:
+        - name: "Advanced Recovery & Assessment"
+          duration: "25 minutes"
+          type: "recovery"
+          description: "Comprehensive recovery protocol"
+
+      carousel_data:
+        phase_id: "recovery"
+        phase_title: "Advanced Recovery"
+        phase_icon: "🧊"
+        location: "recovery_area"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "advanced_morning_protocol"
+    type: "morning"
+    title: "Advanced Morning Protocol - Phase 1 Peak"
+    duration: "90 minutes"
+    timing: "6:00-7:30"
+
+    attribution:
+      source: "Elite athlete morning protocols"
+      elite_use: "Professional preparation routines"
+      verification: "High-performance training literature"
+
+    activities:
+      - id: "enhanced_breathing"
+        name: "Enhanced Breathing Protocol"
+        type: "breathing"
+        duration: "25 minutes"
+        order: 1
+
+        implementation:
+          method: "Advanced breathing techniques"
+          setup: "Quiet space with yoga mat"
+          execution: "Progressive breathing protocols"
+          focus: "Nervous system optimization"
+
+        instructions:
+          - phase: "PREPARATION"
+            text: "5 minutes basic 4-7-8 breathing to establish baseline"
+          - phase: "ACTIVATION"
+            text: "5 minutes Wim Hof breathing (30 breaths, 3 rounds)"
+          - phase: "RECOVERY"
+            text: "10 minutes extended 4-7-8 breathing for parasympathetic activation"
+          - phase: "INTEGRATION"
+            text: "5 minutes visualization of perfect training execution"
+
+        cues:
+          - "Progressive breathing complexity"
+          - "Balance activation with recovery"
+          - "Focus on nervous system preparation"
+          - "Maintain control throughout all phases"
+
+      - id: "advanced_mobility"
+        name: "Advanced Mobility Sequence"
+        type: "mobility"
+        duration: "30 minutes"
+        order: 2
+
+        implementation:
+          method: "Comprehensive mobility protocol"
+          setup: "Full movement space"
+          execution: "Progressive mobility sequence"
+          focus: "Address all movement restrictions"
+
+        instructions:
+          - phase: "GENERAL"
+            text: "10 minutes full-body dynamic warm-up"
+          - phase: "SPECIFIC"
+            text: "15 minutes targeted mobility work on Week 1-2 limitations"
+          - phase: "INTEGRATION"
+            text: "5 minutes movement pattern rehearsal"
+
+        cues:
+          - "Target identified restrictions"
+          - "Progressive range of motion"
+          - "Quality over quantity"
+          - "Prepare for peak performance"
+
+      - id: "advanced_activation"
+        name: "Advanced Neural Activation"
+        type: "activation"
+        duration: "20 minutes"
+        order: 3
+
+        implementation:
+          method: "Neural activation protocols"
+          setup: "Space for dynamic movements"
+          execution: "Progressive activation sequence"
+          focus: "Nervous system priming"
+
+        instructions:
+          - phase: "BASIC"
+            text: "5 minutes light calisthenics"
+          - phase: "REACTIVE"
+            text: "10 minutes reactive drills and quick movements"
+          - phase: "SPECIFIC"
+            text: "5 minutes sport-specific activation"
+
+        cues:
+          - "Progressive intensity build"
+          - "Focus on movement quality"
+          - "Prepare nervous system for peak performance"
+          - "End feeling energized but not fatigued"
+
+      - id: "comprehensive_assessment"
+        name: "Comprehensive Assessment Protocol"
+        type: "assessment"
+        duration: "15 minutes"
+        order: 4
+
+        implementation:
+          method: "Multi-modal assessment"
+          setup: "Assessment tools ready"
+          execution: "Systematic evaluation"
+          focus: "Readiness optimization"
+
+        instructions:
+          - phase: "PHYSIOLOGICAL"
+            text: "HRV, heart rate, blood pressure, hydration status"
+          - phase: "NEURAL"
+            text: "CNS tap test, reactive strength, coordination check"
+          - phase: "PSYCHOLOGICAL"
+            text: "Motivation, confidence, focus assessment"
+          - phase: "INTEGRATION"
+            text: "Overall readiness score and training modifications"
+
+        cues:
+          - "Honest self-assessment"
+          - "Consider all factors"
+          - "Adjust training based on assessment"
+          - "Optimize for peak performance"
+
+# SKILL TRAINING
+skill_training:
+  section_title: "Elite Tennis Integration"
+  section_description: "Advanced tennis skills with tactical mastery"
+
+  sessions:
+    - id: "elite_tennis_session"
+      type: "integrated"
+      title: "Elite Tennis Integration Session"
+      duration: "75 minutes"
+      intensity: "80-90%"
+
+      attribution:
+        methodology: "Professional tennis training protocols"
+        source: "ATP/WTA training standards"
+        elite_use: "Used by top 100 players"
+        verification: "Tour-level training documentation"
+
+      structure:
+        warm_up: "15 minutes"
+        main_work: "50 minutes"
+        cool_down: "10 minutes"
+
+      components:
+        - id: "advanced_warm_up"
+          name: "Advanced Court Warm-up"
+          type: "preparation"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "15 minutes"
+            rest: "Continuous movement"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Tennis racquet, balls, cones"
+            players: "Individual or partner"
+
+          implementation:
+            method: "Progressive tennis-specific warm-up"
+            focus: "Court movement and stroke preparation"
+            key_points: "Quality movement patterns, progressive intensity"
+
+          instructions:
+            - phase: "MOVEMENT"
+              text: "5 minutes progressive court movement - side shuffles, crossovers, direction changes"
+            - phase: "STROKES"
+              text: "5 minutes shadow strokes and mini-tennis"
+            - phase: "INTEGRATION"
+              text: "5 minutes progressive rally building"
+
+          cues:
+            - "Progressive intensity build"
+            - "Focus on movement quality"
+            - "Prepare for advanced training"
+            - "End feeling ready for peak performance"
+
+        - id: "tactical_mastery"
+          name: "Tactical Mastery Training"
+          type: "tactical"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "25 minutes"
+            rest: "Between patterns"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Targets, cones, balls"
+            players: "Practice partner or coach"
+
+          implementation:
+            method: "Advanced tactical pattern practice"
+            focus: "Pattern execution under pressure"
+            key_points: "Precision, timing, decision-making"
+
+          instructions:
+            - phase: "PATTERN_1"
+              text: "10 minutes crosscourt rally patterns with attacking opportunities"
+            - phase: "PATTERN_2"
+              text: "10 minutes approach and net play sequences"
+            - phase: "INTEGRATION"
+              text: "5 minutes combining patterns in points"
+
+          cues:
+            - "Execute patterns with precision"
+            - "Recognize tactical opportunities"
+            - "Maintain intensity throughout"
+            - "Focus on decision-making quality"
+
+          success_criteria:
+            - metric: "Pattern success rate"
+              target: "85%"
+              tracking: "Count successful pattern executions"
+
+        - id: "competitive_intensity"
+          name: "Competitive Intensity Training"
+          type: "competition"
+          category: "primary"
+
+          time_structure:
+            type: "duration"
+            value: "25 minutes"
+            rest: "Match play rest"
+
+          setup:
+            court_area: "Full court"
+            equipment: "Match play setup"
+            players: "Competitive partner"
+
+          implementation:
+            method: "High-intensity competitive practice"
+            focus: "Match-level intensity and decision-making"
+            key_points: "Compete fully, maintain technique under pressure"
+
+          instructions:
+            - phase: "SETUP"
+              text: "Establish match conditions and scoring"
+            - phase: "COMPETE"
+              text: "Play competitive points/games with full intensity"
+            - phase: "ANALYZE"
+              text: "Brief analysis of tactical execution"
+
+          cues:
+            - "Match-level intensity"
+            - "Compete on every point"
+            - "Maintain technical standards"
+            - "Focus on winning patterns"
+
+          success_criteria:
+            - metric: "Competitive intensity maintenance"
+              target: "90%+"
+              tracking: "Sustained effort throughout session"
+
+# CONDITIONING BLOCKS
+conditioning_blocks:
+  - id: "peak_foundation_strength"
+    type: "strength"
+    title: "Peak Foundation Strength Block"
+    description: "Maximum foundation loading for Phase 1 culmination"
+    duration: "90 minutes"
+
+    attribution:
+      methodology: "Peak foundation training protocols"
+      source: "Strength & conditioning research"
+      elite_use: "Professional athletes phase culmination"
+      verification: "Evidence-based periodization"
+
+    exercises:
+      - id: "squat_peak"
+        name: "Barbell Back Squat (Peak Foundation)"
+        category: "primary"
+        order: 1
+
+        loading:
+          sets: "5"
+          reps: "6"
+          intensity: "80-85% 1RM"
+          rest: "3 minutes"
+          tempo: "4-1-X-0"
+
+        execution:
+          setup:
+            - "Optimal bar position on upper back"
+            - "Feet shoulder-width apart"
+            - "Create full-body tension"
+          technique:
+            - "4-second controlled descent"
+            - "1-second pause at bottom"
+            - "Explosive concentric drive"
+            - "Full hip and knee extension"
+          safety:
+            - "Maintain spinal neutrality"
+            - "Use safety bars if available"
+            - "Spotter for final sets"
+
+        cues:
+          - "Peak foundation loading"
+          - "Perfect technique under heavy load"
+          - "Explosive intent on every rep"
+          - "Control the eccentric phase"
+
+        progressions:
+          regression: "Reduce to 75% if form breaks"
+          standard: "5×6 @ 80-85%"
+          progression: "Add tempo pause if easy"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+          sets:
+            - set: 1
+              target: "6 reps @ 80%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+            - set: 2
+              target: "6 reps @ 82%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+            - set: 3
+              target: "6 reps @ 85%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+            - set: 4
+              target: "6 reps @ 85%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+            - set: 5
+              target: "6 reps @ 85%"
+              actual: ""
+              rpe: ""
+              notes: "___"
+
+        benefits:
+          primary: "Maximum lower body strength"
+          secondary: "Core stability under load"
+          sport_specific: "Serve power and court movement"
+
+        attribution:
+          source: "Advanced squat protocols"
+          methodology: "Peak foundation training"
+          elite_use: "Professional strength development"
+          verification: "Strength training research"
+          context: "Phase 1 culmination"
+          results: "Maximum strength gains"
+
+      - id: "deadlift_romanian_peak"
+        name: "Romanian Deadlift (Peak Loading)"
+        category: "primary"
+        order: 2
+
+        loading:
+          sets: "4"
+          reps: "8"
+          intensity: "75-80% 1RM"
+          rest: "2.5 minutes"
+          tempo: "3-1-1-1"
+
+        execution:
+          setup:
+            - "Barbell at hip height"
+            - "Feet hip-width apart"
+            - "Neutral spine position"
+          technique:
+            - "Hip hinge initiation"
+            - "3-second eccentric control"
+            - "Deep hamstring stretch"
+            - "Explosive hip extension"
+          safety:
+            - "Maintain flat back"
+            - "Bar stays close to body"
+            - "Stop at flexibility limit"
+
+        cues:
+          - "Hip hinge pattern mastery"
+          - "Feel deep hamstring stretch"
+          - "Explosive hip drive"
+          - "Maintain spinal alignment"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+        benefits:
+          primary: "Posterior chain strength"
+          secondary: "Hip mobility and control"
+          sport_specific: "Serve power and court movement"
+
+      - id: "split_squat_advanced"
+        name: "Bulgarian Split Squat (Advanced Loading)"
+        category: "unilateral"
+        order: 3
+
+        loading:
+          sets: "4"
+          reps: "10 per side"
+          intensity: "Bodyweight + 25-35 lbs"
+          rest: "90 seconds"
+          tempo: "2-1-1-1"
+
+        execution:
+          setup:
+            - "Rear foot elevated on bench"
+            - "Front foot 2.5-3 feet forward"
+            - "Dumbbells in each hand"
+          technique:
+            - "Descend straight down"
+            - "Front leg does the work"
+            - "Drive through front heel"
+            - "Maintain upright torso"
+          safety:
+            - "Control descent speed"
+            - "Avoid forward lean"
+            - "Balance before adding weight"
+
+        cues:
+          - "Advanced loading progression"
+          - "Unilateral strength development"
+          - "Control and stability focus"
+          - "Feel front leg working"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+      - id: "calf_raises_heavy"
+        name: "Heavy Calf Raises (Peak Loading)"
+        category: "auxiliary"
+        order: 4
+
+        loading:
+          sets: "4"
+          reps: "15"
+          intensity: "Bodyweight + 40-50 lbs"
+          rest: "90 seconds"
+          tempo: "2-1-3-1"
+
+        execution:
+          setup:
+            - "Stand on platform edge"
+            - "Balls of feet on platform"
+            - "Heavy dumbbells or barbell"
+          technique:
+            - "Full range of motion"
+            - "2-second concentric"
+            - "1-second pause at top"
+            - "3-second eccentric"
+          safety:
+            - "Maintain balance"
+            - "Don't bounce at bottom"
+            - "Control the weight"
+
+        cues:
+          - "Heavy loading progression"
+          - "Full range of motion"
+          - "Control every rep"
+          - "Build calf strength and power"
+
+        tracking:
+          type: "standard"
+          format: "sets_reps"
+
+      - id: "core_integration_advanced"
+        name: "Advanced Core Integration"
+        category: "core"
+        order: 5
+
+        loading:
+          sets: "3"
+          reps: "Circuit format"
+          intensity: "Advanced"
+          rest: "2 minutes between circuits"
+
+        execution:
+          setup:
+            - "Circuit stations prepared"
+            - "Equipment ready"
+            - "Timer set"
+          technique:
+            - "Pallof press: 12 per side"
+            - "Dead bugs: 10 per side"
+            - "Plank variations: 30 seconds"
+            - "Russian twists: 20 total"
+          safety:
+            - "Maintain form throughout"
+            - "Don't rush movements"
+            - "Quality over quantity"
+
+        cues:
+          - "Advanced core integration"
+          - "Anti-rotation focus"
+          - "Quality movement patterns"
+          - "Tennis-specific core strength"
+
+        tracking:
+          type: "circuit"
+          format: "rounds"
+
+# RECOVERY PROTOCOLS
+recovery_protocols:
+  - id: "advanced_recovery"
+    type: "comprehensive"
+    title: "Advanced Recovery Protocol"
+    duration: "25 minutes"
+    timing: "Post-training"
+
+    attribution:
+      methodology: "Advanced recovery protocols"
+      source: "Elite sports science"
+      elite_use: "Professional athletes"
+      verification: "Recovery research"
+
+    components:
+      - id: "contrast_therapy"
+        name: "Contrast Therapy Protocol"
+        type: "therapy"
+        duration: "8 minutes"
+        order: 1
+
+        implementation:
+          method: "Hot/cold contrast therapy"
+          intensity: "Moderate to high contrast"
+          equipment: "Hot and cold water access"
+
+        instructions:
+          - "2 minutes hot water (comfortable warm)"
+          - "1 minute cold water (as cold as tolerable)"
+          - "Repeat cycle 2 more times"
+          - "End with 1 minute cold water"
+
+        cues:
+          - "Enhance circulation"
+          - "Reduce inflammation"
+          - "Accelerate recovery"
+          - "Control breathing throughout"
+
+      - id: "advanced_breathing"
+        name: "Advanced Recovery Breathing"
+        type: "breathing"
+        duration: "7 minutes"
+        order: 2
+
+        implementation:
+          method: "Multi-phase breathing protocol"
+          intensity: "Relaxation focus"
+          equipment: "Quiet space"
+
+        instructions:
+          - "2 minutes 4-7-8 breathing"
+          - "3 minutes box breathing (4-4-4-4)"
+          - "2 minutes natural breathing with visualization"
+
+        cues:
+          - "Parasympathetic activation"
+          - "Nervous system recovery"
+          - "Mental relaxation"
+          - "Visualization of successful training"
+
+      - id: "comprehensive_assessment"
+        name: "Comprehensive Session Assessment"
+        type: "assessment"
+        duration: "10 minutes"
+        order: 3
+
+        implementation:
+          method: "Multi-modal assessment"
+          intensity: "Evaluation focus"
+          equipment: "Assessment tools"
+
+        instructions:
+          - "Document all training metrics"
+          - "Assess training quality (1-10)"
+          - "Note any technical breakdowns"
+          - "Plan modifications for next session"
+          - "Record recovery indicators"
+
+        cues:
+          - "Honest self-assessment"
+          - "Document everything"
+          - "Plan for progression"
+          - "Track recovery needs"
+
+# SESSION METRICS
+session_metrics:
+  volume:
+    tennis_minutes: 75
+    strength_minutes: 90
+    warmup_minutes: 25
+    recovery_minutes: 25
+    morning_protocol_minutes: 90
+    total_minutes: 305
+
+  intensity:
+    tennis_average: "80-90%"
+    strength_average: "80-85%"
+    overall_rpe: 8.5
+
+  load_calculations:
+    total_tonnage: "Peak foundation loading"
+    volume_load: "Maximum for Phase 1"
+
+  distances:
+    estimated_court_coverage: "4.5 km"
+    total_movement: "Comprehensive"
+
+# COACHING NOTES
+coaching_notes:
+  technical_focus:
+    - "Peak foundation loading with perfect technique"
+    - "Advanced tennis integration"
+    - "Maintain quality under maximum load"
+
+  load_management:
+    - "Highest volume and intensity of Phase 1"
+    - "Monitor for excessive fatigue"
+    - "Maintain technique standards"
+
+  progression_markers:
+    - "All sets completed with good form"
+    - "Strength improvements from Week 1"
+    - "Tennis skills maintained under fatigue"
+
+  phase_1_completion:
+    - "Maximum foundation adaptations"
+    - "Readiness for Phase 2 transition"
+    - "Consolidated movement patterns"
+
+# LEVEL MODIFICATIONS
+level_modifications:
+  beginner:
+    volume: "Reduce to 3 sets per exercise"
+    intensity: "70-75% 1RM"
+    tennis: "Reduce to 60 minutes"
+    recovery: "Extend recovery time"
+
+  intermediate:
+    volume: "As prescribed"
+    intensity: "As prescribed"
+    tennis: "As prescribed"
+    recovery: "As prescribed"
+
+  advanced:
+    volume: "Add 1 set to main lifts"
+    intensity: "85-90% 1RM"
+    tennis: "Increase to 90 minutes"
+    recovery: "Add advanced techniques"
+
+# WEEK INTEGRATION
+week_integration:
+  weekly_theme: "Phase 1 Culmination"
+  daily_priority: "Peak foundation loading"
+  phase_completion: "Maximum foundation adaptations"
+  
+  connects_to:
+    tuesday: "Upper body peak to balance"
+    wednesday: "Power integration and assessment"
+    friday: "Final phase consolidation"
+    
+  phase_transition:
+    preparation: "Readiness for Phase 2"
+    adaptations: "Foundation strength established"
+    next_focus: "Power and speed development"
+
+# TRACKING REQUIREMENTS
+tracking:
+  required:
+    - "All weights and loads used"
+    - "Actual sets/reps completed"
+    - "RPE for each exercise"
+    - "Tennis performance metrics"
+    - "Recovery indicators"
+    - "Assessment results"
+    - "Phase 1 completion markers"
+
+  optional:
+    - "Bar velocity measurements"
+    - "Heart rate data"
+    - "Video analysis"
+    - "Serve speed tracking"
+    - "Movement quality video"
+
+  phase_1_specific:
+    - "Strength improvements from Week 1"
+    - "Movement quality progression"
+    - "Tennis skill integration"
+    - "Readiness for Phase 2"
+
+# NAVIGATION
+navigation:
+  week_overview: "./"
+  next_day: "tuesday"
+  previous_day: null
+  phase_status: "Phase 1 - Final Week"

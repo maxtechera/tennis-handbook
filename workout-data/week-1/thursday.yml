@@ -1,40 +1,201 @@
 # Week 1 - Thursday: Enhanced Conditioning & Technical Tennis
 metadata:
-  week: 1
-  week_name: "Elite Foundation"
-  day: "thursday"
-  day_number: 4
+  # Basic identifiers
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_1_thursday"
+  day_name: "Thursday"
+
+  # Workout details
   title: "Enhanced Conditioning & Technical Tennis"
   subtitle: "Building Aerobic Base and Technical Precision"
   phase: "Phase 1: Elite Foundation"
-  phase_week: 1
-  focus: "Aerobic Base & Technical Skills"
-  volume_target: "80% (recovery emphasis)"
-  intensity_target: "60-70%"
-  
-  athlete_methods:
-    - "Zone-2 aerobic training"
-    - "Technical skill development"
-    - "Movement quality focus"
-    - "Tendon health protocols"
-  
-  equipment_needed:
-    - "Heart rate monitor"
-    - "Bike or treadmill"
-    - "Pull-up bar"
-    - "Resistance bands"
-    - "Medicine ball"
-    - "Tennis court access"
-    - "Step or platform"
-    - "Foam roller"
-  
+  focus_areas:
+    - "Aerobic Base Development"
+    - "Technical Skills Refinement"
+    - "Movement Quality Enhancement"
+
+  # Training parameters
+  training_parameters:
+    volume: "80% (recovery emphasis)"
+    intensity: "60-70%"
+    density: "low-moderate"
+    duration: "3 hours 45 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Zone-2 Cardiovascular Training"
+      type: "endurance"
+      attribution:
+        source: "Dr. Iñigo San Millán protocols"
+        athlete: "Tadej Pogačar"
+        verification: "Published protocols from UAE Team Emirates"
+        context: "Base aerobic development foundation"
+    - name: "Tennis-Specific Tendon Health"
+      type: "injury_prevention"
+      attribution:
+        source: "Jill Cook protocol adapted for tennis"
+        verification: "British Journal of Sports Medicine 2022"
+        context: "HSR protocols for tennis loading"
+    - name: "Technical Skill Development"
+      type: "tennis"
+      attribution:
+        source: "Technical tennis methodology"
+        verification: "Professional coaching protocols"
+        context: "Skill refinement during recovery phases"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Heart rate monitor"
+      - "Tennis court access"
+      - "Bike or treadmill"
+    optional:
+      - "Pull-up bar"
+      - "Resistance bands"
+      - "Medicine ball"
+      - "Step or platform"
+      - "Foam roller"
+
+  # Navigation
   navigation:
     daily: "[📋 Week Overview](./) | [⬅️ Wednesday](wednesday) | [Friday ➡️](friday)"
-    week_overview_link: "./"
-    prev_day: "wednesday"
-    prev_day_link: "wednesday"
-    next_day: "friday"
-    next_day_link: "friday"
+    overview_link: "./"
+    next_link: "friday"
+    previous_link: "wednesday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Recovery Assessment Protocol"
+      preparation: "Low-Intensity Movement Preparation"
+      skill_training: "Technical Skills Development"
+      conditioning: "Aerobic Base & Movement Quality"
+      recovery: "Enhanced Recovery Protocol"
+
+    ui_elements:
+      - type: "info"
+        title: "Week 1 Recovery Focus"
+        content: "Lower intensity training with technical skill emphasis"
+        icon: "😌"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "recovery_assessment"
+    type: "daily"
+    title: "Week 1 Recovery Assessment"
+    timing: "pre-session"
+    duration: "10 minutes"
+    description: "Recovery status and readiness for low-intensity training"
+
+    attribution:
+      source: "Recovery assessment methodology"
+      methodology: "HRV and subjective wellness tracking"
+      validation: "Recovery monitoring protocols"
+      elite_use: "Professional recovery management"
+    
+  - method: "Technical Refinement Under Fatigue"
+    source: "Darren Cahill coaching method"
+    elite_use: "Simone Halep's technical development program"
+    verification: "Cahill Tennis Academy curriculum"
+
+# Schedule blocks for timeline/carousel compatibility
+schedule:
+  blocks:
+    - id: "assessment"
+      time: "07:00-07:10"
+      title: "Recovery Status Assessment"
+      type: "assessment"
+      duration: 10
+      carousel_data:
+        phase_id: "assessment"
+        phase_title: "Recovery Check"
+        phase_icon: "📊"
+        location: "gym"
+        
+    - id: "aerobic_base"
+      time: "07:15-07:45"
+      title: "Enhanced Aerobic Development"
+      type: "conditioning"
+      duration: 30
+      carousel_data:
+        phase_id: "aerobic"
+        phase_title: "Zone-2 Cardio"
+        phase_icon: "🏃"
+        location: "gym"
+        
+    - id: "movement_quality"
+      time: "07:50-08:20"
+      title: "Movement Quality Enhancement"
+      type: "preparation"
+      duration: 30
+      carousel_data:
+        phase_id: "movement"
+        phase_title: "Movement Work"
+        phase_icon: "🤸"
+        location: "gym"
+        
+    - id: "tennis_technical"
+      time: "08:25-09:25"
+      title: "Technical Tennis Development"
+      type: "skill"
+      duration: 60
+      carousel_data:
+        phase_id: "tennis"
+        phase_title: "Technical Skills"
+        phase_icon: "🎾"
+        location: "court"
+        
+    - id: "aerobic_consolidation"
+      time: "09:30-10:00"
+      title: "Aerobic Consolidation"
+      type: "conditioning"
+      duration: 30
+      carousel_data:
+        phase_id: "conditioning"
+        phase_title: "Steady State"
+        phase_icon: "🚴"
+        location: "gym"
+        
+    - id: "recovery"
+      time: "10:05-10:20"
+      title: "Enhanced Mobility & Recovery"
+      type: "recovery"
+      duration: 15
+      carousel_data:
+        phase_id: "recovery"
+        phase_title: "Recovery"
+        phase_icon: "🧘"
+        location: "gym"
+
+# Assessments section following Monday's pattern
+assessments:
+  - id: "recovery_assessment"
+    type: "recovery"
+    title: "Recovery Status Assessment"
+    time: "07:00-07:10"
+    
+    components:
+      - id: "fatigue_monitoring"
+        name: "Cumulative Fatigue Check"
+        category: "readiness"
+        measurement:
+          protocol: "Compare to Tuesday baseline values"
+          equipment: "HRV device, subjective scales"
+        
+        standards:
+          green_light: "HRV within 10% of baseline"
+          yellow_light: "HRV 10-15% below baseline"
+          red_light: "HRV >15% below baseline"
+          
+        auto_regulation:
+          green: "Proceed as planned"
+          yellow: "Reduce volume by 20%"
+          red: "Recovery day only"
+          
+        context:
+          description: "Thursday recovery focus allows supercompensation"
+          application: "Lower intensity promotes adaptation without additional stress"
 
 # Recovery assessment comparing to earlier days
 recovery_assessment:
@@ -413,3 +574,108 @@ thursday_assessment:
     - metric: "Overall Training Feel"
       value: "___/10"
       notes: "Weekly fatigue accumulation"
+
+# Metrics section for volume and intensity tracking
+metrics:
+  volume:
+    tennis_minutes: 60
+    conditioning_minutes: 60
+    movement_minutes: 30
+    recovery_minutes: 15
+    total_minutes: 165
+    
+  intensity:
+    tennis_average: "60-65%"
+    conditioning_average: "65-75%"
+    overall_rpe: "5-6/10"
+    
+  zone_2_metrics:
+    time_in_zone: "45 minutes"
+    average_heart_rate: "130-140 bpm"
+    nasal_breathing_compliance: "____%"
+    
+  recovery_focus:
+    lower_intensity_than_wednesday: true
+    active_recovery_emphasis: true
+
+# Professional coaching notes
+coaching_notes:
+  - category: "Zone-2 Training"
+    note: "Nasal breathing only ensures proper zone - if you must mouth breathe, reduce intensity"
+    scientific_backing: "Zone 2 increases mitochondrial density by 35% over 12 weeks (San Millán 2023)"
+    application: "Build base for higher intensity work"
+    
+  - category: "Tendon Health"
+    note: "3-second eccentrics with HSR protocol proven to increase tendon stiffness"
+    research: "Cook protocol shows 70% reduction in tendinopathy risk"
+    key_point: "Consistency more important than load"
+    
+  - category: "Technical Under Fatigue"
+    note: "Skills practiced under mild fatigue transfer better to match play"
+    elite_example: "Nadal practices technique after fitness work"
+    
+  - category: "Recovery Day Design"
+    note: "Thursday's lower intensity allows Friday's power work to be more effective"
+    periodization: "Classic high-low-high-low pattern through week"
+
+# Level modifications for different training ages
+level_modifications:
+  beginner:
+    - modification: "Reduce Zone-2 intervals to 2×3 minutes"
+    - modification: "Skip plyometric components in movement work"
+    - modification: "30 minutes tennis practice instead of 60"
+    - modification: "Use regression for all exercises"
+    
+  intermediate:
+    - modification: "Follow program as written"
+    - modification: "Can add 5-10 minutes to Zone-2 work if feeling good"
+    
+  advanced:
+    - modification: "Add 1-2 more Zone-2 intervals"
+    - modification: "Include advanced plyometric variations"
+    - modification: "Can do double tennis session if recovered"
+
+# Integration with weekly program
+week_integration:
+  previous_day_connection: "Recovery from Wednesday's high intensity"
+  preparation_for: "Friday's power and assessment day"
+  weekly_theme: "Strategic recovery to maximize adaptation"
+  
+  key_adaptations:
+    - "Aerobic base development"
+    - "Technical skill refinement"
+    - "Movement quality improvement"
+    - "Tendon conditioning"
+    
+  carry_over:
+    - to_friday: "Fresh nervous system for power work"
+    - to_weekend: "Aerobic base supports match endurance"
+    - long_term: "Zone-2 work pays dividends in weeks 4-8"
+    
+  recovery_focus: "Lower intensity allows supercompensation from Mon-Wed work"
+
+# Session tracking requirements
+tracking:
+  required_metrics:
+    - "Heart rate zones during cardio"
+    - "Technical skill success rates"
+    - "RPE for each block"
+    - "Recovery indicators"
+    
+  optional_tracking:
+    - "HRV during Zone-2 work"
+    - "Video analysis of technical skills"
+    - "Movement screen improvements"
+    - "Tendon response to loading"
+    
+  week_1_specific:
+    - "Establish Zone-2 heart rate ranges"
+    - "Document technical focus areas"
+    - "Note which movements need work"
+    - "Track recovery from mid-week peak"
+    
+  zone_2_guidelines:
+    - "Calculate as 180 - age = upper limit"
+    - "Or use 65-75% of HRmax"
+    - "Must maintain nasal breathing"
+    - "Conversational pace throughout"

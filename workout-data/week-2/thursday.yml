@@ -1,0 +1,489 @@
+# Week 2 - Thursday: Conditioning & Tennis Technical Work (COMPREHENSIVE VERSION)
+metadata:
+  # Basic identifiers
+  period: 1
+  period_name: "Elite Foundation"
+  day_id: "week_2_thursday"
+  day_name: "Thursday"
+
+  # Workout details
+  title: "Elite Conditioning & Technical Precision"
+  subtitle: "Week 2 Active Recovery with Aerobic Development and Technical Tennis"
+  phase: "Phase 1: Elite Foundation"
+  focus_areas:
+    - "Aerobic Conditioning Development"
+    - "Technical Tennis Skills Refinement"
+    - "Active Recovery & Mobility"
+    - "Tendon Health Maintenance"
+
+  # Training parameters
+  training_parameters:
+    volume: "70% (recovery emphasis)"
+    intensity: "60-70%"
+    density: "low"
+    duration: "3 hours 30 minutes"
+
+  # Elite Method Attribution
+  elite_methods:
+    - name: "Zone-2 Cardio Protocol"
+      type: "conditioning"
+      attribution:
+        method: "Evidence-based cardiovascular training"
+        source: "Jeff Nippard - Cardio Guidelines"
+        verification: "Video documentation and research protocols"
+        context: "Aerobic base development for tennis endurance"
+    - name: "Core Stability Integration"
+      type: "strength"
+      attribution:
+        method: "Scientific approach to core development"
+        source: "Jeff Nippard - Core Training"
+        verification: "Video reference and research-based protocols"
+        context: "Core stability for tennis movement patterns"
+    - name: "Technical Recovery Training"
+      type: "tennis"
+      attribution:
+        method: "Active recovery with skill development"
+        source: "Professional tennis recovery protocols"
+        verification: "ATP/WTA recovery training methods"
+        context: "Maintaining skill while promoting recovery"
+
+  # Equipment needed
+  equipment_required:
+    essential:
+      - "Tennis court access"
+      - "Stationary bike or cycling equipment"
+      - "Pull-up bar"
+      - "Yoga mat"
+    optional:
+      - "Heart rate monitor"
+      - "Foam roller"
+      - "Tennis ball for self-massage"
+      - "Timer for intervals"
+
+  # Navigation
+  navigation:
+    daily: "[📋 Week Overview](./) | [Friday ➡️](friday)"
+    overview_link: "./"
+    next_link: "friday"
+    previous_link: "wednesday"
+
+  # Display configuration
+  display_config:
+    section_headers:
+      assessment: "Recovery Readiness Assessment"
+      preparation: "Active Recovery Preparation"
+      skill_training: "Technical Tennis Development"
+      conditioning: "Aerobic Conditioning & Core"
+      recovery: "Extended Mobility & Tendon Care"
+
+    ui_elements:
+      - type: "info"
+        title: "Active Recovery Day"
+        content: "Focusing on conditioning, technique, and recovery"
+        icon: "🔄"
+
+# ASSESSMENT SECTIONS
+assessments:
+  - id: "recovery_readiness"
+    type: "recovery"
+    title: "Recovery Readiness Assessment"
+    timing: "pre-session"
+    duration: "8 minutes"
+    description: "Assess recovery status and readiness for active recovery session"
+
+    attribution:
+      source: "Active recovery assessment protocols"
+      methodology: "Recovery monitoring for training adaptation"
+      validation: "Professional recovery assessment standards"
+      elite_use: "ATP/WTA recovery monitoring methods"
+
+    components:
+      - id: "energy_level_check"
+        name: "Energy Level Assessment"
+        type: "subjective"
+        category: "primary"
+
+        measurement:
+          protocol: "Subjective energy and fatigue assessment"
+          repetitions: "Single assessment"
+          equipment: "None"
+
+        standards:
+          elite_benchmark: "High energy, full recovery feeling"
+          good_standard: "Good energy, minor residual fatigue"
+          needs_work: "Low energy, significant fatigue present"
+
+        scoring:
+          method: "1-10 scale subjective assessment"
+          scale: "1 (extremely fatigued) to 10 (fully recovered)"
+          recording: "Document score and adjust session intensity if needed"
+
+        context:
+          description: "Evaluates recovery from previous high-intensity sessions"
+          application: "Determines appropriate intensity for active recovery session"
+
+# PREPARATION PHASES
+preparation_phases:
+  - id: "morning_protocol"
+    title: "Week 2 Morning Protocol - Recovery Focus"
+    timing: "6:00-6:15"
+    duration: "15 minutes"
+    description: "Morning activation with recovery and gentle preparation emphasis"
+
+    attribution:
+      source: "Active recovery preparation methodology"
+      methodology: "Gentle morning protocol for recovery days"
+      validation: "Daily preparation for active recovery sessions"
+      elite_use: "Professional tennis player recovery protocols"
+
+    activities:
+      - name: "Gentle Recovery Breathing"
+        duration: "3 minutes"
+        sets: 3
+        instructions:
+          - "Deep, slow breathing with recovery focus"
+          - "Mental preparation for active recovery session"
+          - "Assess energy levels and fatigue status"
+
+        implementation:
+          execution: "Comfortable seated position, focus on relaxation"
+          focus: "Parasympathetic activation and gentle awakening"
+          tennis_application: "Prepares mind and body for technical work"
+
+      - name: "Gentle Joint Mobility"
+        duration: "5 minutes"
+        sets: 1
+        instructions:
+          - "Gentle joint circles: 10 each direction"
+          - "Light stretching movements: hold 20 seconds"
+          - "Progressive range of motion without forcing"
+
+        implementation:
+          execution: "Slow, controlled movements focusing on comfort"
+          focus: "Joint mobility without stress"
+          tennis_application: "Prepares joints for movement without fatigue"
+
+      - name: "Light Activation"
+        duration: "7 minutes"
+        sets: 2
+        instructions:
+          - "Gentle muscle activation: 10 repetitions"
+          - "Light movement patterns: 15 repetitions"
+          - "Progressive activation without intensity"
+
+        implementation:
+          execution: "Low-intensity activation exercises"
+          focus: "Gentle muscle preparation"
+          tennis_application: "Prepares for active recovery session"
+
+# TENNIS TRAINING
+tennis_training:
+  title: "Technical Tennis Development"
+  timing: "9:00-10:00"
+  duration: "60 minutes"
+  description: "Technical skills focus with controlled execution and precision"
+
+  attribution:
+    source: "Technical tennis development methodology"
+    methodology: "Active recovery tennis training protocols"
+    validation: "Professional technical development standards"
+    elite_use: "ATP/WTA technical recovery sessions"
+
+  session_structure:
+    technical_warmup:
+      title: "Gentle Tennis Warm-up"
+      timing: "9:00-9:10"
+      duration: "10 minutes"
+      
+      phases:
+        - name: "Progressive Movement Preparation"
+          duration: "5 minutes"
+          focus: "Gentle movement activation"
+          detailed_instructions:
+            - "Light court movement: 20 steps each direction"
+            - "Gentle shadow strokes: 15 each stroke"
+            - "Progressive range of motion movements"
+
+        - name: "Ball Contact Preparation"
+          duration: "5 minutes"
+          focus: "Touch and feel development"
+          detailed_instructions:
+            - "Mini-tennis close to net: 20 exchanges"
+            - "Gentle rallies building rhythm: 15 balls"
+            - "Focus on control and consistency"
+
+    slice_development:
+      title: "Slice Development and Precision"
+      timing: "9:10-9:30"
+      duration: "20 minutes"
+
+      phases:
+        - name: "Slice Technique Development"
+          duration: "15 minutes"
+          focus: "Technical precision"
+          detailed_instructions:
+            - "Progressive slice development: focus on technique over power"
+            - "Low-to-high swing path emphasis: 30 repetitions"
+            - "Underspin generation with racquet angle: controlled practice"
+
+        - name: "Slice Placement Practice"
+          duration: "5 minutes"
+          focus: "Accuracy development"
+          detailed_instructions:
+            - "Cross-court slice placement: 15 attempts"
+            - "Down-the-line slice placement: 15 attempts"
+            - "Target-specific placement practice"
+
+    precision_training:
+      title: "Precision Target Practice"
+      timing: "9:30-9:50"
+      duration: "20 minutes"
+
+      phases:
+        - name: "Target-Based Precision"
+          duration: "15 minutes"
+          focus: "Accuracy and control"
+          detailed_instructions:
+            - "Place targets in strategic court positions"
+            - "Alternate between targets systematically: 40 attempts"
+            - "Focus on quality over quantity of shots"
+
+        - name: "Consistency Development"
+          duration: "5 minutes"
+          focus: "Stroke consistency"
+          detailed_instructions:
+            - "Rally for consistency: 20-ball rallies"
+            - "Maintain steady rhythm and placement"
+            - "Emphasize controlled execution"
+
+    session_cooldown:
+      title: "Tennis Session Cooldown"
+      timing: "9:50-10:00"
+      duration: "10 minutes"
+
+      phases:
+        - name: "Technical Cooldown"
+          duration: "10 minutes"
+          focus: "Gentle conclusion"
+          detailed_instructions:
+            - "Light rallying with decreasing intensity"
+            - "Gentle movement and stretching"
+            - "Mental review of technical points worked on"
+
+# MOVEMENT PREPARATION
+movement_preparation:
+  title: "Pre-Conditioning Movement Preparation"
+  timing: "7:30-7:40"
+  duration: "10 minutes"
+  description: "Gentle preparation for conditioning and core work"
+
+  attribution:
+    source: "Active recovery movement preparation"
+    methodology: "Gentle preparation for recovery session conditioning"
+    validation: "Recovery training preparation protocols"
+    elite_use: "Professional athlete recovery preparation"
+
+  exercises:
+    - name: "Gentle Joint Mobility"
+      sets: 2
+      reps: 10
+      rest_seconds: 30
+      protocol: "Light joint circles and movements"
+      tennis_application: "Prepares joints for conditioning work"
+
+    - name: "Progressive Core Activation"
+      sets: 2
+      reps: 8
+      rest_seconds: 30
+      protocol: "Gentle core engagement exercises"
+      tennis_application: "Prepares core for hanging exercises"
+
+    - name: "Shoulder Preparation"
+      sets: 2
+      reps: 12
+      rest_seconds: 30
+      protocol: "Light shoulder circles and activation"
+      tennis_application: "Prepares shoulders for hanging and bike work"
+
+    - name: "Hip Mobility Preparation"
+      sets: 2
+      reps: 10
+      rest_seconds: 30
+      protocol: "Gentle hip circles and leg swings"
+      tennis_application: "Prepares hips for bike positioning"
+
+# STRENGTH TRAINING
+strength_training:
+  title: "Aerobic Conditioning & Core Development"
+  timing: "7:40-8:20"
+  duration: "40 minutes"
+  description: "Cardiovascular conditioning with core strength integration"
+
+  attribution:
+    source: "Evidence-based cardiovascular and core training"
+    methodology: "Aerobic development with core integration"
+    validation: "Jeff Nippard conditioning and core protocols"
+    elite_use: "Professional tennis conditioning methods"
+
+  main_exercises:
+    - name: "Bike Intervals"
+      sets: 4
+      reps: "3 minutes work"
+      rest_seconds: 90
+      load: "70-75% HR (10% increase from Week 1)"
+      tempo: "Steady cadence"
+      protocol: "Interval training with progressive intensity"
+      tennis_application: "Aerobic base development for match endurance"
+
+      detailed_instructions:
+        title: "Progressive Interval Training Instructions"
+        technique_points:
+          - phase: "WEEK 2 PROGRESSION"
+            instruction: "Increase intensity 10% from Week 1, maintain steady breathing"
+          - phase: "SETUP"
+            instruction: "Adjust bike for proper biomechanics, comfortable position"
+          - phase: "WORK INTERVALS"
+            instruction: "Maintain 70-75% heart rate, steady cadence throughout"
+          - phase: "BREATHING"
+            instruction: "Focus on controlled breathing pattern, avoid breathlessness"
+          - phase: "RECOVERY"
+            instruction: "Active recovery between intervals, easy pace"
+          - phase: "MONITORING"
+            instruction: "Monitor heart rate, adjust intensity to stay in target zone"
+          - phase: "FORM"
+            instruction: "Maintain good posture throughout, engage core lightly"
+
+    - name: "Hanging Leg Raises"
+      sets: 3
+      reps: 12
+      rest_seconds: 60
+      load: "Bodyweight"
+      tempo: "2-2-3-1"
+      protocol: "Controlled lifts with minimal swing"
+      tennis_application: "Core strength for serve power and stability"
+
+      detailed_instructions:
+        title: "Controlled Movement Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Hang from pull-up bar with secure grip, shoulders engaged"
+          - phase: "STARTING POSITION"
+            instruction: "Core pre-tensioned, minimal passive hanging"
+          - phase: "LIFT EXECUTION"
+            instruction: "Raise knees toward chest over 2 seconds, controlled motion"
+          - phase: "TOP POSITION"
+            instruction: "Hold for 2 seconds at top, feel ab contraction"
+          - phase: "DESCENT"
+            instruction: "Lower slowly over 3 seconds, control the negative"
+          - phase: "AVOID"
+            instruction: "No swinging or momentum, controlled throughout"
+          - phase: "BREATHING"
+            instruction: "Exhale during lift, inhale during lowering"
+
+    - name: "Side Plank"
+      sets: 3
+      reps: "30 seconds per side"
+      rest_seconds: 30
+      load: "Bodyweight"
+      tempo: "Isometric hold"
+      protocol: "Perfect alignment maintenance"
+      tennis_application: "Lateral core stability for side-to-side movement"
+
+      detailed_instructions:
+        title: "Perfect Alignment Instructions"
+        technique_points:
+          - phase: "SETUP"
+            instruction: "Side position on forearm, feet stacked or staggered"
+          - phase: "ALIGNMENT"
+            instruction: "Stack hips and shoulders vertically, straight line"
+          - phase: "CORE ENGAGEMENT"
+            instruction: "Engage core throughout, no sagging hips"
+          - phase: "BREATHING"
+            instruction: "Breathe normally throughout hold, don't hold breath"
+          - phase: "PROGRESSION"
+            instruction: "Progress from Week 1 duration, maintain quality"
+          - phase: "FOCUS"
+            instruction: "Quality over duration, perfect form priority"
+          - phase: "MODIFICATION"
+            instruction: "If struggling, drop to knees but maintain alignment"
+
+# CONDITIONING FINISHER
+conditioning_finisher:
+  title: "Zone-2 Aerobic Development"
+  timing: "10:10-10:40"
+  duration: "30 minutes"
+  description: "Steady-state aerobic training for cardiovascular base building"
+
+  attribution:
+    source: "Zone-2 training methodology"
+    methodology: "Aerobic base development protocols"
+    validation: "Jeff Nippard cardiovascular training research"
+    elite_use: "Professional endurance development methods"
+
+  circuit_structure:
+    - name: "Zone-2 Bike Session"
+      duration: "30 minutes"
+      intensity: "60-70% maximum heart rate"
+      protocol: "Conversational pace steady-state training"
+
+      detailed_instructions:
+        title: "Zone-2 Training Instructions"
+        execution_points:
+          - phase: "INTENSITY MONITORING"
+            instruction: "Maintain 60-70% maximum heart rate throughout"
+          - phase: "CONVERSATION TEST"
+            instruction: "Should be able to hold conversation comfortably"
+          - phase: "BREATHING"
+            instruction: "Focus on nasal breathing if possible"
+          - phase: "PACE"
+            instruction: "Comfortable, sustainable pace for full duration"
+          - phase: "FORM"
+            instruction: "Maintain good bike position, engage core lightly"
+          - phase: "BENEFITS"
+            instruction: "Building aerobic base and mitochondrial adaptations"
+
+# RECOVERY PROTOCOL
+recovery_protocol:
+  title: "Extended Mobility & Tendon Care"
+  timing: "10:40-11:00"
+  duration: "20 minutes"
+  description: "Comprehensive mobility work and tendon health maintenance"
+
+  attribution:
+    source: "Comprehensive mobility and tendon care methodology"
+    methodology: "Active recovery mobility protocols"
+    validation: "Professional mobility and tendon health standards"
+    elite_use: "ATP/WTA recovery and maintenance methods"
+
+  components:
+    - name: "Gentle Mobility Flow"
+      duration: "8 minutes"
+      protocol: "Yoga-based movement sequences"
+      implementation:
+        method: "Gentle flowing movements with breath coordination"
+        focus: "Hip openers, shoulder mobility, spinal mobility"
+        progression: "Progressive depth and range"
+
+    - name: "Couch Stretch Protocol"
+      duration: "6 minutes"
+      protocol: "Hip flexor stretch with progression"
+      implementation:
+        method: "90 seconds each side, progressive depth"
+        focus: "Hip flexor length and mobility"
+        progression: "Deeper stretch tolerance over time"
+
+    - name: "Pigeon Pose Sequence"
+      duration: "3 minutes"
+      protocol: "Deep hip external rotation stretch"
+      implementation:
+        method: "90 seconds per side with breath focus"
+        focus: "Hip external rotation and mobility"
+        progression: "Enhanced flexibility and comfort"
+
+    - name: "Tibialis Anterior Strengthening"
+      duration: "3 minutes"
+      protocol: "Eccentric tibialis raises for tendon health"
+      implementation:
+        method: "3 sets of 15 reps each leg, slow eccentric"
+        focus: "Tibialis anterior tendon health and ankle stability"
+        progression: "Enhanced tendon strength and durability"
