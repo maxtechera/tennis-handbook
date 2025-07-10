@@ -5,7 +5,6 @@
   "private": true,
   "description": "Serverless API functions for Tennis Workout application",
   "scripts": {
-    "build": "tsc && node build-post-process.js",
     "typecheck": "tsc --noEmit",
     "dev": "echo 'API functions served by Vercel dev from root'",
     "clean": "rimraf dist",
