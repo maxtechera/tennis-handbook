@@ -230,10 +230,14 @@ class InteractiveTennisBall {
 
     // Skip physics if ball is sleeping (like real balls at rest)
     if (this.sleeping) {
-      // Wake up more easily from device tilt or shake
+      // Wake up from significant device tilt or shake
+      // Calculate gravity magnitude to detect significant tilts
+      const gravityMagnitude = Math.sqrt(gravityX * gravityX + gravityY * gravityY);
+      const defaultGravityMagnitude = 0.4;
+      
       if (
-        Math.abs(gravityX) > 0.15 ||
-        Math.abs(gravityY - 0.3) > 0.15 ||
+        Math.abs(gravityX) > 0.2 || // Significant horizontal tilt
+        Math.abs(gravityMagnitude - defaultGravityMagnitude) > 0.2 || // Significant tilt from default
         shake > 1
       ) {
         this.sleeping = false;
@@ -252,8 +256,8 @@ class InteractiveTennisBall {
 
     // Apply gravity based on device orientation (only if moving)
     if (!this.sleeping) {
-      this.vx += gravityX * this.gravityScale * 1.5; // Reduced gravity effect
-      this.vy += gravityY * this.gravityScale * 1.5; // Reduced gravity effect
+      this.vx += gravityX * this.gravityScale; // Natural gravity effect
+      this.vy += gravityY * this.gravityScale; // Natural gravity effect
     }
 
     // Apply air resistance (more realistic)
@@ -449,6 +453,7 @@ export default function TennisHero({
   const accelerationHistory = useRef<number[]>([]);
   const grabbedBall = useRef<InteractiveTennisBall | null>(null);
   const mousePos = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  const prevGravityRef = useRef<{ x: number; y: number }>({ x: 0, y: 0.4 });
   const [ballCount, setBallCount] = useState(0);
   const [totalBallsThrown, setTotalBallsThrown] = useState<number | null>(null);
   const [isLoadingStats, setIsLoadingStats] = useState(true);
@@ -979,31 +984,76 @@ export default function TennisHero({
       const { alpha, beta, gamma } = deviceOrientationRef.current;
 
       // Convert device orientation to realistic gravity
-      // Beta: front-back tilt (when phone is vertical, beta is around 90)
-      // Gamma: left-right tilt
-
+      // Beta: front-back tilt (-180 to 180, 0 = flat, 90 = vertical)
+      // Gamma: left-right tilt (-90 to 90)
+      
+      // Convert angles to radians
+      const betaRad = ((beta || 0) * Math.PI) / 180;
+      const gammaRad = ((gamma || 0) * Math.PI) / 180;
+      
+      // Calculate gravity vector in world space
+      // Gravity always points down in the real world
+      const gravityMagnitude = 0.4; // Reduced from varying values to constant
+      
+      // Transform world gravity to screen coordinates based on device orientation
+      // When phone is flat (beta ≈ 0), gravity points down the screen (positive Y)
+      // When phone is vertical (beta ≈ 90), gravity still points down in world
       let gravityX = 0;
-      let gravityY = 0.2; // Very gentle default downward gravity
-
-      // Detect orientation and apply gravity response
+      let gravityY = gravityMagnitude;
+      
+      // Calculate gravity based on device orientation
+      // The key insight: gravity always points "down" in the real world
+      // We need to transform this to screen coordinates based on device rotation
+      
       if (Math.abs(beta) < 30) {
-        // Phone is roughly flat (horizontal)
-        gravityX = ((gamma || 0) / 90) * 0.4; // Gentle tilt response
-        gravityY = 0.15; // Very light gravity when flat
-      } else if (Math.abs(beta - 90) < 30) {
-        // Phone is vertical (portrait)
-        gravityX = ((gamma || 0) / 90) * 0.6; // Gentle horizontal
-        gravityY = 0.3; // Gentle downward gravity
-      } else if (Math.abs(beta + 90) < 30) {
-        // Phone is upside down vertical
-        gravityX = (-(gamma || 0) / 90) * 0.6; // Gentle horizontal
-        gravityY = -0.3; // Gentle upward gravity
+        // Phone is nearly flat (lying on table)
+        // Gamma controls X-axis tilt, beta controls Y-axis tilt
+        gravityX = Math.sin(gammaRad) * gravityMagnitude * 0.5;
+        gravityY = gravityMagnitude * 0.8; // Mostly downward
       } else {
-        // Phone is tilted at an angle
-        const tiltFactor = Math.abs(beta) / 90;
-        gravityX = ((gamma || 0) / 90) * 0.6 * tiltFactor; // Gentle
-        gravityY = 0.25 * tiltFactor; // Gentle
+        // Phone is tilted or vertical
+        // Beta: 0° = flat, 90° = vertical portrait, ±180° = upside down
+        // Gamma: side-to-side tilt
+        
+        // When phone rotates from portrait to landscape:
+        // - Portrait (beta ≈ 90°): gravity points down screen (positive Y)
+        // - Landscape left (gamma ≈ -90°): gravity points right (positive X)
+        // - Landscape right (gamma ≈ 90°): gravity points left (negative X)
+        
+        // Calculate how vertical the phone is (0 = flat, 1 = vertical)
+        const verticalness = Math.min(Math.abs(beta) / 90, 1);
+        
+        // Base gravity direction from beta angle
+        const baseGravityY = Math.sign(90 - Math.abs(beta)) * Math.cos(betaRad) * gravityMagnitude;
+        
+        // When phone is vertical, gamma determines if we're in landscape
+        if (verticalness > 0.7) {
+          // Phone is mostly vertical
+          if (Math.abs(gamma) > 60) {
+            // Phone is rotated to landscape
+            const landscapeAmount = Math.min(Math.abs(gamma) / 90, 1);
+            gravityX = -Math.sign(gamma) * gravityMagnitude * landscapeAmount;
+            gravityY = baseGravityY * (1 - landscapeAmount);
+          } else {
+            // Phone is in portrait
+            gravityX = Math.sin(gammaRad) * gravityMagnitude * 0.5;
+            gravityY = baseGravityY;
+          }
+        } else {
+          // Phone is at an angle
+          gravityX = Math.sin(gammaRad) * gravityMagnitude * verticalness * 0.6;
+          gravityY = baseGravityY;
+        }
       }
+      
+      // Apply smoothing to prevent jittery movement
+      // Smooth the gravity changes with exponential moving average
+      const smoothingFactor = 0.15; // Lower = smoother, higher = more responsive
+      gravityX = prevGravityRef.current.x + (gravityX - prevGravityRef.current.x) * smoothingFactor;
+      gravityY = prevGravityRef.current.y + (gravityY - prevGravityRef.current.y) * smoothingFactor;
+      
+      // Store for next frame
+      prevGravityRef.current = { x: gravityX, y: gravityY };
 
       // Get CTA button rect for collisions
       let ctaRect = undefined;
@@ -1068,13 +1118,13 @@ export default function TennisHero({
       // Apply shake effect and update balls
       ballsRef.current.forEach((ball, index) => {
         // Periodic random wake-up to keep things lively
-        if (ball.sleeping && Math.random() < 0.002) {
-          // 0.2% chance per frame
+        if (ball.sleeping && Math.random() < 0.001) {
+          // 0.1% chance per frame (reduced frequency)
           ball.sleeping = false;
           ball.sleepFrames = 0;
-          // Give a small random impulse
-          ball.vx = (Math.random() - 0.5) * 2;
-          ball.vy = -Math.random() * 3 - 1; // Slight upward bias
+          // Give a small random impulse without upward bias
+          ball.vx = (Math.random() - 0.5) * 1.5;
+          ball.vy = (Math.random() - 0.5) * 1.5; // No upward bias
         }
 
         ball.update(
