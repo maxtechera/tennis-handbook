@@ -29,15 +29,56 @@ export const wizardSubmissions = pgTable('wizard_submissions', {
   currentStep: integer('current_step').default(0),
   completedAt: timestamp('completed_at'),
   
-  // Wizard data (JSONB for flexibility)
-  personalInfo: jsonb('personal_info'),
-  tennisExperience: jsonb('tennis_experience'),
-  trainingGoals: jsonb('training_goals'),
-  schedulePreferences: jsonb('schedule_preferences'),
-  physicalProfile: jsonb('physical_profile'),
+  // User Profile - Flat fields for easy access
+  email: text('email'),
+  name: text('name'),
+  age: text('age'), // '18-24', '25-34', etc
+  gender: text('gender'), // 'male', 'female', 'other', 'prefer_not_to_say'
+  location: text('location'),
+  whatsapp: text('whatsapp'),
+  language: text('language').default('en'),
   
-  // Calculated fields
+  // Tennis Profile - Flat fields
+  tennisLevel: text('tennis_level'), // 'beginner', 'intermediate', 'advanced', 'professional'
+  tennisGoal: text('tennis_goal'), // 'fitness', 'competitive', 'recreational', 'professional'
+  yearsPlaying: text('years_playing'), // '<1', '1-3', '3-5', '5+' 
+  playsCompetitively: boolean('plays_competitively').default(false),
+  playingStyle: text('playing_style'), // 'baseline', 'serve_volley', 'all_court'
+  favoriteShot: text('favorite_shot'), // 'forehand', 'backhand', 'serve', 'volley'
+  
+  // Training Preferences - Flat fields
+  timeAvailability: text('time_availability'), // '1-2days', '3-5days', '6-7days'
+  preferredTimes: text('preferred_times').array(), // ['morning', 'afternoon', 'evening']
+  focusAreas: text('focus_areas').array(), // ['technique', 'fitness', 'mental', 'strategy']
+  primaryFocus: text('primary_focus'), // Single main focus area
+  commitmentLevel: text('commitment_level'), // 'casual', 'serious', 'professional'
+  
+  // Physical Profile - Flat fields
+  fitnessLevel: text('fitness_level'), // 'beginner', 'average', 'good', 'excellent'
+  mainChallenges: text('main_challenges').array(), // ['consistency', 'fitness', 'technique', etc]
+  injuries: text('injuries').array(), // ['shoulder', 'knee', 'back', etc]
+  
+  // Engagement Metrics - Flat fields
+  microQuizEngagement: integer('micro_quiz_engagement'),
+  goalsQuizEngagement: integer('goals_quiz_engagement'),
+  timeQuizEngagement: integer('time_quiz_engagement'),
+  focusQuizEngagement: integer('focus_quiz_engagement'),
+  
+  // Conversion Data - Flat fields
+  acceptedTerms: boolean('accepted_terms').default(false),
+  newsletter: boolean('newsletter').default(false),
+  downloadedPdf: boolean('downloaded_pdf').default(false),
+  
+  // AI/Calculated fields
   userSegment: text('user_segment'), // 'beginner', 'intermediate', 'advanced', 'competitive'
+  aiRecommendations: text('ai_recommendations').array(), // Array of recommendation strings
+  personalizedPath: text('personalized_path'), // Recommended content path
+  
+  // Tags for export (ConvertKit, etc)
+  tags: text('tags').array(), // ['spanish', 'competitive', 'morning-player', etc]
+  
+  // Raw data backup (for complex data that doesn't fit flat structure)
+  rawData: jsonb('raw_data'), // Complete wizard data as backup
   
   // Metadata
   userAgent: text('user_agent'),
@@ -46,6 +87,8 @@ export const wizardSubmissions = pgTable('wizard_submissions', {
   utmSource: text('utm_source'),
   utmMedium: text('utm_medium'),
   utmCampaign: text('utm_campaign'),
+  utmContent: text('utm_content'),
+  utmTerm: text('utm_term'),
   
   createdAt: timestamp('created_at').defaultNow().notNull(),
   updatedAt: timestamp('updated_at').defaultNow().notNull(),
@@ -53,6 +96,10 @@ export const wizardSubmissions = pgTable('wizard_submissions', {
   return {
     sessionIdx: index('session_idx').on(table.sessionId),
     userIdx: index('user_idx').on(table.userId),
+    emailIdx: index('wizard_email_idx').on(table.email),
+    segmentIdx: index('segment_idx').on(table.userSegment),
+    levelIdx: index('level_idx').on(table.tennisLevel),
+    goalIdx: index('goal_idx').on(table.tennisGoal),
   };
 });
 

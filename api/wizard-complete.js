@@ -87,17 +87,28 @@ export default async function handler(req, res) {
         userId = newUser.rows[0].id;
       }
       
-      // Update wizard submission
+      // Update wizard submission with all data
       await sql`
         UPDATE wizard_submissions 
         SET 
           user_id = ${userId},
           completed_at = NOW(),
-          personal_info = ${JSON.stringify(wizardData.personalInfo)},
-          tennis_experience = ${JSON.stringify(wizardData.tennisExperience)},
-          training_goals = ${JSON.stringify(wizardData.trainingGoals)},
-          schedule_preferences = ${JSON.stringify(wizardData.schedulePreferences)},
-          physical_profile = ${JSON.stringify(wizardData.physicalProfile)},
+          micro_quiz = ${JSON.stringify(wizardData['micro-quiz'] || null)},
+          goals_quiz = ${JSON.stringify(wizardData['goals-quiz'] || null)},
+          time_quiz = ${JSON.stringify(wizardData['time-quiz'] || null)},
+          focus_quiz = ${JSON.stringify(wizardData['focus-quiz'] || null)},
+          personal_info = ${JSON.stringify(wizardData.personalInfo || wizardData['personal-info'] || null)},
+          tennis_experience = ${JSON.stringify(wizardData.tennisExperience || null)},
+          training_goals = ${JSON.stringify(wizardData.trainingGoals || null)},
+          schedule_preferences = ${JSON.stringify(wizardData.schedulePreferences || null)},
+          physical_profile = ${JSON.stringify(wizardData.physicalProfile || null)},
+          welcome = ${JSON.stringify(wizardData.welcome || null)},
+          welcome_success = ${JSON.stringify(wizardData['welcome-success'] || null)},
+          personalization = ${JSON.stringify(wizardData.personalization || null)},
+          background = ${JSON.stringify(wizardData.background || null)},
+          challenges = ${JSON.stringify(wizardData.challenges || null)},
+          analyzing = ${JSON.stringify(wizardData.analyzing || null)},
+          completion = ${JSON.stringify(wizardData.completion || null)},
           user_segment = ${userSegment},
           updated_at = NOW()
         WHERE session_id = ${sessionId}
@@ -129,11 +140,22 @@ export default async function handler(req, res) {
       devStorage.updateWizardSubmission(sessionId, {
         userId,
         completedAt: new Date().toISOString(),
-        personalInfo: wizardData.personalInfo,
+        microQuiz: wizardData['micro-quiz'],
+        goalsQuiz: wizardData['goals-quiz'],
+        timeQuiz: wizardData['time-quiz'],
+        focusQuiz: wizardData['focus-quiz'],
+        personalInfo: wizardData.personalInfo || wizardData['personal-info'],
         tennisExperience: wizardData.tennisExperience,
         trainingGoals: wizardData.trainingGoals,
         schedulePreferences: wizardData.schedulePreferences,
         physicalProfile: wizardData.physicalProfile,
+        welcome: wizardData.welcome,
+        welcomeSuccess: wizardData['welcome-success'],
+        personalization: wizardData.personalization,
+        background: wizardData.background,
+        challenges: wizardData.challenges,
+        analyzing: wizardData.analyzing,
+        completion: wizardData.completion,
         userSegment
       });
       

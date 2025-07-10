@@ -68,6 +68,26 @@ export const devStorage = {
     return newSubmission;
   },
 
+  createWizardSubmission(sessionId, data) {
+    const submissions = readJsonFile('wizard_submissions.json');
+    // Check if already exists
+    const existing = submissions.find(s => s.sessionId === sessionId);
+    if (existing) {
+      return existing;
+    }
+    
+    const newSubmission = {
+      id: Date.now().toString(),
+      sessionId,
+      ...data,
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    };
+    submissions.push(newSubmission);
+    writeJsonFile('wizard_submissions.json', submissions);
+    return newSubmission;
+  },
+
   updateWizardSubmission(sessionId, data) {
     const submissions = readJsonFile('wizard_submissions.json');
     const index = submissions.findIndex(s => s.sessionId === sessionId);

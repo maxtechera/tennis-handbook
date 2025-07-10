@@ -1,5 +1,6 @@
 import { sql } from '@vercel/postgres';
 import { devStorage } from './dev-storage.js';
+import { flattenWizardData } from '../src/utils/flatten-wizard-data.js';
 
 export default async function handler(req, res) {
   // Enable CORS
@@ -44,8 +45,8 @@ export default async function handler(req, res) {
     const userAgent = req.headers['user-agent'] || '';
     const ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || 'unknown';
     
-    // Calculate user segment if we have enough data
-    const userSegment = calculateUserSegment(data);
+    // Flatten the wizard data for easier storage and querying
+    const flat = flattenWizardData(data);
     
     // Check if database is available
     const isDatabaseAvailable = process.env.POSTGRES_URL;
@@ -59,70 +60,115 @@ export default async function handler(req, res) {
       `;
       
       if (existing.rows.length > 0) {
-        // Update existing submission
+        // Update existing submission with flat data
         await sql`
           UPDATE wizard_submissions 
           SET 
             current_step = ${step},
-            personal_info = ${JSON.stringify(data.personalInfo || null)},
-            tennis_experience = ${JSON.stringify(data.tennisExperience || null)},
-            training_goals = ${JSON.stringify(data.trainingGoals || null)},
-            schedule_preferences = ${JSON.stringify(data.schedulePreferences || null)},
-            physical_profile = ${JSON.stringify(data.physicalProfile || null)},
-            user_segment = ${userSegment},
+            email = COALESCE(${flat.email}, email),
+            name = COALESCE(${flat.name}, name),
+            age = COALESCE(${flat.age}, age),
+            gender = COALESCE(${flat.gender}, gender),
+            location = COALESCE(${flat.location}, location),
+            whatsapp = COALESCE(${flat.whatsapp}, whatsapp),
+            language = COALESCE(${flat.language}, language),
+            tennis_level = COALESCE(${flat.tennisLevel}, tennis_level),
+            tennis_goal = COALESCE(${flat.tennisGoal}, tennis_goal),
+            years_playing = COALESCE(${flat.yearsPlaying}, years_playing),
+            plays_competitively = COALESCE(${flat.playsCompetitively}, plays_competitively),
+            playing_style = COALESCE(${flat.playingStyle}, playing_style),
+            favorite_shot = COALESCE(${flat.favoriteShot}, favorite_shot),
+            time_availability = COALESCE(${flat.timeAvailability}, time_availability),
+            preferred_times = COALESCE(${flat.preferredTimes}, preferred_times),
+            focus_areas = COALESCE(${flat.focusAreas}, focus_areas),
+            primary_focus = COALESCE(${flat.primaryFocus}, primary_focus),
+            commitment_level = COALESCE(${flat.commitmentLevel}, commitment_level),
+            fitness_level = COALESCE(${flat.fitnessLevel}, fitness_level),
+            main_challenges = COALESCE(${flat.mainChallenges}, main_challenges),
+            injuries = COALESCE(${flat.injuries}, injuries),
+            micro_quiz_engagement = COALESCE(${flat.microQuizEngagement}, micro_quiz_engagement),
+            goals_quiz_engagement = COALESCE(${flat.goalsQuizEngagement}, goals_quiz_engagement),
+            time_quiz_engagement = COALESCE(${flat.timeQuizEngagement}, time_quiz_engagement),
+            focus_quiz_engagement = COALESCE(${flat.focusQuizEngagement}, focus_quiz_engagement),
+            accepted_terms = COALESCE(${flat.acceptedTerms}, accepted_terms),
+            newsletter = COALESCE(${flat.newsletter}, newsletter),
+            downloaded_pdf = COALESCE(${flat.downloadedPdf}, downloaded_pdf),
+            user_segment = COALESCE(${flat.userSegment}, user_segment),
+            ai_recommendations = COALESCE(${flat.aiRecommendations}, ai_recommendations),
+            personalized_path = COALESCE(${flat.personalizedPath}, personalized_path),
+            tags = COALESCE(${flat.tags}, tags),
+            raw_data = ${JSON.stringify(flat.rawData)},
             user_agent = ${userAgent},
             ip_address = ${ip},
             utm_source = ${metadata.utmSource || null},
             utm_medium = ${metadata.utmMedium || null},
             utm_campaign = ${metadata.utmCampaign || null},
+            utm_content = ${metadata.utmContent || null},
+            utm_term = ${metadata.utmTerm || null},
             referrer = ${metadata.referrer || null},
             updated_at = NOW()
           WHERE session_id = ${sessionId}
         `;
       } else {
-        // Create new submission
+        // Create new submission with flat data
         await sql`
           INSERT INTO wizard_submissions (
-            session_id, current_step, personal_info, tennis_experience,
-            training_goals, schedule_preferences, physical_profile,
-            user_segment, user_agent, ip_address, utm_source, utm_medium,
-            utm_campaign, referrer
+            session_id, current_step, email, name, age, gender, location, whatsapp, language,
+            tennis_level, tennis_goal, years_playing, plays_competitively, playing_style, favorite_shot,
+            time_availability, preferred_times, focus_areas, primary_focus, commitment_level,
+            fitness_level, main_challenges, injuries, micro_quiz_engagement, goals_quiz_engagement,
+            time_quiz_engagement, focus_quiz_engagement, accepted_terms, newsletter, downloaded_pdf,
+            user_segment, ai_recommendations, personalized_path, tags, raw_data,
+            user_agent, ip_address, utm_source, utm_medium, utm_campaign, utm_content, utm_term, referrer
           ) VALUES (
-            ${sessionId}, ${step}, 
-            ${JSON.stringify(data.personalInfo || null)},
-            ${JSON.stringify(data.tennisExperience || null)},
-            ${JSON.stringify(data.trainingGoals || null)},
-            ${JSON.stringify(data.schedulePreferences || null)},
-            ${JSON.stringify(data.physicalProfile || null)},
-            ${userSegment}, ${userAgent}, ${ip},
-            ${metadata.utmSource || null},
-            ${metadata.utmMedium || null},
-            ${metadata.utmCampaign || null},
-            ${metadata.referrer || null}
+            ${sessionId}, ${step}, ${flat.email}, ${flat.name}, ${flat.age}, ${flat.gender}, 
+            ${flat.location}, ${flat.whatsapp}, ${flat.language}, ${flat.tennisLevel}, 
+            ${flat.tennisGoal}, ${flat.yearsPlaying}, ${flat.playsCompetitively}, 
+            ${flat.playingStyle}, ${flat.favoriteShot}, ${flat.timeAvailability}, 
+            ${flat.preferredTimes}, ${flat.focusAreas}, ${flat.primaryFocus}, 
+            ${flat.commitmentLevel}, ${flat.fitnessLevel}, ${flat.mainChallenges}, 
+            ${flat.injuries}, ${flat.microQuizEngagement}, ${flat.goalsQuizEngagement}, 
+            ${flat.timeQuizEngagement}, ${flat.focusQuizEngagement}, ${flat.acceptedTerms}, 
+            ${flat.newsletter}, ${flat.downloadedPdf}, ${flat.userSegment}, 
+            ${flat.aiRecommendations}, ${flat.personalizedPath}, ${flat.tags}, 
+            ${JSON.stringify(flat.rawData)}, ${userAgent}, ${ip},
+            ${metadata.utmSource || null}, ${metadata.utmMedium || null},
+            ${metadata.utmCampaign || null}, ${metadata.utmContent || null},
+            ${metadata.utmTerm || null}, ${metadata.referrer || null}
           )
         `;
       }
       
-      // Track step completion
+      // Track step completion with detailed data
+      const stepData = data[Object.keys(data).find(key => key !== 'personalInfo' && key !== 'tennisExperience' && key !== 'trainingGoals' && key !== 'schedulePreferences' && key !== 'physicalProfile') || ''];
+      
       await sql`
         INSERT INTO conversion_events (event_type, event_data, session_id)
-        VALUES (${`wizard_step_${step}`}, ${JSON.stringify({ step, hasData: Object.keys(data).length > 0 })}, ${sessionId})
+        VALUES (
+          ${`wizard_step_${step}`}, 
+          ${JSON.stringify({ 
+            step, 
+            stepName: getCurrentStepName(step),
+            hasData: Object.keys(data).length > 0,
+            dataKeys: Object.keys(data),
+            timestamp: new Date().toISOString(),
+            stepData: stepData || null
+          })}, 
+          ${sessionId}
+        )
       `;
     } else {
-      // Development mode - use local storage
+      // Development mode - use local storage with flat data
       devStorage.updateWizardSubmission(sessionId, {
         currentStep: step,
-        personalInfo: data.personalInfo || null,
-        tennisExperience: data.tennisExperience || null,
-        trainingGoals: data.trainingGoals || null,
-        schedulePreferences: data.schedulePreferences || null,
-        physicalProfile: data.physicalProfile || null,
-        userSegment,
+        ...flat, // Spread all flat fields
         userAgent,
         ipAddress: ip,
         utmSource: metadata.utmSource || null,
         utmMedium: metadata.utmMedium || null,
         utmCampaign: metadata.utmCampaign || null,
+        utmContent: metadata.utmContent || null,
+        utmTerm: metadata.utmTerm || null,
         referrer: metadata.referrer || null
       });
       
@@ -131,7 +177,7 @@ export default async function handler(req, res) {
       console.log('📝 Wizard progress saved (development):', {
         sessionId,
         step,
-        userSegment,
+        userSegment: flat.userSegment,
         hasData: Object.keys(data).length > 0,
         timestamp: new Date().toISOString()
       });
@@ -139,7 +185,8 @@ export default async function handler(req, res) {
     
     return res.status(200).json({ 
       success: true,
-      message: 'Progress saved'
+      message: 'Progress saved',
+      tags: flat.tags // Return tags for debugging/testing
     });
     
   } catch (error) {
@@ -159,34 +206,19 @@ export default async function handler(req, res) {
   }
 }
 
-function calculateUserSegment(data) {
-  const { tennisExperience, physicalProfile, schedulePreferences } = data;
-  
-  if (!tennisExperience) return 'beginner';
-  
-  if (
-    tennisExperience.playsCompetitively &&
-    tennisExperience.currentLevel !== 'beginner' &&
-    physicalProfile?.fitnessLevel === 'excellent' &&
-    schedulePreferences?.commitmentLevel === 'professional'
-  ) {
-    return 'competitive';
-  }
-  
-  if (
-    tennisExperience.currentLevel === 'advanced' ||
-    (tennisExperience.yearsPlaying === '5+' && 
-     physicalProfile?.fitnessLevel === 'good')
-  ) {
-    return 'advanced';
-  }
-  
-  if (
-    tennisExperience.currentLevel === 'intermediate' ||
-    ['3-5', '1-3'].includes(tennisExperience.yearsPlaying)
-  ) {
-    return 'intermediate';
-  }
-  
-  return 'beginner';
+function getCurrentStepName(stepIndex) {
+  const stepNames = [
+    'micro-quiz',
+    'goals-quiz', 
+    'time-quiz',
+    'focus-quiz',
+    'analyzing',
+    'welcome',
+    'welcome-success',
+    'personalization',
+    'background',
+    'challenges',
+    'completion'
+  ];
+  return stepNames[stepIndex] || `step-${stepIndex}`;
 }

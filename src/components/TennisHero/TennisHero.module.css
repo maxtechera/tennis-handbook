@@ -19,8 +19,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  pointer-events: none;
-  z-index: 1;
+  pointer-events: auto;
+  z-index: 5;
   opacity: 0.8;
 }
 
@@ -128,6 +128,7 @@
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
+  pointer-events: none; /* Allow clicks to pass through to canvas */
 }
 
 /* Urgency Banner */

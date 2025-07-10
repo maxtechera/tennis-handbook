@@ -50,11 +50,33 @@ export default async function handler(req, res) {
     // Check if database is available
     const isDatabaseAvailable = process.env.POSTGRES_URL;
     
+    // Get metadata
+    const userAgent = req.headers['user-agent'] || '';
+    const ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || 'unknown';
+    
     if (isDatabaseAvailable) {
       // Quick email capture
       await sql`
         INSERT INTO email_captures (email, source, metadata)
         VALUES (${email}, ${source}, ${JSON.stringify({ sessionId })})
+      `;
+      
+      // Create wizard submission entry
+      await sql`
+        INSERT INTO wizard_submissions (
+          session_id, 
+          current_step,
+          user_agent,
+          ip_address,
+          created_at
+        ) VALUES (
+          ${sessionId},
+          0,
+          ${userAgent},
+          ${ip},
+          NOW()
+        )
+        ON CONFLICT (session_id) DO NOTHING
       `;
       
       // Track conversion event
@@ -65,6 +87,11 @@ export default async function handler(req, res) {
     } else {
       // Development mode - use local storage
       devStorage.addEmailCapture(email, source, { sessionId });
+      devStorage.createWizardSubmission(sessionId, {
+        currentStep: 0,
+        userAgent,
+        ipAddress: ip
+      });
       devStorage.addConversionEvent('wizard_start', { email, source }, sessionId);
       
       console.log('📧 Email captured (development):', {

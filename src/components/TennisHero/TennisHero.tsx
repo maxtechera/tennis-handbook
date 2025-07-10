@@ -18,10 +18,6 @@ class InteractiveTennisBall {
   color: string;
   sleeping: boolean;
   sleepThreshold: number;
-  isGrabbed: boolean;
-  grabOffset: { x: number; y: number };
-  lastMousePos: { x: number; y: number };
-  grabStartTime: number;
 
   constructor(x: number, y: number, radius: number = 15) {
     this.x = x;
@@ -37,62 +33,13 @@ class InteractiveTennisBall {
     this.color = "#CFFF00";
     this.sleeping = false;
     this.sleepThreshold = 0.1; // Velocity below which ball "sleeps"
-    this.isGrabbed = false;
-    this.grabOffset = { x: 0, y: 0 };
-    this.lastMousePos = { x: 0, y: 0 };
-    this.grabStartTime = 0;
   }
 
-  // Check if point is inside ball (for grabbing)
+  // Check if point is inside ball (for touching)
   containsPoint(x: number, y: number): boolean {
     const dx = x - this.x;
     const dy = y - this.y;
     return Math.sqrt(dx * dx + dy * dy) <= this.radius;
-  }
-
-  // Start grabbing the ball
-  startGrab(mouseX: number, mouseY: number) {
-    this.isGrabbed = true;
-    this.sleeping = false;
-    this.grabOffset.x = mouseX - this.x;
-    this.grabOffset.y = mouseY - this.y;
-    this.lastMousePos.x = mouseX;
-    this.lastMousePos.y = mouseY;
-    this.grabStartTime = Date.now();
-    // Reduce velocity when grabbed
-    this.vx *= 0.5;
-    this.vy *= 0.5;
-  }
-
-  // Update position while being dragged
-  updateGrab(mouseX: number, mouseY: number) {
-    if (!this.isGrabbed) return;
-
-    // Calculate new position
-    const newX = mouseX - this.grabOffset.x;
-    const newY = mouseY - this.grabOffset.y;
-
-    // Calculate velocity from mouse movement (for realistic throw effect)
-    const dt = 16; // Assume 60fps
-    this.vx = ((newX - this.x) / dt) * 0.8;
-    this.vy = ((newY - this.y) / dt) * 0.8;
-
-    this.x = newX;
-    this.y = newY;
-
-    this.lastMousePos.x = mouseX;
-    this.lastMousePos.y = mouseY;
-  }
-
-  // Stop grabbing and apply throw velocity
-  stopGrab() {
-    if (!this.isGrabbed) return;
-
-    this.isGrabbed = false;
-    // Apply some momentum from the drag (realistic throw effect)
-    const throwMultiplier = 0.3;
-    this.vx *= throwMultiplier;
-    this.vy *= throwMultiplier;
   }
 
   // Ball-to-CTA button collision detection and response
@@ -117,7 +64,7 @@ class InteractiveTennisBall {
     const distanceY = this.y - closestY;
     const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
 
-    if (distance < this.radius && !this.isGrabbed) {
+    if (distance < this.radius) {
       // Collision detected
       const overlap = this.radius - distance;
 
@@ -169,15 +116,11 @@ class InteractiveTennisBall {
       const separationX = (dx / distance) * overlap * 0.5;
       const separationY = (dy / distance) * overlap * 0.5;
 
-      // Only move if not grabbed
-      if (!this.isGrabbed) {
-        this.x -= separationX;
-        this.y -= separationY;
-      }
-      if (!other.isGrabbed) {
-        other.x += separationX;
-        other.y += separationY;
-      }
+      // Move both balls to separate them
+      this.x -= separationX;
+      this.y -= separationY;
+      other.x += separationX;
+      other.y += separationY;
 
       // Calculate collision response (momentum transfer)
       const nx = dx / distance; // Normal vector
@@ -197,17 +140,14 @@ class InteractiveTennisBall {
       const impulse = (2 * speed) / (this.mass + other.mass);
       const restitution = Math.min(this.restitution, other.restitution);
 
-      // Apply impulse only if balls aren't grabbed
-      if (!this.isGrabbed) {
-        this.vx += impulse * other.mass * nx * restitution;
-        this.vy += impulse * other.mass * ny * restitution;
-        this.sleeping = false;
-      }
-      if (!other.isGrabbed) {
-        other.vx -= impulse * this.mass * nx * restitution;
-        other.vy -= impulse * this.mass * ny * restitution;
-        other.sleeping = false;
-      }
+      // Apply impulse to both balls
+      this.vx += impulse * other.mass * nx * restitution;
+      this.vy += impulse * other.mass * ny * restitution;
+      this.sleeping = false;
+
+      other.vx -= impulse * this.mass * nx * restitution;
+      other.vy -= impulse * this.mass * ny * restitution;
+      other.sleeping = false;
     }
   }
 
@@ -218,15 +158,12 @@ class InteractiveTennisBall {
     gravityY: number,
     shake: number = 0
   ) {
-    // Skip physics if being grabbed
-    if (this.isGrabbed) return;
-
     // Wake up if shaken
     if (shake > 0) {
       this.sleeping = false;
-      // Add random shake force
-      this.vx += (Math.random() - 0.5) * shake * 2;
-      this.vy += (Math.random() - 0.5) * shake * 2;
+      // Add POWERFUL shake force - balls go flying!
+      this.vx += (Math.random() - 0.5) * shake * 8; // 4x stronger
+      this.vy += (Math.random() - 0.5) * shake * 8; // 4x stronger
     }
 
     // Skip physics if ball is sleeping (like real balls at rest)
@@ -243,9 +180,9 @@ class InteractiveTennisBall {
       }
     }
 
-    // Apply gravity based on real device orientation
-    this.vx += gravityX * this.gravityScale * 0.8;
-    this.vy += gravityY * this.gravityScale * 0.8;
+    // Apply STRONG gravity based on device orientation
+    this.vx += gravityX * this.gravityScale * 2.5; // 3x stronger gravity effect
+    this.vy += gravityY * this.gravityScale * 2.5; // 3x stronger gravity effect
 
     // Apply air resistance (more realistic)
     this.vx *= this.airResistance;
@@ -292,9 +229,9 @@ class InteractiveTennisBall {
   }
 
   draw(ctx: CanvasRenderingContext2D) {
-    // Tennis ball with realistic shadow and grab highlight
-    const shadowOffset = this.isGrabbed ? 6 : 3;
-    const shadowOpacity = this.isGrabbed ? 0.4 : 0.3;
+    // Tennis ball with realistic shadow
+    const shadowOffset = 3;
+    const shadowOpacity = 0.3;
 
     // Draw shadow
     ctx.globalAlpha = shadowOpacity;
@@ -313,8 +250,7 @@ class InteractiveTennisBall {
 
     ctx.globalAlpha = 1;
 
-    // Tennis ball gradient (brighter when grabbed)
-    const brightness = this.isGrabbed ? 1.2 : 1;
+    // Tennis ball gradient
     const gradient = ctx.createRadialGradient(
       this.x - this.radius / 3,
       this.y - this.radius / 3,
@@ -323,41 +259,18 @@ class InteractiveTennisBall {
       this.y,
       this.radius
     );
-    gradient.addColorStop(
-      0,
-      `hsl(66, 100%, ${Math.min(85 * brightness, 100)}%)`
-    );
-    gradient.addColorStop(
-      0.3,
-      `hsl(66, 100%, ${Math.min(75 * brightness, 100)}%)`
-    );
-    gradient.addColorStop(
-      0.7,
-      `hsl(65, 95%, ${Math.min(65 * brightness, 100)}%)`
-    );
-    gradient.addColorStop(
-      1,
-      `hsl(64, 90%, ${Math.min(55 * brightness, 100)}%)`
-    );
-
-    // Draw ball with optional grab outline
-    if (this.isGrabbed) {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius + 3, 0, Math.PI * 2);
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.6)";
-      ctx.lineWidth = 2;
-      ctx.stroke();
-    }
+    gradient.addColorStop(0, "hsl(66, 100%, 85%)");
+    gradient.addColorStop(0.3, "hsl(66, 100%, 75%)");
+    gradient.addColorStop(0.7, "hsl(65, 95%, 65%)");
+    gradient.addColorStop(1, "hsl(64, 90%, 55%)");
 
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
     ctx.fillStyle = gradient;
     ctx.fill();
 
-    // Tennis ball seam (more detailed)
-    ctx.strokeStyle = this.isGrabbed
-      ? "rgba(255, 255, 255, 1)"
-      : "rgba(255, 255, 255, 0.8)";
+    // Tennis ball seam
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.8)";
     ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius * 0.8, 0, Math.PI);
@@ -366,7 +279,7 @@ class InteractiveTennisBall {
     ctx.arc(this.x, this.y, this.radius * 0.8, Math.PI, Math.PI * 2);
     ctx.stroke();
 
-    // Highlight for 3D effect (brighter when grabbed)
+    // Highlight for 3D effect
     ctx.beginPath();
     ctx.arc(
       this.x - this.radius / 4,
@@ -375,9 +288,7 @@ class InteractiveTennisBall {
       0,
       Math.PI * 2
     );
-    ctx.fillStyle = this.isGrabbed
-      ? "rgba(255, 255, 255, 0.5)"
-      : "rgba(255, 255, 255, 0.3)";
+    ctx.fillStyle = "rgba(255, 255, 255, 0.3)";
     ctx.fill();
   }
 }
@@ -531,7 +442,7 @@ export default function TennisHero({
         // Throw toward the walls with strong horizontal velocity
         const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
         ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
-        ball.vy = -6 - Math.random() * 3; // Moderate upward velocity -6 to -9
+        ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
         ballsRef.current.push(ball);
       }
       setBallCount(ballsRef.current.length);
@@ -541,49 +452,57 @@ export default function TennisHero({
 
     // Mouse/Touch Event Handlers for Ball Grabbing
     const handlePointerDown = (event: MouseEvent | TouchEvent) => {
-      event.preventDefault();
       const pos = getCanvasPos(event);
       mousePos.current = pos;
 
-      // Find the topmost ball at this position
-      for (let i = ballsRef.current.length - 1; i >= 0; i--) {
-        const ball = ballsRef.current[i];
-        if (ball.containsPoint(pos.x, pos.y)) {
-          grabbedBall.current = ball;
-          ball.startGrab(pos.x, pos.y);
-          canvas.style.cursor = "grabbing";
-          break;
+      // Create area-of-effect explosion pushing all nearby balls away
+      const explosionRadius = 80; // Radius of effect
+      let ballsAffected = 0;
+
+      for (const ball of ballsRef.current) {
+        const dx = ball.x - pos.x;
+        const dy = ball.y - pos.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < explosionRadius) {
+          ballsAffected++;
+          ball.sleeping = false;
+
+          // Calculate direction away from click point
+          const angle = Math.atan2(dy, dx);
+
+          // Force decreases with distance (closer = stronger push)
+          const maxForce = 15;
+          const forceMultiplier = Math.max(0.2, 1 - distance / explosionRadius);
+          const force = maxForce * forceMultiplier;
+
+          // Apply force in direction away from click
+          ball.vx += Math.cos(angle) * force;
+          ball.vy += Math.sin(angle) * force;
+
+          // Add some randomness for more natural effect
+          ball.vx += (Math.random() - 0.5) * 3;
+          ball.vy += (Math.random() - 0.5) * 3;
         }
+      }
+
+      // Only prevent default if we affected any balls
+      if (ballsAffected > 0) {
+        event.preventDefault();
       }
     };
 
     const handlePointerMove = (event: MouseEvent | TouchEvent) => {
-      event.preventDefault();
       const pos = getCanvasPos(event);
       mousePos.current = pos;
 
-      if (grabbedBall.current) {
-        grabbedBall.current.updateGrab(pos.x, pos.y);
-      } else {
-        // Check if hovering over a ball
-        let hoveringBall = false;
-        for (const ball of ballsRef.current) {
-          if (ball.containsPoint(pos.x, pos.y)) {
-            hoveringBall = true;
-            break;
-          }
-        }
-        canvas.style.cursor = hoveringBall ? "grab" : "default";
-      }
+      // Show crosshair cursor anywhere on canvas to indicate explosion area
+      canvas.style.cursor = "crosshair";
     };
 
     const handlePointerUp = (event: MouseEvent | TouchEvent) => {
-      event.preventDefault();
-      if (grabbedBall.current) {
-        grabbedBall.current.stopGrab();
-        grabbedBall.current = null;
-        canvas.style.cursor = "default";
-      }
+      // No longer need pointer up logic since we don't have grabbing
+      canvas.style.cursor = "default";
     };
 
     // Add event listeners for both mouse and touch
@@ -604,9 +523,10 @@ export default function TennisHero({
       if (now - lastShakeTime.current < 200) return; // Shorter debounce for responsiveness
       lastShakeTime.current = now;
 
-      // Add new ball occasionally when shaking hard
-      if (intensity > 15 && Math.random() > 0.5) {
-        const maxBalls = 50;
+      // Add new ball very easily when shaking (super sensitive)
+      if (intensity > 4 && Math.random() > 0.1) {
+        // Much lower threshold, much higher chance
+        const maxBalls = 100;
 
         // Remove oldest ball if we would exceed the limit (FIFO)
         if (ballsRef.current.length >= maxBalls) {
@@ -627,13 +547,13 @@ export default function TennisHero({
         // Throw toward the walls with strong horizontal velocity
         const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
         ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
-        ball.vy = -6 - Math.random() * 3; // Moderate upward velocity -6 to -9
+        ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
         ballsRef.current.push(ball); // Add newest ball
         setBallCount(ballsRef.current.length);
       }
 
-      // Set shake intensity for ball physics
-      shakeIntensity.current = Math.min(intensity / 10, 5);
+      // Set shake intensity for ball physics - Much stronger!
+      shakeIntensity.current = Math.min(intensity / 2, 20); // 4x stronger, 4x higher max
     };
 
     // Advanced shake detection with acceleration tracking
@@ -669,7 +589,8 @@ export default function TennisHero({
           accelerationHistory.current.reduce((a, b) => a + b, 0) /
           accelerationHistory.current.length;
 
-        if (totalDelta > 12 || avgAcceleration > 8) {
+        if (totalDelta > 3 || avgAcceleration > 2) {
+          // 4x more sensitive
           handleShake(totalDelta);
         }
 
@@ -693,26 +614,26 @@ export default function TennisHero({
       // Gamma: left-right tilt
 
       let gravityX = 0;
-      let gravityY = 0.5; // Default downward gravity
+      let gravityY = 0.2; // Very gentle default downward gravity
 
-      // Detect orientation and apply realistic gravity
+      // Detect orientation and apply gravity response
       if (Math.abs(beta) < 30) {
         // Phone is roughly flat (horizontal)
-        gravityX = ((gamma || 0) / 90) * 0.3; // Very gentle tilt response
-        gravityY = 0.1; // Almost no gravity when flat
+        gravityX = ((gamma || 0) / 90) * 0.4; // Gentle tilt response
+        gravityY = 0.15; // Very light gravity when flat
       } else if (Math.abs(beta - 90) < 30) {
         // Phone is vertical (portrait)
-        gravityX = ((gamma || 0) / 90) * 0.5;
-        gravityY = 1.0; // Full gravity downward
+        gravityX = ((gamma || 0) / 90) * 0.6; // Gentle horizontal
+        gravityY = 0.3; // Gentle downward gravity
       } else if (Math.abs(beta + 90) < 30) {
         // Phone is upside down vertical
-        gravityX = (-(gamma || 0) / 90) * 0.5;
-        gravityY = -1.0; // Gravity upward (upside down)
+        gravityX = (-(gamma || 0) / 90) * 0.6; // Gentle horizontal
+        gravityY = -0.3; // Gentle upward gravity
       } else {
         // Phone is tilted at an angle
         const tiltFactor = Math.abs(beta) / 90;
-        gravityX = ((gamma || 0) / 90) * 0.6 * tiltFactor;
-        gravityY = 0.8 * tiltFactor;
+        gravityX = ((gamma || 0) / 90) * 0.6 * tiltFactor; // Gentle
+        gravityY = 0.25 * tiltFactor; // Gentle
       }
 
       // Check CTA button collisions
@@ -877,8 +798,8 @@ export default function TennisHero({
           onClick={() => {
             const canvas = canvasRef.current;
             if (canvas) {
-              const maxBalls = 50;
-              const ballsToAdd = 3;
+              const maxBalls = 100;
+              const ballsToAdd = 5;
 
               // Remove oldest balls if we would exceed the limit (FIFO)
               const currentCount = ballsRef.current.length;
@@ -908,7 +829,7 @@ export default function TennisHero({
                 // Throw toward the walls with strong horizontal velocity
                 const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
                 ball.vx = direction * (15 + Math.random() * 5); // Extra strong horizontal -20 to -15 or 15 to 20
-                ball.vy = -8 - Math.random() * 4; // Good upward velocity -8 to -12
+                ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
                 ballsRef.current.push(ball); // Add to end (newest)
               }
               setBallCount(ballsRef.current.length);
