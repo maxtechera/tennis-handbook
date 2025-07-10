@@ -237,6 +237,33 @@
   }
 }
 
+/* Add More Balls Button */
+.addBallsButton {
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
+  margin-bottom: 1.5rem;
+}
+
+.addBallsButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+  background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%);
+}
+
+.addBallsButton:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
 /* Visual Stats */
 .visualStats {
   display: flex;
@@ -368,6 +395,30 @@
   }
   50% {
     transform: translateX(5px);
+  }
+}
+
+/* CTA Hit Effect */
+.ctaHit {
+  animation: ctaHitFlash 0.2s ease-out !important;
+  transform: scale(1.05);
+}
+
+@keyframes ctaHitFlash {
+  0% {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffd23f 100%);
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.6), 0 8px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  50% {
+    background: linear-gradient(135deg, #ffeb3b 0%, #ffc107 50%, #ff9800 100%);
+    box-shadow: 0 0 25px rgba(255, 235, 59, 0.8), 0 8px 35px rgba(0, 0, 0, 0.4);
+    transform: scale(1.08);
+  }
+  100% {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffd23f 100%);
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.4), 0 8px 25px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
   }
 }
 
@@ -548,6 +599,11 @@
 
   .contentContainer {
     padding: 1.5rem;
+  }
+
+  .addBallsButton {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 
   .visualStats {

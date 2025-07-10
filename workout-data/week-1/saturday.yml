@@ -166,6 +166,8 @@ schedule:
         phase_icon: "🧘"
         location: "home"
 
+# Assessments section following Monday's pattern
+assessments:
   - id: "saturday_readiness"
     type: "competition_readiness"
     title: "Saturday Option Selection"

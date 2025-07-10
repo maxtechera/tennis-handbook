@@ -28,8 +28,8 @@ class InteractiveTennisBall {
     this.y = y;
     this.vx = (Math.random() - 0.5) * 2;
     this.vy = (Math.random() - 0.5) * 2;
-    this.radius = radius;
-    this.mass = Math.PI * radius * radius; // Mass based on area
+    this.radius = 15; // Fixed size for all balls
+    this.mass = Math.PI * this.radius * this.radius; // Mass based on area
     this.restitution = 0.75; // Tennis ball bounciness
     this.friction = 0.95; // Rolling friction
     this.airResistance = 0.998; // Air resistance
@@ -93,6 +93,67 @@ class InteractiveTennisBall {
     const throwMultiplier = 0.3;
     this.vx *= throwMultiplier;
     this.vy *= throwMultiplier;
+  }
+
+  // Ball-to-CTA button collision detection and response
+  checkCTACollision(buttonRect: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+  }) {
+    // Find closest point on rectangle to circle center
+    const closestX = Math.max(
+      buttonRect.x,
+      Math.min(this.x, buttonRect.x + buttonRect.width)
+    );
+    const closestY = Math.max(
+      buttonRect.y,
+      Math.min(this.y, buttonRect.y + buttonRect.height)
+    );
+
+    // Calculate distance from circle center to closest point
+    const distanceX = this.x - closestX;
+    const distanceY = this.y - closestY;
+    const distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY);
+
+    if (distance < this.radius && !this.isGrabbed) {
+      // Collision detected
+      const overlap = this.radius - distance;
+
+      // Calculate collision normal
+      let normalX = distanceX / distance;
+      let normalY = distanceY / distance;
+
+      // Handle edge case when ball center is exactly on rectangle
+      if (distance === 0) {
+        // Push ball away from center of rectangle
+        const centerX = buttonRect.x + buttonRect.width / 2;
+        const centerY = buttonRect.y + buttonRect.height / 2;
+        normalX = this.x - centerX;
+        normalY = this.y - centerY;
+        const length = Math.sqrt(normalX * normalX + normalY * normalY);
+        normalX /= length;
+        normalY /= length;
+      }
+
+      // Move ball out of collision
+      this.x += normalX * overlap;
+      this.y += normalY * overlap;
+
+      // Reflect velocity with some energy loss and add some randomness
+      const dotProduct = this.vx * normalX + this.vy * normalY;
+      this.vx -= 2 * dotProduct * normalX * 0.8; // 0.8 for some energy loss
+      this.vy -= 2 * dotProduct * normalY * 0.8;
+
+      // Add slight random component for more interesting bounces
+      this.vx += (Math.random() - 0.5) * 0.5;
+      this.vy += (Math.random() - 0.5) * 0.5;
+
+      this.sleeping = false;
+      return true; // Collision occurred
+    }
+    return false; // No collision
   }
 
   // Ball-to-ball collision detection and response
@@ -331,6 +392,7 @@ export default function TennisHero({
   showUrgency,
 }: TennisHeroProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const ctaButtonRef = useRef<HTMLButtonElement>(null);
   const ballsRef = useRef<InteractiveTennisBall[]>([]);
   const animationRef = useRef<number>();
   const [isPhysicsActive, setIsPhysicsActive] = useState(false);
@@ -346,6 +408,8 @@ export default function TennisHero({
   const accelerationHistory = useRef<number[]>([]);
   const grabbedBall = useRef<InteractiveTennisBall | null>(null);
   const mousePos = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  const [ballCount, setBallCount] = useState(0);
+  const [ctaHitActive, setCTAHitActive] = useState(false);
 
   // Request device orientation permission
   const requestOrientationPermission = async () => {
@@ -452,16 +516,16 @@ export default function TennisHero({
     // Initialize balls with realistic distribution - Many more balls!
     const initializeBalls = () => {
       ballsRef.current = [];
-      const ballCount = Math.min(20, Math.floor(canvas.width / 40)); // Responsive ball count
-      for (let i = 0; i < ballCount; i++) {
+      const initialBallCount = Math.min(20, Math.floor(canvas.width / 40)); // Responsive ball count
+      for (let i = 0; i < initialBallCount; i++) {
         ballsRef.current.push(
           new InteractiveTennisBall(
             Math.random() * (canvas.width - 60) + 30,
-            Math.random() * (canvas.height - 60) + 30,
-            10 + Math.random() * 10 // Varied ball sizes (10-20px radius)
+            Math.random() * (canvas.height - 60) + 30
           )
         );
       }
+      setBallCount(ballsRef.current.length);
     };
 
     initializeBalls();
@@ -540,10 +604,10 @@ export default function TennisHero({
         ballsRef.current.push(
           new InteractiveTennisBall(
             Math.random() * (canvas.width - 60) + 30,
-            20,
-            8 + Math.random() * 12 // Varied sizes for new balls
+            20
           )
         );
+        setBallCount(ballsRef.current.length);
       }
 
       // Set shake intensity for ball physics
@@ -627,6 +691,28 @@ export default function TennisHero({
         const tiltFactor = Math.abs(beta) / 90;
         gravityX = ((gamma || 0) / 90) * 0.6 * tiltFactor;
         gravityY = 0.8 * tiltFactor;
+      }
+
+      // Check CTA button collisions
+      if (ctaButtonRef.current) {
+        const buttonRect = ctaButtonRef.current.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+
+        // Convert button position to canvas coordinates
+        const ctaRect = {
+          x: buttonRect.left - canvasRect.left,
+          y: buttonRect.top - canvasRect.top,
+          width: buttonRect.width,
+          height: buttonRect.height,
+        };
+
+        ballsRef.current.forEach((ball) => {
+          if (ball.checkCTACollision(ctaRect)) {
+            // Ball hit the CTA button - trigger visual effect
+            setCTAHitActive(true);
+            setTimeout(() => setCTAHitActive(false), 200); // Quick flash effect
+          }
+        });
       }
 
       // Check collisions between all balls
@@ -729,6 +815,28 @@ export default function TennisHero({
           </Translate>
         </p>
 
+        {/* Add More Balls Button */}
+        <button
+          onClick={() => {
+            const canvas = canvasRef.current;
+            if (canvas && ballsRef.current.length < 50) {
+              // Add 3 balls at once
+              for (let i = 0; i < 3; i++) {
+                ballsRef.current.push(
+                  new InteractiveTennisBall(
+                    Math.random() * (canvas.width - 60) + 30,
+                    Math.random() * 100 + 50 // Start from top
+                  )
+                );
+              }
+              setBallCount(ballsRef.current.length);
+            }
+          }}
+          className={styles.addBallsButton}
+        >
+          🎾 Más Pelotas ({ballCount})
+        </button>
+
         {/* Visual Stats */}
         <div className={styles.visualStats}>
           <div className={styles.statItem}>
@@ -755,8 +863,13 @@ export default function TennisHero({
 
         {/* CTA Button */}
         <button
+          ref={ctaButtonRef}
           onClick={onCTAClick}
-          className={clsx(styles.ctaButton, styles.rippleEffect)}
+          className={clsx(
+            styles.ctaButton,
+            styles.rippleEffect,
+            ctaHitActive && styles.ctaHit
+          )}
           aria-label="Descargar rutina gratis"
         >
           <span className={styles.ctaText}>
