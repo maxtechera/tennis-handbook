@@ -542,53 +542,48 @@ export default function Home(): ReactNode {
     // return () => window.removeEventListener("scroll", handleScroll);
   }, [wizardComplete, showWizard, triggerWizard, currentLanguage]);
 
-  // Time-based reminder
+  // Time-based reminder (DISABLED - user request)
   useEffect(() => {
-    // Check if wizard was recently dismissed
-    const hasDismissedWizard = localStorage.getItem("wizard_dismissed");
-    const lastDismissedTime = localStorage.getItem("wizard_dismissed_time");
-
-    let canShowReminder = true;
-    if (hasDismissedWizard && lastDismissedTime) {
-      const dismissedTime = parseInt(lastDismissedTime);
-      const hoursSinceDismissed =
-        (Date.now() - dismissedTime) / (1000 * 60 * 60);
-      if (hoursSinceDismissed < 24) {
-        canShowReminder = false;
-      }
-    }
-
-    if (!wizardComplete && !showWizard && canShowReminder) {
-      const timer = setTimeout(() => {
-        // Show floating reminder
-        const reminder = document.createElement("div");
-        reminder.className = styles.floatingReminder;
-        reminder.innerHTML = `
-          <p>👋 Still here? Access research-based training methods in just 2 minutes</p>
-          <button class="button button--primary button--sm">Start Now →</button>
-        `;
-        reminder.querySelector("button")?.addEventListener("click", () => {
-          triggerWizard();
-          reminder.remove();
-
-          sendEvent({
-            event: "wizard_triggered",
-            category: "Onboarding",
-            label: "time_reminder",
-            properties: {
-              delay_seconds: 45,
-              language: currentLanguage,
-            },
-          });
-        });
-        document.body.appendChild(reminder);
-
-        // Auto-remove after 10 seconds
-        setTimeout(() => reminder.remove(), 10000);
-      }, 45000); // 45 seconds
-
-      return () => clearTimeout(timer);
-    }
+    // DISABLED: Time-based reminder disabled per user request
+    // const hasDismissedWizard = localStorage.getItem("wizard_dismissed");
+    // const lastDismissedTime = localStorage.getItem("wizard_dismissed_time");
+    // let canShowReminder = true;
+    // if (hasDismissedWizard && lastDismissedTime) {
+    //   const dismissedTime = parseInt(lastDismissedTime);
+    //   const hoursSinceDismissed =
+    //     (Date.now() - dismissedTime) / (1000 * 60 * 60);
+    //   if (hoursSinceDismissed < 24) {
+    //     canShowReminder = false;
+    //   }
+    // }
+    // if (!wizardComplete && !showWizard && canShowReminder) {
+    //   const timer = setTimeout(() => {
+    //     // Show floating reminder
+    //     const reminder = document.createElement("div");
+    //     reminder.className = styles.floatingReminder;
+    //     reminder.innerHTML = `
+    //       <p>👋 Still here? Access research-based training methods in just 2 minutes</p>
+    //       <button class="button button--primary button--sm">Start Now →</button>
+    //     `;
+    //     reminder.querySelector("button")?.addEventListener("click", () => {
+    //       triggerWizard();
+    //       reminder.remove();
+    //       sendEvent({
+    //         event: "wizard_triggered",
+    //         category: "Onboarding",
+    //         label: "time_reminder",
+    //         properties: {
+    //           delay_seconds: 45,
+    //           language: currentLanguage,
+    //         },
+    //       });
+    //     });
+    //     document.body.appendChild(reminder);
+    //     // Auto-remove after 10 seconds
+    //     setTimeout(() => reminder.remove(), 10000);
+    //   }, 45000); // 45 seconds
+    //   return () => clearTimeout(timer);
+    // }
   }, [wizardComplete, showWizard, triggerWizard, currentLanguage]);
 
   const handleWizardComplete = async (wizardData: any) => {
@@ -688,14 +683,15 @@ export default function Home(): ReactNode {
         />
       )}
 
-      {/* Minimal fallback for users who skip wizard */}
-      {!wizardComplete && !showWizard && (
+      {/* Minimal fallback for users who skip wizard (DISABLED - user request) */}
+      {/* DISABLED: EmailCaptureBar disabled per user request */}
+      {/* {!wizardComplete && !showWizard && (
         <EmailCaptureBar
           showAfterScroll={true}
           scrollThreshold={80} // Higher threshold
           source="bar-fallback-minimal"
         />
-      )}
+      )} */}
     </Layout>
   );
 }
