@@ -5,7 +5,7 @@
   height: 100vh;
   height: 100dvh; /* Dynamic viewport height for mobile browsers */
   overflow: hidden;
-  background: linear-gradient(135deg, #1b5e20, #004d40);
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   animation: pulse 2s infinite;
   pointer-events: auto; /* Ensure button can be clicked */
 }
@@ -74,54 +74,134 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.05;
+  opacity: 0.15;
   pointer-events: none;
+}
+
+/* Tennis Court Outer Lines */
+.courtLines::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  right: 15%;
+  bottom: 10%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+/* Singles Court Lines */
+.courtLines::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  right: 20%;
+  bottom: 10%;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .baseline {
   position: absolute;
-  bottom: 100px;
-  left: 10%;
-  right: 10%;
-  height: 4px;
-  background: #81c784;
+  bottom: 10%;
+  left: 15%;
+  right: 15%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Top baseline */
+.baseline::before {
+  content: '';
+  position: absolute;
+  top: calc(-80vh + 10vh + 10vh); /* Mirror to top */
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .serviceLine {
   position: absolute;
-  bottom: 250px;
+  bottom: 25%;
   left: 15%;
   right: 15%;
-  height: 3px;
-  background: #81c784;
-  opacity: 0.8;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Top service line */
+.serviceLine::before {
+  content: '';
+  position: absolute;
+  top: calc(-50vh + 25vh + 25vh); /* Mirror to top */
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .centerLine {
   position: absolute;
-  top: 50%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
-  width: 3px;
-  height: 200px;
-  background: #81c784;
-  opacity: 0.6;
+  width: 2px;
+  height: 15%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Top center service line */
+.centerLine::before {
+  content: '';
+  position: absolute;
+  top: calc(-65vh); /* Position at top */
+  left: 0;
+  width: 2px;
+  height: 15vh;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .netPost {
   position: absolute;
   top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Net pattern */
+.netPost::before {
+  content: '';
+  position: absolute;
+  top: -20px;
   left: 0;
   right: 0;
-  height: 2px;
-  background: linear-gradient(
+  height: 40px;
+  background-image: repeating-linear-gradient(
     90deg,
-    transparent 10%,
-    #a5d6a7 50%,
-    transparent 90%
+    transparent,
+    transparent 4px,
+    rgba(255, 255, 255, 0.1) 4px,
+    rgba(255, 255, 255, 0.1) 6px
   );
-  transform: translateY(-50%);
+}
+
+/* Net posts */
+.netPost::after {
+  content: '';
+  position: absolute;
+  top: -30px;
+  height: 60px;
+  width: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  left: 0;
+  box-shadow: calc(100% - 6px) 0 0 rgba(255, 255, 255, 0.3);
 }
 
 /* Content Container */
@@ -260,7 +340,7 @@
   font-weight: 600;
   cursor: pointer;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   animation: fadeInUp 0.8s ease-out 0.8s both, pulse 2s ease-in-out infinite;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
@@ -533,6 +613,30 @@
   }
 
   .courtLines {
-    opacity: 0.05;
+    opacity: 0.1;
+  }
+  
+  /* Adjust court lines for mobile */
+  .courtLines::before {
+    left: 5%;
+    right: 5%;
+    top: 15%;
+    bottom: 15%;
+  }
+  
+  .courtLines::after {
+    left: 10%;
+    right: 10%;
+  }
+  
+  .baseline,
+  .serviceLine {
+    left: 5%;
+    right: 5%;
+  }
+  
+  .netPost {
+    left: 0;
+    right: 0;
   }
 }

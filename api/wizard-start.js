@@ -1,5 +1,4 @@
 import { sql } from '@vercel/postgres';
-import { devStorage } from './dev-storage.js';
 
 export default async function handler(req, res) {
   // Enable CORS
@@ -85,16 +84,8 @@ export default async function handler(req, res) {
         VALUES ('wizard_start', ${JSON.stringify({ email, source })}, ${sessionId})
       `;
     } else {
-      // Development mode - use local storage
-      devStorage.addEmailCapture(email, source, { sessionId });
-      devStorage.createWizardSubmission(sessionId, {
-        currentStep: 0,
-        userAgent,
-        ipAddress: ip
-      });
-      devStorage.addConversionEvent('wizard_start', { email, source }, sessionId);
-      
-      console.log('📧 Email captured (development):', {
+      // Development mode - just log the data
+      console.log('📧 Email captured (development mode - no database):', {
         email: email.split('@')[0] + '@***',
         sessionId,
         source,

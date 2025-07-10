@@ -1,5 +1,4 @@
 import { sql } from '@vercel/postgres';
-import { devStorage } from './dev-storage.js';
 import { flattenWizardData } from '../src/utils/flatten-wizard-data.js';
 
 export default async function handler(req, res) {
@@ -158,23 +157,8 @@ export default async function handler(req, res) {
         )
       `;
     } else {
-      // Development mode - use local storage with flat data
-      devStorage.updateWizardSubmission(sessionId, {
-        currentStep: step,
-        ...flat, // Spread all flat fields
-        userAgent,
-        ipAddress: ip,
-        utmSource: metadata.utmSource || null,
-        utmMedium: metadata.utmMedium || null,
-        utmCampaign: metadata.utmCampaign || null,
-        utmContent: metadata.utmContent || null,
-        utmTerm: metadata.utmTerm || null,
-        referrer: metadata.referrer || null
-      });
-      
-      devStorage.addConversionEvent(`wizard_step_${step}`, { step, hasData: Object.keys(data).length > 0 }, sessionId);
-      
-      console.log('📝 Wizard progress saved (development):', {
+      // Development mode - just log the data
+      console.log('📝 Wizard progress (development mode - no database):', {
         sessionId,
         step,
         userSegment: flat.userSegment,

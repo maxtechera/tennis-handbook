@@ -1,5 +1,4 @@
 import { sql } from '@vercel/postgres';
-import { devStorage } from './dev-storage.js';
 
 export default async function handler(req, res) {
   // Enable CORS
@@ -129,43 +128,10 @@ export default async function handler(req, res) {
         )
       `;
     } else {
-      // Development mode - use local storage
-      userId = devStorage.addUser(email, {
-        name: wizardData.personalInfo?.name,
-        language: wizardData.personalInfo?.language || 'en',
-        country: wizardData.personalInfo?.country,
-        whatsapp: wizardData.personalInfo?.whatsapp
-      }).id;
+      // Development mode - just log the data
+      userId = `dev-${Date.now()}`;
       
-      devStorage.updateWizardSubmission(sessionId, {
-        userId,
-        completedAt: new Date().toISOString(),
-        microQuiz: wizardData['micro-quiz'],
-        goalsQuiz: wizardData['goals-quiz'],
-        timeQuiz: wizardData['time-quiz'],
-        focusQuiz: wizardData['focus-quiz'],
-        personalInfo: wizardData.personalInfo || wizardData['personal-info'],
-        tennisExperience: wizardData.tennisExperience,
-        trainingGoals: wizardData.trainingGoals,
-        schedulePreferences: wizardData.schedulePreferences,
-        physicalProfile: wizardData.physicalProfile,
-        welcome: wizardData.welcome,
-        welcomeSuccess: wizardData['welcome-success'],
-        personalization: wizardData.personalization,
-        background: wizardData.background,
-        challenges: wizardData.challenges,
-        analyzing: wizardData.analyzing,
-        completion: wizardData.completion,
-        userSegment
-      });
-      
-      devStorage.addConversionEvent('wizard_complete', {
-        segment: userSegment,
-        hasWhatsapp: !!wizardData.personalInfo?.whatsapp,
-        language: wizardData.personalInfo?.language || 'en'
-      }, sessionId, userId);
-      
-      console.log('✅ Wizard completed (development):', {
+      console.log('✅ Wizard completed (development mode - no database):', {
         email: email.split('@')[0] + '@***',
         sessionId,
         userSegment,

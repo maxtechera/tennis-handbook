@@ -1,5 +1,4 @@
 import { sql } from '@vercel/postgres';
-import { devStorage } from './dev-storage.js';
 
 export default async function handler(req, res) {
   // Enable CORS
@@ -104,10 +103,19 @@ export default async function handler(req, res) {
         emailSources: emailSources.rows,
       };
     } else {
-      // Development mode - use local storage
-      analyticsData = devStorage.getAnalytics(daysInt);
-      analyticsData.period = `${days} days`;
-      analyticsData.development = true;
+      // Development mode - return empty analytics
+      analyticsData = {
+        funnel: { starts: 0, emails: 0, completes: 0, downloads: 0 },
+        conversionRates: {
+          emailCapture: '0',
+          completion: '0',
+          pdfDownload: '0'
+        },
+        segmentStats: [],
+        emailSources: [],
+        period: `${days} days`,
+        development: true
+      };
     }
     
     return res.status(200).json(analyticsData);
@@ -115,14 +123,22 @@ export default async function handler(req, res) {
   } catch (error) {
     console.error('Error fetching analytics:', error);
     
-    // If database error in development, use local storage
+    // If database error in development, return empty data
     if (!process.env.POSTGRES_URL && error.code === 'missing_connection_string') {
       const { days = '7' } = req.query;
-      const analyticsData = devStorage.getAnalytics(parseInt(days));
-      analyticsData.period = `${days} days`;
-      analyticsData.development = true;
       
-      return res.status(200).json(analyticsData);
+      return res.status(200).json({
+        funnel: { starts: 0, emails: 0, completes: 0, downloads: 0 },
+        conversionRates: {
+          emailCapture: '0',
+          completion: '0',
+          pdfDownload: '0'
+        },
+        segmentStats: [],
+        emailSources: [],
+        period: `${days} days`,
+        development: true
+      });
     }
     
     return res.status(500).json({ error: 'Failed to fetch analytics' });

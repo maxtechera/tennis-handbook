@@ -19,6 +19,9 @@ class InteractiveTennisBall {
   color: string;
   sleeping: boolean;
   sleepThreshold: number;
+  sleepFrames: number;
+  lastX: number;
+  lastY: number;
 
   constructor(x: number, y: number, radius: number = 15) {
     this.x = x;
@@ -34,6 +37,9 @@ class InteractiveTennisBall {
     this.color = "#CFFF00";
     this.sleeping = false;
     this.sleepThreshold = 0.5; // Increased threshold to reduce twitching
+    this.sleepFrames = 0;
+    this.lastX = x;
+    this.lastY = y;
   }
 
   // Check if point is inside ball (for touching)
@@ -111,17 +117,25 @@ class InteractiveTennisBall {
     const distance = Math.sqrt(dx * dx + dy * dy);
     const minDistance = this.radius + other.radius;
 
-    if (distance < minDistance && distance > 0) {
-      // Collision detected - separate balls
-      const overlap = minDistance - distance;
-      const separationX = (dx / distance) * overlap * 0.5;
-      const separationY = (dy / distance) * overlap * 0.5;
+    if (distance < minDistance && distance > 0.001) {
+      // Skip if both balls are sleeping
+      if (this.sleeping && other.sleeping) return;
 
-      // Move both balls to separate them
-      this.x -= separationX;
-      this.y -= separationY;
-      other.x += separationX;
-      other.y += separationY;
+      // Collision detected - separate balls with dampening
+      const overlap = minDistance - distance;
+      const separationDamping = this.sleeping || other.sleeping ? 0.3 : 0.5;
+      const separationX = (dx / distance) * overlap * 0.5 * separationDamping;
+      const separationY = (dy / distance) * overlap * 0.5 * separationDamping;
+
+      // Only move non-sleeping balls
+      if (!this.sleeping) {
+        this.x -= separationX;
+        this.y -= separationY;
+      }
+      if (!other.sleeping) {
+        other.x += separationX;
+        other.y += separationY;
+      }
 
       // Calculate collision response (momentum transfer)
       const nx = dx / distance; // Normal vector
@@ -134,21 +148,36 @@ class InteractiveTennisBall {
       // Relative velocity in collision normal direction
       const speed = rvx * nx + rvy * ny;
 
-      // Don't resolve if velocities are separating
-      if (speed > 0) return;
+      // Don't resolve if velocities are separating or too small
+      if (speed > -0.1) return;
 
       // Collision impulse with mass consideration
       const impulse = (2 * speed) / (this.mass + other.mass);
-      const restitution = Math.min(this.restitution, other.restitution);
+      const restitution = Math.min(this.restitution, other.restitution) * 0.5; // Less bouncy when piled
 
-      // Apply impulse to both balls
-      this.vx += impulse * other.mass * nx * restitution;
-      this.vy += impulse * other.mass * ny * restitution;
-      this.sleeping = false;
+      // Apply impulse to both balls with dampening
+      const impulseDamping = 0.7;
+      if (!this.sleeping) {
+        this.vx += impulse * other.mass * nx * restitution * impulseDamping;
+        this.vy += impulse * other.mass * ny * restitution * impulseDamping;
+      }
+      if (!other.sleeping) {
+        other.vx -= impulse * this.mass * nx * restitution * impulseDamping;
+        other.vy -= impulse * this.mass * ny * restitution * impulseDamping;
+      }
 
-      other.vx -= impulse * this.mass * nx * restitution;
-      other.vy -= impulse * this.mass * ny * restitution;
-      other.sleeping = false;
+      // Wake up if hit hard enough
+      const impulseMagnitude = Math.abs(impulse);
+      if (impulseMagnitude > 5) {
+        if (this.sleeping) {
+          this.sleeping = false;
+          this.sleepFrames = 0;
+        }
+        if (other.sleeping) {
+          other.sleeping = false;
+          other.sleepFrames = 0;
+        }
+      }
     }
   }
 
@@ -169,17 +198,25 @@ class InteractiveTennisBall {
 
     // Skip physics if ball is sleeping (like real balls at rest)
     if (this.sleeping) {
-      const totalVelocity = Math.abs(this.vx) + Math.abs(this.vy);
+      // Only wake up if there's significant movement or device tilt
       if (
-        totalVelocity < this.sleepThreshold &&
-        Math.abs(gravityX) < 0.1 &&
-        Math.abs(gravityY) < 0.8
+        Math.abs(gravityX) > 0.3 ||
+        Math.abs(gravityY - 0.3) > 0.3 ||
+        shake > 5
       ) {
-        return;
-      } else {
         this.sleeping = false;
+        this.sleepFrames = 0;
+      } else {
+        // Keep position stable when sleeping
+        this.vx = 0;
+        this.vy = 0;
+        return;
       }
     }
+
+    // Store previous position for sleep detection
+    const prevX = this.x;
+    const prevY = this.y;
 
     // Apply gravity based on device orientation (only if moving)
     if (!this.sleeping) {
@@ -190,6 +227,10 @@ class InteractiveTennisBall {
     // Apply air resistance (more realistic)
     this.vx *= this.airResistance;
     this.vy *= this.airResistance;
+
+    // Clamp very small velocities to zero to prevent jittering
+    if (Math.abs(this.vx) < 0.01) this.vx = 0;
+    if (Math.abs(this.vy) < 0.01) this.vy = 0;
 
     // Update position
     this.x += this.vx;
@@ -224,15 +265,24 @@ class InteractiveTennisBall {
 
     // Check if ball should go to sleep (like real physics)
     const totalVelocity = Math.abs(this.vx) + Math.abs(this.vy);
-    if (
-      totalVelocity < this.sleepThreshold &&
-      !bounced &&
-      this.y > height - this.radius - 5
-    ) {
-      // Only sleep if near the ground
-      this.sleeping = true;
-      this.vx = 0;
-      this.vy = 0;
+    const positionChange = Math.abs(this.x - prevX) + Math.abs(this.y - prevY);
+
+    // Increment sleep frames if ball is barely moving
+    if (totalVelocity < this.sleepThreshold && positionChange < 0.1) {
+      this.sleepFrames++;
+
+      // Go to sleep after being still for several frames
+      if (this.sleepFrames > 10) {
+        this.sleeping = true;
+        this.vx = 0;
+        this.vy = 0;
+        // Snap to grid to prevent micro-movements
+        this.x = Math.round(this.x);
+        this.y = Math.round(this.y);
+      }
+    } else {
+      // Reset sleep counter if moving
+      this.sleepFrames = 0;
     }
   }
 
@@ -314,6 +364,7 @@ export default function TennisHero({
   const ctaButtonRef = useRef<HTMLButtonElement>(null);
   const ballsRef = useRef<InteractiveTennisBall[]>([]);
   const animationRef = useRef<number>();
+  const frameSkipCounter = useRef<number>(0);
   const [isPhysicsActive, setIsPhysicsActive] = useState(false);
   const [motionPermission, setMotionPermission] = useState<string>("unknown");
   const [showMotionPrompt, setShowMotionPrompt] = useState(false);
@@ -406,26 +457,26 @@ export default function TennisHero({
   // Request device orientation permission
   const requestOrientationPermission = async () => {
     // Check if we need permission (iOS 13+)
-    const needsOrientationPermission = 
+    const needsOrientationPermission =
       typeof DeviceOrientationEvent !== "undefined" &&
       typeof (DeviceOrientationEvent as any).requestPermission === "function";
-      
-    const needsMotionPermission = 
+
+    const needsMotionPermission =
       typeof DeviceMotionEvent !== "undefined" &&
       typeof (DeviceMotionEvent as any).requestPermission === "function";
-    
+
     if (needsOrientationPermission || needsMotionPermission) {
       try {
         // Always request both permissions
         let orientationPermission = "granted";
         let motionPermissionResult = "granted";
-        
+
         if (needsOrientationPermission) {
           orientationPermission = await (
             DeviceOrientationEvent as any
           ).requestPermission();
         }
-        
+
         if (needsMotionPermission) {
           try {
             motionPermissionResult = await (
@@ -435,21 +486,28 @@ export default function TennisHero({
             console.log("Motion permission error:", error);
           }
         }
-        
-        const finalPermission = orientationPermission === "granted" && motionPermissionResult === "granted" ? "granted" : "denied";
+
+        const finalPermission =
+          orientationPermission === "granted" &&
+          motionPermissionResult === "granted"
+            ? "granted"
+            : "denied";
         setMotionPermission(finalPermission);
         setShowMotionPrompt(false);
-        
+
         if (finalPermission === "granted") {
           setIsPhysicsActive(true);
           // Remove any existing listeners first
-          window.removeEventListener("deviceorientation", handleDeviceOrientation);
+          window.removeEventListener(
+            "deviceorientation",
+            handleDeviceOrientation
+          );
           window.removeEventListener("devicemotion", handleDeviceMotion);
           // Set up the event listeners now that we have permission
           window.addEventListener("deviceorientation", handleDeviceOrientation);
           window.addEventListener("devicemotion", handleDeviceMotion);
         }
-        
+
         return finalPermission === "granted";
       } catch (error) {
         console.log("Permission request error:", error);
@@ -464,7 +522,7 @@ export default function TennisHero({
       return true;
     }
   };
-  
+
   // Define event handlers outside so they can be referenced
   const handleDeviceOrientation = (event: DeviceOrientationEvent) => {
     if (event.alpha !== null && event.beta !== null && event.gamma !== null) {
@@ -475,7 +533,7 @@ export default function TennisHero({
       };
     }
   };
-  
+
   const handleDeviceMotion = (event: DeviceMotionEvent) => {
     const acceleration = event.accelerationIncludingGravity;
     if (
@@ -512,53 +570,56 @@ export default function TennisHero({
       lastAcceleration.current = { x, y, z };
     }
   };
-  
+
   const lastAcceleration = useRef({ x: 0, y: 0, z: 0 });
-  
+
   // Enhanced shake detection
-  const handleShake = useCallback((intensity: number) => {
-    const now = Date.now();
-    if (now - lastShakeTime.current < 200) return; // Shorter debounce for responsiveness
-    lastShakeTime.current = now;
+  const handleShake = useCallback(
+    (intensity: number) => {
+      const now = Date.now();
+      if (now - lastShakeTime.current < 200) return; // Shorter debounce for responsiveness
+      lastShakeTime.current = now;
 
-    const canvas = canvasRef.current;
-    if (!canvas || !ballsRef.current) return;
+      const canvas = canvasRef.current;
+      if (!canvas || !ballsRef.current) return;
 
-    // Add new ball very easily when shaking (super sensitive)
-    if (intensity > 2 && Math.random() > 0.3) {
-      // Even lower threshold for easier ball creation
-      const maxBalls = 100;
+      // Add new ball very easily when shaking (super sensitive)
+      if (intensity > 2 && Math.random() > 0.3) {
+        // Even lower threshold for easier ball creation
+        const maxBalls = 1000;
 
-      // Remove oldest ball if we would exceed the limit (FIFO)
-      if (ballsRef.current.length >= maxBalls) {
-        ballsRef.current.shift(); // Remove oldest ball
+        // Remove oldest ball if we would exceed the limit (FIFO)
+        if (ballsRef.current.length >= maxBalls) {
+          ballsRef.current.shift(); // Remove oldest ball
+        }
+
+        // Get CTA button position for spawning
+        const buttonRect = ctaButtonRef.current?.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+        const spawnY = buttonRect
+          ? buttonRect.top - canvasRect.top - 30 // 30px above button
+          : canvas.height * 0.5; // Fallback to middle
+
+        const ball = new InteractiveTennisBall(
+          canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
+          spawnY
+        );
+        // Throw toward the walls with strong horizontal velocity
+        const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
+        ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
+        ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
+        ballsRef.current.push(ball); // Add newest ball
+        setBallCount(ballsRef.current.length);
+
+        // Track shake-generated ball
+        trackBallThrows(1);
       }
 
-      // Get CTA button position for spawning
-      const buttonRect = ctaButtonRef.current?.getBoundingClientRect();
-      const canvasRect = canvas.getBoundingClientRect();
-      const spawnY = buttonRect
-        ? buttonRect.top - canvasRect.top - 30 // 30px above button
-        : canvas.height * 0.5; // Fallback to middle
-
-      const ball = new InteractiveTennisBall(
-        canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
-        spawnY
-      );
-      // Throw toward the walls with strong horizontal velocity
-      const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
-      ball.vx = direction * (12 + Math.random() * 8); // Strong horizontal -20 to -12 or 12 to 20
-      ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
-      ballsRef.current.push(ball); // Add newest ball
-      setBallCount(ballsRef.current.length);
-
-      // Track shake-generated ball
-      trackBallThrows(1);
-    }
-
-    // Set shake intensity for ball physics - Much stronger!
-    shakeIntensity.current = Math.min(intensity / 2, 20); // 4x stronger, 4x higher max
-  }, [trackBallThrows]);
+      // Set shake intensity for ball physics - Much stronger!
+      shakeIntensity.current = Math.min(intensity / 2, 20); // 4x stronger, 4x higher max
+    },
+    [trackBallThrows]
+  );
 
   // Fetch ball stats on mount
   useEffect(() => {
@@ -569,11 +630,12 @@ export default function TennisHero({
   useEffect(() => {
     // Only set up listeners if we don't need permission or have permission
     const checkAndSetupMotion = () => {
-      const needsPermission = 
+      const needsPermission =
         (typeof DeviceOrientationEvent !== "undefined" &&
-         typeof (DeviceOrientationEvent as any).requestPermission === "function") ||
+          typeof (DeviceOrientationEvent as any).requestPermission ===
+            "function") ||
         (typeof DeviceMotionEvent !== "undefined" &&
-         typeof (DeviceMotionEvent as any).requestPermission === "function");
+          typeof (DeviceMotionEvent as any).requestPermission === "function");
 
       if (needsPermission) {
         // iOS 13+ - only set up if permission granted
@@ -640,16 +702,16 @@ export default function TennisHero({
       }
     };
     resizeCanvas();
-    
+
     // Use ResizeObserver for better viewport change detection
     const resizeObserver = new ResizeObserver(() => {
       resizeCanvas();
     });
-    
+
     if (canvas.parentElement) {
       resizeObserver.observe(canvas.parentElement);
     }
-    
+
     window.addEventListener("resize", resizeCanvas);
 
     // Initialize balls with realistic distribution - Many more balls!
@@ -749,8 +811,24 @@ export default function TennisHero({
     // Note: handleShake and handleDeviceMotion are defined outside this effect
     // and will be added/removed by the motion setup effect based on permissions
 
-    // Ultra-realistic animation loop with collision detection
+    // Optimized animation loop with spatial partitioning
     const animate = () => {
+      // Check if any balls are awake
+      const hasActiveBalls = ballsRef.current.some(
+        (ball) =>
+          !ball.sleeping || Math.abs(ball.vx) > 0.1 || Math.abs(ball.vy) > 0.1
+      );
+
+      // Skip some frames if all balls are sleeping
+      if (!hasActiveBalls && shakeIntensity.current < 0.1) {
+        frameSkipCounter.current++;
+        if (frameSkipCounter.current < 5) {
+          animationRef.current = requestAnimationFrame(animate);
+          return;
+        }
+      }
+      frameSkipCounter.current = 0;
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Calculate realistic gravity based on device orientation
@@ -783,30 +861,65 @@ export default function TennisHero({
         gravityY = 0.25 * tiltFactor; // Gentle
       }
 
-      // Check CTA button collisions
+      // Get CTA button rect for collisions
+      let ctaRect = undefined;
       if (ctaButtonRef.current) {
         const buttonRect = ctaButtonRef.current.getBoundingClientRect();
         const canvasRect = canvas.getBoundingClientRect();
 
         // Convert button position to canvas coordinates
-        const ctaRect = {
+        ctaRect = {
           x: buttonRect.left - canvasRect.left,
           y: buttonRect.top - canvasRect.top,
           width: buttonRect.width,
           height: buttonRect.height,
         };
 
+        // Still handle physics balls for CTA collision
         ballsRef.current.forEach((ball) => {
           ball.checkCTACollision(ctaRect); // Just physics collision, no visual effect
         });
       }
 
-      // Check collisions between all balls
-      for (let i = 0; i < ballsRef.current.length; i++) {
-        for (let j = i + 1; j < ballsRef.current.length; j++) {
-          ballsRef.current[i].checkCollisionWith(ballsRef.current[j]);
+      // Optimized collision detection with spatial partitioning
+      // Only check collisions for nearby balls
+      const gridSize = 100; // Size of each grid cell
+      const grid = new Map<string, InteractiveTennisBall[]>();
+
+      // Place balls in grid cells
+      ballsRef.current.forEach((ball) => {
+        const gridX = Math.floor(ball.x / gridSize);
+        const gridY = Math.floor(ball.y / gridSize);
+        const key = `${gridX},${gridY}`;
+
+        if (!grid.has(key)) {
+          grid.set(key, []);
         }
-      }
+        grid.get(key)!.push(ball);
+      });
+
+      // Check collisions only within same and neighboring cells
+      ballsRef.current.forEach((ball) => {
+        const gridX = Math.floor(ball.x / gridSize);
+        const gridY = Math.floor(ball.y / gridSize);
+
+        // Check neighboring cells (3x3 grid around current cell)
+        for (let dx = -1; dx <= 1; dx++) {
+          for (let dy = -1; dy <= 1; dy++) {
+            const key = `${gridX + dx},${gridY + dy}`;
+            const cellBalls = grid.get(key);
+
+            if (cellBalls) {
+              cellBalls.forEach((otherBall) => {
+                if (ball !== otherBall && ball.x < otherBall.x) {
+                  // Only check each pair once
+                  ball.checkCollisionWith(otherBall);
+                }
+              });
+            }
+          }
+        }
+      });
 
       // Apply shake effect and update balls
       ballsRef.current.forEach((ball) => {
@@ -820,6 +933,9 @@ export default function TennisHero({
         ball.draw(ctx);
       });
 
+      // Update ball count
+      setBallCount(ballsRef.current.length);
+
       // Reduce shake intensity over time
       shakeIntensity.current *= 0.9;
 
@@ -830,7 +946,7 @@ export default function TennisHero({
 
     return () => {
       window.removeEventListener("resize", resizeCanvas);
-      
+
       resizeObserver.disconnect();
 
       canvas.removeEventListener("mousedown", handlePointerDown);
@@ -863,7 +979,12 @@ export default function TennisHero({
       {/* Content Container */}
       <div className={styles.contentContainer}>
         {/* Urgency Banner */}
-        <div className={clsx(styles.urgencyBanner, !showUrgency && styles.urgencyBannerHidden)}>
+        <div
+          className={clsx(
+            styles.urgencyBanner,
+            !showUrgency && styles.urgencyBannerHidden
+          )}
+        >
           <span className={styles.fireEmoji}>📊</span>
           <Translate id="homepage.hero.urgency">
             87% menos raquetas rotas desde que entrenan con nosotros*
@@ -879,14 +1000,6 @@ export default function TennisHero({
             <Translate id="homepage.hero.title2">los #1 del mundo</Translate>
           </span>
         </h1>
-
-        {/* Subtitle */}
-        <p className={styles.subtitle}>
-          <Translate id="homepage.hero.subtitle">
-            Arrastra las pelotas, agita el dispositivo e inclínalo para física
-            realista
-          </Translate>
-        </p>
 
         {/* Visual Stats */}
         <div className={styles.visualStats}>
@@ -912,21 +1025,13 @@ export default function TennisHero({
           </div>
         </div>
 
-        {/* CTA Button */}
-        <button
-          ref={ctaButtonRef}
-          onClick={onCTAClick}
-          className={styles.ctaButton}
-          aria-label="Descargar rutina gratis"
-        >
-          <span className={styles.ctaText}>
-            <Translate id="homepage.hero.cta">
-              DESCARGAR RUTINA GRATIS
-            </Translate>
-          </span>
-          <div className={styles.ctaIcon}>⚡</div>
-        </button>
-
+        {/* Subtitle */}
+        <p className={styles.subtitle}>
+          <Translate id="homepage.hero.subtitle">
+            Arrastra las pelotas, agita el dispositivo e inclínalo para física
+            realista
+          </Translate>
+        </p>
         {/* Add More Balls Button - Now below CTA */}
         <button
           onClick={async () => {
@@ -935,19 +1040,21 @@ export default function TennisHero({
               const granted = await requestOrientationPermission();
               if (!granted) {
                 // Permission denied, but still throw balls without motion controls
-                console.log("Motion permission denied, balls will be thrown without motion controls");
+                console.log(
+                  "Motion permission denied, balls will be thrown without motion controls"
+                );
               }
             }
-            
+
             // Always activate physics when button is clicked (even without motion)
             if (!isPhysicsActive) {
               setIsPhysicsActive(true);
             }
-            
+
             const canvas = canvasRef.current;
             if (canvas) {
-              const maxBalls = 100;
-              const ballsToAdd = 5;
+              const maxBalls = 1000;
+              const ballsToAdd = 1;
 
               // Remove oldest balls if we would exceed the limit (FIFO)
               const currentCount = ballsRef.current.length;
@@ -987,10 +1094,42 @@ export default function TennisHero({
             }
           }}
           className={styles.addBallsButton}
-          title={motionPermission === "granted" ? "Lanzar pelotas (Movimiento activado 📱)" : "Lanzar pelotas (Clic para activar movimiento)"}
+          title={
+            motionPermission === "granted"
+              ? "Lanzar pelotas (Movimiento activado 📱)"
+              : "Lanzar pelotas (Clic para activar movimiento)"
+          }
         >
           🎾 {motionPermission !== "granted" && "📱"}
         </button>
+        {/* CTA Button */}
+        <button
+          ref={ctaButtonRef}
+          onClick={onCTAClick}
+          className={styles.ctaButton}
+          aria-label="Descargar rutina gratis"
+        >
+          <span className={styles.ctaText}>
+            <Translate id="homepage.hero.cta">
+              DESCARGAR RUTINA GRATIS
+            </Translate>
+          </span>
+          <div className={styles.ctaIcon}>⚡</div>
+        </button>
+
+        {/* Social Proof */}
+        <div className={styles.socialProof}>
+          <div className={styles.activityText}>
+            {isLoadingStats ? (
+              <span>Cargando...</span>
+            ) : (
+              <span>
+                🎾 {totalBallsThrown?.toLocaleString() || "0"} pelotas lanzadas
+                por la comunidad
+              </span>
+            )}
+          </div>
+        </div>
 
         {/* Trust Indicators */}
         <div className={styles.trustIndicators}>
@@ -1006,20 +1145,6 @@ export default function TennisHero({
               Acceso inmediato por email
             </Translate>
           </span>
-        </div>
-
-        {/* Social Proof */}
-        <div className={styles.socialProof}>
-          <div className={styles.activityText}>
-            {isLoadingStats ? (
-              <span>Cargando...</span>
-            ) : (
-              <span>
-                🎾 {totalBallsThrown?.toLocaleString() || "0"} pelotas lanzadas
-                por la comunidad
-              </span>
-            )}
-          </div>
         </div>
       </div>
     </div>
