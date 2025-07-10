@@ -4,15 +4,9 @@
   "installCommand": "pnpm install",
   "framework": null,
   "functions": {
-    "api/dist/analytics.js": {
-      "runtime": "edge"
-    },
-    "api/dist/analytics-wizard.js": {
-      "runtime": "edge"
-    },
-    "api/dist/track-stats.js": {
-      "runtime": "edge"
-    },
+    "api/dist/analytics.js": {},
+    "api/dist/analytics-wizard.js": {},
+    "api/dist/track-stats.js": {},
     "api/dist/wizard-start.js": {
       "memory": 512,
       "maxDuration": 15
