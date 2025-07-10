@@ -129,31 +129,55 @@ export default async function handler(req, res) {
     const ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || 'unknown';
     
     if (isDatabaseAvailable) {
-      // Quick email capture with processing flag
-      await sql`
-        INSERT INTO email_captures (
-          email, 
-          source, 
-          metadata, 
-          kit_submitted, 
-          kit_subscriber_id, 
-          kit_submitted_at,
-          processing_started_at
-        )
-        VALUES (
-          ${email}, 
-          ${source}, 
-          ${JSON.stringify({ sessionId })},
-          FALSE,
-          NULL,
-          NULL,
-          NOW()
-        )
-        ON CONFLICT (email) DO UPDATE SET
-          source = EXCLUDED.source,
-          metadata = EXCLUDED.metadata,
-          processing_started_at = NOW()
-      `;
+      // Quick email capture - try with new columns first, fallback to basic
+      try {
+        await sql`
+          INSERT INTO email_captures (
+            email, 
+            source, 
+            metadata, 
+            kit_submitted, 
+            kit_subscriber_id, 
+            kit_submitted_at,
+            processing_started_at
+          )
+          VALUES (
+            ${email}, 
+            ${source}, 
+            ${JSON.stringify({ sessionId })},
+            FALSE,
+            NULL,
+            NULL,
+            NOW()
+          )
+          ON CONFLICT (email) DO UPDATE SET
+            source = EXCLUDED.source,
+            metadata = EXCLUDED.metadata,
+            processing_started_at = NOW()
+        `;
+      } catch (error) {
+        // Fallback to basic columns if new columns don't exist
+        if (error.code === '42703') { // column does not exist
+          console.log('Using basic email_captures schema');
+          await sql`
+            INSERT INTO email_captures (
+              email, 
+              source, 
+              metadata
+            )
+            VALUES (
+              ${email}, 
+              ${source}, 
+              ${JSON.stringify({ sessionId })}
+            )
+            ON CONFLICT (email) DO UPDATE SET
+              source = EXCLUDED.source,
+              metadata = EXCLUDED.metadata
+          `;
+        } else {
+          throw error;
+        }
+      }
       
       // Create wizard submission entry
       await sql`
@@ -208,7 +232,12 @@ export default async function handler(req, res) {
         `;
         console.log('✅ Marked email as synced in database');
       } catch (updateError) {
-        console.error('Failed to update sync status:', updateError);
+        // If columns don't exist, just log and continue
+        if (updateError.code === '42703') {
+          console.log('Kit sync columns not available in production yet');
+        } else {
+          console.error('Failed to update sync status:', updateError);
+        }
       }
     }
     

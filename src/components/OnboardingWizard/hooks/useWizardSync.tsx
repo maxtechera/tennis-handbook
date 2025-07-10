@@ -40,7 +40,8 @@ export function useWizardSync({
         body: JSON.stringify({ 
           email, 
           sessionId,
-          source: 'wizard'
+          source: 'wizard',
+          wizardData: wizardData // Include any wizard data collected so far
         })
       });
       
@@ -62,7 +63,7 @@ export function useWizardSync({
       console.error('Email capture error:', error);
       return { success: false, error };
     }
-  }, [sessionId]);
+  }, [sessionId, wizardData]);
   
   // Sync wizard progress to database (debounced)
   const syncToDatabase = useDebouncedCallback(

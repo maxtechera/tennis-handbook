@@ -1,6 +1,8 @@
 // Vercel Serverless Function for Email Subscription
 // Deploy this file to handle email signups
 
+import { generateConvertKitTags, generateCustomFields } from './utils/convertkit-tags.js';
+
 // Helper function to get content recommendations based on wizard data
 function getContentRecommendations(wizardData) {
   const recommendations = [];
@@ -61,119 +63,21 @@ function getContentRecommendations(wizardData) {
   return recommendations.slice(0, 3); // Return top 3 recommendations
 }
 
-// Helper function to map wizard data to ConvertKit format
+// Legacy function kept for backward compatibility
+// Now we use the comprehensive tagging system from convertkit-tags.js
 function mapWizardDataToConvertKit(wizardData) {
-  const {
-    personalInfo = {},
-    tennisExperience = {},
-    trainingGoals = {},
-    schedulePreferences = {},
-    physicalProfile = {},
-  } = wizardData;
-
-  // Build custom fields for ConvertKit
-  const customFields = {
-    // Personal info
-    name: personalInfo.name || "",
-    language: personalInfo.language || "en",
-    country: personalInfo.country || "",
-    whatsapp: personalInfo.whatsapp || "",
-    communication_preferences: (
-      personalInfo.communicationPreferences || []
-    ).join(", "),
-
-    // Tennis experience
-    years_playing: tennisExperience.yearsPlaying || "",
-    current_level: tennisExperience.currentLevel || "",
-    plays_competitively: tennisExperience.playsCompetitively ? "yes" : "no",
-    ranking: tennisExperience.ranking || "",
-    has_coaching: tennisExperience.coachingHistory ? "yes" : "no",
-
-    // Training goals
-    primary_goal: trainingGoals.primaryGoal || "",
-    secondary_goals: (trainingGoals.secondaryGoals || []).join(", "),
-    specific_challenges: (trainingGoals.specificChallenges || []).join(", "),
-    has_injuries: trainingGoals.injuryHistory ? "yes" : "no",
-    injury_details: trainingGoals.injuryDetails || "",
-
-    // Schedule preferences
-    trainings_per_week: schedulePreferences.trainingsPerWeek || "",
-    session_duration: schedulePreferences.sessionDuration || "",
-    preferred_time: schedulePreferences.preferredTime || "",
-    commitment_level: schedulePreferences.commitmentLevel || "",
-    equipment_access: (schedulePreferences.equipmentAccess || []).join(", "),
-
-    // Physical profile
-    age: physicalProfile.age || "",
-    fitness_level: physicalProfile.fitnessLevel || "",
-    dominant_hand: physicalProfile.dominantHand || "",
-    height: physicalProfile.height || "",
-    weight: physicalProfile.weight || "",
-    has_mobility_issues: physicalProfile.mobilityIssues ? "yes" : "no",
-
-    // Metadata
-    wizard_completed: "yes",
-    wizard_completed_at: new Date().toISOString(),
-    signup_date: new Date().toISOString(),
+  // Use the comprehensive tagging system
+  const tagData = {
+    email: '', // Will be set by caller
+    source: 'wizard',
+    language: wizardData?.personalInfo?.language || 'en',
+    wizardData: wizardData,
+    timestamp: new Date()
   };
-
-  // Generate tags based on user responses
-  const tags = ["tennis-handbook", "onboarding-wizard"];
-
-  // Language tag - Spanish users have 3x engagement
-  if (personalInfo.language === "es") {
-    tags.push("spanish");
-    tags.push("high-engagement-3x");
-    tags.push("spanish-preferred");
-  } else {
-    tags.push("english");
-  }
-
-  // Level tags
-  if (tennisExperience.currentLevel) {
-    tags.push(`level-${tennisExperience.currentLevel}`);
-    tags.push(`segment-${tennisExperience.currentLevel}`);
-  }
-
-  // Goal tags
-  if (trainingGoals.primaryGoal) {
-    tags.push(`goal-${trainingGoals.primaryGoal}`);
-  }
-
-  // Commitment tags
-  if (schedulePreferences.commitmentLevel) {
-    tags.push(`commitment-${schedulePreferences.commitmentLevel}`);
-  }
-
-  // Special segments
-  if (tennisExperience.playsCompetitively) {
-    tags.push("competitive-player");
-  }
-
-  if (trainingGoals.injuryHistory) {
-    tags.push("injury-recovery");
-  }
-
-  if (schedulePreferences.trainingsPerWeek >= 4) {
-    tags.push("high-frequency-trainer");
-  }
-
-  if (physicalProfile.fitnessLevel === "excellent") {
-    tags.push("advanced-fitness");
-  }
-
-  // Communication preferences
-  if (personalInfo.communicationPreferences) {
-    personalInfo.communicationPreferences.forEach((pref) => {
-      tags.push(`comm-${pref}`);
-    });
-
-    if (personalInfo.communicationPreferences.includes("whatsapp")) {
-      tags.push("whatsapp-enabled");
-      tags.push("multi-channel-user");
-    }
-  }
-
+  
+  const tags = generateConvertKitTags(tagData);
+  const customFields = generateCustomFields(tagData);
+  
   return { customFields, tags };
 }
 
@@ -338,25 +242,33 @@ export default async function handler(req, res) {
     if (updateTags && wizardData) {
       console.log("🏷️ Processing tag updates for existing subscriber");
       
-      // For tag updates, we only process the wizard data but don't re-create the subscriber
-      const { customFields, tags: wizardTags } =
-        mapWizardDataToConvertKit(wizardData);
+      // Use comprehensive tagging system
+      const tagData = {
+        email: email,
+        source: source,
+        language: language,
+        wizardData: wizardData,
+        timestamp: new Date()
+      };
+      
+      const comprehensiveTags = generateConvertKitTags(tagData);
+      const comprehensiveFields = generateCustomFields(tagData);
 
-      console.log("📊 Wizard data processing result:", {
-        customFieldsCount: Object.keys(customFields).length,
-        wizardTagsCount: wizardTags.length,
-        wizardTags: wizardTags,
-        customFieldsKeys: Object.keys(customFields),
+      console.log("📊 Comprehensive tagging result:", {
+        customFieldsCount: Object.keys(comprehensiveFields).length,
+        wizardTagsCount: comprehensiveTags.length,
+        sampleTags: comprehensiveTags.slice(0, 10),
+        customFieldsKeys: Object.keys(comprehensiveFields),
       });
 
       // Merge custom fields
       fields = {
         ...fields,
-        ...customFields,
+        ...comprehensiveFields,
       };
 
-      // Add wizard tags
-      tags = [...tags, ...wizardTags];
+      // Replace basic tags with comprehensive tags
+      tags = comprehensiveTags;
 
       // Add WhatsApp if provided
       if (whatsapp) {
@@ -369,16 +281,25 @@ export default async function handler(req, res) {
 
     // If this is a wizard submission, process the wizard data
     if (isWizardSubmission && wizardData) {
-      console.log("🧙‍♂️ Processing wizard submission with full data");
+      console.log("🧙‍♂️ Processing wizard submission with full comprehensive tagging");
       
-      const { customFields, tags: wizardTags } =
-        mapWizardDataToConvertKit(wizardData);
+      // Use comprehensive tagging system
+      const tagData = {
+        email: email,
+        source: source,
+        language: language || wizardData?.personalInfo?.language || 'en',
+        wizardData: wizardData,
+        timestamp: new Date()
+      };
+      
+      const comprehensiveTags = generateConvertKitTags(tagData);
+      const comprehensiveFields = generateCustomFields(tagData);
 
-      console.log("📊 Full wizard data processing result:", {
-        customFieldsCount: Object.keys(customFields).length,
-        wizardTagsCount: wizardTags.length,
-        wizardTags: wizardTags,
-        sampleCustomFields: Object.keys(customFields).slice(0, 10),
+      console.log("📊 Full comprehensive tagging result:", {
+        customFieldsCount: Object.keys(comprehensiveFields).length,
+        wizardTagsCount: comprehensiveTags.length,
+        sampleTags: comprehensiveTags.slice(0, 15),
+        sampleCustomFields: Object.keys(comprehensiveFields).slice(0, 10),
         hasPersonalInfo: !!wizardData.personalInfo,
         hasTennisExperience: !!wizardData.tennisExperience,
         hasTrainingGoals: !!wizardData.trainingGoals,
@@ -386,14 +307,14 @@ export default async function handler(req, res) {
         hasPhysicalProfile: !!wizardData.physicalProfile,
       });
 
-      // Merge custom fields
+      // Replace all fields with comprehensive fields
       fields = {
         ...fields,
-        ...customFields,
+        ...comprehensiveFields,
       };
 
-      // Add wizard tags
-      tags = [...tags, ...wizardTags];
+      // Replace basic tags with comprehensive tags
+      tags = comprehensiveTags;
 
       // Add WhatsApp if provided (for Spanish users)
       if (whatsapp) {
@@ -403,7 +324,7 @@ export default async function handler(req, res) {
 
       // Determine email sequence based on segment and language
       const segment = wizardData?.tennisExperience?.currentLevel || "beginner";
-      const isSpanish = wizardData?.personalInfo?.language === "es";
+      const isSpanish = wizardData?.personalInfo?.language === "es" || language === "es";
 
       console.log("🎯 Sequence determination:", {
         segment,
@@ -411,7 +332,7 @@ export default async function handler(req, res) {
         hasInjuryHistory: !!wizardData?.trainingGoals?.injuryHistory,
       });
 
-      // Add sequence tag
+      // Add sequence tag (these are kept for email automation triggers)
       if (segment === "beginner" && isSpanish) {
         tags.push("sequence-spanish-beginner");
       } else if (segment === "competitive") {
