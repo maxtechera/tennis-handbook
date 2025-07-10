@@ -1,3 +1,5 @@
+> **Status: ACTIVE** | Last updated: 2025-07-10
+
 # Documentation Migration Prompt
 
 Use this prompt to initiate documentation migration in any project:

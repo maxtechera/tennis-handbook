@@ -53,12 +53,46 @@
   outline: none;
 }
 
+.closeButton {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  z-index: 30;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.closeButton:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.closeButton:active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.closeIcon {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+
 .stepContent {
   overflow: auto;
-  height: calc(100dvh - 138px);
+  height: calc(100dvh - 60px);
   flex: 1;
   padding: 16px;
-  padding-bottom: 120px; /* Space for fixed footer */
   /* display: flex; */
   flex-direction: column;
   justify-content: flex-start;
@@ -113,7 +147,10 @@
   bottom: 1rem;
   left: 1rem;
   z-index: 30;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 50%;
   width: 44px;
@@ -230,8 +267,8 @@
   }
 
   .stepContent {
-    padding: 2rem;
-    padding-bottom: 2rem;
+    /* padding: 2rem; */
+    /* padding-bottom: 2rem; */
     justify-content: center;
     overflow-y: visible;
   }
@@ -262,10 +299,10 @@
     min-height: 48px;
   }
 
-  .stepContent {
-    padding-top: 0.5rem;
-    padding-bottom: 100px;
-  }
+  /* .stepContent { */
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 100px; */
+  /* } */
 
   .wizardFooter {
     padding: 0.75rem 1rem;
@@ -319,6 +356,18 @@
   color: white;
 }
 
+[data-theme="dark"] .closeButton {
+  background: transparent;
+}
+
+[data-theme="dark"] .closeButton:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .closeIcon {
+  color: white;
+}
+
 [data-theme="dark"] .nextButton {
   background: linear-gradient(135deg, #32cd32, #228b22);
   color: #ffffff;
@@ -336,6 +385,7 @@
   .navButton,
   .skipButton,
   .backButton,
+  .closeButton,
   .nextButton {
     transition: none;
     animation: none;

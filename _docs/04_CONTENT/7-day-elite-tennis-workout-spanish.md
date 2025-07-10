@@ -1,3 +1,5 @@
+> **Status: ACTIVE** | Last updated: 2025-07-10
+
 # 🎾 PROGRAMA ÉLITE DE 7 DÍAS
 ## Entrenamiento Físico para Tenistas
 

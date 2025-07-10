@@ -1,3 +1,5 @@
+> **Status: ACTIVE** | Last updated: 2025-07-10
+
 # Elite Tennis Training Website
 
 This is a Docusaurus-powered website for the Elite Tennis Training Research Collection, featuring comprehensive, research-backed tennis-specific training programs.

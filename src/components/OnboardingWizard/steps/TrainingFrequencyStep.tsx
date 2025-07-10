@@ -6,6 +6,7 @@ interface TrainingFrequencyStepProps {
   onNext: (data: any) => void;
   onBack?: () => void;
   data?: any;
+  wizardData?: any;
 }
 
 type TrainingFrequency = "casual" | "regular" | "intensive" | "daily";
@@ -53,11 +54,20 @@ export function TrainingFrequencyStep({
   onNext,
   onBack,
   data = {},
+  wizardData,
 }: TrainingFrequencyStepProps) {
   const [selectedFrequency, setSelectedFrequency] = useState<TrainingFrequency | null>(
     data.trainingFrequency || null
   );
   const [showCelebration, setShowCelebration] = useState(false);
+
+  // Get user name, experience, and age from previous steps
+  const personalInfo = wizardData?.['personal-info'] || {};
+  const microQuizData = wizardData?.['micro-quiz'] || {};
+  const ageGroupData = wizardData?.['age-group'] || {};
+  const userName = personalInfo.name;
+  const experienceLevel = microQuizData.level;
+  const ageGroup = ageGroupData.ageGroup;
 
   const handleFrequencySelect = (frequency: TrainingFrequency) => {
     setSelectedFrequency(frequency);
@@ -79,10 +89,27 @@ export function TrainingFrequencyStep({
     <div className={styles.microQuizStep}>
       <div className={styles.content}>
         <div className={styles.questionTitle}>
-          <h2>¿Con qué frecuencia entrenas?</h2>
+          <h2>
+            {userName 
+              ? `${userName}, ¿con qué frecuencia entrenas?` 
+              : '¿Con qué frecuencia entrenas?'
+            }
+          </h2>
           <p className={styles.questionSubtitle}>
             Para crear un plan que se ajuste a tu disponibilidad
           </p>
+          <div className={styles.contextInfo}>
+            {experienceLevel && (
+              <span className={styles.contextItem}>
+                ✅ Nivel: <strong>{experienceLevel}</strong>
+              </span>
+            )}
+            {ageGroup && (
+              <span className={styles.contextItem}>
+                ✅ Edad: <strong>{ageGroup}</strong>
+              </span>
+            )}
+          </div>
         </div>
 
         <div className={styles.levelOptions}>

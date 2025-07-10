@@ -1,3 +1,5 @@
+> **Status: ACTIVE** | Last updated: 2025-07-10
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.

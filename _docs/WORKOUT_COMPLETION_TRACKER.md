@@ -1,3 +1,5 @@
+> **Status: ACTIVE** | Last updated: 2025-07-10
+
 # Workout Completion & Quality Tracker
 
 > Last Updated: 2025-01-09

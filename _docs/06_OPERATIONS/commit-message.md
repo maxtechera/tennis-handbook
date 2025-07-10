@@ -1,3 +1,5 @@
+> **Status: ACTIVE** | Last updated: 2025-07-10
+
 feat: Complete bilingual tennis training platform with Spanish localization
 
 ## Summary

@@ -1,3 +1,5 @@
+> **Status: ACTIVE** | Last updated: 2025-07-10
+
 # Deployment Instructions for Vercel
 
 ## Environment Variables Setup

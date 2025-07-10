@@ -10,12 +10,10 @@ import {
   GoalsQuizStep,
   TimeQuizStep,
   FocusQuizStep,
-  ExperienceLevelStep,
-  AgeGroupStep,
-  TrainingFrequencyStep,
   AnalyzingStep,
   PersonalizationStep, 
-  BackgroundStep, 
+  AgeGroupStep,
+  TrainingFrequencyStep,
   ChallengesStep, 
   CompletionStep 
 } from '../components/OnboardingWizard/steps';
@@ -23,13 +21,14 @@ import type { OnboardingStep } from '../components/OnboardingWizard/OnboardingWi
 
 /**
  * Creates the wizard steps with proper configuration
- * New optimized flow: Engagement → Value → Email → Full Quiz → Results
+ * Optimized flow: Engagement → Value → Email → Unique Profile Questions → Results
+ * REMOVED DUPLICATES: ExperienceLevel, AgeGroup, TrainingFrequency (already in BackgroundStep)
  */
 export function createWizardSteps(language: string = 'en'): OnboardingStep[] {
   const isSpanish = language === 'es';
   
   return [
-    // Phase 1: Multi-Question Engagement Hook
+    // Phase 1: Multi-Question Engagement Hook (First Experience Level Question)
     {
       id: 'micro-quiz',
       content: <MicroQuizStep />,
@@ -65,35 +64,31 @@ export function createWizardSteps(language: string = 'en'): OnboardingStep[] {
       content: <WelcomeSuccessStep />,
     },
     
-    // Phase 5: Additional Profile Questions
+    // Phase 5: Communication Preferences
     {
-      id: 'experience-level',
-      content: <ExperienceLevelStep />,
+      id: 'personalization',
+      content: <PersonalizationStep includeWhatsApp={isSpanish} />,
     },
+    
+    // Phase 6: Age Group (Individual Step - No Scroll)
     {
       id: 'age-group',
       content: <AgeGroupStep />,
     },
+    
+    // Phase 7: Training Frequency (Individual Step - No Scroll)
     {
       id: 'training-frequency',
       content: <TrainingFrequencyStep />,
     },
     
-    // Phase 6: Detailed Quiz
-    {
-      id: 'personalization',
-      content: <PersonalizationStep includeWhatsApp={isSpanish} />,
-    },
-    {
-      id: 'background',
-      content: <BackgroundStep />,
-    },
+    // Phase 8: Tennis-Specific Challenges and Goals
     {
       id: 'challenges', 
       content: <ChallengesStep />,
     },
     
-    // Phase 7: Results & Completion
+    // Phase 9: Results & Completion
     {
       id: 'completion',
       content: <CompletionStep />,

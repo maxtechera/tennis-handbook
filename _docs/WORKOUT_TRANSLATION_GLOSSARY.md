@@ -1,3 +1,5 @@
+> **Status: ACTIVE** | Last updated: 2025-07-10
+
 # Workout Translation Glossary
 
 > Created: 2025-01-09

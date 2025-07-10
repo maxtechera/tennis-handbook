@@ -27,6 +27,17 @@
   line-height: 1.5;
 }
 
+.experienceReminder {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(76, 175, 80, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  border-radius: 12px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
 .form {
   display: flex;
   flex-direction: column;

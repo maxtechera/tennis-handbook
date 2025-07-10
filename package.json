@@ -25,7 +25,12 @@
     "deploy:convertkit": "./scripts/deploy-convertkit.sh",
     "deploy:staging": "node scripts/deploy.js staging",
     "deploy:production": "node scripts/deploy.js production",
-    "db:migrate": "node scripts/create-tables.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate", 
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:introspect": "drizzle-kit introspect",
+    "db:legacy-migrate": "node scripts/create-tables.js",
     "db:seed": "node scripts/seed-data.js",
     "test:wizard": "node scripts/test-wizard-flow.js",
     "dev:setup": "curl http://localhost:3000/api/dev-setup | jq"

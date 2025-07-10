@@ -1,5 +1,87 @@
-import { sql } from '@vercel/postgres';
-import { flattenWizardData } from '../src/utils/flatten-wizard-data.js';
+import { sql } from "@vercel/postgres";
+import { db, wizardSubmissions, emailCaptures } from "./db/index.ts";
+import { eq } from "drizzle-orm";
+import { flattenWizardData } from "./utils/flatten-wizard-data.js";
+import {
+  generateConvertKitTags,
+  generateCustomFields,
+} from "./utils/convertkit-tags.js";
+
+// Helper function to sync wizard data to ConvertKit
+async function syncToConvertKit(
+  email,
+  sessionId,
+  wizardData = {},
+  stepName = "wizard-save"
+) {
+  const CONVERTKIT_API_SECRET = process.env.CONVERTKIT_API_SECRET;
+  const CONVERTKIT_FORM_ID =
+    process.env.CONVERTKIT_FORM_ID_ES || process.env.CONVERTKIT_FORM_ID;
+
+  if (!CONVERTKIT_API_SECRET || !CONVERTKIT_FORM_ID) {
+    console.error("Missing ConvertKit configuration");
+    return { success: false, error: "Missing configuration" };
+  }
+
+  try {
+    // Generate comprehensive tags and custom fields
+    const tagData = {
+      email,
+      source: stepName,
+      language: "es", // Spanish form primarily
+      sessionId,
+      wizardData,
+      timestamp: new Date(),
+    };
+
+    const tags = generateConvertKitTags(tagData);
+    const customFields = generateCustomFields(tagData);
+
+    const payload = {
+      api_secret: CONVERTKIT_API_SECRET,
+      email: email,
+      fields: {
+        ...customFields,
+        source: stepName,
+        wizard_step_completed: stepName,
+        wizard_updated_at: new Date().toISOString(),
+        session_id: sessionId,
+      },
+      tags: tags,
+    };
+
+    const response = await fetch(
+      `https://api.convertkit.com/v3/forms/${CONVERTKIT_FORM_ID}/subscribe`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      console.error("ConvertKit sync error:", data);
+      return { success: false, error: data.message || "Failed to sync" };
+    }
+
+    console.log(
+      `✅ ConvertKit sync successful for ${stepName}:`,
+      email.split("@")[0] + "@***"
+    );
+
+    return {
+      success: true,
+      subscriberId: data.subscription?.subscriber?.id,
+    };
+  } catch (error) {
+    console.error("ConvertKit sync error:", error);
+    return { success: false, error: error.message };
+  }
+}
 
 export default async function handler(req, res) {
   // Enable CORS
@@ -13,12 +95,18 @@ export default async function handler(req, res) {
   ];
 
   const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin) || (origin && origin.startsWith("http://localhost:"))) {
+  if (
+    allowedOrigins.includes(origin) ||
+    (origin && origin.startsWith("http://localhost:"))
+  ) {
     res.setHeader("Access-Control-Allow-Origin", origin);
   }
 
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS,PATCH,DELETE,POST,PUT");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,OPTIONS,PATCH,DELETE,POST,PUT"
+  );
   res.setHeader(
     "Access-Control-Allow-Headers",
     "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
@@ -35,174 +123,156 @@ export default async function handler(req, res) {
 
   try {
     const { sessionId, step, data, metadata = {} } = req.body;
-    
+
     if (!sessionId) {
       return res.status(400).json({ error: "Session ID is required" });
     }
-    
+
     // Get user agent and IP
-    const userAgent = req.headers['user-agent'] || '';
-    const ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || 'unknown';
-    
+    const userAgent = req.headers["user-agent"] || "";
+    const ip =
+      req.headers["x-forwarded-for"] || req.headers["x-real-ip"] || "unknown";
+
     // Flatten the wizard data for easier storage and querying
     const flat = flattenWizardData(data);
-    
+
     // Check if database is available
     const isDatabaseAvailable = process.env.POSTGRES_URL;
-    
+
     if (isDatabaseAvailable) {
-      // Check if submission exists
-      const existing = await sql`
-        SELECT id FROM wizard_submissions 
-        WHERE session_id = ${sessionId}
-        LIMIT 1
-      `;
-      
-      if (existing.rows.length > 0) {
-        // Update existing submission with flat data
-        await sql`
-          UPDATE wizard_submissions 
-          SET 
-            current_step = ${step},
-            email = COALESCE(${flat.email}, email),
-            name = COALESCE(${flat.name}, name),
-            age = COALESCE(${flat.age}, age),
-            gender = COALESCE(${flat.gender}, gender),
-            location = COALESCE(${flat.location}, location),
-            whatsapp = COALESCE(${flat.whatsapp}, whatsapp),
-            language = COALESCE(${flat.language}, language),
-            tennis_level = COALESCE(${flat.tennisLevel}, tennis_level),
-            tennis_goal = COALESCE(${flat.tennisGoal}, tennis_goal),
-            years_playing = COALESCE(${flat.yearsPlaying}, years_playing),
-            plays_competitively = COALESCE(${flat.playsCompetitively}, plays_competitively),
-            playing_style = COALESCE(${flat.playingStyle}, playing_style),
-            favorite_shot = COALESCE(${flat.favoriteShot}, favorite_shot),
-            time_availability = COALESCE(${flat.timeAvailability}, time_availability),
-            preferred_times = COALESCE(${flat.preferredTimes}, preferred_times),
-            focus_areas = COALESCE(${flat.focusAreas}, focus_areas),
-            primary_focus = COALESCE(${flat.primaryFocus}, primary_focus),
-            commitment_level = COALESCE(${flat.commitmentLevel}, commitment_level),
-            fitness_level = COALESCE(${flat.fitnessLevel}, fitness_level),
-            main_challenges = COALESCE(${flat.mainChallenges}, main_challenges),
-            injuries = COALESCE(${flat.injuries}, injuries),
-            micro_quiz_engagement = COALESCE(${flat.microQuizEngagement}, micro_quiz_engagement),
-            goals_quiz_engagement = COALESCE(${flat.goalsQuizEngagement}, goals_quiz_engagement),
-            time_quiz_engagement = COALESCE(${flat.timeQuizEngagement}, time_quiz_engagement),
-            focus_quiz_engagement = COALESCE(${flat.focusQuizEngagement}, focus_quiz_engagement),
-            accepted_terms = COALESCE(${flat.acceptedTerms}, accepted_terms),
-            newsletter = COALESCE(${flat.newsletter}, newsletter),
-            downloaded_pdf = COALESCE(${flat.downloadedPdf}, downloaded_pdf),
-            user_segment = COALESCE(${flat.userSegment}, user_segment),
-            ai_recommendations = COALESCE(${flat.aiRecommendations}, ai_recommendations),
-            personalized_path = COALESCE(${flat.personalizedPath}, personalized_path),
-            tags = COALESCE(${flat.tags}, tags),
-            raw_data = ${JSON.stringify(flat.rawData)},
-            user_agent = ${userAgent},
-            ip_address = ${ip},
-            utm_source = ${metadata.utmSource || null},
-            utm_medium = ${metadata.utmMedium || null},
-            utm_campaign = ${metadata.utmCampaign || null},
-            utm_content = ${metadata.utmContent || null},
-            utm_term = ${metadata.utmTerm || null},
-            referrer = ${metadata.referrer || null},
-            updated_at = NOW()
-          WHERE session_id = ${sessionId}
-        `;
-      } else {
-        // Create new submission with flat data
-        await sql`
-          INSERT INTO wizard_submissions (
-            session_id, current_step, email, name, age, gender, location, whatsapp, language,
-            tennis_level, tennis_goal, years_playing, plays_competitively, playing_style, favorite_shot,
-            time_availability, preferred_times, focus_areas, primary_focus, commitment_level,
-            fitness_level, main_challenges, injuries, micro_quiz_engagement, goals_quiz_engagement,
-            time_quiz_engagement, focus_quiz_engagement, accepted_terms, newsletter, downloaded_pdf,
-            user_segment, ai_recommendations, personalized_path, tags, raw_data,
-            user_agent, ip_address, utm_source, utm_medium, utm_campaign, utm_content, utm_term, referrer
-          ) VALUES (
-            ${sessionId}, ${step}, ${flat.email}, ${flat.name}, ${flat.age}, ${flat.gender}, 
-            ${flat.location}, ${flat.whatsapp}, ${flat.language}, ${flat.tennisLevel}, 
-            ${flat.tennisGoal}, ${flat.yearsPlaying}, ${flat.playsCompetitively}, 
-            ${flat.playingStyle}, ${flat.favoriteShot}, ${flat.timeAvailability}, 
-            ${flat.preferredTimes}, ${flat.focusAreas}, ${flat.primaryFocus}, 
-            ${flat.commitmentLevel}, ${flat.fitnessLevel}, ${flat.mainChallenges}, 
-            ${flat.injuries}, ${flat.microQuizEngagement}, ${flat.goalsQuizEngagement}, 
-            ${flat.timeQuizEngagement}, ${flat.focusQuizEngagement}, ${flat.acceptedTerms}, 
-            ${flat.newsletter}, ${flat.downloadedPdf}, ${flat.userSegment}, 
-            ${flat.aiRecommendations}, ${flat.personalizedPath}, ${flat.tags}, 
-            ${JSON.stringify(flat.rawData)}, ${userAgent}, ${ip},
-            ${metadata.utmSource || null}, ${metadata.utmMedium || null},
-            ${metadata.utmCampaign || null}, ${metadata.utmContent || null},
-            ${metadata.utmTerm || null}, ${metadata.referrer || null}
-          )
-        `;
+      // Use Drizzle upsert to handle progressive data accumulation
+      try {
+        // Prepare update data, only including non-null/undefined values
+        const updateData = {
+          currentStep: step,
+          userAgent,
+          ipAddress: ip,
+          rawData: data, // Store complete wizard data
+          updatedAt: new Date(),
+          // Metadata fields
+          utmSource: metadata.utmSource || null,
+          utmMedium: metadata.utmMedium || null,
+          utmCampaign: metadata.utmCampaign || null,
+          utmContent: metadata.utmContent || null,
+          utmTerm: metadata.utmTerm || null,
+          referrer: metadata.referrer || null,
+        };
+
+        // Add flat data fields only if they have values
+        Object.entries(flat).forEach(([key, value]) => {
+          if (value !== null && value !== undefined && value !== "") {
+            updateData[key] = value;
+          }
+        });
+
+        // Use Drizzle upsert for progressive data accumulation
+        await db
+          .insert(wizardSubmissions)
+          .values({
+            sessionId,
+            ...updateData,
+          })
+          .onConflictDoUpdate({
+            target: wizardSubmissions.sessionId,
+            set: updateData, // Update with new data, preserving existing values
+          });
+
+        console.log("✅ Wizard data saved progressively with Drizzle");
+
+        // Sync to ConvertKit if we have the email
+        try {
+          // Get the email from the wizard submission
+          const existingSubmission = await db
+            .select()
+            .from(wizardSubmissions)
+            .where(eq(wizardSubmissions.sessionId, sessionId))
+            .limit(1);
+
+          if (existingSubmission.length > 0 && existingSubmission[0].email) {
+            const email = existingSubmission[0].email;
+            const stepName = getCurrentStepName(step);
+
+            console.log(
+              `📤 Syncing wizard progress to ConvertKit for step: ${stepName}`
+            );
+            const kitResult = await syncToConvertKit(
+              email,
+              sessionId,
+              data,
+              stepName
+            );
+
+            if (kitResult.success) {
+              console.log(`✅ ConvertKit sync successful for ${stepName}`);
+            } else {
+              console.error(
+                `❌ ConvertKit sync failed for ${stepName}:`,
+                kitResult.error
+              );
+            }
+          }
+        } catch (syncError) {
+          console.error("❌ ConvertKit sync error:", syncError);
+          // Don't block the main wizard save if sync fails
+        }
+      } catch (error) {
+        console.error("❌ Wizard save error:", error);
+        // Fallback to development mode logging
+        console.log("📋 Wizard data (development mode):", {
+          sessionId,
+          step,
+          dataKeys: Object.keys(data),
+        });
       }
-      
-      // Track step completion with detailed data
-      const stepData = data[Object.keys(data).find(key => key !== 'personalInfo' && key !== 'tennisExperience' && key !== 'trainingGoals' && key !== 'schedulePreferences' && key !== 'physicalProfile') || ''];
-      
-      await sql`
-        INSERT INTO conversion_events (event_type, event_data, session_id)
-        VALUES (
-          ${`wizard_step_${step}`}, 
-          ${JSON.stringify({ 
-            step, 
-            stepName: getCurrentStepName(step),
-            hasData: Object.keys(data).length > 0,
-            dataKeys: Object.keys(data),
-            timestamp: new Date().toISOString(),
-            stepData: stepData || null
-          })}, 
-          ${sessionId}
-        )
-      `;
     } else {
       // Development mode - just log the data
-      console.log('📝 Wizard progress (development mode - no database):', {
+      console.log("📋 Wizard data saved (development mode - no database):", {
         sessionId,
         step,
-        userSegment: flat.userSegment,
-        hasData: Object.keys(data).length > 0,
-        timestamp: new Date().toISOString()
+        dataKeys: Object.keys(data),
+        timestamp: new Date().toISOString(),
       });
     }
-    
-    return res.status(200).json({ 
+
+    return res.status(200).json({
       success: true,
-      message: 'Progress saved',
-      tags: flat.tags // Return tags for debugging/testing
+      message: "Wizard data saved successfully",
+      development: !isDatabaseAvailable,
+      convertkitSynced: isDatabaseAvailable, // Will be true if database is available and sync attempted
     });
-    
   } catch (error) {
-    console.error('Error saving wizard progress:', error);
-    
+    console.error("Error saving wizard progress:", error);
+
     // If database error in development, still succeed
-    if (!process.env.POSTGRES_URL && error.code === 'missing_connection_string') {
-      console.log('📝 Fallback: Progress would be saved in production');
-      return res.status(200).json({ 
+    if (
+      !process.env.POSTGRES_URL &&
+      error.code === "missing_connection_string"
+    ) {
+      console.log("📝 Fallback: Progress would be saved in production");
+      return res.status(200).json({
         success: true,
-        message: 'Progress saved (development mode)',
-        development: true
+        message: "Progress saved (development mode)",
+        development: true,
       });
     }
-    
-    return res.status(500).json({ error: 'Failed to save progress' });
+
+    return res.status(500).json({ error: "Failed to save progress" });
   }
 }
 
 function getCurrentStepName(stepIndex) {
   const stepNames = [
-    'micro-quiz',
-    'goals-quiz', 
-    'time-quiz',
-    'focus-quiz',
-    'analyzing',
-    'welcome',
-    'welcome-success',
-    'personalization',
-    'background',
-    'challenges',
-    'completion'
+    "micro-quiz",
+    "goals-quiz",
+    "time-quiz",
+    "focus-quiz",
+    "analyzing",
+    "welcome",
+    "welcome-success",
+    "personalization",
+    "background",
+    "challenges",
+    "completion",
   ];
   return stepNames[stepIndex] || `step-${stepIndex}`;
 }

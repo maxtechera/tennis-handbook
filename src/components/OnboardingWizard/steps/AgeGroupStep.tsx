@@ -6,6 +6,7 @@ interface AgeGroupStepProps {
   onNext: (data: any) => void;
   onBack?: () => void;
   data?: any;
+  wizardData?: any;
 }
 
 type AgeGroup = "junior" | "adult" | "senior";
@@ -46,11 +47,18 @@ export function AgeGroupStep({
   onNext,
   onBack,
   data = {},
+  wizardData,
 }: AgeGroupStepProps) {
   const [selectedAge, setSelectedAge] = useState<AgeGroup | null>(
     data.ageGroup || null
   );
   const [showCelebration, setShowCelebration] = useState(false);
+
+  // Get user name and experience from previous steps
+  const personalInfo = wizardData?.['personal-info'] || {};
+  const microQuizData = wizardData?.['micro-quiz'] || {};
+  const userName = personalInfo.name;
+  const experienceLevel = microQuizData.level;
 
   const handleAgeSelect = (age: AgeGroup) => {
     setSelectedAge(age);
@@ -72,10 +80,20 @@ export function AgeGroupStep({
     <div className={styles.microQuizStep}>
       <div className={styles.content}>
         <div className={styles.questionTitle}>
-          <h2>¿En qué grupo de edad te encuentras?</h2>
+          <h2>
+            {userName 
+              ? `${userName}, ¿en qué grupo de edad te encuentras?` 
+              : '¿En qué grupo de edad te encuentras?'
+            }
+          </h2>
           <p className={styles.questionSubtitle}>
             Para adaptar los ejercicios a tu condición física
           </p>
+          {experienceLevel && (
+            <div className={styles.experienceReminder}>
+              ✅ Nivel: <strong>{experienceLevel}</strong>
+            </div>
+          )}
         </div>
 
         <div className={styles.levelOptions}>

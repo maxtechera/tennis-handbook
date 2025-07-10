@@ -221,15 +221,27 @@ export default function OnboardingWizard({
             stepText={`${translations.stepOf}`}
           />
         )}
-        {/* {onSkip && (
+        {onSkip && (
           <button
-            className={styles.skipButton}
+            className={styles.closeButton}
             onClick={handleSkip}
             aria-label={translations.skip}
           >
-            {translations.skip}
+            <svg
+              className={styles.closeIcon}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
           </button>
-        )} */}
+        )}
       </div>
 
       <div
@@ -261,28 +273,26 @@ export default function OnboardingWizard({
           : currentStepData.content}
       </div>
 
-      {/* Always show back button when not on first step */}
-      {!isFirstStep && (
-        <button
-          className={styles.backButton}
-          onClick={handlePrevious}
-          aria-label={translations.previous}
+      {/* Always show back button - on first step it closes wizard, otherwise goes back */}
+      <button
+        className={styles.backButton}
+        onClick={isFirstStep ? handleSkip : handlePrevious}
+        aria-label={isFirstStep ? translations.skip : translations.previous}
+      >
+        <svg
+          className={styles.backIcon}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
         >
-          <svg
-            className={styles.backIcon}
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-      )}
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d={isFirstStep ? "M6 18L18 6M6 6l12 12" : "M15 19l-7-7 7-7"}
+          />
+        </svg>
+      </button>
 
       {/* Show full navigation for steps that need it */}
       {!["micro-quiz", "goals-quiz", "time-quiz", "focus-quiz", "analyzing", "welcome", "welcome-success"].includes(

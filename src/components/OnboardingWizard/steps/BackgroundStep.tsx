@@ -16,7 +16,10 @@ interface Option {
 }
 
 export function BackgroundStep({ onNext, onBack, data, wizardData }: BackgroundStepProps) {
-  const [experienceLevel, setExperienceLevel] = useState(data.experienceLevel || '');
+  // Get experience level from micro-quiz step (no need to ask again)
+  const microQuizData = wizardData?.['micro-quiz'] || {};
+  const experienceLevel = microQuizData.level || '';
+  
   const [ageGroup, setAgeGroup] = useState(data.ageGroup || '');
   const [trainingFrequency, setTrainingFrequency] = useState(data.trainingFrequency || '');
   const [showCelebration, setShowCelebration] = useState<string>('');
@@ -115,12 +118,12 @@ export function BackgroundStep({ onNext, onBack, data, wizardData }: BackgroundS
     }, 600);
   };
 
-  // Auto-proceed when all fields are filled
+  // Auto-proceed when all NEW fields are filled (experience comes from micro-quiz)
   useEffect(() => {
-    if (experienceLevel && ageGroup && trainingFrequency) {
+    if (ageGroup && trainingFrequency) {
       const timer = setTimeout(() => {
         onNext({
-          experienceLevel,
+          experienceLevel, // From micro-quiz
           ageGroup,
           trainingFrequency
         });
@@ -129,8 +132,8 @@ export function BackgroundStep({ onNext, onBack, data, wizardData }: BackgroundS
     }
   }, [experienceLevel, ageGroup, trainingFrequency, onNext]);
 
-  // Determine which question is active
-  const activeQuestion = !experienceLevel ? 'experience' : !ageGroup ? 'age' : 'frequency';
+  // Determine which question is active (skip experience as it's already known)
+  const activeQuestion = !ageGroup ? 'age' : 'frequency';
 
   const renderOptions = (options: Option[], type: string, value: string, columns: number) => {
     return (
@@ -156,19 +159,19 @@ export function BackgroundStep({ onNext, onBack, data, wizardData }: BackgroundS
     <div className={styles.backgroundStep}>
       <div className={styles.header}>
         <h2 className={styles.title}>
-          {userName ? `Perfecto ${userName}, cuéntanos sobre tu experiencia` : 'Cuéntanos sobre tu experiencia'}
+          {userName ? `Perfecto ${userName}, completemos tu perfil` : 'Completemos tu perfil'}
         </h2>
         <p className={styles.subtitle}>
-          Esto nos ayudará a personalizar tu programa de entrenamiento
+          Solo nos faltan un par de datos para personalizar tu programa
         </p>
+        {experienceLevel && (
+          <div className={styles.experienceReminder}>
+            ✅ Nivel: <strong>{experienceLevels.find(e => e.id === experienceLevel)?.label || experienceLevel}</strong>
+          </div>
+        )}
       </div>
 
       <div className={styles.form}>
-        {/* Experience Level */}
-        <div className={`${styles.questionCard} ${experienceLevel ? styles.completed : ''} ${activeQuestion === 'experience' ? styles.active : ''}`}>
-          <h3 className={styles.questionTitle}>¿Cuál es tu nivel de experiencia?</h3>
-          {renderOptions(experienceLevels, 'experience', experienceLevel, 2)}
-        </div>
 
         {/* Age Group */}
         <div className={`${styles.questionCard} ${ageGroup ? styles.completed : ''} ${activeQuestion === 'age' ? styles.active : ''}`}>
@@ -182,9 +185,8 @@ export function BackgroundStep({ onNext, onBack, data, wizardData }: BackgroundS
           {renderOptions(trainingFrequencies, 'frequency', trainingFrequency, 2)}
         </div>
 
-        {/* Progress Dots */}
+        {/* Progress Dots - Only 2 questions now */}
         <div className={styles.progressDots}>
-          <div className={`${styles.progressDot} ${experienceLevel ? styles.completed : ''} ${activeQuestion === 'experience' ? styles.active : ''}`} />
           <div className={`${styles.progressDot} ${ageGroup ? styles.completed : ''} ${activeQuestion === 'age' ? styles.active : ''}`} />
           <div className={`${styles.progressDot} ${trainingFrequency ? styles.completed : ''} ${activeQuestion === 'frequency' ? styles.active : ''}`} />
         </div>
