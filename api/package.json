@@ -1,0 +1,39 @@
+{
+  "name": "tennis-workout-api",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Serverless API functions for Tennis Workout application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "test": "node test-db.js",
+    "setup": "node dev-setup.js",
+    "query": "node db-query.js"
+  },
+  "dependencies": {
+    "@vercel/postgres": "^0.10.0"
+  },
+  "devDependencies": {
+    "vercel": "^37.0.0"
+  },
+  "engines": {
+    "node": ">=22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/tennis-workout.git",
+    "directory": "api"
+  },
+  "keywords": [
+    "vercel",
+    "serverless",
+    "api",
+    "tennis",
+    "workout",
+    "postgres"
+  ],
+  "author": "Tennis Workout Team",
+  "license": "MIT"
+}
