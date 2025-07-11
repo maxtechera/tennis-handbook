@@ -295,7 +295,7 @@ export default function OnboardingWizard({
       </button>
 
       {/* Show full navigation for steps that need it */}
-      {!["micro-quiz", "goals-quiz", "time-quiz", "focus-quiz", "analyzing", "welcome", "welcome-success"].includes(
+      {!["micro-quiz", "goals-quiz", "time-quiz", "focus-quiz", "analyzing", "welcome"].includes(
         currentStepData.id
       ) && (
       <div className={styles.wizardFooter}>
