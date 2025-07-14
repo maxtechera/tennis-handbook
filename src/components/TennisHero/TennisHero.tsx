@@ -27,8 +27,8 @@ class InteractiveTennisBall {
   rotation: number;
   rotationSpeed: number;
   sprite: PIXI.Sprite;
-  static ballTexture: PIXI.Texture | null = null;
-  static textureLoaded: boolean = false;
+  static ballImage: HTMLImageElement | null = null;
+  static imageLoaded: boolean = false;
 
   constructor(x: number, y: number, radius: number = 15) {
     this.x = x;
@@ -500,13 +500,21 @@ export default function TennisHero({
     analyticsQueue.current = [];
 
     try {
-      await fetch("/api/track-stats", {
+      const response = await fetch("/api/track-stats", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ events }),
       });
+
+      if (response.ok) {
+        const data = await response.json();
+        // Update UI with actual server total if available
+        if (data.totals && data.totals.balls_thrown) {
+          setTotalBallsThrown(data.totals.balls_thrown);
+        }
+      }
     } catch (error) {
       console.error("Error sending analytics:", error);
       // Re-add events to queue on failure
@@ -517,6 +525,9 @@ export default function TennisHero({
   // Track ball throws with batching
   const trackBallThrows = useCallback(
     (count: number) => {
+      // Update session manager for local tracking
+      sessionManager.incrementBallsThrown(count);
+      
       // Optimistically update UI
       setTotalBallsThrown((prev) => (prev || 0) + count);
       pendingThrows.current += count;
@@ -776,9 +787,16 @@ export default function TennisHero({
     return unsubscribe;
   }, [isPhysicsActive, spawnCelebrationBalls]);
 
-  // Fetch ball stats on mount
+  // Fetch ball stats on mount and periodically
   useEffect(() => {
     fetchBallStats();
+    
+    // Set up periodic refresh every 30 seconds
+    const refreshInterval = setInterval(() => {
+      fetchBallStats();
+    }, 30000);
+    
+    return () => clearInterval(refreshInterval);
   }, [fetchBallStats]);
 
   // Setup device orientation and motion detection
@@ -1170,6 +1188,11 @@ export default function TennisHero({
         ballsRef.current.push(ball);
       }
       setBallCount(ballsRef.current.length);
+      
+      // Track the initial ball spawning
+      if (initialBallCount > 0) {
+        trackBallThrows(initialBallCount);
+      }
     };
 
     initializeBalls();
