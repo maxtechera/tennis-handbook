@@ -54,10 +54,9 @@
   left: 0;
   width: 100%;
   min-height: 100dvh;
-
   pointer-events: auto;
   z-index: 5;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 /* Motion Permission Prompt */
