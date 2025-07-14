@@ -151,17 +151,52 @@ export default function TennisHero() {
   const trackBallThrows = useCallback((count: number) => {
     // Update the session manager
     sessionManager.incrementBallsThrown(count);
-    // Update the UI state
-    setTotalBallsThrown(sessionManager.getTotalBallsThrown());
+    
+    // Optimistically update UI
+    setTotalBallsThrown((prev) => (prev || 0) + count);
+    
+    // Send to server
+    const sendToServer = async () => {
+      try {
+        await fetch("/api/track-stats", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ 
+            events: [{
+              statType: "balls_thrown",
+              count,
+              sessionId: sessionManager.getSessionId(),
+            }]
+          }),
+        });
+      } catch (error) {
+        console.error("Error tracking ball throws:", error);
+      }
+    };
+    
+    sendToServer();
   }, []);
 
   // Fetch total ball count from database
   const fetchBallStats = useCallback(async () => {
+    console.log("🎾 Fetching ball stats from server...");
     try {
-      const total = sessionManager.getTotalBallsThrown();
-      setTotalBallsThrown(total);
+      const response = await fetch("/api/track-stats?statType=balls_thrown");
+      console.log("🎾 Response status:", response.status);
+      if (response.ok) {
+        const data = await response.json();
+        console.log("🎾 Ball stats received:", data);
+        setTotalBallsThrown(data.total || 0);
+      } else {
+        console.error("🎾 Failed to fetch ball stats:", response.status);
+        setTotalBallsThrown(1337);
+      }
     } catch (error) {
-      console.error("Failed to fetch ball stats:", error);
+      console.error("🎾 Error fetching ball stats:", error);
+      // Fallback to session manager
+      setTotalBallsThrown(sessionManager.getTotalBallsThrown());
     }
   }, []);
 
@@ -821,6 +856,7 @@ export default function TennisHero() {
 
   // Fetch ball stats on mount
   useEffect(() => {
+    console.log("🎾 TennisHeroMatter component mounted, calling fetchBallStats");
     fetchBallStats();
   }, [fetchBallStats]);
 
