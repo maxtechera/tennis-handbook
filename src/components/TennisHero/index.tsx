@@ -1,1 +1,1 @@
-export { default as TennisHero } from "./TennisHero";
+export { default as TennisHero } from "./TennisHeroPixi";

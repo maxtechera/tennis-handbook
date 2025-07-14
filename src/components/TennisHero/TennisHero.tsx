@@ -4,6 +4,7 @@ import clsx from "clsx";
 import styles from "./TennisHero.module.css";
 import { sessionManager } from "../../utils/session";
 import { tennisBallEvents } from "../../utils/tennis-ball-events";
+import * as PIXI from "pixi.js";
 
 // Ultra-realistic physics ball class with collision and grabbing
 class InteractiveTennisBall {
@@ -25,8 +26,9 @@ class InteractiveTennisBall {
   lastY: number;
   rotation: number;
   rotationSpeed: number;
-  static ballImage: HTMLImageElement | null = null;
-  static imageLoaded: boolean = false;
+  sprite: PIXI.Sprite;
+  static ballTexture: PIXI.Texture | null = null;
+  static textureLoaded: boolean = false;
 
   constructor(x: number, y: number, radius: number = 15) {
     this.x = x;
@@ -439,6 +441,7 @@ export default function TennisHero({
 }: TennisHeroProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const ctaButtonRef = useRef<HTMLButtonElement>(null);
+  const tennisBallButtonRef = useRef<HTMLButtonElement>(null);
   const ballsRef = useRef<InteractiveTennisBall[]>([]);
   const animationRef = useRef<number>();
   const frameSkipCounter = useRef<number>(0);
@@ -465,6 +468,12 @@ export default function TennisHero({
   >([]);
   const analyticsTimer = useRef<NodeJS.Timeout | null>(null);
   const sessionId = useRef<string>(sessionManager.getSessionId());
+  
+  // Drag-to-aim state
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState<{ x: number; y: number } | null>(null);
+  const [dragCurrent, setDragCurrent] = useState<{ x: number; y: number } | null>(null);
+  const dragCanvasRef = useRef<HTMLCanvasElement>(null);
 
   // Fetch total ball count from database
   const fetchBallStats = useCallback(async () => {
@@ -829,6 +838,280 @@ export default function TennisHero({
     };
   };
 
+  // Get position from mouse or touch event
+  const getEventPosition = (e: React.MouseEvent | React.TouchEvent | MouseEvent | TouchEvent): { x: number; y: number } => {
+    if ('touches' in e && e.touches.length > 0) {
+      return { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    } else if ('clientX' in e) {
+      return { x: e.clientX, y: e.clientY };
+    }
+    return { x: 0, y: 0 };
+  };
+
+  // Track if it's a click or drag
+  const dragThresholdRef = useRef<boolean>(false);
+  const clickStartTimeRef = useRef<number>(0);
+
+  // Handle drag start on the button
+  const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
+    e.preventDefault();
+    const pos = getEventPosition(e);
+    setDragStart(pos);
+    setDragCurrent(pos);
+    dragThresholdRef.current = false;
+    clickStartTimeRef.current = Date.now();
+  };
+
+  // Handle drag move
+  const handleDragMove = useCallback((e: MouseEvent | TouchEvent) => {
+    if (!dragStart) return;
+    e.preventDefault();
+    const pos = getEventPosition(e);
+    
+    // Check if we've moved enough to consider it a drag
+    const dx = pos.x - dragStart.x;
+    const dy = pos.y - dragStart.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    
+    if (distance > 10 && !isDragging) {
+      // Start dragging
+      setIsDragging(true);
+      dragThresholdRef.current = true;
+    }
+    
+    if (isDragging) {
+      setDragCurrent(pos);
+    }
+  }, [isDragging, dragStart]);
+
+  // Handle drag end
+  const handleDragEnd = useCallback((e: MouseEvent | TouchEvent) => {
+    e.preventDefault();
+    
+    // Check if this was a click (not a drag)
+    const timeSinceStart = Date.now() - clickStartTimeRef.current;
+    if (!dragThresholdRef.current && timeSinceStart < 300 && dragStart) {
+      // This is a click - spawn random ball like before
+      // Always request motion permission on iOS when not granted
+      if (motionPermission !== "granted") {
+        requestOrientationPermission();
+      }
+
+      // Always activate physics
+      if (!isPhysicsActive) {
+        setIsPhysicsActive(true);
+      }
+
+      const canvas = canvasRef.current;
+      if (canvas) {
+        const maxBalls = 1000;
+        const ballsToAdd = 1;
+
+        // Remove oldest balls if we would exceed the limit
+        const currentCount = ballsRef.current.length;
+        const ballsToRemove = Math.max(0, currentCount + ballsToAdd - maxBalls);
+
+        if (ballsToRemove > 0) {
+          ballsRef.current.splice(0, ballsToRemove);
+        }
+
+        // Get tennis ball button position for spawning
+        const buttonRect = tennisBallButtonRef.current?.getBoundingClientRect();
+        const canvasRect = canvas.getBoundingClientRect();
+        const spawnX = buttonRect
+          ? (buttonRect.left + buttonRect.width / 2 - canvasRect.left) * (canvas.width / canvasRect.width)
+          : canvas.width / 2;
+        const spawnY = buttonRect
+          ? (buttonRect.top - canvasRect.top - 30) * (canvas.height / canvasRect.height) // 30px above button
+          : canvas.height * 0.5;
+
+        const ball = new InteractiveTennisBall(
+          spawnX + (Math.random() - 0.5) * 20, // Button center ± 10px
+          spawnY
+        );
+        
+        // Throw toward the walls with strong horizontal velocity and curve (original behavior)
+        const direction = Math.random() < 0.5 ? -1 : 1;
+        const curveFactor = 4 + Math.random() * 6;
+        ball.vx = direction * (15 + Math.random() * 5) + curveFactor * (Math.random() < 0.5 ? -1 : 1);
+        ball.vy = -15 - Math.random() * 8;
+        
+        ballsRef.current.push(ball);
+        setBallCount(ballsRef.current.length);
+        trackBallThrows(ballsToAdd);
+      }
+    } else if (isDragging && dragStart && dragCurrent) {
+      // This is a drag - use drag-to-aim behavior
+      // Calculate drag vector
+      const dx = dragCurrent.x - dragStart.x;
+      const dy = dragCurrent.y - dragStart.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      
+      // Only throw if dragged a minimum distance
+      if (distance > 20) {
+      // Always request motion permission on iOS when not granted
+      if (motionPermission !== "granted") {
+        requestOrientationPermission();
+      }
+
+      // Always activate physics
+      if (!isPhysicsActive) {
+        setIsPhysicsActive(true);
+      }
+
+      const canvas = canvasRef.current;
+      if (canvas) {
+        const maxBalls = 1000;
+        const ballsToAdd = 1;
+
+        // Remove oldest balls if we would exceed the limit
+        const currentCount = ballsRef.current.length;
+        const ballsToRemove = Math.max(0, currentCount + ballsToAdd - maxBalls);
+
+        if (ballsToRemove > 0) {
+          ballsRef.current.splice(0, ballsToRemove);
+        }
+
+        // Calculate throw direction and power
+        const maxDistance = 200; // Maximum drag distance for full power
+        const power = Math.min(distance / maxDistance, 1);
+        const angle = Math.atan2(-dy, -dx); // Negative because we throw opposite to drag
+
+        // Get canvas position for coordinate conversion
+        const canvasRect = canvas.getBoundingClientRect();
+        
+        // Spawn ball at drag start position (where finger/mouse started)
+        const spawnX = (dragStart.x - canvasRect.left) * (canvas.width / canvasRect.width);
+        const spawnY = (dragStart.y - canvasRect.top) * (canvas.height / canvasRect.height);
+
+        const ball = new InteractiveTennisBall(
+          spawnX,
+          spawnY
+        );
+
+        // Calculate velocity based on drag
+        const minSpeed = 10;
+        const maxSpeed = 25;
+        const speed = minSpeed + (maxSpeed - minSpeed) * power;
+        
+        ball.vx = Math.cos(angle) * speed;
+        ball.vy = Math.sin(angle) * speed;
+        
+        // Add some curve for fun
+        const curveFactor = 2 + Math.random() * 4;
+        ball.vx += curveFactor * (Math.random() < 0.5 ? -1 : 1);
+        
+        ballsRef.current.push(ball);
+        setBallCount(ballsRef.current.length);
+
+        // Track the ball throw
+        trackBallThrows(ballsToAdd);
+      }
+    }
+    }
+    
+    // Reset drag state
+    setIsDragging(false);
+    setDragStart(null);
+    setDragCurrent(null);
+    dragThresholdRef.current = false;
+  }, [isDragging, dragStart, dragCurrent, motionPermission, isPhysicsActive, trackBallThrows, requestOrientationPermission, ctaButtonRef]);
+
+  // Setup global drag event listeners
+  useEffect(() => {
+    if (dragStart) {
+      window.addEventListener('mousemove', handleDragMove);
+      window.addEventListener('mouseup', handleDragEnd);
+      window.addEventListener('touchmove', handleDragMove, { passive: false });
+      window.addEventListener('touchend', handleDragEnd, { passive: false });
+      
+      return () => {
+        window.removeEventListener('mousemove', handleDragMove);
+        window.removeEventListener('mouseup', handleDragEnd);
+        window.removeEventListener('touchmove', handleDragMove);
+        window.removeEventListener('touchend', handleDragEnd);
+      };
+    }
+  }, [dragStart, handleDragMove, handleDragEnd]);
+
+  // Draw drag visualization
+  useEffect(() => {
+    if (!isDragging || !dragStart || !dragCurrent) return;
+    
+    const canvas = dragCanvasRef.current;
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    
+    // Set canvas size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    // Clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    // Calculate drag vector
+    const dx = dragCurrent.x - dragStart.x;
+    const dy = dragCurrent.y - dragStart.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    
+    if (distance > 5) {
+      // Draw ball spawn indicator at drag start
+      ctx.fillStyle = 'rgba(207, 255, 0, 0.3)';
+      ctx.beginPath();
+      ctx.arc(dragStart.x, dragStart.y, 15, 0, Math.PI * 2); // Ball size indicator
+      ctx.fill();
+      
+      // Draw aim line
+      ctx.strokeStyle = 'rgba(207, 255, 0, 0.8)'; // Tennis ball color
+      ctx.lineWidth = 3;
+      ctx.setLineDash([10, 5]);
+      ctx.beginPath();
+      ctx.moveTo(dragStart.x, dragStart.y);
+      ctx.lineTo(dragStart.x - dx * 2, dragStart.y - dy * 2); // Extend line in throw direction
+      ctx.stroke();
+      
+      // Draw trajectory preview
+      const trajectorySteps = 10;
+      const angle = Math.atan2(-dy, -dx);
+      const maxDistance = 200;
+      const power = Math.min(distance / maxDistance, 1);
+      const speed = 10 + 15 * power;
+      
+      ctx.fillStyle = 'rgba(207, 255, 0, 0.6)';
+      for (let i = 1; i <= trajectorySteps; i++) {
+        const t = i / trajectorySteps;
+        const x = dragStart.x + Math.cos(angle) * speed * t * 20;
+        const y = dragStart.y + Math.sin(angle) * speed * t * 20 + (t * t * 100); // Add gravity effect
+        const radius = 5 - t * 3; // Shrink dots along trajectory
+        if (radius > 0) {
+          ctx.beginPath();
+          ctx.arc(x, y, radius, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      
+      // Draw power indicator
+      const powerColor = `hsl(${66 - power * 66}, 100%, 50%)`; // Green to red
+      
+      ctx.fillStyle = powerColor;
+      ctx.strokeStyle = powerColor;
+      ctx.lineWidth = 2;
+      ctx.setLineDash([]);
+      
+      // Power arc
+      const arcRadius = 20 + power * 30;
+      ctx.beginPath();
+      ctx.arc(dragStart.x, dragStart.y, arcRadius, angle - 0.5, angle + 0.5);
+      ctx.stroke();
+      
+      // Power text
+      ctx.font = 'bold 16px monospace';
+      ctx.fillText(`${Math.round(power * 100)}%`, dragStart.x + 10, dragStart.y - arcRadius - 10);
+    }
+  }, [isDragging, dragStart, dragCurrent]);
+
   // Initialize ultra-realistic physics simulation with interactivity
   useEffect(() => {
     if (!isPhysicsActive) return;
@@ -1178,6 +1461,22 @@ export default function TennisHero({
     <div className={styles.tennisHero}>
       {/* Interactive Physics Canvas */}
       <canvas ref={canvasRef} className={styles.physicsScene} />
+      
+      {/* Drag Visualization Canvas */}
+      {isDragging && (
+        <canvas 
+          ref={dragCanvasRef} 
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100vw',
+            height: '100vh',
+            pointerEvents: 'none',
+            zIndex: 9999
+          }}
+        />
+      )}
 
       {/* Court Lines Background */}
       <div className={styles.courtLines}>
@@ -1259,74 +1558,21 @@ export default function TennisHero({
         </p>
 
         <button
-          onClick={async () => {
-            // Always request motion permission on iOS when not granted
-            if (motionPermission !== "granted") {
-              const granted = await requestOrientationPermission();
-              if (!granted) {
-                // Permission denied, but still throw balls without motion controls
-                console.log(
-                  "Motion permission denied, balls will be thrown without motion controls"
-                );
-              }
-            }
-
-            // Always activate physics when button is clicked (even without motion)
-            if (!isPhysicsActive) {
-              setIsPhysicsActive(true);
-            }
-
-            const canvas = canvasRef.current;
-            if (canvas) {
-              const maxBalls = 1000;
-              const ballsToAdd = 1;
-
-              // Remove oldest balls if we would exceed the limit (FIFO)
-              const currentCount = ballsRef.current.length;
-              const ballsToRemove = Math.max(
-                0,
-                currentCount + ballsToAdd - maxBalls
-              );
-
-              if (ballsToRemove > 0) {
-                ballsRef.current.splice(0, ballsToRemove); // Remove from beginning (oldest)
-              }
-
-              // Always add new balls
-              for (let i = 0; i < ballsToAdd; i++) {
-                // Get CTA button position for spawning
-                const buttonRect =
-                  ctaButtonRef.current?.getBoundingClientRect();
-                const canvasRect = canvas.getBoundingClientRect();
-                const spawnY = buttonRect
-                  ? buttonRect.top - canvasRect.top - 30 // 30px above button
-                  : canvas.height * 0.5; // Fallback to middle
-
-                const ball = new InteractiveTennisBall(
-                  canvas.width / 2 + (Math.random() - 0.5) * 60, // Center ± 30px
-                  spawnY
-                );
-                // Throw toward the walls with strong horizontal velocity and curve
-                const direction = Math.random() < 0.5 ? -1 : 1; // Left or right
-                // Add curve factor for button-spawned balls
-                const curveFactor = 4 + Math.random() * 6; // 4-10 units of curve for more dramatic effect
-                ball.vx =
-                  direction * (15 + Math.random() * 5) +
-                  curveFactor * (Math.random() < 0.5 ? -1 : 1); // Extra strong horizontal with curve
-                ball.vy = -15 - Math.random() * 8; // Very strong upward velocity -15 to -23
-                ballsRef.current.push(ball); // Add to end (newest)
-              }
-              setBallCount(ballsRef.current.length);
-
-              // Track the ball throws
-              trackBallThrows(ballsToAdd);
-            }
-          }}
+          ref={tennisBallButtonRef}
+          onMouseDown={handleDragStart}
+          onTouchStart={handleDragStart}
           className={styles.addBallsButton}
+          style={{ 
+            cursor: isDragging ? 'grabbing' : 'grab',
+            userSelect: 'none',
+            touchAction: 'none'
+          }}
           title={
-            motionPermission === "granted"
-              ? "Lanzar pelotas (Movimiento activado 📱)"
-              : "Lanzar pelotas (Clic para activar movimiento)"
+            isDragging 
+              ? "Arrastra para apuntar y suelta para lanzar"
+              : motionPermission === "granted"
+                ? "Clic o arrastra para lanzar pelotas (Movimiento activado 📱)"
+                : "Clic o arrastra para lanzar pelotas"
           }
         >
           🎾 {motionPermission !== "granted" && "📱"}

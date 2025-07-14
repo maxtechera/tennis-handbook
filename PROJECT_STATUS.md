@@ -1,11 +1,11 @@
-> **Status: ACTIVE** | Last updated: 2025-07-10
+> **Status: ACTIVE** | Last updated: 2025-01-11
 
-# Project Status: Tenis Manual
+# Project Status: Tenis Manual - Duolingo Implementation Phase
 
-**Last Updated**: July 10, 2025  
-**Current Phase**: Project Documentation & Cleanup  
+**Last Updated**: January 11, 2025  
+**Current Phase**: Duolingo App MVP Development  
 **Linear Project**: [Tenis Manual](https://linear.app/max-techera/project/tennis-handbook)  
-**Quick Links**: [Strategy](./_docs/STRATEGY.md) | [Current Sprint](./_docs/06_OPERATIONS/current-sprint.md) | [Architecture](./_docs/02_TECH_ARCHITECTURE/architecture-overview.md) | [Project Tracking](./PROJECT_TRACKING.md)
+**Quick Links**: [Duolingo Vision](./_docs/00_PROJECT_OVERVIEW/DUOLINGO_VISION_FINAL.md) | [Implementation Guide](./_docs/00_PROJECT_OVERVIEW/DUOLINGO_IMPLEMENTATION_MASTER.md) | [Dev Checklist](./_docs/06_OPERATIONS/duolingo-implementation-checklist.md) | [Project Tracking](./PROJECT_TRACKING.md)
 
 ## 📊 Quick Metrics
 
@@ -17,26 +17,44 @@
 | Lighthouse Score   | 95+         | 95+            | ✅ Maintained       |
 | Content Complete   | 100%        | 100%           | ✅ Done             |
 
-## 🎯 Current Sprint Focus
+## 🎯 Current Sprint Focus - Duolingo MVP (Week 1 of 4)
 
-- ✅ Onboarding Wizard Implementation (MAX-46) - COMPLETE & MERGED
-- ✅ Project Documentation & Tracking - COMPLETE
-- 🔄 ConvertKit Production Setup (MAX-79) - IN PROGRESS
-- 📊 Progressive Disclosure System (MAX-80) - NEXT
-- 🚀 API Deployment to Vercel - READY
+### Active Development
+- 🚀 **Duolingo of Tennis App** - 4-week sprint to MVP
+- 📱 Building skill-learning platform (not fitness app)
+- 🎮 Context-aware micro-lessons (Phone/Home/Court)
+- 🇪🇸 Spanish-first launch strategy
+
+### Week 1 Tasks (Current)
+- [ ] Supabase project setup & database schema
+- [ ] Authentication system (login/signup)
+- [ ] Basic lesson player component
+- [ ] Streak tracking implementation
+- [ ] Transform first 50 micro-lessons
+
+### Previous Sprint (Completed)
+- ✅ Comprehensive Duolingo research & strategy
+- ✅ Validated tennis = skill-based learning approach
+- ✅ Created implementation documentation
+- ✅ Set up Next.js app foundation
 
 ## Recent Progress
 
-### July 6, 2025
+### January 11, 2025
 
-- ✅ **MERGED PR #7**: Intelligent Onboarding Wizard
-  - 48 files changed, 7,724 insertions
-  - 30+ new React components
-  - Full ConvertKit integration with 50+ custom fields
-  - Spanish/English support with WhatsApp option
-  - Mobile-optimized progressive flow
+- ✅ **Duolingo Vision Finalized**: Research validated approach
+  - Tennis = skill-based learning (not fitness)
+  - 55% retention achievable with proper mechanics
+  - Context-aware training solves engagement issues
+  - Spanish market 3x engagement confirmed
 
-### Previous Sprint
+- ✅ **Implementation Documentation Created**:
+  - Master implementation guide
+  - Technical checklist for 4-week sprint
+  - Consolidated vision document
+  - Database schema ready in tennis-training-app
+
+### January 10, 2025
 
 - ✅ Created comprehensive Spanish translation workflow documentation
 - ✅ Built translation tracking system with scripts
@@ -46,25 +64,23 @@
 
 ## 🚨 Immediate Actions (Next 48 Hours)
 
-1. **Deploy API to Vercel** (1 hour)
-
-   - Create Vercel project
+1. **Supabase Project Setup** (1 hour)
+   - Create new Supabase project
+   - Run database.sql schema
    - Configure environment variables
-   - Deploy api/subscribe.js endpoint
-   - Update production URLs
+   - Test connection
 
-2. **ConvertKit Production Setup** (30 min)
+2. **Authentication Implementation** (4 hours)
+   - Build login/signup pages
+   - Create auth provider component
+   - Implement protected routes
+   - Test user flow
 
-   - Add API keys to Vercel
-   - Create 50+ custom fields
-   - Configure tag structure
-   - Test subscription flow
-
-3. **Create Lead Magnet** (2 hours)
-   - Design 7-Day Workout PDF
-   - Spanish translation
-   - Upload to ConvertKit
-   - Configure auto-delivery
+3. **First Micro-Lessons** (2 hours)
+   - Transform Week 1 Monday workout
+   - Create lesson player component
+   - Test context detection
+   - Implement basic XP tracking
 
 ## Active Branches
 
@@ -142,22 +158,25 @@
 
 ## 🔑 Recent Key Decisions
 
-1. **Progressive Disclosure Strategy** (Jan 15)
+1. **Duolingo Model Adoption** (Jan 11)
+   - Build skill-learning platform, not fitness app
+   - Rationale: Research shows 55% retention possible
+   - Status: 4-week MVP sprint started
 
-   - Gate content to increase email signups
-   - Rationale: <5% completion rate with open access
-   - Status: Implementing
+2. **Context-Aware Training** (Jan 11)
+   - Phone/Home/Court modes for different contexts
+   - Rationale: Solves "can't train daily" problem
+   - Status: Core innovation being implemented
 
-2. **Spanish-First Monetization** (Jan 10)
+3. **Spanish-First + WhatsApp** (Jan 10)
+   - Launch in Spanish with squad features
+   - Rationale: 3x engagement + community fit
+   - Status: Building into MVP
 
-   - Launch premium features in Spanish market first
-   - Rationale: 3x engagement validated
-   - Status: Preparing ConvertKit
-
-3. **Daily Training Revolution** (Jan 5)
-   - Transform from content library to training companion
-   - Rationale: Solves engagement + enables €19-29/month pricing
-   - Status: Validated, building MVP
+4. **Full Gamification from Day 1** (Jan 11)
+   - XP, streaks, leagues, achievements
+   - Rationale: Duolingo proves complexity works
+   - Status: Implementing in Week 2
 
 [See all decisions](./_docs/context/decisions.json)
 

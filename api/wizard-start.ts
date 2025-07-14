@@ -79,7 +79,7 @@ async function submitToKitCom(email: string, sessionId: string, wizardData: Reco
 
     if (!response.ok) {
       console.error("ConvertKit error:", data);
-      return { success: false, error: data.message || "Failed to subscribe" };
+      return { success: false, error: (data as any).message || "Failed to subscribe" };
     }
 
     console.log(
@@ -92,7 +92,7 @@ async function submitToKitCom(email: string, sessionId: string, wizardData: Reco
     // Here we'll return a success indicator
     return {
       success: true,
-      subscriberId: data.subscription?.subscriber?.id,
+      subscriberId: (data as any).subscription?.subscriber?.id,
       // You can add the actual download link here if Kit.com returns it
       // or if you have it configured in your environment
       downloadLink: process.env.PDF_DOWNLOAD_LINK || null,

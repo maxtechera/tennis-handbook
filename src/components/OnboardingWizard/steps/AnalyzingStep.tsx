@@ -110,8 +110,8 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
     const phaseContent = {
       analyzing: {
         analysis: {
-          title: 'Detectando errores técnicos...',
-          subtitle: '🔍 Encontrando esos malos hábitos escondidos',
+          title: 'Detectando por qué tu derecha parece golpe de ping pong...',
+          subtitle: '🔍 Ese swing que prometiste arreglar hace 3 años',
           icon: '🕵️'
         },
         solution: {
@@ -123,8 +123,8 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
       },
       calculating: {
         analysis: {
-          title: 'Analizando falta de consistencia...',
-          subtitle: '🎾 ¿Por qué unos días juegas bien y otros...?',
+          title: 'Calculando por qué a veces juegas como Federer...',
+          subtitle: '🎾 ...y otras veces como si fuera tu primer día',
           icon: '📊'
         },
         solution: {
@@ -136,8 +136,8 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
       },
       revealing: {
         analysis: {
-          title: 'Midiendo potencial sin explotar...',
-          subtitle: '💎 Hay un jugador élite esperando salir',
+          title: 'Midiendo cuánto talento desperdicias...',
+          subtitle: '💎 Tienes potencial pero solo sale los domingos',
           icon: '⚡'
         },
         solution: {
@@ -149,8 +149,8 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
       },
       completed: {
         analysis: {
-          title: '¡Análisis completo!',
-          subtitle: '🏆 Tu roadmap personalizado está listo',
+          title: '¡Análisis completo! (Es peor de lo que pensabas)',
+          subtitle: '🏆 Pero tenemos la solución perfecta para ti',
           icon: '🎯'
         },
         solution: {
@@ -174,8 +174,8 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
     const phaseContent = {
       analyzing: {
         analysis: {
-          title: 'Detectando errores técnicos...',
-          subtitle: '🔍 Encontrando esos malos hábitos escondidos',
+          title: 'Detectando por qué tu derecha parece golpe de ping pong...',
+          subtitle: '🔍 Ese swing que prometiste arreglar hace 3 años',
           icon: '🕵️'
         },
         solution: {
@@ -187,8 +187,8 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
       },
       calculating: {
         analysis: {
-          title: 'Analizando falta de consistencia...',
-          subtitle: '🎾 ¿Por qué unos días juegas bien y otros...?',
+          title: 'Calculando por qué a veces juegas como Federer...',
+          subtitle: '🎾 ...y otras veces como si fuera tu primer día',
           icon: '📊'
         },
         solution: {
@@ -200,8 +200,8 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
       },
       revealing: {
         analysis: {
-          title: 'Midiendo potencial sin explotar...',
-          subtitle: '💎 Hay un jugador élite esperando salir',
+          title: 'Midiendo cuánto talento desperdicias...',
+          subtitle: '💎 Tienes potencial pero solo sale los domingos',
           icon: '⚡'
         },
         solution: {
@@ -213,8 +213,8 @@ export function AnalyzingStep({ onNext, onBack, data = {}, wizardData = {} }: An
       },
       completed: {
         analysis: {
-          title: '¡Análisis completo!',
-          subtitle: '🏆 Tu roadmap personalizado está listo',
+          title: '¡Análisis completo! (Es peor de lo que pensabas)',
+          subtitle: '🏆 Pero tenemos la solución perfecta para ti',
           icon: '🎯'
         },
         solution: {

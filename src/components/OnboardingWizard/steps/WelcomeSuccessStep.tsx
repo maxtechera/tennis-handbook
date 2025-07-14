@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './MicroQuizStep.module.css';
 
 interface WelcomeSuccessStepProps {
@@ -10,21 +10,6 @@ interface WelcomeSuccessStepProps {
 
 export function WelcomeSuccessStep({ onNext, onBack, data, wizardData }: WelcomeSuccessStepProps) {
   const personalInfo = wizardData?.['personal-info'] || {};
-  const [showCelebration, setShowCelebration] = useState(false);
-
-  const handleContinue = () => {
-    setShowCelebration(true);
-    setTimeout(() => {
-      onNext({ continueToVip: true });
-    }, 1000);
-  };
-
-  const handleSkip = () => {
-    setShowCelebration(true);
-    setTimeout(() => {
-      onNext({ skip: true });
-    }, 1000);
-  };
 
   return (
     <div className={styles.microQuizStep}>
@@ -55,33 +40,18 @@ export function WelcomeSuccessStep({ onNext, onBack, data, wizardData }: Welcome
             </div>
           </div>
 
-          {/* CTA Button styled as option */}
-          <button
-            type="button"
-            className={`${styles.levelOption} ${styles.ctaOption}`}
-            onClick={handleContinue}
-            disabled={showCelebration}
-          >
+          {/* VIP Access Card */}
+          <div className={styles.levelOption}>
             <div className={styles.optionIcon}>🎯</div>
             <div className={styles.optionContent}>
-              <h3 className={styles.optionTitle}>Ver oferta exclusiva</h3>
+              <h3 className={styles.optionTitle}>Acceso rápido a tu contenido</h3>
               <p className={styles.optionDescription}>
                 Descubre nuestro programa completo personalizado
               </p>
             </div>
-            <div className={styles.selectedIndicator}>→</div>
-          </button>
+          </div>
         </div>
 
-        {/* Celebration Message */}
-        {showCelebration && (
-          <div className={styles.celebration}>
-            <div className={styles.celebrationIcon}>🎾</div>
-            <p className={styles.celebrationText}>
-              ¡Perfecto! Preparando tu oferta exclusiva...
-            </p>
-          </div>
-        )}
 
       </div>
     </div>

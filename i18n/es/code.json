@@ -327,7 +327,7 @@
     "description": "Main homepage title"
   },
   "homepage.hero.subtitle": {
-    "message": "Arrastra las pelotas, agita el dispositivo e inclínalo para física realista",
+    "message": "Hace click en las pelotas y agita el dispositivo",
     "description": "Hero subtitle with interactive physics instructions"
   },
   "homepage.hero.button": {
