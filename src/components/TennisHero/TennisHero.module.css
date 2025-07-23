@@ -1,9 +1,6 @@
 .tennisHero {
   position: relative;
-  min-height: 100dvh;
-  min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
-  /* height: 100dvh; */
-  min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  height: 100dvh; /* Use exact viewport height instead of min-height */
   overflow: hidden;
   background: url("./background.png") center center / cover no-repeat;
   background-color: #203780; /* Fallback color */
@@ -53,7 +50,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100dvh;
+  height: 100%; /* Match parent height instead of viewport */
   pointer-events: auto;
   z-index: 5;
   opacity: 1;
@@ -629,8 +626,7 @@
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .tennisHero {
-    min-height: 100dvh;
-    /* height: 100dvh; */
+    height: 100dvh; /* Maintain exact viewport height on mobile */
   }
 
   /* .contentContainer {

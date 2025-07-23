@@ -90,7 +90,15 @@ class TennisBall {
   }
 }
 
-export default function TennisHero() {
+interface TennisHeroProps {
+  onCTAClick: () => void;
+  showUrgency?: boolean;
+}
+
+export default function TennisHero({
+  onCTAClick,
+  showUrgency,
+}: TennisHeroProps) {
   // DOM refs
   const containerRef = useRef<HTMLDivElement>(null);
   const appRef = useRef<PIXI.Application | null>(null);
@@ -924,7 +932,7 @@ export default function TennisHero() {
         {/* CTA Button */}
         <button
           ref={ctaButtonRef}
-          onClick={() => (window.location.href = "/docs/intro")}
+          onClick={onCTAClick}
           className={styles.ctaButton}
           aria-label="DESCARGAR RUTINA GRATIS"
         >
@@ -973,6 +981,21 @@ export default function TennisHero() {
             ) : (
               <span>Cargando...</span>
             )}
+          </div>
+          {/* Trust Indicators */}
+          <div className={styles.trustIndicators}>
+            <span className={styles.trustItem}>
+              ✅{" "}
+              <Translate id="homepage.hero.trust1">
+                Sin tarjetas de crédito
+              </Translate>
+            </span>
+            <span className={styles.trustItem}>
+              ✅{" "}
+              <Translate id="homepage.hero.trust2">
+                Acceso inmediato por email
+              </Translate>
+            </span>
           </div>
         </div>
       </div>

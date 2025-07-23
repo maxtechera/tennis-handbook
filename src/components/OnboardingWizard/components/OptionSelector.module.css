@@ -19,8 +19,8 @@
   align-items: center;
   gap: 0.75rem;
   padding: 1rem;
-  background: var(--ifm-background-surface-color);
-  border: 2px solid var(--ifm-color-emphasis-200);
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -33,15 +33,16 @@
 }
 
 .option:hover {
-  border-color: var(--ifm-color-primary-light);
+  border-color: rgba(76, 175, 80, 0.5);
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .option.selected {
-  background: var(--ifm-color-primary-lightest);
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 0 0 3px rgba(var(--ifm-color-primary-rgb), 0.1);
+  background: rgba(76, 175, 80, 0.15);
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
 }
 
 .iconWrapper {
@@ -73,14 +74,14 @@
 
 .label {
   font-weight: 500;
-  color: var(--ifm-heading-color);
+  color: #e3e3e3;
   font-size: 1rem; /* Larger for mobile readability */
   line-height: 1.4;
 }
 
 .description {
   font-size: 0.875rem; /* Larger for mobile readability */
-  color: var(--ifm-color-secondary-darker);
+  color: #b0b3b8;
   line-height: 1.4;
   margin-top: 0.125rem;
 }
@@ -91,9 +92,9 @@
   right: 0.75rem;
   width: 1rem; /* Larger for touch */
   height: 1rem; /* Larger for touch */
-  border: 2px solid var(--ifm-color-emphasis-300);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,8 +103,8 @@
 }
 
 .option.selected .checkbox {
-  background: var(--ifm-color-primary);
-  border-color: var(--ifm-color-primary);
+  background: #4caf50;
+  border-color: #4caf50;
 }
 
 .checkmark {
@@ -200,41 +201,4 @@
   }
 }
 
-/* Dark mode specific adjustments */
-[data-theme="dark"] .option {
-  background: var(--ifm-background-surface-color);
-  border-color: var(--ifm-color-emphasis-300);
-}
-
-[data-theme="dark"] .option:hover {
-  border-color: var(--ifm-color-primary);
-  background: var(--ifm-color-emphasis-100);
-}
-
-[data-theme="dark"] .option.selected {
-  background: var(--ifm-color-primary-darker);
-  border-color: var(--ifm-color-primary);
-  color: white;
-}
-
-[data-theme="dark"] .option.selected .label {
-  color: white;
-}
-
-[data-theme="dark"] .option.selected .description {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-[data-theme="dark"] .checkbox {
-  background: var(--ifm-background-color);
-  border-color: var(--ifm-color-emphasis-400);
-}
-
-[data-theme="dark"] .option.selected .checkbox {
-  background: var(--ifm-color-primary);
-  border-color: var(--ifm-color-primary);
-}
-
-[data-theme="dark"] .description {
-  color: var(--ifm-color-emphasis-600);
-}
+/* Dark mode support - already using dark styles by default */

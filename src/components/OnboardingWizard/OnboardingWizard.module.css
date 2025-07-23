@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem 1rem;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -59,7 +59,7 @@
   right: 1rem;
   transform: translateY(-50%);
   z-index: 30;
-  background: rgba(255, 255, 255, 0.05);
+  background: transparent;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -75,7 +75,7 @@
 }
 
 .closeButton:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .closeButton:active {
@@ -147,7 +147,7 @@
   bottom: 1rem;
   left: 1rem;
   z-index: 30;
-  background: rgba(255, 255, 255, 0.05);
+  background: transparent;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -163,7 +163,7 @@
 }
 
 .backButton:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .backButton:active {
@@ -204,7 +204,7 @@
 /* Previous button styles removed - using backButton instead */
 
 .nextButton {
-  background: rgba(50, 205, 50, 0.8);
+  background: linear-gradient(135deg, #32cd32, #228b22);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: #ffffff;
@@ -228,7 +228,7 @@
 /* Previous button hover styles removed */
 
 .nextButton:not(:disabled):hover {
-  background: rgba(50, 205, 50, 0.9);
+  background: linear-gradient(135deg, #228b22, #006400);
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(50, 205, 50, 0.4);
   border-color: rgba(255, 255, 255, 0.3);
@@ -260,7 +260,7 @@
   .wizardHeader {
     padding: 1rem 1rem;
     position: relative;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);

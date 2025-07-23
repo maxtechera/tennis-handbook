@@ -1,21 +1,21 @@
 /* Card Layout System */
 .card {
-  background: rgba(255, 255, 255, 0.15);
+  background: #242526;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid #3a3b3c;
   transition: all 0.3s ease;
   overflow: hidden;
   position: relative;
-  color: #ffffff;
+  color: #e3e3e3;
 }
 
 .card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.2);
+  background: #2a2b2c;
 }
 
 /* Card Variants */
@@ -192,6 +192,7 @@
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   line-height: 1.2;
+  color: #e3e3e3;
 }
 
 .subtitle {
@@ -199,6 +200,7 @@
   margin: 0;
   opacity: 0.9;
   line-height: 1.5;
+  color: #b0b3b8;
 }
 
 /* Card Content */
@@ -279,25 +281,7 @@
   }
 }
 
-/* Dark mode support */
-[data-theme="dark"] .card {
-  background: #242526;
-  border-color: #3a3b3c;
-  color: #e3e3e3;
-}
-
-[data-theme="dark"] .card:hover {
-  background: #2a2b2c;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-[data-theme="dark"] .title {
-  color: #e3e3e3;
-}
-
-[data-theme="dark"] .subtitle {
-  color: #b0b3b8;
-}
+/* Dark mode support - already using dark styles by default */
 
 /* Ensure cards fit in mobile viewport */
 @media (max-height: 700px) {

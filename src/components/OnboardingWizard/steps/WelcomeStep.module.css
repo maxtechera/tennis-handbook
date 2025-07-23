@@ -188,8 +188,8 @@
 
 /* Value Preview */
 .valuePreview {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   padding: 1rem;
   margin-top: 1rem;
@@ -252,7 +252,7 @@
   justify-content: center;
   font-size: 0.9rem;
   margin-left: -8px;
-  border: 2px solid #1a1a1a;
+  border: 2px solid #0a0a0a;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -269,7 +269,7 @@
 
 .socialText {
   font-size: 0.85rem;
-  color: #999999;
+  color: #808080;
   margin: 0;
 }
 
@@ -293,7 +293,7 @@
   font-size: 1.1rem;
   border: 2px solid white;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.03);
   color: #ffffff;
   transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
   width: 100%;
@@ -304,12 +304,12 @@
 .emailInput:focus {
   outline: none;
   border-color: #4caf50;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .emailInput::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .emailInput.error {
@@ -325,10 +325,10 @@
 }
 
 .submitButton {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.5);
   padding: 1.25rem 2rem;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 700;
@@ -347,7 +347,7 @@
 }
 
 .submitButton.valid {
-  background: linear-gradient(135deg, #4caf50, #45a049);
+  background: linear-gradient(135deg, #388e3c, #2e7d32);
   border-color: transparent;
   color: white;
   cursor: pointer;
@@ -384,7 +384,7 @@
 }
 
 .submitButton.valid:hover:not(:disabled) {
-  background: linear-gradient(135deg, #45a049, #3d8b40);
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 12px 32px rgba(76, 175, 80, 0.5);
 }
@@ -443,7 +443,7 @@
 
 .badgeText {
   font-size: 0.75rem;
-  color: white;
+  color: #808080;
   font-weight: 500;
 }
 
@@ -572,80 +572,7 @@
   }
 }
 
-/* Dark mode support */
-/* [data-theme="dark"] .welcomeStep {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-} */
-
-/* [data-theme="dark"] .urgencyTimer {
-  background: rgba(255, 152, 0, 0.15);
-  border-color: rgba(255, 152, 0, 0.3);
-} */
-
-/*  [data-theme="dark"] .successBadge {
-  background: linear-gradient(135deg, #388e3c, #689f38);
-} */
-
-[data-theme="dark"] .title {
-  color: #ffffff;
-}
-
-[data-theme="dark"] .summaryText {
-  color: white;
-}
-
-[data-theme="dark"] .valuePreview {
-  background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-[data-theme="dark"] .valueTitle {
-  color: white;
-}
-
-[data-theme="dark"] .valueText {
-  color: white;
-}
-
-[data-theme="dark"] .socialText {
-  color: #808080;
-}
-
-[data-theme="dark"] .emailInput {
-  background: rgba(255, 255, 255, 0.03);
-  border-color: white;
-  color: #ffffff;
-}
-
-[data-theme="dark"] .emailInput::placeholder {
-  color: white;
-}
-
-[data-theme="dark"] .emailInput:focus {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: #4caf50;
-}
-
-[data-theme="dark"] .emailInput::placeholder {
-  color: rgba(255, 255, 255, 0.4);
-}
-
-[data-theme="dark"] .submitButton {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-[data-theme="dark"] .submitButton.valid {
-  background: linear-gradient(135deg, #388e3c, #2e7d32);
-}
-
-[data-theme="dark"] .badgeText {
-  color: #808080;
-}
-
-[data-theme="dark"] .avatar {
-  border-color: #0a0a0a;
-}
+/* Dark mode support - already using dark styles by default */
 
 /* Animation adjustments for performance */
 @media (prefers-reduced-motion: reduce) {

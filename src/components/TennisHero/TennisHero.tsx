@@ -220,7 +220,9 @@ class InteractiveTennisBall {
     height: number,
     gravityX: number,
     gravityY: number,
-    shake: number = 0
+    shake: number = 0,
+    offsetX: number = 0,
+    offsetY: number = 0
   ) {
     // Wake up if shaken
     if (shake > 0) {
@@ -286,31 +288,31 @@ class InteractiveTennisBall {
     // Dampen rotation speed over time
     this.rotationSpeed *= 0.98;
 
-    // Enhanced boundary collisions with realistic physics
+    // Enhanced boundary collisions with realistic physics, accounting for content area
     let bounced = false;
 
-    // Left and right walls
-    if (this.x - this.radius < 0) {
-      this.x = this.radius;
+    // Left and right walls (offset by content area)
+    if (this.x - this.radius < offsetX) {
+      this.x = offsetX + this.radius;
       this.vx = -this.vx * this.restitution;
       this.rotationSpeed = -this.rotationSpeed * 0.7; // Reverse spin on wall bounce
       bounced = true;
-    } else if (this.x + this.radius > width) {
-      this.x = width - this.radius;
+    } else if (this.x + this.radius > offsetX + width) {
+      this.x = offsetX + width - this.radius;
       this.vx = -this.vx * this.restitution;
       this.rotationSpeed = -this.rotationSpeed * 0.7; // Reverse spin on wall bounce
       bounced = true;
     }
 
-    // Top and bottom walls
-    if (this.y - this.radius < 0) {
-      this.y = this.radius;
+    // Top and bottom walls (offset by content area)
+    if (this.y - this.radius < offsetY) {
+      this.y = offsetY + this.radius;
       this.vy = -this.vy * this.restitution;
       // Add spin based on horizontal velocity
       this.rotationSpeed += this.vx * 0.1;
       bounced = true;
-    } else if (this.y + this.radius > height) {
-      this.y = height - this.radius;
+    } else if (this.y + this.radius > offsetY + height) {
+      this.y = offsetY + height - this.radius;
       this.vy = -this.vy * this.restitution;
       // Ground friction when bouncing
       this.vx *= this.friction;
@@ -1132,12 +1134,43 @@ export default function TennisHero({
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Set canvas size to match container's actual height
+    // Set canvas size to match container's actual height but account for content area
     const resizeCanvas = () => {
       const container = canvas.parentElement;
+      
       if (container) {
         canvas.width = container.offsetWidth;
-        canvas.height = container.offsetHeight; // Use container's actual height (which uses dvh)
+        canvas.height = container.offsetHeight;
+        
+        // Wait a frame for layout to settle, then calculate content bounds
+        requestAnimationFrame(() => {
+          const contentContainer = container?.querySelector(`.${styles.contentContainer}`) as HTMLElement;
+          
+          if (contentContainer) {
+            const contentRect = contentContainer.getBoundingClientRect();
+            const containerRect = container.getBoundingClientRect();
+            
+            // Create exclusion zone around content with generous buffers
+            const contentBounds = {
+              top: Math.max(50, contentRect.top - containerRect.top - 100), // Larger buffer above content
+              bottom: Math.min(container.offsetHeight - 50, contentRect.bottom - containerRect.top + 100), // Larger buffer below content
+              left: Math.max(50, contentRect.left - containerRect.left - 100), // Larger buffer left of content
+              right: Math.min(container.offsetWidth - 50, contentRect.right - containerRect.left + 100) // Larger buffer right of content
+            };
+            
+            // Store bounds on canvas for ball physics to access
+            (canvas as any).contentBounds = contentBounds;
+          } else {
+            // Use smaller area of full container to avoid content overlap
+            const margin = 100;
+            (canvas as any).contentBounds = {
+              top: margin,
+              bottom: container.offsetHeight - margin,
+              left: margin,
+              right: container.offsetWidth - margin
+            };
+          }
+        });
       }
     };
     resizeCanvas();
@@ -1432,12 +1465,21 @@ export default function TennisHero({
           ball.vy = (Math.random() - 0.5) * 1.5; // No upward bias
         }
 
+        // Use content bounds if available, otherwise use full canvas
+        const bounds = (canvas as any).contentBounds;
+        const effectiveWidth = bounds ? bounds.right - bounds.left : canvas.width;
+        const effectiveHeight = bounds ? bounds.bottom - bounds.top : canvas.height;
+        const offsetX = bounds ? bounds.left : 0;
+        const offsetY = bounds ? bounds.top : 0;
+        
         ball.update(
-          canvas.width,
-          canvas.height,
+          effectiveWidth,
+          effectiveHeight,
           gravityX,
           gravityY,
-          shakeIntensity.current
+          shakeIntensity.current,
+          offsetX,
+          offsetY
         );
         ball.draw(ctx);
       });
